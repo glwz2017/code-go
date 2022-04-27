@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Account -PCBgogo</title>
+    <!--网页标题左侧显示-->
+    <link rel="icon" href="../img/images/title-logo.png" type="image/x-icon">
+    <!--收藏夹显示图标-->
+    <link rel="shortcut icon" href="../img/images/title-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../img/css/member/integral.css">
+    <link rel="stylesheet"
+          href="https://at.alicdn.com/t/font_2611542_4ojyo1hpc4b.css?spm=a313x.7781069.1998910419.42&file=font_2611542_4ojyo1hpc4b.css">
+    <script src="../img/js/jquery/jquery-1.11.3.min.js"></script>
+    <script src="../img/js/public.js"></script>
+</head>
+<body>
+<div class="the-top">
+    <!--顶部导航-->
+    <div class="top-nav">
+        <div class="nav-l">
+            <a href="orderIndex.html">
+                <img src="../img/images/order/orderlogo.png" alt="logo">
+            </a>
+        </div>
+        <div class="nav-r">
+            <!--右侧图标-->
+            <div class="shopping-box">
+                <ul class="hints js-hints">
+                    <li class="active message-li"><a href="javascript:void(0)">
+                        <span class="iconfont icon-ai-message"></span>
+                    </a>
+                        <i class="point "></i>
+                    </li>
+                    <li class="active coupon-li"><a href="javascript:void(0)">
+                        <span class="iconfont icon-youhuiquan"></span>
+                    </a>
+                        <i class="point "></i>
+                    </li>
+                    <li class="active coupon-li"><a href="javascript:void(0)">
+                        <span class="iconfont icon-fukuan"></span>
+                    </a>
+                        <i class="point "></i>
+                    </li>
+                    <li class="car-box cared-li"><a href="javascript:void(0)">
+                        <span class="iconfont icon-gouwuche1"></span>
+                    </a>
+                        <i class="round car-nums">99</i>
+                    </li>
+                </ul>
+            </div>
+            <!--登录后-->
+            <div class="user-box">
+                <span class="hi-text"> Hi! The user...</span>
+                <div class="user-pic js-user-pic">
+                    <i><img src="../img/images/user.png" alt=""></i>
+                    <i class="down-pointer"><img src="../img/images/down-pointer.png" alt=""></i>
+                </div>
+                <div class="user-item">
+                    <div class="account" onclick="window.open('orderIndex.html','_self')">
+                        My Account
+                    </div>
+                    <div class="account" onclick="window.open('awaiting-payment.html','_self')">
+                        My Orders list
+                    </div>
+                    <div class="account" onclick="window.open('essentialInformation.html','_self')">
+                        My Delivery Address
+                    </div>
+                    <div class="facebook-btn ">
+                        Bind FaceBook
+                    </div>
+                    <div class="out-btn " style="margin-top: 10px">
+                        Sign Out
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--二级菜单-->
+    <div class="main-menu">
+        <div class="vip_warp">
+            <ul class="menu-list clear-fix">
+                <li class="active"><a href="orderIndex.html">My Account</a></li>
+                <li><a href="../PCBPrototype.html">PCB Instant Quote</a></li>
+                <li><a href="../PCBAssembly.html">PCB Assembly</a></li>
+                <li><a href="../pages作废/reviewList作废.html">Forum</a></li>
+            </ul>
+            <!--面包屑-->
+            <div class="bread-crumbs">
+                <a href="javascript:void(0)">
+                    <span class="iconfont icon-shouye1"></span>
+                    <span>- Reward points</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--主体-->
+<div class="order-main">
+    <!--左侧-->
+    <div class="box-l">
+        <div class="category js-category-index">
+            <div class="item "><a href="shopping-car.html">
+                <span class="iconfont icon-gouwuche2"></span>
+                <span class="category-name">-Shopping Cart</span></a></div>
+            <div class="item"><a href="awaiting-payment.html">
+                <span class="iconfont icon-dingdan"></span>
+                <span class="category-name">-My Orders</span></a></div>
+            <div class="item"><a href="memberList.html">
+                <span class="iconfont icon-icon_fapinglun-xian"></span>
+                <span class="category-name">-Comments</span></a></div>
+            <div class="item">
+                <a href="myInvitation.html">
+                    <span class="iconfont icon-daipingjiab"></span>
+                    <span class="category-name">+Experience Share</span>
+                </a>
+                <!--&lt;!&ndash;二级列表&ndash;&gt;-->
+                <div class="second-item">
+                    <a class="second-active" href="myInvitation.html">
+                        <span class="second-name">My Invitation</span>
+                    </a>
+                    <a href="promoteIndex.html">
+                        <span class="second-name">Share links</span>
+                    </a>
+                </div>
+            </div>
+            <div class="item "><a href="account-page.html">
+                <span class="iconfont icon-34"></span>
+                <span class="category-name">-Cash and Coupon</span></a></div>
+            <!--vip-->
+            <div class="item active">
+                <a href="integral.html">
+                    <span class="iconfont icon-v"></span>
+                    <span class="category-name active-new">
+                    <span class="iconfont icon-new"></span>
+                    - Reward points
+                </span>
+                </a>
+            </div>
+            <!--vip-->
+            <div class="item "><a href="newsed.html">
+                <span class="iconfont icon-liuyanpinglun"></span>
+                <span class="category-name">-Message</span>
+            </a></div>
+            <div class="item"><a href="essentialInformation.html">
+                <span class="iconfont icon-gerenziliao"></span>
+                <span class="category-name">+My Profile</span>
+            </a>
+                <!--&lt;!&ndash;二级列表&ndash;&gt;-->
+                <div class="second-item ">
+                    <a href="essentialInformation.html">
+                        <span class="second-name">Basic Information</span></a>
+                    <a href="receivingAddress.html">
+                        <span class="second-name">My Delivery Address</span>
+                    </a>
+                    <a href="changePassword.html">
+                        <span class="second-name">Change Password</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--右侧-->
+    <div class="box-r">
+        <div class="r-title">
+            REWARD POINTS
+        </div>
+        <!--等级信息
+        1. 到达v4-v6 区间 给我一个 v4-6 类名
+        2. 到达vip区间 给我一个vip类名
+        -->
+        <div class="level-sample">
+            <div class="level-info">
+                <div class="level-l">
+                    <dl class="level-style">
+                        <dd>
+                            <!--会员等级 vip-V1,vip-V2----vip-V6 ,vip -->
+                            <object width="72" height="90" data="../img/images/member/vip-V1.svg" type=""></object>
+                        </dd>
+                        <dd>
+                            <object width="35" height="32"
+                                    data="../img/images/member/icon-integral.svg" type=""></object>
+
+                            <h5 class="point-name">Accumulate Points</h5>
+                            <div class="icon-count">99999999</div>
+                        </dd>
+                        <dd>
+                            <object width="35" height="32"
+                                    data="../img/images/member/icon-GObi.svg" type=""></object>
+
+                            <h5 class="point-name">My Gocoin</h5>
+                            <div class="icon-count">99999999</div>
+                        </dd>
+                        <dd>
+                            <object width="35" height="32"
+                                    data="../img/images/member/icon-discount.svg" type=""></object>
+
+                            <h5 class="point-name">Member Discount</h5>
+                            <div class="icon-count">100% <em>off PCB</em></div>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="level-r">
+                    <dl class="level-hot">
+                        <dd>
+                            <div class="name">兑换礼品</div>
+                            <div class="info">10个</div>
+                        </dd>
+                        <dd>
+                            <div class="name">
+                                节省订单金额
+                            </div>
+                            <div class="info">$500</div>
+                        </dd>
+                        <dd>
+                            <div class="name">节省邮费</div>
+                            <div class="info">$50</div>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="grade-box">
+                <dl class="grade-l">
+                    <!--   当前等级给我一个active-->
+                    <dd>
+                        <h6 class="threshold">V0-V3 <span>≥</span> 500</h6>
+                        <!--   满足条件的给我一个  active  -->
+                        <div class="item active">
+                            <a href="javascript:void(0)">Free inquiry</a>
+                        </div>
+                        <div class="item active">
+                            <a href="javascript:void(0)">gift full exchange</a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript:void(0)">
+                                Member Discount
+                                <div class="tag">
+                                    Member 0% off
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript:void(0)">
+                                Free Shipping Coupon Draw
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript:void(0)">
+                                Combine Coupon
+                            </a>
+                        </div>
+                    </dd>
+                    <dd>
+                        <h6 class="threshold">V4 <span>≥</span> 1500</h6>
+                        <!--   满足条件的给我一个  active  -->
+                        <div class="item active">
+                            <a href="javascript:void(0)">Free inquiry</a>
+                        </div>
+                        <div class="item active">
+                            <a href="javascript:void(0)">gift full exchange</a>
+                        </div>
+                        <div class="item active">
+                            <a href="javascript:void(0)">
+                                Member Discount
+                                <div class="tag">
+                                    Member 2% off
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item active">
+                            <a href="javascript:void(0)">
+                                Free Shipping Coupon Draw
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript:void(0)">
+                                Combine Coupon
+                            </a>
+                        </div>
+
+                    </dd>
+                    <dd class="active">
+                        <h6 class="threshold">V5 <span>≥</span> 5000</h6>
+                        <!--   满足条件的给我一个  active  -->
+                        <div class="item active">
+                            <a href="javascript:void(0)">Free inquiry</a>
+                        </div>
+                        <div class="item active">
+                            <a href="javascript:void(0)">gift full exchange</a>
+                        </div>
+                        <div class="item active">
+                            <a href="javascript:void(0)">
+                                Member Discount
+                                <div class="tag">
+                                    Member 5% off
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item active">
+                            <a href="lucky-draw.html" target="_blank">
+                                Free Shipping Coupon Draw
+                            </a>
+                        </div>
+                        <div class="item active">
+                            <a href="lucky-draw.html" target="_blank">
+                                Combine Coupon
+                            </a>
+                        </div>
+
+                    </dd>
+                    <dd>
+                        <h6 class="threshold">V6 <span>≥</span> 10000</h6>
+                        <!--   满足条件的给我一个  active  -->
+                        <div class="item active">
+                            <a href="javascript:void(0)">Free inquiry</a>
+                        </div>
+                        <div class="item active">
+                            <a href="javascript:void(0)">gift full exchange</a>
+                        </div>
+                        <div class="item active">
+                            <a href="javascript:void(0)">
+                                Member Discount
+                                <div class="tag">
+                                    Member 8% off
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item active">
+                            <a href="javascript:void(0)">
+                                Free Shipping Coupon Draw
+                            </a>
+                        </div>
+                        <div class="item active">
+                            <a href="javascript:void(0)">
+                                Combine Coupon
+                            </a>
+                        </div>
+
+                    </dd>
+                </dl>
+                <div class="grade-r">
+                    <h3 class="plat-vip">Platinum- VIP</h3>
+                    <div class="plat-des">
+                        Platinum-VIP is highest level membership in PCBGOGO. There is much preferential treatment when
+                        you are PCBGOGO Platinum-VIP.
+                    </div>
+                    <a class="plat-btn js-plat-btn" href="javascript:void(0)">
+                        CLICK TO APPLY
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--how to get-->
+        <div class="how-get">
+            <div class="how-title">
+                How to get reward points:
+            </div>
+            <dl class="points-box">
+                <dd>
+                    <span class="iconfont icon-jiahao"></span>
+                    <div class="point-icon">
+                        <span class="iconfont icon-yanzhengma3"></span>
+                    </div>
+                    <div class="point-title">Register:</div>
+                    <div class="point-count">Rewards points: <span class="count">10</span></div>
+                    <div class="point-des">
+                        <p>
+                            1. You will get 10 points after registered as member on PCBGOGO.
+                        </p>
+                    </div>
+                </dd>
+                <dd>
+                    <span class="iconfont icon-jiahao"></span>
+                    <div class="point-icon">
+                        <span class="iconfont icon-gouwuche3"></span>
+                    </div>
+                    <div class="point-title">Rewards for orders:</div>
+                    <div class="point-count">Rewards points: <span class="count">90</span></div>
+                    <div class="point-des">
+                        <p>
+                            1. You will get 1 points when you cost $10 for your PCB and assembly orders.
+                        </p>
+                        <p>
+                            2. You will get an extra point if you keep placing the orders with 3 or more per 90 days
+                        </p>
+                    </div>
+                    <a class="to-link-btn" href="javascript:void(0)">
+                        Earn Points for Ordering
+                    </a>
+                </dd>
+                <dd>
+                    <span class="iconfont icon-jiahao"></span>
+                    <div class="point-icon">
+                        <span class="iconfont icon-zhaoxiangji"></span>
+                    </div>
+                    <div class="point-title">Post on the PCBGOGO forum:</div>
+                    <div class="point-count">Rewards points: <span class="count">90</span></div>
+                    <div class="point-des">
+                        <p>
+                            1. you will get 10 points when you post your feedbacks of shopping
+                            experience, articles and ask and
+                            questions.
+                        </p>
+
+                    </div>
+                    <a class="to-link-btn" href="javascript:void(0)">
+                        Earn Points for Posting
+                    </a>
+                </dd>
+                <dd>
+                    <div class="point-icon">
+                        <span class="iconfont icon-lishijiangli"></span>
+                    </div>
+                    <div class="point-title">Others:</div>
+                    <div class="point-count">Rewards points: <span class="count">400</span></div>
+                    <div class="point-des">
+                        <p>
+                            1、The extra points are awarded by PCBGOGO
+                        </p>
+                        <p>
+                            2、You will be awarded 100 points for filling in all required personal information.
+                        </p>
+                        <p>
+                            3、You will be awarded 300 points after the business account verification(add company
+                            address).
+                        </p>
+                    </div>
+                    <a class="to-link-btn" href="javascript:void(0)">
+                        Earn points for Completing Profile
+                    </a>
+                </dd>
+            </dl>
+        </div>
+        <div class="redeem-box">
+            <div class="redeem-title">
+                <span>Redeem a Gift</span>
+                <a href="./gift-shop.html" target="_blank">
+                    More >
+                </a>
+            </div>
+            <ul class="hot-gifts">
+                <li>
+                    <a href="./gift-shop.html">
+                        <img src="../img/images/gift/hot1.jpg" alt="" width="190" height="161">
+                        <div class="des-box">
+                            <div class="des-text">
+                                65Pcs Male to Male Solderless Flexible Breadboard Jumper Cables Wires
+                            </div>
+                            <div class="price-parent">
+                                <div class="des-price">
+                                    Use GOcoin: <span>100</span>
+                                </div>
+                                <div class="des-money">
+                                    Payment: <span>$10</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./gift-shop.html">
+                        <img src="../img/images/gift/hot2.jpg" alt="" width="190" height="161">
+                        <div class="price-parent">
+                            <div class="des-price">
+                                Use GOcoin: <span>100</span>
+                            </div>
+                            <div class="des-money">
+                                Payment: <span>$5</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./gift-shop.html">
+                        <img src="../img/images/gift/hot3.jpg" alt="" width="190" height="161">
+                        <div class="price-parent">
+                            <div class="des-price">
+                                Use GOcoin: <span>100</span>
+                            </div>
+                            <div class="des-money">
+                                Payment: <span>$20</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./gift-shop.html">
+                        <img src="../img/images/gift/hot4.jpg" alt="" width="190" height="161">
+                        <div class="price-parent">
+                            <div class="des-price">
+                                Use GOcoin: <span>100</span>
+                            </div>
+                            <div class="des-money">
+                                Payment: <span>$69</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--about-points-->
+        <div class="about-points">
+            <ul class="about-title clear-fix js-points-title">
+                <li class="active">About the points</li>
+                <li>About the GOcoin</li>
+                <li>Platinum-VIP</li>
+            </ul>
+            <div class="item-lists js-item-lists">
+                <div class="item">
+                    <p>All PCBGOGO members.
+                        <br>You will get:
+                        <br>You can enjoy the unique VIP service to do your PCB order if you are a member of PCBGOGO.
+                    </p>
+                    <p>
+                        1. PCBGOGO points are mainly in making the level of member, ensuring what's your rank and enjoy
+                        what you have.
+                        <br>2.You will get a special discount on your orders when your level is over V3.
+                        <br>3. You will get "PCBGOGO points" after you confirm your order or 30 days after shipment.
+                        <br>4. We will inform you of privilege change with Email or message.
+                    </p>
+                </div>
+                <div class="item" style="display: none">
+                    <p>
+                        1. PCBGOGO GOcoin is for deducting the Paypal fee when placing your order. 1 GO=$1;
+                        <br>2. The GOcoin is available for all members of PCBGOGO, you will get 1 GOcoin if the points
+                        are up to 50 points
+                    </p>
+                </div>
+                <div class="item" style="display: none">
+                    <p>
+                        What is Platinum-VIP?
+                        <br>Platinum-VIP is highest level membership in PCBGOGO. There is much preferential treatment
+                        when you are PCBGOGO Platinum-VIP. If you are a Platinum-VIP,
+                        <br>You could check the preferential treatment via this way: My Account—Reward points—Reward
+                        points.
+                    </p>
+                    <p>
+                        There is no reward points limit. You could contact us: <a href="javascript:void(0)">service@pcbgogo.com</a>
+                        if you would like to be a Platinum-VIP. We would like to do long time and big
+                        <br>business with you in the future.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--版权说明-->
+        <div class="copy-right-box">
+            Copyright © 2015 PCBGOGO. All rights reserved. Shenzhen JDB Technology Co., Ltd.
+            Address: No. 15, Zhongxing Road, Kengzi Street, Pingshan District, Shenzhen, 518000, China.
+        </div>
+    </div>
+</div>
+<!--会员申请弹窗-->
+<div class="to-apply-pop js-apply-pop" style="display: none">
+    <div class="to-apply-body">
+        <span class="iconfont icon-guanbi js-icon-guanbi"></span>
+        <div class="apply-pop-title">Platinum-VIP?</div>
+        <div class="rights-tips">Platinum-VIP can enjoy all the rights and benefits of basic members and even more order
+            discounts!
+        </div>
+        <dl class="rights-box">
+            <dd>
+                <div class="content">
+                    <div class="discount">15% off</div>
+                    <div class="note">PCB size ＜3㎡</div>
+                </div>
+            </dd>
+            <dd>
+                <div class="content">
+                    <div class="discount">10% off</div>
+                    <div class="note">PCB size ＝ 3~5 ㎡</div>
+                </div>
+            </dd>
+            <dd>
+                <div class="content">
+                    <div class="discount">8% off</div>
+                    <div class="note">PCB size ＞ 5㎡</div>
+                </div>
+            </dd>
+        </dl>
+        <div class="examine-box">
+            <div class="examine-area">
+                <!--    条件不通过给我一个  error 类名  -->
+                <div class="examine-animate js-search-state">
+                    <span class="iconfont icon-sousuo1"></span>
+                </div>
+                <ul class="conditions-box js-conditions-box">
+                    <!--  哪条满足 给我一个active-->
+                    <li>
+                        Monthly Consumption
+                    </li>
+                    <li>
+                        Monthly Order Quantity
+                    </li>
+                    <li>
+                        <a href="去个人信息页面">
+                            The Completeness of Personal\Company Profile
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--   申请失败 给我一个  error 类名-->
+            <div class="examine-state js-examine-state">
+                <!-- 不同条件的提示语如下  -->
+                <!-- Please wait a few minutes before the audit on your history data is completed.-->
+                <!-- Fail! Your monthly consumption/orders don't reach the standard.-->
+                <!-- Success! We will inform you by email after the audit, please check your mail!-->
+                <!-- Fail! Please complete your personal\company information first.-->
+            </div>
+        </div>
+        <button class="to-apply-btn js-apply-btn">
+            CLICK TO APPLY VIP
+        </button>
+        <div class="apply-rules-area">
+            <p>
+                <span> What is Platinum-VIP?</span>
+                Platinum-VIP is highest level membership in PCBGOGO. There is much preferential treatment when you
+                are
+                PCBGOGO Platinum-VIP.
+            </p>
+            <p>
+                There is no reward points limit. You could contact us: service@pcbgogo.com if you would like to be a
+                Platinum-VIP. We would like to do long time and big
+                business with you in the future.
+            </p>
+        </div>
+    </div>
+</div>
+<script src="../img/js/layer-v3.1.1/layer/layer.js"></script>
+<script>
+    $(function () {
+        // vip申请检索 套用删除或修改
+        $('.js-plat-btn').click(function () {
+            $('.js-apply-pop').fadeIn();
+        });
+        // 关闭申请弹窗
+        $('.js-icon-guanbi').click(function () {
+            $(this).parents('.js-apply-pop').hide();
+        });
+        $('.js-apply-btn').click(function () {
+            if ($(this).hasClass('disabled')) {
+                layer.msg('正在检索中，请稍后提交...');
+                return false;
+            }
+            $('.js-search-state').removeClass('error');
+            $('.js-examine-state').removeClass('error');
+            $('.js-conditions-box li').removeClass('active');
+            $('.js-search-state').addClass('searching');
+            $(this).addClass('disabled');
+            $('.js-examine-state').html('Please wait a few minutes before the audit on your history data is completed')
+            $.ajax({
+                url: '../img/js/examine.json',
+                method: 'get',
+                success: function (res) {
+                    setTimeout(function () {  // 模拟检索套用删除
+                        $('.js-search-state').removeClass('searching');
+                        $('.js-apply-btn').removeClass('disabled');
+                        var randNumber = parseInt(Math.random() * 3 + 1);
+                        if (randNumber === 1) {
+                            $('.js-conditions-box li').eq(0).addClass('active');
+                            $('.js-search-state').addClass('error');
+                            $('.js-examine-state').addClass('error').html("Fail! Your monthly consumption/orders don't reach the standard.");
+                        }
+                        if (randNumber === 2) {
+                            $('.js-conditions-box li').eq(0).addClass('active');
+                            $('.js-conditions-box li').eq(1).addClass('active');
+                            $('.js-search-state').addClass('error');
+                            $('.js-examine-state').addClass('error').html('Fail! Please complete your personal company information first.');
+                        }
+                        if (randNumber === 3) {
+                            $('.js-conditions-box li').addClass('active');
+                            $('.js-examine-state').html('Success! We will inform you by email after the audit, please check your mail!');
+                        }
+                    }, 5000);
+                },
+                error: function (err) {
+                    console.log(err);
+                }
+            });
+        });
+        // 底部规则
+        $('.js-points-title li').click(function () {
+            var index = $(this).index();
+            $(this).addClass('active').siblings('li').removeClass('active');
+            $('.js-item-lists .item').eq(index).fadeIn().siblings('.item').fadeOut();
+        });
+    });//end function
+</script>
+</body>
+</html>

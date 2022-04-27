@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/data-page.css">
+</head>
+<body>
+<div class="data-box">
+    <div class="data-top">
+        <div class="data-title">
+            PCB明细
+        </div>
+        <div class="data-date">
+            <select name="">
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+            </select>
+            <select name="">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            <select name="">
+                <option value="全部">全部</option>
+                <option value="test1">test1</option>
+                <option value="test2">test2</option>
+                <option value="test3">test3</option>
+            </select>
+        </div>
+    </div>
+    <div class="data-body">
+        <div class="data-item">
+            <div class="item-l">
+                <h3> 订单交期统计</h3>
+                <div class="tips">
+                    <div class="tips-name">
+                        当年总 <span class="count">
+                        3101
+                    </span>
+                    </div>
+                    <div class="list-box">
+                        <div class="list">
+                            <div class="top">
+                                <span class="color" style="background: #FF0066"></span>
+                                <span class="label">加急</span>
+                                <span class="num">96</span>
+                            </div>
+                            <div class="des">
+                                <p>12小时：0</p>
+                                <p>24小时：3</p>
+                                <p>48小时：6</p>
+                                <p>48小时：6</p>
+                                <p>72小时：8</p>
+                                <p>96小时：0</p>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="top">
+                                <span class="color " style="background: #5470C6"></span>
+                                <span class="label">打样</span>
+                                <span class="num">2865</span>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="top">
+                                <span class="color" style="background: #73C4DE"></span>
+                                <span class="label">批量</span>
+                                <span class="num">439</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-r">
+                <div id="pcb-delivery-time">
+
+                </div>
+            </div>
+        </div>
+        <div class="data-item">
+            <div class="item-l">
+                <h3>订单费用明细统计</h3>
+                <div class="tips">
+                    <div class="tips-name">
+                        当年总 <span class="count">
+                        6666
+                    </span>
+                    </div>
+                    <div class="list-box">
+                        <div class="list">
+                            <div class="top">
+                                <span class="color" style="background: pink"></span>
+                                <span class="label">成本价</span>
+                                <span class="num">96</span>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="top">
+                                <span class="color " style="background: #c69aa3"></span>
+                                <span class="label">工厂报价</span>
+                                <span class="num">$2865</span>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="top">
+                                <span class="color " style="background: #B1B34D"></span>
+                                <span class="label">系统报价</span>
+                                <span class="num">$2865</span>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="top">
+                                <span class="color " style="background: #89CE7C"></span>
+                                <span class="label">审核后报价</span>
+                                <span class="num">$2865</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-r">
+                <div id="pcb-cost-detail">
+
+                </div>
+            </div>
+        </div>
+        <!--  板材-->
+        <div class="data-item">
+            <div class="item-l">
+                <h3>订单工艺月明细--板材</h3>
+            </div>
+            <div class="item-r">
+                <div class="device-item">
+                    <div id="pcb-device1" class="device">
+
+                    </div>
+                    <table class="device-t">
+                        <tr>
+                            <th>
+                                板材
+                            </th>
+                            <th>
+                                面积(㎡)
+                            </th>
+                            <th>
+                                订单数
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="color" style="background: #b21f1f"></span>
+                                FR-4
+                            </td>
+                            <td>
+                                1326
+                            </td>
+                            <td>
+                                2307
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="color" style="background: #FF0066"></span>
+                                Aluminum Board
+                            </td>
+                            <td>
+                                1326
+                            </td>
+                            <td>
+                                2307
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="color" style="background: #FF7070"></span>
+                                Rogers
+                            </td>
+                            <td>
+                                1326
+                            </td>
+                            <td>
+                                2307
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="color" style="background: #5470C6"></span>
+                                HDI
+                            </td>
+                            <td>
+                                1326
+                            </td>
+                            <td>
+                                2307
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="color" style="background: #73C4DE"></span>
+                                Copper Base
+                            </td>
+                            <td>
+                                1326
+                            </td>
+                            <td>
+                                2307
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="device-item">
+                    <div id="pcb-device2" class="device">
+
+                    </div>
+                    <table class="device-t">
+                        <tr>
+                            <th>
+                                板材
+                            </th>
+                            <th>
+                                面积(㎡)
+                            </th>
+                            <th>
+                                订单数
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="color" style="background: #b21f1f"></span>
+                                FR-4
+                            </td>
+                            <td>
+                                1326
+                            </td>
+                            <td>
+                                2307
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="color" style="background: #FF0066"></span>
+                                Aluminum Board
+                            </td>
+                            <td>
+                                1326
+                            </td>
+                            <td>
+                                2307
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="color" style="background: #FF7070"></span>
+                                Rogers
+                            </td>
+                            <td>
+                                1326
+                            </td>
+                            <td>
+                                2307
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="color" style="background: #5470C6"></span>
+                                HDI
+                            </td>
+                            <td>
+                                1326
+                            </td>
+                            <td>
+                                2307
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="color" style="background: #73C4DE"></span>
+                                Copper Base
+                            </td>
+                            <td>
+                                1326
+                            </td>
+                            <td>
+                                2307
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--  层数-->
+        <div class="data-item">
+            <div class="item-l">
+                <h3>订单工艺月明细--层数</h3>
+            </div>
+            <div class="item-r">
+                <div class="device-item">
+                    <div id="pcb-layer1" class="device">
+
+                    </div>
+                    <table class="device-t">
+                        <tr>
+                            <th>
+                                板材
+                            </th>
+                            <th>
+                                面积(㎡)
+                            </th>
+                            <th>
+                                订单数
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="color" style="background: #b21f1f"></span>
+                                1层
+                            </td>
+                            <td>
+                                1326
+                            </td>
+                            <td>
+                                2307
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="color" style="background: #FF0066"></span>
+                                2层
+                            </td>
+                            <td>
+                                1326
+                            </td>
+                            <td>
+                                2307
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="color" style="background: #FF7070"></span>
+                                4层
+                            </td>
+                            <td>
+                                1326
+                            </td>
+                            <td>
+                                2307
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="color" style="background: #5470C6"></span>
+                                6层
+                            </td>
+                            <td>
+                                1326
+                            </td>
+                            <td>
+                                2307
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="color" style="background: #73C4DE"></span>
+                                8层
+                            </td>
+                            <td>
+                                1326
+                            </td>
+                            <td>
+                                2307
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                                <span class="color" style="background: #89DAC8;"></span>
+                                10层
+                            </td>
+                            <td>
+                                1326
+                            </td>
+                            <td>
+                                2307
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="color" style="background: #89CE7C"></span>
+                                12层
+                            </td>
+                            <td>
+                                1326
+                            </td>
+                            <td>
+                                2307
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="color" style="background: #B1B34D"></span>
+                                14层
+                            </td>
+                            <td>
+                                1326
+                            </td>
+                            <td>
+                                2307
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="device-item">
+                    <div id="pcb-layer2" class="device">
+
+                    </div>
+                    <table class="device-t">
+                        <tr>
+                            <th>
+                                板材
+                            </th>
+                            <th>
+                                面积(㎡)
+                            </th>
+                            <th>
+                                订单数
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="color" style="background: #b21f1f"></span>
+                                1层
+                            </td>
+                            <td>
+                                1326
+                            </td>
+                            <td>
+                                2307
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="color" style="background: #FF0066"></span>
+                                2层
+                            </td>
+                            <td>
+                                1326
+                            </td>
+                            <td>
+                                2307
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="color" style="background: #FF7070"></span>
+                                4层
+                            </td>
+                            <td>
+                                1326
+                            </td>
+                            <td>
+                                2307
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="color" style="background: #5470C6"></span>
+                                6层
+                            </td>
+                            <td>
+                                1326
+                            </td>
+                            <td>
+                                2307
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="color" style="background: #73C4DE"></span>
+                                8层
+                            </td>
+                            <td>
+                                1326
+                            </td>
+                            <td>
+                                2307
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                                <span class="color" style="background: #89DAC8;"></span>
+                                10层
+                            </td>
+                            <td>
+                                1326
+                            </td>
+                            <td>
+                                2307
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="color" style="background: #89CE7C"></span>
+                                12层
+                            </td>
+                            <td>
+                                1326
+                            </td>
+                            <td>
+                                2307
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="color" style="background: #B1B34D"></span>
+                                14层
+                            </td>
+                            <td>
+                                1326
+                            </td>
+                            <td>
+                                2307
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--  阻焊-->
+        <div class="data-item">
+            <div class="item-l">
+                <h3>订单工艺月明细--阻焊</h3>
+            </div>
+            <div class="item-r">
+                <div class="device-item">
+                    <div id="pcb-welding1" class="device">
+
+                    </div>
+                    <table class="device-t">
+                        <tr>
+                            <th>
+                                板材
+                            </th>
+                            <th>
+                                面积(㎡)
+                            </th>
+                            <th>
+                                订单数
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="color" style="background: green"></span>
+                                Green
+                            </td>
+                            <td>
+                                1326
+                            </td>
+                            <td>
+                                2307
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="color" style="background: red"></span>
+                                Red
+                            </td>
+                            <td>
+                                1326
+                            </td>
+                            <td>
+                                2307
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="color" style="background: Yellow"></span>
+                                Yellow
+                            </td>
+                            <td>
+                                1326
+                            </td>
+                            <td>
+                                2307
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="color" style="background: Blue"></span>
+                                Blue
+                            </td>
+                            <td>
+                                1326
+                            </td>
+                            <td>
+                                2307
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="color" style="background: #efefef"></span>
+                                White
+                            </td>
+                            <td>
+                                1326
+                            </td>
+                            <td>
+                                2307
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                                <span class="color" style="background: Purple;"></span>
+                                Purple
+                            </td>
+                            <td>
+                                1326
+                            </td>
+                            <td>
+                                2307
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="color" style="background: Black"></span>
+                                Black
+                            </td>
+                            <td>
+                                1326
+                            </td>
+                            <td>
+                                2307
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="color" style="background: #767676"></span>
+                                Matte black
+                            </td>
+                            <td>
+                                1326
+                            </td>
+                            <td>
+                                2307
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="color" style="background: #57be5a"></span>
+                                Matte green
+                            </td>
+                            <td>
+                                1326
+                            </td>
+                            <td>
+                                2307
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="color" style="background: None"></span>
+                                None
+                            </td>
+                            <td>
+                                1326
+                            </td>
+                            <td>
+                                2307
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="device-item">
+                    <div id="pcb-welding2" class="device">
+
+                    </div>
+                    <table class="device-t">
+                        <tr>
+                            <th>
+                                板材
+                            </th>
+                            <th>
+                                面积(㎡)
+                            </th>
+                            <th>
+                                订单数
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="color" style="background: green"></span>
+                                Green
+                            </td>
+                            <td>
+                                1326
+                            </td>
+                            <td>
+                                2307
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="color" style="background: red"></span>
+                                Red
+                            </td>
+                            <td>
+                                1326
+                            </td>
+                            <td>
+                                2307
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="color" style="background: Yellow"></span>
+                                Yellow
+                            </td>
+                            <td>
+                                1326
+                            </td>
+                            <td>
+                                2307
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="color" style="background: Blue"></span>
+                                Blue
+                            </td>
+                            <td>
+                                1326
+                            </td>
+                            <td>
+                                2307
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="color" style="background: #efefef"></span>
+                                White
+                            </td>
+                            <td>
+                                1326
+                            </td>
+                            <td>
+                                2307
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                                <span class="color" style="background: Purple;"></span>
+                                Purple
+                            </td>
+                            <td>
+                                1326
+                            </td>
+                            <td>
+                                2307
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="color" style="background: Black"></span>
+                                Black
+                            </td>
+                            <td>
+                                1326
+                            </td>
+                            <td>
+                                2307
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="color" style="background: #767676"></span>
+                                Matte black
+                            </td>
+                            <td>
+                                1326
+                            </td>
+                            <td>
+                                2307
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="color" style="background: #57be5a"></span>
+                                Matte green
+                            </td>
+                            <td>
+                                1326
+                            </td>
+                            <td>
+                                2307
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="color" style="background: None"></span>
+                                None
+                            </td>
+                            <td>
+                                1326
+                            </td>
+                            <td>
+                                2307
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="lib/echarts/echarts.js"></script>
+<script>
+    window.onload = function () {
+        // pcb 订单交期统计
+        var chartDom1 = document.getElementById('pcb-delivery-time');
+        var myChart1 = echarts.init(chartDom1);
+        var options1 = {
+            legend: {
+                show: false
+            },
+            tooltip: {
+                trigger: 'item'
+            },
+            color: ['#FF0066', '#5470C6', '#73C4DE'],
+            series: [{
+                name: 'pcb订单加急类别',
+                type: 'pie',
+                radius: '80%',
+                data: [],  // pcb 订单数据明细
+                emphasis: {
+                    itemStyle: {
+                        shadowBlur: 10,
+                        shadowOffsetX: 0,
+                        shadowColor: 'rgba(0, 0, 0, 0.5)'
+                    }
+                }
+            }]
+        }
+        $.ajax({
+            url: './pcb-mock.json',
+            success: function (data) {
+                options1.series[0].data = data.pcb
+                myChart1.setOption(options1, true);
+            }, error: function (err) {
+                console.log(err)
+            }
+        })
+
+        // pcb 订单费用明细统计
+        var chartDom2 = document.getElementById('pcb-cost-detail');
+        var myChart2 = echarts.init(chartDom2);
+        var options2 = {
+            legend: {
+                data: ['成本价', '工厂报价', '系统报价', '审核后报价']
+            },
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {
+                    type: 'shadow'
+                }
+            },
+            color: ['pink', '#c69aa3', '#B1B34D', '#89CE7C'],
+            xAxis: {
+                type: 'category',
+                data: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月']
+            },
+            yAxis: {
+                type: 'value'
+            },
+            series: []
+        }
+        $.ajax({
+            url: './pcb-mock.json',
+            success: function (data) {
+                options2.series = data.pcbCost
+                myChart2.setOption(options2, true)
+            },
+            error: function (err) {
+                console.log(err)
+            }
+        })
+
+        // pcb 订单工艺月明细1
+        var chartDom3 = document.getElementById('pcb-device1');
+        var myChart3 = echarts.init(chartDom3);
+        var options3 = {
+            title: {
+                text: '板材\n(总)',
+                left: 0,
+                top: 50,
+                textStyle: {
+                    fontSize: 14
+                }
+            },
+            color: ['#B21F1F', '#FF0066', '#FF7070', '#5470C6', '#73C4DE'],
+            tooltip: {
+                trigger: 'item'
+            },
+            legend: {
+                top: '5%',
+                left: 'center',
+                show: false
+            },
+            series: [
+                {
+                    name: '板材',
+                    type: 'pie',
+                    radius: ['40%', '70%'],
+                    avoidLabelOverlap: false,
+                    itemStyle: {
+                        borderRadius: 10,
+                        borderColor: '#fff',
+                        borderWidth: 2
+                    },
+                    label: {
+                        show: false,
+                        position: 'center'
+                    },
+                    emphasis: {
+                        label: {
+                            show: true,
+                            fontSize: '14'
+                        }
+                    },
+                    labelLine: {
+                        show: false
+                    },
+                    data: []
+                }
+            ]
+        }
+        $.ajax({
+            url: './pcb-mock.json',
+            success: function (data) {
+                options3.series[0].data = data.pcbDevice1
+                myChart3.setOption(options3, true)
+            },
+            error: function () {
+
+            }
+        })
+
+        // pcb 订单工艺月明细2
+        var chartDom4 = document.getElementById('pcb-device2');
+        var myChart4 = echarts.init(chartDom4)
+        var options4 = {
+            title: {
+                text: '板材\n(确认下单)',
+                left: 0,
+                top: 50,
+                textStyle: {
+                    fontSize: 14
+                }
+            },
+            color: ['#B21F1F', '#FF0066', '#FF7070', '#5470C6', '#73C4DE'],
+            tooltip: {
+                trigger: 'item'
+            },
+            legend: {
+                top: '5%',
+                left: 'center',
+                show: false
+            },
+            series: [
+                {
+                    name: '元器件代购',
+                    type: 'pie',
+                    radius: ['40%', '70%'],
+                    avoidLabelOverlap: false,
+                    label: {
+                        show: false,
+                        position: 'center'
+                    },
+                    emphasis: {
+                        label: {
+                            show: true,
+                            fontSize: '14'
+                        }
+                    },
+                    labelLine: {
+                        show: false
+                    },
+                    data: []
+                }
+            ]
+        }
+        $.ajax({
+            url: './pcb-mock.json',
+            success: function (data) {
+                options4.series[0].data = data.pcbDevice2
+                myChart4.setOption(options4, true)
+            },
+            error: function () {
+
+            }
+        })
+
+        // pcb 订单工艺月明细--层数总
+        var chartDom5 = document.getElementById('pcb-layer1');
+        var myChart5 = echarts.init(chartDom5);
+        var options5 = {
+            title: {
+                text: '板材\n(总)',
+                left: 0,
+                top: 50,
+                textStyle: {
+                    fontSize: 14
+                }
+            },
+            color: ['#B21F1F', '#FF0066', '#FF7070', '#5470C6', '#73C4DE', '#89DAC8', '#89CE7C', '#B1B34D'],
+            tooltip: {
+                trigger: 'item'
+            },
+            legend: {
+                top: '5%',
+                left: 'center',
+                show: false
+            },
+            series: [
+                {
+                    name: '板材',
+                    type: 'pie',
+                    radius: ['40%', '70%'],
+                    avoidLabelOverlap: false,
+                    itemStyle: {
+                        borderRadius: 10,
+                        borderColor: '#fff',
+                        borderWidth: 2
+                    },
+                    label: {
+                        show: false,
+                        position: 'center'
+                    },
+                    emphasis: {
+                        label: {
+                            show: true,
+                            fontSize: '14'
+                        }
+                    },
+                    labelLine: {
+                        show: false
+                    },
+                    data: []
+                }
+            ]
+        }
+
+        $.ajax({
+            url: './pcb-mock.json',
+            success: function (data) {
+                options5.series[0].data = data.pcbLayer1
+                myChart5.setOption(options5, true)
+            },
+            error: function () {
+
+            }
+        })
+
+        // pcb 订单工艺月明细-- 层数确认
+        var chartDom6 = document.getElementById('pcb-layer2');
+        var myChart6 = echarts.init(chartDom6);
+        var options6 = {
+            title: {
+                text: '板材\n(确认下单)',
+                left: 0,
+                top: 50,
+                textStyle: {
+                    fontSize: 14
+                }
+            },
+            color: ['#B21F1F', '#FF0066', '#FF7070', '#5470C6', '#73C4DE', '#89DAC8', '#89CE7C', '#B1B34D'],
+            tooltip: {
+                trigger: 'item'
+            },
+            legend: {
+                top: '5%',
+                left: 'center',
+                show: false
+            },
+            series: [
+                {
+                    name: '元器件代购',
+                    type: 'pie',
+                    radius: ['40%', '70%'],
+                    avoidLabelOverlap: false,
+                    label: {
+                        show: false,
+                        position: 'center'
+                    },
+                    emphasis: {
+                        label: {
+                            show: true,
+                            fontSize: '14'
+                        }
+                    },
+                    labelLine: {
+                        show: false
+                    },
+                    data: []
+                }
+            ]
+        }
+
+        $.ajax({
+            url: './pcb-mock.json',
+            success: function (data) {
+                options6.series[0].data = data.pcbLayer2
+                myChart6.setOption(options6, true)
+            },
+            error: function () {
+
+            }
+        })
+
+        // pcb 订单工艺月明细--阻焊颜色总
+        var chartDom7 = document.getElementById('pcb-welding1');
+        var myChart7 = echarts.init(chartDom7);
+        var options7 = {
+            title: {
+                text: '阻焊颜色\n(总)',
+                left: 0,
+                top: 50,
+                textStyle: {
+                    fontSize: 14
+                }
+            },
+            color: ['green', 'red', 'yellow', 'blue', '#f1f1f1', 'purple', 'black', '#767676', '#57be5a', 'pink'],
+            tooltip: {
+                trigger: 'item'
+            },
+            legend: {
+                top: '5%',
+                left: 'center',
+                show: false
+            },
+            series: [
+                {
+                    name: '板材',
+                    type: 'pie',
+                    radius: ['40%', '70%'],
+                    avoidLabelOverlap: false,
+                    itemStyle: {
+                        borderRadius: 10,
+                        borderColor: '#fff',
+                        borderWidth: 2
+                    },
+                    label: {
+                        show: false,
+                        position: 'center'
+                    },
+                    emphasis: {
+                        label: {
+                            show: true,
+                            fontSize: '14'
+                        }
+                    },
+                    labelLine: {
+                        show: false
+                    },
+                    data: []
+                }
+            ]
+        }
+        $.ajax({
+            url: './pcb-mock.json',
+            success: function (data) {
+                options7.series[0].data = data.pcbWelding1
+                myChart7.setOption(options7, true)
+            },
+            error: function () {
+
+            }
+        })
+
+        // pcb 订单工艺月明细-- 阻焊颜色确认
+        var chartDom8 = document.getElementById('pcb-welding2');
+        var myChart8 = echarts.init(chartDom8);
+        var options8 = {
+            title: {
+                text: '阻焊颜色\n(确认下单)',
+                left: 0,
+                top: 50,
+                textStyle: {
+                    fontSize: 14
+                }
+            },
+            color: ['green', 'red', 'yellow', 'blue', '#f1f1f1', 'purple', 'black', '#767676', '#57be5a', 'pink'],
+            tooltip: {
+                trigger: 'item'
+            },
+            legend: {
+                top: '5%',
+                left: 'center',
+                show: false
+            },
+            series: [
+                {
+                    name: '元器件代购',
+                    type: 'pie',
+                    radius: ['40%', '70%'],
+                    avoidLabelOverlap: false,
+                    label: {
+                        show: false,
+                        position: 'center'
+                    },
+                    emphasis: {
+                        label: {
+                            show: true,
+                            fontSize: '14'
+                        }
+                    },
+                    labelLine: {
+                        show: false
+                    },
+                    data: []
+                }
+            ]
+        }
+        $.ajax({
+            url: './pcb-mock.json',
+            success: function (data) {
+                options8.series[0].data = data.pcbWelding2
+                myChart8.setOption(options8, true)
+            },
+            error: function () {
+
+            }
+        })
+
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,2960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!--新加-->
+    <meta name="viewport" content="width=width,user-scalable=no">
+    <meta name="viewport" content="user-scalable=yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="full-screen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="address=no">
+    <!--新加-->
+    <title> China PCB Prototype Manufacture |Pcbgogo.com</title>
+    <meta name="description"
+          content="As a full-service PCB prototype and assembly provider,PCBGOGO can cover all your pcb requirements, including custom prototype and mass value fabrication,high-quality pcb assembly.">
+    <!--网页标题左侧显示-->
+    <link rel="icon" href="img/images/title-logo.png" type="image/x-icon">
+    <!--收藏夹显示图标-->
+    <link rel="shortcut icon" href="img/images/title-logo.png" type="image/x-icon">
+    <!--字体图标-->
+    <link rel="stylesheet" href="img/fonts/iconfont.css">
+    <link rel="stylesheet" href="img/css/index.css">
+    <script src="img/js/jquery/jquery-1.11.3.min.js"></script>
+    <!--    <script src="img/js/ie8/bootstrapBase.js"></script>-->
+    <!--  <script src="img/js/scenario/lottie.js"></script>-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!--    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-69152275-1"></script>-->
+    <!--    <script>-->
+    <!--        window.dataLayer = window.dataLayer || [];-->
+    <!--        function gtag() {-->
+    <!--            dataLayer.push(arguments);-->
+    <!--        }-->
+    <!--        gtag('js', new Date());-->
+    <!--        gtag('config', 'UA-69152275-1');-->
+    <!--    </script>-->
+
+    <!--   追加ga分析代码 -->
+    <!-- Global site tag (gtag.js) - Google Ads: 938247797 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-938247797"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag () {
+        dataLayer.push(arguments);
+      }
+
+      gtag('js', new Date());
+
+      gtag('config', 'AW-938247797');
+    </script>
+    <script>
+      window.addEventListener('load', function (event) {
+        document.querySelectorAll('input[type="button"]').forEach(function (e) {
+          e.addEventListener('click', function () {
+            if (e.value == "Register") {
+              var email = document.querySelector('input[name="RegEmail"]').value;
+              var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+              var pass = document.querySelector('input[name="RegPassWord"]').value;
+              var cpass = document.querySelector('input[name="RegRePassWord"]').value;
+              if (email != "" && email.match(mailformat) && pass != "" && cpass != "" && pass == cpass) {
+                gtag('event', "注册转化", {
+                  'event_category': "注册转化",
+                });
+              }
+            }
+          });
+        });
+      });
+    </script>
+    <script>
+      window.addEventListener('load', function (event) {
+        document.querySelectorAll('input[type="submit"]').forEach(function (e) {
+          e.addEventListener('click', function () {
+            if (e.value == "Send Message") {
+              var email = document.querySelector('input[name="email"]').value;
+              var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+              var name = document.querySelector('input[name="name"]').value;
+              var textarea = document.querySelector('textarea').value;
+              if (email != "" && email.match(mailformat) && name != "" && textarea != "") {
+                gtag('event', "contact", {
+                  'event_category': "contact",
+                });
+              }
+            }
+          });
+        });
+      });
+    </script>
+    <script>
+      window.addEventListener('load', function (event) {
+        document.querySelectorAll(".js-calculate").forEach(function (e) {
+          e.addEventListener('click', function () {
+            gtag('event', "quote", {
+              'event_category': "quote",
+            });
+          });
+        });
+      })
+    </script>
+</head>
+<body>
+<!--年假通知模板-->
+<!--<div class="holiday-hint"-->
+<!--     style="background: #c52929;color:#ffffff;padding: 5px 0;cursor: pointer;min-height: 50px;min-width: 1280px">-->
+<!--    <div class="container_warp" style="position: relative;text-align: center">-->
+<!--        <div class="iconfont icon-guanbi" style="width: 20px;height: 20px;line-height: 20px;text-align: center;-->
+<!--font-size:20px;position:absolute;top:5px;right: 0;z-index: 12; color: #e8d6bf;"-->
+<!--             onclick="this.parentNode.parentNode.style.display='none'"></div>-->
+<!--        <div style="padding-right: 10px;font-size: 12px;line-height: 18px;padding-top: 2px" class="customers"><h5-->
+<!--                style="display: inline-block;">Dear customers:</h5>PCBGOGO will-->
+<!--            have a holiday to celebrate Chinese Spring Festival, you can still place your order, but please schedule-->
+<!--            your orders reasonably because they may be delayed, sorry for the inconvenience.-->
+<!--        </div>-->
+<!--        <a href="holiday-notice.html" style="color: #ffffff;font-size: 12px;">You can pls check our production-->
+<!--            schedule here in detail >></a>-->
+<!--    </div>-->
+<!--</div>-->
+
+
+<!--<div class="holiday-hint"-->
+<!--     onclick="window.open('https://www.pcbgogo.com/blog/Holiday_Notice_of_the_Spring_Festival.html','_bank')"-->
+<!--     style="background: #c52929;color:#ffffff;padding: 5px 0;cursor: pointer;min-height: 50px;min-width: 1280px">-->
+<!--    <div class="container_warp" style="position: relative;text-align: center">-->
+<!--        <div class="iconfont icon-guanbi" style="width: 20px;height: 20px;line-height: 20px;text-align: center;-->
+<!--font-size:20px;position:absolute;top:5px;right: 0;z-index: 12; color: #e8d6bf;"-->
+<!--             onclick="this.parentNode.parentNode.style.display='none'"></div>-->
+<!--        <div style="padding-right: 10px;font-size: 12px;line-height: 18px;padding-top: 2px" class="customers"><h5-->
+<!--                style="display: inline-block;">Dear customers:</h5>-->
+<!--            PCBGOGO will have 13 days holiday to celebrate Chinese New Year from 19th January to 31st January , you can still place your order,-->
+<!--            <br>but please schedule your orders reasonably because they may be delayed, sorry for the inconvenience.-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+
+<!--<div class="holiday-hint"-->
+<!--     style="background: #c52929;color:#ffffff;padding: 5px 0;cursor: pointer;min-height: 50px;min-width: 1280px">-->
+<!--    <div class="container_warp" style="position: relative;text-align: center">-->
+<!--        <div class="iconfont icon-guanbi" style="width: 20px;height: 20px;line-height: 20px;text-align: center;-->
+<!--font-size:20px;position:absolute;top:5px;right: 0;z-index: 12; color: #e8d6bf;"-->
+<!--             onclick="this.parentNode.parentNode.style.display='none'"></div>-->
+<!--        <div style="padding-right: 10px;font-size: 12px;line-height: 18px;padding-top: 2px" class="customers"><h5-->
+<!--                style="display: inline-block;">【クリスマス休暇のお知らせ】 </h5>-->
+<!--            クリスマスを迎え、PCBGOGO営業部は12月24日(火)~26日(木)に休暇させて頂きます。-->
+<!--            休暇期間は引き続き受注·製造しております。-->
+<!--            <br>お急ぎの連絡は各担当者或いはservice@pcbgogo.jp にご連絡ください。何卒、ご理解とご協力を頂きますよう宜しくお願い申し上げます。-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+
+<!--活动链接模板-->
+<!--<div class="top-active" style="background: url(img/images/activity/active-link-img.jpg) no-repeat center;height: 70px;width: 100%;min-width: 1280px">-->
+<!--<a href="activity/activity11.html" style="width: 100%;height: 100%"></a>-->
+<!--</div>-->
+<!--放假公告 模板-->
+<!--<div class="holiday-tips" style="height: auto;background-color: #c52929;padding: 5px 0;color: #fff">-->
+<!--    <div class="tips-content clear-fix" style="padding-top: 0">-->
+<!--        <span class="iconfont icon-guanbi" style="color: #fff;top:12px;"-->
+<!--              onclick="this.parentNode.parentNode.style.display='none'"></span>-->
+<!--        <div class="tips-logo">-->
+<!--            <span class="iconfont icon-tongzhi1" style="color: #ffffff"></span>-->
+<!--        </div>-->
+<!--        <div class="tips-text">-->
+<!--            <div class="quote-link">-->
+<!--&lt;!&ndash;                <span class="enquiry">Dear customers:</span><br>&ndash;&gt;-->
+<!--                <p style="width: 1105px"> <span style="font-weight: bold;margin-right: 10px">[Labor Day Holiday Notice]</span> PCBGOGO will have a 3-day holiday (May 1st-3rd). Instant online quote,ordering-->
+<!--                    service and manufacturing won't stop during the holiday. <br>Shipping will begin when we are back to work.-->
+<!--                    Contact us in advance if you have any expedited order demand.</p>-->
+<!--                <p style="width: 1105px;margin-top: 6px">-->
+<!--                    <span style="font-weight: bold;margin-right: 10px">[Order Delivery Notice]</span> Due to the epidemic situation, DHL Express limits the number of package deliveries,-->
+<!--                    resulting in some delay of your order. While, the FedEx service is <br> available for you as normal. We are-->
+<!--                    sorry-->
+<!--                    for the inconvenience. Please be noted, thank you! (April 28th, 2020)-->
+<!--                </p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+<!--顶部支付宝动画模板-->
+<!--<div id="bodymovin" style="height: 50px;line-height: 50px;background-color: #c52929;">-->
+<!--    <div class="warp">-->
+<!--        <a href="/member/register" style="position: relative;z-index: 999;color: #ffffff">-->
+<!--            Getting <span style="color: #ffffff">$20</span>coupon<span class="space" style="margin: 0 20px"></span>for-->
+<!--            new member-->
+<!--            <span class="see-more">GO</span>-->
+<!--        </a>-->
+<!--        <div id="scenario" style="height: 90px;left: 530px;top:-18px"></div>-->
+<!--        <div id="yh" style="left: 510px"></div>-->
+<!--    </div>-->
+<!--    <span class="guanbi" style="top:6px" onclick="this.parentNode.style.display='none'">×</span>-->
+<!--</div>-->
+<!--浏览器版本提示-->
+<div style="display: none" id="Browser" class="version-tips">
+    <div class="version-mask" onclick="this.parentNode.style.display='none'"></div>
+    <div class="version-box">
+        <div class="tips-label">
+            PCBGOGO.COM website adopts the advanced development technology.
+            <br>To enjoy better user experience, we strongly suggest you update your broswer.
+        </div>
+        <div class="browser">
+            <div class="down-browser">
+                <a href="https://www.google.com/intl/zh-CN/chrome/" target="_blank">
+                    <img
+                            src="data:image/png;base64,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"
+                            alt="">
+                    <div class="label-name">
+                        <img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAMAAADzN3VRAAAAP1BMVEUAAAAAgsYAgsYAgsYAgsYAgsYAgsYAgsYAgsYAgsYAgsYAgsYAgsYAgsYAgsYAgsYAgsYAgsYAgsYAgsYAgsbeHr9QAAAAFHRSTlMA8SUY+6uiWwawg1Tt40XMgjUODfJ2srkAAAB1SURBVCjPzc9LEoQgDEXRQALpbtT28/a/VqUULAFnDrwTBqdIJXTGnemYWjGAGxHIW4U2oargvHcA4jNdxP6R8sXEz/eAkVIF/SrYyBUQVJf0K8OsGkgAmw7SvBAgZKLkTjHPC1fChwy2bNilVRS5EaHetOtXqkMLGklCX78AAAAASUVORK5CYII="
+                                alt="">
+                        <span>
+          Chrome
+        </span>
+                    </div>
+                </a>
+                <a href="http://www.firefox.com.cn/download/" target="_blank">
+                    <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAABfCAMAAABWUID5AAAC/VBMVEUAAAAAAAAAAQEABAQCBQUDBwUEAQABAAAGBQMAAAAHBwMHAwAFAQAne6viawQJAAABAAD88wq8JgQIAgBGttYCAACN9vmKfzV27vWNIAAccHnYngy/RAmuJgCBLANCCQJ9GAJLFwBCPARnEwZgGwWNYQCblQM5IAFe3OvehhLx7QO7sANhLQBhvYrIXQfc0QTOcADPwQKmOQESSU6/ZgA7xdIuprY2DgqrQx7mzSDrwQdi6N3b2wAXZIMjkbeBcgMtLg4pd4wSUHgol6OodgD/9AHqZQn+6wLmUwXnYAn/7wLiTAMWVpD95AXxfgbrbA3oWgbHJAHqYAbfRQKoDQC0FQjsaQbwdwbtbgb93QKiCgIBveHBHQEviba7GAIyj7vxjAb2nwOvEAD3pgIAtd02lsDyhgbykQX6wgPjXQ3thwYArdjwhhPtcgs5n8fymAn70ALPKQEDgL771wUkdKXFMQMBpdQrgbHteBH6yQP4tQH3xyX6vAT4rQIDnc4GaK/bOwEDi8Ugap74zRn//AID1uz50hL3sgjVMQEDlMnXRAVCqs7xvCPylh3MPQQAxOTvfxHodAQbYJTwjxndYAMEzOYTT4baTAbqfgQB7/cD4fECdbcJMmDcVxnUOgQEW6UCOIoiXXv62xYCTZwRR3gOQGkBQJUFGFrdVgUJ+v0aTmr97Rf3lwEDlbwDBEv86Dn3xhn50yf1qgszQkYWL0rrbBrvoQ4Df6UaP1gEL3sfhr4EXoLRUAMllMQXerY7W18UGEL5syj1pCBC8PkDb5cFImzQryqynSqhiin86yb+dQD5XQBLyeMdrtZbNkG6+fw0hZgHBjjish67Kh3Lihx8QDy+diza/v9OVT+EWkNwcEG2OD8+IDPoczHGpCj/+PGlQWTsgEFjYjebUjbhYyf+8NpHob2zQFnih1GrZz8nGDmGLyIvurUvb4Sa4Hfi2r/+5LH/w39kfWP7m1Ha5EPMRy5jxaSysJWQ0YWPiH1yom6+t0T/oTqHnl234kwJPEvOAAAARXRSTlMADhggMipNO1hiRW15/v7Cmf39iPyw/v786GXz/fCw1MibYuuws5uJ+vr2uoD++eLi0dFF2s2opv78+uTXic93PbCqhrGUVNWyAAARQUlEQVRo3szWZ0xTURQHcGmpA5WkprFEccS994x70NJqK6lKUZxR68BiUrU2VmmwOKAOUJAqCoK7SqRiLBaLG1BBiXHHaOJK3DNujf9z3yvDvT74B0o//c55595336v0P8Snkk+F/FPbRyAQijp3rsOnc2eRUCBAjX9iC33rDOrWtVevgIDaLAEBvXp17Taojq8QFf62b9863bq2OIbUvoScvcQ+z6JIi67d6vj+zTX4CISdB3UtAr1u3U5KQO2dO48FnOVDFfp0Fgr+rABrXFJ0bP369eso4LmwAR07hlmhgIRdwh/gojp9JUVJSYspXAWeD+h1DDUXL05KahEQgAJ96/z2FfgIOw+IlBSHh68KnxyexPt8Fj9+vJjpq8KLiopatCiy9ekv9Pm9ufTpCz3CaDRGEA+/tMD6yZ6XLx+/ergKlSOMUcUoIenbBxP69db9Boz3xBZHRUfHRoFflcQKeBNueLdnz8mXnx63ZXn16s3jN20H+P18QrgdmV61ptttMBhSDOCN5FMBb4XFSbElL+HvCqLEBAW1aoV/4vatG4l+XEDQv59IgDXtU9Pt8aRYLDwPnyvAJynChfbh7xIrWQm+TquOzfr/oIDAd3DdRiKh78CaFvAWxpNvjHqIFKNAEtOTJmcef/+Fr5TTN3HvfqLv+T6iNrqpTSv7DcyzWNxpaWnEw48u+Zi/d+n8/BIj1gChDRPletTT6yuVvK9SBiljxM18Bd9pvnIXna5l84Fz0jZbNm/meUNJYUudbsZUaborc/KqVVQAOyYiM/e508n74L0FcAni1hjQt5sfZrfvli7avA0/HJ+SUnLebp8B3ZHrisISU8BjOunv4X8xf6VqFPlV4H/NV6mv1SbMmHVo07ZNm9YOHUq+5VFLNfDdhdAzaYXDOT7c6Mo9ZHZyBcRiyHxGzZYHiZv5Cb/2hX6dtAmJ/vaLV+5dPF+37vnzF6VXn5/XTZg6a2Jd0o2TGR9OOqbjyn1uNpu/8qn/Vr0bwf/yPq0KPvlg4oxJ07KWt/RP9PenqUydNWvW3qtbjmdi+8NHSJ882Zh53FHohO88eRIFynw5/JjefoIv1tWvfsPAgwcT7fuX7m/ZLnDlQf8E6GgdOXcIg4/A9gePMD4iypXryDcjzgxagLICKjn81hX3j4+wcpN69QID27VrFxgYeDARnU+YMBW9U647jmeyuws+p4M3Zs5JPwR/udlszcjIKHcBciXmg/1fcfLVu3eqVYuztWrdBOh8JhaAN4Inn3DSI4zFd0vSD12Hv5wqLMlQiWNKd5AypndlYcVtWbVGp8REmSw0TKtWq3XwUYA+dFhZdM/5fPC1uEji9SlZWdYlqlIe42nmW7H9yvX97QkKhSxMrwVPPsN16v0LA9NdOBtQAPHqkiIJ86X55QrIy9rH7ql4UyVMSNgRovC2z0et1s5acLpHris6kwvVoNEUS4pt5DuyC5fzBegCxN72xWi/fPMddtuTdwTD18ereZ++aPUzpmlO97hFuXLljIP5uJIoPEio/0dbN2RL81HBzPwMsVgJHu13LLc5BVXqz5q6Izl5SLAmbOZM0tUsdq1er52mPc1neuN9LkyJdIpEYrs7dvXWDTnZl68WUAnmKxHaPI34zcMeIB0mJcbFDR+iMKlnarVqPiboYWEL1KdPcXnxdp8r1qvHxkrg28YOHfoo3ZGTk31Vep18FfkVF9fHt/5Eeyp4xYr4eG08b6u1WuDDQpfqeP7DnSdYZB6Pio2OJN6dN35sCRWQFtyU0nx2YePL5fKYjqV7E81PTE5NHaJYswLD4NrXAme6bO/MF8+evVjx4dmT1+m52ENMR8DbbLYpkZFTxo+dQ76zQHrOas3g+KBWbTAdfttMTUhNTY43HY0PDYsHj5Tqsr1PbyB37jx5vjX3eGYsb8dGe2zER4Jnfs6+fGd+oRnbU048plPFh1/YprvjUuNMa0wrQvVh8WovHioLlSFLwUN/fQi6ATLTo234hW2DDn78vEWOfTfNzvzlmD54/GE6Au9s/JfFhawwyYaZ4sP0ej1s6DINfog/8vTO0ydvc7YcdxmimY1E2tC9O8+D5kkfS+1nnzM7zeDRO/5iejYS8bPxT00NHrZGoxk20xQahgI0F9zBFIVi6dIjz1jreLTzMXgkkXhSuoFDJ34e+MvXcUAzXjmKht8Pewd8lTY75k4PkclCNKaZoeAR0kMJR/ZnHSnIYbqB8/HfZjPgUVmmj523KD1bWoDjeQnrnngxhs+d9XNXyoKDgzUak97Lw1ZwmW7Pyrq8gXRvPB6MPCXPXV6vuchxueC61YnDuYz3E7ADodODHeBD9Bg1zw+TKUKYTdlvlW5dm5aCMN1tQ8CX1+fVXL31an6+NaOMjxG3ZmsrqtrwwWnoCpNGAx4+eucaZ9m4cX9WoWNtGl5MPAaUsFGmWCxTgDOdmsfoC7BtgBOvIj6odWUh3bLVG/QYMiQkWKYPofYR0mUK3qa0XH5O6tiMNxN3XkqKB73jVWt8mU7NO7J79qSnioo1T7yyY1WO7x6I0yZYg5TxijIcuX3+KuaD1ze3xZIX6YZuYYPhdWpemgEdNuNp3yvb41QDX617HHiMp9Qv1Vc+uL/vzIULF87s27Blcxp1DD4vDcmroFPzS6yz0TQCHqeylxdVbZI8PBhhPEK6gvS5I0de276BZSt0mJFT3PMsaSgxthSHjuY3SDOylsxWKWErwQd5edo5xA/heQrHJ48bOXL04Q0HNlHovRAZDxUXwXdeqi/aknNuSdaSUSocxcSroMfIvXz95OHDiYfP6+B3jBlJ/IkDm7Yhm7nMAzsHH+Vw6HNWb71ptYKXKxHuPI4JKsfHBSPgETppoCvmjkRG3N+O7sHzBebA5W3gXn1Rek4hz2M2eBFnvKocn8DzFOJl0zEapPF2tM8XQIl5xPI24aSj+S05183WLLay1HyQCrxS1bEqz8clz+CGExKigA7elDqO+fUOcz5XYhFAcJ/JMJfQJqIoDC/Et27qQiQKCkoR3SguxLXGxrFO4oASCMEwYKbSkhlCIDPOwBCLMwwmxBSSTRsoJEQkuGgSsavGQLGrQpoqrY3iC2zrUrr3P3cS4+Of5qZk8Z2T/577ODl8eACHUqiblYePHsVRk2xm0UpMTo6OntuHLZPwxWd3Cc9E9vu8yRDDdzo/iM8C0M08l5tdWJidzaUQog9PpW6WayvY6AlPbOgGvAF+F2tLThf9d4AHf4TwEM+HQwgwlMg4l7sVBIDyqfnF5+9XPSueN++fI4CrFJSfXnsCPBbTKMGDweCNSazcq3sY/sCpDOdjeHp5SRPeECmQcbBkf2w3EaE0O/t87Z0hqbKs6qsLsyliM+V+4yEXf20yGI+fwY5J+OGM4Oe4Hh7bGs8nvaEApDjPxsZ8vpnjl3+8XV/fWo3oqiqrkm5Fzi7kUj147mZpeg13kHiwT48HJ6/L8uPzwNNxMnzcHCE8Bg4zy/N8lg+QbM6HWDzbRu/erxq6Gpf12L0H49nkej7nwhn+C8MzOOjAxyX5ykEcJ2xPO2FyLl6A+QyfVUi24Medk4RLeVXUZdl64Hs28w36WsqBTfCb+XL9y6PHj+NBiNHl0eu6FL+w3z0Md++/aAoML/TxybSp2LZdNDn/bbrUEtzSrNjTZ05mZ+crNrla/iaDM3r9KOom3qMDf121JPkMFY5bmabJCRzDj/TwPqI7xSI+RgA0FPdv8WOFYqKzsbH8qlwul4AHHHRYU1t63MODjWdUMyRpmKx3S8e2BcKzAfiJ5FRaME3TmaFvIOBjThCcYmKos/H9bR3ofJ7IPXptpfYGeFcyCmtUFg3Vc3Av8GxuD52wBQdkk4N8lP14K0nUmQLVD1NgqAP4p+V6maEH9PqblbUrMhPgEsZRQ9SkM2Q9RAfKSdt04AySFwRyJ5lNt7yIN/Ntp9PpDA256E+flrdf/E9/tLok96VKSF6PRPQrw39cYU8ptiPYHMNz5E52vNUag7592NnY2Pj+ndhvu81p8nwAZ/S47rmi9iXRsotERMlzkKzvmX/ohOI4CrzxC6bg85I76deths/b+PB5axnqdrfbbcBLpfk+G6mXp+tLKqoEVBLeNeDFatWAN4P2Ae4gfUUBnjPNEa8X6U+lX7/ONhqNz5tbC6+azRcQtobFxUpvWvOgV2ofVVWfk3RXkoSKUfVqNaJ7humSM3AnoBSVgEDTawrYdJA+8dPE/7m5XiN+BRHm5yuLlcr84mKJUv9CrkR0XXOlSyLwkWhUdCd20FsdPKZklIANPGfbfh581Cb4rfEG/Nl897bbbgNfwQthSO1mbUkCfc7QDVeaJEY0osc0zyFaU4O+E5OrJAKUvl+whTt9fosCMIc2t5Zr7faL6Qo9L9rtdndpRYIsSzJEJkPV4EoE3bCondnv9g6DyT2mJEIhhQPfVEb4Hr8fgKYYk7C+XGvWm812fbu7ZOkQzNZFMUISJTV6TxRBj5Hzu4D/K/2hAHb4IocriQl7KMAE/KcIrVZ6PNmAS9A70qpnzrIsTdcxAF7FZMJ09PBR6ucNa+D8IP2ThA85nFNEdfpQ+7yXz04hwBQGCO/sv5fQ3Bz4moY/l45VKkdvuf12RL90yF1S/6cfDhQKgaJvxM92ngkqIGjc1RRTLMb4hmUZhgg2UodR8dhdCPyo5jnyb/KseE4HcLyGE4VEOMFR68OPJZPJLHEZ/wEe+gXJxUMic11EyWiqHMW9nfhRK3aqt2D/+cUI9hA/kAmHQwUfAhQKE+AjABOjT6HsIFBJ+A6GgTmIy/fpRKMjDcb/bc1g6R45EQhDIVz/wg51J7+KM3vWtoEwjoMbS5YtZCPhwYOrgAyhSwjFkG9QGgxuRG23GBESGfIiKBnKLaaGTnHwcFQgkCcPmQTu1CGTPlz/z+mMQgWRt/6NDfbw+90996LD560+kUAGw4Y/qSSfIgzz24ft9yEdvsAfzuYnFp2ekGJ5UH463dB77MZ3Z4nHzr4hKBIkofHrOoAABnIIy/L2afs0m5zTCW8yGc4W/SNZ+GJ56o2eB76I749ZchejG2GIWRpSEh6tAwpJSPP842m7XX45l6f3YDE/Odo9RYr8qqL3TJTGl7ngCfd9N1qHxpmBhJHrxgYMa0rwvHzYPlxNBgjw50R/h2EtFj6fnfqh6Zk7/mhkcuaPfBYbYWhEUWRE3PXcTRwZIfCXl8PJ4DOF+B9u5osTouelKQ4v+K5rXhA7y9jEB/UjXEOQJAn3MPb0hHz8KUP4wder+aL/Kh2pEN90TRP0LNPpaDoSBpZGSJqm3BV4CJAM/zGYz6/6Vgk9a3+v6zJ0QNIpQkCD4ZmMMc6I72b8DfiDEE0P3lqapJe0/7TjMWaOJTvnI+NxtjIkX+Dv7rGxGT1dU0vp4FeVhnXYZci4yMeU/QefYMIsbt5beu2gsue9kqafZgLTL/Bl813iP8bG5Z/lLOj3rIZSrex9K4YOnHZMxjln5qhYHuAh2EQBNrTZ9XHPkoXZl48C6ZYtBKsVl8Pwgu+5PFnf044ZHB+2UBjQ98TjcqzyhtrfattO1wQ/jtOUOoLAl6ZYVQFuJX7frI87drvd0jVFFRfQ5QpxcX2g1muaDn6zaTtTtlnFSRIhBlZvuBYXB1ixacdpNpvtVktvaDWlrh5A8aoA7RZsRalpWoP4EMDQ6TK+SoAHHzGihHcdu0lw0C1db0AgDK8KcjrhGzoEZCCF7TgdGcexbZvQgk1w0DV0oISP2hFerZMABqGwoIADljxtIudoYgNeVh9ZHWGAQjh23YAlj5WBCUtRCF1XARf00nkDRfUAEqGRHu1lJBNQRAWYyHvOHaGoQAINeSjqLoBloV+JCi6BC+h9LCSSIV2eigygCMAl6FIVEfKX/Pq/8xdDB69yQiB30wAAAABJRU5ErkJggg=="
+                            alt="">
+                    <div class="label-name">
+                        <img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAMAAADzN3VRAAAAP1BMVEUAAAAAgsYAgsYAgsYAgsYAgsYAgsYAgsYAgsYAgsYAgsYAgsYAgsYAgsYAgsYAgsYAgsYAgsYAgsYAgsYAgsbeHr9QAAAAFHRSTlMA8SUY+6uiWwawg1Tt40XMgjUODfJ2srkAAAB1SURBVCjPzc9LEoQgDEXRQALpbtT28/a/VqUULAFnDrwTBqdIJXTGnemYWjGAGxHIW4U2oargvHcA4jNdxP6R8sXEz/eAkVIF/SrYyBUQVJf0K8OsGkgAmw7SvBAgZKLkTjHPC1fChwy2bNilVRS5EaHetOtXqkMLGklCX78AAAAASUVORK5CYII="
+                                alt="">
+                        <span>
+         Firefox
+        </span>
+                    </div>
+                </a>
+                <a href="https://browser.360.cn/" target="_blank">
+                    <img
+                            src="data:image/png;base64,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"
+                            alt="">
+                    <div class="label-name">
+                        <img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAMAAADzN3VRAAAAP1BMVEUAAAAAgsYAgsYAgsYAgsYAgsYAgsYAgsYAgsYAgsYAgsYAgsYAgsYAgsYAgsYAgsYAgsYAgsYAgsYAgsYAgsbeHr9QAAAAFHRSTlMA8SUY+6uiWwawg1Tt40XMgjUODfJ2srkAAAB1SURBVCjPzc9LEoQgDEXRQALpbtT28/a/VqUULAFnDrwTBqdIJXTGnemYWjGAGxHIW4U2oargvHcA4jNdxP6R8sXEz/eAkVIF/SrYyBUQVJf0K8OsGkgAmw7SvBAgZKLkTjHPC1fChwy2bNilVRS5EaHetOtXqkMLGklCX78AAAAASUVORK5CYII="
+                                alt="">
+                        <span>
+        360 Extreme Broswer
+        </span>
+                    </div>
+                </a>
+            </div>
+            <div class="ignore" onclick="this.parentNode.parentNode.parentNode.style.display='none'">
+                Ignore the suggestion and continue to browse.
+            </div>
+        </div>
+    </div>
+</div>
+<!--[if lte IE 9 ]>
+<script>
+    try {
+        var Version = document.getElementById('Browser');
+        Version.style.display = 'block';
+    } catch (e) {
+    }
+</script>
+<![endif]-->
+<!--日文浏览器版本提示-->
+<script>
+  $(function () {
+
+    $('.holiday-hint .icon-guanbi').click(function (e) {
+      $(this).parent().parent().hide()
+      return false
+    })
+  })
+</script>
+<!--国庆提示 英文-->
+<div class="national-box" style="display: none">
+    <div class="tips-wrap">
+        <div class="tips-text">
+            PCBGOGO will have a 4-day holiday (1st.-4th., October) for Chinese National Day & Mid-autumn Festival.
+            <br> PCB and assembly quotation and orders can be submitted online as usual. Manufacturing and delivery will
+            be
+            little
+            delay. Contact us in advance if you have any expedited order demand.
+        </div>
+        <span class="iconfont icon-guanbi" onclick="this.parentNode.parentNode.classList='national-box hide'"></span>
+    </div>
+</div>
+
+<!--首页广告-->
+<div class="front-adv">
+    <a href="去感恩节活动页面" target="_blank"
+       style="display:block;
+       min-width: 1280px;
+       background: url(img/images/advertising/front-adv.gif) no-repeat center;
+       height: 80px">
+    </a>
+</div>
+
+<!--日文首页广告-->
+<div class="front-adv">
+    <a href="去感恩节活动页面" target="_blank"
+       style="display:block;
+        min-width: 1280px;
+       background: url(img/images/advertising/front-adv_jp.gif) no-repeat center;
+       height: 80px">
+    </a>
+</div>
+
+<!--首页倒计时-->
+<div class="the-countdown-parent">
+    <span class="close-icon" onclick="this.parentNode.style.display='none'"></span>
+    <div onclick="window.open('https://www.pcbgogo.com/thanks2021.html','_self')"
+         style="cursor: pointer" class="the-countdown-prompt">
+        <style>
+
+            .the-countdown-parent {
+                position: relative;
+            }
+
+            .the-countdown-prompt {
+                background: url("https://www.pcbgogo.com/img/images/the-countdown-prompt-bg.png") no-repeat center #bd0005;
+                min-width: 1280px;
+                height: 80px;
+                position: relative;
+            }
+
+            .close-icon {
+                background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTExIDc5LjE1ODMyNSwgMjAxNS8wOS8xMC0wMToxMDoyMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkQ5NDJFNzM1NjVCMDExRTZBRkE1QTZDMEY3Q0Q4M0UyIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkQ5NDJFNzM2NjVCMDExRTZBRkE1QTZDMEY3Q0Q4M0UyIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RDk0MkU3MzM2NUIwMTFFNkFGQTVBNkMwRjdDRDgzRTIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RDk0MkU3MzQ2NUIwMTFFNkFGQTVBNkMwRjdDRDgzRTIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6PZeZ+AAAAZklEQVR42mJkYGAoZqAiYBx5BjJhE/z//38PMZqxqcPpQpBiRkbGEnyGYZPH62VcmvBZRjAM0TUTcjlRkQIzhJBhJMUyMYbhjGV8LqQ4HVI1DKkay1RNh8RGADZ1jKPF1+AzECDAAMOOWsjsPvrkAAAAAElFTkSuQmCC") no-repeat center;
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                top: 0;
+                padding: 10px;
+                right: 0;
+                z-index: 3;
+                cursor: pointer;
+            }
+
+            @-webkit-keyframes pulse {
+                0% {
+                    -webkit-transform: scaleX(1);
+                    transform: scaleX(1);
+                }
+                50% {
+                    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+                    transform: scale3d(1.05, 1.05, 1.05);
+                }
+                to {
+                    -webkit-transform: scaleX(1);
+                    transform: scaleX(1);
+                }
+            }
+
+            @keyframes pulse {
+                0% {
+                    -webkit-transform: scaleX(1);
+                    transform: scaleX(1);
+                }
+                50% {
+                    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+                    transform: scale3d(1.05, 1.05, 1.05);
+                }
+                to {
+                    -webkit-transform: scaleX(1);
+                    transform: scaleX(1);
+                }
+            }
+
+            .the-countdown-prompt .go-animate__pulse {
+                -webkit-animation-name: pulse;
+                animation-name: pulse;
+                -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out;
+                animation-duration: 0.6s;
+                animation-iteration-count: infinite;
+            }
+
+            .the-countdown-prompt .container_warp {
+                position: relative;
+                height: inherit;
+            }
+
+            .the-countdown-prompt .container_warp .change-gif {
+                position: absolute;
+                top: 20px;
+                right: 460px;
+                z-index: 1;
+                display: block;
+                background: url("https://www.pcbgogo.com/img/images/chance-gif.png") no-repeat center;
+                width: 230px;
+                height: 54px;
+            }
+
+            .the-countdown-prompt .container_warp .countdown-prompt {
+                height: 50px;
+                margin-top: 17px;
+                float: right;
+                margin-right: 60px;
+                width: 316px;
+                position: relative;
+            }
+
+            .the-countdown-prompt .container_warp .countdown-prompt:after {
+                display: block;
+                content: '';
+                width: 0;
+                height: 0;
+                clear: both;
+            }
+
+            .the-countdown-prompt .container_warp .countdown-prompt dd {
+                float: left;
+                width: 50px;
+                height: 51px;
+                line-height: 51px;
+                text-align: center;
+                margin-right: 27px;
+                font-size: 36px;
+                font-weight: 700;
+                color: #000;
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: 1;
+                -moz-border-radius: 2px;
+                -webkit-border-radius: 2px;
+                border-radius: 2px;
+            }
+
+            .the-countdown-prompt .container_warp .countdown-prompt dd:first-child {
+                left: 4px;
+                right: auto;
+            }
+
+            .the-countdown-prompt .container_warp .countdown-prompt dd:first-child + dd {
+                left: 80px;
+                right: auto;
+            }
+
+            .the-countdown-prompt .container_warp .countdown-prompt dd:first-child + dd + dd {
+                left: 155px;
+                right: auto;
+            }
+
+            .the-countdown-prompt .container_warp .countdown-prompt dd:first-child + dd + dd + dd {
+                right: 1px;
+            }
+        </style>
+        <div class="container_warp">
+            <span class="change-gif go-animate__pulse"></span>
+            <dl class="countdown-prompt js-go-countdown">
+                <dd class="js-go-day">00</dd>
+                <dd class="js-go-h">00</dd>
+                <dd class="js-go-m">00</dd>
+                <dd class="js-go-s">00</dd>
+            </dl>
+        </div>
+    </div>
+</div>
+
+
+<!--英文春节-->
+<div class="holiday-hint"
+     style="background: #0094cf;color:#ffffff;padding: 5px 0;cursor: pointer;min-height: 50px;min-width: 1280px">
+    <div class="container_warp" style="position: relative;text-align: center">
+        <div class="iconfont icon-guanbi" style="width: 20px;height: 20px;line-height: 30px;text-align: center;
+font-size:20px;position:absolute;top:5px;right: 0;z-index: 12; color: #0183b7;"></div>
+        <div style="padding-right: 10px;font-size: 16px;line-height: 18px;padding-top: 2px" class="customers">
+            <style>
+                .jump-link {
+                    color: inherit;
+                }
+
+                .jump-link:hover {
+                    text-decoration: underline;
+                }
+            </style>
+            <a class="jump-link" href="https://www.pcbgogo.com/current-events/Chinese_New_Year_2022_Schedule.html"
+               target="_blank">
+                We will have the Chinese New Year holiday from January 27th 2022 to February 7th 2022.
+                For PCB & PCBA needs,
+                <br> please arrange your orders properly and plan in advance.
+                To see our holiday schedule, click here.
+            </a>
+        </div>
+    </div>
+</div>
+
+<!--  日文春节-->
+<div class="holiday-hint"
+     style="background: #FF4949;color:#ffffff;padding: 5px 0;cursor: pointer;min-height: 50px;min-width: 1280px">
+    <div class="container_warp" style="position: relative;text-align: center">
+        <div class="iconfont icon-guanbi" style="width: 20px;height: 20px;line-height: 30px;text-align: center;
+font-size:20px;position:absolute;top:5px;right: 0;z-index: 12; color: #B21F1F;"></div>
+        <div style="padding-right: 10px;font-size: 16px;line-height: 18px;padding-top: 2px" class="customers">
+            <style>
+                .jump-link {
+                    color: inherit;
+                }
+
+                .jump-link:hover {
+                    text-decoration: underline;
+                }
+            </style>
+            <a href="https://www.pcbgogo.jp/current-events/Chinese_New_Year_2022_Schedule.html" class="jump-link"
+               target="_blank">
+                明けましておめでとうございます！
+                <br> この期間、弊社では、基板製造＆部品実装と発送はいつもの通りです。何かお見積りやお問い合わせがございましたら、いつでもお気軽にご連絡ください。
+            </a>
+        </div>
+    </div>
+</div>
+
+<script>
+  // 倒计时
+  void function () {
+
+    // 统一时区北京
+    function setFormatTimeZone (time, offset) {
+      var t = new Date(time)
+      var cDiff = 60000
+      var lTime = t.getTime()
+      var lDiff = t.getTimezoneOffset() * cDiff
+      var onUtc = lTime + lDiff
+      var cTime = onUtc + (cDiff * 60 * offset)
+      return new Date(cTime)
+    }
+
+    function countTime () {
+      var endTime = '2022/1/3 23:59:59';
+      var endDate = new Date(endTime);
+      var date = setFormatTimeZone(new Date(), 8);
+      var diffTime = endDate.getTime() - date.getTime();
+      //定义变量 d,h,m,s保存倒计时的时间
+      var d, h, m, s;
+      if (diffTime >= 0) {
+        d = Math.floor(diffTime / 1000 / 60 / 60 / 24);
+        h = Math.floor(diffTime / 1000 / 60 / 60 % 24);
+        m = Math.floor(diffTime / 1000 / 60 % 60);
+        s = Math.floor(diffTime / 1000 % 60);
+      } else {
+        return false;
+      }
+      d = d <= 9 ? '0' + d : d;
+      h = h <= 9 ? '0' + h : h;
+      m = m <= 9 ? '0' + m : m;
+      s = s <= 9 ? '0' + s : s;
+      document.querySelector('.js-go-day').innerHTML = d
+      document.querySelector('.js-go-h').innerHTML = h
+      document.querySelector('.js-go-m').innerHTML = m
+      document.querySelector('.js-go-s').innerHTML = s
+      setTimeout(countTime, 1000);
+    }
+
+    // 元素是否存在
+    if (document.querySelector('.the-countdown-prompt')) {
+      countTime();
+    }
+
+  }()
+</script>
+<!--头部-->
+<div class="header">
+    <!--顶部-->
+    <div class="nav-info">
+        <ul class="nav-items">
+            <li>
+                <a href="javascript:void(0)">
+                    <span class="iconfont icon-qushuchakanshuxing2"></span>
+                    <span class="gerber">Online Gerber Viewer</span>
+                </a>
+            </li>
+            <li>
+                <a href="phone-display.html">
+                    <span class="iconfont icon-shouji1"></span>
+                    <span class="gerber">Mobile Website</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <span class="iconfont icon-Skype"></span>
+                </a>
+                <div class="skype-box">
+                    <div class="skype-link active">
+                        <a href="skype:live:service_7440?chat">
+                            Skype PC
+                        </a>
+                    </div>
+                    <div class="skype-link">
+                        <a href="https://web.skype.com/" target="_blank">
+                            Skype WEB
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="mailto:service@pcbgogo.com">
+                <span class="iconfont icon-iconfontcolor06"></span>
+                <span class="mail-text">service@pcbgogo.com</span>
+            </a>
+            </li>
+            <li class="language">
+                <img class="country-tag" src="img/images/England.png" width="16" height="16" alt="country-flag">
+                English
+                <!--语言选择弹出层-->
+                <ul class="language-box">
+                    <li onclick="window.open('index.html','_self')">
+                        <img class="country-tag" src="img/images/England.png" alt="" width="16" height="16">English
+                    </li>
+                    <li onclick="window.open('https://www.pcbgogo.jp/','_blank')">
+                        <img class="country-tag" src="img/images/Japan.png" alt="" width="16" height="16">Japanese
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="top-box">
+        <!--左侧logo-->
+        <h1 class="logo">
+            <a href="index.html">
+                PCBgogo
+            </a>
+        </h1>
+        <!--nav-tips-->
+        <img src="img/images/logo-tips.jpg" alt="logo tips" width="340" height="34" class="nav-tips">
+        <!--日文-->
+        <!--<img src="img/images/logo-tips_jp.jpg" alt="logo tips" width="336" height="34" class="nav-tips-jp">-->
+        <!--nav-tips-->
+        <!--右侧登录-->
+        <div class="sign-box">
+            <div class="sign-lists">
+                <div class="sign-in"><a href="javascript:void(0)">Sign in</a></div>
+                <div class="join"><a href="register-login.html">Join Free</a></div>
+                <div class="joined">
+                    <i><img src="img/images/user.png" alt=""></i>
+                </div>
+                <div class="hi-in">
+                    <a href="javascript:void(0)">Hi! zhang测大街上公开了坚朗</a>
+                </div>
+                <!--信息列表-->
+                <div class="person-info">
+                    <!--  未登录-->
+                    <div class="info">
+                        <div class="left-info">
+                            <div class="tips">
+                                New Customer?
+                            </div>
+                            <a class="join-free" href="register-login.html">
+                                Join Free
+                            </a>
+                        </div>
+                        <div class="right-info">
+                            <a class="login-in" href="javascript:void(0)">
+                                Sign in
+                            </a>
+                        </div>
+                    </div>
+                    <!--   已登录 -->
+                    <div class="info" style="display: none">
+                        <div class="left-info">
+                            <div class="tips">
+                                Email: <span>20**@163.com</span>
+                            </div>
+                            <a class="out-btn" href="javascript:void(0)">
+                                Sign Out
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="link-lists">
+                        <!-- 有数量添加   active 类名-->
+                        <div class="item">
+                            <a href="javascript:void(0)">
+                                <span> •  </span>
+                                <span class="name">My Account</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript:void(0)">
+                                <span> •  </span>
+                                <span class="name">My Orders list</span>
+                            </a>
+                        </div>
+                        <div class="item active">
+                            <a href="javascript:void(0)">
+                                <span> •  </span>
+                                <span class="name">Account Balance</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript:void(0)">
+                                <span> •  </span>
+                                <span class="name">Discount coupon</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript:void(0)">
+                                <span> •  </span>
+                                <span class="name">Reward points</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript:void(0)">
+                                <span> •  </span>
+                                <span class="name">My Delivery Address</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript:void(0)">
+                                <span> •  </span>
+                                <span class="name">My Forum</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript:void(0)">
+                                <span> •  </span>
+                                <span class="name">Message</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  购物车-->
+            <div class="shopping-car">
+                <!-- 有数量添加 active 或者你元素控制显示与隐藏-->
+                <a href="javascript:void(0)" class="active">
+                    <span class="iconfont icon-gouwuche1"></span>
+                    <div class="of-cars">28</div>
+                </a>
+            </div>
+            <!-- 广告-->
+            <div class="ads-tips" style="display: none">
+                New here ? Getting <span>$50</span> coupon
+            </div>
+        </div>
+    </div>
+    <!--导航-->
+    <div class="nav">
+        <div class="nav-box ">
+            <!--左侧列表-->
+            <ul class="nav-lists js-nav-lists">
+                <li class="active"><a href="/" class="home">Home</a></li>
+                <li tab="1">
+                    <a href="/pcb-fabrication-quote.html">PCB Instant Quote</a>
+                    <div class="child-parent">
+                        <div class="child-menu">
+                            <div class="item">
+                                <a class="title" href="/pcb-fabrication-quote.html">
+                                    <span> PCB Manufacturing Calculator </span>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a class="title" href="/pcba-quote.html">
+                                    <span> PCB Assembly Calculator </span>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a class="title" href="/flexible-pcb-quote.aspx">
+                                    <span> Flexible PCB/Rigid-Flex PCB Calculator</span>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a class="title" href="/pcb-stencil-quote.aspx">
+                                    <span> SMD Stencil Calculator </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="assembly-menus">
+                    <a href="/pcb-assembly.html">PCB Assembly </a>
+                    <div class="child-parent">
+                        <div class="child-menu">
+
+                            <div class="item">
+                                <a class="title" href="https://www.pcbgogo.com/Capabilities/PCBA_Capabilities.html">
+                                    <span>PCBA Capabilities</span>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a class="title"
+                                   href="https://www.pcbgogo.com/Capabilities/Files_Requested_for_PCBA.html">
+                                    <span>Files Requested for PCBA</span>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a class="title"
+                                   href="https://www.pcbgogo.com/Capabilities/PCBA_Special_reminders.html">
+                                    <span>PCBA Special Reminders</span>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a class="title"
+                                   href="https://www.pcbgogo.com/Capabilities/SMT_stencil_and_Laser_Stencil.html">
+                                    <span>SMD Stencil</span>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a class="title"
+                                   href="https://www.pcbgogo.com/knowledge-center/BGA_Assembly_Capabilities.html">
+                                    <span>BGA Assembly Capabilities</span>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a class="title"
+                                   href="https://www.pcbgogo.com/knowledge-center/Panel_Requirements_for_PCB_Assembly.html">
+                                    <span>Panel Requirements for PCBA </span>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a class="title"
+                                   href="https://www.pcbgogo.com/knowledge-center/Components_sourcing.html">
+                                    <span>Components sourcing</span>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a class="title"
+                                   href="https://www.pcbgogo.com/Capabilities/Fast_Turnkey_PCB_Assembly.html">
+                                    <span>Fast Turnkey PCBA</span>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a class="title" href="https://www.pcbgogo.com/Capabilities/PCB_Assembly_process.html">
+                                    <span>PCBA Process</span>
+                                </a>
+                            </div>
+
+                            <!-- 日文部分 套用注意-->
+                            <div class="item">
+                                <a class="title"
+                                   href="https://www.pcbgogo.jp/Capabilities/PCB_Assembly_Capabilities.html">
+                                    <span>部品実装基準</span>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a class="title"
+                                   href="https://www.pcbgogo.jp/pcb-assembly/Files_Requested_for_PCBA.html">
+                                    <span>入稿データ一覧</span>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a class="title" href="https://www.pcbgogo.jp/knowledge-center/smt_pcb.html">
+                                    <span>表面実装の能力</span>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a class="title"
+                                   href="https://www.pcbgogo.jp/knowledge-center/BGA_assembly_capabilities.html">
+                                    <span>BGAの実装能力</span>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a class="title"
+                                   href="https://www.pcbgogo.jp/knowledge-center/components_sourcing.html">
+                                    <span>部品調達</span>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a class="title" href="https://www.pcbgogo.jp/knowledge-center/mixde_assembly.html">
+                                    <span>混合実装</span>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a class="title"
+                                   href="https://www.pcbgogo.jp/knowledge-center/through_hole_assembly.html">
+                                    <span>スルーホール実装</span>
+                                </a>
+                            </div>
+                            <!-- 日文部分 套用注意-->
+
+
+                        </div>
+                    </div>
+
+
+                </li>
+                <li>
+                    <a href="/hdi-pcb.html">Advanced PCB</a>
+                </li>
+
+                <li tab="2" class="capabilities-menus">
+                    <a href="/Capabilities/FR_4_PCB_Manufacturing.html"> Capabilities </a>
+
+                    <div class="child-parent">
+                        <div class="child-menu">
+
+                            <div class="item">
+
+                                <a class="title" href="/Capabilities/FR_4_PCB_Manufacturing.html">
+                                    <span>Printed Circuit Boards</span>
+                                </a>
+
+                                <div class="son-box">
+                                    <div class="child-link">
+
+                                        <div class="list">
+                                            <a href="/Capabilities/FR_4_PCB_Manufacturing.html">
+                                                <span class="name">Standard PCB Capabilities</span>
+                                            </a>
+                                        </div>
+                                        <div class="list">
+                                            <a href="/Capabilities/Advanced_High_quality_PCB_Manufacturing_Capabilities.html">
+                                                <span class="name">Advanced PCB Manufacturing</span>
+                                            </a>
+                                        </div>
+                                        <div class="list">
+                                            <a href="/Capabilities/Printed_Circuit_Board_Prototype.html">
+                                                <span class="name">Printed Circuit Board Prototype</span>
+                                            </a>
+                                        </div>
+                                        <div class="list">
+                                            <a href="/Capabilities/PCB_Capabilities_PCB_Layout.html">
+                                                <span class="name">PCB Capabilities &amp; PCB Layout</span>
+                                            </a>
+                                        </div>
+                                        <div class="list">
+                                            <a href="javascript:void(0)">
+                                                <span class="name">Aluminum PCB</span>
+                                            </a>
+                                        </div>
+                                        <div class="list">
+                                            <a href="javascript:void(0)">
+                                                <span class="name">Rigid-Flex PCBs</span>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+
+                                <a class="title" href="/Capabilities/PCBA_Capabilties.html">
+                                    <span>PCB Assembly</span>
+                                </a>
+
+                                <div class="son-box">
+                                    <div class="child-link">
+
+                                        <div class="list">
+                                            <a href="/Capabilities/PCBA_Capabilties.html">
+                                                <span class="name">PCBA Capabilities</span>
+                                            </a>
+                                        </div>
+                                        <div class="list">
+                                            <a href="/Capabilities/PCB_Assembly_process.html">
+                                                <span class="name">PCB Assembly process</span>
+                                            </a>
+                                        </div>
+                                        <div class="list">
+                                            <a href="/Capabilities/PCBA_Special_reminders.html">
+                                                <span class="name"> PCBA Special reminders</span>
+                                            </a>
+                                        </div>
+                                        <div class="list">
+                                            <a href="/Capabilities/Fast_Turnkey_PCB_Assembly.html">
+                                                <span class="name">Fast Turnkey PCB Assembly</span>
+                                            </a>
+                                        </div>
+                                        <div class="list">
+                                            <a href="/Capabilities/Files_Requested_for_PCBA.html">
+                                                <span class="name">Files Requested for PCBA</span>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+
+                                <a class="title" href="/Capabilities/qwr.html">
+                                    <span>SMD Stencil</span>
+                                </a>
+
+                                <div class="son-box">
+                                    <div class="child-link">
+
+                                        <div class="list">
+                                            <a href="/Capabilities/SMT_stencil_and_Laser_Stencil.html">
+                                                <span class="name">SMT stencil and Laser Stencil</span>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+
+                                <a class="title" href="/Capabilities/PCB_Design_and_Layout.html">
+                                    <span>PCB Design-Aid &amp; Layout</span>
+                                </a>
+
+                                <div class="son-box">
+                                    <div class="child-link">
+
+                                        <div class="list">
+                                            <a href="/Capabilities/PCB_Design_and_Layout.html">
+                                                <span class="name">PCB Design and Layout</span>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </li>
+
+
+                <li class="capabilities-menus">
+                    <a href="/knowledge-center/Printed_Circuit_Board_Prototype.html">Knowledge Center</a>
+                    <div class="child-parent">
+                        <div class="child-menu">
+                            <div class="item">
+
+                                <a class="title" href="/knowledge-center/communicate_and_work.html">
+                                    <span>使用指南</span>
+                                </a>
+
+
+                                <div class="son-box">
+                                    <div class="child-link">
+                                        <div class="list">
+                                            <a href="/knowledge-center/communicate_and_work.html">
+                                                <span class="name">下单</span>
+                                            </a>
+                                        </div>
+                                        <div class="list">
+                                            <a href="/knowledge-center/On_half_of_the_Payment_instructions.html">
+                                                <span class="name">下单</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+
+                                <a class="title" href="javascript:void(0)">
+                                    <span>bbbb</span>
+                                </a>
+
+
+                                <div class="son-box">
+                                    <div class="child-link">
+                                        <div class="list">
+                                            <a href="javascript:void(0)">
+                                                <span class="name">bbbb1</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+
+                                <a class="title" href="javascript:void(0)">
+                                    <span>cccc</span>
+                                </a>
+
+
+                                <div class="son-box">
+                                    <div class="child-link">
+                                        <div class="list">
+                                            <a href="javascript:void(0)">
+                                                <span class="name">cccc1</span>
+                                            </a>
+                                        </div>
+                                        <div class="list">
+                                            <a href="javascript:void(0)">
+                                                <span class="name">cccc2</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+
+
+                <li>
+                    <a href="/Feedback/">Feedback</a>
+                    <div class="child-parent">
+                        <div class="child-menu">
+                            <div class="item">
+                                <a class="title" href="/current-events/">
+                                    <span> Current Events</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+
+                <!--后续添加-->
+
+                <li tab="3">
+                    <a href="https://www.pcbgogo.com/about-us.html">About Us</a>
+                    <div class="child-parent">
+                        <div class="child-menu">
+                            <div class="item">
+                                <a class="title" href="https://www.pcbgogo.com/why.html/">
+                                    <span>Why choose us？</span>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a class="title" href="https://www.pcbgogo.com/orderguide.html">
+                                    <span>Order Guide</span>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a class="title" href="https://www.pcbgogo.com/quality_gurrantee.html">
+                                    <span>Quality guarantee</span>
+                                </a>
+                            </div>
+
+                            <div class="item">
+                                <a class="title" href="https://www.pcbgogo.com/PaymentMethod.html">
+                                    <span>Method of Payment</span>
+                                </a>
+                            </div>
+
+
+                            <div class="item">
+                                <a class="title" href="https://www.pcbgogo.com/shipping_method_guide.html">
+                                    <span>Shipping methods guide</span>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a class="title" href="https://www.pcbgogo.com/current-events/">
+                                    <span>News</span>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a class="title" href="https://www.pcbgogo.com/privacy_policy.html">
+                                    <span>Privacy Policy</span>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a class="title" href="/shipping_method_guide.html">
+                                    <span>  Shipping method guide</span>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a class="title" href="/Terms of Service.html">
+                                    <span> Terms of Service</span>
+                                </a>
+                            </div>
+
+                            <!--   pcbgogo delivery 暂时隐藏 该元素保留  -->
+                            <div class="item" style="display: none">
+                                <a class="title" href="http://www.pcbgogo.com/delivery.html">
+                                    <span>PCBgogo delivery</span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </li>
+                <li>
+                    <a href="/help_center.html">Help Center</a>
+                </li>
+                <li>
+                    <a href="/contact-us.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--banner轮播图-->
+<div class="banner-box">
+    <div class="banner-picbox">
+        <!--        <div class="banner-pic banner5" style="z-index: 8">-->
+        <!--            <a href="activity/activity11.html" style="background: url('img/images/banner5.jpg') no-repeat center">-->
+
+        <!--            </a>-->
+        <!--        </div>-->
+        <!--                <div class="banner-pic banner1">-->
+        <!--                    <a href="计价" style="background: url('img/images/banner1.jpg') no-repeat center">-->
+
+        <!--                    </a>-->
+        <!--                </div>-->
+        <div class="banner-pic banner2">
+            <a href="计价" title="PCBgogo" style="background: url('img/images/banner2.jpg') no-repeat center">
+
+            </a>
+        </div>
+        <!--        <div class="banner-pic banner3">-->
+        <!--            <a href="计价" title="PCBgogo" style="background: url('img/images/banner3.jpg') no-repeat center">-->
+
+        <!--            </a>-->
+        <!--        </div>-->
+        <!--        <div class="banner-pic banner4" style="background: url('img/images/banner4.jpg') no-repeat center">-->
+        <!--            <a href="/old-process/pcbaCapabilitiesProcess.html" title="PCBgogo"></a>-->
+        <!--        </div>-->
+    </div>
+    <div class="container_warp advert" style="position: relative;">
+        <!--轮播指示第几张-->
+        <ul class="banner-num" style="z-index: 9">
+            <li class="change-bgc"></li>
+            <!--            <li></li>-->
+            <!--            <li></li>-->
+            <!--            <li></li>-->
+        </ul>
+        <!--表单-->
+        <div class="form-box" style="z-index: 9">
+            <div class="boxed">
+                <!--第一个表单-->
+                <div class="item-box">
+                    <div class="title-style">
+                        PCB PROTOTYPE
+                        PCB PROTOTYPE
+                        PCB PROTOTYPE
+                    </div>
+                    <form action="#" method="post" class="form1">
+                        <div class="prototype-from">
+                            <div class="prototype-top">
+                                <div class="prototype-l">
+                                    <div class="prototype-length">
+                                        Length \ Width (mm)
+                                    </div>
+                                    <div class="get-inputs-box">
+                                        <input type="text" placeholder="Length" class="get-input">
+                                        <div class="cheng-hao">X</div>
+                                        <input type="text" placeholder="Width" class="get-input">
+                                    </div>
+                                </div>
+                                <div class="prototype-l">
+                                    <div class="prototype-length">
+                                        Quantity
+                                    </div>
+                                    <select name="" id="" class="pcs-box">
+                                        <option value="">Choose Num (pcs)</option>
+                                        <option value="5">5</option>
+                                        <option value="10">10</option>
+                                        <option value="15">15</option>
+                                        <option value="20">20</option>
+                                        <option value="25">25</option>
+                                        <option value="30">30</option>
+                                        <option value="40">40</option>
+                                        <option value="50">50</option>
+                                        <option value="75">75</option>
+                                        <option value="100">100</option>
+                                        <option value="-1">100+</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="prototype-top">
+                                <div class="prototype-l">
+                                    <div class="prototype-length">
+                                        Layer
+                                    </div>
+                                    <select name="" class="layers-box">
+                                        <option value="1">1 Layer</option>
+                                        <option value="2" selected="selected">2 Layers</option>
+                                        <option value="4">4 Layers</option>
+                                        <option value="6">6 Layers</option>
+                                        <option value="8">8 Layers</option>
+                                        <option value="10">10 Layers</option>
+                                        <option value="12">12 Layers</option>
+                                        <option value="14">14 Layers</option>
+                                    </select>
+                                </div>
+                                <div class="prototype-l">
+                                    <div class="prototype-length">
+                                        Thickness
+                                    </div>
+                                    <select name="" class="thickness-box">
+                                        <option value="">Thickness</option>
+                                        <option value="0.4">0.4mm</option>
+                                        <option value="0.6">0.6mm</option>
+                                        <option value="0.8">0.8mm</option>
+                                        <option value="1.0">1.0mm</option>
+                                        <option value="1.2">1.2mm</option>
+                                        <option value="1.6" selected="selected">1.6mm</option>
+                                        <option value="2.0">2.0mm</option>
+                                        <option value="2.4">2.4mm</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <!--按钮-->
+                        <div class="btn-box">
+                            <a href="javascript:void(0)">
+                                <img src="img/images/NowAccerting.png" alt="paypal" width="111" height="32">
+                            </a>
+                            <a href="javascript:void(0)" class="lian-jie">
+                                Quote Now
+                            </a>
+                        </div>
+                    </form>
+                </div>
+                <!--第二个表单-->
+                <div class="item-box">
+                    <div class="title-style">
+                        PCB ASSEMBLY
+                    </div>
+                    <form action="#" method="post" class="form2">
+                        <div class="prototype-from">
+                            <div class="prototype-top">
+                                <div class="prototype-l">
+                                    <div class="prototype-length">
+                                        Quantity
+                                    </div>
+                                    <div class="get-inputs-box">
+                                        <input type="text" class="select-type" placeholder="0">
+                                    </div>
+                                </div>
+                                <div class="prototype-l">
+                                    <div class="prototype-length">
+                                        Parts Quantity
+                                    </div>
+                                    <div class="get-inputs-box">
+                                        <input type="text" class="select-type" placeholder="0">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prototype-top">
+                                <div class="prototype-l">
+                                    <div class="prototype-length">
+                                        Number of Pads
+                                    </div>
+                                    <div class="get-inputs-box">
+                                        <input type="text" class="select-type" placeholder="0">
+                                    </div>
+                                </div>
+                                <div class="prototype-l">
+                                    <div class="prototype-length">
+                                        No. of Thru-holes
+                                    </div>
+                                    <div class="get-inputs-box">
+                                        <input type="text" class="select-type" placeholder="0">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--按钮-->
+                        <div class="btn-box">
+                            <a href="javascript:void(0)">
+                                <img src="img/images/NOW2.png" alt="" width="134" height="30">
+                            </a>
+                            <a href="javascript:void(0)" class="lian-jie">
+                                Quote Now
+                            </a>
+                        </div>
+                    </form>
+                </div>
+                <!--第三个表单-->
+                <div class="item-box">
+                    <div class="title-style">
+                        FPC LNSTANT QUOTE
+                    </div>
+                    <form action="#" method="post" class="form3">
+                        <div class="prototype-from">
+                            <div class="prototype-top">
+                                <div class="prototype-l">
+                                    <div class="prototype-length">
+                                        Length \ Width (mm)
+                                    </div>
+                                    <div class="get-inputs-box">
+                                        <input type="text" placeholder="Length" class="get-input">
+                                        <div class="cheng-hao">X</div>
+                                        <input type="text" placeholder="Width" class="get-input">
+                                    </div>
+                                </div>
+                                <div class="prototype-l">
+                                    <div class="prototype-length">
+                                        Quantity
+                                    </div>
+                                    <div class="get-inputs-box">
+                                        <input type="text" class="select-type" placeholder="0">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prototype-top">
+                                <div class="prototype-l">
+                                    <div class="prototype-length">
+                                        Layer
+                                    </div>
+                                    <select name="" class="layers-box">
+                                        <option value="1">1 Layer</option>
+                                        <option value="2" selected="selected">2 Layers</option>
+                                        <option value="4">4 Layers</option>
+                                        <option value="6">6 Layers</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--按钮-->
+                        <div class="btn-box">
+                            <a href="javascript:void(0)">
+                                <img src="img/images/NowAccerting.png" alt="paypal" width="111" height="32">
+                            </a>
+                            <a href="javascript:void(0)" class="lian-jie">
+                                Quote Now
+                            </a>
+                        </div>
+                    </form>
+                </div>
+                <!--第四个表单-->
+                <div class="item-box">
+                    <div class="title-style">
+                        SMD STENCIL
+                    </div>
+                    <form action="#" method="post" class="form4">
+                        <div class="prototype-from">
+                            <div class="prototype-top">
+                                <div class="prototype-l">
+                                    <div class="prototype-length">
+                                        Stencil type
+                                    </div>
+                                    <div class="get-inputs-box" style="border: none">
+                                        <div class="frame-box now-active">
+                                            Framework
+                                            <img src="img/images/right-signed.png" alt="" class="singed">
+                                        </div>
+                                        <div class="frame-box">
+                                            Non- <br>framework
+                                            <img src="img/images/right-signed.png" alt="" class="singed">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="prototype-l">
+                                    <div class="prototype-length">
+                                        Quantity:
+                                    </div>
+                                    <div class="get-inputs-box">
+                                        <input type="text" placeholder="0" class="select-type">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prototype-top">
+                                <div class="prototype-l">
+                                    <div class="prototype-length">
+                                        Size (mm)
+                                    </div>
+                                    <div class="get-inputs-box" style="border: none">
+                                        <select name="" class="layers-box">
+                                            <option value="">Choose Size (mm)</option>
+                                            <option value="7">370 × 470 mm $15.00</option>
+                                            <option value="12">420 × 520 mm $25.00</option>
+                                            <option value="13">450 × 550 mm $45.00</option>
+                                            <option value="8">584 × 584 mm $50.00</option>
+                                            <option value="10">550 × 650 mm $50.00</option>
+                                            <option value="14">736 × 736 mm $65.00</option>
+                                            <option value="11">400 × 600 mm $35.00</option>
+                                            <option value="15">400 × 800 mm $45.00</option>
+                                            <option value="16">400 × 1000 mm $45.00</option>
+                                            <option value="17">500 × 800 mm $50.00</option>
+                                            <option value="18">400 × 1200 mm $50.00</option>
+                                            <option value="19">400 × 1400 mm $60.00</option>
+                                            <option value="20">500 × 1200 mm $60.00</option>
+                                            <option value="21">500 × 1400 mm $70.00</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                                <div class="prototype-l">
+                                    <div class="prototype-length">
+                                        Stencil Side
+                                    </div>
+                                    <div class="get-inputs-box" style="border: none">
+                                        <select name="" class="layers-box">
+                                            <option value="1">Top</option>
+                                            <option value="2">Bottom</option>
+                                            <option value="3">Top+Bottom(On Single Stencil)</option>
+                                            <option value="4">Top &amp; Bottom(On Separate Stencil)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--按钮-->
+                        <div class="btn-box">
+                            <a href="javascript:void(0)">
+                                <img src="img/images/NOW3.png" alt="" width="104" height="30">
+                            </a>
+                            <a href="javascript:void(0)" class="lian-jie">
+                                Quote Now
+                            </a>
+                        </div>
+                    </form>
+                </div>
+                <!-- 表单提示-->
+                <div class="rolling-box">
+                    <div class="roll-mask">
+                        <dl class="js-roll-box">
+                            <dd onclick="window.open('给我一个地址')">
+                <span>
+                  News
+                </span>
+                                <div class="des">
+                                    2021 PRICE ADJUSTMENT NOTIFICAITON1
+                                </div>
+                                <div class="time">
+                                    Feb 03.2020, 23:44:51
+                                </div>
+                            </dd>
+                            <dd onclick="window.open('给我一个地址')">
+                <span>
+                  News
+                </span>
+                                <div class="des">
+                                    2021 PRICE
+                                </div>
+                                <div class="time">
+                                    Feb 03.2020, 23:44:52
+                                </div>
+                            </dd>
+                            <dd onclick="window.open('给我一个地址')">
+                <span>
+                  News
+                </span>
+                                <div class="des">
+                                    2021 PRICE ADJUSTMENT NOTIFICAITON3
+                                    2021 PRICE ADJUSTMENT NOTIFICAITON3
+                                </div>
+                                <div class="time">
+                                    Feb 03.2020, 23:44:53
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <!--表单列表-->
+            <ul class="form-title">
+                <li class="selected-li">
+                    <div class="title-area">
+                        PCB Prototype
+                    </div>
+                </li>
+                <li>
+                    <div class="title-area">
+                        PCB Assembly
+                    </div>
+                </li>
+                <li>
+                    <div class="title-area">
+                        FPC lnstant Quote
+                        FPC lnstant Quote
+                    </div>
+                </li>
+                <li>
+                    <div class="title-area">
+                        SMD Stencil
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--左右切换-->
+    <div class="change-btn">
+        <span class="banner-left js-banner-left"></span>
+        <span class="banner-right js-banner-right"></span>
+    </div>
+</div>
+<!--主体内容-->
+<div class="main">
+    <div class="container_warp">
+        <!--服务-->
+        <ul class="guarantee-box">
+            <li>
+                <a href="https://www.pcbgogo.com/quality_gurrantee.html" target="_blank">
+                    <span class="iconfont icon-xingzhuang"></span>
+                    <div class="guarantee-text">
+                        <h3>PCB Material <br> Guarantee </h3>
+                        <p>PCB laminate is made of FR-4 with high quality. </p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.pcbgogo.com/quality_gurrantee.html" target="_blank">
+                    <span class="iconfont icon-hebingxingzhuang"></span>
+                    <div class="guarantee-text">
+                        <h3>Quality <br> Guarantee </h3>
+                        <p>PCBs are fully compliant with the ISO 9001:2008 quality manage- <br>ment system and UL
+                            certificate.</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.pcbgogo.com/delivery.html" target="_blank">
+                    <span class="iconfont icon-xingzhuang1"></span>
+                    <div class="guarantee-text">
+                        <h3>On-time <br> Guarantee </h3>
+                        <p>Expedited PCB prototype, <br>one-to-one service online, 99% <br>on-time shipping by DHL</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.pcbgogo.com/Introduction.html" target="_blank">
+                    <span class="iconfont icon-icon-test"></span>
+                    <div class="guarantee-text">
+                        <h3>Reasonable Price <br>Guarantee</h3>
+                        <p>$5 for 5-10pcs 10*10cm PCB <br>prototype,<br>$50 for SMT services</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!--如何下单-->
+    <div class="how-use">
+        <div class="container_warp">
+            <!--简介-->
+            <div class="introduction-box">
+                <h1>PCBGOGO Quickturn PCB Fabrication & PCB Assembly Manufacturer </h1>
+                <p>
+                    With over 10 years as an industry leader, PCBGOGO is one of the most experienced PCB and PCB
+                    assembly manufacturer in China. We're proud to manufacture high-quality PCBs and PCB assembly, and
+                    provide
+                    <br> a safe and prosperous workplace for our more than 200 employees. It's our goal to be the
+                    easiest printed circuit board manufacturer to do business with. <br>
+                    To achieve that goal,we just communicate with our PCB customer closely and take actions shortly if
+                    there has any question. Our record of success sets us apart from our competitors:
+                </p>
+                <!--更多按钮-->
+                <a href="Introduction.html" target="_blank" class="see-more">See more</a>
+            </div>
+            <!--下单流程-->
+            <div class="the-process">
+                <div class="des">
+                    How to Place an
+                    <br> order on PCBGOGO?
+                </div>
+                <dl class="the-dl">
+                    <dd>
+                        <span class="iconfont icon-jijia"></span>
+                        <h5>Online Quote</h5>
+                    </dd>
+                    <dd>
+                        <span class="iconfont icon-shangchuanwenjian"></span>
+                        <h5>Upload PCB File</h5>
+                    </dd>
+                    <dd>
+                        <span class="iconfont icon-shenhe7"></span>
+                        <h5>Order Review</h5>
+                    </dd>
+                    <dd>
+                        <span class="iconfont icon-fukuan"></span>
+                        <h5>Payment</h5>
+                    </dd>
+                    <dd>
+                        <span class="iconfont icon-shengchan"></span>
+                        <h5>Fabrication</h5>
+                    </dd>
+                    <dd>
+                        <span class="iconfont icon-jiaofu"></span>
+                        <h5>Delivery</h5>
+                    </dd>
+                    <dd>
+                        <span class="iconfont icon-querenshouhuo"></span>
+                        <h5>Confirm Received</h5>
+                    </dd>
+                    <dd>
+                        <span class="iconfont icon-pinglun"></span>
+                        <h5>Shared</h5>
+                    </dd>
+                </dl>
+                <a class="quote-btn" href="javascript:void(0)" target="_blank">
+                    Quote & Order
+                </a>
+            </div>
+            <!-- 样板计价-->
+            <div class="sample-pricing clear-fix">
+                <div class="item pcb-sample">
+                    <div class="item-left">
+                        <div class="top">
+                            <h3>PCB Manufacturing</h3>
+                            <p>
+                                Quick Turn PCB Prototype
+                                Manufacturer
+                            </p>
+                        </div>
+                        <div class="center">
+                            <div class="list">
+                                <em>★</em>
+                                <i>FR-4 PCB material</i>
+                            </div>
+                            <div class="list">
+                                <em>★</em>
+                                <i>1-2 layers 100*100mm
+                                    PCB fabrication</i>
+                            </div>
+                            <div class="list">
+                                <em>★</em>
+                                <i>2-3 days delivery</i>
+                            </div>
+                            <!--价格-->
+                            <div class="price-box">
+                                <span>PRICE</span>
+                                <span class="price">$5.00</span>
+                            </div>
+                        </div>
+                        <a href="javascript:void(0)" target="_blank" class="see-more">See more</a>
+                    </div>
+                    <div class="item-right">
+                        <div class="img-box">
+                            <img src="img/images/bg-loading.gif" data-original="img/images/prototype1.png" alt="pcb">
+                        </div>
+                        <ul class="specifications clear-fix">
+                            <li>Rogers</li>
+                            <li>HDI</li>
+                            <li>Aluminum board</li>
+                            <li>FR-4</li>
+                        </ul>
+                        <div class="img2-box">
+                            <img src="img/images/bg-loading.gif" data-original="img/images/prototype2.png" alt="pcb">
+                        </div>
+                        <ul class="specifications clear-fix">
+                            <li>Flexible PCB</li>
+                            <li>Rigid-Flex Board</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="sample-pictures">
+                        <img src="img/images/bg-loading.gif" data-original="img/images/assembly-img.png" alt="">
+                    </div>
+                    <div class="text-box">
+                        <h3>PCB Assembly service</h3>
+                        <span>Fast PCB Assembly Service</span>
+                    </div>
+                    <div class="lists">
+                        <div class="list">
+                            <em>★</em>
+                            <i>Min. 1 piece</i>
+                        </div>
+                        <div class="list">
+                            <em>★</em>
+                            <i>Professional PCB assembly
+                                service at low price</i>
+                        </div>
+                        <div class="list">
+                            <em>★</em>
+                            <i>3-5 days lead time</i>
+                        </div>
+                    </div>
+                    <!--价格-->
+                    <div class="prices-box">
+                        <span>PRICE</span>
+                        <span class="price">$30.00</span>
+                    </div>
+                    <a href="javascript:void(0)" target="_blank" class="see-more">See more</a>
+                </div>
+                <div class="item">
+                    <div class="sample-pictures">
+                        <img src="img/images/bg-loading.gif" data-original="img/images/flexible-img.png" alt="">
+                    </div>
+                    <div class="text-box">
+                        <h3>Flexible PCB</h3>
+                        <span>Flexible PCB Manufacturing</span>
+                    </div>
+                    <div class="lists">
+                        <div class="list">
+                            <em>★</em>
+                            <i>1-4 layers flexible PCB</i>
+                        </div>
+                        <div class="list">
+                            <em>★</em>
+                            <i>Fast PCB fabrication and
+                                prototype accepted</i>
+                        </div>
+                    </div>
+                    <!--价格-->
+                    <div class="prices-box">
+                        <span>PRICE</span>
+                        <span class="price">$60.00</span>
+                    </div>
+                    <a href="javascript:void(0)" target="_blank" class="see-more">See more</a>
+                </div>
+                <div class="item">
+                    <div class="sample-pictures">
+                        <img src="img/images/bg-loading.gif" data-original="img/images/stencil-img.png" alt="">
+                    </div>
+                    <div class="text-box">
+                        <h3>Stencil</h3>
+                        <span>Stencil Special</span>
+                    </div>
+                    <div class="lists">
+                        <div class="list">
+                            <em>★</em>
+                            <i>Cheap price for stencil with
+                                or without frame</i>
+                        </div>
+                        <div class="list">
+                            <em>★</em>
+                            <i>24 hours lead time
+                                Not a broker</i>
+                        </div>
+                    </div>
+                    <!--价格-->
+                    <div class="prices-box">
+                        <span>PRICE</span>
+                        <span class="price">$10.00</span>
+                    </div>
+                    <a href="javascript:void(0)" target="_blank" class="see-more">See more</a>
+                </div>
+                <div class="item">
+                    <div class="sample-pictures">
+                        <img src="img/images/bg-loading.gif" data-original="img/images/layout-img.png" alt="">
+                    </div>
+                    <div class="text-box">
+                        <h3>PCB Layout</h3>
+                    </div>
+                    <div class="lists">
+                        <div class="list">
+                            <em>★</em>
+                            <i>1-20 layers PCB layout in
+                                PCBGOGO</i>
+                        </div>
+                        <div class="list">
+                            <em>★</em>
+                            <i>Cheap price with 24 hours
+                                live service.</i>
+                        </div>
+                    </div>
+                    <!--价格-->
+                    <div class="prices-box">
+                        <span>PRICE</span>
+                        <span class="price">$49.00</span>
+                    </div>
+                    <a href="javascript:void(0)" target="_blank" class="see-more">See more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--图形展示-->
+    <div class="board-info">
+        <div class="container_warp">
+            <div class="layer-info">
+                <ul class="layer-title js-layer-title">
+                    <li class="active-flag">
+                        FOUR - LAYER
+                    </li>
+                    <li>
+                        SIX - LAYER
+                    </li>
+                    <li>
+                        EIGHT - LAYER
+                    </li>
+                    <li>
+                        TENTH - LAYER
+                    </li>
+                </ul>
+                <div class="layer-img-box js-layer-img">
+                    <!--4层板-->
+                    <div class="img-item">
+                        <div class="img-tips">
+                            <div class="text">4-Layer PCB with 2 Routing Layers,
+                                a Ground Plane and a Power Plane
+                            </div>
+                            <a class="link" href="javascript:void(0)" target="_blank">
+                                Multiple Layer PCB Stack-up
+                            </a>
+                        </div>
+                        <div class="img-flag">
+
+                        </div>
+                    </div>
+                    <!--6层板-->
+                    <div class="img-item">
+                        <div class="img-tips">
+                            <div class="text">6 layer PCB has GTL, GBL, and 4 inner layers.
+                                Every signal that travels from 1 to 6 layers
+                            </div>
+                            <a class="link" href="javascript:void(0)" target="_blank">
+                                Multiple Layer PCB Stack-up
+                            </a>
+                        </div>
+                        <div class="img-flag">
+
+                        </div>
+                    </div>
+                    <!--8层板-->
+                    <div class="img-item">
+                        <div class="img-tips">
+                            <div class="text">8 layer PCB has GTL, GBL, and 6 inner layers.
+                                Every signal that travels from 1 to 8 layers
+                            </div>
+                            <a class="link" href="javascript:void(0)" target="_blank">
+                                Multiple Layer PCB Stack-up
+                            </a>
+                        </div>
+                        <div class="img-flag">
+
+                        </div>
+                    </div>
+                    <!--10层板-->
+                    <div class="img-item">
+                        <div class="img-tips">
+                            <div class="text">10 layerPCB hasGTL,GBL,and 8 inner layers.
+                                Every signal that travels from 1 to 10 layers
+                            </div>
+                            <a class="link" href="javascript:void(0)" target="_blank">
+                                Multiple Layer PCB Stack-up
+                            </a>
+                        </div>
+                        <div class="img-flag">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="user-trade">
+                <div class="number-box">
+                    <p>Fast, Reliable, Affordable</p>
+                    <div class="latest-box">
+                        PCB Prototype & Assembly
+                        <br>Service in China
+                    </div>
+                    <div class="flag-text">
+                        Your Order Is in Progress!
+                    </div>
+                    <!--下单按钮-->
+                    <!--awaiting-payment-->
+                    <a href="member/awaiting-payment.html" class="check-order" target="_blank">
+                        Check order progress
+                    </a>
+                </div>
+                <!--订单进度-->
+                <div class="boxr">
+                    <div class="go-status">
+                        <span class="go-title">PCBGOGO Order Status:</span>
+                        <div class="status-box">
+                            <div class="status-mask">
+                                <div class="status">
+                                    <div class="name">
+                                        Last 24H New Order:
+                                    </div>
+                                    <div class="number">
+                                        <span>112555555</span>
+                                        <span class="iconfont icon-shangyi"></span>
+                                    </div>
+                                </div>
+                                <div class="status">
+                                    <div class="name">
+                                        Last 30-Day's Order:
+                                    </div>
+                                    <div class="number">
+                                        <span>675261111</span>
+                                        <span class="iconfont icon-shangyi"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="boxr-par">
+                        <div class="par-mask">
+                        </div>
+                        <ul class="boxr-ul">
+                            <li>Buyer name</li>
+                            <li>Date</li>
+                            <li>Quantity</li>
+                            <li class="progress">Progress</li>
+                        </ul>
+                        <div class="boxr-content">
+                            <ul class="country-price">
+                                <li>
+                                    <i class="country-gq"><img src="img/images/country.png" alt="" width="18"
+                                                               height="10">&nbsp;No.A0***71</i>
+                                    <span class="country-time">9.20</span>
+                                    <span class="money">1000</span>
+                                    <i class="process-box"><span>98%</span><i class="process"></i>
+                                        <i class="process-color" style="width: 18px;"></i></i>
+                                </li>
+                                <li>
+                                    <i class="country-gq"><img src="img/images/icons2.png" alt="" width="18"
+                                                               height="10">&nbsp;No.A0***82</i>
+                                    <span class="country-time">12.20</span>
+                                    <span class="money">500</span>
+                                    <i class="process-box"><span>99%</span><i class="process"></i>
+                                        <i class="process-color" style="width: 42px;"></i></i>
+                                </li>
+                                <li>
+                                    <i class="country-gq"><img src="img/images/icons.png" alt="" width="18"
+                                                               height="10">&nbsp;No.A0***33</i>
+                                    <span class="country-time">8.08</span>
+                                    <span class="money">200</span>
+                                    <i class="process-box"><span>95%</span><i class="process"></i>
+                                        <i class="process-color" style="width: 48px;"></i></i>
+                                </li>
+                                <li>
+                                    <i class="country-gq"><img src="img/images/Japan.png" alt="" width="18"
+                                                               height="10">&nbsp;No.A0***14</i>
+                                    <span class="country-time">6.25</span>
+                                    <span class="money">10</span>
+                                    <i class="process-box"><span>100%</span><i class="process"></i>
+                                        <i class="process-color" style="width: 18px;"></i></i>
+                                </li>
+                                <li>
+                                    <i class="country-gq"><img src="img/images/country.png" alt="" width="18"
+                                                               height="10">&nbsp;No.A0***65</i>
+                                    <span class="country-time">12.20</span>
+                                    <span class="money">1000</span>
+                                    <i class="process-box"><span>30%</span><i class="process"></i>
+                                        <i class="process-color" style="width: 18px;"></i></i>
+                                </li>
+                                <li>
+                                    <i class="country-gq"><img src="img/images/England.png" alt="" width="18"
+                                                               height="10">&nbsp;No.A0***46</i>
+                                    <span class="country-time">4.20</span>
+                                    <span class="money">1200</span>
+                                    <i class="process-box"><span>50%</span><i class="process"></i>
+                                        <i class="process-color" style="width: 30px;"></i></i>
+                                </li>
+                                <li>
+                                    <i class="country-gq"><img src="img/images/country.png" alt="" width="18"
+                                                               height="10">&nbsp;No.A0***97</i>
+                                    <span class="country-time">1.20</span>
+                                    <span class="money">500</span>
+                                    <i class="process-box"><span>70%</span><i class="process"></i>
+                                        <i class="process-color" style="width: 42px;"></i></i>
+                                </li>
+                                <li>
+                                    <i class="country-gq"><img src="img/images/icons2.png" alt="" width="18"
+                                                               height="10">&nbsp;No.A0***28</i>
+                                    <span class="country-time">12.20</span>
+                                    <span class="money">260</span>
+                                    <i class="process-box"><span>80%</span><i class="process"></i>
+                                        <i class="process-color" style="width: 48px;"></i></i>
+                                </li>
+                                <li>
+                                    <i class="country-gq"><img src="img/images/England.png" alt="" width="18"
+                                                               height="10">&nbsp;No.A0***79</i>
+                                    <span class="country-time">7.18</span>
+                                    <span class="money">50</span>
+                                    <i class="process-box"><span>36%</span><i class="process"></i>
+                                        <i class="process-color" style="width: 21.6px;"></i></i>
+                                </li>
+                                <li>
+                                    <i class="country-gq"><img src="img/images/country.png" alt="" width="18"
+                                                               height="10">&nbsp;No.A0***10</i>
+                                    <span class="country-time">6.20</span>
+                                    <span class="money">700</span>
+                                    <i class="process-box"><span>20%</span><i class="process"></i>
+                                        <i class="process-color" style="width: 12px;"></i></i>
+                                </li>
+                                <li>
+                                    <i class="country-gq"><img src="img/images/iconcountry.png" alt="" width="18"
+                                                               height="10">&nbsp;No.A0***81</i>
+                                    <span class="country-time">11.20</span>
+                                    <span class="money">900</span>
+                                    <i class="process-box"><span>80%</span><i class="process"></i>
+                                        <i class="process-color" style="width: 48px;"></i></i>
+                                </li>
+                                <li>
+                                    <i class="country-gq"><img src="img/images/icons2.png" alt="" width="18"
+                                                               height="10">&nbsp;No.A0***92</i>
+                                    <span class="country-time">10.28</span>
+                                    <span class="money">500</span>
+                                    <i class="process-box"><span>70%</span><i class="process"></i>
+                                        <i class="process-color" style="width: 42px;"></i></i>
+                                </li>
+                                <li>
+                                    <i class="country-gq"><img src="img/images/Japan.png" alt="" width="18"
+                                                               height="10">&nbsp;No.A0***33</i>
+                                    <span class="country-time">12.20</span>
+                                    <span class="money">280</span>
+                                    <i class="process-box"><span>60%</span><i class="process"></i>
+                                        <i class="process-color" style="width: 36px;"></i></i>
+                                </li>
+                                <li>
+                                    <i class="country-gq"><img src="img/images/iconcountry.png" alt="" width="18"
+                                                               height="10">&nbsp;No.A0***54</i>
+                                    <span class="country-time">5.26</span>
+                                    <span class="money">10</span>
+                                    <i class="process-box"><span>45%</span><i class="process"></i>
+                                        <i class="process-color" style="width: 27px;"></i></i>
+                                </li>
+                                <li>
+                                    <i class="country-gq"><img src="img/images/Japan.png" alt="" width="18"
+                                                               height="10">&nbsp;No.A0***25</i>
+                                    <span class="country-time">2.12</span>
+                                    <span class="money">1000</span>
+                                    <i class="process-box"><span>30%</span><i class="process"></i>
+                                        <i class="process-color" style="width: 18px;"></i></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--转孔车间-->
+    <div class="turn-hole">
+        <div class="container_warp">
+            <div class="turn-content">
+                <!--文字-->
+                <div class="choose-us">
+                    <h2 class="why-us">Why choose us?</h2>
+                    <ul class="now">
+                        <li> A professional and trustworthy PCB prototype manufacturer</li>
+                        <li> Quick turn PCB assembly turnkey services</li>
+                        <li> Low minimum from 1pcs for PCBA</li>
+                        <li> Fastest PCB prototype</li>
+                        <li> 99% on-time shipping by DHL</li>
+                        <li> 24 hour online customer service</li>
+                        <li> Professional PCB engineer for one-to-one service</li>
+                        <li> Guaranteed quality from PCB quote to delivery</li>
+                        <li> Shorted delivery by DHL only 2~4 days</li>
+                    </ul>
+                    <!--视频-->
+                    <div class="open-video" data-url="https://www.youtube.com/embed/3G4D819uUms">
+                        <div class="play-text">
+                            CORPORATE
+                            VIDEO
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-box js-bg-box">
+                    <div class="bg-item"></div>
+                    <div class="bg-item"></div>
+                    <div class="bg-item"></div>
+                    <div class="bg-item"></div>
+                </div>
+                <h2 class="pcb-ser">PCB Prototype & PCB Assembly manufacturing services</h2>
+                <ul class="us-info js-us-info">
+                    <li>
+                        <span class="iconfont icon-diqiu"></span>
+                        <div class="text">
+                            <span class="number">180+</span>
+                            <h5>
+                                Cover countries
+                            </h5>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="iconfont icon-guanzhu"></span>
+                        <div class="text">
+                            <span class="number">100+</span>
+                            <h5>
+                                Experienced R&D Team
+                            </h5>
+                        </div>
+                    </li>
+                    <li class="active">
+                        <span class="iconfont icon-kaijushengchanpeibi"></span>
+                        <div class="text">
+                            <span class="number">4+N</span>
+                            <h5>
+                                Factories
+                            </h5>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="iconfont icon-fahuodingdan"></span>
+                        <div class="text">
+                            <span class="number">3000+</span>
+                            <h5>
+                                Average Daily Shipments
+                            </h5>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--论坛位-->
+    <div class="forum-box">
+        <!--案例-->
+        <ul class="case-box">
+            <li>
+                <a href="#">
+                    <div class="case-img">
+                        <img src="img/images/sample-case1.png" alt="case" width="160" height="86">
+                    </div>
+                    <div class="case-text">
+                        <p>Keep ingenuity, PCB <br>manufacturin- ghighquality in <br>pcbgogo</p>
+                        <span>March 22, 2018, 07:18:22 pm</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="case-img">
+                        <img src="img/images/sample-case2.png" alt="case" width="160" height="86">
+                    </div>
+                    <div class="case-text">
+                        <p>Flexible Printed Circuits: Types, <br>Benefits and its Applications by <br>PCBGOGO</p>
+                        <span>March 22, 2018, 07:18:22 pm</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="case-img">
+                        <img src="img/images/sample-case3.png" alt="case" width="160" height="86">
+                    </div>
+                    <div class="case-text">
+                        <p>What is surface mount <br>technology (SMT)?</p>
+                        <span>March 22, 2018, 07:18:22 pm</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <div class="forum-title">
+            <h2>Feedback for PCBGOGO</h2>
+            <div class="score-box">
+                Rated <em>9.0</em> out of 10 based on <em>1000+</em> reviews.
+                <a href="javascript:void(0)" target="_blank">See thousands of real customer reviews here.</a>
+            </div>
+        </div>
+        <div class="show-products">
+            <ul class="product-box">
+                <li>
+                    <a href="javascript:void(0)" target="_blank">
+                        <div class="product-img">
+                            <img class="img-box" src="img/images/bg-loading.gif"
+                                 alt="user"
+                                 data-original="https://pcbgogofile.s3-us-west-2.amazonaws.com/project/19/12/18/2033390562205.jpg">
+                            <div class="customer-info">
+                                <img class="head" src="img/images/forum/guest2.png" alt="" width="40" height="40">
+                                <span class="name">
+                      d****ion
+                    </span>
+                                <img class="country" src="img/images/country.png" alt="">
+                            </div>
+                        </div>
+                        <div class="product-des">
+                            <div class="des-title">
+                                RAMboard prototype
+                            </div>
+                            <div class="level-box">
+                                <span class="iconfont icon-wujiaoxing"></span>
+                                <span class="iconfont icon-wujiaoxing"></span>
+                                <span class="iconfont icon-wujiaoxing"></span>
+                                <span class="iconfont icon-wujiaoxing"></span>
+                                <span class="iconfont icon-wujiaoxing"></span>
+                            </div>
+                            <div class="des-text">
+                                My first time making PCBs, for a sparking machine. Fantastic service from PCBgogo
+                                Fantastic service from PCBgogo
+                            </div>
+                            <div class="info-des">
+                                <span class="iconfont icon-chakan-tongyong"></span>
+                                <span class="des">120</span>
+                                <span class="iconfont icon-pinglun"></span>
+                                <span class="des">20</span>
+                                <span class="iconfont icon-shijian1"></span>
+                                <span class="des">
+                      Feb 03.2020, 23:44:51
+                    </span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" target="_blank">
+                        <div class="product-img">
+                            <img class="img-box" src="img/images/bg-loading.gif"
+                                 alt="user"
+                                 data-original="https://pcbgogofile.s3-us-west-2.amazonaws.com/project/19/11/29/2004222225158.jpg">
+                            <div class="customer-info">
+                                <img class="head" src="img/images/forum/guest2.png" alt="" width="40" height="40">
+                                <span class="name">
+                      d****ion
+                    </span>
+                                <img class="country" src="img/images/country.png" alt="">
+                            </div>
+                        </div>
+                        <div class="product-des">
+                            <div class="des-title">
+                                RAMboard prototype
+                            </div>
+                            <div class="level-box">
+                                <span class="iconfont icon-wujiaoxing"></span>
+                                <span class="iconfont icon-wujiaoxing"></span>
+                                <span class="iconfont icon-wujiaoxing"></span>
+                                <span class="iconfont icon-wujiaoxing"></span>
+                                <span class="iconfont icon-wujiaoxing"></span>
+                            </div>
+                            <div class="des-text">
+                                My first time making PCBs, for a sparking machine. Fantastic service from PCBgogo
+                                Fantastic service from PCBgogo
+                            </div>
+                            <div class="info-des">
+                                <span class="iconfont icon-chakan-tongyong"></span>
+                                <span class="des">120</span>
+                                <span class="iconfont icon-pinglun"></span>
+                                <span class="des">20</span>
+                                <span class="iconfont icon-shijian1"></span>
+                                <span class="des">
+                      Feb 03.2020, 23:44:51
+                    </span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" target="_blank">
+                        <div class="product-img">
+                            <img class="img-box" src="img/images/bg-loading.gif"
+                                 data-original="https://pcbgogofile.s3-us-west-2.amazonaws.com/project/19/11/20/0051273113030.jpg"
+                                 alt="">
+                            <div class="customer-info">
+                                <img class="head" src="img/images/forum/guest2.png" alt="" width="40" height="40">
+                                <span class="name">
+                      d****ion
+                    </span>
+                                <img class="country" src="img/images/country.png" alt="">
+                            </div>
+                        </div>
+                        <div class="product-des">
+                            <div class="des-title">
+                                RAMboard prototype
+                            </div>
+                            <div class="level-box">
+                                <span class="iconfont icon-wujiaoxing"></span>
+                                <span class="iconfont icon-wujiaoxing"></span>
+                                <span class="iconfont icon-wujiaoxing"></span>
+                                <span class="iconfont icon-wujiaoxing"></span>
+                                <span class="iconfont icon-wujiaoxing"></span>
+                            </div>
+                            <div class="des-text">
+                                My first time making PCBs, for a sparking machine. Fantastic service from PCBgogo
+                                Fantastic service from PCBgogo
+                            </div>
+                            <div class="info-des">
+                                <span class="iconfont icon-chakan-tongyong"></span>
+                                <span class="des">120</span>
+                                <span class="iconfont icon-pinglun"></span>
+                                <span class="des">20</span>
+                                <span class="iconfont icon-shijian1"></span>
+                                <span class="des">
+                      Feb 03.2020, 23:44:51
+                    </span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" target="_blank">
+                        <div class="product-img">
+                            <img class="img-box" src="img/images/bg-loading.gif" alt="user"
+                                 data-original="img/images/forum5.png">
+                            <div class="customer-info">
+                                <img class="head" src="img/images/forum/guest2.png" alt="" width="40" height="40">
+                                <span class="name">
+                      d****ion
+                    </span>
+                                <img class="country" src="img/images/country.png" alt="">
+                            </div>
+                        </div>
+                        <div class="product-des">
+                            <div class="des-title">
+                                RAMboard prototype
+                            </div>
+                            <div class="level-box">
+                                <span class="iconfont icon-wujiaoxing"></span>
+                                <span class="iconfont icon-wujiaoxing"></span>
+                                <span class="iconfont icon-wujiaoxing"></span>
+                                <span class="iconfont icon-wujiaoxing"></span>
+                                <span class="iconfont icon-wujiaoxing"></span>
+                            </div>
+                            <div class="des-text">
+                                My first time making PCBs, for a sparking machine. Fantastic service from PCBgogo
+                                Fantastic service from PCBgogo
+                            </div>
+                            <div class="info-des">
+                                <span class="iconfont icon-chakan-tongyong"></span>
+                                <span class="des">120</span>
+                                <span class="iconfont icon-pinglun"></span>
+                                <span class="des">20</span>
+                                <span class="iconfont icon-shijian1"></span>
+                                <span class="des">
+                      Feb 03.2020, 23:44:51
+                    </span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--底部-->
+<div class="footer">
+    <!--  赞助商-->
+    <div class="sponsors">
+        <div class="sponsors-box">
+            <div class="item">
+                <div class="name">Verified by</div>
+                <img src="img/images/verified.png" alt="">
+            </div>
+            <div class="item">
+                <div class="name">Delivery Services</div>
+                <img src="img/images/delivery.png" alt="">
+            </div>
+            <div class="item"
+                 onclick="window.open('https://www.pcbgogo.com/Blog/PCBGOGO_Certificates_of_ISO9001_2015_QMS__UL__REACH__RoHS.html', '_blank')">
+                <div class="name">Payment Methods</div>
+                <img src="img/images/payments.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!--二级列表-->
+    <div class="links-type ">
+        <div class="container_warp">
+            <!--右侧导航-->
+            <div class="list-box">
+                <ul class="links-title">
+                    <li>
+                        <p>CAPABILITIES</p>
+                        <ul class="links-lists">
+                            <li>
+                                <h3>
+                                    <a href="https://www.pcbgogo.com/Capabilities/PCBA_Capabilities.html">
+                                        PCBA Capabilities
+                                    </a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="https://www.pcbgogo.com/Capabilities/FR_4_PCB_Manufacturing.html">
+                                        FR-4 PCB Capabilities
+                                    </a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="https://www.pcbgogo.com/Capabilities/Advanced_PCB_Manufacturing.html">
+                                        Advanced PCB Capabilities
+                                    </a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="https://www.pcbgogo.com/Capabilities/Aluminum_PCB_Manufacturing.html">
+                                        Aluminum PCB Capabilities
+
+                                    </a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="https://www.pcbgogo.com/Capabilities/Copper_PCB_Manufacturing.html">
+                                        Copper PCB Capabilities
+                                    </a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="https://www.pcbgogo.com/Capabilities/Flexible_PCB_Capabilities.html">
+                                        Flexible PCB Capabilities
+                                    </a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="https://www.pcbgogo.com/Capabilities/Rigid_Flex_PCB_Capabilities.html">
+                                        Rigid-Flex PCB Capabilities
+                                    </a>
+                                </h3>
+                            </li>
+                            <li>
+                                <p class="links-caption">
+                                    OTHERS
+                                </p>
+                                <h3>
+                                    <a href="https://www.pcbgogo.com/Blog/PCBGOGO_Certificates_of_ISO9001_2015_QMS__UL__REACH__RoHS.html">
+                                        PCB Certifications
+                                    </a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="https://www.pcbgogo.com/knowledge-center/RoHS_lead_Free.html">
+                                        RoHS-lead Free PCBs
+                                    </a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="https://www.pcbgogo.com/GerberViewer.html">
+                                        Online Gerber View
+                                    </a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="https://www.pcbgogo.com/knowledge-center/Automated_Optical_Inspection__AOI_.html">
+                                        Automated Optical Inspection (AOI)
+                                    </a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="https://www.pcbgogo.com/knowledge-center/Automated_X_ray_Inspection__AXI_.html">
+                                        Automated X-ray inspection (AXI)
+                                    </a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="https://www.pcbgogo.com/knowledge-center/Electrical_Test__E_test_.html">
+                                        Electric Test (E-test)
+                                    </a>
+                                </h3>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>
+                            PCBGOGO SERVICES/PRODUCT
+                        </p>
+                        <ul class="links-lists">
+                            <li>
+                                <h3>
+                                    <a href="https://www.pcbgogo.com/pcb-fabrication-quote.html">
+                                        PCB Instant Quote
+                                    </a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="https://www.pcbgogo.com/pcb-assembly.html">
+                                        PCB Assembly service
+                                    </a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="https://www.pcbgogo.com/hdi-pcb.html">
+                                        Advanced PCB
+                                    </a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="https://www.pcbgogo.com/flexible-pcb.html">
+                                        Flex / Rigid-flex PCB
+                                    </a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="https://www.pcbgogo.com/pcbgogo-standard-stackup-for-multilayer-pcbs.pdf">
+                                        Multilayer PCB
+                                    </a>
+                                </h3>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>HELP & CONTACT</p>
+                        <ul class="links-lists">
+                            <li>
+                                <h3>
+                                    <a href="https://www.pcbgogo.com/help_center.html">
+                                        Help center
+                                    </a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="https://www.pcbgogo.com/contact.html">
+                                        Contact us
+                                    </a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="https://www.pcbgogo.com/member/login">
+                                        Sign In / Register
+                                    </a>
+                                </h3>
+                            </li>
+                        </ul>
+                        <p class="links-caption">COMMUNITY</p>
+                        <ul class="links-lists">
+                            <li>
+                                <h3>
+                                    <a href="https://www.pcbgogo.com/Feedback/">
+                                        Feedback
+                                    </a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="https://www.pcbgogo.com/forum.html">
+                                        Forum
+                                    </a>
+                                </h3>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>ABOUT PCBGOGO</p>
+                        <ul class="links-lists">
+                            <li>
+                                <h3>
+                                    <a href="/orderguide.html">
+                                        introduction
+                                    </a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3><a href="/contact.html">
+                                    Why Buy From us
+                                </a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="/member/login">
+                                    Order Guide
+                                </a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="/quality_gurrantee.html">
+                                    Quality Guarantee
+                                </a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="/delivery.html">
+                                    Method of Payment
+                                </a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="/delivery.html">
+                                    Shipping Methods Guide
+                                </a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="/delivery.html">
+                                    News
+                                </a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="/delivery.html">
+                                    Privacy Policy
+                                </a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="/return-policy.html">
+                                    Return policy
+                                </a></h3>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="link-box">
+                    <div class="link-way">
+              <span class="app">
+                <span class="iconfont icon-shouji2"></span>
+                Whatsapp +8618665922549</span>
+
+                        <span class="mail">
+               <span class="iconfont icon-jurassic_email"></span>
+                        <a href="mailto:service@pcbgogo.com">Mail service@pcbgogo.com</a>
+                        </span>
+
+                        <span class="tel">
+             <span class="iconfont icon-dianhua"></span> Tel +86-755-33066136</span>
+                        <span class="sitemap-link">
+                            <a href="sitemap.html" target="_blank">
+                                Sitemap
+                            </a>
+                        </span>
+                    </div>
+                    <div class="share-box">
+                        <a target="_blank" href="https://twitter.com/PCBGOGOofficial"><img
+                                src="img/images/twitter.png" alt=""></a>
+                        <a target="_blank" href="https://www.youtube.com/channel/UCNKfbfg7u7m8if4aRbfezyg"><img
+                                src="img/images/google.png" alt=""></a>
+                        <a target="_blank" href="https://www.facebook.com/Pcbgogo-1623727847885541/timeline/"><img
+                                src="img/images/facebook.png" alt=""></a>
+                        <a target="_blank"
+                           href="https://www.linkedin.com/company/13738760?trk=tyah&amp;trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A10159025%2Cidx%3A1-1-1%2CtarId%3A1442555194895%2Ctas%3Apcbgogo"><img
+                                src="img/images/instagram.png" alt=""></a>
+                        <a target="_blank" href="https://www.instagram.com/pcbgogo_official/?hl=en"><img
+                                src="img/images/Linkedln.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <!--左侧表单-->
+            <div class="send-from">
+                <p>QUICK CONTACT</p>
+                <form action="#" class="message-from">
+                    <input type="text" placeholder="Name" value="Name" onfocus="if(this.value==='Name')this.value=''"
+                           onblur="if(this.value==='')this.value='Name'">
+                    <input type="text" placeholder="Email" value="Email"
+                           onfocus="if(this.value==='Email')this.value=''"
+                           onblur="if(this.value==='')this.value='Email'">
+                    <textarea type="text" class="message-input" placeholder="Message"
+                              onfocus="if(this.value==='Message')this.value=''"
+                              onblur="if(this.value==='')this.value='Message'"></textarea>
+                    <input type="button" class="btn-submit " value="Send Message">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--  版权-->
+    <div class="copyright-box">
+        <div class="container_warp">
+            Copyright © 2020 PCBGOGO. All rights reserved. Shenzhen JDB Technology Co.,Ltd. Address: No. 15, Zhongxing
+            Road, Kengzi Street, Pingshan District, Shenzhen, 518000, China.
+        </div>
+    </div>
+</div>
+<!--PC跳转手机-->
+<div class="caseBlanche-box">
+    <a href="gogo手机站网址">
+        <div id="caseBlanche3">
+            <div id="rond">
+                <div id="test"></div>
+            </div>
+            <span class="iconfont" id="load">&#xe61a;</span>
+        </div>
+    </a>
+</div>
+<!--cookie弹窗提示-->
+<div class="cookies-parent">
+    <div class="container_warp">
+        <div class="cookies-box">
+            <div class="cookies-text">
+                We use cookies to analyze website accesses and improve your online experience. By continuing browsing
+                this website,
+                you agree to our use of cookies and privacy policy.
+                <a class="js-open-pop" href="javascript:void(0)">Click here for more details</a>
+            </div>
+            <div class="cookies-control">
+                <button type="button" class="js-cookies-btn">Accept & close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="cookies-pop js-cookies-pop">
+    <div class="pop-body-parent">
+        <div class="pop-body-head">
+            <span class="close-btn js-close-pop"></span>
+        </div>
+        <div class="pop-body">
+            <div class="title">
+                Cookies Policy
+            </div>
+            <div class="title-des">
+                Like many other sites, we use cookies to analyze website accesses and improve your browsing experience.
+            </div>
+            <div class="rules-item">
+                <div class="name">USE OF COOKIES</div>
+                <p class="des">
+                    Cookies are text files with small pieces of data that are stored on your computers or mobile devices
+                    via an internet browser. Through the use of cookies, we are able to remember your behaviors and
+                    preferences, thereby giving you the best-personalized experience.
+                </p>
+            </div>
+            <div class="rules-item">
+                <div class="name">TYPES OF COOKIES</div>
+                <p class="des">
+                    The following types of cookies may be used when you visit the site.
+                </p>
+                <dl class="des-list">
+                    <dd>
+                        <div class="h-list">
+                            <div class="h6">
+                                Essential Cookies
+                            </div>
+                            <div class="h-des">
+                                These cookies are strictly necessary for the regular operation of our site. For example,
+                                we may use essential cookies to authenticate users and protect user data from
+                                unauthorized parties.
+                            </div>
+                        </div>
+                    </dd>
+                    <dd>
+                        <div class="h-list">
+                            <div class="h6">
+                                Performance Cookies
+                            </div>
+                            <div class="h-des">
+                                These cookies are used to collect information about how you interact with our site, what
+                                interests you most and how effective our content is. They monitor the performance of the
+                                site and enable us to improve the way it works.
+                            </div>
+                        </div>
+                    </dd>
+                    <dd>
+                        <div class="h-list">
+                            <div class="h6">
+                                Functionality Cookies
+                            </div>
+                            <div class="h-des">
+                                These cookies allow us to remember your preferences and choices you make on the site
+                                such as username, region, language and to provide more personalized features.
+                            </div>
+                        </div>
+                    </dd>
+                    <dd>
+                        <div class="h-list">
+                            <div class="h6">
+                                Advertising Cookies
+                            </div>
+                            <div class="h-des">
+                                These cookies track your online activity and help advertisers and ad servers deliver
+                                advertisements that are most likely to be of interest to you. These cookies are almost
+                                always third-party.
+                            </div>
+                        </div>
+                    </dd>
+                    <dd>
+                        <div class="h-list">
+                            <div class="h6">
+                                Third-Party Cookies
+                            </div>
+                            <div class="h-des">
+                                In addition to our cookies, third-party cookies may be placed on your device by other
+                                domains like providers of advertising or analytics services. They also allow us to
+                                provide certain services, such as live chats.
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+            <div class="rules-item">
+                <div class="name">CONTROL OF COOKIES</div>
+                <p class="des">
+                    By continuing browsing this site, you agree to our use of cookies. However, you can revoke your
+                    consent at any time in your browser’s settings. Further information on how to remove or reject
+                    cookies can be found on www.allaboutcookies.org.
+                    <br><br>
+                    Please be aware that if cookies are disabled, this site may not work efficiently as intended.
+
+                </p>
+            </div>
+            <div class="rules-item">
+                <div class="name">PRIVACY POLICY</div>
+                <p class="des">
+                    For more information about how we use data collected by cookies and other tracking technologies,
+                    please refer to our Privacy Policy.
+                </p>
+            </div>
+            <div class="pop-footer">
+                <div class="f-name">CONTACT US</div>
+                <p class="p-link">
+                    If you have any questions or comments about this Cookies Policy,
+                    <br>
+                    please contact us at <a href="mailto:service@pcbgogo.com">service@pcbgogo.com</a>
+                </p>
+                <a class="acc-btn js-acc-btn" href="javascript:void(0)">
+                    Accept & close
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--宣传视频弹窗-->
+<div class="publicity-film-pop js-film-pop">
+    <span class="iconfont icon-close-circle-line js-close-film"></span>
+    <iframe src="https://www.youtube.com/embed/Pqu7TYxAVmM"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+</div>
+<!--套用忽略 header.js-->
+<!--套用忽略 index.js-->
+<script src="img/js/header.js"></script>
+<script src="img/js/index.js"></script>
+<!--<script src="img/js/snow/Snow.js"></script>-->
+<script src="img/js/lazyload/jquery.lazyload.min.js"></script>
+<script src="img/js/layer-v3.1.1/layer/layer.js"></script>
+<script>
+
+  $(function () {
+
+    // 左下角宣传视频英文
+    void function () {
+      var goFilm = window.localStorage.getItem('isGofilm') || false
+      if (!goFilm) {
+        $('.js-film-pop').show()
+      }
+      $('.js-close-film').click(function () {
+        window.localStorage.setItem('isGofilm', true);
+        $('.js-film-pop').hide()
+      })
+    }();
+
+    // cookies 弹窗操作
+    void function () {
+      // if ($('.cookies-parent').length < 0) {
+      //   return
+      // }
+      // if (!window.localStorage.getItem('isCookies')) {
+      $('.cookies-parent').show()
+      // }
+      // 点击叉号关闭
+      $('.js-close-pop').click(function () {
+        $('.js-cookies-pop').fadeOut()
+      })
+      // 显示cookies说明
+      $('.js-open-pop').click(function () {
+        $('.js-cookies-pop').fadeIn()
+      })
+      // 点击按钮关闭弹窗
+      $('.js-acc-btn').click(function () {
+        $('.js-cookies-pop').fadeOut()
+        $('.cookies-parent').hide()
+        // to do 交互
+        window.localStorage.setItem('isCookies', false);
+      })
+      // 点击按钮关闭弹窗
+      $('.js-cookies-btn').click(function () {
+        $(this).parents('.cookies-parent').addClass('is-cookies')
+        // to do 交互
+        window.localStorage.setItem('isCookies', false);
+      })
+    }();
+
+    // 介绍指示
+    void function () {
+      var tabIndex = 2, timer = null,
+        interval = 4000, len = $('.js-us-info li').length - 1
+
+      function changeFn () {
+        tabIndex++
+        if (tabIndex > len) {
+          tabIndex = 0
+        }
+        $('.js-us-info li').removeClass('active').eq(tabIndex).addClass('active')
+        $('.js-bg-box .bg-item').hide().eq(tabIndex).fadeIn()
+      }
+
+      timer = setInterval(changeFn, interval)
+      $('.js-us-info li').mouseenter(function () {
+        clearInterval(timer)
+        tabIndex = $(this).index()
+        $(this).addClass('active').siblings('li').removeClass('active')
+        $('.js-bg-box .bg-item').hide().eq($(this).index()).fadeIn()
+      })
+      $('.js-us-info li').mouseleave(function () {
+        timer = setInterval(changeFn, interval)
+      })
+    }();
+
+    // 表单新闻链接提示
+    void function () {
+      setInterval(function () {
+        var current = $('.js-roll-box dd')
+        var height = current.eq(0).height()
+        var getprice = $('.js-roll-box')
+        getprice.animate({marginTop: -height}, 'slow', function () {
+          var data = current.eq(0).clone()
+          current.eq(0).remove()
+          getprice.css({marginTop: 0})
+          getprice.append(data)
+        })
+      }, 4000)
+    }();
+    /////图片懒加载
+    $('img').lazyload({
+      threshold: 200,
+      effect: 'fadeIn'
+    })
+  })
+  //首页表单切换
+  $('.get-inputs-box .frame-box ').click(function () {
+    $(this).addClass('now-active').siblings().removeClass('now-active')
+  })
+
+</script>
+</body>
+</html>

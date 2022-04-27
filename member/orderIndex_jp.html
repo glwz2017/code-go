@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Account -PCBgogo</title>
+  <!--网页标题左侧显示-->
+  <link rel="icon" href="../img/images/title-logo.png" type="image/x-icon">
+  <!--收藏夹显示图标-->
+  <link rel="shortcut icon" href="../img/images/title-logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="../img/css/member/orderIndex_jp.css">
+</head>
+<body>
+<!--header-->
+<div class="the-top">
+  <!--顶部导航-->
+  <div class="top-nav">
+    <div class="nav-l">
+      <a href="orderIndex.html">
+        <img src="../img/images/order/orderlogo.png" alt="logo">
+      </a>
+    </div>
+    <div class="nav-r">
+      <!--右侧图标-->
+      <ul class="hints">
+        <li class="active">
+          <a href="javascript:void(0)">
+              <span class="iconfont icon-jinduguanli">
+                 <i class="point "></i>
+              </span>
+            <div class="link-name">
+              Check order progress
+            </div>
+          </a>
+        </li>
+        <li class="active ">
+          <a href="javascript:void(0)">
+              <span class="iconfont icon-icon_notice">
+                 <i class="point "></i>
+              </span>
+            <div class="link-name">
+              Notification
+            </div>
+          </a>
+        </li>
+        <li class="active ">
+          <a href="javascript:void(0)">
+              <span class="iconfont icon-youhuiquan">
+                  <i class="point "></i>
+              </span>
+            <div class="link-name">
+              Coupon
+            </div>
+          </a>
+        </li>
+        <li class="active ">
+          <a href="javascript:void(0)">
+              <span class="iconfont icon-shoufukuanguanli">
+                 <i class="point "></i>
+              </span>
+            <div class="link-name">
+              Awaiting payment
+            </div>
+          </a>
+        </li>
+        <li class="active">
+          <a href="javascript:void(0)">
+              <span class="iconfont icon-gouwuche1">
+                  <i class="point">99</i>
+              </span>
+            <div class="link-name">
+              Shopping Cart
+            </div>
+          </a>
+        </li>
+      </ul>
+      <!--登录后-->
+      <div class="user-box">
+        <div class="user-head">
+          <img src="../img/images/user.png" alt="">
+        </div>
+        <div class="user-info">
+          <div class="info-name">
+            hi <span>
+            facade
+            facade
+            facade
+            facade
+            facade
+            facade
+            facade
+            facade
+            facade
+          </span>
+          </div>
+          <div class="info-account">
+            My Account
+          </div>
+        </div>
+        <!--信息列表-->
+        <div class="person-info">
+          <!--   已登录 -->
+          <div class="info js-logined">
+            <div class="left-info">
+              <div class="tips">
+                Email: <span id="loginEmail">309*******@qq.com</span>
+              </div>
+              <a class="out-btn" href="javascript:void(0)">
+                Sign Out
+              </a>
+            </div>
+          </div>
+
+          <div class="link-lists">
+            <!-- 有数量添加   active 类名-->
+            <div class="item">
+              <a href="https://member.pcbgogo.com">
+                <span> •  </span>
+                <span class="name">My Account</span>
+              </a>
+            </div>
+            <div class="item js-AwaitingPayment active">
+              <a href="https://member.pcbgogo.com/Order/AwaitingPayment">
+                <span> •  </span>
+                <span class="name">My Orders list</span>
+              </a>
+            </div>
+            <div class="item active">
+              <a href="https://member.pcbgogo.com/Member/MemberBalanceLog">
+                <span> •  </span>
+                <span class="name">Account Balance</span>
+              </a>
+            </div>
+            <div class="item js-Coupons">
+              <a href="https://member.pcbgogo.com/Specials/Coupons">
+                <span> •  </span>
+                <span class="name">Discount coupon</span>
+              </a>
+            </div>
+            <div class="item">
+              <a href="https://member.pcbgogo.com/Specials/Rewards">
+                <span> •  </span>
+                <span class="name">Reward points</span>
+              </a>
+            </div>
+            <div class="item">
+              <a href="https://member.pcbgogo.com/Address/AddOrEdit">
+                <span> •  </span>
+                <span class="name">My Delivery Address</span>
+              </a>
+            </div>
+            <div class="item">
+              <a href="https://member.pcbgogo.com/Forum/ArticleList">
+                <span> •  </span>
+                <span class="name">My Forum</span>
+              </a>
+            </div>
+            <div class="item js-message">
+              <a href="https://member.pcbgogo.com/Message/Message">
+                <span> •  </span>
+                <span class="name">Message</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--二级菜单-->
+  <div class="main-menu">
+    <div class="menu-account">
+      <span class="iconfont icon-shouye"></span>
+      <div class="nav-flag">
+        My Account
+      </div>
+    </div>
+    <ul class="menu-list clear-fix">
+      <li class="active"><a href="../pages作废/reviewList作废.html">Forum</a></li>
+      <li><a href="javascript:void(0)">How to order</a></li>
+      <li><a href="javascript:void(0)">Files required</a></li>
+      <li><a href="javascript:void(0)">PCB Capabilities</a></li>
+      <li><a href="javascript:void(0)">PCBA Capabilities</a></li>
+    </ul>
+    <!--计价链接-->
+    <div class="in-link">
+      <span class="iconfont icon-jisuan1"></span>
+      <a href="javascript:void(0)">Order PCB Now</a>
+      <span>|</span>
+      <a href="javascript:void(0)">Order PCBA Now</a>
+      <span>|</span>
+      <a href="javascript:void(0)">Order Stencil Now</a>
+    </div>
+  </div>
+</div>
+<!--主体-->
+<div class="order-main">
+  <!--左侧-->
+  <div class="box-l">
+    <div class="category js-category-index">
+      <div class="item active">
+        <div class="item-name">
+          <span class="iconfont icon-gouwuche2">
+          </span>
+          <div class="category-name">
+            <span class="iconfont icon-xialasanjiao js-icon-toggle"></span>
+            - My order
+          </div>
+        </div>
+        <!--&lt;!&ndash;二级列表&ndash;&gt;-->
+        <div class="second-item">
+          <a class="second-active" href="shopping-car.html">
+            <span class="second-name">Shopping Cart (0)</span>
+          </a>
+          <a href="awaiting-payment.html">
+            <span class="second-name">Awaiting payment (0)</span>
+          </a>
+        </div>
+      </div>
+      <div class="item ">
+        <div class="item-name">
+          <span class="iconfont icon-yiwancheng"></span>
+          <div class="category-name">
+            <span class="iconfont icon-xialasanjiao js-icon-toggle"></span>
+            - Order History
+          </div>
+        </div>
+        <!--&lt;!&ndash;二级列表&ndash;&gt;-->
+        <div class="second-item">
+          <a href="javascript:void(0)">
+            <span class="second-name">All (0)</span>
+          </a>
+          <a href="javascript:void(0)">
+            <span class="second-name">Favorite (0)</span>
+          </a>
+          <a href="production-status.html">
+            <span class="second-name">Production status (0)</span>
+          </a>
+          <a href="unconfirmed-delivery.html">
+            <span class="second-name">Unconfirmed delivery (0)</span>
+          </a>
+          <a href="completed.html">
+            <span class="second-name">Completed (0)</span>
+          </a>
+        </div>
+      </div>
+      <div class="item ">
+        <div class="item-name">
+          <span class="iconfont icon-daipingjiab"></span>
+          <div class="category-name">
+            <span class="iconfont icon-xialasanjiao js-icon-toggle"></span>
+            - Experience Share
+          </div>
+        </div>
+        <!--&lt;!&ndash;二级列表&ndash;&gt;-->
+        <div class="second-item">
+          <a href="orderComment.html">
+            <span class="second-name">Comment</span>
+          </a>
+          <a href="myInvitation.html">
+            <span class="second-name">My Invitation</span>
+          </a>
+          <a href="promoteLink.html">
+            <span class="second-name">Share links</span>
+          </a>
+        </div>
+      </div>
+      <div class="item ">
+        <div class="item-name">
+          <span class="iconfont icon-gerenziliao"></span>
+          <div class="category-name">
+            <span class="iconfont icon-xialasanjiao js-icon-toggle"></span>
+            + My Profile
+          </div>
+        </div>
+        <!--&lt;!&ndash;二级列表&ndash;&gt;-->
+        <div class="second-item">
+          <a href="account-page.html">
+            <span class="second-name">Cash</span>
+          </a>
+          <a href="coupon-page.html">
+            <span class="second-name">Coupon (0)</span>
+          </a>
+          <a href="integral.html">
+            <span class="second-name">Reward points</span>
+          </a>
+          <a href="essentialInformation.html">
+            <span class="second-name">Basic information</span>
+          </a>
+          <a href="detailsDelivery.html">
+            <span class="second-name">Delivery address</span>
+          </a>
+          <a href="changePassword.html">
+            <span class="second-name">Change Password</span>
+          </a>
+          <a href="freightAccount.html">
+            <span class="second-name">Freight Collect Account</span>
+          </a>
+        </div>
+      </div>
+      <div class="item ">
+        <div class="item-name">
+          <span class="iconfont icon-luntan"></span>
+          <div class="category-name" onclick="window.open('../forum/forum.html','_self')">
+            - My Forum
+          </div>
+        </div>
+      </div>
+      <div class="item ">
+        <div class="item-name">
+          <span class="iconfont icon-lipin"></span>
+          <div class="category-name" onclick="window.open('gift-shop.html','_self')">
+            <!-- 有标识就给我这个元素,没有不加-->
+            <span class="iconfont icon-new"></span>
+            - Gift Shop
+          </div>
+        </div>
+      </div>
+      <div class="item ">
+        <div class="item-name">
+          <span class="iconfont icon-liuyanpinglun"></span>
+          <div class="category-name" onclick="window.open('newsed.html','_self')">- Message</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--右侧-->
+  <div class="box-r">
+    <div class="balance-box">
+      <!--头像信息-->
+      <div class="person-box">
+        <div class="person-show">
+          <!--头像-->
+          <div class="portrait">
+            <div class="portrait-img">
+              <a href="essentialInformation.html">
+                <img src="../img/images/banner1.jpg" alt="">
+                <div class="vip-sign">
+                  <!--会员等级 vip,vip-V1,vip-V2----vip-V6  -->
+                  <object data="../img/images/member/vip.svg" type=""></object>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="portrait-info">
+            <div class="info-item">
+              <span class="name">Hi! <span>会员名字</span></span>
+              <div class="item">User ID: <span>W00010A</span>
+                <a class="profile-btn" href="essentialInformation.html">
+                  My Profile
+                </a>
+              </div>
+              <div class="item">Email: <span>19***7@qq.com</span></div>
+            </div>
+          </div>
+          <ul class="integral-bean">
+            <li>
+              <div class="des">
+                <div class="bean">
+                  0
+                </div>
+                <div class="name">
+                  Accumulate Points:
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="des">
+                <div class="bean">
+                  $100.00
+                </div>
+                <div class="name">
+                  Account Balance
+                  <br>(USD)
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="des">
+                <div class="bean">
+                  10 <span class="vdlid">Vdlid</span>
+                </div>
+                <div class="name">
+                  Discount coupon
+                  <a class="redeem" href="javascript:void(0)">
+                    Redeem coupon >
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="balance-top">
+        <ul class="list-link">
+          <li>
+            <a href="/Order/CartList">
+              <span class="iconfont icon-hetongshenengzhizaojiaofu-copy"></span>
+              <div class="text">
+                <div class="number">5</div>
+                Under Review
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/Order/AwaitingPayment">
+
+              <span class="iconfont icon-custom-entrust"></span>
+              <div class="text">
+                <div class="number">3</div>
+                Awaiting Payment
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/Order/OrderList?type=1">
+
+              <span class="iconfont icon-shejishengchan"></span>
+              <div class="text">
+                <div class="number">7</div>
+                Production Status
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/Order/OrderList?type=2">
+              <span class="iconfont icon-daishenhe"></span>
+              <div class="text">
+                <div class="number">0</div>
+                Delivery
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/Order/OrderList?type=3">
+
+              <span class="iconfont icon-fenxiang1"></span>
+              <div class="text">
+                <div class="number">10</div>
+                Awaiting Shared
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="redeem-box">
+        <div class="redeem-title">
+          <span>Redeem a Gift</span>
+          <a href="./gift-shop.html" target="_blank">
+            More >
+          </a>
+        </div>
+        <ul class="hot-gifts">
+          <li>
+            <a href="./gift-shop.html">
+              <img src="../img/images/gift/hot1.jpg" alt="" width="190" height="161">
+              <div class="des-box">
+                <div class="des-text">
+                  65Pcs Male to Male Solderless Flexible Breadboard Jumper Cables Wires
+                </div>
+                <div class="price-parent">
+                  <div class="des-price">
+                    Use GOcoin: <span>100</span>
+                  </div>
+                  <div class="des-money">
+                    Payment: <span>$10</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./gift-shop.html">
+              <img src="../img/images/gift/hot2.jpg" alt="" width="190" height="161">
+              <div class="price-parent">
+                <div class="des-price">
+                  Use GOcoin: <span>100</span>
+                </div>
+                <div class="des-money">
+                  Payment: <span>$5</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./gift-shop.html">
+              <img src="../img/images/gift/hot3.jpg" alt="" width="190" height="161">
+              <div class="price-parent">
+                <div class="des-price">
+                  Use GOcoin: <span>100</span>
+                </div>
+                <div class="des-money">
+                  Payment: <span>$20</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./gift-shop.html">
+              <img src="../img/images/gift/hot4.jpg" alt="" width="190" height="161">
+              <div class="price-parent">
+                <div class="des-price">
+                  Use GOcoin: <span>100</span>
+                </div>
+                <div class="des-money">
+                  Payment: <span>$69</span>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!--日文tips-->
+      <div class="prompt">
+        <div class="tips-box">
+          <span class="iconfont  tips-img">&#xe604;</span>
+          <span class="tips-text">アップデート後のPCBGOGO.JPは、決済通貨がドルになりました。そのため、元のアカウント残高と
+                           割引券は同等価値 のドルに変換致しました。為替は「1ドル＝110円」です。
+                           ご理解いただきますようお願い申し上げます。</span>
+        </div>
+      </div>
+      <!--中间-->
+      <div class="order-detail">
+        <div class="order-box">
+          <div class="detail-title">
+            My order
+          </div>
+          <!--空数据元素-->
+          <div class="empty-item">
+            <div class="empty-order">
+              <div class="empty-pic">
+                <img src="../img/images/order/empty-order.png" alt="No order here! " width="36"
+                     height="42">
+              </div>
+              <div class="empty-link-box">
+                <div class="empty-text">No order here!</div>
+                <a href="../PCBPrototype.html" class="empty-link">Placing order now! </a>
+              </div>
+            </div>
+          </div>
+          <ol class="list-picture">
+            <li>
+              <div class="time-box">
+                <a onclick="ViewOrder(4,507)"> <img src="../img/images/order/smd.png"> </a>
+                <a onclick="ViewOrder(4,507)"> <img src="../img/images/order/smd.png"> </a>
+                <a onclick="ViewOrder(4,507)"> <img src="../img/images/order/smd.png"> </a>
+                <a onclick="ViewOrder(4,507)" class="ignore">...</a>
+              </div>
+
+              <!--金额-->
+
+              <div class="total-num">
+                <p>G796</p>
+                <span>$70.00</span>
+              </div>
+
+              <!--预览-->
+              <div class="on_view">
+                <span>Production Status</span>
+              </div>
+
+              <div class="view-link">
+                <span class="iconfont icon-icon-xiangqing"></span>
+                <a href="/Order/GroupDetail?GroupId=796" target="_blank">View more</a>
+              </div>
+
+            </li>
+            <li>
+              <div class="time-box">
+                <a onclick="ViewOrder(5,413)"> <img src="../img/images/order/assembly.png"> </a>
+              </div>
+
+              <!--金额-->
+
+              <div class="total-num">
+                <p>G795</p>
+                <span>$2041.00</span>
+              </div>
+
+              <!--预览-->
+              <div class="on_view">
+                <span>Awaiting Payment</span>
+              </div>
+
+              <div class="view-link">
+                <span class="iconfont icon-icon-xiangqing"></span>
+                <a href="/Order/GroupDetail?GroupId=795" target="_blank">View more</a>
+              </div>
+
+            </li>
+            <li>
+              <div class="time-box">
+                <a onclick="ViewOrder(2,1585)"> <img src="../img/images/order/prototype.png">
+                </a>
+                <a onclick="ViewOrder(2,1595)"> <img src="../img/images/order/prototype.png">
+                </a>
+                <a onclick="ViewOrder(2,1585)"> <img src="../img/images/order/prototype.png">
+                </a>
+                <a onclick="ViewOrder(2,1595)"> <img src="../img/images/order/prototype.png">
+                </a>
+
+              </div>
+
+              <!--金额-->
+
+              <div class="total-num">
+                <p>G794</p>
+                <span>$44.00</span>
+              </div>
+
+              <!--预览-->
+              <div class="on_view">
+                <span>Production Status</span>
+              </div>
+
+              <div class="view-link">
+                <a href="/Order/GroupDetail?GroupId=794" target="_blank">View more</a>
+              </div>
+            </li>
+            <li>
+              <div class="time-box">
+                <a onclick="ViewOrder(4,505)"> <img src="../img/images/order/smd.png"> </a>
+              </div>
+
+              <!--金额-->
+
+              <div class="total-num">
+                <p>G793</p>
+                <span>$62.00</span>
+              </div>
+
+              <!--预览-->
+              <div class="on_view">
+                <span>Completed</span>
+              </div>
+
+              <div class="view-link">
+                <a href="/Order/GroupDetail?GroupId=793" target="_blank">View more</a>
+              </div>
+
+            </li>
+            <li>
+              <div class="time-box">
+
+                <a onclick="ViewOrder(2,1594)"> <img src="../img/images/order/prototype.png">
+                </a>
+              </div>
+
+              <!--金额-->
+
+              <div class="total-num">
+                <p>G792</p>
+                <span>$46.00</span>
+              </div>
+
+              <!--预览-->
+              <div class="on_view">
+                <span>Production Status</span>
+              </div>
+
+              <div class="view-link">
+                <a href="/Order/GroupDetail?GroupId=792" target="_blank">View more</a>
+              </div>
+
+            </li>
+          </ol>
+          <!-- 加载更多-->
+          <div class="loading-more">
+            <a href="/Order/AwaitingPayment" class="more-btn">More</a>
+          </div>
+        </div>
+        <div class="to-promote">
+          <a href="javascript:void(0)">
+            <img src="../img/images/order/ads1.jpg" alt="place the order" width="320" height="240">
+          </a>
+          <a href="javascript:void(0)">
+            <img src="../img/images/order/ads2.jpg" alt="place the order" width="320" height="240">
+          </a>
+          <!--Message from forum -->
+          <div class="message-forum">
+            <div class="message-title">Message from forum</div>
+            <ul class="message-items">
+              <li>
+                <div class="message-time">
+                  Feb 14.2019, 15:19:22
+                </div>
+                <div class="message-text">
+                  Your concerns: Whats your top tips for designing PCB's that are
+                  manufacturable?Or
+                  improve cost and reduce faults. A new response! Let’s have a look!
+                </div>
+              </li>
+              <li>
+                <div class="message-time">
+                  Feb 14.2019, 15:19:22
+                </div>
+                <div class="message-text">
+                  Your concerns: Whats your top tips for designing PCB's that are
+                  manufacturable?Or
+                  improve cost and reduce faults. A new response! Let’s have a look!
+                </div>
+              </li>
+              <li>
+                <div class="message-time">
+                  Feb 14.2019, 15:19:22
+                </div>
+                <div class="message-text">
+                  Your concerns: Whats your top tips for designing PCB's that are
+                  manufacturable?Or
+                  improve cost and reduce faults. A new response! Let’s have a look!
+                </div>
+              </li>
+            </ul>
+            <a href="" class="message-more">More</a>
+          </div>
+        </div>
+      </div>
+      <!--论坛-->
+      <div class="forum-box">
+        <ul class="forum-lists">
+          <li class="active">Forum</li>
+        </ul>
+        <!--发布-->
+        <div class="bask-box">
+          <div class="bask-area">
+            <div class="bask-tips">
+              You will get $30-$100 coupon when posting your great article in PCBGOGO
+            </div>
+            <a href="发布页面" class="m-btn">Post an Article</a>
+          </div>
+          <!--列表-->
+          <div class="bask-items">
+            <div class="items-content">
+              <div class="item">
+                <a href="列表页">
+                  <!--头像-->
+                  <div class="item-portrait">
+                    <div class="portrait-img">
+                      <img src="../img/images/user.png" alt="">
+                    </div>
+                    <div class="portrait-text">
+                      <h4>M****mes</h4>
+                      <p>March 22, 2018, 07:18:22 pm</p>
+                    </div>
+                  </div>
+                  <!--介绍-->
+                  <div class="item-info">
+                    <h2>Why PCB design uses 3D functions?
+                      sdgaghdhfahdfhdfah
+                    </h2>
+                    <p class="info-text">
+                      Why PCB Design Uses 3D Function ?
+                      In recent years, printed circuit board is more complex with the number
+                      of
+                      network grows sgdhfdhjgfjgfsgfsgfsgfsgfsgfsgfsreywe5ryhgkhuyuo78oxnx
+                    </p>
+                  </div>
+                  <!--查看-->
+                  <ul class="see-record">
+                    <li>
+                      <span class="iconfont icon-chakanyan"></span>
+                      <span>120</span>
+                    </li>
+                    <li>
+                      <span class="iconfont icon-wodepinglun"></span>
+                      <span>120</span>
+                    </li>
+                  </ul>
+                </a>
+              </div>
+              <div class="item">
+                <a href="列表页">
+                  <!--头像-->
+                  <div class="item-portrait ">
+                    <div class="portrait-img">
+                      <img src="../img/images/user.png" alt="">
+                    </div>
+                    <div class="portrait-text">
+                      <h4>M****mes</h4>
+                      <p>March 22, 2018, 07:18:22 pm</p>
+                    </div>
+                  </div>
+                  <!--介绍-->
+                  <div class="item-info">
+                    <h2>Why PCB design uses 3D functions?
+                      sdgaghdhfahdfhdfah
+                    </h2>
+                    <p class="info-text">
+                      Why PCB Design Uses 3D Function ?
+                      In recent years, printed circuit board is more complex with the number
+                      of
+                      network grows sgdhfdhjgfjgfsgfsgfsgfsgfsgfsgfsreywe5ryhgkhuyuo78oxnx
+                    </p>
+                  </div>
+                  <!--查看-->
+                  <ul class="see-record ">
+                    <li>
+                      <span class="iconfont icon-chakanyan"></span>
+                      <span>120</span>
+                    </li>
+                    <li>
+                      <span class="iconfont icon-wodepinglun"></span>
+                      <span>120</span>
+                    </li>
+                  </ul>
+                </a>
+              </div>
+              <div class="item">
+                <a href="列表页">
+                  <!--头像-->
+                  <div class="item-portrait">
+                    <div class="portrait-img">
+                      <img src="../img/images/user.png" alt="">
+                    </div>
+                    <div class="portrait-text">
+                      <h4>M****mes</h4>
+                      <p>March 22, 2018, 07:18:22 pm</p>
+                    </div>
+                  </div>
+                  <!--介绍-->
+                  <div class="item-info">
+                    <h2>Why PCB design uses 3D functions?
+                      sdgaghdhfahdfhdfah
+                    </h2>
+                    <p class="info-text">
+                      Why PCB Design Uses 3D Function ?
+                      In recent years, printed circuit board is more complex with the number
+                      of
+                      network grows sgdhfdhjgfjgfsgfsgfsgfsgfsgfsgfsreywe5ryhgkhuyuo78oxnx
+                    </p>
+                  </div>
+                  <!--查看-->
+                  <ul class="see-record">
+                    <li>
+                      <span class="iconfont icon-chakanyan"></span>
+                      <span>120</span>
+                    </li>
+                    <li>
+                      <span class="iconfont icon-wodepinglun"></span>
+                      <span>120</span>
+                    </li>
+                  </ul>
+                </a>
+              </div>
+              <div class="item">
+                <a href="列表页">
+                  <!--头像-->
+                  <div class="item-portrait">
+                    <div class="portrait-img">
+                      <img src="../img/images/user.png" alt="">
+                    </div>
+                    <div class="portrait-text">
+                      <h4>M****mes</h4>
+                      <p>March 22, 2018, 07:18:22 pm</p>
+                    </div>
+                  </div>
+                  <!--介绍-->
+                  <div class="item-info">
+                    <h2>Why PCB design uses 3D functions?
+                      sdgaghdhfahdfhdfah
+                    </h2>
+                    <p class="info-text">
+                      Why PCB Design Uses 3D Function ?
+                      In recent years, printed circuit board is more complex with the number
+                      of
+                      network grows sgdhfdhjgfjgfsgfsgfsgfsgfsgfsgfsreywe5ryhgkhuyuo78oxnx
+                    </p>
+                  </div>
+                  <!--查看-->
+                  <ul class="see-record">
+                    <li>
+                      <span class="iconfont icon-chakanyan"></span>
+                      <span>120</span>
+                    </li>
+                    <li>
+                      <span class="iconfont icon-wodepinglun"></span>
+                      <span>120</span>
+                    </li>
+                  </ul>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="loading-more">
+            <a href="列表页" class="more-btn">More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--版权说明-->
+    <div class="copy-right-box">
+      Copyright © 2015 PCBGOGO. All rights reserved. Shenzhen JDB Technology Co., Ltd.
+      Address: No. 15, Zhongxing Road, Kengzi Street, Pingshan District, Shenzhen, 518000, China.
+    </div>
+  </div>
+</div>
+<div class="message-link">
+  <!--业务员-->
+  <div class="salesman-box js-salesman-box">
+    <div class="salesman">
+      <img src="../img/images/user2.png" alt="">
+    </div>
+    <!--        打招呼动画-->
+    <div class="say-hi">
+      Hi
+    </div>
+
+    <div class="message-parent js-message-box">
+      <div class="message-box ">
+        <div class="message-title"></div>
+        <div class="business-box">
+          <h6 class="name">
+            Daphne Liu
+          </h6>
+          <div class="links">
+            <span class="iconfont icon-wujiaoxing"></span>
+            <span class="iconfont icon-wujiaoxing"></span>
+            <span class="iconfont icon-wujiaoxing"></span>
+            <span class="iconfont icon-wujiaoxing"></span>
+            <span class="iconfont icon-wujiaoxing"></span>
+          </div>
+          <div class="links">
+            <span class="iconfont icon-Skype"></span>
+            <a href="skype:live:service_7440?chat">pcbgogo.service</a>
+          </div>
+          <div class="links">
+            <span class="iconfont icon-xinxi1"></span>
+            <a href="mailto:service07@pcbgogo.com">service12@pcbgogo.com</a>
+          </div>
+        </div>
+        <div class="leave-message" onclick="window.location.href = '/Message/Message'">Leave your message</div>
+        <div class="question-help">
+          <a class="question" href="https://www.pcbgogo.com/PaymentMethod.html" target="_blank">
+            What kinds of payment methods does PCBGOGO have?
+          </a>
+          <a class="question" href="https://www.pcbgogo.com/orderguide.html" target="_blank">
+            How to place your order in PCBGOGO?
+          </a>
+          <a class="question" href="https://www.pcbgogo.com/shipping_method_guide.html" target="_blank">
+            What kinds of shipping methods does PCBGOGO offer?
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--升级弹窗-->
+<div class="to-upgrade-box">
+  <div class="to-upgrade animate1">
+    <span class="iconfont icon-guanbi upgrade-close-btn"
+          onclick="this.parentNode.parentNode.style.display='none'"
+    ></span>
+    <div class="to-top"></div>
+    <div class="to-text">
+      <div class="to-title">
+        ウェブサイト更新通知
+      </div>
+      <div class="list">
+        1.見積もりフォーム、マイページの画面を改善します。
+      </div>
+      <div class="list">
+        2.注文履歴にフラグ機能を追加します。
+      </div>
+      <div class="list">
+        3.送料着払いの申込機能を追加します。
+      </div>
+      <div class="list">
+        4.Gerber viewでファイルを識別する機能を追加します。
+      </div>
+      <div class="list">
+        5.その他のバグの修正。
+      </div>
+      <div class="list">
+        2020.10.28
+      </div>
+    </div>
+  </div>
+  <div class="upgrade-mask">
+  </div>
+</div>
+<script src="../img/js/jquery/jquery-1.11.3.min.js"></script>
+<script src="../img/js/public.js"></script>
+<script src="../img/js/orderIndex.js"></script>
+<script>
+$(function () {
+  $('.js-category-index .item').click(function () {
+    $(this).addClass('active').siblings('.item').removeClass('active')
+  })
+  $('.js-icon-toggle').click(function (e) {
+    $(this).toggleClass('isHide')
+    $(this).parents('.item').find('.second-item').toggle()
+    e.stopPropagation()
+  })
+})
+</script>
+</body>
+</html>
+

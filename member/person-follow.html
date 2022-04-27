@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <!--网页标题左侧显示-->
+  <link rel="icon" href="../img/images/title-logo.png" type="image/x-icon">
+  <!--收藏夹显示图标-->
+  <link rel="shortcut icon" href="../img/images/title-logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="../img/css/member/person-follow.css">
+</head>
+<body>
+<!--header-->
+<div class="the-top">
+  <!--顶部导航-->
+  <div class="top-nav">
+    <div class="nav-l">
+      <a href="orderIndex.html">
+        <img src="../img/images/order/orderlogo.png" alt="logo">
+      </a>
+    </div>
+    <div class="nav-r">
+      <!--右侧图标-->
+      <div class="shopping-box">
+        <ul class="hints js-hints">
+          <li class="active message-li"><a href="javascript:void(0)">
+            <span class="iconfont icon-ai-message"></span>
+          </a>
+            <i class="point "></i>
+          </li>
+          <li class="active coupon-li"><a href="javascript:void(0)">
+            <span class="iconfont icon-youhuiquan"></span>
+          </a>
+            <i class="point "></i>
+          </li>
+          <li class="active coupon-li"><a href="javascript:void(0)">
+            <span class="iconfont icon-fukuan"></span>
+          </a>
+            <i class="point "></i>
+          </li>
+          <li class="car-box cared-li"><a href="javascript:void(0)">
+            <span class="iconfont icon-gouwuche1"></span>
+          </a>
+            <i class="round car-nums">99</i>
+          </li>
+        </ul>
+      </div>
+      <!--登录后-->
+      <div class="user-box">
+        <span class="hi-text"> Hi! The user...</span>
+        <div class="user-pic js-user-pic">
+          <i><img src="../img/images/user.png" alt=""></i>
+          <i class="down-pointer"><img src="../img/images/down-pointer.png" alt=""></i>
+        </div>
+        <!--信息列表-->
+        <div class="person-info">
+          <!--   已登录 -->
+          <div class="info js-logined">
+            <div class="left-info">
+              <div class="tips">
+                Email: <span id="loginEmail">309*******@qq.com</span>
+              </div>
+              <a class="out-btn" href="javascript:void(0)">
+                Sign Out
+              </a>
+            </div>
+          </div>
+
+          <div class="link-lists">
+            <!-- 有数量添加   active 类名-->
+            <div class="item">
+              <a href="https://member.pcbgogo.com">
+                <span> •  </span>
+                <span class="name">My Account</span>
+              </a>
+            </div>
+            <div class="item js-AwaitingPayment">
+              <a href="https://member.pcbgogo.com/Order/AwaitingPayment">
+                <span> •  </span>
+                <span class="name">My Orders list</span>
+              </a>
+            </div>
+            <div class="item">
+              <a href="https://member.pcbgogo.com/Member/MemberBalanceLog">
+                <span> •  </span>
+                <span class="name">Account Balance</span>
+              </a>
+            </div>
+            <div class="item js-Coupons">
+              <a href="https://member.pcbgogo.com/Specials/Coupons">
+                <span> •  </span>
+                <span class="name">Discount coupon</span>
+              </a>
+            </div>
+            <div class="item">
+              <a href="https://member.pcbgogo.com/Specials/Rewards">
+                <span> •  </span>
+                <span class="name">Reward points</span>
+              </a>
+            </div>
+            <div class="item">
+              <a href="https://member.pcbgogo.com/Address/AddOrEdit">
+                <span> •  </span>
+                <span class="name">My Delivery Address</span>
+              </a>
+            </div>
+            <div class="item">
+              <a href="https://member.pcbgogo.com/Forum/ArticleList">
+                <span> •  </span>
+                <span class="name">My Forum</span>
+              </a>
+            </div>
+            <div class="item js-message">
+              <a href="https://member.pcbgogo.com/Message/Message">
+                <span> •  </span>
+                <span class="name">Message</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--二级菜单-->
+  <div class="main-menu">
+    <div class="vip_warp">
+      <ul class="menu-list clear-fix">
+        <li class="active"><a href="orderIndex.html">My Account</a></li>
+        <li><a href="../pages作废/reviewList作废.html">Forum</a></li>
+      </ul>
+      <!--计价链接-->
+      <div class="in-link">
+        <span class="iconfont icon-jisuan1"></span>
+        <a href="javascript:void(0)">Order PCB Now</a>
+        <span>|</span>
+        <a href="javascript:void(0)">Order PCBA Now</a>
+        <span>|</span>
+        <a href="javascript:void(0)">Order Stencil Now</a>
+      </div>
+      <!--面包屑-->
+      <div class="bread-crumbs">
+        <a href="javascript:void(0)">
+          <span class="iconfont icon-shouye1"></span>
+          <span>- Shopping Cart</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!--主体-->
+<div class="order-main">
+  <!--左侧-->
+  <div class="box-l">
+  </div>
+  <!--右侧-->
+  <div class="box-r">
+    <div class="r-title">
+      MY FORUM
+    </div>
+    <div class="m-forum">
+      <div class="list-nav">
+        <ul class="style-list">
+          <li class="active-list">
+            <a href="person-article.html">
+              Article(<span>3</span>)
+            </a></li>
+          <li><a href="person-askAnswer.html">
+            Ask and answer(<span>3</span>)
+          </a></li>
+          <li><a href="person-commentShare.html">
+            Comment and share(<span>900</span>)
+          </a></li>
+          <li><a href="person-collectFollow.html">
+            Collect/Follow(<span>900</span>)
+          </a></li>
+          <li><a href="person-Follow.html">
+            Follow(<span>900</span>)
+          </a></li>
+          <li><a href="person-Follower.html">
+            Follower(<span>900</span>)
+          </a></li>
+          <li><a href="person-Inform.html">
+            Inform(<span>900</span>)
+          </a></li>
+        </ul>
+      </div>
+      <div class="forum-note">
+        <img class="note-img"
+             src="data:image/png;base64,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"
+             alt="" width="72" height="71">
+        <div class="note-text">
+          You will get $30-$100 coupon when posting your great article in PCBGOGO
+          <br>You would have a chance to get $5 coupons if helping others.
+        </div>
+        <a class="post-btn" href="person-releasing.html">Post an Article</a>
+      </div>
+      <!--类表显示-->
+      <div class="article-center">
+        <!--空状态  无数据显示有数据隐藏-->
+        <div class="empty-state">
+          <img src="../img/images/order/empty-order.png" alt="empty data" width="36" height="42">
+          <ul>
+            <li>You haven't posted yet!</li>
+            <li><a href="#">Releasing</a></li>
+          </ul>
+        </div>
+        <!--取消关注人员-->
+        <div class="users-box">
+          <div class="user-item">
+            <a href="作废页面/personalBBS作废.html">
+              <div class="user-left">
+                <div class="head-img">
+                  <img src="../img/images/forum/user1.png" alt="header">
+                </div>
+                <div class="head-info">
+                  <h6>d****ion</h6>
+                  <img src="../img/images/forum/usa.png" alt="country" width="20" height="10">
+                </div>
+              </div>
+              <ul class="answer-number">
+                <li><span>10</span>
+                  <p>Article</p></li>
+                <li><span>5</span>
+                  <p>Ask and Answer </p></li>
+                <li><span>5</span>
+                  <p>Comment and share </p></li>
+              </ul>
+            </a>
+            <a href="javascript:void(0)" class="cancel-foll js-cancel-foll">
+              <span class="iconfont icon-guanzhu"></span> Cancel following
+            </a>
+          </div>
+          <div class="user-item">
+            <a href="list-detail.html">
+              <div class="user-left">
+                <div class="head-img">
+                  <img src="../img/images/banner1.jpg" alt="header">
+                </div>
+                <div class="head-info">
+                  <h6>d****ion</h6>
+                  <img src="../img/images/forum/usa.png" alt="country" width="20" height="10">
+                </div>
+              </div>
+              <ul class="answer-number">
+                <li><span>10</span>
+                  <p>Article</p></li>
+                <li><span>5</span>
+                  <p>Ask and Answer </p></li>
+                <li><span>5</span>
+                  <p>Comment and share </p></li>
+              </ul>
+            </a>
+            <a href="javascript:void(0)" class="cancel-foll js-cancel-foll">
+              <span class="iconfont icon-guanzhu"></span> Cancel following
+            </a>
+          </div>
+          <div class="user-item">
+            <a href="作废页面/personalBBS作废.html">
+              <div class="user-left">
+                <div class="head-img">
+                  <img src="../img/images/forum/user1.png" alt="header">
+                </div>
+                <div class="head-info">
+                  <h6>d****ion</h6>
+                  <img src="../img/images/forum/usa.png" alt="country" width="20" height="10">
+                </div>
+              </div>
+              <ul class="answer-number">
+                <li><span>10</span>
+                  <p>Article</p></li>
+                <li><span>5</span>
+                  <p>Ask and Answer </p></li>
+                <li><span>5</span>
+                  <p>Comment and share </p></li>
+              </ul>
+            </a>
+            <a href="javascript:void(0)" class="cancel-foll js-cancel-foll">
+              <span class="iconfont icon-guanzhu"></span> Cancel following
+            </a>
+          </div>
+          <div class="user-item">
+            <a href="作废页面/personalBBS作废.html">
+              <div class="user-left">
+                <div class="head-img">
+                  <img src="../img/images/banner1.jpg" alt="header">
+                </div>
+                <div class="head-info">
+                  <h6>d****ion</h6>
+                  <img src="../img/images/forum/usa.png" alt="country" width="20" height="10">
+                </div>
+              </div>
+              <ul class="answer-number">
+                <li><span>10</span>
+                  <p>Article</p></li>
+                <li><span>5</span>
+                  <p>Ask and Answer </p></li>
+                <li><span>5</span>
+                  <p>Comment and share </p></li>
+              </ul>
+            </a>
+            <a href="javascript:void(0)" class="cancel-foll js-cancel-foll">
+              <span class="iconfont icon-guanzhu"></span> Cancel following
+            </a>
+          </div>
+          <div class="user-item">
+            <a href="作废页面/personalBBS作废.html">
+              <div class="user-left">
+                <div class="head-img">
+                  <img src="../img/images/forum/user1.png" alt="header">
+                </div>
+                <div class="head-info">
+                  <h6>d****ion</h6>
+                  <img src="../img/images/forum/usa.png" alt="country" width="20" height="10">
+                </div>
+              </div>
+              <ul class="answer-number">
+                <li><span>10</span>
+                  <p>Article</p></li>
+                <li><span>5</span>
+                  <p>Ask and Answer </p></li>
+                <li><span>5</span>
+                  <p>Comment and share </p></li>
+              </ul>
+            </a>
+            <a href="javascript:void(0)" class="cancel-foll js-cancel-foll">
+              <span class="iconfont icon-guanzhu"></span> Cancel following
+            </a>
+          </div>
+          <div class="user-item">
+            <a href="作废页面/personalBBS作废.html">
+              <div class="user-left">
+                <div class="head-img">
+                  <img src="../img/images/banner1.jpg" alt="header">
+                </div>
+                <div class="head-info">
+                  <h6>d****ion</h6>
+                  <img src="../img/images/forum/usa.png" alt="country" width="20" height="10">
+                </div>
+              </div>
+              <ul class="answer-number">
+                <li><span>10</span>
+                  <p>Article</p></li>
+                <li><span>5</span>
+                  <p>Ask and Answer </p></li>
+                <li><span>5</span>
+                  <p>Comment and share </p></li>
+              </ul>
+            </a>
+            <a href="javascript:void(0)" class="cancel-foll js-cancel-foll">
+              <span class="iconfont icon-guanzhu"></span> Cancel following
+            </a>
+          </div>
+          <div class="user-item">
+            <a href="作废页面/personalBBS作废.html">
+              <div class="user-left">
+                <div class="head-img">
+                  <img src="../img/images/forum/user1.png" alt="header">
+                </div>
+                <div class="head-info">
+                  <h6>d****ion</h6>
+                  <img src="../img/images/forum/usa.png" alt="country" width="20" height="10">
+                </div>
+              </div>
+              <ul class="answer-number">
+                <li><span>10</span>
+                  <p>Article</p></li>
+                <li><span>5</span>
+                  <p>Ask and Answer </p></li>
+                <li><span>5</span>
+                  <p>Comment and share </p></li>
+              </ul>
+            </a>
+            <a href="javascript:void(0)" class="cancel-foll js-cancel-foll">
+              <span class="iconfont icon-guanzhu"></span> Cancel following
+            </a>
+          </div>
+          <div class="user-item">
+            <a href="作废页面/personalBBS作废.html">
+              <div class="user-left">
+                <div class="head-img">
+                  <img src="../img/images/banner1.jpg" alt="header">
+                </div>
+                <div class="head-info">
+                  <h6>d****ion</h6>
+                  <img src="../img/images/forum/usa.png" alt="country" width="20" height="10">
+                </div>
+              </div>
+              <ul class="answer-number">
+                <li><span>10</span>
+                  <p>Article</p></li>
+                <li><span>5</span>
+                  <p>Ask and Answer </p></li>
+                <li><span>5</span>
+                  <p>Comment and share </p></li>
+              </ul>
+            </a>
+            <a href="javascript:void(0)" class="cancel-foll js-cancel-foll">
+              <span class="iconfont icon-guanzhu"></span> Cancel following
+            </a>
+          </div>
+          <div class="user-item">
+            <a href="作废页面/personalBBS作废.html">
+              <div class="user-left">
+                <div class="head-img">
+                  <img src="../img/images/banner1.jpg" alt="header">
+                </div>
+                <div class="head-info">
+                  <h6>d****ion</h6>
+                  <img src="../img/images/forum/usa.png" alt="country" width="20" height="10">
+                </div>
+              </div>
+              <ul class="answer-number">
+                <li><span>10</span>
+                  <p>Article</p></li>
+                <li><span>5</span>
+                  <p>Ask and Answer </p></li>
+                <li><span>5</span>
+                  <p>Comment and share </p></li>
+              </ul>
+            </a>
+            <a href="javascript:void(0)" class="cancel-foll js-cancel-foll">
+              <span class="iconfont icon-guanzhu"></span> Cancel following
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- 分页-->
+      <div id="pageToolbar"></div>
+
+    </div>
+  </div>
+</div>
+<!--返回顶部-->
+<div class="go-btn">
+  <img src="../img/images/order/gotop.png" alt="">
+</div>
+<script src="../img/js/jquery/jquery-1.11.3.min.js"></script>
+<script src="../img/js/public.js"></script>
+<script src="../img/js/orderIndex.js"></script>
+<!--分页插件-->
+<script src="../img/js/pages/query.js"></script>
+<script src="../img/js/pages/paging.js"></script>
+
+<script>
+$(function () {
+//pagesize:页数  默认10;
+  $('#pageToolbar').Paging({
+    pagesize: 10, toolbar: true, callback: function f (a) {
+      console.log(a)
+    }
+  })
+  //状态选择  allState
+  $('.js-title-right').hover(function () {
+    $(this).children('.state-list').show()
+  }, function () {
+    $(this).children('.state-list').hide()
+  })
+  $('.state-list>li').click(function () {
+    $(this).parent().siblings('input').val($.trim($(this).html())).end().hide()
+  })
+  // //取消关注人follow.html
+  $('.js-cancel-foll').click(function () {
+    $(this).parent().fadeOut()
+  })
+
+})
+</script>
+</body>
+</html>

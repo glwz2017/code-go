@@ -1,0 +1,2363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Account -PCBgogo</title>
+    <!--网页标题左侧显示-->
+    <link rel="icon" href="../img/images/title-logo.png" type="image/x-icon">
+    <!--收藏夹显示图标-->
+    <link rel="shortcut icon" href="../img/images/title-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../img/css/member/detailsDelivery.css">
+</head>
+<body>
+<!--顶部导航-->
+<div class="the-top">
+    <div class="top-nav">
+        <div class="nav-l">
+            <a href="orderIndex.html">
+                <img src="../img/images/order/orderlogo.png" alt="logo">
+            </a>
+        </div>
+        <div class="nav-r">
+            <!--右侧图标-->
+            <div class="shopping-box">
+                <ul class="hints js-hints">
+                    <li class="active message-li"><a href="javascript:void(0)">
+                        <span class="iconfont icon-ai-message"></span>
+                    </a>
+                        <i class="point "></i>
+                    </li>
+                    <li class="active coupon-li"><a href="javascript:void(0)">
+                        <span class="iconfont icon-youhuiquan"></span>
+                    </a>
+                        <i class="point "></i>
+                    </li>
+                    <li class="active coupon-li"><a href="javascript:void(0)">
+                        <span class="iconfont icon-fukuan"></span>
+                    </a>
+                        <i class="point "></i>
+                    </li>
+                    <li class="car-box cared-li"><a href="javascript:void(0)">
+                        <span class="iconfont icon-gouwuche1"></span>
+                    </a>
+                        <i class="round car-nums">99</i>
+                    </li>
+                </ul>
+            </div>
+            <!--登录后-->
+            <div class="user-box">
+                <span class="hi-text"> Hi! The user...</span>
+                <div class="user-pic js-user-pic">
+                    <i><img src="../img/images/user.png" alt=""></i>
+                    <i class="down-pointer"><img src="../img/images/down-pointer.png" alt=""></i>
+                </div>
+                <div class="user-item">
+                    <div class="account" onclick="window.open('orderIndex.html','_self')">
+                        My Account
+                    </div>
+                    <div class="account" onclick="window.open('awaiting-payment.html','_self')">
+                        My Orders list
+                    </div>
+                    <div class="account" onclick="window.open('essentialInformation.html','_self')">
+                        My Delivery Address
+                    </div>
+                    <div class="facebook-btn ">
+                        Bind FaceBook
+                    </div>
+                    <div class="out-btn " style="margin-top: 10px">
+                        Sign Out
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--二级菜单-->
+    <div class="main-menu">
+        <div class="vip_warp">
+            <ul class="menu-list clear-fix">
+                <li class="active"><a href="orderIndex.html">My Account</a></li>
+                <li><a href="../PCBPrototype.html">PCB Instant Quote</a></li>
+                <li><a href="../PCBAssembly.html">PCB Assembly</a></li>
+                <li><a href="../pages作废/reviewList作废.html">Forum</a></li>
+            </ul>
+            <!--面包屑-->
+            <div class="bread-crumbs">
+                <a href="javascript:void(0)">
+                    <span class="iconfont icon-shouye1"></span>
+                    <span>- Shopping Cart</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--主体-->
+<div class="order-main">
+    <!--字体图标分割线-->
+    <div class="font-line"></div>
+    <!--左侧-->
+    <div class="box-l">
+        <div class="category js-category-index">
+            <div class="item "><a href="shopping-car.html">
+                <span class="iconfont icon-gouwuche2"></span>
+                <span class="category-name">-Shopping Cart</span></a></div>
+            <div class="item "><a href="awaiting-payment.html">
+                <span class="iconfont icon-dingdan"></span>
+                <span class="category-name">-My Orders</span></a></div>
+            <div class="item "><a href="memberList.html">
+                <span class="iconfont icon-icon_fapinglun-xian"></span>
+                <span class="category-name">-Comments</span></a></div>
+            <div class=" item "><a href="myInvitation.html">
+                <span class="iconfont icon-daipingjiab"></span>
+                <span class="category-name">+Experience Share</span></a></div>
+            <!--&lt;!&ndash;二级列表&ndash;&gt;-->
+            <div class="second-item ">
+                <a href="myInvitation.html">
+                    <span class="second-name">My Invitation</span>
+                </a>
+                <a href="promoteIndex.html">
+                    <span class="second-name">Share links</span>
+                </a>
+            </div>
+            <!--vip-->
+            <div class="item "><a href="javascript:void(0)">
+                <span class="iconfont icon-34"></span>
+                <span class="category-name active-new">- Reward points</span></a></div>
+            <!--vip-->
+            <div class="item "><a href="account-page.html">
+                <span class="iconfont icon-34"></span>
+                <span class="category-name">-Cash and Coupon</span></a></div>
+            <div class="item "><a href="newsed.html">
+                <span class="iconfont icon-liuyanpinglun"></span>
+                <span class="category-name">-Message</span>
+            </a></div>
+            <div class="item"><a href="essentialInformation.html">
+                <span class="iconfont icon-gerenziliao"></span>
+                <span class="category-name">+My Profile</span>
+            </a></div>
+            <!--&lt;!&ndash;二级列表&ndash;&gt;-->
+            <div class="second-item ">
+                <a href="essentialInformation.html">
+                    <span class="second-name">Basic Information</span></a>
+                <a href="receivingAddress.html">
+                    <span class="second-name">My Delivery Address</span>
+                </a>
+                <a href="changePassword.html">
+                    <span class="second-name">Change Password</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--右侧-->
+    <div class="box-r">
+        <div class="r-title">
+            ORDER DETAIL
+        </div>
+        <!--选项卡展示-->
+        <div class="parent-order-info">
+            <div class="order-info-top">
+                <div class="order-info">
+                    <div class="o-no">Order NO: GB6343</div>
+                    <div class="o-state">
+                        <span>
+                            Order time & date: 2019.12.11 15:00:20
+                        </span> &nbsp;&nbsp;|&nbsp;&nbsp;
+                        <span>
+                            Order Status: <em class="flag-state">Awaiting Payment</em>
+                        </span>
+                    </div>
+                </div>
+                <div class="order-tool">
+                    <a href="javascript:void(0)">
+                        Invoice
+                    </a>
+                    <a class="js-to-complaint" href="javascript:void(0)">
+                        Ticket
+                    </a>
+                </div>
+            </div>
+            <!--  生产中-->
+            <div class="pay-shows">
+                <dl class="legend">
+                    <dd>
+                        Payment
+                    </dd>
+                    <dd>
+                        Fabrication
+                    </dd>
+                    <dd>
+                        Delivery
+                    </dd>
+                    <dd>
+                        Confirm Received
+                    </dd>
+                    <dd>
+                        Shared
+                    </dd>
+                </dl>
+                <div class="detail-info">
+                    <div class="manufacture">
+                        <div class="facture-top">
+                            <div class="title">
+                                <span class="iconfont icon-duigou_kuai"></span>
+                                <span class="name">MI (Manufacture Instruction)</span>
+                            </div>
+                            <a class="to-process" href="craft-page.html" target="_blank">Technological process</a>
+                            <div class="the-techno">
+                                The current technology：
+                                <span>Production status</span>
+                                | Finished Time：<span>2021-04-22 11:44:02</span>
+                            </div>
+                        </div>
+                        <div class="percentage">
+                            <div style="width: 70%" class="bar">70%</div>
+                        </div>
+                    </div>
+                    <div class="delivery-box">
+                        <dl>
+                            <dt>Company:</dt>
+                            <dd>Shenzhen JDB Technology Co., Ltd.</dd>
+                        </dl>
+                        <dl>
+                            <dt>Name:</dt>
+                            <dd>asdasdasd</dd>
+                        </dl>
+                        <dl>
+                            <dt>Address:</dt>
+                            <dd>4225 Executive Square,Level 7 La Jolla, CA 92037 AB KETTLEBY ,UNITED KINGDOM <img
+                                    src="../img/images/order/ress-pic.png" alt="" style="vertical-align: middle"></dd>
+                        </dl>
+                        <dl>
+                            <dt>Zip Code:</dt>
+                            <dd>LE14 12</dd>
+                        </dl>
+                        <dl>
+                            <dt>Telephone:</dt>
+                            <dd>00852-29976161</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <!-- 已发货+物流状态-->
+            <div class="pay-shows">
+                <dl class="legend">
+                    <dd>
+                        Payment
+                    </dd>
+                    <dd>
+                        Fabrication
+                    </dd>
+                    <dd>
+                        Delivery
+                    </dd>
+                    <dd>
+                        Confirm Received
+                    </dd>
+                    <dd>
+                        Shared
+                    </dd>
+                </dl>
+                <div class="detail-info">
+                    <div class="logistics-box">
+                        <div class="logistics-top">
+                            <div class="logistics-no">
+                                <span class="ship-icon"></span>
+                                <a class="c-no" href="javascript:void(0)" target="_blank">5371955761</a>
+                            </div>
+                            <div class="ship-info">
+                                International Shipping Company: <span>Fedex</span>
+                                | Shipping Time: <span>2020.11.03</span>
+                            </div>
+                        </div>
+                        <div class="ship-tips">
+                            Follow-up information is updated in 1-3 days. Please continue your order in Fedex.
+                        </div>
+                    </div>
+                    <div class="delivery-box">
+                        <dl>
+                            <dt>Company:</dt>
+                            <dd>Shenzhen JDB Technology Co., Ltd.</dd>
+                        </dl>
+                        <dl>
+                            <dt>Name:</dt>
+                            <dd>asdasdasd</dd>
+                        </dl>
+                        <dl>
+                            <dt>Address:</dt>
+                            <dd>4225 Executive Square,Level 7 La Jolla, CA 92037 AB KETTLEBY ,UNITED KINGDOM <img
+                                    src="../img/images/order/ress-pic.png" alt="" style="vertical-align: middle"></dd>
+                        </dl>
+                        <dl>
+                            <dt>Zip Code:</dt>
+                            <dd>LE14 12</dd>
+                        </dl>
+                        <dl>
+                            <dt>Telephone:</dt>
+                            <dd>00852-29976161</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 客诉-->
+        <div class="customer-complaint">
+            <div class="complaint-result">
+                Customer Complaint Management (<span class="count">3</span>)
+            </div>
+            <div class="complaint-box js-complaint-box">
+                <div class="complaint">
+                    <div class="complaint-top">
+                        <span class="order-no">S-A60148ASZ227</span>
+                        <!-- 6种状态 1. await-acceptance 2. unaccepted 3.pending
+                        4. under-handling 5. handled  6. revocation
+                        -->
+                        <span class="state await-acceptance">Await acceptance</span>
+                    </div>
+                    <div class="complaint-des">
+                        <div class="title-name">Describe：</div>
+                        <div class="des-text">
+                            With over 10 years as an industry leader, PCBGOGO is one of the most experienced PCB and PCB
+                            assembly manufacturer in China
+                            assembly manufacturer in China
+                            assembly manufacturer in China
+                            assembly manufacturer in China
+                            assembly manufacturer in China
+                        </div>
+                    </div>
+                    <div class="complaint-detail">
+                        <span class="c-time">Create Time: 2019/11/15 09:06:34</span>
+                        <a class="to-detail" data-flag="await-acceptance" href="javascript:void(0)">
+                            View Detail
+                        </a>
+                    </div>
+                </div>
+                <div class="complaint">
+                    <div class="complaint-top">
+                        <span class="order-no">S-A60148ASZ227</span>
+                        <!-- 6种状态 1. await-acceptance 2. unaccepted 3.pending
+                      4. under-handling 5. handled  6. revocation
+                      -->
+                        <span class="state unaccepted">Unaccepted</span>
+                    </div>
+                    <div class="complaint-des">
+                        <div class="title-name">Describe：</div>
+                        <div class="des-text">
+                            With over 10 years as an industry leader,
+                        </div>
+                    </div>
+                    <div class="complaint-detail">
+                        <span class="c-time">Create Time: 2019/11/15 09:06:34</span>
+                        <a class="to-detail" data-flag="unaccepted" href="javascript:void(0)">
+                            View Detail
+                        </a>
+                    </div>
+                </div>
+                <div class="complaint">
+                    <div class="complaint-top">
+                        <span class="order-no">S-A60148ASZ227</span>
+                        <!-- 6种状态 1. await-acceptance 2. unaccepted 3.pending
+                       4. under-handling 5. handled  6. revocation
+                       -->
+                        <span class="state pending">Pending</span>
+                    </div>
+                    <div class="complaint-des">
+                        <div class="title-name">Describe：</div>
+                        <div class="des-text">
+                            With over 10 years as an industry leader,
+                        </div>
+                    </div>
+                    <div class="complaint-detail">
+                        <span class="c-time">Create Time: 2019/11/15 09:06:34</span>
+                        <a class="to-detail" data-flag="pending" href="javascript:void(0)">
+                            View Detail
+                        </a>
+                    </div>
+                </div>
+                <div class="complaint">
+                    <div class="complaint-top">
+                        <span class="order-no">S-A60148ASZ227</span>
+                        <!-- 6种状态 1. await-acceptance 2. unaccepted 3.pending
+                        4. under-handling 5. handled  6. revocation
+                        -->
+                        <span class="state under-handling">Under handling</span>
+                    </div>
+                    <div class="complaint-des">
+                        <div class="title-name">Describe：</div>
+                        <div class="des-text">
+                            With over 10 years as an industry leader,
+                        </div>
+                    </div>
+                    <div class="complaint-detail">
+                        <span class="c-time">Create Time: 2019/11/15 09:06:34</span>
+                        <a class="to-detail" data-flag="under-handling" href="javascript:void(0)">
+                            View Detail
+                        </a>
+                    </div>
+                </div>
+                <div class="complaint">
+                    <div class="complaint-top">
+                        <span class="order-no">S-A60148ASZ227</span>
+                        <!-- 6种状态 1. await-acceptance 2. unaccepted 3.pending
+                       4. under-handling 5. handled  6. revocation
+                       -->
+                        <span class="state handled">Handled</span>
+                    </div>
+                    <div class="complaint-des">
+                        <div class="title-name">Describe：</div>
+                        <div class="des-text">
+                            With over 10 years as an industry leader,
+                        </div>
+                    </div>
+                    <div class="complaint-detail">
+                        <span class="c-time">Create Time: 2019/11/15 09:06:34</span>
+                        <a class="to-detail" data-flag="handled" href="javascript:void(0)">
+                            View Detail
+                        </a>
+                    </div>
+                </div>
+                <div class="complaint">
+                    <div class="complaint-top">
+                        <span class="order-no">S-A60148ASZ227</span>
+                        <!-- 6种状态 1. await-acceptance 2. unaccepted 3.pending
+                      4. under-handling 5. handled  6. revocation
+                      -->
+                        <span class="state revocation">Revocation</span>
+                    </div>
+                    <div class="complaint-des">
+                        <div class="title-name">Describe：</div>
+                        <div class="des-text">
+                            With over 10 years as an industry leader,
+                        </div>
+                    </div>
+                    <div class="complaint-detail">
+                        <span class="c-time">Create Time: 2019/11/15 09:06:34</span>
+                        <a class="to-detail" data-flag="revocation" href="javascript:void(0)">
+                            View Detail
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--PCB Production-->
+        <div class="product-titles">
+            Order detail
+        </div>
+        <!--The bom-->
+        <div class="ui-window-bd" style="display: block">
+            <div class="ui-window-title">
+                The Bom
+            </div>
+            <!--  info-title-->
+            <div class="info-item">
+                <table cellpadding="0" cellspacing="0" class="info-title" width="100%">
+                    <tr>
+                        <th width="28%"></th>
+                        <th width="28%"></th>
+                        <th width="44%"></th>
+                    </tr>
+                    <tr>
+                        <td>
+        <span class="name">
+         Order No :
+        </span>
+                            <span class="des">
+          A60148ASZ298
+        </span>
+                        </td>
+                        <td>
+        <span class="name">
+          Build Time:
+        </span>
+                            <span class="des">
+          7-8 days
+        </span>
+                        </td>
+                        <td>
+        <span class="name">
+          Total:
+        </span>
+                            <span class="total-price">
+          US $5
+        </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+        <span class="name">
+          Associated :
+        </span>
+                            <span class="des">
+         S-A60148ASZ298
+        </span>
+                        </td>
+                        <td>
+        <span class="name">
+         Create Time:
+        </span>
+                            <span class="des">
+         2020/8/6 16:37:36
+        </span>
+                        </td>
+                        <td>
+        <span class="name">
+         Estimated Finish Time:
+        </span>
+                            <span class="des">
+         2020-08-13  China Time  Zone(GMT+8)
+        </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <div class="link-box">
+            <span class="name">
+             BOM File:
+        </span>
+                                <a href="javascript:void(0)" class="link-file">
+                                    A60148ASZ298.zip
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!--  info-detail-->
+            <div class="info-item">
+                <table cellpadding="0" cellspacing="0" class="info-detail">
+                    <tr>
+                        <td class="name">
+                            Manufacturer
+                        </td>
+                        <td >
+                            A,B,C,D
+                        </td>
+                        <td class="name">
+                            Manufacturer Number
+                        </td>
+                        <td>
+                            6
+                        </td>
+                        <td class="name">
+                            Quantity
+                        </td>
+                        <td>
+                            5
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">
+                            Note (Special requests)
+                        </td>
+                        <td colspan="5">......</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!--PCB-->
+        <div class="ui-window-bd" style="display: block">
+            <div class="ui-window-title">
+                PCB Production
+            </div>
+            <!--  info-title-->
+            <div class="info-item">
+                <table cellpadding="0" cellspacing="0" class="info-title" width="100%">
+                    <tr>
+                        <th width="28%"></th>
+                        <th width="28%"></th>
+                        <th width="44%"></th>
+                    </tr>
+                    <tr>
+                        <td>
+        <span class="name">
+         Order No :
+        </span>
+                            <span class="des">
+          A60148ASZ298
+        </span>
+                        </td>
+                        <td>
+        <span class="name">
+          Build Time:
+        </span>
+                            <span class="des">
+          7-8 days
+        </span>
+                        </td>
+                        <td>
+        <span class="name">
+          Total:
+        </span>
+                            <span class="total-price">
+          US $5
+        </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+        <span class="name">
+          Associated SMT:
+        </span>
+                            <span class="des">
+         S-A60148ASZ298
+        </span>
+                        </td>
+                        <td>
+        <span class="name">
+         Create Time:
+        </span>
+                            <span class="des">
+         2020/8/6 16:37:36
+        </span>
+                        </td>
+                        <td>
+        <span class="name">
+         Estimated Finish Time:
+        </span>
+                            <span class="des">
+         2020-08-13  China Time  Zone(GMT+8)
+        </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <div class="link-box">
+             <span class="name">
+                 Gerber File:
+             </span>
+                                <a href="javascript:void(0)" class="link-file">
+                                    A60148ASZ298.zip
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!--  info-detail-->
+            <div class="info-item">
+                <table cellpadding="0" cellspacing="0" class="info-detail">
+                    <tr>
+                        <td class="name">
+                            Material
+                        </td>
+                        <td colspan="5">
+                            FR-4 TG130
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">
+                            Size
+                        </td>
+                        <td>
+                            1 x 1 mm
+                        </td>
+                        <td class="name">
+                            Quantity
+                        </td>
+                        <td>
+                            5
+                        </td>
+                        <td class="name">
+                            Different Design in
+                            Panel
+                        </td>
+                        <td>
+                            1
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">
+                            Layers
+                        </td>
+                        <td>
+                            4 Layers
+                        </td>
+                        <td class="name">
+                            Thickness
+                        </td>
+                        <td>
+                            1.6 mm
+                        </td>
+                        <td class="name">
+                            Min Track/Spacing
+                        </td>
+                        <td>
+                            8/8mil
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">
+                            Min Hole Size
+                        </td>
+                        <td>
+                            0.3
+                        </td>
+                        <td class="name">
+                            Solder Mask
+                        </td>
+                        <td>
+                            Green
+                        </td>
+                        <td class="name">
+                            Silkscreen
+                        </td>
+                        <td>
+                            White
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">
+                            Surface Finish
+                        </td>
+                        <td>
+                            ENEPIG
+                            （Ni:200U" / Pd:2U" /
+                            Au:2U"）
+                        </td>
+                        <td class="name">
+                            Via Process
+                        </td>
+                        <td>
+                            Create Time
+                        </td>
+                        <td class="name">
+                            Finished Copper
+                        </td>
+                        <td>
+                            Create Time
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">
+                            Inner Copper
+                        </td>
+                        <td>
+
+                        </td>
+                        <td class="name">
+
+                        </td>
+                        <td>
+
+                        </td>
+                        <td class="name">
+
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="info-item">
+                <table cellpadding="0" cellspacing="0" class="info-detail">
+                    <tr>
+                        <td class="name">
+                            Board type
+                        </td>
+                        <td>
+                            Panel by PCBgogo
+                        </td>
+                        <td class="name">
+                            Route Process
+                        </td>
+                        <td>
+                            Panel as V-Scoring
+                        </td>
+                        <td class="name">
+                            X-out
+                            <br>Allowance in Panel
+                        </td>
+                        <td>
+                            Accept
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">
+                            Gold Fingers
+                        </td>
+                        <td>
+                            Yes
+                        </td>
+                        <td class="name">
+                            Surface Finish
+                            <br>(Gold Fingers)
+                        </td>
+                        <td>
+                            Hard Gold
+                            Au:10U"/Ni:120U"
+                        </td>
+                        <td class="name">
+                            HASL"to"ENIG
+                        </td>
+                        <td>
+                            1
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">
+                            Add PO No.
+                        </td>
+                        <td colspan="5">
+                            PO-000111
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">
+                            Additional Options
+                        </td>
+                        <td colspan="5">
+                            Peelable Soldermask:Bottom side,UL Marking:Yes - add to top silkscreen,Half-cut/Castellated
+                            Holes,Edge
+                            Plating,Impedance control,
+                            Halogen-Free,Buried/blind vias,Custom Stackup,Carbon Mask,Via in pad,Via filled with
+                            resin,Countersinks/Counterbores,Z-axis milling
+                            Confirm work file
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">
+                            Manufacturing
+                        </td>
+                        <td colspan="5"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!--PCB Assembly-->
+        <div class="ui-window-bd" style="display: block">
+            <div class="ui-window-title">
+                PCB Assembly
+            </div>
+            <!--  info-title-->
+            <div class="info-item">
+                <table cellpadding="0" cellspacing="0" class="info-title" width="100%">
+                    <tr>
+                        <th width="28%"></th>
+                        <th width="28%"></th>
+                        <th width="44%"></th>
+                    </tr>
+                    <tr>
+                        <td>
+        <span class="name">
+         Order No :
+        </span>
+                            <span class="des">
+          A60148ASZ298
+        </span>
+                        </td>
+                        <td>
+        <span class="name">
+          Build Time:
+        </span>
+                            <span class="des">
+          7-8 days
+        </span>
+                        </td>
+                        <td>
+        <span class="name">
+          Total:
+        </span>
+                            <span class="total-price">
+          US $5
+        </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+        <span class="name">
+          Associated SMT:
+        </span>
+                            <span class="des">
+         S-A60148ASZ298
+        </span>
+                        </td>
+                        <td>
+        <span class="name">
+         Create Time:
+        </span>
+                            <span class="des">
+         2020/8/6 16:37:36
+        </span>
+                        </td>
+                        <td>
+        <span class="name">
+         Estimated Finish Time:
+        </span>
+                            <span class="des">
+         2020-08-13  China Time  Zone(GMT+8)
+        </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <div class="link-box">
+            <span class="name">
+             BOM File:
+        </span>
+                                <a href="javascript:void(0)" class="link-file">
+                                    A60148ASZ298.zip
+                                </a>
+                            </div>
+                            <div class="link-box">
+            <span class="name">
+         Gerber File:
+        </span>
+                                <a href="javascript:void(0)" class="link-file">
+                                    A60148ASZ298.zip
+                                </a>
+                            </div>
+                            <div class="link-box">
+            <span class="name">
+              Centrold File:
+              </span>
+                                <a href="javascript:void(0)" class="link-file">
+                                    A60148ASZ298.zip
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!--  info-detail-->
+            <div class="info-item">
+                <table cellpadding="0" cellspacing="0" class="info-detail">
+                    <tr>
+                        <td class="name">
+                            3 flexible options
+                        </td>
+                        <td>
+                            Turnkey
+                        </td>
+                        <td class="name">
+                            Quantity
+                        </td>
+                        <td>
+                            5
+                        </td>
+                        <td class="name">
+                            Number of
+                            Unique Parts
+                        </td>
+                        <td>
+                            1
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">
+                            SMT Pads
+                        </td>
+                        <td>
+                            12
+                        </td>
+                        <td class="name">
+                            Thru-Holes
+                        </td>
+                        <td>
+                            1
+                        </td>
+                        <td class="name">
+                            Board type
+                        </td>
+                        <td>
+                            Single pieces
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">
+                            Assembly Side(s)
+                        </td>
+                        <td>
+                            Top side
+                        </td>
+                        <td class="name">
+                            Number of
+                            BGA/QFP Parts
+                        </td>
+                        <td>
+                            0
+                        </td>
+                        <td class="name">
+                            X-ray Test
+                        </td>
+                        <td>
+                            White
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">
+                            Manufacturing
+                        </td>
+                        <td colspan="5"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!--软板-->
+        <div class="ui-window-bd" style="display: block">
+            <div class="ui-window-title">
+                PCB Production
+            </div>
+            <!--  info-title-->
+            <div class="info-item">
+                <table cellpadding="0" cellspacing="0" class="info-title" width="100%">
+                    <tr>
+                        <th width="28%"></th>
+                        <th width="28%"></th>
+                        <th width="44%"></th>
+                    </tr>
+                    <tr>
+                        <td>
+        <span class="name">
+         Order No :
+        </span>
+                            <span class="des">
+          A60148ASZ298
+        </span>
+                        </td>
+                        <td>
+        <span class="name">
+          Build Time:
+        </span>
+                            <span class="des">
+          7-8 days
+        </span>
+                        </td>
+                        <td>
+        <span class="name">
+          Total:
+        </span>
+                            <span class="total-price">
+          US $5
+        </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+        <span class="name">
+          Associated SMT:
+        </span>
+                            <span class="des">
+         S-A60148ASZ298
+        </span>
+                        </td>
+                        <td>
+        <span class="name">
+         Create Time:
+        </span>
+                            <span class="des">
+         2020/8/6 16:37:36
+        </span>
+                        </td>
+                        <td>
+        <span class="name">
+         Estimated Finish Time:
+        </span>
+                            <span class="des">
+         2020-08-13  China Time  Zone(GMT+8)
+        </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <div class="link-box">
+             <span class="name">
+                 Gerber File:
+             </span>
+                                <a href="javascript:void(0)" class="link-file">
+                                    A60148ASZ298.zip
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!--  info-detail-->
+            <div class="info-item">
+                <table cellpadding="0" cellspacing="0" class="info-detail">
+                    <tr>
+                        <td class="name">
+                            Material
+                        </td>
+                        <td colspan="5">
+                            FR-4 TG130
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">
+                            Size
+                        </td>
+                        <td>
+                            1 x 1 mm
+                        </td>
+                        <td class="name">
+                            Quantity
+                        </td>
+                        <td>
+                            5
+                        </td>
+                        <td class="name">
+
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">
+                            Layers
+                        </td>
+                        <td>
+                            4 Layers
+                        </td>
+                        <td class="name">
+                            Thickness
+                        </td>
+                        <td>
+                            1.6 mm
+                        </td>
+                        <td class="name">
+                            Min Track/Spacing
+                        </td>
+                        <td>
+                            8/8mil
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">
+                            Min Hole Size
+                        </td>
+                        <td>
+                            0.3
+                        </td>
+                        <td class="name">
+                            Coverlay
+                        </td>
+                        <td>
+                            Green
+                        </td>
+                        <td class="name">
+                            Silkscreen
+                        </td>
+                        <td>
+                            White
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">
+                            Surface Finish
+                        </td>
+                        <td>
+                            Immersion gold(ENIG):
+                            “1U”
+                        </td>
+                        <td class="name">
+                            Finished Copper
+                        </td>
+                        <td>
+                            0.5 oz. Cu (18µm)
+                        </td>
+                        <td class="name">
+                            E-test
+                        </td>
+                        <td>
+                            100%
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">
+                            Stiffener
+                        </td>
+                        <td>
+                            TOP
+                            PI:0.075mm(unusual)
+                            FR-4:0.1mm(unusual)
+                            Metal:
+                        </td>
+                        <td class="name">
+                            3M Tape
+                        </td>
+                        <td>
+                            3M9495LE(unusual)
+                            onesided BOT
+                        </td>
+                        <td class="name">
+                            EMI shielding film
+                        </td>
+                        <td>
+                            HCF-6000G
+                            onesided TOP
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="info-item">
+                <table cellpadding="0" cellspacing="0" class="info-detail">
+                    <tr>
+                        <td class="name">
+                            Board type
+                        </td>
+                        <td>
+                            Panel by PCBgogo
+                        </td>
+                        <td class="name">
+                            Route Process
+                        </td>
+                        <td>
+                            Panel as V-Scoring
+                        </td>
+                        <td class="name">
+                            X-out
+                            <br>Allowance in Panel
+                        </td>
+                        <td>
+                            Accept
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">
+                            Gold Fingers
+                        </td>
+                        <td>
+                            Yes
+                        </td>
+                        <td class="name">
+
+                        </td>
+                        <td>
+
+                        </td>
+                        <td class="name">
+
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">
+                            Add PO No.
+                        </td>
+                        <td colspan="5">
+                            PO-09888
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">
+                            Additional Options
+                        </td>
+                        <td colspan="5">
+                            Peelable Soldermask:Bottom side,UL Marking:Yes - add to top silkscreen,Half-cut/Castellated
+                            Holes,Edge
+                            Plating,Impedance control,
+                            Halogen-Free,Buried/blind vias,Custom Stackup,Carbon Mask,Via in pad,Via filled with
+                            resin,Countersinks/Counterbores,Z-axis milling
+                            Confirm work file
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">
+                            Manufacturing
+                        </td>
+                        <td colspan="5"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!--软硬结合板-->
+        <div class="ui-window-bd" style="display: block">
+            <div class="ui-window-title">
+                PCB Production
+            </div>
+            <!--  info-title-->
+            <div class="info-item">
+                <table cellpadding="0" cellspacing="0" class="info-title" width="100%">
+                    <tr>
+                        <th width="28%"></th>
+                        <th width="28%"></th>
+                        <th width="44%"></th>
+                    </tr>
+                    <tr>
+                        <td>
+        <span class="name">
+         Order No :
+        </span>
+                            <span class="des">
+          A60148ASZ298
+        </span>
+                        </td>
+                        <td>
+        <span class="name">
+          Build Time:
+        </span>
+                            <span class="des">
+          7-8 days
+        </span>
+                        </td>
+                        <td>
+        <span class="name">
+          Total:
+        </span>
+                            <span class="total-price">
+          US $5
+        </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+        <span class="name">
+          Associated SMT:
+        </span>
+                            <span class="des">
+         S-A60148ASZ298
+        </span>
+                        </td>
+                        <td>
+        <span class="name">
+         Create Time:
+        </span>
+                            <span class="des">
+         2020/8/6 16:37:36
+        </span>
+                        </td>
+                        <td>
+        <span class="name">
+         Estimated Finish Time:
+        </span>
+                            <span class="des">
+         2020-08-13  China Time  Zone(GMT+8)
+        </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <div class="link-box">
+             <span class="name">
+                 Gerber File:
+             </span>
+                                <a href="javascript:void(0)" class="link-file">
+                                    A60148ASZ298.zip
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!--  info-detail-->
+            <div class="info-item">
+                <table cellpadding="0" cellspacing="0" class="info-detail">
+                    <tr>
+                        <td class="name">
+                            Material
+                        </td>
+                        <td colspan="5">
+                            FR-4 TG130
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">
+                            Size
+                        </td>
+                        <td>
+                            1 x 1 mm
+                        </td>
+                        <td class="name">
+                            Quantity
+                        </td>
+                        <td>
+                            5
+                        </td>
+                        <td class="name">
+
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">
+                            Layers
+                        </td>
+                        <td>
+                            4 Layers
+                        </td>
+                        <td class="name">
+                            Thickness
+                        </td>
+                        <td>
+                            1.6 mm
+                        </td>
+                        <td class="name">
+                            Min Track/Spacing
+                        </td>
+                        <td>
+                            8/8mil
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">
+                            Min Hole Size
+                        </td>
+                        <td>
+                            0.3
+                        </td>
+                        <td class="name">
+                            Surface Finish
+                        </td>
+                        <td>
+                            Immersion gold(ENIG):
+                            “1U”
+                        </td>
+                        <td class="name">
+                            Via Process
+                        </td>
+                        <td>
+                            White
+                        </td>
+                    </tr>
+                    <!--Flex Part-->
+                    <tr>
+                        <td colspan="6">
+                            Flex Part
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">
+                            FPC Layers
+                        </td>
+                        <td>
+                            1 Layer
+                        </td>
+                        <td class="name">
+                            FPC Thickness
+                        </td>
+                        <td>
+                            0.18
+                        </td>
+                        <td class="name">
+                            Coverlay
+                        </td>
+                        <td>
+                            Yellow Coverlay
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">
+                            Silkscreen
+                        </td>
+                        <td>
+                            White
+                        </td>
+                        <td class="name">
+                            Finished Copper
+                        </td>
+                        <td>
+                            1 oz Cu (35μm)
+                        </td>
+                        <td class="name"></td>
+                        <td></td>
+                    </tr>
+                    <!-- Rigid Part-->
+                    <tr>
+                        <td colspan="6">
+                            Rigid Part
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">
+                            Solder Mask
+                        </td>
+                        <td>
+                            Green
+                        </td>
+                        <td class="name">
+                            Silkscreen
+                        </td>
+                        <td>
+                            White
+                        </td>
+                        <td class="name">
+                            Finished Copper
+                        </td>
+                        <td>1 oz Cu (35μm)</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="info-item">
+                <table cellpadding="0" cellspacing="0" class="info-detail">
+                    <tr>
+                        <td class="name">
+                            Board type
+                        </td>
+                        <td>
+                            Panel by PCBgogo
+                        </td>
+                        <td class="name">
+                            Route Process
+                        </td>
+                        <td>
+                            Panel as V-Scoring
+                        </td>
+                        <td class="name">
+                            X-out
+                            <br>Allowance in Panel
+                        </td>
+                        <td>
+                            Accept
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">
+                            Gold Fingers
+                        </td>
+                        <td>
+                            Yes
+                        </td>
+                        <td class="name">
+
+                        </td>
+                        <td>
+
+                        </td>
+                        <td class="name">
+
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">
+                            Add PO No.
+                        </td>
+                        <td colspan="5">
+                            PO-09888
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">
+                            Additional Options
+                        </td>
+                        <td colspan="5">
+                            Peelable Soldermask:Bottom side,UL Marking:Yes - add to top silkscreen,Half-cut/Castellated
+                            Holes,Edge
+                            Plating,Impedance control,
+                            Halogen-Free,Buried/blind vias,Custom Stackup,Carbon Mask,Via in pad,Via filled with
+                            resin,Countersinks/Counterbores,Z-axis milling
+                            Confirm work file
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">
+                            Manufacturing
+                        </td>
+                        <td colspan="5"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!--钢网-->
+        <div class="ui-window-bd" style="display: block">
+            <div class="ui-window-title">
+                SMD-Stencil
+            </div>
+            <!--  info-title-->
+            <div class="info-item">
+                <table cellpadding="0" cellspacing="0" class="info-title" width="100%">
+                    <tr>
+                        <th width="28%"></th>
+                        <th width="28%"></th>
+                        <th width="44%"></th>
+                    </tr>
+                    <tr>
+                        <td>
+        <span class="name">
+         Order No :
+        </span>
+                            <span class="des">
+          A60148ASZ298
+        </span>
+                        </td>
+                        <td>
+        <span class="name">
+          Build Time:
+        </span>
+                            <span class="des">
+          7-8 days
+        </span>
+                        </td>
+                        <td>
+        <span class="name">
+          Total:
+        </span>
+                            <span class="total-price">
+          US $5
+        </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+        <span class="name">
+          Associated PCB :
+        </span>
+                            <span class="des">
+         S-A60148ASZ298
+        </span>
+                        </td>
+                        <td>
+        <span class="name">
+         Create Time:
+        </span>
+                            <span class="des">
+         2020/8/6 16:37:36
+        </span>
+                        </td>
+                        <td>
+        <span class="name">
+         Estimated Finish Time:
+        </span>
+                            <span class="des">
+         2020-08-13  China Time  Zone(GMT+8)
+        </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <div class="link-box">
+            <span class="name">
+             BOM File:
+        </span>
+                                <a href="javascript:void(0)" class="link-file">
+                                    A60148ASZ298.zip
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!--  info-detail-->
+            <div class="info-item">
+                <table cellpadding="0" cellspacing="0" class="info-detail">
+                    <tr>
+                        <td class="name">
+                            Stencil type
+                        </td>
+                        <td colspan="5">
+                            FR-4 TG130
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">
+                            Size
+                        </td>
+                        <td>
+                            1 x 1 mm
+                        </td>
+                        <td class="name">
+                            Quantity
+                        </td>
+                        <td>
+                            5
+                        </td>
+                        <td class="name">
+                            Stencil Side
+                        </td>
+                        <td>
+                            Top+Bottom
+                            (On Single Stencil)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">
+                            Existing fiducials
+                        </td>
+                        <td>
+                            Lasered through
+                        </td>
+                        <td class="name">
+                            Thickness
+                        </td>
+                        <td>
+                            0.10mm
+                        </td>
+                        <td class="name">
+                            Electropolishing
+                        </td>
+                        <td>
+                            No
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">
+                            Manufacturing
+                        </td>
+                        <td colspan="5"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!--礼品-->
+        <div class="ui-window-bd" style="display: block">
+            <div class="ui-window-title">
+                Gift
+            </div>
+            <!--  info-title-->
+            <div class="info-item">
+                <table cellpadding="0" cellspacing="0" class="info-title" width="100%">
+                    <tr>
+                        <th width="28%"></th>
+                        <th width="28%"></th>
+                        <th width="44%"></th>
+                    </tr>
+                    <tr>
+                        <td>
+        <span class="name">
+         Order No :
+        </span>
+                            <span class="des">
+          A60148ASZ298
+        </span>
+                        </td>
+                        <td>
+        <span class="name">
+          Build Time:
+        </span>
+                            <span class="des">
+          7-8 days
+        </span>
+                        </td>
+                        <td>
+        <span class="name">
+          Total:
+        </span>
+                            <span class="total-price">
+          US $5
+        </span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!--  info-detail-->
+            <div class="info-item">
+                <table cellpadding="0" cellspacing="0" class="info-detail">
+                    <tr>
+                        <td class="name">
+                            The name of the
+                        </td>
+                        <td colspan="5">
+                            70*90 Experimental Plate Universal Plate Hole Plate PCB Single Hole 7*9 Student Experimental
+                            Equipment
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">
+                            Use GOcoin
+                        </td>
+                        <td>
+                            5
+                        </td>
+                        <td class="name">
+                            Quantitye
+                        </td>
+                        <td>
+                            5
+                        </td>
+                        <td class="name">
+
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- 价格总计-->
+        <div class="total-box">
+            <ul class="total-ul">
+                <li>PCB Cost</li>
+                <li>Coupon Savings</li>
+                <li>Shipping Cost</li>
+                <li>Paypal Fee</li>
+                <li>Total Amount</li>
+            </ul>
+            <ol class="total-ol">
+                <li>$500.00</li>
+                <li>-$100.00</li>
+                <li>$41.00</li>
+                <li>$2.00</li>
+                <li>$357.00</li>
+            </ol>
+        </div>
+        <!--版权说明-->
+        <div class="copy-right-box ">
+            <p>Copyright © 2015 PCBGOGO. All rights reserved. Shenzhen JDB Technology Co., Ltd.
+                Address: No. 15, Zhongxing Road, Kengzi Street, Pingshan District, Shenzhen, 518000, China.
+            </p>
+        </div>
+    </div>
+</div>
+<!--右侧显示-->
+<div class="business-pic">
+    <div class="business-l">
+        <ul>
+            <li>
+                <a href="#" class="top-pics"><img src="../img/images/order/business-img.png" alt=""></a>
+            </li>
+            <li>
+                <a href="#" style="color: #ffffff">
+                    Liu...
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../img/images/order/skype.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../img/images/order/emails-icon.png" alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="business-r">
+        <ul>
+            <li><img src="../img/images/order/stars.png" alt=""></li>
+            <li><a href="#">
+                Daphne Liu
+            </a></li>
+            <li><a href="#">
+                pcbway.service
+            </a></li>
+            <li><a href="#">
+                service@pcbway.com
+            </a></li>
+        </ul>
+    </div>
+</div>
+<!--发起客诉弹窗-->
+<div class="complaint-pop to-complaint" style="display: none">
+    <dl class="handle-process">
+        <dd>
+            Submit
+        </dd>
+        <dd>
+            Accept
+        </dd>
+        <dd>
+            Communicating
+        </dd>
+        <dd>
+            Solved
+        </dd>
+    </dl>
+    <div class="handle-order">
+        <div class="order-title">
+            Order NO: GA12341
+        </div>
+        <div class="collect-info">
+            <div class="required-tips">* Items designated with an asterisk are required fields.</div>
+            <div class="pay-info">
+                <label class="pay-label">
+                    * Select the problem order number
+                </label>
+                <div class="pay-val">
+                    <div class="quantity-select shipping-title js-shipping-title">
+                        <!-- 当前选中的...-->
+                        <div class="current-shipping js-current-shipping">S-A72270ASF1</div>
+                        <div class="total-shipping js-total-shipping">
+                            <div class="item">
+                                S-A72270ASF1
+                            </div>
+                            <div class="item">
+                                S-A72270ASF2
+                            </div>
+                            <div class="item">
+                                S-A72270ASF3
+                            </div>
+                            <div class="item">
+                                S-A72270ASF4
+                            </div>
+                            <div class="item">
+                                S-A72270ASF5
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pay-info">
+                <label class="pay-label">
+                    * Type of problem
+                </label>
+                <div class="pay-val">
+                    <div class="quantity-select shipping-title js-shipping-title">
+                        <!-- 当前选中的...-->
+                        <div class="current-shipping js-current-shipping">The PCB is wrong/bad</div>
+                        <div class="total-shipping js-total-shipping">
+                            <div class="item">
+                                The PCB is wrong/bad
+                            </div>
+                            <div class="item">
+                                Missing/damage of IC
+                            </div>
+                            <div class="item">
+                                SMT issues
+                            </div>
+                            <div class="item">
+                                Merchandise not as described
+                            </div>
+                            <div class="item">
+                                Lead time issues
+                            </div>
+                            <div class="item">
+                                Model issues
+                            </div>
+                            <div class="item">
+                                Delivery issues
+                            </div>
+                            <div class="item">
+                                Customs issues
+                            </div>
+                            <div class="item">
+                                Sale service issues
+                            </div>
+                            <div class="item">
+                                Other issues
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pay-info">
+                <label class="pay-label">
+                    * Problem description
+                </label>
+                <div class="pay-val">
+                    <textarea class="edit-problem"></textarea>
+                </div>
+            </div>
+            <div class="pay-info">
+                <label class="pay-label">
+                    Upload document
+                </label>
+                <div class="pay-val">
+                    <a class="add-file" href="javascript:void(0)">
+                        + Add File
+                        <input type="file" class="c-get-files">
+                    </a>
+                    <span class="format-tips"> .rar or .zip Maximum 10M.</span>
+                    <!-- 上传进度-->
+                    <div class="c-upload-p">
+                        <div class="c-process" style="width: 90%"></div>
+                        <div class="c-file-name">
+                            this is a test file.zip
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="handle-tool">
+        <input class="handle-btn h-submit" type="submit" value="Submit">
+    </div>
+</div>
+<!--客诉待受理弹窗-->
+<div class="complaint-pop await-acceptance" style="display: none">
+    <div class="handle-top">
+        <div class="handle-info">
+            <div class="handle-no">
+                Order No : S-A60148ASZ227
+            </div>
+            <div class="handle-time">
+                2019/11/15 09:06:34
+            </div>
+        </div>
+        <div class="handle-state">
+            Await acceptance
+        </div>
+    </div>
+    <div class="handle-tips">
+        Result of handling：With over 10 years as an industry leader, PCBGOGO is one of the most experienced PCB and PCB
+        assembly manufacturer in China.We are proud to
+        manufacture high-quality PCBs and provide the best PCB assembly services for our customers.
+    </div>
+    <dl class="handle-process">
+        <dd>
+            Submit
+        </dd>
+        <dd>
+            Accept
+        </dd>
+        <dd>
+            Communicating
+        </dd>
+        <dd>
+            Solved
+        </dd>
+    </dl>
+    <div class="handle-des">
+        <div class="handle-des-title">Describe:</div>
+        <p class="des-text">
+            With over 10 years as an industry leader, PCBGOGO is one of the most experienced PCB and PCB assembly
+            manufacturer in China.
+            We are proud to manufacture high-quality PCBs and provide the best PCB assembly services for our customers.
+            At the same time we provide a safe and prosperous environment for over 200 employees to work in.
+            Our goal is to be categorized as the easiest Printed Circuit Board manufacturer to do business with.
+        </p>
+        <div class="create-time">
+            Create Time:2019/11/15 09:06:34
+        </div>
+    </div>
+    <div class="handle-files">
+        <a class="down-name" href="javascript:void(0)">
+            提交客诉时上传的文件名点击可下载.zip
+        </a>
+    </div>
+    <div class="handle-tool">
+        <a class="handle-btn" href="javascript:void(0)">
+            Cancel
+        </a>
+    </div>
+</div>
+<!--客诉未受理弹窗-->
+<div class="complaint-pop unaccepted" style="display: none">
+    <div class="handle-top">
+        <div class="handle-info">
+            <div class="handle-no">
+                Order No : S-A60148ASZ227
+            </div>
+            <div class="handle-time">
+                2019/11/15 09:06:34
+            </div>
+        </div>
+        <div class="handle-state">
+            Unaccepted
+        </div>
+    </div>
+    <div class="handle-tips">
+        Result of handling：With over 10 years as an industry leader, PCBGOGO is one of the most experienced PCB and PCB
+        assembly manufacturer in China.We are proud to
+        manufacture high-quality PCBs and provide the best PCB assembly services for our customers.
+    </div>
+    <dl class="handle-process">
+        <dd>
+            Submit
+        </dd>
+        <dd>
+            Accept
+        </dd>
+        <dd>
+            Communicating
+        </dd>
+        <dd>
+            Solved
+        </dd>
+    </dl>
+    <div class="handle-des">
+        <div class="handle-des-title">Describe:</div>
+        <p class="des-text">
+            With over 10 years as an industry leader, PCBGOGO is one of the most experienced PCB and PCB assembly
+            manufacturer in China.
+            We are proud to manufacture high-quality PCBs and provide the best PCB assembly services for our customers.
+            At the same time we provide a safe and prosperous environment for over 200 employees to work in.
+            Our goal is to be categorized as the easiest Printed Circuit Board manufacturer to do business with.
+        </p>
+        <div class="create-time">
+            Create Time:2019/11/15 09:06:34
+        </div>
+    </div>
+    <div class="handle-files">
+        <a class="down-name" href="javascript:void(0)">
+            提交客诉时上传的文件名点击可下载.zip
+        </a>
+    </div>
+    <div class="handle-tool">
+        <a class="handle-btn" href="javascript:void(0)">
+            Cancel
+        </a>
+    </div>
+</div>
+<!--客诉待处理弹窗-->
+<div class="complaint-pop pending" style="display: none">
+    <div class="handle-top">
+        <div class="handle-info">
+            <div class="handle-no">
+                Order No : S-A60148ASZ227
+            </div>
+            <div class="handle-time">
+                2019/11/15 09:06:34
+            </div>
+        </div>
+        <div class="handle-state">
+            Pending
+        </div>
+    </div>
+    <div class="handle-tips">
+        We have accepted your complaint, customer service staff will contact you as soon as possible,
+        please pay attention to check email! We are very sorry for the inconvenience.
+    </div>
+    <dl class="handle-process">
+        <dd>
+            Submit
+        </dd>
+        <dd>
+            Accept
+        </dd>
+        <dd>
+            Communicating
+        </dd>
+        <dd>
+            Solved
+        </dd>
+    </dl>
+    <div class="handle-des">
+        <div class="handle-des-title">Describe:</div>
+        <p class="des-text">
+            With over 10 years as an industry leader, PCBGOGO is one of the most experienced PCB and PCB assembly
+            manufacturer in China.
+            We are proud to manufacture high-quality PCBs and provide the best PCB assembly services for our customers.
+            At the same time we provide a safe and prosperous environment for over 200 employees to work in.
+            Our goal is to be categorized as the easiest Printed Circuit Board manufacturer to do business with.
+        </p>
+        <div class="create-time">
+            Create Time:2019/11/15 09:06:34
+        </div>
+    </div>
+    <div class="handle-files">
+        <a class="down-name" href="javascript:void(0)">
+            提交客诉时上传的文件名点击可下载.zip
+        </a>
+    </div>
+    <div class="handle-tool">
+        <a class="handle-btn" href="javascript:void(0)">
+            Cancel
+        </a>
+    </div>
+</div>
+<!--客诉处理中弹窗-->
+<div class="complaint-pop under-handling" style="display: none">
+    <div class="handle-top">
+        <div class="handle-info">
+            <div class="handle-no">
+                Order No : S-A60148ASZ227
+            </div>
+            <div class="handle-time">
+                2019/11/15 09:06:34
+            </div>
+        </div>
+        <div class="handle-state">
+            Under handling
+        </div>
+    </div>
+    <div class="handle-tips">
+        We have accepted your complaint, customer service staff will contact you as soon as possible,
+        please pay attention to check email! We are very sorry for the inconvenience.
+    </div>
+    <dl class="handle-process">
+        <dd>
+            Submit
+        </dd>
+        <dd>
+            Accept
+        </dd>
+        <dd>
+            Communicating
+        </dd>
+        <dd>
+            Solved
+        </dd>
+    </dl>
+    <div class="handle-des">
+        <div class="handle-des-title">Describe:</div>
+        <p class="des-text">
+            With over 10 years as an industry leader, PCBGOGO is one of the most experienced PCB and PCB assembly
+            manufacturer in China.
+            We are proud to manufacture high-quality PCBs and provide the best PCB assembly services for our customers.
+            At the same time we provide a safe and prosperous environment for over 200 employees to work in.
+            Our goal is to be categorized as the easiest Printed Circuit Board manufacturer to do business with.
+        </p>
+        <div class="create-time">
+            Create Time:2019/11/15 09:06:34
+        </div>
+    </div>
+    <div class="handle-files">
+        <a class="down-name" href="javascript:void(0)">
+            提交客诉时上传的文件名点击可下载.zip
+        </a>
+    </div>
+    <div class="handle-tool">
+        <a class="handle-btn" href="javascript:void(0)">
+            Cancel
+        </a>
+    </div>
+</div>
+<!--客诉处理完成弹窗-->
+<div class="complaint-pop handled" style="display: none">
+    <div class="handle-top">
+        <div class="handle-info">
+            <div class="handle-no">
+                Order No : S-A60148ASZ227
+            </div>
+            <div class="handle-time">
+                2019/11/15 09:06:34
+            </div>
+        </div>
+        <div class="handle-state">
+            Handled
+        </div>
+    </div>
+    <div class="handle-tips">
+        Result of handling：With over 10 years as an industry leader, PCBGOGO is one of the most experienced PCB and PCB
+        assembly manufacturer in China.We are proud to
+        manufacture high-quality PCBs and provide the best PCB assembly services for our customers.
+    </div>
+    <dl class="handle-process">
+        <dd>
+            Submit
+        </dd>
+        <dd>
+            Accept
+        </dd>
+        <dd>
+            Communicating
+        </dd>
+        <dd>
+            Solved
+        </dd>
+    </dl>
+    <div class="handle-des">
+        <div class="handle-des-title">Describe:</div>
+        <p class="des-text">
+            With over 10 years as an industry leader, PCBGOGO is one of the most experienced PCB and PCB assembly
+            manufacturer in China.
+            We are proud to manufacture high-quality PCBs and provide the best PCB assembly services for our customers.
+            At the same time we provide a safe and prosperous environment for over 200 employees to work in.
+            Our goal is to be categorized as the easiest Printed Circuit Board manufacturer to do business with.
+        </p>
+        <div class="create-time">
+            Create Time:2019/11/15 09:06:34
+        </div>
+    </div>
+    <div class="handle-files">
+        <a class="down-name" href="javascript:void(0)">
+            提交客诉时上传的文件名点击可下载.zip
+        </a>
+    </div>
+</div>
+<!--客诉撤销弹窗-->
+<div class="complaint-pop revocation" style="display: none">
+    <div class="handle-top">
+        <div class="handle-info">
+            <div class="handle-no">
+                Order No : S-A60148ASZ227
+            </div>
+            <div class="handle-time">
+                2019/11/15 09:06:34
+            </div>
+        </div>
+        <div class="handle-state">
+            Revocation
+        </div>
+    </div>
+    <dl class="handle-process">
+        <dd>
+            Submit
+        </dd>
+        <dd>
+            Accept
+        </dd>
+        <dd>
+            Communicating
+        </dd>
+        <dd>
+            Solved
+        </dd>
+    </dl>
+    <div class="handle-des">
+        <div class="handle-des-title">Describe:</div>
+        <p class="des-text">
+            With over 10 years as an industry leader, PCBGOGO is one of the most experienced PCB and PCB assembly
+            manufacturer in China.
+            We are proud to manufacture high-quality PCBs and provide the best PCB assembly services for our customers.
+            At the same time we provide a safe and prosperous environment for over 200 employees to work in.
+            Our goal is to be categorized as the easiest Printed Circuit Board manufacturer to do business with.
+        </p>
+        <div class="create-time">
+            Create Time:2019/11/15 09:06:34
+        </div>
+    </div>
+    <div class="handle-files">
+        <a class="down-name" href="javascript:void(0)">
+            提交客诉时上传的文件名点击可下载.zip
+        </a>
+    </div>
+</div>
+<script src="../img/js/jquery/jquery-1.11.3.min.js"></script>
+<script src="../img/js/layer-v3.1.1/layer/layer.js"></script>
+<script src="../img/js/public.js"></script>
+<!--<script src="../img/js/detailsDelivery.js"></script>-->
+<script>
+  // 套用删除复写如下弹窗
+  $(function () {
+    // 各个客诉弹窗
+    $('.js-complaint-box .to-detail').click(function () {
+      var complaintState = $(this).attr('data-flag')
+      var index1 = layer.open({
+        type: 1,
+        title: 'Customer complaint',
+        content: $('.complaint-pop.' + complaintState).prop('outerHTML'),
+        area: ['990px', '700px'],
+        success: function () {
+          $('.layui-layer-content .complaint-pop.' + complaintState).show();
+          $('.layui-layer-content').find('.handle-btn').click(function () {
+            var index2 = layer.confirm('Confirm revocation?', {
+              title: 'info',
+              btn: ['Confirm', 'Cancel']
+            }, function () {
+              layer.closeAll()
+            }, function () {
+
+            });
+          })
+        }
+      })
+    })
+    // 发起客诉弹窗
+    $('.js-to-complaint').click(function () {
+      layer.open({
+        type: 1,
+        title: 'Customer complaint',
+        area: ['990px', '700px'],
+        content: $('.complaint-pop.to-complaint').prop('outerHTML'),
+        success: function () {
+          $('.layui-layer-content .complaint-pop.to-complaint').show();
+          //客诉单号与问题类型选择
+          $('.js-shipping-title').hover(function () {
+            $(this).find('.js-total-shipping').stop().slideDown()
+          }, function () {
+            $(this).find('.js-total-shipping').stop().slideUp()
+          })
+          $('.js-total-shipping .item').click(function () {
+            $(this).parents('.shipping-title').find('.js-current-shipping').html($.trim($(this).text()))
+            $(this).parent('.js-total-shipping').hide()
+          })
+          $('.layui-layer-content').find('.add-file').change(function (e) {
+            var getFilesname = e.target.files[0].name
+            $('.layui-layer-content').find('.c-file-name').html(getFilesname)
+            $('.layui-layer-content').find('.c-upload-p').show(function () {
+              $('.layui-layer-content').find('.c-process').css({width: 100 + '%'})
+            })
+          })
+          // 提交
+          $('.layui-layer-content').find('.h-submit').click(function () {
+            layer.msg('dfdsfds');
+            layer.closeAll()
+          })
+        }
+      })
+    })
+  })
+</script>
+</body>
+</html>

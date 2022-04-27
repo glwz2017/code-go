@@ -1,0 +1,233 @@
+@import "css-function.less";
+@import "components/system-font.less";
+@import "components/go-version.less";
+@import "public_jp.less";
+@import "header_jp.less";
+@import "footer_jp.less";
+body {
+  background: #fff;
+}
+
+.active-smt-banner {
+  background: url("../images/activity/smt-banner-2022-2_jp.png") no-repeat center #010c16;
+  height: 700px;
+
+  .container_warp {
+    position: relative;
+    height: inherit;
+
+    .jump-link {
+      width: 252px;
+      height: 38px;
+      position: absolute;
+      bottom: 132px;
+      left: -40px;
+      z-index: 1;
+    }
+  }
+}
+
+.smt-section1 {
+  background: #010c16;
+  padding-top: 84px;
+  position: relative;
+  padding-bottom: 30px;
+
+  .smt-des1 {
+    font-size: 16px;
+    line-height: 24px;
+    color: #b0ddf7;
+    text-align: center;
+  }
+
+  .smt-price {
+    display: block;
+    margin: 36px auto 0;
+  }
+
+  .smt-price-des {
+    text-align: center;
+    font-size: 16px;
+    color: #b0ddf7;
+    line-height: 30px;
+
+    span {
+      font-family: open-sans-blod;
+      color: #a7f301;
+    }
+  }
+
+  .show-img1 {
+    position: absolute;
+    bottom: -180px;
+    left: 50%;
+    margin-left: -190px;
+    z-index: 2;
+  }
+
+  .jump-area {
+    background: url("../images/activity/smt-jump-link-2022-2.png") no-repeat center;
+    width: 568px;
+    height: 51px;
+    display: block;
+    margin: 70px auto 0;
+    position: relative;
+    z-index: 3;
+    padding: 0 35px;
+
+    a {
+      font-size: 18px;
+      color: #010c16;
+      width: 242px;
+      vertical-align: top;
+      line-height: 50px;
+      text-align: center;
+      font-family: open-sans-blod;
+      transition: all .3s linear;
+      transform: translateY(0);
+
+      &:hover {
+        font-size: 19px;
+      }
+
+      &:first-child {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.smt-how-discount {
+  background: url("../images/activity/smt-discount-bg-2022-2.png") no-repeat center;
+  height: 854px;
+  margin-top: 30px;
+  position: relative;
+
+  &:before {
+    display: block;
+    content: '';
+    height: 30px;
+    background: #010c16;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .container_warp {
+    padding-top: 240px;
+    position: relative;
+
+    &:before {
+      display: block;
+      content: '';
+      background: url("../images/activity/smt-note-title-2022-2.png") no-repeat center;
+      width: 173px;
+      height: 7px;
+      position: absolute;
+      bottom: 108px;
+      left: 0;
+      z-index: 1;
+    }
+
+    .clearF;
+
+    .smt-how-l {
+      float: left;
+      width: 510px;
+    }
+
+    .smt-how-title {
+      font-size: 30px;
+      color: @color313131;
+      font-family: open-sans-blod;
+    }
+
+    .how-index {
+      font-family: open-sans-blod;
+      font-size: 16px;
+      color: @color313131;
+      margin-top: 50px;
+    }
+
+    .index-des {
+      font-size: 14px;
+      color: @color313131;
+      margin-top: 23px;
+    }
+
+    .how2-index {
+      font-size: 16px;
+      font-family: open-sans-blod;
+      color: @color313131;
+      margin-top: 30px;
+    }
+
+    .index2-des {
+      font-size: 14px;
+      line-height: 30px;
+      color: @color313131;
+      margin-top: 23px;
+    }
+
+    .smt-how-r {
+      float: right;
+      margin-right: -14px;
+
+      img {
+        margin-top: 22px;
+      }
+    }
+  }
+}
+
+.smt-rules-area {
+  background: #88e9f1;
+  padding: 82px 0;
+  color: @color313131;
+
+  dt {
+    font-size: 18px;
+    font-family: open-sans-blod;
+    margin-bottom: 10px;
+  }
+
+  dd {
+    line-height: 30px;
+    font-size: 14px;
+    color: @color313131;
+  }
+}
+
+
+.prompted-pop {
+  .widthAndHeight(420px, 220px);
+
+  .prompted-pop-wrap {
+    display: table-cell;
+    height: 220px;
+    width: 420px;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  .prompted-pop-title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .to-btn {
+    height: 30px;
+    background: @colorRedB21f1f;
+    color: #fff;
+    width: 150px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 40px;
+
+    &:hover {
+      box-shadow: 0 0 6px rgba(0, 0, 0, .16);
+    }
+  }
+}

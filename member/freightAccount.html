@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Account -PCBgogo</title>
+  <!--网页标题左侧显示-->
+  <link rel="icon" href="../img/images/title-logo.png" type="image/x-icon">
+  <!--收藏夹显示图标-->
+  <link rel="shortcut icon" href="../img/images/title-logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="../img/css/member/freight-account.css">
+</head>
+<body>
+<div class="the-top">
+  <!--顶部导航-->
+  <div class="top-nav">
+    <div class="nav-l">
+      <a href="orderIndex.html">
+        <img src="../img/images/order/orderlogo.png" alt="logo">
+      </a>
+    </div>
+    <div class="nav-r">
+      <!--右侧图标-->
+      <div class="shopping-box">
+        <ul class="hints js-hints">
+          <li class="active message-li"><a href="javascript:void(0)">
+            <span class="iconfont icon-ai-message"></span>
+          </a>
+            <i class="point "></i>
+          </li>
+          <li class="active coupon-li"><a href="javascript:void(0)">
+            <span class="iconfont icon-youhuiquan"></span>
+          </a>
+            <i class="point "></i>
+          </li>
+          <li class="active coupon-li"><a href="javascript:void(0)">
+            <span class="iconfont icon-fukuan"></span>
+          </a>
+            <i class="point "></i>
+          </li>
+          <li class="car-box cared-li"><a href="javascript:void(0)">
+            <span class="iconfont icon-gouwuche1"></span>
+          </a>
+            <i class="round car-nums">99</i>
+          </li>
+        </ul>
+      </div>
+      <!--登录后-->
+      <div class="user-box">
+        <span class="hi-text"> Hi! The user...</span>
+        <div class="user-pic js-user-pic">
+          <i><img src="../img/images/user.png" alt=""></i>
+          <i class="down-pointer"><img src="../img/images/down-pointer.png" alt=""></i>
+        </div>
+        <div class="user-item">
+          <div class="account" onclick="window.open('orderIndex.html','_self')">
+            My Account
+          </div>
+          <div class="account" onclick="window.open('awaiting-payment.html','_self')">
+            My Orders list
+          </div>
+          <div class="account" onclick="window.open('essentialInformation.html','_self')">
+            My Delivery Address
+          </div>
+          <div class="facebook-btn ">
+            Bind FaceBook
+          </div>
+          <div class="out-btn " style="margin-top: 10px">
+            Sign Out
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--二级菜单-->
+  <div class="main-menu">
+    <div class="vip_warp">
+      <ul class="menu-list clear-fix">
+        <li class="active"><a href="orderIndex.html">My Account</a></li>
+        <li><a href="../PCBPrototype.html">PCB Instant Quote</a></li>
+        <li><a href="../PCBAssembly.html">PCB Assembly</a></li>
+        <li><a href="../pages作废/reviewList作废.html">Forum</a></li>
+      </ul>
+      <!--面包屑-->
+      <div class="bread-crumbs">
+        <a href="javascript:void(0)">
+          <span class="iconfont icon-shouye1"></span>
+          <span>- Shopping Cart</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!--主体-->
+<div class="order-main">
+  <!--字体图标分割线-->
+  <div class="font-line"></div>
+  <div class="box-l">
+    <div class="category js-category-index">
+      <div class="item "><a href="shopping-car.html">
+        <span class="iconfont icon-gouwuche2"></span>
+        <span class="category-name">-Shopping Cart</span></a></div>
+      <div class="item"><a href="awaiting-payment.html">
+        <span class="iconfont icon-dingdan"></span>
+        <span class="category-name">-My Orders</span></a></div>
+      <div class="item"><a href="memberList.html">
+        <span class="iconfont icon-icon_fapinglun-xian"></span>
+        <span class="category-name">-Comments</span></a></div>
+      <div class="item">
+        <a href="myInvitation.html">
+          <span class="iconfont icon-daipingjiab"></span>
+          <span class="category-name">+Experience Share</span>
+        </a>
+        <!--&lt;!&ndash;二级列表&ndash;&gt;-->
+        <div class="second-item">
+          <a class="second-active" href="myInvitation.html">
+            <span class="second-name">My Invitation</span>
+          </a>
+          <a href="promoteIndex.html">
+            <span class="second-name">Share links</span>
+          </a>
+        </div>
+      </div>
+      <div class="item "><a href="account-page.html">
+        <span class="iconfont icon-34"></span>
+        <span class="category-name">-Cash and Coupon</span></a></div>
+      <!--vip-->
+      <div class="item ">
+        <a href="integral.html">
+          <span class="iconfont icon-v"></span>
+          <span class="category-name active-new">
+                    <span class="iconfont icon-new"></span>
+                    - Reward points
+                </span>
+        </a>
+      </div>
+      <!--vip-->
+      <div class="item "><a href="newsed.html">
+        <span class="iconfont icon-liuyanpinglun"></span>
+        <span class="category-name">-Message</span>
+      </a></div>
+      <div class="item active"><a href="essentialInformation.html">
+        <span class="iconfont icon-gerenziliao"></span>
+        <span class="category-name">+My Profile</span>
+      </a>
+        <!--&lt;!&ndash;二级列表&ndash;&gt;-->
+        <div class="second-item ">
+          <a href="essentialInformation.html">
+            <span class="second-name">Basic Information</span></a>
+          <a href="receivingAddress.html">
+            <span class="second-name">My Delivery Address</span>
+          </a>
+          <a class="second-active" href="changePassword.html">
+            <span class="second-name">Change Password</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--右侧-->
+  <div class="box-r">
+    <div class="r-title">
+      FREIGHT COLLECT ACCOUNT
+    </div>
+    <div class="to-pay">
+      <div class="pay-info">
+        <label class="pay-label">
+          &nbsp;
+        </label>
+        <div class="pay-val">
+          <div class="pay-tips">
+            <span class="iconfont icon-tishi1"></span>
+            The account must be audited before it can be used.
+          </div>
+        </div>
+      </div>
+      <div class="pay-info">
+        <label class="pay-label">
+          Logistics company
+        </label>
+        <div class="pay-val">
+          <div class="quantity-select shipping-title js-shipping-title">
+            <!-- 当前选中的...-->
+            <div class="current-shipping js-current-shipping">
+              FedEx-IE
+            </div>
+            <div class="total-shipping js-total-shipping">
+              <div class="item">
+                FedEx-IE
+              </div>
+              <div class="item">
+                FedEx-IP
+              </div>
+              <div class="item">
+                DHL
+              </div>
+              <div class="item">
+                HK DHL
+              </div>
+              <div class="item">
+                EMS
+              </div>
+              <div class="item">
+                HK post
+              </div>
+              <div class="item">
+                China Post
+              </div>
+              <div class="item">
+                E-packet
+              </div>
+              <div class="item">
+                SF Express
+              </div>
+              <div class="item">
+                Other shipping way
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pay-info">
+        <label for="pay1" class="pay-label">
+          Freight Collect Account
+        </label>
+        <div class="pay-val">
+          <input type="text" id="pay1">
+        </div>
+      </div>
+      <div class="pay-info">
+        <label class="pay-label">
+          Country
+        </label>
+        <div class="pay-val">
+          <div class="quantity-select country-title js-country-title">
+            <!-- 当前选中的...-->
+            <div class="current-country js-current-country">
+              <img src="../img/images/country.png" alt="">
+              <span class="js-country-name">UNITED STATES OF AMERICA</span>
+            </div>
+            <!-- 所有国家-->
+            <div class="total-country js-total-country">
+
+              <div class="country-search">
+                <input type="text" class="get-country"
+                       placeholder="Please enter country">
+              </div>
+
+              <div class="country-item ">
+                <span class="national flagbg-1"></span> AUSTRALIA
+              </div>
+              <div class="country-item ">
+                <span class="national flagbg-2"></span>
+                COMMONWEALTH
+                NO. MARIANA ISLANDS
+              </div>
+              <div class="country-item ">
+                <span class="national flagbg-3"></span> UNITED
+                STATES OF AMERICA
+              </div>
+              <div class="country-item ">
+                <span class="national flagbg-4"></span>
+                AUSTRALIA
+              </div>
+              <div class="country-item ">
+                <span class="national flagbg-5"></span>
+                CONGO, THE
+                DEMOCRATIC REPUBLIC OF
+              </div>
+              <div class="country-item ">
+                <span class="national flagbg-6"></span>
+                KOREA, THE
+                D.P.R OF (NORTH K.)
+              </div>
+              <div class="country-item ">
+                <span class="national flagbg-7"></span>
+                AUSTRALIA
+              </div>
+              <div class="country-item ">
+                <span class="national flagbg-8"></span>
+                COMMONWEALTH
+                NO. MARIANA ISLANDS
+              </div>
+              <div class="country-item ">
+                <span class="national flagbg-9"></span>
+                UNITED
+                STATES OF AMERICA
+              </div>
+              <div class="country-item">
+                <span class="national flagbg-10"></span>
+                AUSTRALIA
+              </div>
+              <div class="country-item ">
+                <span class="national flagbg-11"></span>
+                CONGO, THE
+                DEMOCRATIC REPUBLIC OF
+              </div>
+              <div class="country-item ">
+                <span class="national flagbg-12"></span>
+                KOREA, THE
+                D.P.R OF (NORTH K.)
+              </div>
+              <div class="country-item ">
+                <span class="national flagbg-13"></span>
+                AUSTRALIA
+              </div>
+              <div class="country-item ">
+                <span class="national flagbg-14"></span>
+                COMMONWEALTH
+                NO. MARIANA ISLANDS
+              </div>
+              <div class="country-item ">
+                <span class="national flagbg-0"></span>
+                UNITED
+                STATES OF AMERICA
+              </div>
+              <div class="country-item ">
+                <span class="national flagbg-0"></span>
+                AUSTRALIA
+              </div>
+              <div class="country-item ">
+                <span class="national flagbg-0"></span>
+                CONGO, THE
+                DEMOCRATIC REPUBLIC OF
+              </div>
+              <div class="country-item ">
+                <span class="national flagbg-108"></span>
+                KOREA, THE
+                D.P.R OF (NORTH K.)
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <input type="button" class="change-btn" value="Submit">
+    </div>
+
+    <div class="payment-box">
+      <div class="pay-item">
+        <div class="serial">952013460</div>
+        <div class="pay-info">
+          <span>
+            Logistics company：
+          </span>
+          <span>
+           DHL
+          </span>
+        </div>
+        <div class="pay-info">
+          <span>
+           Country：
+          </span>
+          <span>
+        UNITED STATES OF AMERICA
+          </span>
+        </div>
+        <div class="edit-box">
+          <span>Under Review</span>
+          <span class="iconfont icon-shanchu js-shanchu"></span>
+        </div>
+      </div>
+      <div class="pay-item">
+        <div class="serial">952013460</div>
+        <div class="pay-info">
+          <span>
+            Logistics company：
+          </span>
+          <span>
+           DHL
+          </span>
+        </div>
+        <div class="pay-info">
+          <span>
+           Country：
+          </span>
+          <span>
+        UNITED STATES OF AMERICA
+          </span>
+        </div>
+        <div class="edit-box">
+          <span class="failed">Audit Failed</span>
+          <span class="iconfont icon-shanchu js-shanchu"></span>
+        </div>
+      </div>
+      <div class="pay-item">
+        <div class="serial">952013460</div>
+        <div class="pay-info">
+          <span>
+            Logistics company：
+          </span>
+          <span>
+           DHL
+          </span>
+        </div>
+        <div class="pay-info">
+          <span>
+           Country：
+          </span>
+          <span>
+        UNITED STATES OF AMERICA
+          </span>
+        </div>
+        <div class="edit-box">
+          <span class="pass">Pass</span>
+          <span class="iconfont icon-shanchu js-shanchu"></span>
+        </div>
+      </div>
+    </div>
+    <!--版权说明-->
+    <div class="copy-right-box">
+      <p>Copyright © 2015 PCBGOGO. All rights reserved. Shenzhen JDB Technology Co., Ltd.
+        Address: No. 15, Zhongxing Road, Kengzi Street, Pingshan District, Shenzhen, 518000, China.
+      </p>
+    </div>
+  </div>
+</div>
+<!--返回顶部-->
+<div class="go-btn">
+  <img src="../img/images/order/gotop.png" alt="">
+</div>
+<script src="../img/js/jquery/jquery-1.11.3.min.js"></script>
+<script src="../img/js/public.js"></script>
+<script>
+$(function () {
+
+  //物流选择
+  $('.js-shipping-title').hover(function () {
+    $('.js-total-shipping').stop().slideDown()
+  }, function () {
+    $('.js-total-shipping').stop().slideUp()
+  })
+  $('.js-total-shipping .item').click(function () {
+    $('.js-current-shipping').html($.trim($(this).text()))
+    $('.js-total-shipping').hide()
+  })
+
+  //国家选择
+
+  $('.js-country-title').hover(function () {
+    $('.js-total-country').stop().slideDown()
+  }, function () {
+    $('.js-total-country').stop().slideUp()
+  })
+  $('.js-total-country .country-item').click(function () {
+    $('.js-current-country').html($(this).html())
+    $('.js-total-country').hide()
+  })
+
+
+  //下拉框
+  $('.js-filter').click(function (e) {
+    $('.js-drop-lists').hide()
+    $(this).parent().find('.js-drop-lists').toggle()
+    $(this).parent().toggleClass('active-drop')
+    e.stopPropagation()
+  })
+  $('.js-drop-lists li').click(function () {
+    $(this).parents('.drop-down').find('.js-filter').val($.trim($(this).text()))
+  })
+  $(document).click(function () {
+    $('.js-drop-lists').hide()
+    $('.js-drop-lists').parent().removeClass('active-drop')
+  })
+
+  // 到付编号删除
+  $('.js-shanchu').click(function (){
+    $(this).parents('.pay-item').remove()
+  })
+})
+</script>
+</body>
+</html>

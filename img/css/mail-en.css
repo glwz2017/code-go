@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'mailFont';
+  src: url("https://www.pcbgogo.com/img/mailFont/339-CAI978.TTF");
+}
+.mail-en-body {
+  background: url("https://www.pcbgogo.com/img/images/mail-img/mail-en-bg.jpg?v=abc13") no-repeat center;
+  width: 700px;
+  height: 1094px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+.mail-en-body .top-layer {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  z-index: 1;
+}
+.mail-en-body .bottom-layer {
+  position: absolute;
+  bottom: 78px;
+  left: 85px;
+  z-index: 1;
+}
+.mail-en-body .mail-logo {
+  display: block;
+  margin: 100px auto 0;
+}
+.mail-en-body .mail-title {
+  background: url("https://www.pcbgogo.com/img/images/mail-img/mail-title.png") no-repeat center;
+  width: 423px;
+  height: 71px;
+  margin: 20px auto 0;
+}
+.mail-en-body .the-letter {
+  min-height: 600px;
+  width: 590px;
+  margin: 14px auto 0;
+  padding: 0 0 0 18px;
+  font-size: 18px;
+}
+.mail-en-body .letter-title {
+  margin-bottom: 32px;
+}
+.mail-en-body p {
+  line-height: 28px;
+  margin-bottom: 26px;
+}
+.mail-en-body p.prepared {
+  text-align: center;
+}
+.mail-en-body p.eric {
+  min-width: 275px;
+  float: right;
+}
+.the-tail-link {
+  width: 700px;
+  margin: 30px auto 0;
+  min-height: 200px;
+  line-height: 30px;
+  padding-bottom: 60px;
+}
+.the-tail-link a {
+  color: #9d4320;
+}
+/*# sourceMappingURL=mail-en.css.map */

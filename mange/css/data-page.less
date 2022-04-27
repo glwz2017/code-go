@@ -1,0 +1,373 @@
+@import "css-function.less";
+
+// 局部颜色
+
+@colorb21f1f: #B21F1F;
+@colorff0066: #FF0066;
+@colorff7070: #FF7070;
+@color5470C6: #5470C6;
+@color73C4DE: #73C4DE;
+@color89DAC8: #89DAC8;
+@color89CE7C: #89CE7C;
+@colorb1B34D: #B1B34D;
+@colorefc85F: #EFC85F;
+@colord5AB9D: #D5AB9D;
+@colord4D8E2: #D4D8E2;
+
+@colorf4f4f4: #f4f4f4;
+@colore6e6e6: #e6e6e6;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.data-box {
+  padding: 40px;
+  width: 1000px;
+
+
+  .data-title {
+    font-family: PingFangSC-Semibold;
+    font-size: 18px;
+    color: #3c3c3c;
+    letter-spacing: 0;
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 30px;
+    font-weight: 700;
+  }
+
+  .data-date {
+    display: inline-block;
+    vertical-align: top;
+
+    select {
+      margin-right: 10px;
+    }
+  }
+
+  .data-body {
+    margin-top: 30px;
+
+    .data-item {
+      border-top: 2px solid @colorf4f4f4;
+      margin-bottom: 30px;
+      position: relative;
+
+      .down-excel {
+        background: @color5470C6;
+        display: inline-block;
+        padding: 0 20px;
+        color: #fff;
+        height: 24px;
+        line-height: 24px;
+        font-size: 12px;
+        .positionR(absolute, 30px, 0, 1);
+        text-decoration: none;
+        border-radius: 3px;
+
+        &:hover {
+          box-shadow: 0 0 8px rgba(0, 0, 0, .2);
+        }
+      }
+
+      .clearFix;
+
+      .item-l {
+        float: left;
+      }
+
+      .item-r {
+        float: left;
+        padding-top: 30px;
+      }
+    }
+
+    #smt-delivery-time, #pcb-delivery-time {
+      width: 586px;
+      height: 300px;
+    }
+
+    h3 {
+      font-family: PingFangSC-Semibold;
+      font-size: 18px;
+      color: #3c3c3c;
+      letter-spacing: 0;
+      text-align: left;
+      margin-top: 20px;
+    }
+
+    .tips {
+      width: 210px;
+      border: 2px solid @colorf4f4f4;
+      border-radius: 3px;
+      margin-top: 6px;
+    }
+
+    .tips-name {
+      width: 210px;
+      height: 38px;
+      font-size: 12px;
+      display: table-cell;
+      vertical-align: middle;
+      padding-left: 10px;
+      box-sizing: border-box;
+
+      .count {
+        font-family: PingFangSC-Semibold;
+        font-size: 18px;
+        color: #3c3c3c;
+        letter-spacing: 0;
+        text-align: left;
+        font-weight: 700;
+        vertical-align: sub;
+        margin-left: 10px;
+      }
+    }
+
+    .list-box {
+      padding: 14px 0 4px;
+      border-top: 2px solid @colorf4f4f4;
+    }
+
+    .list {
+      padding: 0 12px;
+      font-size: 12px;
+      margin-bottom: 12px;
+
+      .top {
+        display: table-cell;
+        vertical-align: middle;
+
+        .color {
+          display: inline-block;
+          .widthAndHeight(14px, 14px);
+          border-radius: 2px;
+          vertical-align: middle;
+        }
+
+        .label {
+          vertical-align: middle;
+        }
+
+        .red {
+          background: #5470c6;
+          background: #91cc75;
+          background: #fac858;
+          background: #ee6666;
+          background: #73c0de;
+          background: #3ba272;
+          vertical-align: middle;
+          margin-right: 4px;
+        }
+
+        .num {
+          font-weight: 700;
+          font-size: 14px;
+          vertical-align: top;
+          margin-left: 10px;
+        }
+      }
+
+      .des {
+        background: @colorf4f4f4;
+        padding: 14px 12px;
+        border: 2px solid @colore6e6e6;
+        margin-top: 10px;
+      }
+    }
+
+    #smt-cost-detail, #pcb-cost-detail {
+      margin-left: 70px;
+      width: 700px;
+      height: 380px;
+    }
+
+    .device-item {
+      display: inline-block;
+      vertical-align: top;
+
+      &:first-child {
+        margin-right: 130px;
+      }
+
+      .device-t {
+        margin-top: 20px;
+        border-collapse: collapse;
+        width: auto;
+        font-size: 12px;
+
+        th {
+          background: #f1f1f1;
+          height: 24px;
+          border: 2px solid @colore6e6e6;
+        }
+
+        td {
+          height: 24px;
+          text-align: center;
+          border: 2px solid @colorf4f4f4;
+          min-width: 90px;
+          padding: 0 10px;
+
+          .color {
+            display: inline-block;
+            .widthAndHeight(14px, 14px);
+            border-radius: 2px;
+            vertical-align: bottom;
+          }
+
+          &:first-child {
+            text-align: left;
+            padding-left: 20px;
+          }
+        }
+
+        .order-diy {
+          min-width: auto;
+          width: 20px;
+        }
+      }
+
+      .logistics-table {
+        td:nth-child(2) {
+          text-align: left;
+        }
+      }
+    }
+
+    .device {
+      width: 400px;
+      height: 250px;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .package-rate {
+      width: 560px;
+      height: 350px;
+      display: inline-block;
+      vertical-align: top;
+
+      .point {
+        display: inline-block;
+        .widthAndHeight(8px, 8px);
+        border-radius: 100%;
+        background: pink;
+        margin-right: 10px;
+      }
+    }
+
+    .month-box {
+      display: inline-block;
+      vertical-align: top;
+      width: 400px;
+      height: 350px;
+      border: 2px solid @colorf4f4f4;
+      margin-left: 30px;
+      position: relative;
+
+      .name {
+        .positionL(absolute, 30px, 30px, 1);
+        width: 70px;
+        text-align: center;
+      }
+    }
+
+    .must-pay {
+      width: 300px;
+      height: 280px;
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 100px;
+    }
+
+    .month-cost {
+      border-top: 2px solid @colorf4f4f4;
+      height: 68px;
+      width: 100%;
+
+      dd {
+        display: table-cell;
+        vertical-align: middle;
+        width: 200px;
+        height: 68px;
+        padding-left: 20px;
+        box-sizing: border-box;
+
+        &:first-child {
+          border-right: 2px solid @colorf4f4f4;
+        }
+      }
+
+      .order {
+        font-family: PingFangSC-Semibold;
+        font-size: 24px;
+        color: #3c3c3c;
+        letter-spacing: 0;
+        text-align: left;
+        font-weight: 700;
+      }
+    }
+
+    .logistics-pic {
+      width: 400px;
+      height: 340px;
+      margin: 20px 0 0 20px;
+    }
+
+    .customers-box {
+
+      height: auto;
+
+      .show-count {
+        margin-top: 25px;
+        position: relative;
+        padding-left: 50px;
+
+        &:before {
+          display: inline-block;
+          content: '';
+          background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIqADAAQAAAABAAAAIgAAAAACeqFUAAAE9UlEQVRYCe2YWUxcVRjHGWZYDVAsdQGsER6KtS7sEsBgjWNIA2otMa1WU0yJiX3xVWNCYnz2xcQHtRajpZFEktoUS6mO0glh17gvRGIUaB0bmTLIwCz+vgl3cu7hMvdS9c2TnJxvP/97lu9+97rSrqFVVlbe6nK5jsTj8VbGMsY8xsuEmqb3l5eXn+zr61vdSmjXVoxbWlo8i4uLL+PzPD0rhe8swJ6dmpo6l8LGpHKbuBQMILKDweBZTJ6ie1KYimob/VBJScnv8/PzEza2CbVjIIWFhT14POwk6LqNS7autLR0Ym5u7kc7P0dbU1VV9RBBP9KDsfxn6Gdjsdhv6O6id9JvU+3Q/5Kfn7/L5/OtqHKdtltiw/4Fg1gf40xwmDPwniI/7fV6Xw0EAj2AfsyQQ+9cWlp6Av4tQ2Y1plsJVVl1dXURwZpUWXp6+msaiIR6cHAwlJGR0SmroNqzYo+qvBVtCwQQt+NosmOit62CiWx0dDTI8IGqJ8YdKm9FmyawMmDS7bqcwN/rMo3/TuOLNH4DawuESf/QvQC3S5dpfIXGBzR+A2sLhEm/xSumegLuiMqrdH19fT78flVGjK9V3oq2BTI5ORkg0EXVmcN3jCstN8HUuDXXra2tHQfoTlXB4e5XeSv6X8sjgL0TAM8wyTXlEUdA5Al40UnOOCT0FlrM7Xa3TUxMyKshZbPdGsO7oKBAnnbI4B2MMbbkmBMQEsvxu2Z2djZSUVHRGw6HM/GrpafKyvL2PUjSOyWTOGmOt0YN9l/UI2r8/2lZAcdbU1tbe0s0Gr2HK3o3+y/vjuvpefD58B7GecZf6VIS/MRBPTM+Pr4Abdkk56yuroYpDyJikBJIQ0NDCYdTEtdhJtpjGXFzoWTjYYD1ZWVl9Y6MjFwxTCX7AmIA3SX64yTNNUsgjY2NeSsrK6+QQZ/D2fEVNybSRn9ubm6r3++/KnLKigIe6hy9XniAfEixfWADkJqamgfZAnnNl4jhP2lM8hnV2T6Wf0niNDU1FS4vLw8CokaNi12/CQhovazCaYwsK3QcggT5ivEH+s/YygTL0FG6FFA3wFfL08L7i4qK2qRYkknr6uq2RyKR8+gqhTcadn/RH0kCITc0ILiAYY5hJCOyKEMPh+8UOp/sp6oXuqOjwz0zM3MCm/Nk0nek4s/JyYkPDAyERd/c3LwjFAoN4S91bbIRexmmjcT3cQLIeqDPMdQPpD8zM7OLquubpLdGyLcOnxkn8e1AJQf06PT09HHDjIN5IwfzArxepYU8Hs8+btanYptI8dnZ2UcJJO8StQ3xhGI4pwpVmq3M4Fa9j69RLMuDtRcXFy/wPTOJ/mbO2yfIdqt+rMRVYreyesOG3LgRLxqC9fESJ30/2yBLt2krKytLbq1iJN8zrwPiJc6QD9pUrQFiEVsvsU01jotbsgfUXyqB5Fx0sW9vqLLN6PXP0F70BzazUeR/sh1eVnlckSXIdFC3asIwQNTvFU1tZiUzUiIcxMfuTXuF7XjACoRElK25zxw6bdhuSzT7NAFDUnoSMO/qOuGRB/je2UvcKSu9yATITaoSpzGVd0rzGyLa3t7+NP4nNJ/LyPaOjY19oclNrADZYZKkpdmW/pp9ku3u7o7x1J0I3hQhABa4/vcjM53BpINCbADCPm74jlHsbUkmj3PQuxh3c2PuTZWD1GB/Aw+CCYB1R4EKAAAAAElFTkSuQmCC") no-repeat center;
+          width: 34px;
+          height: 34px;
+          vertical-align: middle;
+          .positionL(absolute, 5px, 0, 1);
+        }
+
+        .count {
+          font-weight: 700;
+          font-size: 24px;
+        }
+      }
+
+      .my-contry-box {
+        margin-top: 20px;
+
+        .contry-item {
+          margin-bottom: 40px;
+          .clearFix;
+        }
+      }
+
+      .draw-country {
+        width: 430px !important;
+        height: 340px !important;
+      }
+
+      .device-item {
+        float: left;
+
+        &:first-child {
+          margin-right: 0;
+        }
+
+        &:last-child {
+          float: right;
+        }
+      }
+    }
+  }
+}

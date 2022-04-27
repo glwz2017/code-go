@@ -1,0 +1,247 @@
+@import "components/system-font.less";
+@import "../fonts/iconfont.css";
+@import "components/basic-color.less";
+@import "css-function.less";
+@import "public_jp.less";
+@import "header_jp.less";
+@import "footer_jp.less";
+
+// 局部颜色
+@colorececec: #ececec;
+@colore0e0e0: #e0e0e0;
+
+.about-title {
+  font-family: 'open-sans-blod';
+  color: @colorRedB21f1f;
+  font-size: 24px;
+  padding: 70px 0 4px;
+  position: relative;
+  border-bottom: 2px solid @color313131;
+  cursor: default;
+
+  &:before {
+    display: block;
+    content: '';
+    width: 190px;
+    height: 2px;
+    background: @colorRedB21f1f;
+    .positionLB(absolute, -2px, 0, 1);
+    transition: all .3s linear;
+  }
+
+  &:hover {
+    &:before {
+      width: 40%;
+    }
+  }
+}
+
+.about-body {
+  margin-top: 60px;
+  padding-bottom: 120px;
+  .clearF;
+
+  .about-l {
+    float: left;
+    width: 680px;
+
+    h4 {
+      font-size: 24px;
+      color: @color313131;
+      font-family: open-sans-blod
+    }
+
+    .inquiries-des {
+      font-size: 14px;
+      line-height: 24px;
+      margin-top: 10px;
+      width: 560px;
+
+      a {
+        color: @colorRedB21f1f;
+        text-decoration: underline;
+      }
+    }
+
+    h5 {
+      font-family: open-sans;
+      margin-top: 40px;
+      font-size: 14px;
+      color: @color313131;
+    }
+
+    .send-message-box {
+      width: 100%;
+      margin-top: 30px;
+      background: #fff;
+      box-sizing: border-box;
+      font-size: 0;
+
+      .item {
+        margin-bottom: 25px;
+        font-size: 0;
+
+        label {
+          width: 130px;
+          display: inline-block;
+          text-align: left;
+          font-size: 14px;
+
+          .icon-bitian {
+            color: @colorRedB21f1f;
+          }
+        }
+      }
+
+      input {
+        height: 30px;
+        border: 1px solid @colorececec;
+        text-indent: 15px;
+        outline: none;
+        width: 380px;
+        font-size: 12px;
+        background: @colorF4f4f4;
+
+        &:focus {
+          background: #fff;
+        }
+      }
+
+
+      .info-box {
+        width: 380px;
+        height: 80px;
+        resize: none;
+        border: 1px solid @colorEfefef;
+        padding: 10px;
+        box-sizing: border-box;
+        display: inline-block;
+        vertical-align: top;
+        background: @colorF4f4f4;
+        font-family: open-sans;
+        font-size: 12px;
+
+        &:focus {
+          background: #fff;
+        }
+      }
+
+
+      .send-btn {
+        font-family: open-sans;
+        cursor: pointer;
+        color: #fff;
+        box-sizing: border-box;
+        background: @colorRedB21f1f;
+        .heightAndLineHeight(34px, 34px);
+        display: inline-block;
+        width: 130px;
+        font-size: 14px;
+        text-indent: 0;
+        font-weight: normal;
+
+        &:hover {
+          background-color: #d52424;
+        }
+      }
+    }
+  }
+
+  .about-r {
+    float: left;
+    width: 600px;
+
+    .corporate-box {
+      background: url("../images/contact-us-bg.jpg") no-repeat center;
+      width: 600px;
+      height: 340px;
+      color: #fff;
+      text-align: center;
+      overflow: hidden;
+      padding: 27px;
+
+      h3 {
+        font-size: 24px;
+        font-family: open-sans-blod;
+      }
+
+      .corporate-des {
+        // 日文特有
+        margin-top: 14px;
+        font-size: 18px;
+      }
+    }
+
+    .address-area {
+      // 日文特有
+      margin-top: 20px;
+
+      dd {
+        font-size: 14px;
+        cursor: default;
+        padding: 12px 0;
+        text-align: center;
+        position: relative;
+
+        &:before {
+          display: block;
+          content: '';
+          width: 100%;
+          border-top: 1px @colorDcdddd dashed;
+          .positionL(absolute, 0, 0, 1);
+          transform: scaleY(0.5);
+          transform-origin: center top;
+        }
+      }
+
+      .text {
+        display: block;
+        font-size: 18px;
+        // 日文特有
+        max-width: 320px;
+        padding-left: 20px;
+        text-align: left;
+        margin: 0 auto;
+
+        a {
+          color: #fff;
+          text-decoration: underline;
+        }
+      }
+
+      .iconfont {
+        display: inline-block;
+        width: 24px;
+        text-align: center;
+        font-size: 20px;
+        transition: color .3s ease;
+      }
+
+      .icon-xinxi1 {
+        font-size: 17px;
+        vertical-align: middle;
+      }
+    }
+
+    .corporate-tips {
+      border: 1px solid @colore0e0e0;
+      padding: 30px 10px 30px 30px;
+      font-size: 14px;
+
+      dt {
+        font-family: open-sans-blod;
+        margin-bottom: 10px;
+      }
+
+      dd {
+        margin-bottom: 20px;
+        line-height: 24px;
+      }
+
+      a {
+        color: @colorRedB21f1f;
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -1,0 +1,1827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Account -PCBgogo</title>
+    <!--网页标题左侧显示-->
+    <link rel="icon" href="../img/images/title-logo.png" type="image/x-icon">
+    <!--收藏夹显示图标-->
+    <link rel="shortcut icon" href="../img/images/title-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../img/css/member/orderManagerMent.css">
+    <link rel="stylesheet" href="../img/js/viewer/viewer.min.css">
+</head>
+<body>
+<!--header-->
+<div class="the-top">
+
+</div>
+<!--主体-->
+<div class="order-main">
+    <div class="box-l">
+        <div class="category js-category-index">
+            <div class="item "><a href="shopping-car.html">
+                <span class="iconfont icon-gouwuche2"></span>
+                <span class="category-name">-Shopping Cart</span></a></div>
+            <div class="item active"><a href="awaiting-payment.html">
+                <span class="iconfont icon-fukuan1"></span>
+                <span class="category-name">-Awaiting payment <span>(2)</span></span>
+            </a></div>
+
+            <div class="item "><a href="production-status.html">
+                <span class="iconfont icon-7v1shenqiajindu4276af"></span>
+                <span class="category-name">-Production status  <span>(2)</span></span></a></div>
+            <div class="item "><a href="wait-for-shipment.html">
+                <span class="iconfont icon-ziyuan1"></span>
+                <span class="category-name">-Wait for shipment  <span>(2)</span></span></a></div>
+            <div class="item "><a href="unconfirmed-delivery.html">
+                <span class="iconfont icon-feiji"></span>
+                <span class="category-name">-Unconfirmed delivery <span>(2)</span></span></a></div>
+            <div class="item "><a href="completed.html">
+                <span class="iconfont icon-yiwancheng"></span>
+                <span class="category-name">-Completed  <span>(2)</span></span></a></div>
+            <div class="item"><a href="memberList.html">
+                <span class="iconfont icon-icon_fapinglun-xian"></span>
+                <span class="category-name">-Comments</span></a></div>
+            <div class="item">
+                <a href="myInvitation.html">
+                    <span class="iconfont icon-daipingjiab"></span>
+                    <span class="category-name">+Experience Share</span>
+                </a>
+                <!--&lt;!&ndash;二级列表&ndash;&gt;-->
+                <div class="second-item">
+                    <a class="second-active" href="myInvitation.html">
+                        <span class="second-name">My Invitation</span>
+                    </a>
+                    <a href="promoteIndex.html">
+                        <span class="second-name">Share links</span>
+                    </a>
+                </div>
+            </div>
+            <div class="item "><a href="account-page.html">
+                <span class="iconfont icon-34"></span>
+                <span class="category-name">-Cash and Coupon</span></a></div>
+            <!--vip-->
+            <div class="item ">
+                <a href="integral.html">
+                    <span class="iconfont icon-v"></span>
+                    <span class="category-name active-new">
+                    <span class="iconfont icon-new"></span>
+                    - Reward points
+                </span>
+                </a>
+            </div>
+            <!--vip-->
+            <div class="item"><a href="newsed.html">
+                <span class="iconfont icon-liuyanpinglun"></span>
+                <span class="category-name">-Message</span>
+            </a></div>
+            <div class="item"><a href="essentialInformation.html">
+                <span class="iconfont icon-gerenziliao"></span>
+                <span class="category-name">+My Profile</span>
+            </a>
+                <!--&lt;!&ndash;二级列表&ndash;&gt;-->
+                <div class="second-item ">
+                    <a href="essentialInformation.html">
+                        <span class="second-name">Basic Information</span></a>
+                    <a href="receivingAddress.html">
+                        <span class="second-name">My Delivery Address</span>
+                    </a>
+                    <a href="changePassword.html">
+                        <span class="second-name">Change Password</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--右侧-->
+    <div class="box-r">
+        <div class="r-title">
+            MY ORDERS
+        </div>
+        <!--条件搜索-->
+        <div class="search-state-box">
+            <div class="conditions-box">
+                <div class="item">
+                    <label for="group-no">Group No:</label>
+                    <input type="text" id="group-no">
+                </div>
+                <div class="item">
+                    <label for="product-no">Product No:</label>
+                    <input type="text" id="product-no">
+                </div>
+                <div class="item">
+                    <label for="pcb-file-name">PCB File Name:</label>
+                    <input type="text" id="pcb-file-name">
+                </div>
+                <a class="conditions-btn" href="javascript:void(0)">Search</a>
+            </div>
+        </div>
+
+        <!--选项卡切换-->
+        <div class="tabed">
+            <ul class="tabed-ul">
+                <li class="active">All(<span>20</span>)</li>
+                <li>Awaiting payment(<span>0</span>)</li>
+                <li>Favorite(<span>0</span>)</li>
+                <li>Production status(<span>2</span>)</li>
+                <li>Unconfirmed delivery(<span>2</span>)</li>
+                <li>Completed(<span>0</span>)</li>
+            </ul>
+        </div>
+        <div class="zx">
+            <!--空数据元素-->
+            <div class="empty-item">
+                <div class="empty-order">
+                    <div class="empty-pic">
+                        <img src="../img/images/order/empty-order.png" alt="No order here! " width="36" height="42">
+                    </div>
+                    <div class="empty-link-box">
+                        <div class="empty-text">No order here!</div>
+                        <a href="../PCBPrototype.html" class="empty-link">Placing order now! </a>
+                    </div>
+                </div>
+            </div>
+            <!--具体列表项1-->
+            <div class="orders-box1">
+
+                <!-- bom 配单示例-->
+                <div class="details1 ">
+                    <div class="details-title">Order NO:A11302AS6 Order time & date::2017 . 06 . 06 3:57:17 PM</div>
+                    <!--内容-->
+                    <div class="contents ">
+                        <table class="contents-ol" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <th>
+                                    <div class="detai">
+                                        Order Details
+                                    </div>
+                                    <div class="file">Gerber File</div>
+                                </th>
+                                <th>
+                                    <div class="amount">
+                                        Order amount
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="status">
+                                        Order Status
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="statused">
+                                        Status
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr class="detai-pic">
+                                <td class="detai-box">
+                                    <div class="detai-item">
+                                        <div class="detai-l">
+                                            <img src="../img/images/order/electronic.png" alt="">
+                                        </div>
+                                        <div class="detai-r">
+                                            <p>Product No: TG139250</p>
+                                            <p>[Resistors & capacitors]</p>
+                                            <p class="time-box">
+                                                BuildTime: 2-3 days
+                                            </p>
+                                            <p class="size-box">Size:
+                                                10x10 | 20Qty | $ 5 </p>
+                                        </div>
+                                        <div class="link-files">
+                                            <!-- 文件名-->
+                                            <a href="#">
+                                                The file name001.rar1
+                                            </a>
+                                            <a href="javascript:void(0)" class="add-notes">Add notes</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="new-amount">
+                                    <span>$5</span>
+                                </td>
+                                <td class="new-status">
+                                    <a href="detailsDelivery.html">
+                                        <p class="awai">Awaiting Payment</p>
+                                        <p class="see-detail">
+                                            <span> ViewDetail</span>
+                                        </p>
+                                    </a>
+                                </td>
+                                <td class="stated-box">
+                                    <div class="btn-status">
+                                        <!-- pay now-->
+                                        <div class="btns">
+                                            <a href="unfinishedPay.html" target="_blank" class="pay-now">
+                                                Pay now
+                                            </a>
+                                        </div>
+                                        <!-- Payment sharing-->
+                                        <div class="btns js-share-btn">
+                                            <a href="javascript:void(0)" class="new-invoice">
+                                                Payment sharing
+                                            </a>
+                                        </div>
+                                        <!-- Invotce-->
+                                        <div class="btns">
+                                            <a href="#" class="new-invoice">
+                                                Invotce
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!--  del-->
+                                    <div class="del-box">
+                                        <!--  收藏给我一个  active-->
+                                        <span class="iconfont icon-biaoji js-icon-flag"></span>
+                                        <span class="iconfont icon-delete-bin-line js-del-box"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- 全部状态示例-->
+                <div class="details1">
+                    <div class="details-title">Order NO:A11302AS6 Order time & date::2017 . 06 . 06 3:57:17 PM</div>
+                    <!--内容-->
+                    <div class="contents ">
+                        <table class="contents-ol" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <th>
+                                    <div class="detai">
+                                        Order Details
+                                    </div>
+                                    <div class="file">Gerber File</div>
+                                </th>
+                                <th>
+                                    <div class="amount">
+                                        Order amount
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="status">
+                                        Order Status
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="statused">
+                                        Status
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr class="detai-pic">
+                                <td class="detai-box">
+                                    <div class="detai-item">
+                                        <div class="detai-l">
+                                            <div class="the-img the-enlarge">
+                                                <img
+                                                        src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1602161227109&amp;di=8db34956af8f7e56722c5abc2c6e0e88&amp;imgtype=0&amp;src=http%3A%2F%2Fimgservice.suning.cn%2Fuimg1%2Fb2c%2Fatmosphere%2Ftm1i0m79q3i6sLant7CS7w.jpg"
+                                                        alt="">
+                                                <div class="enlarge js-enlarge" data-top-img="../img/images/banner1.jpg"
+                                                     data-bottom-img="../img/images/banner2.jpg">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="detai-r">
+                                            <p>Product No: TG139250</p>
+                                            <p> [PCB Instant Quote]</p>
+                                            <p class="time-box">
+                                                BuildTime: 2-3 days
+                                            </p>
+                                            <p class="size-box">
+                                                Size:
+                                                10x10 | 20Qty | $ 5 </p>
+                                            <div class="rep-mark">
+                                                Replenishment order
+                                            </div>
+                                        </div>
+                                        <div class="link-files">
+                                            <!-- 文件名-->
+                                            <a href="#">
+                                                The file name001.rar1
+                                            </a>
+                                            <!--返单-->
+                                            <div class="tec-progress">
+                                                <i class="plus-sign">+</i>
+                                                <span>Continue buying</span>
+                                            </div>
+                                            <a href="javascript:void(0)" class="add-notes">Add notes</a>
+                                            <div class="more-des">
+                                                <div class="more-text">
+                                                    Price does not include PCB fabrication
+                                                    or the cost of componentssd
+                                                    or the cost of componentssd
+                                                    or the cost of componentssd
+                                                    or the cost of componentssd
+                                                </div>
+                                                <a class="more-btn" href="javascript:void(0)">More></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="new-amount">
+                                    <span>$5</span>
+                                    <!--新加成本计价-->
+                                    <div class="assembly-cost">
+                                        <i>SMT cost: <span>$5888</span></i>
+                                        <i>Components cost: <span>$0.00</span></i>
+                                        <i>(<span>0.5</span>kg)</i>
+                                    </div>
+                                </td>
+                                <td class="new-status">
+                                    <a href="detailsDelivery.html">
+                                        <p class="awai">Awaiting Payment</p>
+                                        <p class="see-detail">
+                                            ViewDetail
+                                        </p>
+                                    </a>
+                                    <!--进度-->
+                                    <div class="jindu-box">
+                                        <div class="new-jindu">60% <i class="old-progress">
+                                            <i class="new-progress js-new-progress" style="width: 60px;"></i>
+                                        </i>
+                                            <span class="technological">Technological process</span>
+                                        </div>
+                                    </div>
+                                    <!--  物流包裹-->
+                                    <div class="parcel-box">
+                                        <p class="name">E-packet</p>
+                                        <a href="javascript:void(0)" target="_blank" class="number js-order-no"
+                                           title="">4550910630</a>
+                                        <div class="copy-btn js-copy-order">
+                                            Copy
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="stated-box">
+                                    <div class="btn-status">
+                                        <!--Confirm-->
+                                        <div class="btns">
+                                            <a href="javascript:void(0)" class="new-invoice confirm">
+                                                Confirm
+                                            </a>
+                                        </div>
+                                        <!--Comments-->
+                                        <div class="btns">
+                                            <a href="javascript:void(0)" class="new-invoice comments">
+                                                Comments
+                                            </a>
+                                        </div>
+                                        <!-- Pay now -->
+                                        <div class="btns">
+                                            <a href="unfinishedPay.html" target="_blank" class="pay-now">
+                                                Pay now
+                                            </a>
+                                        </div>
+                                        <!-- Payment sharing-->
+                                        <div class="btns js-share-btn">
+                                            <a href="javascript:void(0)" class="new-invoice">
+                                                Payment sharing
+                                            </a>
+                                        </div>
+                                        <!-- Invoice -->
+                                        <div class="btns">
+                                            <a href="javascript:void(0)" class="new-invoice">
+                                                Invoice
+                                            </a>
+                                        </div>
+                                        <!-- Ticket -->
+                                        <div class="btns js-ticket-btn">
+                                            <a href="javascript:void(0)" class="new-invoice">
+                                                Ticket
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!--del-->
+                                    <div class="del-box">
+                                        <!--  收藏给我一个  active-->
+                                        <span class="iconfont icon-biaoji js-icon-flag"></span>
+                                        <span class="iconfont icon-delete-bin-line js-del-box"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <!-- 组合待付款-->
+                <div class="details1 ">
+                    <div class="details-title">Order NO:A11302AS6 Order time & date::2017 . 06 . 06 3:57:17 PM</div>
+                    <!--内容-->
+                    <div class="contents ">
+                        <table class="contents-ol" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <th>
+                                    <div class="detai">
+                                        Order Details
+                                    </div>
+                                    <div class="file">Gerber File</div>
+                                </th>
+                                <th>
+                                    <div class="amount">
+                                        Order amount
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="status">
+                                        Order Status
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="statused">
+                                        Status
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr class="detai-pic">
+                                <td class="detai-box">
+                                    <div class="detai-item">
+                                        <div class="detai-l">
+                                            <img src="../img/images/order/assembly.png" alt="">
+                                        </div>
+                                        <div class="detai-r">
+                                            <p>Product No: TG139250</p>
+                                            <p> [PCB Instant Quote]</p>
+                                            <p class="time-box">
+                                                BuildTime: 2-3 days
+                                            </p>
+                                            <p class="size-box">Size:
+                                                10x10 | 20Qty | $ 5 </p>
+                                        </div>
+                                        <div class="link-files">
+                                            <!-- 文件名-->
+                                            <a href="#">
+                                                The file name001.rar1
+                                            </a>
+                                            <a href="javascript:void(0)" class="add-notes">Add notes</a>
+                                        </div>
+                                    </div>
+                                    <div class="detai-item">
+                                        <div class="detai-l">
+                                            <img src="../img/images/order/assembly.png" alt="">
+                                        </div>
+                                        <div class="detai-r">
+                                            <p>Product No: TG139250</p>
+                                            <p> [PCB Instant Quote]</p>
+                                            <p class="time-box">
+                                                BuildTime: 2-3 days
+                                            </p>
+                                            <p class="size-box">Size:
+                                                10x10 | 20Qty | $ 5 </p>
+                                        </div>
+                                        <div class="link-files">
+                                            <!-- 文件名-->
+                                            <a href="#">
+                                                The file name001.rar1
+                                            </a>
+                                            <a href="#">
+                                                The file name001.rar1
+                                            </a>
+                                            <a href="#">
+                                                The file name001.rar1
+                                            </a>
+                                            <a href="javascript:void(0)" class="add-notes">Add notes</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="new-amount">
+                                    <span>$5</span>
+                                    <!--新加成本计价-->
+                                    <div class="assembly-cost">
+                                        <i>SMT cost: <span>$5888</span></i>
+                                        <i>Components cost: <span>$0.00</span></i>
+                                        <i>(<span>0.5</span>kg)</i>
+                                    </div>
+                                </td>
+                                <td class="new-status">
+                                    <p class="awai">Awaiting Payment</p>
+                                    <p class="see-detail">
+                                        <span> ViewDetail</span>
+                                    </p>
+                                </td>
+                                <td class="stated-box">
+                                    <div class="btn-status">
+                                        <!-- pay now-->
+                                        <div class="btns">
+                                            <a href="unfinishedPay.html" target="_blank" class="pay-now">
+                                                Pay now
+                                            </a>
+                                        </div>
+                                        <!-- Payment sharing-->
+                                        <div class="btns js-share-btn">
+                                            <a href="javascript:void(0)" class="new-invoice">
+                                                Payment sharing
+                                            </a>
+                                        </div>
+                                        <!-- Invotce-->
+                                        <div class="btns">
+                                            <a href="#" class="new-invoice">
+                                                Invotce
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!--  del-->
+                                    <div class="del-box">
+                                        <!--  收藏给我一个  active-->
+                                        <span class="iconfont icon-biaoji js-icon-flag"></span>
+                                        <span class="iconfont icon-delete-bin-line js-del-box"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <!-- 单个待付款-->
+                <div class="details1 ">
+                    <div class="details-title">Order NO:A11302AS6 Order time & date::2017 . 06 . 06 3:57:17 PM</div>
+                    <!--内容-->
+                    <div class="contents ">
+                        <table class="contents-ol" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <th>
+                                    <div class="detai">
+                                        Order Details
+                                    </div>
+                                    <div class="file">Gerber File</div>
+                                </th>
+                                <th>
+                                    <div class="amount">
+                                        Order amount
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="status">
+                                        Order Status
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="statused">
+                                        Status
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr class="detai-pic">
+                                <td class="detai-box">
+                                    <div class="detai-item">
+                                        <div class="detai-l">
+                                            <img src="../img/images/order/assembly.png" alt="">
+                                        </div>
+                                        <div class="detai-r">
+                                            <p>Product No: TG139250</p>
+                                            <p> [PCB Instant Quote]</p>
+                                            <p class="time-box">
+                                                BuildTime: 2-3 days
+                                            </p>
+                                            <p class="size-box">Size:
+                                                10x10 | 20Qty | $ 5 </p>
+                                        </div>
+                                        <div class="link-files">
+                                            <!-- 文件名-->
+                                            <a href="#">
+                                                The file name001.rar1
+                                            </a>
+                                            <a href="javascript:void(0)" class="add-notes">Add notes</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="new-amount">
+                                    <span>$5</span>
+                                    <!--新加成本计价-->
+                                    <div class="assembly-cost">
+                                        <i>SMT cost: <span>$5888</span></i>
+                                        <i>Components cost: <span>$0.00</span></i>
+                                        <i>(<span>0.5</span>kg)</i>
+                                    </div>
+                                </td>
+                                <td class="new-status">
+                                    <p class="awai">Awaiting Payment</p>
+                                    <p class="see-detail">
+                                        <span> ViewDetail</span>
+                                    </p>
+                                </td>
+                                <td class="stated-box">
+                                    <div class="btn-status">
+                                        <!-- pay now-->
+                                        <div class="btns">
+                                            <a href="unfinishedPay.html" target="_blank" class="pay-now">
+                                                Pay now
+                                            </a>
+                                        </div>
+                                        <!-- Payment sharing-->
+                                        <div class="btns js-share-btn">
+                                            <a href="javascript:void(0)" class="new-invoice">
+                                                Payment sharing
+                                            </a>
+                                        </div>
+                                        <!-- Invotce-->
+                                        <div class="btns">
+                                            <a href="#" class="new-invoice">
+                                                Invotce
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!--  del-->
+                                    <div class="del-box">
+                                        <!--  收藏给我一个  active-->
+                                        <span class="iconfont icon-biaoji js-icon-flag"></span>
+                                        <span class="iconfont icon-delete-bin-line js-del-box"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <!-- 生产中-->
+                <div class="details1 ">
+                    <div class="details-title">Order NO:A11302AS6 Order time & date::2017 . 06 . 06 3:57:17 PM</div>
+                    <!--内容-->
+                    <div class="contents ">
+                        <table class="contents-ol" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <th>
+                                    <div class="detai">
+                                        Order Details
+                                    </div>
+                                    <div class="file">Gerber File</div>
+                                </th>
+                                <th>
+                                    <div class="amount">
+                                        Order amount
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="status">
+                                        Order Status
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="statused">
+                                        Status
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr class="detai-pic">
+                                <td class="detai-box">
+                                    <div class="detai-item">
+                                        <div class="detai-l">
+                                            <img src="../img/images/order/assembly.png" alt="">
+                                        </div>
+                                        <div class="detai-r">
+                                            <p>Product No: TG139250</p>
+                                            <p> [PCB Instant Quote]</p>
+                                            <p class="time-box">
+                                                BuildTime: 2-3 days
+                                            </p>
+                                            <p class="size-box">Size:
+                                                10x10 | 20Qty | $ 5 </p>
+                                        </div>
+                                        <div class="link-files">
+                                            <!-- 文件名-->
+                                            <a href="#">
+                                                The file name001.rar1
+                                            </a>
+                                            <a href="javascript:void(0)" class="add-notes">Add notes</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="new-amount">
+                                    <span>$5</span>
+                                    <!--新加成本计价-->
+                                    <div class="assembly-cost">
+                                        <i>SMT cost: <span>$5888</span></i>
+                                        <i>Components cost: <span>$0.00</span></i>
+                                        <i>(<span>0.5</span>kg)</i>
+                                    </div>
+                                </td>
+                                <td class="new-status">
+                                    <p class="awai">In fabrication</p>
+                                    <p class="see-detail">
+                                        <span> ViewDetail</span>
+                                    </p>
+                                    <div class="jindu-box">
+                                        <div class="new-jindu">60% <i class="old-progress">
+                                            <i class="new-progress js-new-progress" style="width: 60px;"></i>
+                                        </i>
+                                            <span class="technological">Technological process</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="stated-box">
+                                    <div class="btn-status">
+                                        <!-- Invotce-->
+                                        <div class="btns">
+                                            <a href="#" class="new-invoice">
+                                                Invotce
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!--  del-->
+                                    <div class="del-box">
+                                        <!--  收藏给我一个  active-->
+                                        <span class="iconfont icon-biaoji js-icon-flag active"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="details1 ">
+                    <div class="details-title">Order NO:A11302AS6 Order time & date::2017 . 06 . 06 3:57:17 PM</div>
+                    <!--内容-->
+                    <div class="contents ">
+                        <table class="contents-ol" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <th>
+                                    <div class="detai">
+                                        Order Details
+                                    </div>
+                                    <div class="file">Gerber File</div>
+                                </th>
+                                <th>
+                                    <div class="amount">
+                                        Order amount
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="status">
+                                        Order Status
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="statused">
+                                        Status
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr class="detai-pic">
+                                <td class="detai-box">
+                                    <div class="detai-item">
+                                        <div class="detai-l">
+                                            <img src="../img/images/order/assembly.png" alt="">
+                                        </div>
+                                        <div class="detai-r">
+                                            <p>Product No: TG139250</p>
+                                            <p> [PCB Instant Quote]</p>
+                                            <p class="time-box">
+                                                BuildTime: 2-3 days
+                                            </p>
+                                            <p class="size-box">Size:
+                                                10x10 | 20Qty | $ 5 </p>
+                                        </div>
+                                        <div class="link-files">
+                                            <!-- 文件名-->
+                                            <a href="#">
+                                                The file name001.rar1
+                                            </a>
+                                            <a href="javascript:void(0)" class="add-notes">Add notes</a>
+                                        </div>
+                                    </div>
+                                    <div class="detai-item">
+                                        <div class="detai-l">
+                                            <img src="../img/images/order/assembly.png" alt="">
+                                        </div>
+                                        <div class="detai-r">
+                                            <p>Product No: TG139250</p>
+                                            <p> [PCB Instant Quote]</p>
+                                            <p class="time-box">
+                                                BuildTime: 2-3 days
+                                            </p>
+                                            <p class="size-box">Size:
+                                                10x10 | 20Qty | $ 5 </p>
+                                        </div>
+                                        <div class="link-files">
+                                            <!-- 文件名-->
+                                            <a href="#">
+                                                The file name001.rar1
+                                            </a>
+                                            <a href="#">
+                                                The file name001.rar1
+                                            </a>
+                                            <a href="#">
+                                                The file name001.rar1
+                                            </a>
+                                            <a href="javascript:void(0)" class="add-notes">Add notes</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="new-amount">
+                                    <span>$5</span>
+                                    <!--新加成本计价-->
+                                    <div class="assembly-cost">
+                                        <i>SMT cost: <span>$5888</span></i>
+                                        <i>Components cost: <span>$0.00</span></i>
+                                        <i>(<span>0.5</span>kg)</i>
+                                    </div>
+                                </td>
+                                <td class="new-status">
+                                    <p class="awai">Wait for shipment</p>
+                                    <p class="see-detail">
+                                        <span> ViewDetail</span>
+                                    </p>
+                                    <!--进度-->
+                                    <div class="jindu-box">
+                                        <div class="new-jindu">60% <i class="old-progress">
+                                            <i class="new-progress js-new-progress" style="width: 60px;"></i>
+                                        </i>
+                                            <span class="technological">Technological process</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="stated-box">
+                                    <div class="btn-status">
+                                        <!-- pay now-->
+                                        <div class="btns">
+                                            <a href="unfinishedPay.html" target="_blank" class="pay-now">
+                                                Pay now
+                                            </a>
+                                        </div>
+                                        <!--Comments-->
+                                        <div class="btns">
+                                            <a href="javascript:void(0)" class="new-invoice comments">
+                                                Comments
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!--  del-->
+                                    <div class="del-box">
+                                        <!--  收藏给我一个  active-->
+                                        <span class="iconfont icon-biaoji js-icon-flag active"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <!-- 已发货有备注-->
+                <div class="details1 ">
+                    <div class="details-title">Order NO:A11302AS6 Order time & date::2017 . 06 . 06 3:57:17 PM</div>
+                    <!--内容-->
+                    <div class="contents ">
+                        <table class="contents-ol" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <th>
+                                    <div class="detai">
+                                        Order Details
+                                    </div>
+                                    <div class="file">Gerber File</div>
+                                </th>
+                                <th>
+                                    <div class="amount">
+                                        Order amount
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="status">
+                                        Order Status
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="statused">
+                                        Status
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr class="detai-pic">
+                                <td class="detai-box">
+                                    <div class="detai-item">
+                                        <div class="detai-l">
+                                            <img src="../img/images/order/assembly.png" alt="">
+                                        </div>
+                                        <div class="detai-r">
+                                            <p>Product No: TG139250</p>
+                                            <p> [PCB Instant Quote]</p>
+                                            <p class="time-box">
+                                                BuildTime: 2-3 days
+                                            </p>
+                                            <p class="size-box">Size:
+                                                10x10 | 20Qty | $ 5 </p>
+                                        </div>
+                                        <div class="link-files">
+                                            <!-- 文件名-->
+                                            <a href="#">
+                                                The file name001.rar1
+                                            </a>
+                                            <div class="tec-progress">
+                                                <i class="plus-sign">+</i>
+                                                <span>Continue buying</span>
+                                            </div>
+                                            <a href="javascript:void(0)" class="add-notes">Add notes</a>
+                                            <div class="more-des">
+                                                <div class="more-text">
+                                                    Price does not include PCB fabrication
+                                                    or the cost of componentssd
+                                                    or the cost of componentssd
+                                                    or the cost of componentssd
+                                                    or the cost of componentssd
+                                                </div>
+                                                <a class="more-btn" href="javascript:void(0)">More&gt;</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="detai-item">
+                                        <div class="detai-l">
+                                            <img src="../img/images/order/assembly.png" alt="">
+                                        </div>
+                                        <div class="detai-r">
+                                            <p>Product No: TG139250</p>
+                                            <p> [PCB Instant Quote]</p>
+                                            <p class="time-box">
+                                                BuildTime: 2-3 days
+                                            </p>
+                                            <p class="size-box">Size:
+                                                10x10 | 20Qty | $ 5 </p>
+                                        </div>
+                                        <div class="link-files">
+                                            <!-- 文件名-->
+                                            <a href="#">
+                                                The file name001.rar1
+                                            </a>
+                                            <div class="tec-progress">
+                                                <i class="plus-sign">+</i>
+                                                <span>Continue buying</span>
+                                            </div>
+                                            <a href="javascript:void(0)" class="add-notes">Add notes</a>
+                                            <div class="more-des">
+                                                <div class="more-text">
+                                                    Price does not include PCB fabrication
+                                                    or the cost of componentssd
+                                                    or the cost of componentssd
+                                                    or the cost of componentssd
+                                                    or the cost of componentssd
+                                                </div>
+                                                <a class="more-btn" href="javascript:void(0)">More&gt;</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="new-amount">
+                                    <span>$5</span>
+                                    <!--新加成本计价-->
+                                    <div class="assembly-cost">
+                                        <i>SMT cost: <span>$5888</span></i>
+                                        <i>Components cost: <span>$0.00</span></i>
+                                        <i>(<span>0.5</span>kg)</i>
+                                    </div>
+                                </td>
+                                <td class="new-status">
+                                    <p class="awai">Shipped out</p>
+                                    <p class="see-detail">
+                                        <span> ViewDetail</span>
+                                    </p>
+                                    <div class="jindu-box">
+                                        <div class="new-jindu">60% <i class="old-progress">
+                                            <i class="new-progress js-new-progress" style="width: 60px;"></i>
+                                        </i>
+                                            <span class="technological">Technological process</span>
+                                        </div>
+                                    </div>
+                                    <div class="parcel-box">
+                                        <p class="name">E-packet</p>
+                                        <a href="javascript:void(0)" target="_blank" class="number js-order-no"
+                                           title="">4550910630</a>
+                                        <div class="copy-btn js-copy-order">
+                                            Copy
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="stated-box">
+                                    <div class="btn-status">
+                                        <!--Confirm-->
+                                        <div class="btns">
+                                            <a href="javascript:void(0)" class="new-invoice confirm">
+                                                Confirm
+                                            </a>
+                                        </div>
+                                        <!-- Invotce-->
+                                        <div class="btns">
+                                            <a href="#" class="new-invoice">
+                                                Invotce
+                                            </a>
+                                        </div>
+                                        <!--Comments-->
+                                        <div class="btns">
+                                            <a href="javascript:void(0)" class="new-invoice comments">
+                                                Comments
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!--  del-->
+                                    <div class="del-box">
+                                        <!--  收藏给我一个  active-->
+                                        <span class="iconfont icon-biaoji js-icon-flag active"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="details1 ">
+                    <div class="details-title">Order NO:A11302AS6 Order time & date::2017 . 06 . 06 3:57:17 PM</div>
+                    <!--内容-->
+                    <div class="contents ">
+                        <table class="contents-ol" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <th>
+                                    <div class="detai">
+                                        Order Details
+                                    </div>
+                                    <div class="file">Gerber File</div>
+                                </th>
+                                <th>
+                                    <div class="amount">
+                                        Order amount
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="status">
+                                        Order Status
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="statused">
+                                        Status
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr class="detai-pic">
+                                <td class="detai-box">
+                                    <div class="detai-item">
+                                        <div class="detai-l">
+                                            <img src="../img/images/order/assembly.png" alt="">
+                                        </div>
+                                        <div class="detai-r">
+                                            <p>Product No: TG139250</p>
+                                            <p> [PCB Instant Quote]</p>
+                                            <p class="time-box">
+                                                BuildTime: 2-3 days
+                                            </p>
+                                            <p class="size-box">Size:
+                                                10x10 | 20Qty | $ 5 </p>
+                                        </div>
+                                        <div class="link-files">
+                                            <!-- 文件名-->
+                                            <a href="#">
+                                                The file name001.rar1
+                                            </a>
+                                            <div class="tec-progress">
+                                                <i class="plus-sign">+</i>
+                                                <span>Continue buying</span>
+                                            </div>
+                                            <a href="javascript:void(0)" class="add-notes">Add notes</a>
+                                        </div>
+                                    </div>
+                                    <div class="detai-item">
+                                        <div class="detai-l">
+                                            <img src="../img/images/order/assembly.png" alt="">
+                                        </div>
+                                        <div class="detai-r">
+                                            <p>Product No: TG139250</p>
+                                            <p> [PCB Instant Quote]</p>
+                                            <p class="time-box">
+                                                BuildTime: 2-3 days
+                                            </p>
+                                            <p class="size-box">Size:
+                                                10x10 | 20Qty | $ 5 </p>
+                                        </div>
+                                        <div class="link-files">
+                                            <!-- 文件名-->
+                                            <a href="#">
+                                                The file name001.rar1
+                                            </a>
+                                            <div class="tec-progress">
+                                                <i class="plus-sign">+</i>
+                                                <span>Continue buying</span>
+                                            </div>
+                                            <a href="javascript:void(0)" class="add-notes">Add notes</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="new-amount">
+                                    <span>$5</span>
+                                    <!--新加成本计价-->
+                                    <div class="assembly-cost">
+                                        <i>SMT cost: <span>$5888</span></i>
+                                        <i>Components cost: <span>$0.00</span></i>
+                                        <i>(<span>0.5</span>kg)</i>
+                                    </div>
+                                </td>
+                                <td class="new-status">
+                                    <p class="awai">Shipped out</p>
+                                    <p class="see-detail">
+                                        <span> ViewDetail</span>
+                                    </p>
+                                    <div class="jindu-box">
+                                        <div class="new-jindu">60% <i class="old-progress">
+                                            <i class="new-progress js-new-progress" style="width: 60px;"></i>
+                                        </i>
+                                            <span class="technological">Technological process</span>
+                                        </div>
+                                    </div>
+                                    <div class="parcel-box">
+                                        <p class="name">E-packet</p>
+                                        <a href="javascript:void(0)" target="_blank" class="number js-order-no"
+                                           title="">4550910630</a>
+                                        <div class="copy-btn js-copy-order">
+                                            Copy
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="stated-box">
+                                    <div class="btn-status">
+                                        <!--Confirm-->
+                                        <div class="btns">
+                                            <a href="javascript:void(0)" class="new-invoice confirm">
+                                                Confirm
+                                            </a>
+                                        </div>
+                                        <!-- Invotce-->
+                                        <div class="btns">
+                                            <a href="#" class="new-invoice">
+                                                Invotce
+                                            </a>
+                                        </div>
+                                        <!--Comments-->
+                                        <div class="btns">
+                                            <a href="javascript:void(0)" class="new-invoice comments">
+                                                Comments
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!--  del-->
+                                    <div class="del-box">
+                                        <!--  收藏给我一个  active-->
+                                        <span class="iconfont icon-biaoji js-icon-flag active"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <!-- 交易完成-->
+                <div class="details1 ">
+                    <div class="details-title">Order NO:A11302AS6 Order time & date::2017 . 06 . 06 3:57:17 PM</div>
+                    <!--内容-->
+                    <div class="contents ">
+                        <table class="contents-ol" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <th>
+                                    <div class="detai">
+                                        Order Details
+                                    </div>
+                                    <div class="file">Gerber File</div>
+                                </th>
+                                <th>
+                                    <div class="amount">
+                                        Order amount
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="status">
+                                        Order Status
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="statused">
+                                        Status
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr class="detai-pic">
+                                <td class="detai-box">
+                                    <div class="detai-item">
+                                        <div class="detai-l">
+                                            <img src="../img/images/order/assembly.png" alt="">
+                                        </div>
+                                        <div class="detai-r">
+                                            <p>Product No: TG139250</p>
+                                            <p> [PCB Instant Quote]</p>
+                                            <p class="time-box">
+                                                BuildTime: 2-3 days
+                                            </p>
+                                            <p class="size-box">Size:
+                                                10x10 | 20Qty | $ 5 </p>
+                                        </div>
+                                        <div class="link-files">
+                                            <!-- 文件名-->
+                                            <a href="#">
+                                                The file name001.rar1
+                                            </a>
+                                            <div class="tec-progress">
+                                                <i class="plus-sign">+</i>
+                                                <span>Continue buying</span>
+                                            </div>
+                                            <a href="javascript:void(0)" class="add-notes">Add notes</a>
+                                        </div>
+                                    </div>
+                                    <div class="detai-item">
+                                        <div class="detai-l">
+                                            <img src="../img/images/order/assembly.png" alt="">
+                                        </div>
+                                        <div class="detai-r">
+                                            <p>Product No: TG139250</p>
+                                            <p> [PCB Instant Quote]</p>
+                                            <p class="time-box">
+                                                BuildTime: 2-3 days
+                                            </p>
+                                            <p class="size-box">Size:
+                                                10x10 | 20Qty | $ 5 </p>
+                                        </div>
+                                        <div class="link-files">
+                                            <!-- 文件名-->
+                                            <a href="#">
+                                                The file name001.rar1
+                                            </a>
+                                            <a href="#">
+                                                The file name001.rar1
+                                            </a>
+                                            <a href="#">
+                                                The file name001.rar1
+                                            </a>
+                                            <div class="tec-progress">
+                                                <i class="plus-sign">+</i>
+                                                <span>Continue buying</span>
+                                            </div>
+                                            <a href="javascript:void(0)" class="add-notes">Add notes</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="new-amount">
+                                    <span>$5</span>
+                                    <!--新加成本计价-->
+                                    <div class="assembly-cost">
+                                        <i>SMT cost: <span>$5888</span></i>
+                                        <i>Components cost: <span>$0.00</span></i>
+                                        <i>(<span>0.5</span>kg)</i>
+                                    </div>
+                                </td>
+                                <td class="new-status">
+                                    <p class="awai">Shipped out</p>
+                                    <p class="see-detail">
+                                        <span> ViewDetail</span>
+                                    </p>
+                                    <div class="parcel-box">
+                                        <p class="name">E-packet</p>
+                                        <a href="javascript:void(0)" target="_blank" class="number js-order-no"
+                                           title="">4550910630</a>
+                                        <div class="copy-btn js-copy-order">
+                                            Copy
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="stated-box">
+                                    <div class="btn-status">
+                                        <!-- Invotce-->
+                                        <div class="btns">
+                                            <a href="#" class="new-invoice">
+                                                Invotce
+                                            </a>
+                                        </div>
+                                        <!--Comments-->
+                                        <div class="btns">
+                                            <a href="javascript:void(0)" class="new-invoice comments">
+                                                Comments
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!--  del-->
+                                    <div class="del-box">
+                                        <!--  收藏给我一个  active-->
+                                        <span class="iconfont icon-biaoji js-icon-flag active"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--分页-->
+        <div id="pageToolbar"></div>
+        <!--版权说明-->
+        <div class="copy-right-box">
+            Copyright © 2015 PCBGOGO. All rights reserved. Shenzhen JDB Technology Co., Ltd.
+            Address: No. 15, Zhongxing Road, Kengzi Street, Pingshan District, Shenzhen, 518000, China.
+        </div>
+    </div>
+    <!--遮罩层弹出-->
+    <div class="open-mask js-confirm-box">
+        <div class="confirm-box">
+            <p>Do you confirm this operation?</p>
+            <div class="confirm-btn">
+                <input type="button" value="YES" class="yes-btn">
+                <input type="button" value="NO" class="no-btn">
+            </div>
+        </div>
+    </div>
+</div>
+<!--图片预览弹窗-->
+<div class="diy-pop" style="display: none">
+    <div class="gerber-pop">
+        <div class="gerber-tips">
+            This image is an automatic analysis diagram of Gerber view and is for reference only.
+            <br>The final PCB will be based
+            on the original design Gerber file you provided as the standard.
+        </div>
+        <div class="gerber-bar">
+            <div class="bar-l">
+                <div class="btn-group js-btn-group">
+                    <a class="btn top-btn active" href="javascript:void(0)">
+                        Top
+                    </a>
+                    <a class="btn bottom-btn " href="javascript:void(0)">
+                        Bottom
+                    </a>
+                </div>
+            </div>
+            <div class="bar-r">
+                <div class="bar-group js-bar-group">
+                    <a class="btn full-screen" href="javascript:void(0)">
+                    </a>
+                    <a class="btn default" href="javascript:void(0)">1:1</a>
+                    <a class="btn bigger active" href="javascript:void(0)">+</a>
+                    <a class="btn smaller" href="javascript:void(0)">-</a>
+                </div>
+            </div>
+        </div>
+        <div class="gerber-img-box">
+            <img id="gerber-img" src="../img/images/banner1.jpg" alt="Picture">
+        </div>
+        <div class="img-des-info">
+            <span> Layer: 2 </span>
+            <span> Layers,Size: 44 x 40mm </span>
+            <span> Solder Mack: Green </span>
+            <span> Silkscreen:White</span>
+        </div>
+    </div>
+</div>
+<!--分享弹窗-->
+<div class="js-share-pop" style="display: none">
+    <div class="share-box-pop">
+        <div class="share-top">
+            <div class="top-text">
+                <div class="des">
+                    Need a purchasing team or third party to complete payment of this order? We can help!
+                    <br> Simply send them this URL, and they can pay for this order.
+                </div>
+            </div>
+        </div>
+        <div class="share-bottom">
+            <div class="current-way">Shipping method: <span>Pay with Paypal</span></div>
+            <div class="copy-box">
+                <input type="text" readonly class="copy-area js-copy-area"
+                       value="">
+                <a class="copy-link js-copy-btn" href="javascript:void(0)">
+                    Copy link
+                </a>
+            </div>
+            <div class="share-tips">
+                To maintain privacy, all personally identifying information remains private and visible only to you.
+                If this privacy restriction makes things more dificult for the third-party making the payment, it might
+                be a
+                good idea to
+                generate a PDF invoice, and send that alongside the payment link above.
+            </div>
+        </div>
+    </div>
+</div>
+<!--备注弹窗-->
+<div class="js-note-box" style="display: none">
+    <div class="add-note-box">
+        <textarea placeholder="Add notes"></textarea>
+        <button class="submit-note" type="button">Submit</button>
+    </div>
+</div>
+<!--发起客诉弹窗-->
+<div class="complaint-pop to-complaint" style="display: none">
+    <dl class="handle-process">
+        <dd>
+            Submit
+        </dd>
+        <dd>
+            Accept
+        </dd>
+        <dd>
+            Communicating
+        </dd>
+        <dd>
+            Solved
+        </dd>
+    </dl>
+    <div class="handle-order">
+        <div class="order-title">
+            Order NO: GA12341
+        </div>
+        <div class="collect-info">
+            <div class="required-tips">* Items designated with an asterisk are required fields.</div>
+            <div class="pay-info">
+                <label class="pay-label">
+                    * Select the problem order number
+                </label>
+                <div class="pay-val">
+                    <div class="quantity-select shipping-title js-shipping-title">
+                        <!-- 当前选中的...-->
+                        <div class="current-shipping js-current-shipping">S-A72270ASF1</div>
+                        <div class="total-shipping js-total-shipping">
+                            <div class="item">
+                                S-A72270ASF1
+                            </div>
+                            <div class="item">
+                                S-A72270ASF2
+                            </div>
+                            <div class="item">
+                                S-A72270ASF3
+                            </div>
+                            <div class="item">
+                                S-A72270ASF4
+                            </div>
+                            <div class="item">
+                                S-A72270ASF5
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pay-info">
+                <label class="pay-label">
+                    * Type of problem
+                </label>
+                <div class="pay-val">
+                    <div class="quantity-select shipping-title js-shipping-title">
+                        <!-- 当前选中的...-->
+                        <div class="current-shipping js-current-shipping">The PCB is wrong/bad</div>
+                        <div class="total-shipping js-total-shipping">
+                            <div class="item">
+                                The PCB is wrong/bad
+                            </div>
+                            <div class="item">
+                                Missing/damage of IC
+                            </div>
+                            <div class="item">
+                                SMT issues
+                            </div>
+                            <div class="item">
+                                Merchandise not as described
+                            </div>
+                            <div class="item">
+                                Lead time issues
+                            </div>
+                            <div class="item">
+                                Model issues
+                            </div>
+                            <div class="item">
+                                Delivery issues
+                            </div>
+                            <div class="item">
+                                Customs issues
+                            </div>
+                            <div class="item">
+                                Sale service issues
+                            </div>
+                            <div class="item">
+                                Other issues
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pay-info">
+                <label class="pay-label">
+                    * Problem description
+                </label>
+                <div class="pay-val">
+                    <textarea class="edit-problem"></textarea>
+                </div>
+            </div>
+            <div class="pay-info">
+                <label class="pay-label">
+                    Upload document
+                </label>
+                <div class="pay-val">
+                    <a class="add-file" href="javascript:void(0)">
+                        + Add File
+                        <input type="file" class="c-get-files">
+                    </a>
+                    <span class="format-tips"> .rar or .zip Maximum 10M.</span>
+                    <!-- 上传进度-->
+                    <div class="c-upload-p">
+                        <div class="c-process" style="width: 90%"></div>
+                        <div class="c-file-name">
+                            this is a test file.zip
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="handle-tool">
+        <input class="handle-btn h-submit" type="submit" value="Submit">
+    </div>
+</div>
+<!--删除订单-->
+<div class="js-delete-pop" style="display: none">
+    <div class="modify-order-pop js-delete-order">
+        <div class="modify-top-note">
+            如果我们那些地方给你带来不便，我们表示非常报歉！为更好的为你服务，优化我们的网站，请在以下选项中选择你删除订单的原因，非常感谢！
+        </div>
+        <div class="reason-body">
+            <div class="reason-orders">
+                Order No:
+                <span>
+                     B80022ASH258;
+                </span>
+                <span>
+                    B80022ASH259
+                </span>
+            </div>
+            <div class="reason-info-area">
+                <dl>
+                    <dt>Delete the reason</dt>
+                    <dd>
+                        <label class="whether-item">
+                            <input type="checkbox" checked>
+                            <span class="label-icon"></span>
+                            价格太高，不想购买。
+                        </label>
+                    </dd>
+                    <dd>
+                        <label class="whether-item">
+                            <input type="checkbox">
+                            <span class="label-icon"></span>
+                            订单下错了需要重新下单。
+                        </label>
+                    </dd>
+                    <dd>
+                        <label class="whether-item">
+                            <input type="checkbox">
+                            <span class="label-icon"></span>
+                            运费太高。
+                        </label>
+                    </dd>
+                    <dd>
+                        <label class="whether-item">
+                            <input type="checkbox">
+                            <span class="label-icon"></span>
+                            没有合适的付款方式。
+                        </label>
+                    </dd>
+                    <dd>
+                        <label class="whether-item">
+                            <input type="checkbox">
+                            <span class="label-icon"></span>
+                            审核太慢。
+                        </label>
+                    </dd>
+                    <dd>
+                        <label class="whether-item">
+                            <input type="checkbox">
+                            <span class="label-icon"></span>
+                            客服反馈太慢或不专业。
+                        </label>
+                    </dd>
+                    <dd>
+                        <label class="whether-item">
+                            <input type="checkbox">
+                            <span class="label-icon"></span>
+                            其它
+                        </label>
+                    </dd>
+                </dl>
+                <div class="extra-note">
+                    <div class="extra-note-name">备注</div>
+                    <textarea class="extra-info"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="modify-bottom-control">
+            <a class="btn cancel-btn js-cancel-btn" href="javascript:void(0)">
+                Cancel
+            </a>
+            <a class="btn submit-btn js-submit-btn" href="javascript:void(0)">
+                Submit
+            </a>
+        </div>
+    </div>
+</div>
+<script src="../img/js/jquery/jquery-1.11.3.min.js"></script>
+<script src="../img/js/layer-v3.1.1/layer/layer.js"></script>
+<script src="../img/js/public.js"></script>
+<!--<script src="../img/js/pages/query.js"></script>-->
+<!--<script src="../img/js/pages/paging.js"></script>-->
+<script src="../img/js/viewer/viewer.min.js"></script>
+<script>
+  // 套用删除或修改如下代码
+  $(function () {
+
+    // 订单删除弹窗
+    $('.icon-delete-bin-line').click(function () {
+      var delIndex = layer.open({
+        type: 1,
+        title: 'delete order',
+        content: $('.js-delete-pop').html(),
+        area: ['1000px', '700px'],
+        btn: [],
+        move: false,
+        resizing: false,
+        resize: false,
+        success: function () {
+          // 关闭按钮
+          $('.js-cancel-btn').click(function () {
+            layer.close(delIndex);
+          })
+          // 提交按钮
+          $('.js-submit-btn').click(function () {
+            alert('搜集数据，再提交')
+          })
+        }
+      })
+    })
+
+
+    // 发起客诉
+    $('.js-ticket-btn').click(function () {
+      layer.open({
+        type: 1,
+        title: 'Customer complaint',
+        area: ['990px', '700px'],
+        content: $('.complaint-pop.to-complaint').prop('outerHTML'),
+        success: function () {
+          $('.layui-layer-content .complaint-pop.to-complaint').show();
+          //客诉单号与问题类型选择
+          $('.js-shipping-title').hover(function () {
+            $(this).find('.js-total-shipping').stop().slideDown()
+          }, function () {
+            $(this).find('.js-total-shipping').stop().slideUp()
+          })
+          $('.js-total-shipping .item').click(function () {
+            $(this).parents('.shipping-title').find('.js-current-shipping').html($.trim($(this).text()))
+            $(this).parent('.js-total-shipping').hide()
+          })
+          $('.layui-layer-content').find('.add-file').change(function (e) {
+            var getFilesname = e.target.files[0].name
+            $('.layui-layer-content').find('.c-file-name').html(getFilesname)
+            $('.layui-layer-content').find('.c-upload-p').show(function () {
+              $('.layui-layer-content').find('.c-process').css({width: 100 + '%'})
+            })
+          })
+          // 提交
+          $('.layui-layer-content').find('.h-submit').click(function () {
+            layer.closeAll()
+          })
+        }
+      })
+    })
+
+    // 备注弹窗
+    $('.add-notes,.more-btn').click(function () {
+      layer.open({
+        title: 'Add notes',
+        content: $('.js-note-box').html(),
+        area: ['690px', 'auto'],
+        btn: []
+      })
+    })
+
+    // 单号复制
+    $('.js-copy-order').click(function () {
+      var orderNo = $(this).parent().find('.js-order-no').html().trim()
+      var copyInput = document.createElement('input')
+      copyInput.className = 'copy-hidden'
+      copyInput.value = orderNo
+      $(this).append(copyInput)
+      if (document.execCommand('copy')) {
+        $('.copy-hidden').select()
+        document.execCommand('copy')
+        layer.msg('Copy Succeeded')
+        $(this).find('.copy-hidden').remove()
+      }
+    })
+
+    // 分享弹窗
+    $('.js-share-btn').click(function () {
+
+      $('.js-copy-area').attr({value: 'xxx.xxx'})
+      var index = layer.open({
+        type: 1,
+        title: 'Payment sharing',
+        content: $('.js-share-pop').html(),
+        area: ['750px', 'auto'],
+        btn: [],
+        success: function () {
+          $('.js-copy-btn').click(function () {
+            if (document.execCommand('copy')) {
+              $('.layui-layer-content').find('.js-copy-area').select()
+              document.execCommand('copy')
+              layer.msg('Copy Succeeded')
+            }
+          })
+        }
+      })
+    })
+
+    $('.layui-layer-content').find('.js-copy-btn').click(function () {
+      if (document.execCommand('copy')) {
+        $('.layui-layer-content').find('.js-copy-area').select()
+        document.execCommand('copy')
+        layer.msg('Copy Succeeded')
+      }
+    })
+
+    // 图片查看器
+    $('.js-enlarge').click(function () {
+
+      var topImg = $(this).attr('data-top-img'),
+        bottomImg = $(this).attr('data-bottom-img')
+
+      layer.open({
+        type: 1,
+        title: 'Gerber View',
+        content: $('.diy-pop').html(),
+        area: ['1000px', 'auto'],
+        success: function () {
+          var $layerContent = $('.layui-layer-content')
+          $layerContent.find('#gerber-img').hide()
+          var viewer = new Viewer($layerContent.find('#gerber-img')[0], {
+            inline: true,
+            loading: true,
+            toolbar: false,
+            navbar: false,
+            title: false,
+            backdrop: true,
+            ready: function () {
+              $layerContent.find('.viewer-button').hide()
+            },
+            viewed: function () {
+              $layerContent.find($('.js-btn-group .btn')).click(function () {
+                $(this).addClass('active').siblings('.btn').removeClass('active')
+              })
+              $layerContent.find($('.js-bar-group .btn')).click(function () {
+                $(this).addClass('active').siblings('.btn').removeClass('active')
+              })
+              $layerContent.find('.top-btn').click(function () {
+                $layerContent.find('.viewer-move').attr('src', topImg)
+                viewer.reset().update()
+              })
+              $layerContent.find('.bottom-btn').click(function () {
+                $layerContent.find('.viewer-move').attr('src', bottomImg)
+                viewer.reset()
+                viewer.update()
+              })
+              $layerContent.find('.full-screen').click(function () {
+                viewer.full()
+                $layerContent.find('.viewer-button').show()
+                $(window).resize()
+              })
+              $layerContent.find('.viewer-button').click(function () {
+                $(this).hide()
+                $(window).resize()
+              })
+              $layerContent.find('.default').click(function () {
+                viewer.zoomTo(1).tooltip()
+              })
+              $layerContent.find('.bigger').click(function () {
+                viewer.zoom(0.1).tooltip()
+              })
+              $layerContent.find('.smaller').click(function () {
+                viewer.zoom(-0.1).tooltip()
+              })
+            }
+          })
+        }
+      })
+    })
+
+    // 收藏
+    $('.js-icon-flag').click(function () {
+      $(this).toggleClass('active')
+      if ($(this).hasClass('active')) {
+        layer.msg('Collection of success')
+      } else {
+        layer.msg('Cancel the collection')
+      }
+    })
+
+    // 删除按钮
+    //    点击删除
+    // $('.js-del-box').click(function () {
+    //   //点击删除图标
+    //   $('.js-confirm-box').show()
+    //   var that = this
+    //   $('.yes-btn').click(function () {
+    //     $('.js-confirm-box').hide()
+    //     $(that).parents('.details1').remove()
+    //   })
+    //   $('.no-btn').click(function () {
+    //     $('.js-confirm-box').hide()
+    //   })
+    // })
+
+    //pagesize:页数  默认10;
+    // $('#pageToolbar').Paging({
+    //   pagesize: 10, toolbar: true, callback: function f (a) {
+    //     console.log(a)
+    //   }
+    // })
+  })
+</script>
+</body>
+</html>

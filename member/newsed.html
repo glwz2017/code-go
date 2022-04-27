@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Account -PCBgogo</title>
+    <!--网页标题左侧显示-->
+    <link rel="icon" href="../img/images/title-logo.png" type="image/x-icon">
+    <!--收藏夹显示图标-->
+    <link rel="shortcut icon" href="../img/images/title-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../img/css/member/news.css">
+</head>
+<body>
+<!--header-->
+<div class="the-top">
+    <!--顶部导航-->
+    <div class="top-nav">
+        <div class="nav-l">
+            <a href="orderIndex.html">
+                <img src="../img/images/order/orderlogo.png" alt="logo">
+            </a>
+        </div>
+        <div class="nav-r">
+            <!--右侧图标-->
+            <div class="shopping-box">
+                <ul class="hints">
+                    <li class="js-messages"><a href="javascript:void(0)">
+                        <span class="iconfont icon-icon_notice"></span>
+                    </a>
+                        <i class="point "></i>
+                    </li>
+                    <li class=""><a href="javascript:void(0)">
+                        <span class="iconfont icon-youhuiquan"></span>
+                    </a>
+                        <i class="point "></i>
+                    </li>
+                    <li class=""><a href="javascript:void(0)">
+                        <span class="iconfont icon-fukuan"></span>
+                    </a>
+                        <i class="point"></i>
+                    </li>
+                    <li class=""><a href="javascript:void(0)">
+                        <span class="iconfont icon-gouwuche1"></span>
+                    </a>
+                        <i class="round car-nums">99</i>
+                    </li>
+                </ul>
+                <!-- 消息列表-->
+                <div class="message-list js-message-list">
+                    <div class="message-title clear-fix">
+                        <div class="message-numbers">
+                            Unread：<span>20</span>
+                        </div>
+                        <a class="read-btn js-read-btn" href="javascript:void(0)">All messages have been read</a>
+                    </div>
+                    <div class="lists-box js-lists-box">
+                        <!--系统消息-->
+                        <a href="javascript:void(0)" class="item">
+                            <div class="item-left">
+                                <div class="sys-sign">
+                                    <span class="iconfont icon-tongzhi"></span>
+                                </div>
+                            </div>
+                            <div class="item-right">
+                                <div class="des">
+                                    You have got a PCBGOGO coupon with <span class="number">$XXX</span>.
+                                </div>
+                                <div class="time">
+                                    Mar 06.2019, 17:21:39
+                                </div>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)" class="item">
+                            <div class="item-left">
+                                <div class="sys-sign">
+                                    <span class="iconfont icon-tongzhi"></span>
+                                </div>
+                            </div>
+                            <div class="item-right">
+                                <div class="des">
+                                    You can use your coupon right now because it will be due after 2 days.
+                                </div>
+                                <div class="time">
+                                    Mar 06.2019, 17:21:39
+                                </div>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)" class="item">
+                            <div class="item-left">
+                                <div class="sys-sign">
+                                    <span class="iconfont icon-tongzhi"></span>
+                                </div>
+                            </div>
+                            <div class="item-right">
+                                <div class="des">
+                                    You have recharged / deducted with $XXX in PCBGOGO, please check it immediately in
+                                    your account.
+                                </div>
+                                <div class="time">
+                                    Mar 06.2019, 17:21:39
+                                </div>
+                            </div>
+                        </a>
+                        <!--订单消息-->
+                        <a href="javascript:void(0)" class="item">
+                            <div class="item-left">
+                                <div class="order-sign">
+                                    <span class="iconfont icon-icon-ic_memory_px"></span>
+                                </div>
+                            </div>
+                            <div class="item-right">
+                                <div class="des">
+                                    Your order <span class="number">(xxx)</span> fail to pass the verification, so you
+                                    need to submit it again.
+                                </div>
+                                <div class="time">
+                                    Mar 06.2019, 17:21:39
+                                </div>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)" class="item">
+                            <div class="item-left">
+                                <div class="order-sign">
+                                    <span class="iconfont icon-icon-ic_memory_px"></span>
+                                </div>
+                            </div>
+                            <div class="item-right">
+                                <div class="des">
+                                    The prices are changed in your order <span class="number">(xxx)</span>, so please
+                                    fill the account in time so that your production orders are finished successfully.
+                                </div>
+                                <div class="time">
+                                    Mar 06.2019, 17:21:39
+                                </div>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)" class="item">
+                            <div class="item-left">
+                                <div class="order-sign">
+                                    <span class="iconfont icon-icon-ic_memory_px"></span>
+                                </div>
+                            </div>
+                            <div class="item-right">
+                                <div class="des">
+                                    You have canceled the orders <span class="number">(xxx)</span>, and the amount had
+                                    refunded in your account, so please check it now.
+                                </div>
+                                <div class="time">
+                                    Mar 06.2019, 17:21:39
+                                </div>
+                            </div>
+                        </a>
+                        <!-- 站内消息-->
+                        <a href="javascript:void(0)" class="item">
+                            <div class="item-left">
+                                <div class="site-sign">
+                                    <span class="iconfont icon-ai-message"></span>
+                                </div>
+                            </div>
+                            <div class="item-right">
+                                <div class="des">
+                                    You have canceled the orders <span class="number">(xxx)</span>, and the amount had
+                                    refunded in your account, so please check it now.
+                                </div>
+                                <div class="time">
+                                    Mar 06.2019, 17:21:39
+                                </div>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)" class="item">
+                            <div class="item-left">
+                                <div class="order-sign">
+                                    <span class="iconfont icon-icon-ic_memory_px"></span>
+                                </div>
+                            </div>
+                            <div class="item-right">
+                                <div class="des">
+                                    Your order <span class="number">(xxx)</span> fail to pass the verification, so you
+                                    need to submit it again.
+                                </div>
+                                <div class="time">
+                                    Mar 06.2019, 17:21:39
+                                </div>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)" class="item">
+                            <div class="item-left">
+                                <div class="order-sign">
+                                    <span class="iconfont icon-icon-ic_memory_px"></span>
+                                </div>
+                            </div>
+                            <div class="item-right">
+                                <div class="des">
+                                    The prices are changed in your order <span class="number">(xxx)</span>, so please
+                                    fill the account in time so that your production orders are finished successfully.
+                                </div>
+                                <div class="time">
+                                    Mar 06.2019, 17:21:39
+                                </div>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)" class="item">
+                            <div class="item-left">
+                                <div class="order-sign">
+                                    <span class="iconfont icon-icon-ic_memory_px"></span>
+                                </div>
+                            </div>
+                            <div class="item-right">
+                                <div class="des">
+                                    Your order <span class="number">(xxx)</span> fail to pass the verification, so you
+                                    need to submit it again.
+                                </div>
+                                <div class="time">
+                                    Mar 06.2019, 17:21:39
+                                </div>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)" class="item">
+                            <div class="item-left">
+                                <div class="order-sign">
+                                    <span class="iconfont icon-icon-ic_memory_px"></span>
+                                </div>
+                            </div>
+                            <div class="item-right">
+                                <div class="des">
+                                    The prices are changed in your order <span class="number">(xxx)</span>, so please
+                                    fill the account in time so that your production orders are finished successfully.
+                                </div>
+                                <div class="time">
+                                    Mar 06.2019, 17:21:39
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--登录后-->
+            <div class="user-box">
+                <span class="hi-text"> Hi! The user...</span>
+                <div class="user-pic js-user-pic">
+                    <i><img src="../img/images/user.png" alt=""></i>
+                    <i class="down-pointer"><img src="../img/images/down-pointer.png" alt=""></i>
+                </div>
+                <div class="user-item">
+                    <div class="account" onclick="window.open('orderIndex.html','_self')">
+                        My Account
+                    </div>
+                    <div class="account" onclick="window.open('awaiting-payment.html','_self')">
+                        My Orders list
+                    </div>
+                    <div class="account" onclick="window.open('essentialInformation.html','_self')">
+                        My Delivery Address
+                    </div>
+                    <div class="facebook-btn ">
+                        Bind FaceBook
+                    </div>
+                    <div class="out-btn " style="margin-top: 10px">
+                        Sign Out
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--二级菜单-->
+    <div class="main-menu">
+        <div class="vip_warp">
+            <ul class="menu-list clear-fix">
+                <li class="active"><a href="orderIndex.html">My Account</a></li>
+                <li><a href="../pages作废/reviewList作废.html">Forum</a></li>
+            </ul>
+            <!--计价链接-->
+            <div class="in-link">
+                <span class="iconfont icon-jisuan1"></span>
+                <a href="javascript:void(0)">Order PCB Now</a>
+                <span>|</span>
+                <a href="javascript:void(0)">Order PCBA Now</a>
+                <span>|</span>
+                <a href="javascript:void(0)">Order Stencil Now</a>
+            </div>
+            <!--面包屑-->
+            <div class="bread-crumbs">
+                <a href="javascript:void(0)">
+                    <span class="iconfont icon-shouye1"></span>
+                    <span>- Message</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!--主体-->
+<div class="order-main">
+    <!--字体图标分割线-->
+    <div class="font-line"></div>
+    <div class="box-l">
+        <div class="category js-category-index">
+            <div class="item "><a href="shopping-car.html">
+                <span class="iconfont icon-gouwuche2"></span>
+                <span class="category-name">-Shopping Cart</span></a></div>
+            <div class="item "><a href="awaiting-payment.html">
+                <span class="iconfont icon-fukuan1"></span>
+                <span class="category-name">-Awaiting payment</span></a></div>
+
+            <div class="item "><a href="production-status.html">
+                <span class="iconfont icon-7v1shenqiajindu4276af"></span>
+                <span class="category-name">-Production status</span></a></div>
+            <div class="item "><a href="wait-for-shipment.html">
+                <span class="iconfont icon-ziyuan1"></span>
+                <span class="category-name">-Wait for shipment</span></a></div>
+            <div class="item "><a href="unconfirmed-delivery.html">
+                <span class="iconfont icon-feiji"></span>
+                <span class="category-name">-Unconfirmed delivery </span></a></div>
+            <div class="item "><a href="completed.html">
+                <span class="iconfont icon-yiwancheng"></span>
+                <span class="category-name">-Completed</span></a></div>
+            <div class="item"><a href="memberList.html">
+                <span class="iconfont icon-icon_fapinglun-xian"></span>
+                <span class="category-name">-Comments</span></a></div>
+            <div class="item">
+                <a href="myInvitation.html">
+                    <span class="iconfont icon-daipingjiab"></span>
+                    <span class="category-name">+Experience Share</span>
+                </a>
+                <!--&lt;!&ndash;二级列表&ndash;&gt;-->
+                <div class="second-item">
+                    <a class="second-active" href="myInvitation.html">
+                        <span class="second-name">My Invitation</span>
+                    </a>
+                    <a href="promoteIndex.html">
+                        <span class="second-name">Share links</span>
+                    </a>
+                </div>
+            </div>
+            <div class="item "><a href="account-page.html">
+                <span class="iconfont icon-34"></span>
+                <span class="category-name">-Cash and Coupon</span></a></div>
+            <!--vip-->
+            <div class="item ">
+                <a href="integral.html">
+                    <span class="iconfont icon-v"></span>
+                    <span class="category-name active-new">
+                    <span class="iconfont icon-new"></span>
+                    - Reward points
+                </span>
+                </a>
+            </div>
+            <!--vip-->
+            <div class="item active"><a href="newsed.html">
+                <span class="iconfont icon-liuyanpinglun"></span>
+                <span class="category-name">-Message</span>
+            </a></div>
+            <div class="item"><a href="essentialInformation.html">
+                <span class="iconfont icon-gerenziliao"></span>
+                <span class="category-name">+My Profile</span>
+            </a>
+                <!--&lt;!&ndash;二级列表&ndash;&gt;-->
+                <div class="second-item ">
+                    <a href="essentialInformation.html">
+                        <span class="second-name">Basic Information</span></a>
+                    <a href="receivingAddress.html">
+                        <span class="second-name">My Delivery Address</span>
+                    </a>
+                    <a href="changePassword.html">
+                        <span class="second-name">Change Password</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--右侧-->
+    <div class="box-r">
+        <div class="r-title">
+            MESSAGE
+        </div>
+        <!--消息盒子-->
+        <div class="the-message clear-fix">
+            <div class="message-lists js-message-lists">
+                <div class="list">
+                    <div class="head-info">
+                        <img class="head-img" src="../img/images/user.png" alt="">
+                        <span class="time">2019.07.10 17:33:04</span>
+                    </div>
+                    <div class="des-box">
+                        <div class="des">
+                            <div class="text">
+                                Hi, The last order was shipped using RV924237085CN. According to the tracking, this
+                                shipment is still in China. This is now the case for about one month. How to resolve
+                                this?
+                                Regards, Marcdel
+                            </div>
+                            <img src="../img/images/banner1.jpg" alt="">
+                        </div>
+                        <div class="answer-box">
+                            <div class="answer">
+                                <div class="info-name">
+                                    <span class="name">PCBGOGO: </span>2019.07.10 17:33:04
+                                </div>
+                                <div class="answer-content">
+                                    Hello Marcdel, i am sorry, i've asked local post, and they just replied me, the
+                                    parcel has already arrive your
+                                    country in June 6, and are waiting for Customs clearance, the phone number of your
+                                    local post is 0900 0990, could you try to contact them? Regards, anna
+                                </div>
+                            </div>
+                            <div class="answer">
+                                <div class="info-name">
+                                    <span class="name">PCBGOGO: </span>2019.07.10 17:33:04
+                                </div>
+                                <div class="answer-content">
+                                    Hello Marcdel, i am sorry, i've asked local post, and they just replied me, the
+                                    parcel has already arrive your
+                                    country in June 6, and are waiting for Customs clearance, the phone number of your
+                                    local post is 0900 0990, could you try to contact them? Regards, anna
+                                </div>
+                            </div>
+                            <div class="answer">
+                                <div class="info-name">
+                                    <span class="name">PCBGOGO: </span>2019.07.10 17:33:04
+                                </div>
+                                <div class="answer-content">
+                                    Hello Marcdel, i am sorry, i've asked local post, and they just replied me, the
+                                    parcel has already arrive your
+                                    country in June 6, and are waiting for Customs clearance, the phone number of your
+                                    local post is 0900 0990, could you try to contact them? Regards, anna
+                                </div>
+                            </div>
+                            <div class="answer">
+                                <div class="info-name">
+                                    <span class="name">PCBGOGO: </span>2019.07.10 17:33:04
+                                </div>
+                                <div class="answer-content">
+                                    Hello Marcdel, i am sorry, i've asked local post, and they just replied me, the
+                                    parcel has already arrive your
+                                    country in June 6, and are waiting for Customs clearance, the phone number of your
+                                    local post is 0900 0990, could you try to contact them? Regards, anna
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="head-info">
+                        <img class="head-img" src="../img/images/user.png" alt="">
+                        <span class="time">2019.07.10 17:33:04</span>
+                    </div>
+                    <div class="des-box">
+                        <div class="des">
+                            <div class="text">
+                                Hi, The last order was shipped using RV924237085CN. According to the tracking, this
+                                shipment is still in China. This is now the case for about one month. How to resolve
+                                this?
+                                Regards, Marcdel
+                            </div>
+                            <img src="../img/images/banner1.jpg" alt="">
+                        </div>
+                        <div class="answer-box">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="edit-message">
+                <div class="software-titles">
+                    Content
+                </div>
+                <textarea name="" id="suggestion" class="suggestion"
+                          placeholder="Please enter your new suggestion"></textarea>
+                <!--文件上传-->
+                <div class="up-suggestion">
+                    <div class="suggestion-tips">
+                        Each file cannot exceed 5MB.
+                        Support GIF, JPEG, PNG.
+                    </div>
+                    <a class="browse-btn js-browse-btn" href="javascript:void(0)">
+                        Browse
+                        <input type="file" multiple
+                               style="filter: alpha(opacity=0);opacity: 0;width: 80px;height: 30px;position: absolute;left:0;z-index: 9;">
+                    </a>
+                </div>
+                <!--文件列表-->
+                <div class="file-lists js-file-lists">
+                    <div class="item">
+                        <!--上传进度百分比-->
+                        <div class="jin-du">
+                            <div class="the-process"></div>
+                        </div>
+                        <span class="file-name">Wech234235345634654675475675678568686789679797897807800808908atIMG58.png (76 kb)</span>
+                        <span class="iconfont icon-guanbi"></span>
+                    </div>
+                </div>
+                <!-- 发布按钮-->
+                <div class="release-box">
+                    <a class="btn" href="javascript:void(0)">Cancel</a>
+                    <a class="btn js-post-message" href="javascript:void(0)">Post message</a>
+                </div>
+            </div>
+        </div>
+        <!--版权说明-->
+        <div class="copy-right-box">
+            Copyright © 2015 PCBGOGO. All rights reserved. Shenzhen JDB Technology Co., Ltd.
+            Address: No. 15, Zhongxing Road, Kengzi Street, Pingshan District, Shenzhen, 518000, China.
+        </div>
+    </div>
+</div>
+<!--套用忽略以下js-->
+<script src="../img/js/jquery/jquery-1.11.3.min.js"></script>
+<script src="../img/js/public.js"></script>
+<!--<script src="../img/js/news.js"></script>-->
+</body>
+</html>

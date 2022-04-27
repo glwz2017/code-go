@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Account -PCBgogo</title>
+    <!--网页标题左侧显示-->
+    <link rel="icon" href="../img/images/title-logo.png" type="image/x-icon">
+    <!--收藏夹显示图标-->
+    <link rel="shortcut icon" href="../img/images/title-logo.png" type="image/x-icon">
+    <!--字体图标-->
+    <link rel="stylesheet" href="../img/css/member/memberList.css">
+    <script src="../img/js/jquery/jquery-1.11.3.min.js"></script>
+    <script src="../img/js/public.js"></script>
+    <script src="../img/js/memberList.js"></script>
+</head>
+<body>
+<div class="the-top">
+    <!--顶部导航-->
+    <div class="top-nav">
+        <div class="nav-l">
+            <a href="orderIndex.html">
+                <img src="../img/images/order/orderlogo.png" alt="logo">
+            </a>
+        </div>
+        <div class="nav-r">
+            <!--右侧图标-->
+            <div class="shopping-box">
+                <ul class="hints js-hints">
+                    <li class="active message-li"><a href="javascript:void(0)">
+                        <span class="iconfont icon-ai-message"></span>
+                    </a>
+                        <i class="point "></i>
+                    </li>
+                    <li class="active coupon-li"><a href="javascript:void(0)">
+                        <span class="iconfont icon-youhuiquan"></span>
+                    </a>
+                        <i class="point "></i>
+                    </li>
+                    <li class="active coupon-li"><a href="javascript:void(0)">
+                        <span class="iconfont icon-fukuan"></span>
+                    </a>
+                        <i class="point "></i>
+                    </li>
+                    <li class="car-box cared-li"><a href="javascript:void(0)">
+                        <span class="iconfont icon-gouwuche1"></span>
+                    </a>
+                        <i class="round car-nums">99</i>
+                    </li>
+                </ul>
+            </div>
+            <!--登录后-->
+            <div class="user-box">
+                <span class="hi-text"> Hi! The user...</span>
+                <div class="user-pic js-user-pic">
+                    <i><img src="../img/images/user.png" alt=""></i>
+                    <i class="down-pointer"><img src="../img/images/down-pointer.png" alt=""></i>
+                </div>
+                <div class="user-item">
+                    <div class="account" onclick="window.open('orderIndex.html','_self')">
+                        My Account
+                    </div>
+                    <div class="account" onclick="window.open('awaiting-payment.html','_self')">
+                        My Orders list
+                    </div>
+                    <div class="account" onclick="window.open('essentialInformation.html','_self')">
+                        My Delivery Address
+                    </div>
+                    <div class="facebook-btn ">
+                        Bind FaceBook
+                    </div>
+                    <div class="out-btn " style="margin-top: 10px">
+                        Sign Out
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--二级菜单-->
+    <div class="main-menu">
+        <div class="vip_warp">
+            <ul class="menu-list clear-fix">
+                <li><a href="orderIndex.html">My Account</a></li>
+                <li><a href="../PCBPrototype.html">PCB Instant Quote</a></li>
+                <li><a href="../PCBAssembly.html">PCB Assembly</a></li>
+                <li><a href="../pages作废/reviewList作废.html">Forum</a></li>
+            </ul>
+            <!--面包屑-->
+            <div class="bread-crumbs">
+                <a href="javascript:void(0)">
+                    <span class="iconfont icon-shouye1"></span>
+                    <span>- My Comments</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--主体-->
+<div class="order-main">
+    <!--字体图标分割线-->
+    <div class="font-line"></div>
+    <div class="box-l">
+        <div class="category js-category-index">
+            <div class="item "><a href="shopping-car.html">
+                <span class="iconfont icon-gouwuche2"></span>
+                <span class="category-name">-Shopping Cart</span></a></div>
+            <div class="item"><a href="awaiting-payment.html">
+                <span class="iconfont icon-dingdan"></span>
+                <span class="category-name">-My Orders</span></a></div>
+            <div class="item active"><a href="memberList.html">
+                <span class="iconfont icon-icon_fapinglun-xian"></span>
+                <span class="category-name">-Comments</span></a></div>
+            <div class="item">
+                <a href="myInvitation.html">
+                    <span class="iconfont icon-daipingjiab"></span>
+                    <span class="category-name">+Experience Share</span>
+                </a>
+                <!--&lt;!&ndash;二级列表&ndash;&gt;-->
+                <div class="second-item">
+                    <a class="second-active" href="myInvitation.html">
+                        <span class="second-name">My Invitation</span>
+                    </a>
+                    <a href="promoteIndex.html">
+                        <span class="second-name">Share links</span>
+                    </a>
+                </div>
+            </div>
+            <div class="item "><a href="account-page.html">
+                <span class="iconfont icon-34"></span>
+                <span class="category-name">-Cash and Coupon</span></a></div>
+            <!--vip-->
+            <div class="item ">
+                <a href="integral.html">
+                    <span class="iconfont icon-v"></span>
+                    <span class="category-name active-new">
+                    <span class="iconfont icon-new"></span>
+                    - Reward points
+                </span>
+                </a>
+            </div>
+            <!--vip-->
+            <div class="item "><a href="newsed.html">
+                <span class="iconfont icon-liuyanpinglun"></span>
+                <span class="category-name">-Message</span>
+            </a></div>
+            <div class="item"><a href="essentialInformation.html">
+                <span class="iconfont icon-gerenziliao"></span>
+                <span class="category-name">+My Profile</span>
+            </a>
+                <!--&lt;!&ndash;二级列表&ndash;&gt;-->
+                <div class="second-item ">
+                    <a href="essentialInformation.html">
+                        <span class="second-name">Basic Information</span></a>
+                    <a href="receivingAddress.html">
+                        <span class="second-name">My Delivery Address</span>
+                    </a>
+                    <a href="changePassword.html">
+                        <span class="second-name">Change Password</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--右侧-->
+    <div class="box-r">
+        <div class="r-title">
+            COMMENTS
+        </div>
+        <!--审查盒子-->
+        <div class="under-review-box js-under-review-box">
+            <!--空数据元素-->
+            <div class="empty-item">
+                <div class="empty-order">
+                    <div class="empty-pic" style="padding-top: 12px;">
+                        <img src="../img/images/order/empty-order.png" alt="No order here! "
+                             width="36"
+                             height="42">
+                    </div>
+                    <div class="empty-link-box">
+                        <div class="empty-text">
+                            <p>You haven’t make any comment for your order yet,
+                            </p>
+                            <p>unexpected coupon can get when sharing the PCB and
+                            </p>
+                            <p>PCBA shopping experience with your friends.</p>
+                            <a href="" class="empty-link">Give comment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  分享入口-->
+            <div class="forum-note">
+                <img class="note-img"
+                     src="data:image/png;base64,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"
+                     alt="" width="72" height="71">
+                <div class="note-text">
+                    Would like to have more people learn about your electronics project?
+                    <br>
+                    It’s time to share your project article (No less than 500 words).
+                    <br>You will have the chance to win $30-$100 coupon from PCBGOGO.
+                </div>
+                <a class="post-btn" href="/Forum/AddArticle">Share the Project</a>
+            </div>
+            <!--标题-->
+            <table class="release-list">
+                <thead>
+                <tr class="release-title">
+                    <th class="release-info">
+                        <div class="product-info">
+                            Product
+                        </div>
+                        <div class="feedback-info">
+                            Feedback
+                        </div>
+                    </th>
+                    <th class="release-state">Status</th>
+                </tr>
+                </thead>
+                <!--审查中状态 [单个订单]-->
+                <tbody>
+                <tr>
+                    <td class="parent-info">
+                        <div class="parent-list">
+                            <div class="product-info">
+                                <div class="numbers-text">
+                                    <div class="o-id">
+                                        Order ID：GB6533
+                                    </div>
+                                    <div class="o-time">
+                                        Order time & date：2020.08.07 16:08:54
+                                    </div>
+                                    <div class="o-price">
+                                        Order amount: <span class="price">$29.00</span>
+                                    </div>
+                                    <div class="o-service">Service：So Touhi</div>
+                                    <div class="o-email">
+                                        E-mail：service02@pcbgogo.jp
+                                    </div>
+                                    <div class="o-info">67mm X 80mm 1 Layers 1.6mm 1 oz
+                                        Cu HASL with lead
+                                    </div>
+                                    <div class="pcb-number">
+                                        <div class="pcb-title">[PCB Production]</div>
+                                        <div class="o-no">Order No: B80001ASV750</div>
+                                    </div>
+                                    <div class="o-pie">$5.00 & 8122 pieces</div>
+                                </div>
+                                <a href="javascript:void(0)" class="numbers-pic">
+                                    <span class="iconfont icon-icon-xiangqing"></span>
+                                    <span>View Detail</span>
+                                </a>
+                            </div>
+                            <div class="feedback-info">
+                                <div class="stats-box">
+                                    <span class="stats-active">★</span>
+                                    <span class="stats-active">★</span>
+                                    <span class="stats-active">★</span>
+                                    <span class="stats-active">★</span>
+                                    <span class="stats-active">★</span>
+                                </div>
+                                <h3 class="feed-title">
+                                    <a href="javascript:void(0)">
+                                        I decide to make it for a little cam recorder that use a raspberry pi zero.
+                                    </a>
+                                </h3>
+                                <p class="feed-des">
+                                    I decide to make it for a little cam recorder that use a raspberry pi zero. I decide
+                                    to make it for a little cam recorder that use a raspberry pi zero.I decide to make
+                                    it for a little cam recorder that use a raspberry pi zero. 104 0 Apr 15.2019,
+                                    16:29:51
+                                </p>
+                                <div class="product-img-box">
+                                    <i> <img src="../img/images/order/product1.png" alt=""></i>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="parent-state">
+                        <div class="status">
+                            <p class="review-state">
+                                Under Review
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+                <!--审查中状态 [组合订单]-->
+                <tbody>
+                <tr>
+                    <td class="parent-info">
+                        <div class="parent-list">
+                            <div class="product-info">
+                                <div class="numbers-text">
+                                    <div class="o-id">
+                                        Order ID：GB6533
+                                    </div>
+                                    <div class="o-time">
+                                        Order time & date：2020.08.07 16:08:54
+                                    </div>
+                                    <div class="o-price">
+                                        Order amount: <span class="price">$29.00</span>
+                                    </div>
+                                    <div class="o-service">Service：So Touhi</div>
+                                    <div class="o-email">
+                                        E-mail：service02@pcbgogo.jp
+                                    </div>
+                                    <div class="o-info">67mm X 80mm 1 Layers 1.6mm 1 oz
+                                        Cu HASL with lead
+                                    </div>
+                                    <div class="pcb-number">
+                                        <div class="pcb-title">[PCB Production]</div>
+                                        <div class="o-no">Order No: B80001ASV750</div>
+                                    </div>
+                                    <div class="o-pie">$5.00 & 8122 pieces</div>
+                                </div>
+                                <a href="javascript:void(0)" class="numbers-pic">
+                                    <span class="iconfont icon-icon-xiangqing"></span>
+                                    <span>View Detail</span>
+                                </a>
+                            </div>
+                            <div class="feedback-info">
+                                <div class="stats-box">
+                                    <span class="stats-active">★</span>
+                                    <span class="stats-active">★</span>
+                                    <span class="stats-active">★</span>
+                                    <span class="stats-active">★</span>
+                                    <span class="stats-active">★</span>
+                                </div>
+                                <h3 class="feed-title">
+                                    <a href="javascript:void(0)">
+                                        I decide to make it for a little cam recorder that use a raspberry pi zero.
+                                    </a>
+                                </h3>
+                                <p class="feed-des">
+                                    I decide to make it for a little cam recorder that use a raspberry pi zero. I decide
+                                    to make it for a little cam recorder that use a raspberry pi zero.I decide to make
+                                    it for a little cam recorder that use a raspberry pi zero. 104 0 Apr 15.2019,
+                                    16:29:51
+                                </p>
+                                <div class="product-img-box">
+                                    <i> <img src="../img/images/order/product1.png" alt=""></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="parent-list">
+                            <div class="product-info">
+                                <div class="numbers-text">
+                                    <div class="o-id">
+                                        Order ID：GB6533
+                                    </div>
+                                    <div class="o-time">
+                                        Order time & date：2020.08.07 16:08:54
+                                    </div>
+                                    <div class="o-price">
+                                        Order amount: <span class="price">$29.00</span>
+                                    </div>
+                                    <div class="o-service">Service：So Touhi</div>
+                                    <div class="o-email">
+                                        E-mail：service02@pcbgogo.jp
+                                    </div>
+                                    <div class="o-info">67mm X 80mm 1 Layers 1.6mm 1 oz
+                                        Cu HASL with lead
+                                    </div>
+                                    <div class="pcb-number">
+                                        <div class="pcb-title">[PCB Production]</div>
+                                        <div class="o-no">Order No: B80001ASV750</div>
+                                    </div>
+                                    <div class="o-pie">$5.00 & 8122 pieces</div>
+                                </div>
+                                <a href="javascript:void(0)" class="numbers-pic">
+                                    <span class="iconfont icon-icon-xiangqing"></span>
+                                    <span>View Detail</span>
+                                </a>
+                            </div>
+                            <div class="feedback-info">
+                                <div class="stats-box">
+                                    <span class="stats-active">★</span>
+                                    <span class="stats-active">★</span>
+                                    <span class="stats-active">★</span>
+                                    <span class="stats-active">★</span>
+                                    <span class="stats-active">★</span>
+                                </div>
+                                <h3 class="feed-title">
+                                    <a href="javascript:void(0)">
+                                        I decide to make it for a little cam recorder that use a raspberry pi zero.
+                                    </a>
+                                </h3>
+                                <p class="feed-des">
+                                    I decide to make it for a little cam recorder that use a raspberry pi zero. I decide
+                                    to make it for a little cam recorder that use a raspberry pi zero.I decide to make
+                                    it for a little cam recorder that use a raspberry pi zero. 104 0 Apr 15.2019,
+                                    16:29:51
+                                </p>
+                                <div class="product-img-box">
+                                    <i> <img src="../img/images/order/product1.png" alt=""></i>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="parent-state">
+                        <div class="status">
+                            <p class="review-state">
+                                Under Review
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+                <!--通过状态-->
+                <tbody>
+                <tr>
+                    <td class="parent-info">
+                        <div class="parent-list">
+                            <div class="product-info">
+                                <div class="numbers-text">
+                                    <div class="o-id">
+                                        Order ID：GB6533
+                                    </div>
+                                    <div class="o-time">
+                                        Order time & date：2020.08.07 16:08:54
+                                    </div>
+                                    <div class="o-price">
+                                        Order amount: <span class="price">$29.00</span>
+                                    </div>
+                                    <div class="o-service">Service：So Touhi</div>
+                                    <div class="o-email">
+                                        E-mail：service02@pcbgogo.jp
+                                    </div>
+                                    <div class="o-info">67mm X 80mm 1 Layers 1.6mm 1 oz
+                                        Cu HASL with lead
+                                    </div>
+                                    <div class="pcb-number">
+                                        <div class="pcb-title">[PCB Production]</div>
+                                        <div class="o-no">Order No: B80001ASV750</div>
+                                    </div>
+                                    <div class="o-pie">$5.00 & 8122 pieces</div>
+                                </div>
+                                <a href="javascript:void(0)" class="numbers-pic">
+                                    <span class="iconfont icon-icon-xiangqing"></span>
+                                    <span>View Detail</span>
+                                </a>
+                            </div>
+                            <div class="feedback-info">
+                                <div class="stats-box">
+                                    <span class="stats-active">★</span>
+                                    <span class="stats-active">★</span>
+                                    <span class="stats-active">★</span>
+                                    <span class="stats-active">★</span>
+                                    <span class="stats-active">★</span>
+                                </div>
+                                <h3 class="feed-title">
+                                    <a href="javascript:void(0)">
+                                        I decide to make it for a little cam recorder that use a raspberry pi zero.
+                                    </a>
+                                </h3>
+                                <p class="feed-des">
+                                    I decide to make it for a little cam recorder that use a raspberry pi zero. I decide
+                                    to make it for a little cam recorder that use a raspberry pi zero.I decide to make
+                                    it for a little cam recorder that use a raspberry pi zero. 104 0 Apr 15.2019,
+                                    it for a little cam recorder that use a raspberry pi zero. 104 0 Apr 15.2019,
+                                    it for a little cam recorder that use a raspberry pi zero. 104 0 Apr 15.2019,
+                                    it for a little cam recorder that use a raspberry pi zero. 104 0 Apr 15.2019,
+                                    it for a little cam recorder that use a raspberry pi zero. 104 0 Apr 15.2019,
+                                    it for a little cam recorder that use a raspberry pi zero. 104 0 Apr 15.2019,
+                                    it for a little cam recorder that use a raspberry pi zero. 104 0 Apr 15.2019,
+                                    it for a little cam recorder that use a raspberry pi zero. 104 0 Apr 15.2019,
+                                    it for a little cam recorder that use a raspberry pi zero. 104 0 Apr 15.2019,
+                                    it for a little cam recorder that use a raspberry pi zero. 104 0 Apr 15.2019,
+                                    it for a little cam recorder that use a raspberry pi zero. 104 0 Apr 15.2019,
+                                    it for a little cam recorder that use a raspberry pi zero. 104 0 Apr 15.2019,
+                                    it for a little cam recorder that use a raspberry pi zero. 104 0 Apr 15.2019,
+                                    it for a little cam recorder that use a raspberry pi zero. 104 0 Apr 15.2019,
+                                    it for a little cam recorder that use a raspberry pi zero. 104 0 Apr 15.2019,
+                                    it for a little cam recorder that use a raspberry pi zero. 104 0 Apr 15.2019,
+                                    16:29:51
+                                </p>
+                                <div class="product-img-box">
+                                    <i> <img src="../img/images/order/product1.png" alt=""></i>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="parent-state">
+                        <div class="status">
+                            <p class="pass-state">
+                                Pass
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+                <!--失败状态-->
+                <tbody>
+                <tr>
+                    <td class="parent-info">
+                        <div class="parent-list">
+                            <div class="product-info">
+                                <div class="numbers-text">
+                                    <div class="o-id">
+                                        Order ID：GB6533
+                                    </div>
+                                    <div class="o-time">
+                                        Order time & date：2020.08.07 16:08:54
+                                    </div>
+                                    <div class="o-price">
+                                        Order amount: <span class="price">$29.00</span>
+                                    </div>
+                                    <div class="o-service">Service：So Touhi</div>
+                                    <div class="o-email">
+                                        E-mail：service02@pcbgogo.jp
+                                    </div>
+                                    <div class="o-info">67mm X 80mm 1 Layers 1.6mm 1 oz
+                                        Cu HASL with lead
+                                    </div>
+                                    <div class="pcb-number">
+                                        <div class="pcb-title">[PCB Production]</div>
+                                        <div class="o-no">Order No: B80001ASV750</div>
+                                    </div>
+                                    <div class="o-pie">$5.00 & 8122 pieces</div>
+                                </div>
+                                <a href="javascript:void(0)" class="numbers-pic">
+                                    <span class="iconfont icon-icon-xiangqing"></span>
+                                    <span>View Detail</span>
+                                </a>
+                            </div>
+                            <div class="feedback-info">
+                                <div class="stats-box">
+                                    <span class="stats-active">★</span>
+                                    <span class="stats-active">★</span>
+                                    <span class="stats-active">★</span>
+                                    <span class="stats-active">★</span>
+                                    <span class="stats-active">★</span>
+                                </div>
+                                <h3 class="feed-title">
+                                    <a href="javascript:void(0)">
+                                        I decide to make it for a little cam recorder that use a raspberry pi zero.
+                                    </a>
+                                </h3>
+                                <p class="feed-des">
+                                    I decide to make it for a little cam recorder that use a raspberry pi zero. I decide
+                                    to make it for a little cam recorder that use a raspberry pi zero.I decide to make
+                                    it for a little cam recorder that use a raspberry pi zero. 104 0 Apr 15.2019,
+                                    16:29:51
+                                </p>
+                                <div class="product-img-box">
+                                    <i> <img src="../img/images/order/product1.png" alt=""></i>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="parent-state">
+                        <div class="status">
+                            <p class="failed-state">
+                                Audit Failed
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--版权说明-->
+        <div class="copy-right-box">
+            Copyright © 2015 PCBGOGO. All rights reserved. Shenzhen JDB Technology Co., Ltd.Address: No. 15,
+            Zhongxing Road, Kengzi Street, Pingshan District, Shenzhen, 518000, China.
+        </div>
+    </div>
+    <!--遮罩层弹出-->
+    <div class="open-mask js-confirm-box">
+        <div class="confirm-box">
+            <p>Do you confirm this operation?</p>
+            <div class="confirm-btn">
+                <input type="button" value="YES" class="yes-btn">
+                <input type="button" value="NO" class="no-btn">
+            </div>
+        </div>
+    </div>
+</div>
+<!--右侧显示-->
+<div class="business-pic">
+    <div class="business-l">
+        <ul>
+            <li>
+                <a href="#" class="top-pics"><img src="../img/images/order/business-img.png" alt=""></a>
+            </li>
+            <li>
+                <a href="#" style="color: #ffffff">
+                    Liu...
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../img/images/order/skype.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../img/images/order/emails-icon.png" alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="business-r">
+        <ul>
+            <li><img src="../img/images/order/stars.png" alt=""></li>
+            <li><a href="#">
+                Daphne Liu
+            </a></li>
+            <li><a href="#">
+                pcbway.service
+            </a></li>
+            <li><a href="#">
+                service@pcbway.com
+            </a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

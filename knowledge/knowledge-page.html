@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!--网页标题左侧显示-->
+  <link rel="icon" href="../img/images/title-logo.png" type="image/x-icon">
+  <!--收藏夹显示图标-->
+  <link rel="shortcut icon" href="../img/images/title-logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="../img/css/knowledge/knowledge-page.css">
+</head>
+<body>
+<!--头部-->
+<div class="header">
+  <div class="nav-info">
+    <div class="nav-left">
+      <img class="nav-logo" src="img/images/new-year.gif" alt="new-year" width="199" height="61">
+    </div>
+    <ul class="nav-items">
+      <li>
+        <a href="javascript:void(0)">
+          <span class="iconfont icon-qushuchakanshuxing2"></span>
+          <span class="gerber">Online Gerber Viewer</span>
+        </a>
+      </li>
+      <li>
+        <a href="phone-display.html">
+          <span class="iconfont icon-shouji1"></span>
+          <span class="gerber">Mobile Website</span>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">
+          <span class="iconfont icon-Skype"></span>
+        </a>
+      </li>
+      <li><a href="mailto:service@pcbgogo.com">
+        <span class="iconfont icon-iconfontcolor06"></span>
+        <span class="mail-text">service@pcbgogo.com</span>
+      </a>
+      </li>
+      <li class="language"><span><img src="img/images/England.png" alt="country-flag"></span>&nbsp;&nbsp;English
+        <!--语言选择弹出层-->
+        <ul class="language-box">
+          <li onclick="window.open('index.html','_self')"><img src="img/images/England.png" alt="">&nbsp;&nbsp;English
+          </li>
+          <li onclick="window.open('https://www.pcbgogo.jp/','_blank')"><img src="img/images/Japan.png" alt="">&nbsp;&nbsp;Japanese
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="top-box">
+    <!--左侧logo-->
+    <h1 class="logo">
+      <a href="index.html">
+        PCBgogo
+      </a>
+    </h1>
+    <!--nav-tips-->
+    <img src="img/images/logo-tips.jpg" alt="logo tips" width="340" height="34" class="nav-tips">
+    <!--日文-->
+    <!--<img src="img/images/logo-tips_jp.jpg" alt="logo tips" width="336" height="34" class="nav-tips-jp">-->
+    <!--nav-tips-->
+    <!--右侧登录-->
+    <div class="sign-box">
+      <div class="sign-lists">
+        <div class="sign-in"><a href="javascript:void(0)">Sign in</a></div>
+        <div class="join"><a href="register-login.html">Join Free</a></div>
+        <div class="joined" style="display: block;">
+          <i><img src="img/images/user.png" alt=""></i>
+        </div>
+        <div class="hi-in" style="display: block;">
+          <a href="javascript:void(0)">Hi! zhang测大街上公开了坚朗</a>
+        </div>
+        <!--信息列表-->
+        <div class="person-info">
+          <!--  未登录-->
+          <div class="info" style="display: none;">
+            <div class="left-info">
+              <div class="tips">
+                New Customer?
+              </div>
+              <a class="join-free" href="register-login.html">
+                Join Free
+              </a>
+            </div>
+            <div class="right-info">
+              <a class="login-in" href="javascript:void(0)">
+                Sign in
+              </a>
+            </div>
+          </div>
+          <!--   已登录 -->
+          <div class="info" style="">
+            <div class="left-info">
+              <div class="tips">
+                Email: <span>20**@163.com</span>
+              </div>
+              <a class="out-btn" href="javascript:void(0)">
+                Sign Out
+              </a>
+            </div>
+          </div>
+
+          <div class="link-lists">
+            <!-- 有数量添加   active 类名-->
+            <div class="item">
+              <a href="javascript:void(0)">
+                <span> •  </span>
+                <span class="name">My Account</span>
+              </a>
+            </div>
+            <div class="item">
+              <a href="javascript:void(0)">
+                <span> •  </span>
+                <span class="name">My Orders list</span>
+              </a>
+            </div>
+            <div class="item active">
+              <a href="javascript:void(0)">
+                <span> •  </span>
+                <span class="name">Account Balance</span>
+              </a>
+            </div>
+            <div class="item">
+              <a href="javascript:void(0)">
+                <span> •  </span>
+                <span class="name">Discount coupon</span>
+              </a>
+            </div>
+            <div class="item">
+              <a href="javascript:void(0)">
+                <span> •  </span>
+                <span class="name">Reward points</span>
+              </a>
+            </div>
+            <div class="item">
+              <a href="javascript:void(0)">
+                <span> •  </span>
+                <span class="name">My Delivery Address</span>
+              </a>
+            </div>
+            <div class="item">
+              <a href="javascript:void(0)">
+                <span> •  </span>
+                <span class="name">My Forum</span>
+              </a>
+            </div>
+            <div class="item">
+              <a href="javascript:void(0)">
+                <span> •  </span>
+                <span class="name">Message</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  购物车-->
+      <div class="shopping-car">
+        <!-- 有数量添加 active 或者你元素控制显示与隐藏-->
+        <a href="javascript:void(0)" class="active">
+          <span class="iconfont icon-gouwuche1"></span>
+          <div class="of-cars">28</div>
+        </a>
+      </div>
+      <!-- 广告-->
+      <div class="ads-tips" style="display: none">
+        New here ? Getting <span>$50</span> coupon
+      </div>
+    </div>
+  </div>
+  <!--导航-->
+  <div class="nav">
+    <div class="nav-box">
+      <!--左侧列表-->
+      <ul class="nav-lists js-nav-lists">
+        <li><a href="javascript:void(0)">Home</a></li>
+        <li class="active">
+          <a href="javascript:void(0)">Instant Quote</a>
+          <!-- 二级菜单-->
+          <div class="child-menu">
+            <div class="item">
+              <a class="title" href="javascript:void(0)">
+                <span>PCB Prototype</span>
+              </a>
+            </div>
+            <div class="item">
+              <a class="title" href="javascript:void(0)">
+                <span> PCB Assembly</span>
+              </a>
+            </div>
+            <div class="item">
+              <a class="title" href="javascript:void(0)">
+                <span> FPC/Rigid-Flex</span>
+              </a>
+            </div>
+            <div class="item">
+              <a class="title" href="javascript:void(0)">
+                <span> SMD Stencil</span>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="javascript:void(0)">PCB Assembly</a>
+        </li>
+        <li><a href="javascript:void(0)">Advanced PCB</a></li>
+        <li>
+          <a href="javascript:void(0)">Capabilities</a>
+          <!-- 二级菜单-->
+          <div class="child-menu">
+            <div class="item">
+              <a class="title" href="javascript:void(0)">
+                <span> Printed Circuit Boards</span>
+              </a>
+              <!-- 三级菜单-->
+              <div class="son-box">
+                <div class="child-link">
+                  <div class="list">
+                    <a href="javascript:void(0)">
+                      <span class="name">Printed Circuit Board Prototype</span>
+                    </a>
+                  </div>
+                  <div class="list">
+                    <a href="javascript:void(0)">
+                      <span class="name">Aluminum PCB</span>
+                    </a>
+                  </div>
+                  <div class="list">
+                    <a href="javascript:void(0)">
+                      <span class="name">Rigid-Flex PCBs</span>
+                    </a>
+                  </div>
+                  <div class="list">
+                    <a href="javascript:void(0)">
+                      <span class="name">Metal core PCBs</span>
+                    </a>
+                  </div>
+                  <div class="list">
+                    <a href="javascript:void(0)">
+                      <span class="name">Printed Circuit Board Prototype</span>
+                    </a>
+                  </div>
+                  <div class="list">
+                    <a href="javascript:void(0)">
+                      <span class="name">Aluminum PCB</span>
+                    </a>
+                  </div>
+                  <div class="list">
+                    <a href="javascript:void(0)">
+                      <span class="name">Rigid-Flex PCBs</span>
+                    </a>
+                  </div>
+                  <div class="list">
+                    <a href="javascript:void(0)">
+                      <span class="name">Metal core PCBs</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <a class="title" href="javascript:void(0)">
+                <span> SMT Stencil</span>
+              </a>
+              <!-- 三级菜单-->
+              <div class="son-box">
+                <div class="child-link">
+                  <div class="list">
+                    <a href="javascript:void(0)">
+
+                      <span class="name">Aluminum PCB</span>
+                    </a>
+                  </div>
+                  <div class="list">
+                    <a href="javascript:void(0)">
+
+                      <span class="name">Rigid-Flex PCBs</span>
+                    </a>
+                  </div>
+                  <div class="list">
+                    <a href="javascript:void(0)">
+
+                      <span class="name">Metal core PCBs</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <a class="title" href="javascript:void(0)">
+                <span> SMD Stencil</span>
+              </a>
+              <!-- 三级菜单-->
+              <div class="son-box">
+                <div class="child-link">
+                  <div class="list">
+                    <a href="javascript:void(0)">
+
+                      <span class="name">Aluminum PCB3</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <a class="title" href="javascript:void(0)">
+                <span> PCB Design-Aid &amp; Layout</span>
+              </a>
+              <!-- 三级菜单-->
+              <div class="son-box">
+                <div class="child-link">
+                  <div class="list">
+                    <a href="javascript:void(0)">
+
+                      <span class="name">Aluminum PCB5</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <a class="title" href="javascript:void(0)">
+                <span>  生产周期</span>
+              </a>
+            </div>
+            <div class="item">
+              <a class="title" href="javascript:void(0)">
+                <span> 质量</span>
+              </a>
+            </div>
+            <div class="item">
+              <a class="title" href="javascript:void(0)">
+                <span> Other</span>
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <li><a href="javascript:void(0)">Knowledge Center</a>
+          <div class="child-menu">
+            <div class="item">
+              <a class="title" href="javascript:void(0)">
+                <span>Printed Circuit Boards1</span></a>
+              <!-- 三级菜单-->
+              <div class="son-box">
+                <div class="child-link">
+                  <div class="list">
+                    <a href="javascript:void(0)">
+                      <span class="name">Standard PCB Capabilities</span>
+                    </a>
+                  </div>
+                  <div class="list">
+                    <a href="javascript:void(0)">
+                      <span class="name">Advanced PCB Manufacturing</span>
+                    </a>
+                  </div>
+                  <div class="list">
+                    <a href="javascript:void(0)">
+                      <span class="name">Aluminum PCB manufacturing</span>
+                    </a>
+                  </div>
+                  <div class="list">
+                    <a href="javascript:void(0)">
+                      <span class="name">Flexible &amp; Rigid-Flex PCB manufacturing</span>
+                    </a>
+                  </div>
+                  <div class="list">
+                    <a href="javascript:void(0)">
+                      <span class="name">PCB Capabilities &amp; PCB Layout</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <a class="title" href="javascript:void(0)">
+                <span>Flexible &amp; Rigid-Flex PCB manufacturing</span>
+              </a>
+            </div>
+            <div class="item">
+              <a class="title" href="javascript:void(0)">
+                <span>PCB Capabilities &amp; PCB Layout</span>
+              </a>
+              <!-- 三级菜单-->
+              <div class="son-box">
+                <div class="child-link">
+                  <div class="list">
+                    <a href="javascript:void(0)">
+                      <span class="name">Aluminum PCB manufacturing</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li><a href="javascript:void(0)">Feedback</a>
+          <div class="child-menu">
+            <div class="item">
+              <a class="title" href="javascript:void(0)">
+                <span>Forum</span>
+              </a>
+            </div>
+            <div class="item">
+              <a class="title" href="javascript:void(0)">
+                <span>Feedback </span>
+              </a>
+            </div>
+            <div class="item">
+              <a class="title" href="javascript:void(0)">
+                <span>Current Events</span>
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <li><a href="javascript:void(0)">Contact Us</a>
+          <div class="child-menu">
+            <div class="item">
+              <a class="title" href="javascript:void(0)">
+                <span>  Why us  </span>
+              </a>
+            </div>
+            <div class="item">
+              <a class="title" href="javascript:void(0)">
+                <span>  Method of payment</span>
+              </a>
+            </div>
+            <div class="item">
+              <a class="title" href="javascript:void(0)">
+                <span> Introduction</span>
+              </a>
+            </div>
+            <div class="item">
+              <a class="title" href="javascript:void(0)">
+                <span> Privacy policy</span>
+              </a>
+            </div>
+            <div class="item">
+              <a class="title" href="javascript:void(0)">
+                <span> Order guide</span>
+              </a>
+            </div>
+            <div class="item">
+              <a class="title" href="javascript:void(0)">
+                <span>  Shipping method guide</span>
+              </a>
+            </div>
+            <div class="item">
+              <a class="title" href="javascript:void(0)">
+                <span> Quality gurrantee</span>
+              </a>
+            </div>
+            <div class="item">
+              <a class="title" href="javascript:void(0)">
+                <span> PCBgogo delivery</span>
+              </a>
+            </div>
+            <div class="item">
+              <a class="title" href="javascript:void(0)">
+                <span>  Contact Us </span>
+              </a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="main-box">
+  <div class="body-parent">
+    <div class="bbs_warp">
+      <div class="menu-box">
+        <div class="menu-title">
+          Knowledge Center
+        </div>
+        <ul class="menu-lists js-menu-lists">
+          <li>
+            <a href="javascript:void(0)">
+              Printed Circuit Boards
+            </a>
+            <!--二级菜单-->
+            <div class="sub-menus js-sub-menus">
+              <a href="javascript:void(0)">PCB Prototype</a>
+              <a href="javascript:void(0)">Aluminum PCB</a>
+              <a href="javascript:void(0)">Rigid-Flex PCBs</a>
+              <a href="javascript:void(0)">Metal core PCBs</a>
+            </div>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              SMT Stencil
+            </a>
+            <!--二级菜单-->
+            <div class="sub-menus js-sub-menus">
+              <a href="javascript:void(0)">Metal core PCBs</a>
+            </div>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              PCB assembly
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              PCB Design-Aid & Layout
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              Surface
+            </a>
+          </li>
+        </ul>
+        <div class="ads-box">
+          <a href="javascript:void(0)">
+            <img src="../img/images/order/ads2.jpg" alt="">
+          </a>
+        </div>
+      </div>
+      <!--图文显示-->
+      <div class="graphic-box">
+        <div class="graphic-title">
+          <div class="name">
+            MCPCB, Metal Core PCB, thermal PCB
+            MCPCB, Metal Core PCB, thermal PCB
+            MCPCB, Metal Core PCB, thermal PCB
+            MCPCB, Metal Core PCB, thermal PCB
+            MCPCB, Metal Core PCB, thermal PCB
+            MCPCB, Metal Core PCB, thermal PCB
+            MCPCB, Metal Core PCB, thermal PCB
+            MCPCB, Metal Core PCB, thermal PCB
+            MCPCB, Metal Core PCB, thermal PCB
+            MCPCB, Metal Core PCB, thermal PCB
+          </div>
+          <div class="info-des">
+            <span class="iconfont icon-shijian1"></span>
+            <span class="des">
+                      Feb 03.2020, 23:44:51
+                    </span>
+          </div>
+        </div>
+        <div class="graphic-des">
+          In recent years, LED industry has been rapidly developed, but the problem of heat dissipation has been
+          puzzling the application and
+          development of LED, especially high-power LED in the field of lighting. The application of metal substrate
+          provides a new way to solve the heat dissipation of LED effectively.
+          <br><br><br>
+          Metal core pcb is abbreviated as MCPCB, it is made of thermal insulating layer, metal plate and metal copper
+          foil, which has special magnetic conductivity, excellent heat dissipation, high mechanical strength and good
+          processing performance. For metal core base material, there is aluminum and copper base materials. Aluminum
+          substrate is a kind of metal-based copper clad plate with good heat transferring and
+          dissipation function. Copper substrate has better performance than aluminum, but its price is relatively more
+          expensive than aluminum.
+          <br><br><br>
+          <img src="../img/images/order/ads.gif" alt="">
+          Clients order aluminum pcbs more often, because the price of aluminum pcb is much more economic, they are used
+          for LED lighting, audio frequency apparatus and communication electronic equipment.
+          <br><br><br>
+          Mcpcb Stack UP
+          <img src="../img/images/banner3.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--底部-->
+<script src="../img/js/jquery/jquery-1.11.3.min.js"></script>
+<script src="../img/js/header.js"></script>
+<script>
+$(function () {
+  // 左侧菜单动态切换
+  $('.js-menu-lists li').click(function () {
+    $(this).toggleClass('active').siblings('li').removeClass('active')
+    $('.js-sub-menus a').removeClass('active')
+    $('.js-sub-menus').stop().slideUp()
+    if ($(this).hasClass('active')) {
+      $(this).find('.js-sub-menus').stop().slideDown()
+    } else {
+      $(this).find('.js-sub-menus').stop().slideUp()
+    }
+  })
+  $('.js-sub-menus a').click(function (e) {
+    $(this).addClass('active').siblings('a').removeClass('active')
+    e.stopPropagation()
+  })
+
+})
+</script>
+</body>
+</html>

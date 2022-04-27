@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="110px" height="95px" viewBox="0 0 110 95" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>付款未完成</title>
+    <defs>
+        <linearGradient x1="100%" y1="30.8056641%" x2="8.84232955%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#E0D7C7" offset="0%"></stop>
+            <stop stop-color="#D2C099" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="111.728395%" y1="30.8056641%" x2="-0.811938827%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#C3A563" offset="0%"></stop>
+            <stop stop-color="#987835" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="规范" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-1013.000000, -1044.000000)" fill-rule="nonzero">
+            <g id="付款未完成" transform="translate(1013.000000, 1044.000000)">
+                <rect id="Rectangle-19" fill="url(#linearGradient-1)" x="0" y="0" width="110" height="80" rx="10"></rect>
+                <rect id="Rectangle-21" fill="#BAAB92" x="12" y="55" width="86" height="11" rx="2"></rect>
+                <rect id="Rectangle-19" fill="#E8B13A" x="13" y="15" width="24" height="24" rx="4"></rect>
+                <path d="M31,32 L31,39 L27,39 L27,15 L31,15 L31,21 L37,21 L37,25 L31,25 L31,28 L37,28 L37,32 L31,32 Z M19,28 L19,25 L13,25 L13,21 L19,21 L19,15 L23,15 L23,39 L19,39 L19,32 L13,32 L13,28 L19,28 Z" id="Combined-Shape" fill="#F1BE4D"></path>
+                <path d="M58,15 L84,15 L84,19 L58,19 L58,15 Z M72,23 L90,23 L90,27 L72,27 L72,23 Z M94,23 L98,23 L98,27 L94,27 L94,23 Z M58,23 L68,23 L68,27 L58,27 L58,23 Z M88,15 L98,15 L98,19 L88,19 L88,15 Z" id="Combined-Shape" fill="#BAAB92"></path>
+                <path d="M35.17815,80 C35.0605203,79.0164091 35,78.0152722 35,77 C35,63.1928813 46.1928813,52 60,52 C73.8071187,52 85,63.1928813 85,77 C85,78.0152722 84.9394797,79.0164091 84.82185,80 L35.17815,80 Z" id="Combined-Shape" fill="#C1B292" opacity="0.6"></path>
+                <circle id="Oval-12" fill="url(#linearGradient-2)" cx="55" cy="70" r="25"></circle>
+                <path d="M58.125,57 L57.5,75.875 L52.625,75.875 L52,57 L58.125,57 Z M58.125,84 L52.125,84 L52.125,78.25 L58.125,78.25 L58.125,84 Z" id="！" fill="#6C5226"></path>
+            </g>
+        </g>
+    </g>
+</svg>

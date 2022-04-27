@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/edit-email.css">
+</head>
+<body>
+<div class="email-box">
+    <div class="nav-btn">
+        <a class="btn" href="javascript:void(0)">存草稿</a>
+        <a class="btn primary" href="javascript:void(0)">发送</a>
+    </div>
+    <!--    邮件列表 -->
+    <div class="email-content">
+        <!-- 收件人-->
+        <div class="recipient-box">
+            <span class="recipient-title">接收人账号：</span>
+            <div class="recipients-list js-recipients-list">
+                <!--                <div class="item">-->
+                <!--                    <span class="ui-text">djgajg45645@163.com</span>-->
+                <!--                    <span class="del">x</span>-->
+                <!--                </div>-->
+                <input type="text" class="get-account" placeholder="接收人账号">
+            </div>
+            <span class="select-recipient js-select-recipient">+选择接收人</span>
+            <span class="clear-btn js-clear-btn">清空</span>
+        </div>
+
+        <!--  抄送人-->
+        <div class="recipient-box">
+            <span class="recipient-title">抄送人：</span>
+            <div class="recipients-list js-cc-people">
+                <input type="text" class="get-account" placeholder="业务员账号">
+            </div>
+            <span class="select-recipient js-select-people">+选择业务员</span>
+            <span class="clear-btn js-clear-btn">清空</span>
+        </div>
+
+        <!-- 主题-->
+        <div class="recipient-box">
+            <span class="recipient-title">主题：</span>
+            <input type="text" class="theme" placeholder="主题">
+        </div>
+        <!--        附件-->
+        <div class="attachment-box">
+            <a href="javascript:void(0)" class="js-add-files">添加附件（20M以下）</a>
+            <a href="javascript:void(0)">添加超大附件 (会在下面回复内容的光标处生成一个下载超链接)</a>
+        </div>
+        <div class="attachment-lists js-attachment-lists">
+            <div class="item">
+                <b class="icon-logo"></b>
+                <div class="title-name">
+                    小附件PCB文件_w36092bse9…
+                    87KB上传完成
+                </div>
+                <div class="del">
+                    删除
+                </div>
+                <div class="state">
+                    <span class="nui-txt-suc">上传完成</span>
+                </div>
+            </div>
+        </div>
+        <!--  模板与主题-->
+        <div class="templates">
+            <div class="left-template">
+                <span class="type"> 主题和模板：</span>
+                <div class="template ">
+                    <div class="t-value js-template">
+                        <input type="text" readonly>
+                        <span class="iconfont icon-shangxia"></span>
+                    </div>
+                    <ul class="more-items js-more-items">
+                        <li>模板1111</li>
+                        <li>模板2222</li>
+                        <li>模板3333</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-template js-choose-template">
+                <label>
+                    <input type="radio" name="only">
+                    只选择主题
+                </label>
+                <label>
+                    <input type="radio" name="only">
+                    只选择模板
+                </label>
+            </div>
+        </div>
+
+        <!--  富文本编辑器 预留位置-->
+        <div class="rich-text">
+            我是富文本编辑器
+        </div>
+        <!--  富文本编辑器 预留位置-->
+        <div class="templates">
+            <div class="left-template">
+                <span class="type">发件人账号：</span>
+                <div class="template ">
+                    <div class="t-value js-template">
+                        <input type="text" readonly>
+                        <span class="iconfont icon-shangxia"></span>
+                    </div>
+                    <ul class="more-items js-more-items">
+                        <li>发件人111</li>
+                        <li>发件人2222</li>
+                        <li>发件人3333</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-template js-email-type">
+                <label>
+                    <input type="checkbox">
+                    加急
+                </label>
+                <label>
+                    <input type="checkbox">
+                    已读回执
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="lib/jquery-1.11.3.min.js"></script>
+<script>
+    $(function () {
+
+        //添加邮箱
+        $('.get-account').focus(function () {
+            $(this).removeAttr('placeholder');
+        });
+        $('.get-account').blur(function () {
+            addAccountFn($(this)[0]);
+        });
+        //选择接收人
+        $('.js-select-recipient').click(function () {
+            alert('沿用现有弹窗1');
+        });
+        //选择抄送人
+        $('.js-select-people').click(function () {
+            alert('沿用现有弹窗2');
+        });
+        //删除
+        $(document).on('click', '.recipient-box .del', function () {
+            $(this).parent().remove();
+        });
+        //清空
+        $('.js-clear-btn').click(function () {
+            $(this).parent().find('.item').remove();
+        });
+
+        //添加账户
+        function addAccountFn(obj) {
+            var reg = new RegExp('^[\\w._]+@([qQ][qQ]|[gG][mM][aA][iI][lL]|163)\\.[cC][oO][mM](\\r\\n|\\r|\\n)?$');
+            var account = $.trim($(obj).val());
+            if (account === '') {
+                $(obj).val('');
+                return;
+            }
+            if (reg.test(account)) {
+                $(obj).before(' <div class="item">\n' +
+                    '                    <span class="ui-text">' + account + '</span>\n' +
+                    '                    <span class="del">x</span>\n' +
+                    '                </div>');
+            } else {
+                $(obj).before(' <div class="item error" title="邮箱有误,请删除重新输入">\n' +
+                    '                    <span class="ui-text">' + account + '</span>\n' +
+                    '                    <span class="del">x</span>\n' +
+                    '                </div>');
+            }
+            $(obj).val('').focus();
+        }
+
+        //回车
+        $(document).keyup(function (e) {
+            if (e.keyCode === 13) {
+                if (e.target.className.indexOf('get-account') > -1) {
+                    var that = e.target;
+                    addAccountFn(that);
+                }
+            }
+        });
+
+
+        //添加附件   模拟效果套用删除
+        $('.js-add-files').click(function () {
+            $('.js-attachment-lists').append('  <div class="item">\n' +
+                '                <b class="icon-logo"></b>\n' +
+                '                <div class="title-name">\n' +
+                '                    小附件PCB文件_w36092bse9…\n' +
+                '                    87KB上传完成\n' +
+                '                </div>\n' +
+                '                <div class="del">\n' +
+                '                    删除\n' +
+                '                </div>\n' +
+                '                <div class="state">\n' +
+                '                    <span class="nui-txt-suc">上传完成</span>\n' +
+                '                </div>\n' +
+                '            </div>');
+        });
+        //上传附件列表删除
+        $(document).on('click', '.js-attachment-lists .del', function () {
+            $(this).parent().remove();
+        });
+
+        //主题与模板选择
+        $('.js-template').click(function (e) {
+            $(this).parent().find('.js-more-items').toggle();
+            e.stopPropagation();
+        });
+
+        $('.js-more-items li').click(function () {
+            $(this).parent().parent().find('input').val($.trim($(this).text()));
+            $(this).parent().hide();
+        });
+        $(document).on('click', function () {
+            $('.js-more-items').hide();
+        });
+
+        $('.js-choose-template label').click(function () {
+            $(this).addClass('active').siblings('label').removeClass('active');
+        });
+
+        //邮件类型
+        $('.js-email-type label').click(function (e) {
+            e.preventDefault();
+            $(this).toggleClass('active');
+        });
+
+    });//end function
+</script>
+</body>
+</html>

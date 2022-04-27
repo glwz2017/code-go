@@ -1,0 +1,74 @@
+//默认下拉框
+.drop-down {
+  display: inline-block;
+  position: relative;
+  border: 1px solid @colorDcdddd;
+  min-width: 200px;
+  background: #fff;
+  cursor: pointer;
+
+  &:after {
+    display: block;
+    content: '';
+    .positionR(absolute, 50%, 10px, 1);
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAK9JREFUOE9jZKAQMFKon2G4GXD77t2pjAwMXFjD5f9/sPB/RsZvqsrK2TA1GGFw586dVQyMjKHYDGFkYFimrKwcjSyHYcD///8Z796/v4/h/38HNEO2qygre6EbjDUW7ty5I/afgWE/IyOjFtjZ//+f4ObicpaSkvpGlAEgRbcfPtRm/PMHZMjbP79/u6irqz/F4S3cSenOnTuODAwMr1VUVK7gUjXcEhI5GYviMAAAiQ0xEZkrbZIAAAAASUVORK5CYII=) no-repeat center;
+    width: 7px;
+    height: 5px;
+    margin-top: -2px;
+    pointer-events: none;
+  }
+
+  .filter-info {
+    background: #fff;
+    .widthAndHeight(auto, 30px);
+    line-height: 30px;
+    text-indent: 15px;
+    border: none;
+    float: none;
+    .textEellipsis;
+  }
+
+  .drop-lists {
+    width: 100%;
+    .positionL(absolute, 30px, -1px, 3);
+    background: #fff;
+    border: 1px solid @colorDcdddd;
+    max-height: 160px;
+    overflow-y: auto;
+    display: none;
+    box-sizing: content-box;
+
+
+    li {
+      padding: 6px 0 6px 15px;
+      cursor: pointer;
+
+      &.the-tag {
+        color: @color858585;
+        cursor: default;
+
+        a {
+          cursor: default;
+        }
+
+        &:hover {
+          background: none;
+          color: @color858585;
+        }
+      }
+
+      &:hover {
+        background: @color1b99f3;
+        color: #fff;
+      }
+    }
+  }
+}
+
+//激活下拉框
+.active-drop {
+  &:after {
+    transform: rotate(180deg);
+  }
+}
+

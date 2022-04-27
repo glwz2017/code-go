@@ -1,0 +1,96 @@
+//宽高
+.widthAndHeight(@width;@height) {
+  width: @width;
+  height: @height;
+}
+
+//行与行高 垂直居中
+.heightAndLineHeight(@height;@line-height) {
+  height: @height;
+  line-height: @line-height;
+}
+
+//元素左依据定位
+.positionL(@position;@top;@left;@zIndex) {
+  position: @position;
+  top: @top;
+  left: @left;
+  z-index: @zIndex;
+}
+
+//元素右依据定位
+.positionR(@position;@top;@right;@zIndex) {
+  position: @position;
+  top: @top;
+  right: @right;
+  z-index: @zIndex;
+}
+
+//图片等比自适应居中
+.imgAdaptiveCenter(@zIndex) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  z-index: @zIndex;
+}
+
+//超出出现省略号单行
+.textEellipsis {
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+//现代浏览器多行
+.moreTextEellipsis(@column) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: @column;
+  -webkit-box-orient: vertical;
+}
+
+//清浮动
+.clearF {
+  &:after {
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    clear: both;
+  }
+}
+
+//弹窗居中
+.dialogCenter(@dialogTop;@dialogLeft;@zIndex) {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin: @dialogTop 0 0 @dialogLeft;
+  z-index: @zIndex;
+}
+
+//重置盒模型
+.boxSizing(@sizing:border-box) {
+  -webkit-box-sizing: @arguments;
+  -moz-box-sizing: @arguments;
+  box-sizing: @arguments;
+}
+
+//圆角
+.borderRadius(@radius) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+//禁止选中
+.userSelect{
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}

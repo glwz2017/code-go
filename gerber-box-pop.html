@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="img/fonts/iconfont.css">
+  <link rel="stylesheet" href="img/css/gerber-box-pop.css">
+</head>
+<body>
+<!-- gerber 文件弹窗  -->
+<div class="gerber-box-pop">
+  <div class="gerber-section-l js-gerber-box">
+    <div class="gerber-nav js-gerber-nav">
+      <div class="nav-cell active">
+        Fast inquiry
+      </div>
+      <div class="nav-cell ">
+        Components Sourcing
+      </div>
+    </div>
+    <div class="gerber-row">
+      <div class="gerber-tips">
+        * Items designated with an asterisk are required fields.
+      </div>
+      <div class="drag-drop-box">
+        <div class="set-drag-box">
+          <input class="get-file-el" type="file">
+          <div class="">Click Add File or drag the into this area to upload</div>
+          <button class="add-file" type="button">+ Add File</button>
+          <!--          上传中状态-->
+          <div class="the-cross-el" style="display: none">
+            <div class="cross-name">On the cross …</div>
+            <!--        环形进度-->
+            <div class="overall-num js-overall-progress"></div>
+          </div>
+          <!--          上传完成状态-->
+          <div class="the-voltooide-el" style="display: none">
+            <span class="iconfont icon-guanbi"></span>
+            <span class="voltoo-name">20A0FF文件名.xls</span>
+          </div>
+        </div>
+        <!--  Fast inquiry 提示-->
+        <div class="accept-tips fast-el">Currently we only accept .pcb .pcbdoc .cam Gerber files and Eagle
+          files(.rar or .zip
+          Maximum 10M) for PCB fabrication.
+        </div>
+        <!--  Components Sourcing 提示-->
+        <div class="accept-tips sourcing-el">
+          Only. xls. xlsx. csv files are accepted.
+          <a class="down-btn" href="javascript:void(0)">BOM Template file</a>
+        </div>
+      </div>
+    </div>
+    <!--  Fast inquiry 提示-->
+    <div class="gerber-row fast-el">
+      <div class="gerber-tips">
+        * Email
+      </div>
+      <input class="example-email" type="text" placeholder="example@gmail.com">
+    </div>
+    <div class="gerber-row fast-el">
+      <div class="gerber-tips">
+        * Message
+      </div>
+      <textarea class="more-note" name="" placeholder="Tell us more about your PCB requirements or anything else you'd like
+us to know."></textarea>
+    </div>
+
+    <!--  Components Sourcing 提示-->
+    <div class="gerber-row sourcing-el">
+      <div class="gerber-tips">
+        * Manufacturer
+      </div>
+      <div class="search-manufacturer">
+        <span class="iconfont icon-search js-icon-search"></span>
+        <input type="text" class="get-search js-manufacturers">
+      </div>
+    </div>
+    <div class="gerber-row sourcing-el">
+      <div class="manufact-el">
+        <div class="gerber-tips">
+          * Manufacturer Number
+        </div>
+        <input class="example-email" type="text">
+      </div>
+      <div class="manufact-el">
+        <div class="gerber-tips">
+          * Quantity
+        </div>
+        <div class="search-manufacturer">
+          <input class="example-email" type="text" placeholder="0">
+        </div>
+      </div>
+    </div>
+    <div class="gerber-row sourcing-el">
+      <div class="gerber-tips">
+        * Message
+      </div>
+      <textarea class="more-note" name="" placeholder="Note (Special requests, links)"></textarea>
+    </div>
+    <div class="gerber-btn-group">
+      <button class="submit-btn js-submit-gerber" type="submit">Submit</button>
+    </div>
+  </div>
+  <div class="gerber-section-r"></div>
+</div>
+<!--反馈提示-->
+<div class="js-prompted-pop" style="display: none">
+  <div class="prompted-pop">
+    <div class="prompted-pop-wrap">
+      <div class="prompted-pop-title">
+        We've got your inquiry, <br>and our service will reply you within 48 hours.
+      </div>
+      <button class="to-btn js-prompt-btn" type="button">
+        OK
+      </button>
+    </div>
+  </div>
+</div>
+
+<!--供应商选择弹窗-->
+<div class="supplier-pop js-supplier-pop">
+  <div class="supplier-pop-head">
+    <div class="close-btn js-close-supplier">
+      <span class="iconfont icon-guanbi1"></span>
+    </div>
+    <div class="pop-title">Manufacturer</div>
+    <div class="choose-tips">
+      最多只能选择5个供应商，如供应商列表中找不到你所需要的，你可把供应商填写到“Note”中。
+    </div>
+    <div class="supplier-result js-supplier-result">
+      <!--   若有已选的供应商，已逗号分割一下         -->
+      <input class="js-old-supplier" type="text" value="3M Electrical Spec,Abbracon/ ProAnt" hidden>
+    </div>
+    <button type="button" class="submit-btn js-submit-supplier">submit</button>
+  </div>
+  <div class="supplier-pop-body">
+    <div class="supplier-wrap">
+      <div class="quick-guide-parent">
+        <dl class="quick-guide">
+          <dt>
+            All
+          </dt>
+          <dd>
+            <a href="#anchor#">#</a>
+          </dd>
+          <dd>
+            <a href="#anchorA">A</a>
+          </dd>
+          <dd>
+            <a href="#anchorB">B</a>
+          </dd>
+          <dd>
+            <a href="#anchorC">C</a>
+          </dd>
+          <dd>
+            <a href="#anchorD">D</a>
+          </dd>
+          <dd>
+            <a href="#anchorE">E</a>
+          </dd>
+          <dd>
+            <a href="#anchorF">F</a>
+          </dd>
+          <dd>
+            <a href="#anchorG">G</a>
+          </dd>
+          <dd>
+            <a href="#anchorH">H</a>
+          </dd>
+          <dd>
+            <a href="#anchorI">I</a>
+          </dd>
+          <dd>
+            <a href="#anchorJ">J</a>
+          </dd>
+          <dd>
+            <a href="#anchorK">K</a>
+          </dd>
+          <dd>
+            <a href="#anchorL">L</a>
+          </dd>
+          <dd>
+            <a href="#anchorM">M</a>
+          </dd>
+          <dd>
+            <a href="#anchorN">N</a>
+          </dd>
+          <dd>
+            <a href="#anchorO">O</a>
+          </dd>
+          <dd>
+            <a href="#anchorP">P</a>
+          </dd>
+          <dd>
+            <a href="#anchorQ">Q</a>
+          </dd>
+          <dd>
+            <a href="#anchorR">R</a>
+          </dd>
+          <dd>
+            <a href="#anchorS">S</a>
+          </dd>
+          <dd>
+            <a href="#anchorT">T</a>
+          </dd>
+          <dd>
+            <a href="#anchorU">U</a>
+          </dd>
+          <dd>
+            <a href="#anchorV">V</a>
+          </dd>
+          <dd>
+            <a href="#anchorW">W</a>
+          </dd>
+          <dd>
+            <a href="#anchorX">X</a>
+          </dd>
+          <dd>
+            <a href="#anchorY">Y</a>
+          </dd>
+          <dd>
+            <a href="#anchorZ">Z</a>
+          </dd>
+        </dl>
+      </div>
+      <div class="supplier-search">
+        <input type="text" class="set-supplier js-get-supplier" placeholder="Search Supplier Name">
+        <button type="button" class="search-btn js-search-btn">
+          <span class="iconfont icon-search"></span>
+        </button>
+      </div>
+      <div class="supplier-row-box js-supplier-params">
+        <!--   空状态  -->
+        <div class="empty-items js-empty-items">
+          <div><span>0</span> Results for "<span class="js-tag-name">Search tag</span>"</div>
+          <div class="not-find"> Sorry! No result found. You can remark the manufacturer you need to us.</div>
+        </div>
+        <!-- a-z 类别-->
+        <div class="supplier-row" id="anchor#">
+          <div class="supplier-index">
+            #
+          </div>
+          <div class="supplier-menus">
+            <div class="menu active">
+              3M Electrical Spec.
+            </div>
+            <div class="menu">
+              3M Touch Systems / TES
+            </div>
+          </div>
+        </div>
+        <div class="supplier-row" id="anchorA">
+          <div class="supplier-index">
+            A
+          </div>
+          <div class="supplier-menus">
+            <div class="menu">
+              Aavid
+            </div>
+            <div class="menu">
+              ABB
+            </div>
+            <div class="menu">
+              Abbatron / HH Smith
+            </div>
+            <div class="menu">
+              Abbracon/ ProAnt
+            </div>
+            <div class="menu">
+              ABLIC Inc
+            </div>
+            <div class="menu">
+              Abracon
+            </div>
+            <div class="menu">
+              Acme Electric
+            </div>
+            <div class="menu">
+              Acme Staple Company Inc.
+            </div>
+            <div class="menu">
+              Adam Tech
+            </div>
+            <div class="menu">
+              Advanced Thermal Solutions, Inc
+            </div>
+            <div class="menu">
+              AEM Components
+            </div>
+            <div class="menu">
+              AI Next LLC
+            </div>
+            <div class="menu">
+              AIM Inc.
+            </div>
+            <div class="menu">
+              AIM-Cambridge / Cinch Connectivity Solutions
+            </div>
+            <div class="menu">
+              Aishi Capacitor
+            </div>
+            <div class="menu">
+              Akro Mils
+            </div>
+            <div class="menu">
+              Aleph America
+            </div>
+            <div class="menu">
+              Allen / Apex
+            </div>
+            <div class="menu">
+              Alpha Wire
+            </div>
+            <div class="menu">
+              Alps Electric
+            </div>
+            <div class="menu">
+              Altech
+            </div>
+            <div class="menu">
+              Altran Magnetics
+            </div>
+            <div class="menu">
+              American Bright
+            </div>
+            <div class="menu">
+              American Bright
+            </div>
+            <div class="menu">
+              American Electrical
+            </div>
+            <div class="menu">
+              American Zettler
+            </div>
+            <div class="menu">
+              Amperite
+            </div>
+            <div class="menu">
+              Amphenol Advanced Sensor/Nova Sensor
+            </div>
+            <div class="menu">
+              Amphenol Advanced Sensor/Telaire
+            </div>
+            <div class="menu">
+              Amphenol Advanced Sensor/Thermometrics
+            </div>
+            <div class="menu">
+              AMPHENOL AEROSPACE OPERATIONS
+            </div>
+            <div class="menu">
+              Amphenol Audio / Entertainment
+            </div>
+            <div class="menu">
+              Amphenol I/O
+            </div>
+            <div class="menu">
+              Amphenol ICC
+            </div>
+            <div class="menu">
+              Amphenol ICC
+            </div>
+            <div class="menu">
+              Amphenol Industrial Operations
+            </div>
+            <div class="menu">
+              Amphenol LTW
+            </div>
+            <div class="menu">
+              Amphenol RF
+            </div>
+            <div class="menu">
+              Amphenol Sine Systems
+            </div>
+            <div class="menu">
+              Amphenol Solar
+            </div>
+            <div class="menu">
+              Amphenol Spectra-Strip
+            </div>
+            <div class="menu">
+              Amphenol Tuchel
+            </div>
+            <div class="menu">
+              Amprobe
+            </div>
+            <div class="menu">
+              Anderson Power Products
+            </div>
+            <div class="menu">
+              APEM Inc.
+            </div>
+            <div class="menu">
+              APEX
+            </div>
+            <div class="menu">
+              Arbor Solutions Inc.
+            </div>
+            <div class="menu">
+              Arc Suppression Technologies
+            </div>
+            <div class="menu">
+              Arcolectric (Bulgin Ltd.)
+            </div>
+            <div class="menu">
+              Aries Electronics, Inc.
+            </div>
+            <div class="menu">
+              Armstrong / Apex
+            </div>
+            <div class="menu">
+              Arrow Hart / Cooper
+            </div>
+            <div class="menu">
+              Assmann WSW Components
+            </div>
+            <div class="menu">
+              Astrodyne TDI (7)
+            </div>
+            <div class="menu">
+              Astrodyne TDI/Filter Concepts
+            </div>
+            <div class="menu">
+              Astrodyne TDI/LCR (560)
+
+            </div>
+            <div class="menu">
+              Astrodyne TDI/Radius Power
+
+            </div>
+            <div class="menu">
+              AT Components
+            </div>
+            <div class="menu">
+              ATC DIVERSIFIED ELECTRONICS
+            </div>
+            <div class="menu">
+              Aven Tools
+            </div>
+            <div class="menu">
+              AZ Displays, Inc.
+            </div>
+          </div>
+        </div>
+        <div class="supplier-row" id="anchorB">
+          <div class="supplier-index">
+            B
+          </div>
+          <div class="supplier-menus">
+            <div class="menu">
+              B&K Precision Corp
+            </div>
+            <div class="menu">
+              BACO Controls, Inc.
+            </div>
+            <div class="menu">
+              Baumer Electric
+            </div>
+            <div class="menu">
+              Bel Fuse
+            </div>
+            <div class="menu">
+              Bel Power Solutions
+            </div>
+            <div class="menu">
+              Belden
+            </div>
+            <div class="menu">
+              BES Manufacturing
+
+            </div>
+            <div class="menu">
+              BI Technologies/TT Electronics
+
+
+            </div>
+            <div class="menu">
+              Biddle
+            </div>
+            <div class="menu">
+              Binder-USA
+            </div>
+            <div class="menu">
+              BlockMaster Electronics
+            </div>
+            <div class="menu">
+              Brady Corporation
+            </div>
+            <div class="menu">
+              Bud Industries
+            </div>
+            <div class="menu">
+              Bulgin Limited
+            </div>
+            <div class="menu">
+              Bussmann / Eaton
+            </div>
+            <div class="menu">
+              Bourns
+            </div>
+          </div>
+        </div>
+        <div class="supplier-row" id="anchorC">
+          <div class="supplier-index">
+            C
+          </div>
+          <div class="supplier-menus">
+            <div class="menu">
+              C&K
+
+            </div>
+            <div class="menu">
+              Calmark Birtcher
+
+            </div>
+            <div class="menu">
+              Calrad Electronics
+
+            </div>
+            <div class="menu">
+              CALTEST
+
+            </div>
+            <div class="menu">
+              Campbell / Apex
+
+            </div>
+            <div class="menu">
+              Capcom / Genteq
+
+            </div>
+            <div class="menu">
+              Carling Technologies
+
+            </div>
+            <div class="menu">
+              Carlisle Interconnect Technologies
+
+            </div>
+            <div class="menu">
+              Carlo Gavazzi
+
+            </div>
+            <div class="menu">
+              Carol Cable
+
+            </div>
+            <div class="menu">
+              Celduc
+
+            </div>
+            <div class="menu">
+              Chargetek
+
+            </div>
+            <div class="menu">
+              Chemi-Con
+
+            </div>
+            <div class="menu">
+              Chemtronics
+
+            </div>
+            <div class="menu">
+              CHERRY
+            </div>
+            <div class="menu">
+              Chilisin
+            </div>
+            <div class="menu">
+              Cicoil
+
+            </div>
+            <div class="menu">
+              Cinch Connectivity Solutions
+
+
+            </div>
+            <div class="menu">
+              Circuit Assembly Corp.
+
+            </div>
+            <div class="menu">
+              Circuit Breaker Industries
+            </div>
+            <div class="menu">
+              Circuitco
+            </div>
+            <div class="menu">
+              CIT Relay and Switch
+            </div>
+            <div class="menu">
+              CNC Tech
+            </div>
+            <div class="menu">
+              Concord Electronics, Inc.
+            </div>
+            <div class="menu">
+              Conxall
+            </div>
+            <div class="menu">
+              Cornell Dubilier
+            </div>
+            <div class="menu">
+              Cornell Dubilier/Mallory
+            </div>
+            <div class="menu">
+              COTEK
+            </div>
+            <div class="menu">
+              Coto Technology
+            </div>
+          </div>
+        </div>
+        <div class="supplier-row" id="anchorD">
+          <div class="supplier-index">
+            D
+          </div>
+          <div class="supplier-menus">
+            <div class="menu">
+              Crouse-Hinds/Cooper
+            </div>
+            <div class="menu">
+              Crouzet
+            </div>
+            <div class="menu">
+              CTS Corporation
+            </div>
+            <div class="menu">
+              CUI Devices
+            </div>
+            <div class="menu">
+              CUI Inc
+            </div>
+            <div class="menu">
+              Curtis Industries
+            </div>
+            <div class="menu">
+              Curtis Instruments
+            </div>
+            <div class="menu">
+              Custom Connector
+            </div>
+            <div class="menu">
+              Cutler-Hammer / Eaton
+            </div>
+            <div class="menu">
+              Cvilux
+            </div>
+            <div class="menu">
+              CW Industries
+            </div>
+            <div class="menu">
+              Cynergy3
+            </div>
+            <div class="menu">
+              Cyntec
+            </div>
+            <div class="menu">
+              Crescent / Apex
+            </div>
+          </div>
+        </div>
+        <div class="supplier-row" id="anchorE">
+          <div class="supplier-index">
+            E
+          </div>
+          <div class="supplier-menus">
+            <div class="menu">
+              Crouse-Hinds/Cooper
+            </div>
+            <div class="menu">
+              Crouzet
+            </div>
+            <div class="menu">
+              CTS Corporation
+            </div>
+            <div class="menu">
+              CUI Devices
+            </div>
+            <div class="menu">
+              CUI Inc
+            </div>
+            <div class="menu">
+              Curtis Industries
+            </div>
+            <div class="menu">
+              Curtis Instruments
+            </div>
+            <div class="menu">
+              Custom Connector
+            </div>
+            <div class="menu">
+              Cutler-Hammer / Eaton
+            </div>
+            <div class="menu">
+              Cvilux
+            </div>
+            <div class="menu">
+              CW Industries
+            </div>
+            <div class="menu">
+              Cynergy3
+            </div>
+            <div class="menu">
+              Cyntec
+            </div>
+            <div class="menu">
+              Crescent / Apex
+            </div>
+          </div>
+        </div>
+        <div class="supplier-row" id="anchorF">
+          <div class="supplier-index">
+            F
+          </div>
+          <div class="supplier-menus">
+            <div class="menu">
+              Crouse-Hinds/Cooper
+            </div>
+            <div class="menu">
+              Crouzet
+            </div>
+            <div class="menu">
+              CTS Corporation
+            </div>
+            <div class="menu">
+              CUI Devices
+            </div>
+            <div class="menu">
+              CUI Inc
+            </div>
+            <div class="menu">
+              Curtis Industries
+            </div>
+            <div class="menu">
+              Curtis Instruments
+            </div>
+            <div class="menu">
+              Custom Connector
+            </div>
+            <div class="menu">
+              Cutler-Hammer / Eaton
+            </div>
+            <div class="menu">
+              Cvilux
+            </div>
+            <div class="menu">
+              CW Industries
+            </div>
+            <div class="menu">
+              Cynergy3
+            </div>
+            <div class="menu">
+              Cyntec
+            </div>
+            <div class="menu">
+              Crescent / Apex
+            </div>
+          </div>
+        </div>
+        <div class="supplier-row" id="anchorG">
+          <div class="supplier-index">
+            G
+          </div>
+          <div class="supplier-menus">
+            <div class="menu">
+              Crouse-Hinds/Cooper
+            </div>
+            <div class="menu">
+              Crouzet
+            </div>
+            <div class="menu">
+              CTS Corporation
+            </div>
+            <div class="menu">
+              CUI Devices
+            </div>
+            <div class="menu">
+              CUI Inc
+            </div>
+            <div class="menu">
+              Curtis Industries
+            </div>
+            <div class="menu">
+              Curtis Instruments
+            </div>
+            <div class="menu">
+              Custom Connector
+            </div>
+            <div class="menu">
+              Cutler-Hammer / Eaton
+            </div>
+            <div class="menu">
+              Cvilux
+            </div>
+            <div class="menu">
+              CW Industries
+            </div>
+            <div class="menu">
+              Cynergy3
+            </div>
+            <div class="menu">
+              Cyntec
+            </div>
+            <div class="menu">
+              Crescent / Apex
+            </div>
+          </div>
+        </div>
+        <div class="supplier-row" id="anchorH">
+          <div class="supplier-index">
+            H
+          </div>
+          <div class="supplier-menus">
+            <div class="menu">
+              Crouse-Hinds/Cooper
+            </div>
+            <div class="menu">
+              Crouzet
+            </div>
+            <div class="menu">
+              CTS Corporation
+            </div>
+            <div class="menu">
+              CUI Devices
+            </div>
+            <div class="menu">
+              CUI Inc
+            </div>
+            <div class="menu">
+              Curtis Industries
+            </div>
+            <div class="menu">
+              Curtis Instruments
+            </div>
+            <div class="menu">
+              Custom Connector
+            </div>
+            <div class="menu">
+              Cutler-Hammer / Eaton
+            </div>
+            <div class="menu">
+              Cvilux
+            </div>
+            <div class="menu">
+              CW Industries
+            </div>
+            <div class="menu">
+              Cynergy3
+            </div>
+            <div class="menu">
+              Cyntec
+            </div>
+            <div class="menu">
+              Crescent / Apex
+            </div>
+          </div>
+        </div>
+        <div class="supplier-row" id="anchorI">
+          <div class="supplier-index">
+            I
+          </div>
+          <div class="supplier-menus">
+            <div class="menu">
+              Crouse-Hinds/Cooper
+            </div>
+            <div class="menu">
+              Crouzet
+            </div>
+            <div class="menu">
+              CTS Corporation
+            </div>
+            <div class="menu">
+              CUI Devices
+            </div>
+            <div class="menu">
+              CUI Inc
+            </div>
+            <div class="menu">
+              Curtis Industries
+            </div>
+            <div class="menu">
+              Curtis Instruments
+            </div>
+            <div class="menu">
+              Custom Connector
+            </div>
+            <div class="menu">
+              Cutler-Hammer / Eaton
+            </div>
+            <div class="menu">
+              Cvilux
+            </div>
+            <div class="menu">
+              CW Industries
+            </div>
+            <div class="menu">
+              Cynergy3
+            </div>
+            <div class="menu">
+              Cyntec
+            </div>
+            <div class="menu">
+              Crescent / Apex
+            </div>
+          </div>
+        </div>
+        <div class="supplier-row" id="anchorJ">
+          <div class="supplier-index">
+            J
+          </div>
+          <div class="supplier-menus">
+            <div class="menu">
+              Crouse-Hinds/Cooper
+            </div>
+            <div class="menu">
+              Crouzet
+            </div>
+            <div class="menu">
+              CTS Corporation
+            </div>
+            <div class="menu">
+              CUI Devices
+            </div>
+            <div class="menu">
+              CUI Inc
+            </div>
+            <div class="menu">
+              Curtis Industries
+            </div>
+            <div class="menu">
+              Curtis Instruments
+            </div>
+            <div class="menu">
+              Custom Connector
+            </div>
+            <div class="menu">
+              Cutler-Hammer / Eaton
+            </div>
+            <div class="menu">
+              Cvilux
+            </div>
+            <div class="menu">
+              CW Industries
+            </div>
+            <div class="menu">
+              Cynergy3
+            </div>
+            <div class="menu">
+              Cyntec
+            </div>
+            <div class="menu">
+              Crescent / Apex
+            </div>
+          </div>
+        </div>
+        <div class="supplier-row" id="anchorK">
+          <div class="supplier-index">
+            K
+          </div>
+          <div class="supplier-menus">
+            <div class="menu">
+              Crouse-Hinds/Cooper
+            </div>
+            <div class="menu">
+              Crouzet
+            </div>
+            <div class="menu">
+              CTS Corporation
+            </div>
+            <div class="menu">
+              CUI Devices
+            </div>
+            <div class="menu">
+              CUI Inc
+            </div>
+            <div class="menu">
+              Curtis Industries
+            </div>
+            <div class="menu">
+              Curtis Instruments
+            </div>
+            <div class="menu">
+              Custom Connector
+            </div>
+            <div class="menu">
+              Cutler-Hammer / Eaton
+            </div>
+            <div class="menu">
+              Cvilux
+            </div>
+            <div class="menu">
+              CW Industries
+            </div>
+            <div class="menu">
+              Cynergy3
+            </div>
+            <div class="menu">
+              Cyntec
+            </div>
+            <div class="menu">
+              Crescent / Apex
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="img/js/jquery/jquery-1.11.3.min.js"></script>
+<script src="img/js/layer-v3.1.1/layer/layer.js"></script>
+<script src="img/js/radialIndicator/radialIndicator.min.js"></script>
+<script>
+$(function () {
+  // 导航切换
+  $('.js-gerber-nav .nav-cell').click(function () {
+    var navIndex = $(this).index()
+    $(this).addClass('active').siblings('.nav-cell').removeClass('active')
+    if (navIndex === 1) {
+      $('.js-gerber-box .fast-el').hide()
+      $('.js-gerber-box .sourcing-el').show()
+      // 清空上次状态
+      $('.the-voltooide-el .voltoo-name').html('');
+      $('.the-voltooide-el').hide();
+      $('.js-overall-progress').empty();
+    } else {
+      $('.js-gerber-box .fast-el').show()
+      $('.js-gerber-box .sourcing-el').hide()
+    }
+  })
+
+  $('.get-file-el').change(function (e) {
+    var targetFile = e.target.files[0].name
+    uploadAnimateFn(targetFile);
+    // 清空同名文件二次上传
+    e.target.value = ''
+  })
+
+  $('.js-gerber-box .icon-guanbi').click(function () {
+    $(this).parent().find('.voltoo-name').html('').end().hide()
+  })
+
+  // 环形上传进度动画
+  function uploadAnimateFn(targetFile) {
+    var animateObj = radialIndicator('.js-overall-progress', {
+      radius: 15,
+      barWidth: 2,
+      barColor: '#E02D2D',
+      barBgColor: '#f2f2f2',
+      initValue: 0,
+      minValue: 0,
+      fontSize: '6x',
+      maxValue: 100,
+      duration: 1200,
+      // percentage:true,
+      fontColor: '#313131',
+      displayNumber: true
+    });
+    $({
+      // 起始值
+      countNum: 0
+    }).animate({
+      // 最终值
+      countNum: 100
+    }, {
+      // 动画持续时间
+      duration: 1600,
+      easing: "linear",
+      step: function () {
+        $('.add-file').hide(); // 上传按钮
+        $('.the-voltooide-el').hide(); // 文件名称
+        $('.the-cross-el').show() // 显示进度条
+        // 执行上传动画 上传动画0-100直接数值
+        animateObj.value(Math.fround(this.countNum));
+      },
+      complete: function () {
+        $('.add-file').show()
+        $('.the-cross-el').hide()
+        $('.the-voltooide-el .voltoo-name').html(targetFile);
+        $('.the-voltooide-el').show();
+        $('.js-overall-progress').empty();
+        animateObj.value(Math.fround(this.countNum));
+      }
+    });
+  }
+
+
+  // 供应商选择
+  $('.js-icon-search').click(function () {
+    $('.js-supplier-pop').show()
+  })
+
+  // 选择供应商
+  void function () {
+    var tempSupplierArr = [];
+
+    // 去掉空数组
+    function removeEmptyFn() {
+      var tempArr = $('.js-old-supplier').val().split(',')
+      for (var i = 0; i < tempArr.length; i++) {
+        if (tempArr[i] === '') {
+          tempArr.splice(0, 1)
+        }
+      }
+      tempSupplierArr = tempArr
+    }
+
+    removeEmptyFn();
+
+    if (tempSupplierArr.length > 0) {
+      $('.js-supplier-result').html('').html(createSupplierDom())
+    }
+    $('.js-search-btn').click(function () {
+      if ($.trim($(this).prev().val()) === '') {
+        layer.msg('Please input to query supplier')
+        return false;
+      }
+      var getSupplier = $.trim($('.js-get-supplier').val()).toLowerCase()
+      $('.js-supplier-params .menu').each(function () {
+        if ($.trim($(this).text()).toLowerCase().indexOf(getSupplier) === -1) {
+          $(this).addClass('is-hidden').removeClass('is-mark')
+        } else {
+          $(this).removeClass('is-hidden').addClass('is-mark')
+        }
+      })
+      $('.js-supplier-params .supplier-row').each(function () {
+        if ($(this).find('.is-mark').length <= 0) {
+          $(this).hide()
+        }
+      })
+
+      $('.js-supplier-params .supplier-row').each(function () {
+        $(this).addClass('no-data')
+        if ($(this).is(':hidden')) {
+          $(this).removeClass('no-data')
+        }
+      })
+
+      if ($('.supplier-row-box .no-data').length <= 0) {
+        $('.js-empty-items').show().find('.js-tag-name').html(getSupplier)
+      }
+    })
+
+    $('.js-get-supplier').keyup(function () {
+      $('.js-empty-items').hide()
+      $('.js-supplier-params .supplier-row').show()
+      $('.js-supplier-params .supplier-row').removeClass('no-data')
+      $('.js-supplier-params .menu').removeClass('is-hidden').addClass('is-mark')
+    })
+
+    $(document).on('click', '.js-supplier-result .icon-guanbi1', function () {
+      $(this).parent().remove()
+      var matchName = $.trim($(this).parent().text())
+      var matchIndex = tempSupplierArr.indexOf(matchName)
+      tempSupplierArr.splice(matchIndex, 1);
+    })
+
+    $('.js-close-supplier').click(function () {
+      $(this).parents('.js-supplier-pop').fadeOut()
+    })
+
+    function createSupplierDom() {
+      var tempStr = '';
+      for (var i = 0; i < tempSupplierArr.length; i++) {
+        tempStr += '<div class="supplier">\n' +
+          '                <span class="iconfont icon-guanbi1"></span>\n' +
+          '                ' + tempSupplierArr[i] + '' +
+          '            </div>'
+      }
+      return tempStr
+    }
+
+    $('.js-supplier-params .menu').click(function () {
+      $('.js-supplier-params .menu').removeClass('active')
+      $(this).addClass('active')
+      var supplierName = $.trim($(this).text())
+      if (tempSupplierArr.indexOf(supplierName) === -1) {
+        if (tempSupplierArr.length <= 4) {
+          tempSupplierArr.push(supplierName)
+          $('.js-supplier-result').html('').html(createSupplierDom())
+        } else {
+          layer.msg('Can only choose a maximum of 5 suppliers')
+        }
+      }
+    })
+
+    $('.js-submit-supplier').click(function () {
+      $('.js-supplier-pop').fadeOut()
+      $('.js-manufacturers').val(tempSupplierArr)
+    })
+  }();
+
+  // 提交按钮
+  $('.js-submit-gerber').click(function () {
+    layer.open({
+      type: 1,
+      title: 'Reply info',
+      content: $('.js-prompted-pop').html(),
+      area: ['420px', '270px'],
+      success: function () {
+        $('.js-prompt-btn').click(function () {
+          top.layer.closeAll()
+        })
+      }
+    })
+
+  })
+
+})
+</script>
+</body>
+</html>

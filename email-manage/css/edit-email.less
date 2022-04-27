@@ -1,0 +1,266 @@
+@import "css-function.less";
+@import "../fonts/iconfont.css";
+@import "base.less";
+@import "email.less";
+//邮件列表
+.email-content {
+  min-height: 200px;
+  margin-top: 10px;
+  border-top: 1px solid #cfcfcf;
+
+  .get-account {
+    width: 76px;
+    margin-right: 10px;
+  }
+
+  .theme {
+    width: 90%;
+  }
+
+  .recipient-box {
+    width: 900px;
+    min-height: 30px;
+    border-bottom: 1px solid #ccc;
+    padding-top: 23px;
+    .clearF;
+
+    .recipient-title {
+      float: left;
+      width: 72px;
+    }
+
+    .recipients-list {
+      float: left;
+      max-width: 720px;
+
+      .item {
+        float: left;
+        .heightAndLineHeight(20px; 20px);
+        background: #bed6e5;
+        border-radius: 10px;
+        padding: 0 2px 0 10px;
+        overflow: hidden;
+        position: relative;
+        margin-right: 6px;
+        margin-bottom: 6px;
+
+        .ui-text {
+          display: inline-block;
+          padding: 0 10px 0 0;
+          cursor: default;
+          float: left;
+          margin: 0 18px 0 0;
+          overflow: hidden;
+          position: relative;
+          text-overflow: ellipsis;
+          max-width: 180px;
+          white-space: nowrap;
+        }
+
+        .del {
+          border-left: 1px solid #ffffff;
+          font-weight: 700;
+          line-height: 16px;
+          color: #ffffff;
+          height: 20px;
+          cursor: pointer;
+          display: block;
+          position: absolute;
+          text-decoration: none;
+          right: 0;
+          top: 1px;
+          width: 16px;
+          padding-left: 5px;
+        }
+      }
+
+      .error {
+        background: #EDB8B8;
+      }
+    }
+  }
+
+  .select-recipient {
+    color: @primary;
+    cursor: pointer;
+    float: left;
+  }
+
+  .clear-btn {
+    color: @danger;
+    cursor: pointer;
+    float: right;
+  }
+}
+
+//附件
+.attachment-box {
+  margin-top: 25px;
+
+  a {
+    color: @primary;
+    margin-right: 30px;
+
+    &:hover {
+      color: @danger;
+      text-decoration: underline;
+    }
+  }
+}
+
+//附件列表
+.attachment-lists {
+  margin-top: 12px;
+  max-width: 926px;
+  .clearF;
+
+  .item {
+    .widthAndHeight(300px; 44px);
+    float: left;
+    position: relative;
+    margin: 0 8px 8px 0;
+    .borderRadius(3px);
+    overflow: visible;
+    font-size: 12px;
+    background-color: #E3EAF4;
+
+    .icon-logo {
+      background: url("../img/email-logo.png") no-repeat center;
+      .widthAndHeight(32px; 32px);
+      margin: 7px 0 0 4px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .title-name {
+      .widthAndHeight(200px; 16px);
+      .textEellipsis;
+      .positionL(absolute, 4px, 41px, 3);
+      color: #666;
+    }
+
+    .del {
+      .positionR(absolute, 5px, 6px, 3);
+      font-size: 12px;
+      color: @primary;
+      cursor: pointer;
+      .userSelect;
+    }
+
+    .state {
+      height: 16px;
+      .textEellipsis;
+      color: #B0B0B0;
+      .positionL(absolute, 21px, 41px, 3);
+      font-size: 12px;
+    }
+  }
+}
+
+//模板与主题
+.templates {
+  margin-top: 20px;
+  .clearF;
+
+  .left-template {
+    float: left;
+
+    .type {
+      float: left;
+      margin: 2px 5px 0 0;
+    }
+  }
+
+  .template {
+    float: left;
+    color: #4a4a4a;
+    border: 1px solid #cfcfcf;
+    .borderRadius(4px);
+    position: relative;
+
+    .t-value {
+      height: 20px;
+
+      input {
+        .borderRadius(4px);
+        .heightAndLineHeight(20px; 20px);
+        .userSelect;
+        text-indent: 15px;
+        max-width: 300px;
+        min-width: 218px;
+        margin-right: 0;
+        float: left;
+        cursor: pointer;
+      }
+
+      .iconfont {
+        font-size: 12px;
+        float: left;
+        margin: 2px 3px 0 0;
+        color: #9b9b9b;;
+      }
+    }
+
+    //选项值
+    .more-items {
+      .positionL(absolute, 21px, -1px, 3);
+      background-color: #ffffff;
+      border: 1px solid #cfcfcf;
+      border-top: transparent;
+      width: 100%;
+      display: none;
+
+      li {
+        .heightAndLineHeight(28px; 28px);
+        text-indent: 15px;
+
+        &:hover {
+          background-color: #ccc;
+        }
+      }
+    }
+  }
+
+  .right-template {
+    float: left;
+    margin: 2px 0 0 20px;
+    cursor: pointer;
+
+    label {
+      position: relative;
+      margin-right: 10px;
+      .userSelect;
+
+      &:after {
+        display: block;
+        content: '';
+        .widthAndHeight(14px; 14px);
+        border: 1px solid #9b9b9b;
+        background-color: #f1f1f1;
+        .positionL(absolute, 0, -1px, 3);
+        .borderRadius(4px);
+      }
+
+      input {
+        vertical-align: bottom;
+        margin-right: 5px;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        -ms-opacity: 0;
+        -webkit--ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';
+      }
+    }
+
+    .active {
+      &:after {
+        background-color: #9b9b9b;
+      }
+    }
+  }
+}
+
+//富文本 编辑器
+.rich-text {
+  min-height: 200px;
+  margin-top: 15px;
+}

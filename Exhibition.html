@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>展示会の招待状 | PCBGOGO.JP</title>
+    <!--网页标题左侧显示-->
+    <link rel="icon" href="img/images/title-logo.png" type="image/x-icon">
+    <!--收藏夹显示图标-->
+    <link rel="shortcut icon" href="img/images/title-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="img/css/public.css">
+    <link rel="stylesheet" href="img/css/animate/motion.min.css">
+    <!--字体图标-->
+    <link rel="stylesheet" href="img/fonts/iconfont.css">
+    <link rel="stylesheet" href="img/css/header.css">
+    <link rel="stylesheet" href="img/css/footer.css">
+    <style>
+
+        body {
+            overflow-x: hidden;
+        }
+
+        @font-face {
+            font-family: 'tgfont';
+            src: url('img/tgfont/W8.ttc') format('ttc');
+        }
+
+        .banner {
+            background: url("img/images/activity/jcpa-banner.jpg") no-repeat center;
+            width: 100%;
+            min-width: 1280px;
+            height: 570px;
+        }
+
+        .banner .banner-title {
+            width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            color: #ffffff;
+            padding-top: 100px;
+            font-size: 68px;
+            font-family: 'tgfont';
+            font-weight: bold;
+        }
+
+        .entertain-box {
+            background-color: #ffffff;
+            position: relative;
+        }
+
+        .entertain-box .container_warp {
+            padding-top: 120px;
+        }
+
+        .entertain-box .entertain-time {
+            position: absolute;
+            top: -98px;
+            height: auto;
+            z-index: 9;
+            width: 1200px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 -6px 36px 8px rgba(0, 0, 0, .2);
+        }
+
+        .entertain-box .entertain-time .item {
+            float: left;
+            width: 33.3%;
+            padding: 43px 0;
+            text-align: center;
+            border-left: 1px solid #eeeeee;
+            box-sizing: border-box;
+        }
+
+        .entertain-box .entertain-time .item span {
+            font-size: 18px;
+            color: #d10a22;
+        }
+
+        .entertain-box .entertain-time .item .text {
+            font-size: 24px;
+            color: #222222;
+            margin-top: 10px;
+            font-weight: bold;
+            font-family: 'tgfont';
+        }
+
+        .entertain-box .entertain-time .item:first-child {
+            border-left: none;
+        }
+
+        .instructions-box {
+            border: 1px solid #eeeeee;
+            width: 1200px;
+            min-height: 200px;
+            padding: 70px 0 0 70px;
+            box-sizing: border-box;
+        }
+
+        .instructions-box .ins-left {
+            float: left;
+            position: relative;
+            width: 410px;
+        }
+
+        .instructions-box .ins-left .shape {
+            position: absolute;
+            top: 110px;
+            left: 170px;
+            z-index: 7;
+        }
+
+        @keyframes flash1 {
+            0% {
+                opacity: 1;
+            }
+            20% {
+                opacity: .8;
+            }
+            40% {
+                opacity: .6;
+            }
+            60% {
+                opacity: .6;
+            }
+            80% {
+                opacity: .8;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .instructions-box .ins-left .flag {
+            animation: flash1 infinite ease 6s;
+        }
+
+        .instructions-box .ins-right {
+            float: left;
+            width: 650px;
+            position: relative;
+            z-index: 12;
+        }
+
+        .instructions-box .ins-right .name {
+            font-size: 26px;
+            color: #414141;
+            margin-bottom: 20px;
+        }
+
+        .instructions-box .ins-right p {
+            text-indent: 1em;
+            font-size: 24px;
+        }
+
+        .gift-box {
+            background: url("img/images/activity/jpgift-bg.png") no-repeat center;
+            width: 1201px;
+            height: 160px;
+            margin: 40px 0;
+            color: #ffffff;
+            font-size: 18px;
+            position: relative;
+        }
+
+        .gift-box .name {
+            position: absolute;
+            left: 90px;
+            top: 50px;
+            z-index: 3;
+            font-family: 'tgfont';
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .gift-box > p {
+            float: right;
+            margin: 50px 80px 0 0;
+        }
+
+        .the-exhibition {
+            background-color: #fafafa;
+            padding-bottom: 60px;
+        }
+
+        .the-exhibition .exhibition {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .the-exhibition .exhibition h2 {
+            font-size: 36px;
+            color: #232323;
+            padding-top: 40px;
+            text-align: center;
+            font-family: 'tgfont';
+            font-weight: bold;
+        }
+
+        .the-exhibition .exhibition .photos-box {
+            width: 1200px;
+            height: 600px;
+            margin: 30px auto 0;
+            position: relative;
+        }
+
+        .the-exhibition .exhibition .photos-box .photo {
+            height: 460px;
+            overflow: hidden;
+            background: url("img/images/loading.gif") no-repeat center;
+            position: relative;
+            cursor: pointer;
+            width: 1000px;
+            margin: 0 auto;
+            user-select: none;
+        }
+
+        .the-exhibition .exhibition .photos-box .photo .big-img {
+            width: 1000px;
+            height: 460px;
+        }
+
+        .the-exhibition .exhibition .photos-box .photo .big-img img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .the-exhibition .exhibition .photos-box .left, .right {
+            position: absolute;
+            top: 50%;
+            margin-top: -33px;
+            width: 64px;
+            height: 66px;
+            line-height: 66px;
+            text-align: center;
+            transition: all .3s;
+            color: #ffffff;
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, .3);
+            z-index: 10;
+            font-size: 36px;
+        }
+
+        .the-exhibition .exhibition .photos-box .left .iconfont, .right .iconfont {
+            font-size: 46px;
+        }
+
+        .the-exhibition .exhibition .photos-box .left {
+            left: 0px;
+        }
+
+        .the-exhibition .exhibition .photos-box .left:hover {
+            left: 0;
+            background-color: #444444;
+        }
+
+        .the-exhibition .exhibition .photos-box .right {
+            right: 0px;
+
+        }
+
+        .the-exhibition .exhibition .photos-box .right:hover {
+            right: 0;
+            background-color: #444444;
+        }
+
+        .the-exhibition .exhibition .photos-box .photo-parent {
+            margin: 0 auto;
+            width: 1000px;
+            position: relative;
+        }
+
+        .the-exhibition .exhibition .photos-box .photo-list {
+            margin-top: 10px;
+            margin-left: -10px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .the-exhibition .exhibition .photos-box .photo-list li {
+            width: 191px;
+            height: 123px;
+            float: left;
+            margin-left: 11px;
+            overflow: hidden;
+            background: url("img/images/loading.gif") no-repeat center;
+            position: relative;
+        }
+
+        .the-exhibition .exhibition .photos-box .photo-list li img {
+            max-width: 99.2%;
+        }
+
+        .the-exhibition .exhibition .photos-box .photo-list .active img {
+            border: 1px solid red;
+        }
+
+        .the-exhibition .exhibition .page-box {
+            position: absolute;
+            top: 0;
+            left: 36px;
+            font-size: 30px;
+            color: #ffffff;
+            z-index: 15;
+        }
+
+        .map-box {
+            margin-top: 40px;
+            padding-bottom: 80px;
+        }
+
+        .map-box .map {
+            width: 1200px;
+            margin: 0 auto;
+            height: 432px;
+            color: #ffffff;
+            font-size: 24px;
+            background-color: #272727;
+        }
+
+        .map-box .map .left-item {
+            float: left;
+            width: 484px;
+            height: 430px;
+            padding: 45px 0 0 50px;
+            box-sizing: border-box;
+        }
+
+        .map-box .map .left-item p {
+            margin-bottom: 10px;
+        }
+
+        .map-box .coor {
+            display: table-cell;
+            vertical-align: middle;
+            padding: 23px 0;
+            border-top: 1px solid #454545;
+        }
+
+        .map-box .coor span:first-child {
+            font-size: 34px;
+            line-height: 34px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .map-box .coor span:first-child + span {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .map-box .map .address {
+            color: #9c6040;
+            float: right;
+            margin-top: 7px;
+        }
+
+        .map-box .map .xiazai {
+            padding-top: 16px;
+            border-top: 1px solid #454545;
+            width: 335px;
+        }
+
+        .map-box .map .xiazai .icon-xiazai {
+            font-size: 34px;
+            margin-right: 10px;
+        }
+
+        .map-box .map .address:hover {
+            text-decoration: underline;
+        }
+
+        .map-box .map .right-item {
+            float: left;
+            background: url("img/images/activity/map-bg.jpg") no-repeat center;
+            width: 715px;
+            height: 430px;
+            margin-top: 1px;
+            position: relative;
+        }
+
+        .map-box .map .location {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            right: 70px;
+            top: 197px;
+        }
+
+
+    </style>
+</head>
+<body>
+<!--头部-->
+<div class="header">
+    <!--顶部-->
+    <div class="nav-info">
+        <div class="nav-left">
+            <img class="nav-logo" src="img/images/new-year.gif" alt="new-year" width="199" height="61">
+        </div>
+        <ul class="nav-items">
+            <li>
+                <a href="javascript:void(0)">
+                    <span class="iconfont icon-qushuchakanshuxing2"></span>
+                    <span class="gerber">Online Gerber Viewer</span>
+                </a>
+            </li>
+            <li>
+                <a href="phone-display.html">
+                    <span class="iconfont icon-shouji1"></span>
+                    <span class="gerber">Mobile Website</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <span class="iconfont icon-Skype"></span>
+                </a>
+            </li>
+            <li><a href="mailto:service@pcbgogo.com">
+                <span class="iconfont icon-E-mail"></span>
+                <span class="mail-text">service@pcbgogo.com</span>
+            </a>
+            </li>
+            <li class="language"><span><img src="img/images/England.png" alt="country-flag"></span>&nbsp;&nbsp;English
+                <!--语言选择弹出层-->
+                <ul class="language-box">
+                    <li onclick="window.open('index.html','_self')"><img src="img/images/England.png" alt="">&nbsp;&nbsp;English
+                    </li>
+                    <li onclick="window.open('https://www.pcbgogo.jp/','_blank')"><img
+                            src="img/images/Japan.png" alt="">&nbsp;&nbsp;Japanese
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="top-box">
+        <!--左侧logo-->
+        <h1 class="logo">
+            <a href="index.html">
+                PCBgogo
+            </a>
+        </h1>
+        <!--nav-tips-->
+        <img src="img/images/logo-tips.jpg" alt="logo tips" width="340" height="34" class="nav-tips">
+        <!--日文-->
+        <!--<img src="img/images/logo-tips_jp.jpg" alt="logo tips" width="336" height="34" class="nav-tips-jp">-->
+        <!--nav-tips-->
+        <!--右侧登录-->
+        <div class="sign-box">
+            <ul class="sign-lists">
+                <li class="sign-in"><a href="javascript:void(0)">Sign in</a></li>
+                <li class="join"><a href="javascript:void(0)">Join Free</a></li>
+                <li class="hi-in"><a href="javascript:void(0)"><strong>Hi! The
+                    user...</strong></a></li>
+                <li class="joined">
+                    <i><img src="img/images/user.png" alt="" width="40" height="40"></i><span class="pointer">
+                        <img src="img/images/down-pointer.png" alt=""></span>
+                    <!--登陆后-->
+                    <div class="user-item">
+                        <div class="account active">
+                            My Account
+                        </div>
+                        <div class="account">
+                            My Orders list
+                        </div>
+                        <div class="account">
+                            My Delivery Address
+                        </div>
+                        <div class="facebook-btn ">
+                            Bind FaceBook
+                        </div>
+                        <div class="out-btn " style="margin-top: 10px">
+                            Sign Out
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--导航-->
+    <div class="nav">
+        <div class="nav-box">
+            <!--<div class="container_warp">-->
+            <!--左侧列表-->
+            <ul class="nav-lists">
+                <li class="active"><a href="index.html" class="home">Home</a></li>
+                <li><a href="PCBPrototype.html">PCB Instant Quote</a></li>
+                <li class="assembly-menus">
+                    <a href="PCBAssembly.html">PCB Assembly</a>
+                    <ol class="next-item">
+                        <li><a href="PCBAssembly.html">PCB Assembly</a></li>
+                        <li><a href="old-process/pcbaCapabilitiesProcess.html">PCBA process</a></li>
+                    </ol>
+                </li>
+                <li><a href="pcbLayout.html">PCB Layout</a></li>
+                <li class="capabilities-menus"><a href="pcbCapabilities.html">Capabilities</a>
+                    <ol class="capa-sub-menus">
+                        <li><a href="pcbCapabilities.html">PCB Capabilities</a></li>
+                        <li><a href="pcbaCapabilities.html">PCBA Capabilities</a></li>
+                        <li><a href="pcbLayoutCapabilities.html">PCB Layout capabilities</a></li>
+                        <li><a href="PCBPCBAQuickturnService.html">PCB& PCBA quickturn service</a></li>
+                        <li><a href="PCBPrototypeMassProduction.html">PCB Prototype& Mass production</a></li>
+                    </ol>
+                </li>
+                <li><a href="reviewList.html">Forum</a></li>
+                <li class="contact-menus"><a href="aboutUs.html">About Us</a>
+                    <ol class="contact-sub-menus">
+                        <li><a href="whyUs.html">Why us</a></li>
+                        <li><a href="methodPayment.html">Method of payment</a></li>
+                        <li><a href="Introduction.html">Introduction</a></li>
+                        <li><a href="privacyPolicy.html">Privacy policy</a></li>
+                        <li><a href="orderGuide.html">Order guide</a></li>
+                        <li><a href="shippingMethod.html">Shipping method guide</a></li>
+                        <li><a href="qualityGurrantee.html">Quality gurrantee</a></li>
+                        <li><a href="gogoDelivery.html">PCBgogo delivery</a></li>
+                    </ol>
+                </li>
+                <!--后续添加-->
+                <!--<li><a href="forum.html">Blog</a></li>-->
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+            <!--右侧图标-->
+            <div class="shopping-box">
+                <ul class="js-hints">
+                    <li class="active"><a href="member/newsed.html" title="Message">
+                        <span class="iconfont icon-ai-message"></span>
+                    </a>
+                        <i class="point"></i>
+                    </li>
+                    <li class="active"><a href="member/coupon-page.html" title="Coupons">
+                        <span class="iconfont icon-youhuiquan"></span>
+                    </a>
+                        <i class="point"></i>
+                    </li>
+                    <li class="active"><a href="member/awaiting-payment.html" title="Awaiting payment">
+                        <span class="iconfont icon-fukuan"></span>
+                    </a>
+                        <i class="point now-hide"></i>
+                    </li>
+                    <li class="car-box"><a href="member/shopping-car.html" title="Shopping cart">
+                        <span class="iconfont icon-gouwuche1"></span>
+                    </a>
+                        <i class="round car-nums">10</i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="banner">
+    <div class="banner-title">
+        <h2 class="fade-in-down">2020年</h2>
+        <div class="clip-xy-in">インターネプコンジャパン</div>
+        <span>
+            開催！！
+        </span>
+    </div>
+</div>
+<div class="entertain-box">
+    <div class="container_warp">
+        <div class="entertain-time back-in-left">
+            <div class="item">
+                <span>会期：</span>
+                <p class="text">2020年01月15〜17日</p>
+            </div>
+            <div class="item">
+                <span>PCBGOGOブース番号：</span>
+                <p class="text">S17-14（南展示棟2F）</p>
+            </div>
+            <div class="item">
+                <span>会場：</span>
+                <p class="text">東京ビッグサイト</p>
+            </div>
+        </div>
+        <div class="instructions-box clear-fix">
+            <div class="ins-left">
+                <img class="flag" src="img/images/activity/ins-left.png" alt="">
+                <img class="shape" src="img/images/activity/shape1.png" alt="" width="200" height="90">
+            </div>
+            <div class="ins-right">
+                <div class="name">
+                    皆様
+                </div>
+                <p>
+                    こんにちは！これまでの長い間のご支援とご信用
+                    を賜りまして、厚く御礼を申し上げます。弊社は2020
+                    年01月15日（水）～17日（金）の３日間で日本東京ビ
+                    ックサイトで開催される「インターネプコンジャパン」
+                    に出展することになります。弊社のブース番号は
+                    <br>S17-14（南展示棟2F）となります。
+                </p>
+                <p>
+                    この機会を通して、直接に皆様とお会いできてお話で
+                    きることを楽しみにしております。より深い信頼関係を築
+                    くこと、共同で成長を促進することを心から望んでいます。
+                </p>
+                <p>
+                    ぜひご来場賜りますよう謹んでお願い申し上げます。
+                </p>
+            </div>
+        </div>
+        <div class="gift-box">
+            <div class="name">
+                素敵な来場プレゼント
+            </div>
+            <p>
+                展示会期間中は、様々な割引特典と素敵な来場プレゼントは用意されており、
+                <br>皆様がお取りにいらっしゃることをお待ちしております。
+            </p>
+        </div>
+    </div>
+</div>
+<div class="the-exhibition">
+    <div class="exhibition">
+        <h2>過去展示会の写真</h2>
+        <div class="photos-box js-photos-box">
+            <!-- number-->
+            <div class="left">
+                <span class="iconfont icon-jiantou-copy"></span>
+            </div>
+            <div class="right">
+                <span class="iconfont icon-arrow-right"></span>
+            </div>
+            <div class="photo js-photo">
+                <div class="big-img">
+                    <img src="img/images/activity/photo1.jpg" alt="" width="1000" height="460">
+                </div>
+            </div>
+            <!--list-->
+            <div class="photo-parent">
+                <div class="page-box">
+                    <span class="js-now-page">1</span>/ <span>5</span>
+                </div>
+                <ul class="photo-list clear-fix js-photo-list">
+                    <li class="active">
+                        <img src="img/images/activity/sphoto1.png" alt="">
+                    </li>
+                    <li>
+                        <img src="img/images/activity/sphoto2.png" alt="">
+                    </li>
+                    <li>
+                        <img src="img/images/activity/sphoto3.png" alt="">
+                    </li>
+                    <li>
+                        <img src="img/images/activity/sphoto4.png" alt="">
+                    </li>
+                    <li>
+                        <img src="img/images/activity/sphoto5.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="map-box">
+    <div class="map">
+        <div class="left-item">
+            <p>PCBGOGO出展情報、会場案内、
+                <br>招待券に関するお問い合わせは、
+                <br>service@pcbgogo.jp にお問い合
+                <br>わせください。</p>
+            <div class="coor">
+                <span class="iconfont icon-zuobiao"></span>
+                <span>
+                               会場アドレス　〒135-0063
+                              <br>東京都江東区有明3-11-1
+              </span>
+            </div>
+<!--            <div class="xiazai">-->
+<!--                <span class="iconfont icon-xiazai"></span>-->
+<!--                <a href="img/images/activity/floorLayout.pdf" download="ガイド図" class="address">-->
+<!--                    案内図をダウンロードする-->
+<!--                </a>-->
+<!--            </div>-->
+
+        </div>
+        <div class="right-item">
+            <img class="location" src="img/images/activity/locationgif.gif" alt="">
+        </div>
+
+
+    </div>
+</div>
+<!--底部-->
+<div class="footer clear-float">
+    <!--一级导航-->
+    <div class="footer-title clear-float">
+        <div class="container_warp">
+            <ul class="footer-title-ul">
+                <li>
+                    <dl>
+                        <dt>
+                            <span class="iconfont icon-icon-test1"></span>
+                        </dt>
+                        <dd>
+                            100% <br>Quality <br>Guarantees
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <span class="iconfont icon-DHLshandian"></span>
+                        </dt>
+                        <dd>
+                            3-5days' <br>Delivery <br>(DHL)
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <span class="iconfont icon-ISO"></span>
+                        </dt>
+                        <dd>
+                            International <br>Organization <br>forStandardization
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <span class="iconfont icon-UL"></span>
+                        </dt>
+                        <dd>
+                            Underwriter <br>Laboratories <br>Inc.
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--二级列表-->
+    <div class="links-type clear-float">
+        <div class="container_warp">
+            <div class="left-box" style="float: left">
+                <ul class="links-title clear-float">
+                    <li>
+                        <p>LEARN</p>
+                        <ul class="links-lists">
+                            <li>
+                                <a href="aboutUs.html">About Us</a>
+                            </li>
+                            <li>
+                                <a href="https://www.pcbgogo.com/Blog/Big_sales_on_PCB_mass_production.html"> PCB
+                                    Capabilities</a>
+                            </li>
+                            <li>
+                                <a href="pcbaCapabilities.html">PCBA Capabilities</a>
+                            </li>
+                            <li>
+                                <a href="https://www.pcbgogo.com/Blog/Big_sales_on_PCB_mass_production.html"> PCB Layout
+                                    Capabilities</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>PCBGOGO SERVICE</p>
+                        <ul class="links-lists">
+                            <li>
+                                <a href="PCBPrototype.html">PCB Prototype </a>
+                            </li>
+                            <li>
+                                <a href="PCBAssembly.html">PCB Assembly</a>
+                            </li>
+                            <li>
+                                <a href="pcbLayout.html"> PCB Layout </a>
+                            </li>
+                            <li>
+                                <a href="FPCInstantQuote.html">PCB Instant Quote</a>
+                            </li>
+                            <li>
+                                <a href="sitemap.xml" title="https://www.pcbgogo.com/sitemap(1).xml">Site Map</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>CUSTOMER SUPPORT</p>
+                        <ul class="links-lists">
+                            <li>
+                                <a href="forum/forum.html">Engineering </a>
+                            </li>
+                            <li>
+                                <a href="dynamic.html">Feedback </a>
+                            </li>
+                            <li>
+                                <a href="old-process/pcbaAssemblyFaq.html">PCBA FAQs </a>
+                            </li>
+                            <li>
+                                <a href="whyUs.html">Why us </a>
+                            </li>
+                            <li>
+                                <a href="privacyPolicy.html">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="keywordSearch.html">PCB Glossary</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>ORDER HELP</p>
+                        <ul class="links-lists">
+                            <li>
+                                <a href="orderGuide.html">Order Guide </a>
+                            </li>
+                            <li>
+                                <a href="contactUs.html">Contact Us </a>
+                            </li>
+                            <li>
+                                <a href="register.html">Create an Account </a>
+                            </li>
+                            <li>
+                                <a href="qualityGurrantee.html">Quality Gurrantee </a>
+                            </li>
+                            <li>
+                                <a href="gogoDelivery.html">PCBGOGO Delivery</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="footer-item-icon">
+                    <li><a href="javascript:void(0)"><img src="img/images/paypal.png" alt=""></a></li>
+                    <li><a href="javascript:void(0)"><img src="img/images/hsbc.png" alt="HBSC"></a></li>
+                    <li><a href="javascript:void(0)"><img src="img/images/china.png" alt=""></a></li>
+                    <li><a href="javascript:void(0)"><img src="img/images/dhl.png" alt="DHL"></a></li>
+                    <li><a href="javascript:void(0)"><img src="img/images/post.png" alt="POST"></a></li>
+                    <li><a href="javascript:void(0)"><img src="img/images/ups.png" alt="UPS"></a></li>
+                    <li><a href="javascript:void(0)"><img src="img/images/ems.png" alt="EMS"></a></li>
+                </ul>
+            </div>
+
+            <!--右侧表单-->
+            <div class="send-from">
+                <p>QUICK CONTACT</p>
+                <form action="#">
+                    <input type="text" placeholder="Name" value="Name" onfocus="if(this.value==='Name')this.value=''"
+                           onblur="if(this.value==='')this.value='Name'">
+                    <input type="text" placeholder="Email" value="Email"
+                           onfocus="if(this.value==='Email')this.value=''"
+                           onblur="if(this.value==='')this.value='Email'">
+                    <textarea type="text" class="message-input" placeholder="Message"
+                              onfocus="if(this.value==='Message')this.value=''"
+                              onblur="if(this.value==='')this.value='Message'"></textarea>
+                    <input type="button" class="btn-submit " value="Send Message">
+                </form>
+            </div>
+            <!--右侧表单-->
+        </div>
+    </div>
+    <!--底部表单-->
+    <div class="footer-from clear-float">
+        <div class="container_warp">
+            <!--底部列表-->
+            <div class="footer-item">
+                <ul class="footer-item-ul">
+                    <li class="ban-quan">Copyright © 2015 PCBGOGO. All rights reserved. Shenzhen JDB Technology Co.,
+                        Ltd. <br>
+                        Address: No. 15, Zhongxing Road, Kengzi Street, Pingshan District, Shenzhen, 518000, China.
+                    </li>
+                    <li>
+                        Whatsapp <br>+8618665922549
+                    </li>
+                    <li>
+                        Mail <br>service@pcbgogo.com
+                    </li>
+                    <li>
+                        Tel <br>+86-755-33066136
+                    </li>
+                    <li class="footer-last-item">
+                        <div class="share-box">
+                            <a target="_blank" href="#"><img
+                                    src="img/images/twitter.png" alt=""></a>
+                            <a target="_blank" href="#"><img
+                                    src="img/images/google.png" alt=""></a>
+                            <a target="_blank" href="#"><img
+                                    src="img/images/facebook.png" alt=""></a>
+                            <a target="_blank"
+                               href="#"><img
+                                    src="img/images/instagram.png" alt=""></a>
+                            <a target="_blank" href="#"><img
+                                    src="img/images/Linkedln.png" alt=""></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="img/js/jquery/jquery-1.11.3.min.js"></script>
+<script>
+    $(function () {
+
+        $(window).scroll(function () {
+
+            var windowH = $(this).height();
+            console.log($(this).scrollTop());
+            var gTop = $('.the-exhibition').position().top - 150;
+            if (gTop <= windowH + $(this).scrollTop()) {
+                $('.gift-box').addClass('push-in-down')
+            }else{
+                $('.gift-box').removeClass('push-in-down')
+            }
+
+        });
+
+
+        //change img
+        void function () {
+            var index = 0;
+            var timer = null;
+            var tempPage = '';
+
+            timer = setInterval(change, 3000);
+
+            function change(flag) {
+                if (flag === 0) {
+                    index++;
+                    if (index > 4) {
+                        index = 0;
+                    }
+                } else if (flag === -1) {
+                    index--;
+                    if (index < 0) {
+                        index = 4;
+                    }
+                } else {
+                    index++;
+                    if (index > 4) {
+                        index = 0;
+                    }
+                }
+                tempPage = index;
+                $('.js-now-page').html(++tempPage);
+                $('.js-photo-list li').eq(index).addClass('active').siblings().removeClass('active');
+                $('.js-photo').find('img').attr('src', "img/images/activity/photo" + tempPage + ".jpg");
+            }
+
+            $('.js-photos-box').hover(function () {
+                clearInterval(timer);
+            }, function () {
+                timer = setInterval(change, 3000)
+            });
+            $('.left').click(function () {
+                change(-1);
+            });
+            $('.right').click(function () {
+                change(0);
+            });
+            $('.js-photo-list li').click(function () {
+                index = $(this).index();
+                tempPage = index;
+                $('.js-now-page').html(++tempPage);
+                $(this).addClass('active').siblings('li').removeClass('active');
+                $('.js-photo').find('img').attr('src', "img/images/activity/photo" + tempPage + ".jpg");
+            });
+        }();
+    });//end function
+</script>
+</body>
+</html>

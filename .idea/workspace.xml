@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="71f29c11-a8e6-4ed9-ad23-e7d0a99bd1d4" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Less File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="28GpDz7DVwwkLwsMjz8Q5z6uF7Y" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/img/fonts" />
+    <property name="list.type.of.created.stylesheet" value="Less" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\pcbgogo\img\fonts" />
+      <recent name="C:\Users\Administrator\Desktop\pcbgogo\img\images" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="71f29c11-a8e6-4ed9-ad23-e7d0a99bd1d4" name="Changes" comment="" />
+      <created>1650852665305</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1650852665305</updated>
+      <workItem from="1650852668125" duration="390000" />
+      <workItem from="1650853573165" duration="743000" />
+      <workItem from="1650854875549" duration="24000" />
+      <workItem from="1650856325709" duration="235000" />
+      <workItem from="1650856608424" duration="881000" />
+      <workItem from="1650857724191" duration="1538000" />
+      <workItem from="1650860677657" duration="601000" />
+      <workItem from="1650864876108" duration="1019000" />
+      <workItem from="1650866324377" duration="950000" />
+      <workItem from="1650867973174" duration="304000" />
+      <workItem from="1650868327851" duration="314000" />
+      <workItem from="1650869063842" duration="136000" />
+      <workItem from="1650869228265" duration="3437000" />
+      <workItem from="1650872956377" duration="338000" />
+      <workItem from="1650873334282" duration="75000" />
+      <workItem from="1650873439206" duration="314000" />
+      <workItem from="1650874487526" duration="622000" />
+      <workItem from="1650875193101" duration="1308000" />
+      <workItem from="1650876843103" duration="627000" />
+      <workItem from="1650877771365" duration="3030000" />
+      <workItem from="1650880884556" duration="241000" />
+      <workItem from="1650881247585" duration="430000" />
+      <workItem from="1650933217854" duration="5042000" />
+      <workItem from="1650938473451" duration="4311000" />
+      <workItem from="1650945206747" duration="1226000" />
+      <workItem from="1650951062004" duration="8452000" />
+      <workItem from="1650960198793" duration="7714000" />
+      <workItem from="1651020990808" duration="8419000" />
+      <workItem from="1651030294843" duration="2522000" />
+      <workItem from="1651037658571" duration="3086000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

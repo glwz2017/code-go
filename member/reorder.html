@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="../img/css/member/reorder.css">
+</head>
+<body>
+<div class="ui-window-bd">
+  <!--单独PCB返单-->
+  <div class="ui-reorder-tips">
+    <div class="tips-title"> Steps of Re-order PCB</div>
+    <div class="tips"> 1.Select the “Quantity of PCB”</div>
+    <div class="tips"> 2.Select lead time in “PCB Cost”</div>
+    <div class="tips"> 3.Click the “Submit” button.</div>
+  </div>
+  <!--  日文-->
+  <div class="ui-reorder-tips">
+    <div class="tips-title">基板リピート製造の注文手順：　</div>
+    <div class="tips"> 1.以下の「基板製造」フォームで枚数を選択・入力する。</div>
+    <div class="tips"> 2.基板の製造コースを選択する。</div>
+    <div class="tips"> 3.右下にある「確認」ボタンを押す。</div>
+  </div>
+
+  <!--单独SMT返单-->
+  <div class="ui-reorder-tips">
+    <div class="tips-title">Steps of Re-order PCB Assembly</div>
+    <div class="tips">1.Fill in the Quantity of SMT</div>
+    <div class="tips">2.Click the “Submit” button.</div>
+  </div>
+  <!--日文-->
+  <div class="ui-reorder-tips">
+    <div class="tips-title">リピート実装の注文手順：</div>
+    <div class="tips">1.「部品実装」フォームで実装枚数を入力する。</div>
+    <div class="tips">2.右下にある「確認」ボタンを押す。</div>
+  </div>
+
+  <!--PCB+SMT返单-->
+  <div class="ui-reorder-tips">
+    <div class="tips-title">Steps of Re-order PCB Assembly</div>
+    <div class="tips">1.Select the “Quantity of PCB” .</div>
+    <div class="tips">2.Select lead time in “PCB Cost” .</div>
+    <div class="tips">3.Fill in the Quantity of SMT</div>
+    <div class="tips">4.Click the “Submit” button.</div>
+  </div>
+
+<!--  日文-->
+  <div class="ui-reorder-tips">
+    <div class="tips-title">リピート実装の注文手順：</div>
+    <div class="tips">1.以下の「基板製造」フォームで生基板の枚数を選択・入力する。</div>
+    <div class="tips">2.生基板の製造コースを選択する。</div>
+    <div class="tips">3.更に下にある「部品実装」フォームで実装枚数を入力する。</div>
+    <div class="tips">4.右下にある「確認」ボタンを押す。</div>
+  </div>
+
+  <div class="info-item">
+    <table class="info-detail ">
+      <tr>
+        <th style="width: 40%"></th>
+        <th style="width: 60%"></th>
+      </tr>
+      <tr>
+        <td class="name">
+          PCB Order NO. :&nbsp;&nbsp;
+          <span>S-B80143ASE6</span>
+        </td>
+        <td colspan="2">
+        </td>
+      </tr>
+      <tr>
+        <td class="name">
+          Associated PCBA Order NO. :&nbsp;&nbsp;
+          <span> S-A60148ASZ298</span>
+        </td>
+        <td colspan="2">
+
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <div class="total-links">
+            <div class="link-box">
+            <span class="name">
+         Gerber File:
+        </span>
+              <a href="javascript:void(0)" class="link-file">
+                A60148ASZ298.zip
+              </a>
+            </div>
+            <div class="link-box">
+            <span class="name">
+             BOM File:
+        </span>
+              <a href="javascript:void(0)" class="link-file">
+                A60148ASZ298.zip
+              </a>
+            </div>
+            <div class="link-box">
+            <span class="name">
+              Centrold File:
+              </span>
+              <a href="javascript:void(0)" class="link-file">
+                A60148ASZ298.zip
+              </a>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="product-label">
+    1. PCB Manufacturing
+  </div>
+  <div class="info-item order-detail">
+    <table class="info-detail">
+      <tr>
+        <td class="name">
+          Quantity of pcb
+        </td>
+        <td>
+          <div class="quantity-info">
+            <input type="text" class="quantity-val">
+            <div class=" boardnumber" id="boardnumber" style="display: none">
+              <ul>
+                <li>
+                  <input type="radio" name="countNumer" value="5">5
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="10">10
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="15">15
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="20">20
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="25">25
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="30">30
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="40">40
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="50">50
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="75">75
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="100">100
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="125">125
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="150">150
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="200">200
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="250">250
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="300">300
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="350">350
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="400">400
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="450">450
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="500">500
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="600">600
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="700">700
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="800">800
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="900">900
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="1000">1000
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="1500">1500
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="2000">2000
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="2500">2500
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="3000">3000
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="3500">3500
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="4000">4000
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="4500">4500
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="5000">5000
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="5500">5500
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="6000">6000
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="6500">6500
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="7000">7000
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="7500">7500
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="8000">8000
+                </li>
+              </ul>
+              <div class="boardnumberbtn">
+                Other：
+                <input type="text" class="txtstyle2" name="txtSelNum" id="txtSelNum">
+                <a onclick="SetInputNum()" href="javascript:void(0)">
+                  <input type="button" value="Submit" id="btn2">
+                </a><a onclick="online.CloseSelectNumDiv();" href="javascript:void(0)">
+                <input type="button" value="Cancel" id="btn3">
+              </a>
+              </div>
+              <div class="tips">
+                <!-- 総面積5平米以上のご注文は、任意の枚数をご入力頂けます；-->
+                ≥5 ㎡ to manually enter the number
+              </div>
+            </div>
+          </div>
+        </td>
+        <td class="name">
+          pcb cost
+        </td>
+        <td>
+          <div class="quantity-info">
+            <select name="" id="" class="quantity-select">
+              <option value="please select one option">please select one option</option>
+              <option value="test1">test1</option>
+              <option value="test2">test2</option>
+              <option value="test2">test29999999999999dsasgd</option>
+            </select>
+          </div>
+        </td>
+        <td class="name">
+          PO No.:
+        </td>
+        <td>
+          <input type="text" id="po-no" class="quantity-val">
+        </td>
+      </tr>
+      <tr>
+        <td class="name">
+          Material
+        </td>
+        <td>
+
+        </td>
+        <td class="name">
+          Board type
+        </td>
+        <td>
+
+        </td>
+        <td class="name">
+          Route Process
+        </td>
+        <td>
+
+        </td>
+      </tr>
+      <tr>
+        <td class="name">
+          X-out
+          <br>Allowance in Panel
+        </td>
+        <td>
+          Panel by PCBgogo
+        </td>
+        <td class="name">
+          Different
+          <br>Design in Panel
+        </td>
+        <td>
+          1
+        </td>
+        <td class="name">
+          Size
+        </td>
+        <td>
+          185 x 118 mm
+        </td>
+      </tr>
+      <tr>
+        <td class="name">
+          Layers
+        </td>
+        <td>
+          4 Layers
+        </td>
+        <td class="name">
+          Thickness
+        </td>
+        <td>
+          1.6 mm
+        </td>
+        <td class="name">
+          Min Track/Spacing
+        </td>
+        <td>
+          8/8mil
+        </td>
+      </tr>
+      <tr>
+        <td class="name">
+          Min Hole Size
+        </td>
+        <td>
+          0.3
+        </td>
+        <td class="name">
+          Solder Mask
+        </td>
+        <td>
+          Green
+        </td>
+        <td class="name">
+          Silkscreen
+        </td>
+        <td>
+          White
+        </td>
+      </tr>
+      <tr>
+        <td class="name">
+          Gold Fingers
+        </td>
+        <td>
+          No
+        </td>
+        <td class="name">
+          Surface Finish
+          <br>(Gold Fingers)
+        </td>
+        <td>
+          Via Process
+        </td>
+        <td class="name">
+          Surface Finish
+        </td>
+        <td>
+          HASL with lead
+        </td>
+      </tr>
+      <tr>
+        <td class="name">
+          "HASL"to"ENIG"
+        </td>
+        <td>
+          YES
+        </td>
+        <td class="name">
+          Tenting vias
+        </td>
+        <td>
+
+        </td>
+        <td class="name">
+          Finished Copper
+        </td>
+        <td>
+          1 oz Cu
+        </td>
+      </tr>
+      <tr>
+        <td class="name">
+          Inner Copper
+        </td>
+        <td>
+
+        </td>
+        <td class="name">
+          Additional Options
+        </td>
+        <td colspan="3">
+
+        </td>
+      </tr>
+      <tr>
+        <td class="name">
+          Other Special
+          <br>Request of pcb
+        </td>
+        <td colspan="5">
+          <textarea class="other-special"></textarea>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="product-label">
+    2. PCB Assembly
+  </div>
+  <div class="info-item order-detail">
+    <table class="info-detail">
+      <tr>
+        <td class="name">
+          Quantity of SMT(single)
+        </td>
+        <td>
+          <div class="quantity-info">
+            <input type="text" class="quantity-val">
+            <div class=" boardnumber" id="boardnumber" style="display: none">
+              <ul>
+                <li>
+                  <input type="radio" name="countNumer" value="5">5
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="10">10
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="15">15
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="20">20
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="25">25
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="30">30
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="40">40
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="50">50
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="75">75
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="100">100
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="125">125
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="150">150
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="200">200
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="250">250
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="300">300
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="350">350
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="400">400
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="450">450
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="500">500
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="600">600
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="700">700
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="800">800
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="900">900
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="1000">1000
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="1500">1500
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="2000">2000
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="2500">2500
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="3000">3000
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="3500">3500
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="4000">4000
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="4500">4500
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="5000">5000
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="5500">5500
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="6000">6000
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="6500">6500
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="7000">7000
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="7500">7500
+                </li>
+                <li>
+                  <input type="radio" name="countNumer" value="8000">8000
+                </li>
+              </ul>
+              <div class="boardnumberbtn">
+                Other：
+                <input type="text" class="txtstyle2" name="txtSelNum" id="txtSelNum">
+                <a onclick="SetInputNum()" href="javascript:void(0)">
+                  <input type="button" value="Submit" id="btn2">
+                </a><a onclick="online.CloseSelectNumDiv();" href="javascript:void(0)">
+                <input type="button" value="Cancel" id="btn3">
+              </a>
+              </div>
+              <div class="tips">
+                <!-- 総面積5平米以上のご注文は、任意の枚数をご入力頂けます；-->
+                ≥5 ㎡ to manually enter the number
+              </div>
+            </div>
+          </div>
+        </td>
+        <td class="name">
+          PO No.:
+        </td>
+        <td>
+          <input type="text" class="quantity-val">
+        </td>
+        <td class="name"></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="name">
+          Components supply
+        </td>
+        <td>
+          12
+        </td>
+        <td class="name">
+          Number of
+          <br>Unique Parts
+        </td>
+        <td>
+          1
+        </td>
+        <td class="name">
+          Number of
+          <br>SMD Parts
+        </td>
+        <td>
+          1
+        </td>
+      </tr>
+      <tr>
+        <td class="name">
+          Number of Through-
+          <br>Hole Parts
+        </td>
+        <td>
+
+        </td>
+        <td class="name">
+          Board type
+        </td>
+        <td>
+
+        </td>
+        <td class="name">
+          Assembly Side(s)
+        </td>
+        <td>
+
+        </td>
+      </tr>
+      <tr>
+        <td class="name">
+          Other Special
+          <br>Request of pcb
+        </td>
+        <td colspan="5">
+          <textarea class="other-special"></textarea>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="submit-box">
+    <input class="submit-btn" type="submit" value="Submit">
+  </div>
+</div>
+<script src="../img/js/auoHeight/diy-auotHeight.js"></script>
+
+<script>
+// 套用忽略如下js
+window.onload = function () {
+  document.querySelectorAll('.quantity-val').forEach((item, key) => {
+    if (key % 2 === 0) {
+      item.addEventListener('focus', function () {
+        item.parentNode.querySelector('#boardnumber').style.display = 'block'
+      })
+      item.addEventListener('blur', function () {
+        item.parentNode.querySelector('#boardnumber').style.display = 'none'
+      })
+    }
+  })
+}
+</script>
+</body>
+</html>
+

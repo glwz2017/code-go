@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../img/css/member/address-page_jp.css">
+</head>
+<body>
+<!--不想显示的元素 添加  is-hide 类名 -->
+<div class="set-address-pop">
+    <div class="address-body">
+        <div class="address-pop-title">* Items designated with an asterisk are required fields.</div>
+        <dl class="address-nav js-address-nav">
+            <dd>
+                <a href="javascript:void(0)">
+                    <span class="iconfont icon-gongsi"></span>
+                    <span class="type">Company</span>
+                </a>
+            </dd>
+            <dd class="active">
+                <a href="javascript:void(0)">
+                    <span class="iconfont icon-gerenziliao"></span>
+                    <span class="type">Individual Customer</span>
+                </a>
+            </dd>
+        </dl>
+        <form action="#">
+            <div class="form-list">
+                <label class="label">国または地域 *</label>
+                <div class="quantity-select country-title js-country-title">
+                    <!-- 当前选中的...-->
+                    <div class="current-country js-current-country">
+                        <img src="../img/images/country.png" alt="">
+                        <span class="js-country-name">UNITED STATES OF AMERICA</span>
+                    </div>
+                    <!-- 所有国家-->
+                    <div class="total-country js-total-country">
+                        <div class="country-search">
+                            <input type="text" class="get-country" placeholder="Please enter country">
+                        </div>
+
+                        <div class="country-item ">
+                            <span class="national flagbg-1"></span> AUSTRALIA
+                        </div>
+                        <div class="country-item ">
+                            <span class="national flagbg-2"></span>
+                            COMMONWEALTH
+                            NO. MARIANA ISLANDS
+                        </div>
+                        <div class="country-item ">
+                            <span class="national flagbg-3"></span> UNITED
+                            STATES OF AMERICA
+                        </div>
+                        <div class="country-item ">
+                            <span class="national flagbg-4"></span>
+                            AUSTRALIA
+                        </div>
+                        <div class="country-item ">
+                            <span class="national flagbg-5"></span>
+                            CONGO, THE
+                            DEMOCRATIC REPUBLIC OF
+                        </div>
+                        <div class="country-item ">
+                            <span class="national flagbg-6"></span>
+                            KOREA, THE
+                            D.P.R OF (NORTH K.)
+                        </div>
+                        <div class="country-item ">
+                            <span class="national flagbg-7"></span>
+                            AUSTRALIA
+                        </div>
+                        <div class="country-item ">
+                            <span class="national flagbg-8"></span>
+                            COMMONWEALTH
+                            NO. MARIANA ISLANDS
+                        </div>
+                        <div class="country-item ">
+                            <span class="national flagbg-9"></span>
+                            UNITED
+                            STATES OF AMERICA
+                        </div>
+                        <div class="country-item">
+                            <span class="national flagbg-10"></span>
+                            AUSTRALIA
+                        </div>
+                        <div class="country-item ">
+                            <span class="national flagbg-11"></span>
+                            CONGO, THE
+                            DEMOCRATIC REPUBLIC OF
+                        </div>
+                        <div class="country-item ">
+                            <span class="national flagbg-12"></span>
+                            KOREA, THE
+                            D.P.R OF (NORTH K.)
+                        </div>
+                        <div class="country-item ">
+                            <span class="national flagbg-13"></span>
+                            AUSTRALIA
+                        </div>
+                        <div class="country-item ">
+                            <span class="national flagbg-14"></span>
+                            COMMONWEALTH
+                            NO. MARIANA ISLANDS
+                        </div>
+                        <div class="country-item ">
+                            <span class="national flagbg-0"></span>
+                            UNITED
+                            STATES OF AMERICA
+                        </div>
+                        <div class="country-item ">
+                            <span class="national flagbg-0"></span>
+                            AUSTRALIA
+                        </div>
+                        <div class="country-item ">
+                            <span class="national flagbg-0"></span>
+                            CONGO, THE
+                            DEMOCRATIC REPUBLIC OF
+                        </div>
+                        <div class="country-item ">
+                            <span class="national flagbg-108"></span>
+                            KOREA, THE
+                            D.P.R OF (NORTH K.)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-list is-hide">
+                <label class="label">会社名 *</label>
+                <input class="get-value" type="text">
+            </div>
+            <div class="form-list">
+                <div class="link-way">
+                    <label class="label">英字氏名 *</label>
+                    <input class="get-value small" type="text" placeholder="Fill in your full name">
+                </div>
+                <div class="link-way">
+                    <label class="label">漢字氏名 *</label>
+                    <input class="get-value small" type="text" placeholder="Fill in your full name">
+                </div>
+            </div>
+            <div class="form-list">
+                <label class="label">ご住所(英語) *</label>
+                <input class="get-value" type="text" placeholder="Street address">
+                <input class="get-value" type="text" placeholder="Apt, suite, unit, building, floor, etc.">
+                <input class="get-value" type="text">
+                <div class="form-list-tips">
+                    Each line of the above information cannot exceed 35 characters; Your Address cannot exceed three
+                    lines!
+                </div>
+            </div>
+            <div class="form-list">
+                <div class="set-area">
+                    <label class="label">都市</label>
+                    <div class="quantity-select country-title js-city-title">
+                        <!-- 当前选中的...-->
+                        <div class="current-country js-current-city">
+                            <span class="js-country-name"></span>
+                        </div>
+                        <!-- 所有城市-->
+                        <div class="total-country js-total-city">
+                            <div class="country-search">
+                                <input type="text" class="get-country" placeholder="Please enter city">
+                            </div>
+                            <div class="country-item ">
+                                AUSTRALIA
+                            </div>
+                            <div class="country-item ">
+                                NO. MARIANA ISLANDS
+                            </div>
+                            <div class="country-item ">
+                                STATES OF AMERICA
+                            </div>
+                            <div class="country-item ">
+                                STATES OF AMERICA
+                            </div>
+                            <div class="country-item">
+                                AUSTRALIA
+                            </div>
+                            <div class="country-item ">
+                                CONGO, THE
+                            </div>
+                            <div class="country-item ">
+                                NO. MARIANA ISLANDS
+                            </div>
+                            <div class="country-item ">
+                                STATES OF AMERICA
+                            </div>
+                            <div class="country-item ">
+                                AUSTRALIA
+                            </div>
+                            <div class="country-item ">
+                                DEMOCRATIC REPUBLIC OF
+                            </div>
+                            <div class="country-item ">
+                                D.P.R OF (NORTH K.)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="set-area">
+                    <label class="label">State / Province / Region</label>
+                    <div class="quantity-select country-title js-province-title">
+                        <!-- 当前选中的...-->
+                        <div class="current-country js-current-province">
+                            <span class="js-country-name"></span>
+                        </div>
+                        <!-- 所有省份-->
+                        <div class="total-country js-total-province">
+                            <div class="country-search">
+                                <input type="text" class="get-country" placeholder="Please enter state/province/region">
+                            </div>
+                            <div class="country-item ">
+                                AUSTRALIA
+                            </div>
+                            <div class="country-item ">
+                                NO. MARIANA ISLANDS
+                            </div>
+                            <div class="country-item ">
+                                STATES OF AMERICA
+                            </div>
+                            <div class="country-item ">
+                                STATES OF AMERICA
+                            </div>
+                            <div class="country-item">
+                                AUSTRALIA
+                            </div>
+                            <div class="country-item ">
+                                CONGO, THE
+                            </div>
+                            <div class="country-item ">
+                                NO. MARIANA ISLANDS
+                            </div>
+                            <div class="country-item ">
+                                STATES OF AMERICA
+                            </div>
+                            <div class="country-item ">
+                                AUSTRALIA
+                            </div>
+                            <div class="country-item ">
+                                DEMOCRATIC REPUBLIC OF
+                            </div>
+                            <div class="country-item ">
+                                D.P.R OF (NORTH K.)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-list">
+                <div>
+                    <label class="label">郵便番号</label>
+                    <input class="get-value small" type="text">
+                    <div class="is-code-area">
+                        <span class="split">-</span>
+                        <input class="get-value mini" type="text">
+                        <div class="code-format ">Post code format: XXXXX-X</div>
+                        <span class="iconfont icon-wenhao">
+                            <div class="code-format ">Post code format: XXXXX-X</div>
+                        </span>
+                    </div>
+                </div>
+                <div class="manually-area">
+                    <label>
+                        <input class="check" type="checkbox">
+                        <span class="manually-text">Enter postcode manually</span>
+                        <span class="iconfont icon-wenhao">
+                            <span class="eq-tips">
+                                If you cannot find the postcode you want in the PCBgogo postcode library, you
+                                can select "Enter postcode manually" to submit your postcode or contact us for
+                                help.
+                            </span>
+                        </span>
+                    </label>
+                </div>
+            </div>
+            <div class="form-list is-hide">
+                <label class="label">VAT/Tax ID</label>
+                <input class="get-value small" type="text">
+            </div>
+            <div class="form-list">
+                <div class="link-way">
+                    <label class="label">電話番号 *</label>
+                    <input class="get-value small" type="tel">
+                </div>
+                <div class="link-way">
+                    <label class="label">メールアドレス</label>
+                    <input class="get-value small" type="email">
+                </div>
+            </div>
+            <div class="set-default">
+                <label>
+                    <input class="check" type="checkbox"> Make this my default address
+                </label>
+            </div>
+            <button class="to-submit-btn" type="submit">
+                確認
+            </button>
+            <div class="note-tips">
+                メールアドレス半角英数字で入力してください。（例：google@gmail.com）
+            </div>
+        </form>
+    </div>
+</div>
+<script src="../img/js/jquery/jquery-1.11.3.min.js"></script>
+<script>
+    $(function () {
+
+        $('.js-address-nav dd').click(function () {
+            $(this).addClass('active').siblings('dd').removeClass('active');
+            // 套用删除如下代码
+            if ($('.js-address-nav dd:first').hasClass('active')) {
+                $('*').removeClass('is-hide');
+            }
+        });
+
+
+        //国家选择
+        $('.js-country-title').hover(function () {
+            $('.js-total-country').stop().slideDown();
+        }, function () {
+            $('.js-total-country').stop().slideUp();
+        });
+        $('.js-total-country .country-item').click(function () {
+            $('.js-current-country').html($(this).html());
+            $('.js-total-country').hide();
+        });
+        //城市选择
+        $('.js-city-title').hover(function () {
+            $('.js-total-city').stop().slideDown();
+        }, function () {
+            $('.js-total-city').stop().slideUp();
+        });
+        $('.js-total-city .country-item').click(function () {
+            $('.js-current-city').html($(this).html());
+            $('.js-total-city').hide();
+        });
+        // 区域选择
+        $('.js-province-title').hover(function () {
+            $('.js-total-province').stop().slideDown();
+        }, function () {
+            $('.js-total-province').stop().slideUp();
+        });
+        $('.js-total-province .country-item').click(function () {
+            $('.js-current-province').html($(this).html());
+            $('.js-total-province').hide();
+        });
+
+    });
+</script>
+</body>
+</html>

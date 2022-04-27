@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>PCB Printed Circuit Board Manufacturing & Assembly|Pcbgogo.com</title>
+    <!--网页标题左侧显示-->
+    <link rel="icon" href="img/images/title-logo.png" type="image/x-icon">
+    <!--收藏夹显示图标-->
+    <link rel="shortcut icon" href="img/images/title-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="img/css/aboutUs.css">
+    <script src="img/js/jquery/jquery-1.11.3.min.js"></script>
+    <!--<script src="img/js/public.js"></script>-->
+    <script src="img/js/header.js"></script>
+    <script>
+        $(function () {
+//            二级元素定位
+            $('.js-tab-box .menus-item').click(function () {
+                var index = $(this).index();
+                var getObject = $('html,body');
+                $(this).addClass('active-tab').siblings('.menus-item').removeClass('active-tab');
+                switch (index) {
+                    case 0:
+                        getObject.animate({scrollTop: $('.sp1')[0].offsetTop});
+                        break;
+                    case 1:
+                        getObject.animate({scrollTop: $('.sp2')[0].offsetTop});
+                        break;
+                    case 2:
+                        getObject.animate({scrollTop: $('.sp3')[0].offsetTop});
+                        break;
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<!--头部-->
+<div class="header"></div>
+<!--主体-->
+<div class="main-about">
+    <!--banner图-->
+    <div class="banner-about">
+        <div class="container_warp">
+            <h3>Electronic Project Engineer's Best Partner!</h3>
+        </div>
+    </div>
+    <!--具体内容-->
+    <div class="about-content">
+        <div class="container_warp">
+            <div class="about-l js-about-l">
+                <a href="contactUs.html" class="left-item ">
+                    - Contact US
+                </a>
+                <a href="Introduction.html" class="left-item ">
+                    - Introduction
+                </a>
+                <a href="qualityGurrantee.html" class="left-item ">
+                    - Quality Gurrantee
+                </a>
+                <a href="privacyPolicy.html" class="left-item ">
+                    - Privacy Policy
+                </a>
+                <a href="methodPayment.html" class="left-item ">
+                    - Method of Payment
+                </a>
+                <a href="orderGuide.html" class="left-item active-item">
+                    - Order Guide
+                </a>
+                <a href="shippingMethod.html" class="left-item">
+                    - Shipping Method Guide
+                </a>
+                <a href="gogoDelivery.html" class="left-item">
+                    - PCBGOGO Delivery
+                </a>
+            </div>
+            <!--右侧-->
+            <div class="about-r">
+                <h3 class="about-r-title">Order Guide</h3>
+                <!--如何下单-->
+                <div class="how-order">
+                    <div class="how-title">
+                        How to Place an Order in PCBGOGO?
+                    </div>
+                    <!--sub切换-->
+                    <div class="sub-menus js-tab-box">
+                        <div class="menus-item active-tab">
+                            NO.1 PCB Prototype Process
+                        </div>
+                        <div class="menus-item">
+                            NO.2 PCB Assembly Process
+                        </div>
+                        <div class="menus-item">
+                            NO.3 PCB Layout Service
+                        </div>
+                    </div>
+                    <!--流程图-->
+                    <div class="flow-chart-box"></div>
+                    <!--具体流程-->
+                    <div class="step-box">
+                        <div class="step-title sp1">
+                            Step 1: Register.
+                        </div>
+                        <p>
+                            Click “Join Free”button which is on the upper right corner, fill in the email, password and
+                            click “create account”. Then you will get a vip member account in PCBGOGO and get XXXUSD PCB
+                            coupons immediately.
+                        </p>
+                        <div class="registered-img">
+                        </div>
+                    </div>
+                    <div class="step-box">
+                        <div class="step-title">
+                            Step 2: Instant Quote and Upload Gerber or Eagle file.
+                        </div>
+                        <p>
+                            Click “PCB Instant Quote”and fill in all datas which are requires on the PCB Instant Quote
+                            website page. Then press “Quote now”, you will see an instant quote price. The price is
+                            nearly 99% accurate. But it will be different price after audit if there is special
+                            technology as 0.2mm drill data, 4mil track, panelization and so on. After that, you could
+                            press”Add to Basket”to upload the PCB file.
+                        </p>
+                        <p>
+                            Although RS274-X format Gerber data is our standard manufacturing data, we also accept Eagle
+                            format design files. Please note we will convert your Eagle file to Gerber data and then ask
+                            for your confirmation before put the job into PCB production line.
+                        </p>
+                        <div class="step2-box">
+
+                        </div>
+                    </div>
+                    <div class="step-box">
+                        <div class="step-title">
+                            Step3: Order review.
+                        </div>
+                        <p>
+                            After you uploaded the Gerber or Eagle file, our engineer will review the order ASAP. If any
+                            issues were found, we will contact you by email or online chat. Please make sure the email
+                            address you filled on our website is valid..
+                        </p>
+                        <div class="step3-box">
+
+                        </div>
+                    </div>
+                    <div class="step-box">
+                        <div class="step-title">
+                            Step4: How to pay.
+                        </div>
+                        <p>
+                            Once the PCB order pass our audit, then you can choose the shipping method and make the
+                            payment online by PayPal or choose the other payment methods (We also accept bank transfer,
+                            Aliexpress pay, western union and so on. Please contact us (service@pcbgogo.com ) for the
+                            details if you choose these payment methods). Before paying, please confirm your shipping
+                            address is correct and accurate, especially the city name and the corresponding post code.
+                        </p>
+                        <div class="step4-box">
+
+                        </div>
+                    </div>
+                    <div class="step-box">
+                        <div class="step-title">
+                            Step5: PCB Fabrication.
+                        </div>
+                        <p>
+                            The PCB fabrication job will be started immediately once the payment is received. You can
+                            check the manufacture process on the production status at our website.
+                        </p>
+                        <p>
+                            <span style="font-weight: bold"> ● Delivery:</span><br>
+                            Once the parcel shipped out, the tracking number will be shown on our website and you can
+                            click it to track the parcel.
+                        </p>
+                        <p>
+                            Please note the customs tax fee is different in different countries, before shipping you
+                            may consult with your local DHL company or customs office to check the detailed information.
+                            And please note the order will be declared as real value or customer requirement, please let
+                            us know once after placing order (you can change the declared value once you make the
+                            payment), or any import duties occur are on buyers’ account
+                        </p>
+                        <p>
+                            Finally, if you still have problem with the order process, please feel free to contact us by
+                            online chat or by email: service@PCBGOGO.com or by Skype: service@PCBGOGO.com, we will reply
+                            you as soon as possible within 24 hours. We hope to make our ordering procedure as simple
+                            and flexible as possible.
+                        </p>
+                        <div class="step5-box"></div>
+                        <p style="font-weight: bold">
+                            ● How to Re-order in PCBGOGO?
+                        </p>
+                        <p>
+                            <span style="font-weight: bold">A. Why do you need to re-order?</span><br>
+                            As we know, different engineers will deal with PCB file in different way so that some
+                            details of your new PCB orders will be different. If you want to order the same boards as
+                            the samples which you placed in PCBGOGO, you need to re-order it instead of placing new
+                            order. So
+                            that your order will be dealt with by the same engineer as your sample order and it will be
+                            same as your sample.
+                        </p>
+                        <p>
+                            <span style="font-weight: bold"> B.  How to reorder in PCBGOGO?</span><br>
+                            If you need to reorder the boards which you have sample order from PCBGOGO, you only do the
+                            steps below. Make sure there is no any change in design of your new order and it is same as
+                            Previous orders.
+                            Firstly, you log in your account in PCBGOGO website.
+                            Secondly, you could click the “completed”
+                        </p>
+                        <div class="step51-box"></div>
+                    </div>
+                    <div class="step-box">
+                        <div class="step-title sp2">
+                            2.PCB Assembly Process
+                        </div>
+                        <p>
+                            Firstly, you should be ready the PCB file, Bom list, Pick and place file. Please note that
+                            Gerber, AD, PADs, and Eagle file as PCB file will be accepted by PCBGOGO. If your PCB file
+                            is other form, please export the Gerber file to us for PCB fabrication. And Bom list is a
+                            file that contains all components with part number, manufacturer number, specifications,
+                            quantity, packages, legends as well.
+                        </p>
+                        <p>
+                            Secondly, please offer us those files as mentioned above via email: service@pcbgogo.com. The
+                            quotation will come out within 48-72 hours which depends on your components and PCB complex
+                            and difficulty degree.
+                        </p>
+                        <div class="step6-box"></div>
+                    </div>
+                    <div class="step-box">
+                        <div class="step-title sp3">
+                            3.PCB Layout Service
+                        </div>
+                        <p>
+                            ● Files needed: Schematic(DSN or powerlogic), netlist, package, structure chart(DXF),
+                            Components file, layout requirements etc.
+                            <br>● Layout and wiring judgement: according to the design standard, design instruction,
+                            customer's design requirements and related checklist.
+                            <br>● Layout check and confirm: provide layout file and structure file for customer for
+                            check if the layout makes sense and confirm the stack-up program, impedance program,
+                            structure and package, also confirm the trace specification.
+                            <br>● Layout file output: PCB original file, gerber file, pick and place file, framed
+                            stencil file and structure file etc.If you have PCB layout job need to do, don’t hesitate to
+                            contact us: service@pcbgogo.com.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--计价盒子-->
+<div class="valuation-box">
+    <div class="container_warp ">
+        <div class="valuation-item">
+            <h4> Instant Quote & Order Online Upload your PCB Files</h4>
+            <span class="your-files">
+                        Got project ready to assembly? Contact us:
+                        <a href="javascript:void(0)">
+                            service@pcbgogo.com
+                        </a>
+                    </span>
+        </div>
+        <a href="PCBPrototype.html" target="_blank" class="pcb-now-btn">Get pcb Quotation now</a>
+    </div>
+</div>
+<!--底部-->
+<div class="footer"></div>
+</body>
+</html>

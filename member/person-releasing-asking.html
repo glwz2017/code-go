@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <!--网页标题左侧显示-->
+  <link rel="icon" href="../img/images/title-logo.png" type="image/x-icon">
+  <!--收藏夹显示图标-->
+  <link rel="shortcut icon" href="../img/images/title-logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="../img/css/member/person-releasing.css">
+</head>
+<body>
+<!--header-->
+<div class="the-top">
+  <!--顶部导航-->
+  <div class="top-nav">
+    <div class="nav-l">
+      <a href="orderIndex.html">
+        <img src="../img/images/order/orderlogo.png" alt="logo">
+      </a>
+    </div>
+    <div class="nav-r">
+      <!--右侧图标-->
+      <div class="shopping-box">
+        <ul class="hints js-hints">
+          <li class="active message-li"><a href="javascript:void(0)">
+            <span class="iconfont icon-ai-message"></span>
+          </a>
+            <i class="point "></i>
+          </li>
+          <li class="active coupon-li"><a href="javascript:void(0)">
+            <span class="iconfont icon-youhuiquan"></span>
+          </a>
+            <i class="point "></i>
+          </li>
+          <li class="active coupon-li"><a href="javascript:void(0)">
+            <span class="iconfont icon-fukuan"></span>
+          </a>
+            <i class="point "></i>
+          </li>
+          <li class="car-box cared-li"><a href="javascript:void(0)">
+            <span class="iconfont icon-gouwuche1"></span>
+          </a>
+            <i class="round car-nums">99</i>
+          </li>
+        </ul>
+      </div>
+      <!--登录后-->
+      <div class="user-box">
+        <span class="hi-text"> Hi! The user...</span>
+        <div class="user-pic js-user-pic">
+          <i><img src="../img/images/user.png" alt=""></i>
+          <i class="down-pointer"><img src="../img/images/down-pointer.png" alt=""></i>
+        </div>
+        <!--信息列表-->
+        <div class="person-info">
+          <!--   已登录 -->
+          <div class="info js-logined">
+            <div class="left-info">
+              <div class="tips">
+                Email: <span id="loginEmail">309*******@qq.com</span>
+              </div>
+              <a class="out-btn" href="javascript:void(0)">
+                Sign Out
+              </a>
+            </div>
+          </div>
+
+          <div class="link-lists">
+            <!-- 有数量添加   active 类名-->
+            <div class="item">
+              <a href="https://member.pcbgogo.com">
+                <span> •  </span>
+                <span class="name">My Account</span>
+              </a>
+            </div>
+            <div class="item js-AwaitingPayment">
+              <a href="https://member.pcbgogo.com/Order/AwaitingPayment">
+                <span> •  </span>
+                <span class="name">My Orders list</span>
+              </a>
+            </div>
+            <div class="item">
+              <a href="https://member.pcbgogo.com/Member/MemberBalanceLog">
+                <span> •  </span>
+                <span class="name">Account Balance</span>
+              </a>
+            </div>
+            <div class="item js-Coupons">
+              <a href="https://member.pcbgogo.com/Specials/Coupons">
+                <span> •  </span>
+                <span class="name">Discount coupon</span>
+              </a>
+            </div>
+            <div class="item">
+              <a href="https://member.pcbgogo.com/Specials/Rewards">
+                <span> •  </span>
+                <span class="name">Reward points</span>
+              </a>
+            </div>
+            <div class="item">
+              <a href="https://member.pcbgogo.com/Address/AddOrEdit">
+                <span> •  </span>
+                <span class="name">My Delivery Address</span>
+              </a>
+            </div>
+            <div class="item">
+              <a href="https://member.pcbgogo.com/Forum/ArticleList">
+                <span> •  </span>
+                <span class="name">My Forum</span>
+              </a>
+            </div>
+            <div class="item js-message">
+              <a href="https://member.pcbgogo.com/Message/Message">
+                <span> •  </span>
+                <span class="name">Message</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--二级菜单-->
+  <div class="main-menu">
+    <div class="vip_warp">
+      <ul class="menu-list clear-fix">
+        <li class="active"><a href="orderIndex.html">My Account</a></li>
+        <li><a href="../pages作废/reviewList作废.html">Forum</a></li>
+      </ul>
+      <!--计价链接-->
+      <div class="in-link">
+        <span class="iconfont icon-jisuan1"></span>
+        <a href="javascript:void(0)">Order PCB Now</a>
+        <span>|</span>
+        <a href="javascript:void(0)">Order PCBA Now</a>
+        <span>|</span>
+        <a href="javascript:void(0)">Order Stencil Now</a>
+      </div>
+      <!--面包屑-->
+      <div class="bread-crumbs">
+        <a href="javascript:void(0)">
+          <span class="iconfont icon-shouye1"></span>
+          <span>- Shopping Cart</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!--主体-->
+<div class="order-main">
+  <!--左侧-->
+  <div class="box-l">
+  </div>
+  <!--右侧-->
+  <div class="box-r">
+    <div class="r-title">
+      MY FORUM
+    </div>
+    <div class="m-forum">
+      <div class="list-nav">
+        <ul class="style-list">
+          <li class="active-list">
+            <a href="person-article.html">
+              Article(<span>3</span>)
+            </a></li>
+          <li><a href="person-askAnswer.html">
+            Ask and answer(<span>3</span>)
+          </a></li>
+          <li><a href="person-commentShare.html">
+            Comment and share(<span>900</span>)
+          </a></li>
+          <li><a href="person-collectFollow.html">
+            Collect/Follow(<span>900</span>)
+          </a></li>
+          <li><a href="person-Follow.html">
+            Follow(<span>900</span>)
+          </a></li>
+          <li><a href="person-Follower.html">
+            Follower(<span>900</span>)
+          </a></li>
+          <li><a href="person-Inform.html">
+            Inform(<span>900</span>)
+          </a></li>
+        </ul>
+      </div>
+      <div class="releasing-parent">
+      <ul class="categories-box">
+        <li ><a href="person-releasing.html">Releasing</a></li>
+        <li class="active-li"><a href="person-releasing-asking.html">Asking questions</a></li>
+      </ul>
+      <div class="edit-item">
+        <!--标题-->
+        <div class="release-title">Question？：<span>Maximum word length requirement the title is 100 words</span>
+        </div>
+        <div class="title-input">
+          <input type="text">
+        </div>
+        <div class="release-title">Describe：</div>
+        <!--富文本编辑区域-->
+        <div class="edit-area">
+          <textarea name="content" style="width:100%;height:200px;"></textarea>
+        </div>
+        <!--添加标签-->
+        <div class="tags-box">
+          <div class="tags-title">
+            Tags： <span>separated by commas</span>
+          </div>
+          <!--热门标签-->
+          <div class="tags-hot">
+            <div id="dvKeywords" class="tags-input">
+              <ul>
+                <li class="ui-item">
+                  <input id="iptKeywords" type="text" style="width: 70px;">
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!--提示-->
+          <p class="tags-tips">Please read our article's notes carefully again for releasing as soon as quickly.
+            <a href="#">Release the specification>></a>
+          </p>
+          <!--按钮组-->
+          <div class="btn-group">
+            <a href="javascript:void(0)" class="rest-btn js-rest-btn">Reset</a>
+            <a href="askAnswer.html" class="submit-btn">Submit</a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <!--版权说明-->
+    <div class="copy-right-box">
+      Copyright © 2015 PCBGOGO. All rights reserved. Shenzhen JDB Technology Co., Ltd.
+      Address: No. 15, Zhongxing Road, Kengzi Street, Pingshan District, Shenzhen, 518000, China.
+    </div>
+  </div>
+</div>
+<!--返回顶部-->
+<div class="go-btn">
+  <img src="../img/images/order/gotop.png" alt="">
+</div>
+<script src="../img/js/jquery/jquery-1.11.3.min.js"></script>
+<!--编辑器-->
+<script src="../img/js/kindeditor/kindeditor-all-min.js"></script>
+<script src="../img/js/kindeditor/lang/en.js"></script>
+<script src="../img/js/public.js"></script>
+<!--编辑器-->
+<script>
+$(function () {
+////富文本
+  var editor
+  KindEditor.ready(function (K) {
+    editor = K.create('textarea[name="content"]', {
+      allowFileManager: true
+    })
+  })
+})
+</script>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+.textEellipsis {
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.clearF:after {
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  clear: both;
+}
+.userSelect {
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+ul {
+  list-style: none;
+}
+body {
+  font-size: 12px;
+}
+input {
+  border: none;
+  outline: none;
+  background-color: #ffffff;
+}
+.email-box {
+  padding: 0 20px;
+}
+.nav-btn {
+  margin-top: 10px;
+}
+.nav-btn .btn {
+  width: 80px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 6px;
+  background: #9b9b9b;
+  color: #ffffff;
+  border: 1px solid #797979;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+.nav-btn .btn:hover {
+  color: #434343;
+}
+.nav-btn .danger {
+  background: #f5a623;
+  border: 1px solid #f5a623;
+}
+.nav-btn .primary {
+  background: #68a4ea;
+  border: 1px solid #68a4ea;
+}
+/*# sourceMappingURL=email.css.map */

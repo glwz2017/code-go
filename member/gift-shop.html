@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Account -PCBgogo</title>
+  <!--网页标题左侧显示-->
+  <link rel="icon" href="../img/images/title-logo.png" type="image/x-icon">
+  <!--收藏夹显示图标-->
+  <link rel="shortcut icon" href="../img/images/title-logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="../img/css/member/gift-shop.css">
+</head>
+<body>
+<!--header-->
+<div class="the-top">
+  <!--顶部导航-->
+  <div class="top-nav">
+    <div class="nav-l">
+      <a href="orderIndex.html">
+        <img src="../img/images/order/orderlogo.png" alt="logo">
+      </a>
+    </div>
+    <div class="nav-r">
+      <!--右侧图标-->
+      <div class="shopping-box">
+        <ul class="hints js-hints">
+          <li class="active message-li"><a href="javascript:void(0)">
+            <span class="iconfont icon-ai-message"></span>
+          </a>
+            <i class="point "></i>
+          </li>
+          <li class="active coupon-li"><a href="javascript:void(0)">
+            <span class="iconfont icon-youhuiquan"></span>
+          </a>
+            <i class="point "></i>
+          </li>
+          <li class="active coupon-li"><a href="javascript:void(0)">
+            <span class="iconfont icon-fukuan"></span>
+          </a>
+            <i class="point "></i>
+          </li>
+          <li class="car-box cared-li"><a href="javascript:void(0)">
+            <span class="iconfont icon-gouwuche1"></span>
+          </a>
+            <i class="round car-nums">99</i>
+          </li>
+        </ul>
+      </div>
+      <!--登录后-->
+      <div class="user-box">
+        <span class="hi-text"> Hi! The user...</span>
+        <div class="user-pic js-user-pic">
+          <i><img src="../img/images/user.png" alt=""></i>
+          <i class="down-pointer"><img src="../img/images/down-pointer.png" alt=""></i>
+        </div>
+        <!--信息列表-->
+        <div class="person-info">
+          <!--   已登录 -->
+          <div class="info js-logined">
+            <div class="left-info">
+              <div class="tips">
+                Email: <span id="loginEmail">309*******@qq.com</span>
+              </div>
+              <a class="out-btn" href="javascript:void(0)">
+                Sign Out
+              </a>
+            </div>
+          </div>
+
+          <div class="link-lists">
+            <!-- 有数量添加   active 类名-->
+            <div class="item">
+              <a href="https://member.pcbgogo.com">
+                <span> •  </span>
+                <span class="name">My Account</span>
+              </a>
+            </div>
+            <div class="item js-AwaitingPayment">
+              <a href="https://member.pcbgogo.com/Order/AwaitingPayment">
+                <span> •  </span>
+                <span class="name">My Orders list</span>
+              </a>
+            </div>
+            <div class="item">
+              <a href="https://member.pcbgogo.com/Member/MemberBalanceLog">
+                <span> •  </span>
+                <span class="name">Account Balance</span>
+              </a>
+            </div>
+            <div class="item js-Coupons">
+              <a href="https://member.pcbgogo.com/Specials/Coupons">
+                <span> •  </span>
+                <span class="name">Discount coupon</span>
+              </a>
+            </div>
+            <div class="item">
+              <a href="https://member.pcbgogo.com/Specials/Rewards">
+                <span> •  </span>
+                <span class="name">Reward points</span>
+              </a>
+            </div>
+            <div class="item">
+              <a href="https://member.pcbgogo.com/Address/AddOrEdit">
+                <span> •  </span>
+                <span class="name">My Delivery Address</span>
+              </a>
+            </div>
+            <div class="item">
+              <a href="https://member.pcbgogo.com/Forum/ArticleList">
+                <span> •  </span>
+                <span class="name">My Forum</span>
+              </a>
+            </div>
+            <div class="item js-message">
+              <a href="https://member.pcbgogo.com/Message/Message">
+                <span> •  </span>
+                <span class="name">Message</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--二级菜单-->
+  <div class="main-menu">
+    <div class="vip_warp">
+      <ul class="menu-list clear-fix">
+        <li class="active"><a href="orderIndex.html">My Account</a></li>
+        <li><a href="../pages作废/reviewList作废.html">Forum</a></li>
+      </ul>
+      <!--计价链接-->
+      <div class="in-link">
+        <span class="iconfont icon-jisuan1"></span>
+        <a href="javascript:void(0)">Order PCB Now</a>
+        <span>|</span>
+        <a href="javascript:void(0)">Order PCBA Now</a>
+        <span>|</span>
+        <a href="javascript:void(0)">Order Stencil Now</a>
+      </div>
+      <!--面包屑-->
+      <div class="bread-crumbs">
+        <a href="javascript:void(0)">
+          <span class="iconfont icon-shouye1"></span>
+          <span>- Shopping Cart</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!--主体-->
+<div class="order-main">
+  <!--左侧-->
+  <div class="box-l">
+    <div class="category js-category-index">
+      <div class="item"><a href="shopping-car.html">
+        <span class="iconfont icon-gouwuche2"></span>
+        <span class="category-name">-Shopping Cart<span>(999)</span></span> </a></div>
+      <div class="item "><a href="javascript:void(0)">
+        <span class="iconfont icon-fukuan1"></span>
+        <span class="category-name">-Awaiting payment</span>
+
+      </a></div>
+
+      <div class="item "><a href="javascript:void(0)">
+        <span class="iconfont icon-7v1shenqiajindu4276af"></span>
+        <span class="category-name">-Production status</span></a></div>
+      <div class="item "><a href="javascript:void(0)">
+        <span class="iconfont icon-ziyuan1"></span>
+        <span class="category-name">-Wait for shipment</span></a></div>
+      <div class="item "><a href="javascript:void(0)">
+        <span class="iconfont icon-feiji"></span>
+        <span class="category-name">-Unconfirmed delivery </span></a></div>
+      <div class="item "><a href="javascript:void(0)">
+        <span class="iconfont icon-yiwancheng"></span>
+        <span class="category-name">-Completed</span></a></div>
+      <div class="item"><a href="memberList.html">
+        <span class="iconfont icon-icon_fapinglun-xian"></span>
+        <span class="category-name">-Comments</span></a></div>
+      <div class="item">
+        <a href="myInvitation.html">
+          <span class="iconfont icon-daipingjiab"></span>
+          <span class="category-name">+Experience Share</span>
+        </a>
+        <!--&lt;!&ndash;二级列表&ndash;&gt;-->
+        <div class="second-item">
+          <a class="second-active" href="myInvitation.html">
+            <span class="second-name">My Invitation</span>
+          </a>
+          <a href="promoteIndex.html">
+            <span class="second-name">Share links</span>
+          </a>
+        </div>
+      </div>
+      <div class="item "><a href="account-page.html">
+        <span class="iconfont icon-34"></span>
+        <span class="category-name">-Cash and Coupon</span></a></div>
+      <!--vip-->
+      <div class="item ">
+        <a href="integral.html">
+          <span class="iconfont icon-v"></span>
+          <span class="category-name active-new">
+                    <span class="iconfont icon-new"></span>
+                    - Reward points
+                </span>
+        </a>
+      </div>
+      <!--vip-->
+      <div class="item "><a href="newsed.html">
+        <span class="iconfont icon-liuyanpinglun"></span>
+        <span class="category-name">-Message</span>
+      </a></div>
+      <div class="item "><a href="newsed.html">
+        <span class="iconfont icon-luntan"></span>
+        <span class="category-name">-My Forum</span>
+      </a></div>
+
+      <div class="item"><a href="essentialInformation.html">
+        <span class="iconfont icon-gerenziliao"></span>
+        <span class="category-name">+My Profile</span>
+      </a>
+        <!--&lt;!&ndash;二级列表&ndash;&gt;-->
+        <div class="second-item ">
+          <a href="essentialInformation.html">
+            <span class="second-name">Basic Information</span></a>
+          <a href="receivingAddress.html">
+            <span class="second-name">My Delivery Address</span>
+          </a>
+          <a href="changePassword.html">
+            <span class="second-name">Change Password</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--右侧-->
+  <div class="box-r">
+    <div class="r-title">
+      GIFT SHOP
+    </div>
+    <div class="the-content">
+      <div class="go-coin-box">
+        <div class="go-coin">
+<!--          <span class="iconfont "></span>-->
+          <object class="icon-GObi" data="../img/images/member/icon-GObi.svg" type=""></object>
+          <span class="my-coin">My  Gocoin:
+          <span class="number">3</span>
+          </span>
+        </div>
+      </div>
+      <div class="swiper-product">
+        <div class="swiper-box js-swiper-box">
+          <div class="swiper-content js-swiper-content">
+            <div class="swiper">
+              <div class="swiper-img">
+                <img class="lazyLoad" src="../img/images/bg-loading.gif" data-original="../img/images/gift/gift1.jpg"
+                     alt="">
+              </div>
+              <div class="swiper-text">
+                <div class="text">
+                  65Pcs Male to Male
+                  Solderless Flexible
+                  Breadboard Jumper Cables Wires
+                </div>
+                <div class="the-price">
+                  Use GOcoin: <span>100</span>
+                </div>
+                <div class="des-money">
+                  Extra Payment: <span>$20</span>
+                </div>
+                <a class="exchange-btn hvr-shadow js-exchange-btn" href="javascript:void(0)">
+                  Exchange
+                </a>
+              </div>
+            </div>
+            <div class="swiper">
+              <div class="swiper-img">
+                <img class="lazyLoad" src="../img/images/bg-loading.gif" data-original="../img/images/gift/gift3.jpg"
+                     alt="">
+              </div>
+              <div class="swiper-text">
+                <div class="text">
+                  65Pcs Male to Male
+                  Solderless Flexible
+                  Breadboard Jumper Cables Wires
+                </div>
+                <div class="the-price">
+                  Use GOcoin: <span>100</span>
+                </div>
+                <div class="des-money">
+                  Extra Payment: <span>$20</span>
+                </div>
+                <a class="exchange-btn hvr-shadow js-exchange-btn " href="javascript:void(0)">
+                  Exchange
+                </a>
+              </div>
+            </div>
+            <div class="swiper">
+              <div class="swiper-img">
+                <img class="lazyLoad" src="../img/images/bg-loading.gif" data-original="../img/images/gift/gift2.jpg"
+                     alt="">
+              </div>
+              <div class="swiper-text">
+                <div class="text">
+                  65Pcs Male to Male
+                  Solderless Flexible
+                  Breadboard Jumper Cables Wires
+                </div>
+                <div class="the-price">
+                  Use GOcoin: <span>100</span>
+                </div>
+                <div class="des-money">
+                  Extra Payment: <span>$20</span>
+                </div>
+                <a class="exchange-btn hvr-shadow js-exchange-btn" href="javascript:void(0)">
+                  Exchange
+                </a>
+              </div>
+            </div>
+            <div class="swiper">
+              <!-- 产品-->
+              <div class="swiper-img">
+                <img class="lazyLoad" src="../img/images/bg-loading.gif" data-original="../img/images/gift/gift4.jpg"
+                     alt="">
+              </div>
+              <div class="swiper-text">
+                <div class="text">
+                  65Pcs Male to Male
+                  Solderless Flexible
+                  Breadboard Jumper Cables Wires
+                </div>
+                <div class="the-price">
+                  Use GOcoin: <span>100</span>
+                </div>
+                <div class="des-money">
+                  Extra Payment: <span>$20</span>
+                </div>
+                <a class="exchange-btn hvr-shadow js-exchange-btn" href="javascript:void(0)">
+                  Exchange
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- tool-->
+          <div class="tool-box">
+            <div class="left-btn js-left-btn">
+              <span class="iconfont icon-jiantou-copy"></span>
+            </div>
+            <div class="right-btn js-right-btn">
+              <span class="iconfont icon-arrow-right"></span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-ads">
+          <a href="javascript:void(0)"></a>
+        </div>
+      </div>
+      <div class="coupons-box">
+        <div class="coupons-title">
+          Coupons
+        </div>
+        <div class="vouchers-box">
+          <ul class="vouchers-lists">
+            <!--  优惠-->
+            <li class="discount hvr-shadow">
+              <div class="vouchers-l">
+                <div class="off">
+                  15% 0FF
+                </div>
+                <div class="price">
+                  $15
+                </div>
+              </div>
+              <div class="vouchers-r">
+
+                <div class="the-price">
+                  Use GOcoin <span>100</span>
+                </div>
+                <a class="exchange-btn js-exchange-btn" href="javascript:void(0)">
+                  Exchange
+                </a>
+              </div>
+            </li>
+            <li class="discount hvr-shadow">
+              <div class="vouchers-l">
+
+                <div class="off">
+                  15% 0FF
+                </div>
+                <div class="price">
+                  $15
+                </div>
+              </div>
+              <div class="vouchers-r">
+
+                <div class="the-price">
+                  Use GOcoin <span>100</span>
+                </div>
+                <a class="exchange-btn js-exchange-btn" href="javascript:void(0)">
+                  Exchange
+                </a>
+              </div>
+            </li>
+            <!--  抵扣-->
+            <li class="rebate hvr-shadow">
+              <div class="vouchers-l">
+
+                <div class="off">
+                  $200 Order Amount
+                </div>
+                <div class="price">
+                  $15
+                </div>
+              </div>
+              <div class="vouchers-r">
+                <div class="the-price">
+                  Use GOcoin <span>100</span>
+                </div>
+                <a class="exchange-btn js-exchange-btn" href="javascript:void(0)">
+                  Exchange
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="gadget-box">
+        <div class="gadget-title">
+          PCBgogo Gadget
+        </div>
+        <div class="gadget-lists">
+          <ul class="gadget-parent">
+            <li>
+              <div class="gadget-l">
+                <img class="lazyLoad" src="../img/images/bg-loading.gif" data-original="../img/images/gift/gift1.jpg"
+                     alt="">
+              </div>
+              <div class="gadget-r">
+                <div class="text">
+                  65Pcs Male to Male
+                  Solderless Flexible
+                  Breadboard Jumper Cables Wires
+                </div>
+                <div class="the-price">
+                  Use GOcoin <span>100</span>
+                </div>
+                <div class="dis-price">
+                  Extra Payment: <span>$0</span>
+                </div>
+                <a class="exchange-btn js-exchange-btn hvr-shadow " href="javascript:void(0)">
+                  Exchange
+                </a>
+              </div>
+            </li>
+            <!-- 我是售完的-->
+            <li class="end">
+              <div class="gadget-l">
+                <img class="lazyLoad" src="../img/images/bg-loading.gif" data-original="../img/images/gift/gift2.jpg"
+                     alt="">
+              </div>
+              <div class="gadget-r">
+                <div class="text">
+                  65Pcs Male to Male
+                  Solderless Flexible
+                  Breadboard Jumper Cables Wires
+                </div>
+                <div class="the-price">
+                  Use GOcoin <span>100</span>
+                </div>
+                <div class="dis-price">
+                  Extra Payment: <span>$0</span>
+                </div>
+                <a class="exchange-btn js-exchange-btn hvr-shadow disabled" href="javascript:void(0)">
+                  Exchange
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="gadget-l">
+                <img class="lazyLoad" src="../img/images/bg-loading.gif" data-original="../img/images/gift/gift3.jpg"
+                     alt="">
+              </div>
+              <div class="gadget-r">
+                <div class="text">
+                  65Pcs Male to Male
+                  Solderless Flexible
+                  Breadboard Jumper Cables Wires
+                </div>
+                <div class="the-price">
+                  Use GOcoin <span>100</span>
+                </div>
+                <div class="dis-price">
+                  Extra Payment: <span>$0</span>
+                </div>
+                <a class="exchange-btn js-exchange-btn hvr-shadow " href="javascript:void(0)">
+                  Exchange
+                </a>
+              </div>
+            </li>
+            <!-- 我是售完的-->
+            <li class="end">
+              <div class="gadget-l">
+                <img class="lazyLoad" src="../img/images/bg-loading.gif" data-original="../img/images/gift/gift2.jpg"
+                     alt="">
+              </div>
+              <div class="gadget-r">
+                <div class="text">
+                  65Pcs Male to Male
+                  Solderless Flexible
+                  Breadboard Jumper Cables Wires
+                </div>
+                <div class="the-price">
+                  Use GOcoin <span>100</span>
+                </div>
+                <div class="dis-price">
+                  Extra Payment: <span>$0</span>
+                </div>
+                <a class="exchange-btn js-exchange-btn hvr-shadow disabled" href="javascript:void(0)">
+                  Exchange
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="gadget-l">
+                <img class="lazyLoad" src="../img/images/bg-loading.gif" data-original="../img/images/gift/gift1.jpg"
+                     alt="">
+              </div>
+              <div class="gadget-r">
+                <div class="text">
+                  65Pcs Male to Male
+                  Solderless Flexible
+                  Breadboard Jumper Cables Wires
+                </div>
+                <div class="the-price">
+                  Use GOcoin <span>100</span>
+                </div>
+                <div class="dis-price">
+                  Extra Payment: <span>$0</span>
+                </div>
+                <a class="exchange-btn js-exchange-btn hvr-shadow " href="javascript:void(0)">
+                  Exchange
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="gadget-l">
+                <img class="lazyLoad" src="../img/images/bg-loading.gif" data-original="../img/images/gift/gift3.jpg"
+                     alt="">
+              </div>
+              <div class="gadget-r">
+                <div class="text">
+                  65Pcs Male to Male
+                  Solderless Flexible
+                  Breadboard Jumper Cables Wires
+                </div>
+                <div class="the-price">
+                  Use GOcoin <span>100</span>
+                </div>
+                <div class="dis-price">
+                  Extra Payment: <span>$0</span>
+                </div>
+                <a class="exchange-btn js-exchange-btn hvr-shadow " href="javascript:void(0)">
+                  Exchange
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="gadget-box">
+        <div class="gadget-title">
+          Arduino
+        </div>
+        <div class="gadget-lists">
+          <ul class="gadget-parent">
+            <li>
+              <div class="gadget-l">
+                <img class="lazyLoad" src="../img/images/bg-loading.gif" data-original="../img/images/gift/gift1.jpg"
+                     alt="">
+              </div>
+              <div class="gadget-r">
+                <div class="text">
+                  65Pcs Male to Male
+                  Solderless Flexible
+                  Breadboard Jumper Cables Wires
+                </div>
+                <div class="the-price">
+                  Use GOcoin <span>100</span>
+                </div>
+                <div class="dis-price">
+                  Extra Payment: <span>$0</span>
+                </div>
+                <a class="exchange-btn js-exchange-btn hvr-shadow " href="javascript:void(0)">
+                  Exchange
+                </a>
+              </div>
+            </li>
+            <!-- 我是售完的-->
+            <li class="end">
+              <div class="gadget-l">
+                <img class="lazyLoad" src="../img/images/bg-loading.gif" data-original="../img/images/gift/gift2.jpg"
+                     alt="">
+              </div>
+              <div class="gadget-r">
+                <div class="text">
+                  65Pcs Male to Male
+                  Solderless Flexible
+                  Breadboard Jumper Cables Wires
+                </div>
+                <div class="the-price">
+                  Use GOcoin <span>100</span>
+                </div>
+                <div class="dis-price">
+                  Extra Payment: <span>$0</span>
+                </div>
+                <a class="exchange-btn js-exchange-btn hvr-shadow disabled" href="javascript:void(0)">
+                  Exchange
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="gadget-l">
+                <img class="lazyLoad" src="../img/images/bg-loading.gif" data-original="../img/images/gift/gift3.jpg"
+                     alt="">
+              </div>
+              <div class="gadget-r">
+                <div class="text">
+                  65Pcs Male to Male
+                  Solderless Flexible
+                  Breadboard Jumper Cables Wires
+                </div>
+                <div class="the-price">
+                  Use GOcoin <span>100</span>
+                </div>
+                <div class="dis-price">
+                  Extra Payment: <span>$0</span>
+                </div>
+                <a class="exchange-btn js-exchange-btn hvr-shadow " href="javascript:void(0)">
+                  Exchange
+                </a>
+              </div>
+            </li>
+            <!-- 我是售完的-->
+            <li class="end">
+              <div class="gadget-l">
+                <img class="lazyLoad" src="../img/images/bg-loading.gif" data-original="../img/images/gift/gift2.jpg"
+                     alt="">
+              </div>
+              <div class="gadget-r">
+                <div class="text">
+                  65Pcs Male to Male
+                  Solderless Flexible
+                  Breadboard Jumper Cables Wires
+                </div>
+                <div class="the-price">
+                  Use GOcoin <span>100</span>
+                </div>
+                <div class="dis-price">
+                  Extra Payment: <span>$0</span>
+                </div>
+                <a class="exchange-btn js-exchange-btn hvr-shadow disabled" href="javascript:void(0)">
+                  Exchange
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="gadget-l">
+                <img class="lazyLoad" src="../img/images/bg-loading.gif" data-original="../img/images/gift/gift1.jpg"
+                     alt="">
+              </div>
+              <div class="gadget-r">
+                <div class="text">
+                  65Pcs Male to Male
+                  Solderless Flexible
+                  Breadboard Jumper Cables Wires
+                </div>
+                <div class="the-price">
+                  Use GOcoin <span>100</span>
+                </div>
+                <div class="dis-price">
+                  Extra Payment: <span>$0</span>
+                </div>
+                <a class="exchange-btn js-exchange-btn hvr-shadow " href="javascript:void(0)">
+                  Exchange
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="gadget-l">
+                <img class="lazyLoad" src="../img/images/bg-loading.gif" data-original="../img/images/gift/gift3.jpg"
+                     alt="">
+              </div>
+              <div class="gadget-r">
+                <div class="text">
+                  65Pcs Male to Male
+                  Solderless Flexible
+                  Breadboard Jumper Cables Wires
+                </div>
+                <div class="the-price">
+                  Use GOcoin <span>100</span>
+                </div>
+                <div class="dis-price">
+                  Extra Payment: <span>$0</span>
+                </div>
+                <a class="exchange-btn js-exchange-btn hvr-shadow " href="javascript:void(0)">
+                  Exchange
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--返回顶部-->
+<div class="go-btn">
+  <img src="../img/images/order/gotop.png" alt="">
+</div>
+
+<!--通用兑换弹窗-->
+<div class="pop-box js-pop-box">
+  <div class="pop-title">
+    <div class="name">
+      Gift details
+    </div>
+    <span class="iconfont icon-guanbi"></span>
+  </div>
+  <div class="pop-content">
+    <div class="product-item">
+      <div class="product-l">
+        <div class="product-img">
+          <!-- 套用不同弹窗显示不同内容即可-->
+          <!--  产品-->
+          <img src="../img/images/banner1.jpg" alt="">
+          <!--  折扣券-->
+          <div class="discount" style="display: none">
+            <div class="off">15% 0FF</div>
+            <div class="money">$15</div>
+          </div>
+          <!-- 抵扣券-->
+          <div class="rebate" style="display: none">
+            <div class="off">$200 Order Amount</div>
+            <div class="money">$5</div>
+          </div>
+        </div>
+        <div class="stock-box">
+          <a class="stock-sub disabled js-stock-sub" href="javascript:void(0)">
+            <span class="iconfont icon-jian"></span>
+          </a>
+          <input class="stock-number js-stock-number" type="text" value="1">
+          <a class="stock-add js-stock-add" href="javascript:void(0)">
+            <span class="iconfont icon-plus-add"></span>
+          </a>
+        </div>
+        <div class="des-price">
+          <!-- 给我一个  active-->
+          <label for="coin" class="the-select active">
+            <input type="radio" id="coin">
+          </label>
+          Use GOcoin <span>
+              100
+            </span>
+        </div>
+        <div class="dis-price">
+          <label for="extra" class="the-select">
+            <input type="radio" id="extra">
+          </label> Extra Payment: <span>$0</span>
+        </div>
+        <a class="exchange-btn hvr-shadow js-cash-gift" href="javascript:void(0)">
+          Exchange
+        </a>
+      </div>
+      <div class="product-r">
+        <div class="diy-scroll js-diy-scroll">
+          <div class="title">
+            65Pcs Male to Male Solderless Flexible
+            Breadboard Jumper Cables Wires
+          </div>
+          <div class="stock-tips">
+            由于商品库存有限，一次兑换次不可超过5个，给您带来的不便，
+            敬请谅解！
+            <br>30天内兑换礼品数累计不能超过10个。
+          </div>
+          <div class="product-des">
+            <div class="product-title">
+              <div class="slider active">
+                Product introduction
+              </div>
+              <div class="des-text">
+                5Pcs Male to Male Solderless Flexible Breadboard Jumper Cables Wires5Pcs Male to Male Solderless
+                Flexible Breadboard Jumper Cables Wires5Pcs Male to Male Solderless Flexible Breadboard Jumper Cables
+                Wires5Pcs Male to Male Solderless Flexible Breadboard Jumper Cables Wires5Pcs Male to Male Solderless
+                Flexible Breadboard Jumper Cables Wires5Pcs Male to
+                Male Solderless Flexible Breadboard Jumper Cables Wires5Pcs Male to Male Solderless Flexible Breadboard
+                Jumper Cables Wiresv5Pcs Male to Male Solderless Flexible Breadboard Jumper Cables Wires5Pcs Male to
+                Male Solderless Flexible Breadboard Jumper Cables Wires
+                Male Solderless Flexible Breadboard Jumper Cables Wires
+                Male Solderless Flexible Breadboard Jumper Cables Wires
+                Male Solderless Flexible Breadboard Jumper Cables Wires
+                Male Solderless Flexible Breadboard Jumper Cables Wires
+                Male Solderless Flexible Breadboard Jumper Cables Wires
+                Male Solderless Flexible Breadboard Jumper Cables Wires
+                Male Solderless Flexible Breadboard Jumper Cables Wires
+                Male Solderless Flexible Breadboard Jumper Cables Wires
+                Male Solderless Flexible Breadboard Jumper Cables Wires
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--兑换结果-->
+  <div class="the-results js-the-results">
+    <div class="the-name">兑换成功！</div>
+    <div class="the-group">
+      <a class="hvr-shadow" href="shopping-car.html">
+        查看订单
+      </a>
+      <a class="hvr-shadow js-continue-btn" href="javascript:void(0)">
+        继续兑换
+      </a>
+    </div>
+  </div>
+</div>
+<!--通用弹窗遮罩-->
+<div class="diy-mask-bg"></div>
+<script src="../img/js/jquery/jquery-1.11.3.min.js"></script>
+<script src="../img/js/layer-v3.1.1/layer/layer.js"></script>
+<script src="../img/js/lazyload/jquery.lazyload.min.js"></script>
+<script src="../img/js/nicescroll/nicescroll.min.js"></script>
+<script src="../img/js/public.js"></script>
+<script>
+//////////套用删除或修改如下js
+$(function () {
+
+  // 滚动条
+  $('.js-diy-scroll').niceScroll({
+    cursorwidth: '0'
+  })
+
+  ///轮播图
+  void function () {
+
+    function DiySwiper (el, obj) {
+      this.el = el
+      this.config = obj
+      this.swipers = 0
+      this.timer = null
+      this.isClick = false
+      this.activeIndex = 1
+      this.swiperWidth = 0
+      this.delyTime = 3000
+      this.isAutoPlay = true
+      this.interval = null
+      this.init()
+    }
+
+    DiySwiper.prototype = {
+      init: function () {
+        $(this.el).css({ position: 'relative' })
+        this.leftBtn = $(this.el).find('.js-left-btn')
+        this.rightBtn = $(this.el).find('.js-right-btn')
+        this.swiperWidth = $(this.el).find('.swiper').innerWidth()
+        $(this.el).find('.swiper').css({ width: this.swiperWidth })
+        this.swiperContent = $('.js-swiper-content')
+        this.copyFirstClone = this.swiperContent.find('.swiper').eq(0).clone()
+        this.copyLastClone = this.swiperContent.find('.swiper').eq(-1).clone()
+        this.swiperContent.append(this.copyFirstClone)
+        this.swiperContent.prepend(this.copyLastClone)
+        this.swipers = $(this.el).find('.swiper').length
+        $(this.el).find('.js-swiper-content').css({ height: 'inherit', width: this.swiperWidth * this.swipers })
+        this.swiperContent[0].style.transform = 'translate3d(' + -(this.swiperWidth) + 'px, 0px, 0px)'
+        this.swiperBox = $('.js-swiper-box')
+        this.bindEvent()
+        this.autoplay()
+      },
+      defaultEvent: function (flag) {
+        var that = this
+        if (flag) {
+          this.leftBtn[0].addEventListener('click', function () {
+            that.activeIndex--
+            if (!that.isClick) {
+              that.isClick = true
+              if (that.activeIndex <= 0) {
+                that.swiperContent[0].style.transform = 'translate3d(' + -(that.activeIndex * that.swiperWidth) + 'px, 0px, 0px)'
+                that.swiperContent[0].style.transitionDuration = '0.5s'
+                that.activeIndex = that.swipers - 2
+                that.timer = setTimeout(function () {
+                  that.swiperContent[0].style = 'height: inherit; width: ' + that.swipers * that.swiperWidth + 'px'
+                  that.swiperContent[0].style.transform =
+                    'translate3d(' + -(that.activeIndex * that.swiperWidth) + 'px, 0px, 0px)'
+                  that.isClick = false
+                  clearTimeout(that.timer)
+                }, 500)
+
+              } else {
+                that.swiperContent[0].style.transform = 'translate3d(' + -(that.activeIndex * that.swiperWidth) + 'px, 0px, 0px)'
+                that.swiperContent[0].style.transitionDuration = '0.5s'
+                that.isClick = false
+              }
+            }
+          })
+        } else {
+          this.rightBtn[0].addEventListener('click', function () {
+            if (!that.isClick) {
+              that.isClick = true
+              that.activeIndex++
+              if (that.activeIndex >= that.swipers - 1) {
+                that.swiperContent[0].style.transitionDuration = '0.5s'
+                that.swiperContent[0].style.transform =
+                  'translate3d(' + -(that.activeIndex * that.swiperWidth) + 'px, 0px, 0px)'
+                that.activeIndex = 1
+                that.timer = setTimeout(function () {
+                  that.swiperContent[0].style = 'height: inherit; width: ' + that.swipers * that.swiperWidth + 'px'
+                  that.swiperContent[0].style.transform =
+                    'translate3d(' + -(that.activeIndex * that.swiperWidth) + 'px, 0px, 0px)'
+                  that.isClick = false
+                  clearTimeout(that.timer)
+                }, 500)
+              } else {
+                that.swiperContent[0].style.transitionDuration = '0.5s'
+                that.swiperContent[0].style.transform =
+                  'translate3d(' + -(that.activeIndex * that.swiperWidth) + 'px, 0px, 0px)'
+                that.isClick = false
+              }
+            }
+          })
+        }
+        this.swiperBox[0].addEventListener('mouseenter', function () {
+          that.isAutoPlay = false
+          that.autoplay()
+        })
+        this.swiperBox[0].addEventListener('mouseleave', function () {
+          that.isAutoPlay = true
+          that.autoplay()
+        })
+      },
+      bindEvent: function () {
+        this.changeLeft()
+        this.changeRight()
+      },
+      changeLeft: function () {
+        this.defaultEvent(-1)
+      },
+      changeRight: function () {
+        this.defaultEvent(0)
+      },
+      autoplay: function () {
+        clearInterval(this.interval)
+        if (this.isAutoPlay) {
+          this.interval = setInterval(function () {
+            $('.js-right-btn').trigger('click')
+          }, this.delyTime)
+        }
+      }
+    }
+    var swiper1 = new DiySwiper('.js-swiper-box')
+  }()
+  //弹窗显示
+  $('.js-exchange-btn').click(function () {
+    if ($(this).hasClass('disabled')) {
+      layer.msg('该商品以兑换完')
+      return false
+    }
+    ////套用忽略如下判断
+    if ($(this).parents('li').hasClass('rebate')) {
+      $('.js-pop-box .product-img').find('.rebate').show()
+      $('.js-pop-box .product-img').find('.discount').hide()
+      $('.js-pop-box .product-img').find('img').hide()
+      $('.js-pop-box').find('.title').hide()
+    } else if ($(this).parents('li').hasClass('discount')) {
+      $('.js-pop-box .product-img').find('.discount').show()
+      $('.js-pop-box .product-img').find('img').hide()
+      $('.js-pop-box .product-img').find('.rebate').hide()
+    } else {
+      $('.js-pop-box .product-img').find('img').show()
+      $('.js-pop-box').find('.title').show()
+      $('.js-pop-box .product-img').find('.rebate').hide()
+      $('.js-pop-box .product-img').find('.discount').hide()
+    }
+    $('.diy-mask-bg,.js-pop-box').fadeIn()
+    $('body').css({ overflow: 'hidden' })
+  })
+  ///关闭弹窗
+  $('.icon-guanbi').click(function () {
+    $('.diy-mask-bg,.js-pop-box,.js-the-results').fadeOut()
+    $('body').css({ overflow: 'auto' })
+  })
+  //兑换弹窗
+  $('.js-cash-gift').click(function () {
+    $('.js-the-results').fadeIn()
+  })
+  //继续兑换
+  $('.js-continue-btn').click(function () {
+    $(this).parents('.js-the-results').fadeOut()
+    $('.js-pop-box,.diy-mask-bg').fadeOut()
+    $('body').css({ overflow: 'auto' })
+  })
+
+  ////数量
+  $('.js-stock-number').keyup(function () {
+    var currentVal = $(this).val()
+    if (isNaN(currentVal) || parseInt(currentVal) <= 0) {
+      $(this).val(1)
+    }
+    if (currentVal > 1) {
+      $('.js-stock-sub').removeClass('disabled')
+    } else {
+      $('.js-stock-sub').addClass('disabled')
+    }
+  })
+  $('.js-stock-number').blur(function () {
+    var currentVal = $(this).val()
+    if (currentVal === '') {
+      $(this).val(1)
+    }
+  })
+  ////加
+  $('.js-stock-add').click(function () {
+    var getNumber = $('.js-stock-number').val()
+    getNumber++
+    if (getNumber > 1) {
+      $('.js-stock-sub').removeClass('disabled')
+    }
+    if (getNumber > 5) {
+      layer.msg('抵达单次最大兑换数量')
+      return false
+    } else {
+      $('.js-stock-number').val(getNumber)
+    }
+  })
+  ////减
+  $('.js-stock-sub').click(function () {
+    var getNumber = $('.js-stock-number').val()
+    getNumber--
+    if (getNumber <= 1) {
+      $(this).addClass('disabled')
+      $('.js-stock-number').val(1)
+      layer.msg('抵达单次最小兑换数量')
+    } else {
+      $('.js-stock-number').val(getNumber)
+    }
+  })
+
+  $('img.lazyLoad').lazyload({
+    threshold: 50,
+    effect: 'fadeIn'
+  })
+
+})
+</script>
+</body>
+</html>

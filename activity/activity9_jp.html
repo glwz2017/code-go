@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <title> China PCB Prototype Manufacture |Pcbgogo.com</title>
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="googlebot" content="noindex">
+    <!--网页标题左侧显示-->
+    <link rel="icon" href="../img/images/title-logo.png" type="image/x-icon">
+    <!--收藏夹显示图标-->
+    <link rel="shortcut icon" href="../img/images/title-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../img/css/public.css">
+    <!--字体图标-->
+    <link rel="stylesheet" href="../img/fonts/iconfont.css">
+    <link rel="stylesheet" href="../img/css/header.css">
+    <link rel="stylesheet" href="../img/css/footer.css">
+    <style>
+        .main-box {
+
+        }
+
+        .active-nav {
+            height: 65px;
+            background-color: #c92828;
+        }
+
+        .active-nav .nav {
+            width: 1280px;
+            margin: 0 auto;
+            background-color: #c92828;
+        }
+
+        .active-nav .nav li {
+            display: inline-block;
+            width: 33.3%;
+            float: left;
+            font-size: 24px;
+            font-style: italic;
+            color: #ffffff;
+            line-height: 65px;
+            position: relative;
+            cursor: pointer;
+
+        }
+
+        .active-nav .nav li span {
+            display: inline-block;
+            width: 395px;
+            height: 100%;
+            text-indent: 48px;
+            transition: all .3s ease-in;
+        }
+        .active-nav .nav li:first-child+li span {
+            text-indent: 80px;
+        }
+
+        .active-nav .nav li:before {
+            position: absolute;
+            top: 0;
+            right: 1px;
+            display: block;
+            content: '';
+            border-top: 33px solid transparent;
+            border-left: 30px solid #c92828;
+            border-bottom: 33px solid transparent;
+            z-index: 9;
+            transition: all .3s ease-in;
+        }
+
+        .active-nav .nav li:after {
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: block;
+            content: '';
+            border-top: 33px solid transparent;
+            border-left: 30px solid #ffffff;
+            border-bottom: 33px solid transparent;
+        }
+
+        /*hover*/
+        .active-nav .nav li:hover span {
+            color: #eac2c2;
+        }
+
+        .active-nav .nav li:last-child:after {
+            display: none;
+        }
+
+        .sep-banner {
+            background: url("../img/images/activity/old-img/sep-banner.jpg") no-repeat center;
+            width: 100%;
+            height: 603px;
+            min-width: 1280px;
+        }
+
+        .sep-banner .sep-title {
+            margin: 128px 0 0 60px;
+            display: inline-block;
+            font-size: 50px;
+            color: #1f1f1f;
+            font-style: italic;
+        }
+
+        .sep-banner .sep-time {
+            margin: 32px 0 0 231px;
+            font-size: 22px;
+            color: #ffffff;
+        }
+
+        .sep-banner .anchor {
+            font-size: 30px;
+            font-style: italic;
+            margin: 30px 0 0 186px;
+        }
+
+        .sep-banner .anchor span {
+            color: #b21f1f;
+            margin-right: 5px;
+        }
+
+        .sep-banner .anchor2 {
+            margin: 5px 0 0 178px;
+        }
+
+        .view1-box {
+            height: 350px;
+            text-align: center;
+        }
+
+        .view1-box .anchor-title {
+            font-family: 'Impact';
+            font-size: 40px;
+            padding-top: 80px;
+        }
+
+        .view1-box .anchor-title span {
+            color: #b21f1f;
+            margin-right: 10px;
+        }
+
+        .view1-box .the-first {
+            font-family: 'Arial';
+            margin-top: 25px;
+            font-size: 30px;
+            color: #b21f1f;
+            font-weight: bold;
+        }
+
+        .view1-box .pcs-layer {
+            font-size: 22px;
+            color: #b21f1f;
+            margin-top: 15px;
+            font-family: "Adobe 黑体 Std";
+        }
+
+        .view1-box .pcs-layer .icon-gouxuan {
+            font-size: 30px;
+            vertical-align: middle;
+            margin-left: 10px;
+        }
+
+        .main-box .quote-now {
+            font-family: "Adobe 黑体 Std";
+            font-size: 16px;
+            color: #ffffff;
+            text-align: center;
+            height: 40px;
+            line-height: 40px;
+            min-width: 80px;
+            padding: 0 20px;
+            background-color: #b21f1f;
+            margin-top: 65px;
+            transition: all .3s;
+            transform: skew(-30deg);
+        }
+
+        .main-box .quote-now:hover {
+            transform: skew(-10deg);
+            text-decoration: underline;
+            box-shadow: 0 0 8px -2px rgba(0, 0, 0, .6);
+        }
+
+        .special-up {
+            border-top: 1px solid #b21f1f;
+            height: 520px;
+            background-color: #fef6f0;
+            text-align: center;
+        }
+
+        .special-up .special-title {
+            margin-top: 80px;
+            font-size: 44px;
+            color: #b21f1f;
+            text-align: center;
+            font-family: 'Impact';
+        }
+
+        .special-up .special-title span {
+            color: #1f1f1f;
+        }
+
+        .special-up .discount-box {
+            width: 1280px;
+            margin: 40px auto 0;
+        }
+
+        .special-up .discount-box li {
+            float: left;
+            margin-left: 25px;
+            width: 300px;
+            background: url("../img/images/activity/old-img/off-bg.png") no-repeat center;
+            height: 119px;
+            cursor: pointer;
+            transition: all .3s;
+        }
+
+        .special-up .discount-box li:first-child {
+            margin-left: 0;
+        }
+
+        .special-up .discount-box li span {
+            float: left;
+            font-family: 'Impact';
+            color: #b21f1f;
+            font-size: 35px;
+            display: inline-block;
+            margin: 39px 0 0 56px;
+        }
+
+        .special-up .discount-box li .text {
+            float: left;
+            font-family: "Adobe 黑体 Std";
+            font-size: 22px;
+            color: #1f1f1f;
+            margin: 31px 0 0 32px;
+            font-weight: bold;
+        }
+
+        .special-up .discount-box li:hover {
+            transform: translateY(-5px);
+        }
+
+        .special-up .tips {
+            font-family: "Adobe 黑体 Std";
+            color: #b21f1f;
+            font-size: 18px;
+            text-align: center;
+            margin-top: 40px;
+            font-weight: bold;
+        }
+
+        .special-up .tips span {
+            color: #1f1f1f;
+            margin-right: 20px;
+        }
+
+        .instructions {
+            text-align: center;
+            padding: 30px 0;
+            font-size: 16px;
+        }
+
+        .instructions span {
+            font-size: 20px;
+            color: #b21f1f;
+            vertical-align: text-top;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+<!--头部-->
+<div class="header">
+    <!--顶部-->
+    <div class="nav-info">
+        <div class="nav-left">
+            <img class="nav-logo" src="../img/images/new-year.gif" alt="new-year" width="199" height="61">
+        </div>
+        <ul class="nav-items">
+            <li>
+                <a href="javascript:void(0)">
+                    <span class="iconfont icon-qushuchakanshuxing2"></span>
+                    <span class="gerber">Online Gerber Viewer</span>
+                </a>
+            </li>
+            <li>
+                <a href="phone-display.html">
+                    <span class="iconfont icon-shouji1"></span>
+                    <span class="gerber">Mobile Website</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <span class="iconfont icon-Skype"></span>
+                </a>
+            </li>
+            <li><a href="mailto:service@pcbgogo.com">
+                <span class="iconfont icon-E-mail"></span>
+                <span class="mail-text">service@pcbgogo.com</span>
+            </a>
+            </li>
+            <li class="language"><span><img src="../img/images/England.png" alt="country-flag"></span>&nbsp;&nbsp;English
+                <!--语言选择弹出层-->
+                <ul class="language-box">
+                    <li onclick="window.open('index.html','_self')"><img src="../img/images/England.png" alt="">&nbsp;&nbsp;English
+                    </li>
+                    <li onclick="window.open('https://www.pcbgogo.jp/','_blank')"><img
+                            src="../img/images/Japan.png" alt="">&nbsp;&nbsp;Japanese
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="top-box">
+        <!--左侧logo-->
+        <h1 class="logo">
+            <a href="index.html">
+                PCBgogo
+            </a>
+        </h1>
+        <!--nav-tips-->
+        <img src="../img/images/logo-tips.jpg" alt="logo tips" width="340" height="34" class="nav-tips">
+        <!--日文-->
+        <!--<img src="../img/images/logo-tips_jp.jpg" alt="logo tips" width="336" height="34" class="nav-tips-jp">-->
+        <!--nav-tips-->
+        <!--右侧登录-->
+        <div class="sign-box">
+            <ul class="sign-lists">
+                <li class="sign-in"><a href="javascript:void(0)">Sign in</a></li>
+                <li class="join"><a href="javascript:void(0)">Join Free</a></li>
+                <li class="hi-in"><a href="javascript:void(0)"><strong>Hi! The
+                    user...</strong></a></li>
+                <li class="joined">
+                    <i><img src="../img/images/user.png" alt="" width="40" height="40"></i><span class="pointer">
+                        <img src="../img/images/down-pointer.png" alt=""></span>
+                    <!--登陆后-->
+                    <div class="user-item">
+                        <div class="account active">
+                            My Account
+                        </div>
+                        <div class="account">
+                            My Orders list
+                        </div>
+                        <div class="account">
+                            My Delivery Address
+                        </div>
+                        <div class="facebook-btn ">
+                            Bind FaceBook
+                        </div>
+                        <div class="out-btn " style="margin-top: 10px">
+                            Sign Out
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--导航-->
+    <div class="nav">
+        <div class="nav-box">
+            <!--<div class="container_warp">-->
+            <!--左侧列表-->
+            <ul class="nav-lists">
+                <li class="active"><a href="index.html" class="home">Home</a></li>
+                <li><a href="PCBPrototype.html">PCB Instant Quote</a></li>
+                <li class="assembly-menus">
+                    <a href="PCBAssembly.html">PCB Assembly</a>
+                    <ol class="next-item">
+                        <li><a href="PCBAssembly.html">PCB Assembly</a></li>
+                        <li><a href="pcbaCapabilitiesProcess.html">PCBA process</a></li>
+                    </ol>
+                </li>
+                <li><a href="pcbLayout.html">PCB Layout</a></li>
+                <li class="capabilities-menus"><a href="pcbCapabilities.html">Capabilities</a>
+                    <ol class="capa-sub-menus">
+                        <li><a href="pcbCapabilities.html">PCB Capabilities</a></li>
+                        <li><a href="pcbaCapabilities.html">PCBA Capabilities</a></li>
+                        <li><a href="pcbLayoutCapabilities.html">PCB Layout capabilities</a></li>
+                        <li><a href="PCBPCBAQuickturnService.html">PCB& PCBA quickturn service</a></li>
+                        <li><a href="PCBPrototypeMassProduction.html">PCB Prototype& Mass production</a></li>
+                    </ol>
+                </li>
+                <li><a href="reviewList.html">Forum</a></li>
+                <li class="contact-menus"><a href="aboutUs.html">About Us</a>
+                    <ol class="contact-sub-menus">
+                        <li><a href="whyUs.html">Why us</a></li>
+                        <li><a href="methodPayment.html">Method of payment</a></li>
+                        <li><a href="Introduction.html">Introduction</a></li>
+                        <li><a href="privacyPolicy.html">Privacy policy</a></li>
+                        <li><a href="orderGuide.html">Order guide</a></li>
+                        <li><a href="shippingMethod.html">Shipping method guide</a></li>
+                        <li><a href="qualityGurrantee.html">Quality gurrantee</a></li>
+                        <li><a href="gogoDelivery.html">PCBgogo delivery</a></li>
+                    </ol>
+                </li>
+                <!--后续添加-->
+                <!--<li><a href="forum.html">Blog</a></li>-->
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+            <!--右侧图标-->
+            <div class="shopping-box">
+                <ul class="js-hints">
+                    <li class="active"><a href="member/newsed.html" title="Message">
+                        <span class="iconfont icon-ai-message"></span>
+                    </a>
+                        <i class="point"></i>
+                    </li>
+                    <li class="active"><a href="member/coupon-page.html" title="Coupons">
+                        <span class="iconfont icon-youhuiquan"></span>
+                    </a>
+                        <i class="point"></i>
+                    </li>
+                    <li class="active"><a href="member/awaiting-payment.html" title="Awaiting payment">
+                        <span class="iconfont icon-fukuan"></span>
+                    </a>
+                        <i class="point now-hide"></i>
+                    </li>
+                    <li class="car-box"><a href="member/shopping-car.html" title="Shopping cart">
+                        <span class="iconfont icon-gouwuche1"></span>
+                    </a>
+                        <i class="round car-nums">10</i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main-box">
+    <div class="active-nav">
+        <ul class="nav clear-fix js-active-nav">
+            <li>
+                <span>PCBGOGOフラッシュセール</span>
+            </li>
+            <li>
+                <span>#1 新規登録会員特典</span>
+            </li>
+            <li>
+                <span>#2 最大$50OFF値引き</span>
+            </li>
+        </ul>
+    </div>
+    <div class="sep-banner">
+        <div class="container_warp">
+            <div class="sep-title">PCBGOGOフラッシュセール</div>
+            <div class="sep-time">９月９日～９月25日</div>
+            <div class="anchor"><span>#1</span>新規登録会員特典</div>
+            <div class="anchor anchor2"><span>#2</span>最大$50OFF値引き</div>
+        </div>
+    </div>
+    <div class="view1-box">
+        <div class="anchor-title">
+            <span> #1</span> 新規登録会員特典
+        </div>
+        <div class="the-first">
+            初のご注文は無料！
+        </div>
+        <div class="pcs-layer">
+            <span class="iconfont icon-gouxuan"></span>
+            5-10枚の標準基板
+            <span class="iconfont icon-gouxuan"></span>
+            片面or両面、10*10cm
+        </div>
+        <a class="quote-now" href="pcb计价页面">今すぐお見積り</a>
+    </div>
+    <div class="special-up">
+        <div class="special-title">
+            #2 <span>最大$50OFF値引き</span>
+        </div>
+        <ul class="discount-box clear-fix">
+            <li>
+                <span>$10</span>
+                <div class="text">
+                    OFF
+                    <br>$100 - $200
+                </div>
+            </li>
+            <li>
+                <span>$20</span>
+                <div class="text">
+                    OFF
+                    <br>$200 - $300
+                </div>
+            </li>
+            <li>
+                <span>$30</span>
+                <div class="text">
+                    OFF
+                    <br>$300 - $500
+                </div>
+            </li>
+            <li>
+                <span>$50</span>
+                <div class="text">
+                    OFF
+                    <br>$500+
+                </div>
+            </li>
+        </ul>
+        <div class="tips">
+            <span> 利用方法:</span>
+            クーポン券が注文金額によって自動送付します。注文確認画面で本キャンペンのクーポン券を選択すれば宜しいです。
+        </div>
+        <a class="quote-now" href="pcb计价页面">今すぐお見積り</a>
+    </div>
+    <div class="instructions">
+        <span class="">*</span> クーポン券は基板製造、基板実装、メタルマスクにも適用します。
+        <span class="">*</span> 送料は本キャンペンの対象外です。
+    </div>
+</div>
+<!--底部-->
+<div class="footer clear-float">
+    <!--一级导航-->
+    <div class="footer-title clear-float">
+        <div class="container_warp">
+            <ul class="footer-title-ul">
+                <li>
+                    <dl>
+                        <dt>
+                            <span class="iconfont icon-icon-test1"></span>
+                        </dt>
+                        <dd>
+                            100% <br>Quality <br>Guarantees
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <span class="iconfont icon-DHLshandian"></span>
+                        </dt>
+                        <dd>
+                            3-5days' <br>Delivery <br>(DHL)
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <span class="iconfont icon-ISO"></span>
+                        </dt>
+                        <dd>
+                            International <br>Organization <br>forStandardization
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <span class="iconfont icon-UL"></span>
+                        </dt>
+                        <dd>
+                            Underwriter <br>Laboratories <br>Inc.
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--二级列表-->
+    <div class="links-type clear-float">
+        <div class="container_warp">
+            <div class="left-box" style="float: left">
+                <ul class="links-title clear-float">
+                    <li>
+                        <p>LEARN</p>
+                        <ul class="links-lists">
+                            <li>
+                                <a href="aboutUs.html">About Us</a>
+                            </li>
+                            <li>
+                                <a href="https://www.pcbgogo.com/Blog/Big_sales_on_PCB_mass_production.html"> PCB
+                                    Capabilities</a>
+                            </li>
+                            <li>
+                                <a href="pcbaCapabilities.html">PCBA Capabilities</a>
+                            </li>
+                            <li>
+                                <a href="https://www.pcbgogo.com/Blog/Big_sales_on_PCB_mass_production.html"> PCB Layout
+                                    Capabilities</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>PCBGOGO SERVICE</p>
+                        <ul class="links-lists">
+                            <li>
+                                <a href="PCBPrototype.html">PCB Prototype </a>
+                            </li>
+                            <li>
+                                <a href="PCBAssembly.html">PCB Assembly</a>
+                            </li>
+                            <li>
+                                <a href="pcbLayout.html"> PCB Layout </a>
+                            </li>
+                            <li>
+                                <a href="FPCInstantQuote.html">PCB Instant Quote</a>
+                            </li>
+                            <li>
+                                <a href="sitemap.xml" title="https://www.pcbgogo.com/sitemap(1).xml">Site Map</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>CUSTOMER SUPPORT</p>
+                        <ul class="links-lists">
+                            <li>
+                                <a href="forum/forum.html">Engineering </a>
+                            </li>
+                            <li>
+                                <a href="dynamic.html">Feedback </a>
+                            </li>
+                            <li>
+                                <a href="old-process/pcbaAssemblyFaq.html">PCBA FAQs </a>
+                            </li>
+                            <li>
+                                <a href="whyUs.html">Why us </a>
+                            </li>
+                            <li>
+                                <a href="privacyPolicy.html">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="keywordSearch.html">PCB Glossary</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>ORDER HELP</p>
+                        <ul class="links-lists">
+                            <li>
+                                <a href="orderGuide.html">Order Guide </a>
+                            </li>
+                            <li>
+                                <a href="contactUs.html">Contact Us </a>
+                            </li>
+                            <li>
+                                <a href="register.html">Create an Account </a>
+                            </li>
+                            <li>
+                                <a href="qualityGurrantee.html">Quality Gurrantee </a>
+                            </li>
+                            <li>
+                                <a href="gogoDelivery.html">PCBGOGO Delivery</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="footer-item-icon">
+                    <li><a href="javascript:void(0)"><img src="../img/images/paypal.png" alt=""></a></li>
+                    <li><a href="javascript:void(0)"><img src="../img/images/hsbc.png" alt="HBSC"></a></li>
+                    <li><a href="javascript:void(0)"><img src="../img/images/china.png" alt=""></a></li>
+                    <li><a href="javascript:void(0)"><img src="../img/images/dhl.png" alt="DHL"></a></li>
+                    <li><a href="javascript:void(0)"><img src="../img/images/post.png" alt="POST"></a></li>
+                    <li><a href="javascript:void(0)"><img src="../img/images/ups.png" alt="UPS"></a></li>
+                    <li><a href="javascript:void(0)"><img src="../img/images/ems.png" alt="EMS"></a></li>
+                </ul>
+            </div>
+
+            <!--右侧表单-->
+            <div class="send-from">
+                <p>QUICK CONTACT</p>
+                <form action="#">
+                    <input type="text" placeholder="Name" value="Name" onfocus="if(this.value==='Name')this.value=''"
+                           onblur="if(this.value==='')this.value='Name'">
+                    <input type="text" placeholder="Email" value="Email"
+                           onfocus="if(this.value==='Email')this.value=''"
+                           onblur="if(this.value==='')this.value='Email'">
+                    <textarea type="text" class="message-input" placeholder="Message"
+                              onfocus="if(this.value==='Message')this.value=''"
+                              onblur="if(this.value==='')this.value='Message'"></textarea>
+                    <input type="button" class="btn-submit " value="Send Message">
+                </form>
+            </div>
+            <!--右侧表单-->
+        </div>
+    </div>
+    <!--底部表单-->
+    <div class="footer-from clear-float">
+        <div class="container_warp">
+            <!--底部列表-->
+            <div class="footer-item">
+                <ul class="footer-item-ul">
+                    <li class="ban-quan">Copyright © 2015 PCBGOGO. All rights reserved. Shenzhen JDB Technology Co.,
+                        Ltd. <br>
+                        Address: No. 15, Zhongxing Road, Kengzi Street, Pingshan District, Shenzhen, 518000, China.
+                    </li>
+                    <li>
+                        Whatsapp <br>+8618665922549
+                    </li>
+                    <li>
+                        Mail <br>service@pcbgogo.com
+                    </li>
+                    <li>
+                        Tel <br>+86-755-33066136
+                    </li>
+                    <li class="footer-last-item">
+                        <div class="share-box">
+                            <a target="_blank" href="#"><img
+                                    src="../img/images/twitter.png" alt=""></a>
+                            <a target="_blank" href="#"><img
+                                    src="../img/images/google.png" alt=""></a>
+                            <a target="_blank" href="#"><img
+                                    src="../img/images/facebook.png" alt=""></a>
+                            <a target="_blank"
+                               href="#"><img
+                                    src="../img/images/instagram.png" alt=""></a>
+                            <a target="_blank" href="#"><img
+                                    src="../img/images/Linkedln.png" alt=""></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../img/js/jquery/jquery-1.11.3.min.js"></script>
+<script>
+    $(function () {
+        $('.js-active-nav li').click(function () {
+            var index = $(this).index();
+            var top;
+            switch (index) {
+                case 1:
+                    top = $('.view1-box')[0].offsetTop;
+                    break;
+                case 2:
+                    top = $('.special-up')[0].offsetTop;
+                    break;
+                default:
+                    top = 0;
+                    break
+            }
+            $('html,body').animate({scrollTop: top});
+        });
+
+    });//end function
+</script>
+</body>
+</html>

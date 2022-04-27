@@ -1,0 +1,1482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="img/css/advanced-pcb.css">
+    <link rel="stylesheet" href="img/css/swiper/swiper.min.css">
+    <!--[if lt IE 10]>
+    <style>
+        .swiper-slide {
+            width: 33%;
+            float: left;
+        }
+    </style>
+    <![endif]-->
+</head>
+<body>
+<!--头部-->
+<div class="header">
+    <!--顶部-->
+    <div class="nav-info">
+        <div class="nav-left">
+            <img class="nav-logo" src="img/images/new-year.gif" alt="new-year" width="199" height="61">
+        </div>
+        <ul class="nav-items">
+            <li>
+                <a href="javascript:void(0)">
+                    <span class="iconfont icon-qushuchakanshuxing2"></span>
+                    <span class="gerber">Online Gerber Viewer</span>
+                </a>
+            </li>
+            <li>
+                <a href="phone-display.html">
+                    <span class="iconfont icon-shouji1"></span>
+                    <span class="gerber">Mobile Website</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <span class="iconfont icon-Skype"></span>
+                </a>
+            </li>
+            <li><a href="mailto:service@pcbgogo.com">
+                <span class="iconfont icon-iconfontcolor06"></span>
+                <span class="mail-text">service@pcbgogo.com</span>
+            </a>
+            </li>
+            <li class="language"><span><img src="img/images/England.png" alt="country-flag"></span>&nbsp;&nbsp;English
+                <!--语言选择弹出层-->
+                <ul class="language-box">
+                    <li onclick="window.open('index.html','_self')"><img src="img/images/England.png" alt="">&nbsp;&nbsp;English
+                    </li>
+                    <li onclick="window.open('https://www.pcbgogo.jp/','_blank')"><img
+                            src="img/images/Japan.png" alt="">&nbsp;&nbsp;Japanese
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+
+    </div>
+    <div class="top-box">
+        <!--左侧logo-->
+        <h1 class="logo">
+            <a href="index.html">
+                PCBgogo
+            </a>
+        </h1>
+        <!--nav-tips-->
+        <img src="img/images/logo-tips.jpg" alt="logo tips" width="340" height="34" class="nav-tips">
+        <!--日文-->
+        <!--<img src="img/images/logo-tips_jp.jpg" alt="logo tips" width="336" height="34" class="nav-tips-jp">-->
+        <!--nav-tips-->
+        <!--右侧登录-->
+        <div class="sign-box">
+            <div class="sign-lists">
+                <div class="sign-in"><a href="javascript:void(0)">Sign in</a></div>
+                <div class="join"><a href="register.html">Join Free</a></div>
+                <div class="joined">
+                    <i><img src="img/images/user.png" alt=""></i>
+                </div>
+                <div class="hi-in">
+                    <a href="javascript:void(0)">Hi! zhang测大街上公开了坚朗</a>
+                </div>
+                <!--信息列表-->
+                <div class="person-info">
+                    <!--  未登录-->
+                    <div class="info">
+                        <div class="left-info">
+                            <div class="tips">
+                                New Customer?
+                            </div>
+                            <a class="join-free" href="register.html">
+                                Join Free
+                            </a>
+                        </div>
+                        <div class="right-info">
+                            <a class="login-in" href="javascript:void(0)">
+                                Sign in
+                            </a>
+                        </div>
+                    </div>
+                    <!--   已登录 -->
+                    <div class="info" style="display: none">
+                        <div class="left-info">
+                            <div class="tips">
+                                Email: <span>20**@163.com</span>
+                            </div>
+                            <a class="out-btn" href="javascript:void(0)">
+                                Sign Out
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="link-lists">
+                        <!-- 有数量添加   active 类名-->
+                        <div class="item">
+                            <a href="javascript:void(0)">
+                                <span> •  </span>
+                                <span class="name">My Account</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript:void(0)">
+                                <span> •  </span>
+                                <span class="name">My Orders list</span>
+                            </a>
+                        </div>
+                        <div class="item active">
+                            <a href="javascript:void(0)">
+                                <span> •  </span>
+                                <span class="name">Account Balance</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript:void(0)">
+                                <span> •  </span>
+                                <span class="name">Discount coupon</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript:void(0)">
+                                <span> •  </span>
+                                <span class="name">Reward points</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript:void(0)">
+                                <span> •  </span>
+                                <span class="name">My Delivery Address</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript:void(0)">
+                                <span> •  </span>
+                                <span class="name">My Forum</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript:void(0)">
+                                <span> •  </span>
+                                <span class="name">Message</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  购物车-->
+            <div class="shopping-car">
+                <!-- 有数量添加 active 或者你元素控制显示与隐藏-->
+                <a href="javascript:void(0)" class="active">
+                    <span class="iconfont icon-gouwuche1"></span>
+                    <div class="of-cars">28</div>
+                </a>
+            </div>
+            <!-- 广告-->
+            <div class="ads-tips" style="display: none">
+                New here ? Getting <span>$50</span> coupon
+            </div>
+        </div>
+    </div>
+    <!--导航-->
+    <div class="nav">
+        <div class="nav-box">
+            <!--左侧列表-->
+            <ul class="nav-lists js-nav-lists">
+                <li><a href="javascript:void(0)">Home</a></li>
+                <li tab="1"><a href="javascript:void(0)">PCB Instant Quote</a></li>
+                <li>
+                    <a href="javascript:void(0)">PCB Assembly</a>
+                </li>
+                <li class="active"><a href="javascript:void(0)">Advanced PCB</a></li>
+                <li tab="2" class="has-sub"><a href="javascript:void(0)">Capabilities</a>
+                </li>
+                <li><a href="javascript:void(0)">Forum</a></li>
+                <li><a href="javascript:void(0)">Feedback</a></li>
+                <li><a href="javascript:void(0)">Current Events</a></li>
+                <li tab="3" class="has-sub"><a href="javascript:void(0)">Contact Us</a></li>
+                <li><a href="javascript:void(0)">Help</a></li>
+            </ul>
+            <!-- 二级菜单-->
+            <div class="sub-menu">
+                <!--计价-->
+                <div class="child" style="display: none">
+                    <div class="child-menu">
+                        <div class="item">
+                            <a class="title" href="javascript:void(0)">
+                                <span>PCB Prototype</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a class="title" href="javascript:void(0)">
+                                <span> PCB Assembly</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a class="title" href="javascript:void(0)">
+                                <span> FPC/Rigid-Flex</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a class="title" href="javascript:void(0)">
+                                <span> SMD Stencil</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--工艺-->
+                <div class="child" style="display: none">
+                    <div class="child-menu">
+                        <div class="item">
+                            <a class="title" href="javascript:void(0)">
+                                <span> Printed Circuit Boards</span>
+                            </a>
+                            <div class="son-box">
+                                <div class="child-link">
+                                    <div class="list">
+                                        <a href="javascript:void(0)">
+                                            <span> •  </span>
+                                            <span class="name">Printed Circuit Board Prototype</span>
+                                        </a>
+                                    </div>
+                                    <div class="list">
+                                        <a href="javascript:void(0)">
+                                            <span> •  </span>
+                                            <span class="name">Aluminum PCB</span>
+                                        </a>
+                                    </div>
+                                    <div class="list">
+                                        <a href="javascript:void(0)">
+                                            <span> •  </span>
+                                            <span class="name">Rigid-Flex PCBs</span>
+                                        </a>
+                                    </div>
+                                    <div class="list">
+                                        <a href="javascript:void(0)">
+                                            <span> •  </span>
+                                            <span class="name">Metal core PCBs</span>
+                                        </a>
+                                    </div>
+                                    <div class="list">
+                                        <a href="javascript:void(0)">
+                                            <span> •  </span>
+                                            <span class="name">Printed Circuit Board Prototype</span>
+                                        </a>
+                                    </div>
+                                    <div class="list">
+                                        <a href="javascript:void(0)">
+                                            <span> •  </span>
+                                            <span class="name">Aluminum PCB</span>
+                                        </a>
+                                    </div>
+                                    <div class="list">
+                                        <a href="javascript:void(0)">
+                                            <span> •  </span>
+                                            <span class="name">Rigid-Flex PCBs</span>
+                                        </a>
+                                    </div>
+                                    <div class="list">
+                                        <a href="javascript:void(0)">
+                                            <span> •  </span>
+                                            <span class="name">Metal core PCBs</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a class="title" href="javascript:void(0)">
+                                <span> SMT Stencil</span>
+                            </a>
+                            <div class="son-box">
+                                <div class="child-link">
+                                    <div class="list">
+                                        <a href="javascript:void(0)">
+                                            <span> •  </span>
+                                            <span class="name">Aluminum PCB</span>
+                                        </a>
+                                    </div>
+                                    <div class="list">
+                                        <a href="javascript:void(0)">
+                                            <span> •  </span>
+                                            <span class="name">Rigid-Flex PCBs</span>
+                                        </a>
+                                    </div>
+                                    <div class="list">
+                                        <a href="javascript:void(0)">
+                                            <span> •  </span>
+                                            <span class="name">Metal core PCBs</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a class="title" href="javascript:void(0)">
+                                <span> SMD Stencil</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a class="title" href="javascript:void(0)">
+                                <span> PCB Design-Aid & Layout</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a class="title" href="javascript:void(0)">
+                                <span>  生产周期</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a class="title" href="javascript:void(0)">
+                                <span> 质量</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a class="title" href="javascript:void(0)">
+                                <span> Other</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--关于我们-->
+                <div class="child" style="display: none">
+                    <div class="child-menu">
+                        <div class="item">
+                            <a class="title" href="javascript:void(0)">
+                                <span>  Why us</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a class="title" href="javascript:void(0)">
+                                <span>  Method of Payment</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a class="title" href="javascript:void(0)">
+                                <span> Privacy Policy</span>
+                            </a>
+
+                        </div>
+                        <div class="item">
+                            <a class="title" href="javascript:void(0)">
+                                <span>  Shipping Method Guide</span>
+                            </a>
+
+                        </div>
+                        <div class="item">
+                            <a class="title" href="javascript:void(0)">
+                                <span> Contact Us</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="banner-parent">
+    <div class="top-section">
+        <div class="title">Advanced PCB</div>
+        <div class="des-text">
+            With the rapid development of technology, there is great demand on advanced PCB.
+           Now the advanced PCB has been widely used in high-end and high precision
+            electronic devices, such as automotive electronics, complex industrial equipment, complex computing,
+            instrumentation, as well as communication equipment, etc.
+           <p>Specialized in the advanced PCB, PCBGOGO has fully updated the production equipments and fabricate your
+               printed circuit board with the advanced technologies.
+               What’s more, PCBGOGO offers mature and high-class quick turn PCB fabrication and assembly, supported by its
+               three PCB factories covering 17,000 square meters totally.
+           </p>
+        </div>
+    </div>
+    <div class="style-section">
+        <ul class="style-parent ">
+            <li class="active">
+                <img class="ins-quote" src="img/images/ins-quote.png" alt="">
+                <div class="text">
+                    Aluminum board
+                    <br>Conductivity: 1.0W、2.0W
+                    <br>Layer PCB (1 layers)
+                </div>
+                <div class="price">
+                    $ <span>27.00</span>
+                </div>
+                <div class="quantity">
+                    <a href="PCBPrototype.html">
+                        <span>Quantity</span>
+                        <div class="list-box js-list-box">
+                            <span class="active">5</span>
+                            <span>10</span>
+                            <span>15</span>
+                            <span>20</span>
+                            <span>more</span>
+                        </div>
+                        <button class="quote-btn">INSTANT PCB QUOTE</button>
+                    </a>
+                    <button class="quote-btn fast-inquiry-btn js-fast-btn">FAST INQUIRY</button>
+                </div>
+            </li>
+            <li>
+                <div class="title">Qualified Materials</div>
+                <div class="lists-box">
+                    <div>• Normal FR-4 Board</div>
+                    <div>• Aluminum Board</div>
+                    <div>• Rogers</div>
+                    <div>• HDI(Buried/blind vias)</div>
+                    <div>• Copper Base</div>
+                </div>
+                <img class="mater1" src="img/images/mater1.png" alt="">
+            </li>
+            <li>
+                <div class="title">Surface Finish</div>
+                <div class="lists-box">
+                    <div>• HASL with lead \ lead free</div>
+                    <div>• Immersion gold(ENIG)</div>
+                    <div>• OSP</div>
+                    <div>• Hard Gold</div>
+                    <div>• Immersion silver(Ag)</div>
+                </div>
+                <div class="imgs-box">
+                    <img src="img/images/mater2.png" alt="">
+                    <img src="img/images/mater3.png" alt="">
+                </div>
+            </li>
+            <li>
+                <div class="title">Additional Options</div>
+                <div class="lists-box">
+                    <div>• Half-cut/Castellated Holes</div>
+                    <div>• Impedance control</div>
+                    <div>• Buried/blind vias</div>
+                    <div>• Via filled with resin</div>
+                    <div>• Countersinks/Counterbores</div>
+                    <div>• Z-axis milling</div>
+                </div>
+                <div class="imgs-box">
+                    <img src="img/images/mater4.png" alt="">
+                    <img src="img/images/mater5.png" alt="">
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="application-box">
+    <div class="items-parent">
+        <ul class="tab-title">
+            <li>
+                <div class="name">Advanced PCB</div>
+                <div class="btns-group">
+                    <a href="javascript:void(0)">High-end</a>
+                    <a href="javascript:void(0)">Complex</a>
+                </div>
+                <h5>IDEAL IF YOU NEED A HIGH-END, COMPLEX PCBS</h5>
+                <div class="des-text">
+                    Industrial equipments, instrumentation, automotive electronics,
+                    <br>communication equipments, etc. Finished products require high reliability <br>and stable quality
+                    for users
+                </div>
+            </li>
+            <li>
+                <span>ITEMS <br>APPLICATION</span>
+            </li>
+            <li>
+                <div class="name">Standard PCB</div>
+                <div class="btns-group">
+                    <a href="javascript:void(0)">Inexpensive</a>
+                    <a href="javascript:void(0)">Fast</a>
+                </div>
+                <h5>IDEAL IF YOU NEED A INEXPENSIVE, QUICK-TURN PCB</h5>
+                <div class="des-text">
+                    Children's toys, small appliances, home lighting, functional testing,
+                    <br>electronic enthusiasts, etc. Suitable for users whose prices are core
+                    <br>competitiveness
+                </div>
+            </li>
+        </ul>
+        <table cellspacing="0" cellpadding="0">
+            <tr>
+                <th style="width: 440px"></th>
+                <th style="width: 400px"></th>
+                <th style="width: 440px"></th>
+            </tr>
+            <tr>
+                <td>
+                    Senior engineer (one file/6 hours)
+                </td>
+                <td>Engineering</td>
+                <td class="tick">
+                    mid-level engineer (5 files/hours)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    individual working panel
+                </td>
+                <td>Production</td>
+                <td>
+                    mixed working panel
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    ≥1 piece
+                </td>
+                <td>Quantity</td>
+                <td class="tick">
+                    5,10,15,20,25...pieces
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Shengyi,Rogers,Arlon,Isola,Omega,Nelco,3M etc.
+                    Meet IPC4101 class B/L
+                </td>
+                <td>Material</td>
+                <td class="tick">
+                    KB(kingboard)/GDM(goldenmax) Meet IPC4101 class B/L
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Rohm&Haas,TAIYO,Kuangshun,Meet IPC-SM-840 class
+                </td>
+                <td>Ink,Soldermasks</td>
+                <td class="tick">
+                    TAIYO,Kuangshun,Meet IPC-SM-840 class T
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Min Mechanical Hole Size 0.15mm,Laser hole 0.1mm
+                </td>
+                <td>Drilling</td>
+                <td>
+                    Min Mechanical Hole Size 0.2mm
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    PTH (Hole copper thickness≥20um),IPC 3(25um)
+                </td>
+                <td>Plating</td>
+                <td class="tick">
+                    PTH（Hole copper thickness≥18um）
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    ±2mil
+                </td>
+                <td>Soldermask offset</td>
+                <td>
+                    ±3mil
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    ±0.13mm
+                </td>
+                <td>Dimensional deviation</td>
+                <td>
+                    ±0.2mm
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    0.75%
+                </td>
+                <td>Warping angle</td>
+                <td>
+                    1%
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    A.O.I,Kelvin Four-terminal sensing,Microsection
+                    Inspection,Solderability Test,Impedance Test...
+                </td>
+                <td>Test method</td>
+                <td class="tick">
+                    A.O.I.,Fly Probe Testing
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    >140℃
+                </td>
+                <td>Glass transition ℃</td>
+                <td class="tick">
+                    >130℃
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Humidity indicator cards
+                </td>
+                <td>Package</td>
+                <td class="tick">
+                    None
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Inspection report
+                </td>
+                <td>Inspection report</td>
+                <td class="tick">
+                    None
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    IPC Class 2,IPC Class 3,Automotive Standard,
+                    Customer Standard
+                </td>
+                <td>Standard</td>
+                <td class="tick">
+                    IPC Class 2
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Forbid to repair tracks(IPC 3,Automotive,
+                    Customer Standard)
+                </td>
+                <td>Etched line</td>
+                <td class="tick">
+                    -
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Cleanliness requirements beyond those of IPC
+                </td>
+                <td>Cleanliness</td>
+                <td>
+                    Meet IPC standards
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    UL,ISO9001:2008,ISO14001:2004,ISO/TS16949:2009,
+                    RoHS etc.
+                </td>
+                <td>Certification</td>
+                <td>
+                    UL,ISO9001:2015,RoHS etc.
+                </td>
+            </tr>
+
+        </table>
+    </div>
+</div>
+<div class="factory-parent">
+    <ul class="factory-tab js-factory-tab">
+        <li class="active">SHENZHEN, CHINA</li>
+        <li>LASER DRILLING</li>
+        <li>PLATING THROUGH HOLES</li>
+        <li>VACUUM ETCHING</li>
+    </ul>
+    <div class="pc-banner js-pc-banner">
+        <!--        1-->
+        <div class="items" style="display:block;">
+            <div class="swiper-container swiper-container1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-slide-center none-effect">
+                        <a href="#"><img src="img/images/advance/1.jpg"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="img/images/advance/2.jpg"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="img/images/advance/3.jpg"></a></div>
+                </div>
+
+            </div>
+            <div class="button">
+                <div class="swiper-button-prev swiper-button-prev1"></div>
+                <div class="swiper-button-next swiper-button-next1"></div>
+            </div>
+            <div class="des">
+                PCBGOGO Automated Production Lines and Professional Technicians
+            </div>
+        </div>
+        <!--2-->
+        <div class="items">
+            <div class="swiper-container swiper-container2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-slide-center none-effect">
+                        <a href="#"><img src="img/images/advance/4.jpg"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="img/images/advance/5.jpg"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="img/images/advance/6.jpg"></a></div>
+                </div>
+
+            </div>
+            <div class="button">
+                <div class="swiper-button-prev swiper-button-prev2"></div>
+                <div class="swiper-button-next swiper-button-next2"></div>
+            </div>
+            <div class="des">
+                Minimum aperture up to 0.1mm for high-density interconnection (HDI) build-up multi-layer PCB,
+                <br>with electrical conduction between wirings on each layer controlled through interlayer vias.
+                Currently
+                laser <br>drilling machines are extensively applied in processing of the Interlayer via-holes.
+            </div>
+        </div>
+        <!-- 3-->
+        <div class="items">
+            <div class="swiper-container swiper-container3">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-slide-center none-effect">
+                        <a href="#"><img src="img/images/advance/7.jpg"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="img/images/advance/8.jpg"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="img/images/advance/9.jpg"></a></div>
+                </div>
+
+            </div>
+            <div class="button">
+                <div class="swiper-button-prev swiper-button-prev3"></div>
+                <div class="swiper-button-next swiper-button-next3"></div>
+            </div>
+            <div class="des">
+                Real-time monitoring of chemical quality in copper plating sinks.
+                <br>The aim of electroless copper is to plate a conductive layer through a hole or into a blind
+                microvia.
+            </div>
+        </div>
+        <!-- 4-->
+        <div class="items">
+            <div class="swiper-container swiper-container4">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-slide-center none-effect">
+                        <a href="#"><img src="img/images/advance/10.jpg"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="img/images/advance/11.jpg"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="img/images/advance/12.jpg"></a></div>
+                </div>
+
+            </div>
+            <div class="button">
+                <div class="swiper-button-prev swiper-button-prev4"></div>
+                <div class="swiper-button-next swiper-button-next4"></div>
+            </div>
+            <div class="des">
+                Using the vacuum etching technology to make sure that both surfaces of the board are very uniform.
+                <br>it produces a straighter conductor profile, allowing the resulting plate to more accurately match
+                the wiring requirements.
+            </div>
+        </div>
+    </div>
+</div>
+<div class="high-quality">
+    <div class="title">HIGH-QUALITY PCBS SHOWCASE</div>
+    <div class="pcbs-box">
+        <ul class="pcb-lists">
+            <li>
+                <a href="PCBPrototype.html">
+                    <div class="img-box">
+                        <img class="lazyload" data-original="img/images/advance/high1.png" src="" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="name">
+                            6-layer HDI PCB
+                        </div>
+                        <div>
+                            Material：FR-4 TG150
+                        </div>
+                        <div>
+                            Application Area：Industrial control
+                        </div>
+                        <div>
+                            Layers/Thickness：6/1.6mm
+                        </div>
+                        <div>
+                            Surface Finish：Immersion gold
+                        </div>
+                        <div>
+                            Min Track/Spacing：3/3mil
+                        </div>
+                        <div>
+                            Min Hole Size：0.15mm
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="PCBPrototype.html">
+                    <div class="img-box">
+                        <img class="lazyload" data-original="img/images/advance/high2.png"src="" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="name">
+                            4-layer High Precision PCB
+                        </div>
+                        <div>
+                            Material：Rogers - Rogers4003C
+                        </div>
+                        <div>
+                            Application Area：Industrial control
+                        </div>
+                        <div>
+                            Layers/Thickness：4/1.6mm
+                        </div>
+                        <div>
+                            Surface Finish：Immersion gold
+                        </div>
+                        <div>
+                            Min Track/Spacing：3/3mil
+                        </div>
+                        <div>
+                            Min Hole Size：0.15mm
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="PCBPrototype.html">
+                    <div class="img-box">
+                        <img class="lazyload" data-original="img/images/advance/high3.png" src="" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="name">
+                            Rigid-Flex Board
+                        </div>
+                        <div>
+                            Material：FR4+FCCL
+                        </div>
+                        <div>
+                            Application Area：Electronic Industry PCBs
+                        </div>
+                        <div>
+                            Layers/Thickness：4L/0.8mm
+                        </div>
+                        <div>
+                            Surface Finish：OSP
+                        </div>
+                        <div>
+                            Min Track/Spacing：4/4mil
+                        </div>
+                        <div>
+                            Min Hole Size：0.20mm
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="PCBPrototype.html">
+                    <div class="img-box">
+                        <img class="lazyload" data-original="img/images/advance/high4.png" src="" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="name">
+                            Aluminum Board
+                        </div>
+                        <div>
+                            Material：Aluminum Board(Conductivity: 5.0W)
+                        </div>
+                        <div>
+                            Application Area：Electronic Industry PCBs
+                        </div>
+                        <div>
+                            Layers/Thickness：1L/1.0mm
+                        </div>
+                        <div>
+                            Surface Finish：HASL lead free
+                        </div>
+                        <div>
+                            Min Track/Spacing：6/6mil
+                        </div>
+                        <div>
+                            Min Hole Size：1.0mm
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="advanced-box">
+    <div class="title">
+        ADVANCED PCB APPLICATION
+    </div>
+    <ul class="application-img">
+        <li>
+            <img src="" class="lazyload" data-original="img/images/advance/app1.png" alt="Application Industries" width="319" height="250">
+            <span>APPLICATION INDUSTRIES</span>
+        </li>
+        <li>
+            <img src="" class="lazyload" data-original="img/images/advance/app2.png" alt="NETWORK & COMPUTER" width="319" height="250">
+            <span>NETWORK & COMPUTER</span>
+        </li>
+        <li>
+            <img src="" class="lazyload" data-original="img/images/advance/app3.png" alt="CONSUMER ELECTRONICS" width="319" height="250">
+            <span>CONSUMER ELECTRONICS</span>
+        </li>
+        <li>
+            <img src="" class="lazyload" data-original="img/images/advance/app4.png" alt="TELECOMMUNICATIONS" width="319" height="250">
+            <span>TELECOMMUNICATIONS</span>
+        </li>
+        <li>
+            <img src="" class="lazyload" data-original="img/images/advance/app5.png" alt="AEROSPACE" width="319" height="250">
+            <span>AEROSPACE</span>
+        </li>
+        <li>
+            <img src="" class="lazyload" data-original="img/images/advance/app6.png" alt="Automotive Electronics" width="319" height="250">
+            <span>AUTOMOTIVE ELECTRONICS</span>
+        </li>
+        <li>
+            <img src="" class="lazyload" data-original="img/images/advance/app7.png" alt="NEW ENERGY" width="319" height="250">
+            <span>NEW ENERGY</span>
+        </li>
+        <li>
+            <img src="" class="lazyload" data-original="img/images/advance/app8.png" alt="BIOMEDICAL" width="319" height="250">
+            <span>BIOMEDICAL</span>
+        </li>
+
+    </ul>
+</div>
+<div class="map-box">
+    <div class="turn-box">
+        <div class="left-turn">
+            QUICK TURN AND ADVANCED
+            <br>PCB FABRICATION
+        </div>
+        <ul class="right-turn">
+            <li>
+                <span>Cover countries</span>
+                <div class="number">180+</div>
+            </li>
+            <li>
+                <span>Average Daily Shipments</span>
+                <div class="number">30000+</div>
+            </li>
+            <li>
+                <span>Factories</span>
+                <div class="number">3+N</div>
+            </li>
+            <li>
+                <span>Experienced R&D Team</span>
+                <div class="number">100+</div>
+            </li>
+        </ul>
+    </div>
+    <div class="map">
+        <div class="sliderBox">
+            <div class="arrow arrowL ">
+                <span class="iconfont icon-xiangyoufanhui"></span>
+            </div>
+            <div class="arrow arrowR ">
+                <span class="iconfont icon-xiangyoufanhui"></span>
+            </div>
+            <div class="slider">
+                <div class="swiper-container swiper-container5 ">
+                    <div class=" swiper-wrapper">
+                        <div class="swiper-slide sliderItem">
+                            <div class="head">
+                                <img src="img/images/banner1.jpg" alt="">
+                            </div>
+                            <div class="name-info">
+                                <span>d****ion</span>
+                                <img src="img/images/country.png" alt="" width="18" height="10">
+                            </div>
+                            <div class="the-star">
+                                <div class="star-box">
+                                    <span>★</span>
+                                    <span>★</span>
+                                    <span>★</span>
+                                    <span>★</span>
+                                    <span>★</span>
+                                </div>
+                                <!--评论留言-->
+                                <ul class="leave-message">
+                                    <li>
+                                        <span class="iconfont icon-chakanyan"></span>
+                                        3201
+                                    </li>
+                                    <li>
+                                        <span class="iconfont icon-wodepinglun"></span>
+                                        920
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide sliderItem">
+                            <div class="head">
+                                <img src="img/images/banner1.jpg" alt="">
+                            </div>
+                            <div class="name-info">
+                                <span>d****ion</span>
+                                <img src="img/images/country.png" alt="" width="18" height="10">
+                            </div>
+                            <div class="the-star">
+                                <div class="star-box">
+                                    <span>★</span>
+                                    <span>★</span>
+                                    <span>★</span>
+                                    <span>★</span>
+                                    <span>★</span>
+                                </div>
+                                <!--评论留言-->
+                                <ul class="leave-message">
+                                    <li>
+                                        <span class="iconfont icon-chakanyan"></span>
+                                        322
+                                    </li>
+                                    <li>
+                                        <span class="iconfont icon-wodepinglun"></span>
+                                        120
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide sliderItem">
+                            <div class="head">
+                                <img src="img/images/banner1.jpg" alt="">
+                            </div>
+                            <div class="name-info">
+                                <span>d****ion</span>
+                                <img src="img/images/country.png" alt="" width="18" height="10">
+                            </div>
+                            <div class="the-star">
+                                <div class="star-box">
+                                    <span>★</span>
+                                    <span>★</span>
+                                    <span>★</span>
+                                    <span>★</span>
+                                    <span>★</span>
+                                </div>
+                                <!--评论留言-->
+                                <ul class="leave-message">
+                                    <li>
+                                        <span class="iconfont icon-chakanyan"></span>
+                                        6623
+                                    </li>
+                                    <li>
+                                        <span class="iconfont icon-wodepinglun"></span>
+                                        7770
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="textBox">
+            <div class="items">
+                <img class="commaL" src="img/images/advance/commaL.png" alt="" width="24" height="19">
+                <img class="commaR" src="img/images/advance/commaR.png" alt="" width="25" height="19">
+                <div class="text">High voltage gain boost converter based on voltage lifts techniquesHigh voltage gain
+                    boost converter based on
+                    voltage lifts techniquesHigh voltage gain boost converter based on voltage lifts techniquesHigh
+                    voltage gain boost converter based on voltage lifts techniques1
+                </div>
+
+            </div>
+            <div class="items">
+                <img class="commaL" src="img/images/advance/commaL.png" alt="" width="24" height="19">
+                <img class="commaR" src="img/images/advance/commaR.png" alt="" width="25" height="19">
+                <div class="text">High voltage gain boost converter based on voltage lifts techniquesHigh voltage gain2
+                </div>
+            </div>
+            <div class="items">
+                <img class="commaL" src="img/images/advance/commaL.png" alt="" width="24" height="19">
+                <img class="commaR" src="img/images/advance/commaR.png" alt="" width="25" height="19">
+                <div class="text">
+                    voltage lifts techniquesHigh
+                    voltage gain boost converter based on voltage lifts techniques3
+                </div>
+
+            </div>
+        </div>
+        <a class="see-more-btn" href="javascript:void(0)">
+            See more
+            <span class="iconfont icon-xiangyoufanhui"></span>
+        </a>
+    </div>
+</div>
+<!--底部-->
+<div class="footer clear-float">
+    <!--一级导航-->
+    <div class="footer-title clear-float">
+        <div class="container_warp">
+            <ul class="footer-title-ul">
+                <li>
+                    <dl>
+                        <dt>
+                            <span class="iconfont icon-icon-test1"></span>
+                        </dt>
+                        <dd>
+                            100% <br>Quality <br>Guarantees
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <span class="iconfont icon-DHLshandian"></span>
+                        </dt>
+                        <dd>
+                            3-5days' <br>Delivery <br>(DHL)
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <span class="iconfont icon-ISO"></span>
+                        </dt>
+                        <dd>
+                            International <br>Organization <br>forStandardization
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <span class="iconfont icon-UL"></span>
+                        </dt>
+                        <dd>
+                            Underwriter <br>Laboratories <br>Inc.
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--二级列表-->
+    <div class="links-type clear-float">
+        <div class="container_warp">
+            <div class="left-box" style="float: left">
+                <ul class="links-title clear-float">
+                    <li>
+                        <p>LEARN</p>
+                        <ul class="links-lists">
+                            <li>
+                                <a href="aboutUs.html">About Us</a>
+                            </li>
+                            <li>
+                                <a href="https://www.pcbgogo.com/Blog/Big_sales_on_PCB_mass_production.html"> PCB
+                                    Capabilities</a>
+                            </li>
+                            <li>
+                                <a href="pcbaCapabilities.html">PCBA Capabilities</a>
+                            </li>
+                            <li>
+                                <a href="https://www.pcbgogo.com/Blog/Big_sales_on_PCB_mass_production.html"> PCB Layout
+                                    Capabilities</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>PCBGOGO SERVICE</p>
+                        <ul class="links-lists">
+                            <li>
+                                <a href="PCBPrototype.html">PCB Prototype </a>
+                            </li>
+                            <li>
+                                <a href="PCBAssembly.html">PCB Assembly</a>
+                            </li>
+                            <li>
+                                <a href="pcbLayout.html"> PCB Layout </a>
+                            </li>
+                            <li>
+                                <a href="FPCInstantQuote.html">PCB Instant Quote</a>
+                            </li>
+                            <li>
+                                <a href="sitemap.xml" title="https://www.pcbgogo.com/sitemap(1).xml">Site Map</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>CUSTOMER SUPPORT</p>
+                        <ul class="links-lists">
+                            <li>
+                                <a href="forum/forum.html">Engineering </a>
+                            </li>
+                            <li>
+                                <a href="dynamic.html">Feedback </a>
+                            </li>
+                            <li>
+                                <a href="old-process/pcbaAssemblyFaq.html">PCBA FAQs </a>
+                            </li>
+                            <li>
+                                <a href="whyUs.html">Why us </a>
+                            </li>
+                            <li>
+                                <a href="privacyPolicy.html">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="keywordSearch.html">PCB Glossary</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>ORDER HELP</p>
+                        <ul class="links-lists">
+                            <li>
+                                <a href="orderGuide.html">Order Guide </a>
+                            </li>
+                            <li>
+                                <a href="contact-us.html">Contact Us </a>
+                            </li>
+                            <li>
+                                <a href="register.html">Create an Account </a>
+                            </li>
+                            <li>
+                                <a href="qualityGurrantee.html">Quality Gurrantee </a>
+                            </li>
+                            <li>
+                                <a href="gogoDelivery.html">PCBGOGO Delivery</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="footer-item-icon">
+                    <li><a href="javascript:void(0)"><img src="img/images/paypal.png" alt=""></a></li>
+                    <li><a href="javascript:void(0)"><img src="img/images/hsbc.png" alt="HBSC"></a></li>
+                    <li><a href="javascript:void(0)"><img src="img/images/china.png" alt=""></a></li>
+                    <li><a href="javascript:void(0)"><img src="img/images/dhl.png" alt="DHL"></a></li>
+                    <li><a href="javascript:void(0)"><img src="img/images/post.png" alt="POST"></a></li>
+                    <li><a href="javascript:void(0)"><img src="img/images/ups.png" alt="UPS"></a></li>
+                    <li><a href="javascript:void(0)"><img src="img/images/ems.png" alt="EMS"></a></li>
+                </ul>
+            </div>
+
+            <!--右侧表单-->
+            <div class="send-from">
+                <p>QUICK CONTACT</p>
+                <form action="#">
+                    <input type="text" placeholder="Name" value="Name" onfocus="if(this.value==='Name')this.value=''"
+                           onblur="if(this.value==='')this.value='Name'">
+                    <input type="text" placeholder="Email" value="Email"
+                           onfocus="if(this.value==='Email')this.value=''"
+                           onblur="if(this.value==='')this.value='Email'">
+                    <textarea type="text" class="message-input" placeholder="Message"
+                              onfocus="if(this.value==='Message')this.value=''"
+                              onblur="if(this.value==='')this.value='Message'"></textarea>
+                    <input type="button" class="btn-submit " value="Send Message">
+                </form>
+            </div>
+            <!--右侧表单-->
+        </div>
+    </div>
+    <!--底部表单-->
+    <div class="footer-from clear-float">
+        <div class="container_warp">
+            <!--底部列表-->
+            <div class="footer-item">
+                <ul class="footer-item-ul">
+                    <li class="ban-quan">Copyright © 2015 PCBGOGO. All rights reserved. Shenzhen JDB Technology Co.,
+                        Ltd. <br>
+                        Address: No. 15, Zhongxing Road, Kengzi Street, Pingshan District, Shenzhen, 518000, China.
+                    </li>
+                    <li>
+                        Whatsapp <br>+8618665922549
+                    </li>
+                    <li>
+                        Mail <br>service@pcbgogo.com
+                    </li>
+                    <li>
+                        Tel <br>+86-755-33066136
+                    </li>
+                    <li class="footer-last-item">
+                        <div class="share-box">
+                            <a target="_blank" href="#"><img
+                                    src="img/images/twitter.png" alt=""></a>
+                            <a target="_blank" href="#"><img
+                                    src="img/images/google.png" alt=""></a>
+                            <a target="_blank" href="#"><img
+                                    src="img/images/facebook.png" alt=""></a>
+                            <a target="_blank"
+                               href="#"><img
+                                    src="img/images/instagram.png" alt=""></a>
+                            <a target="_blank" href="#"><img
+                                    src="img/images/Linkedln.png" alt=""></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="img/js/jquery/jquery-1.11.3.min.js"></script>
+<script src="img/js/swiper/swiper.min.js"></script>
+<script src="img/js/lazyload/jquery.lazyload.min.js"></script>
+<script src="img/js/layer-v3.1.1/layer/layer.js"></script>
+<script src="img/js/header.js"></script>
+<script>
+    $(function () {
+
+      // 询价按钮
+      $('.js-fast-btn').click(function () {
+        var layerSon = layer.open({
+          type: 2,
+          title: 'Fast Inquiry',
+          content: 'gerber-box-pop.html',
+          area: ['910px', '560px'],
+          success: function (layero, index) {
+            var body = layer.getChildFrame('body', index);
+            var iframeWin = window[layero.find('iframe')[0]['name']];
+            body.find(".js-control-btn").click(function () {
+              layer.open({
+                type: 1,
+                title: false,
+                closeBtn: false,
+                content: $(body).find(".js-prompted-pop").html(),
+                area: ['420px', '220px'],
+                success: function () {
+                  layer.close(layerSon)
+                  $(".layui-layer-content").find('.js-prompt-btn').click(function () {
+                    layer.closeAll();
+                  });
+                }
+              })
+
+            });
+          }
+        })
+      })
+
+
+
+        $('.js-list-box span').hover(function () {
+            $(this).addClass('active').siblings('span').removeClass('active');
+        });
+        //图片加载
+        $("img.lazyload").lazyload({ effect: "fadeIn" });
+        //轮播图
+        try {
+            var swiper1 = new Swiper('.swiper-container1', {
+                autoplay: 3000,
+                speed: 1000,
+                autoplayDisableOnInteraction: false,
+                loop: true,
+                centeredSlides: true,
+                slidesPerView: 2,
+                spaceBetween: 150,
+                // pagination: '.swiper-pagination',
+                paginationClickable: true,
+                prevButton: '.swiper-button-prev1',
+                nextButton: '.swiper-button-next1',
+                onInit: function (swiper1) {
+                    swiper1.slides[2].className = "swiper-slide swiper-slide-active";//第一次打开不要动画
+                },
+                breakpoints: {
+                    668: {
+                        slidesPerView: 1,
+                    }
+                }
+            });
+            var swiper2 = new Swiper('.swiper-container2', {
+                speed: 1000,
+                autoplayDisableOnInteraction: false,
+                loop: true,
+                centeredSlides: true,
+                slidesPerView: 2,
+                spaceBetween: 150,
+                // pagination: '.swiper-pagination',
+                paginationClickable: true,
+                prevButton: '.swiper-button-prev2',
+                nextButton: '.swiper-button-next2',
+                onInit: function (swiper2) {
+                    swiper2.slides[2].className = "swiper-slide swiper-slide-active";//第一次打开不要动画
+                },
+                breakpoints: {
+                    668: {
+                        slidesPerView: 1,
+                    }
+                }
+            });
+            var swiper3 = new Swiper('.swiper-container3', {
+                speed: 1000,
+                autoplayDisableOnInteraction: false,
+                loop: true,
+                centeredSlides: true,
+                slidesPerView: 2,
+                spaceBetween: 150,
+                // pagination: '.swiper-pagination',
+                paginationClickable: true,
+                prevButton: '.swiper-button-prev3',
+                nextButton: '.swiper-button-next3',
+                onInit: function (swiper3) {
+                    swiper3.slides[2].className = "swiper-slide swiper-slide-active";//第一次打开不要动画
+                },
+                breakpoints: {
+                    668: {
+                        slidesPerView: 1,
+                    }
+                }
+            });
+            var swiper4 = new Swiper('.swiper-container4', {
+                speed: 1000,
+                autoplayDisableOnInteraction: false,
+                loop: true,
+                centeredSlides: true,
+                slidesPerView: 2,
+                spaceBetween: 150,
+                // pagination: '.swiper-pagination',
+                paginationClickable: true,
+                prevButton: '.swiper-button-prev4',
+                nextButton: '.swiper-button-next4',
+                onInit: function (swiper4) {
+                    swiper4.slides[2].className = "swiper-slide swiper-slide-active";//第一次打开不要动画
+                },
+                breakpoints: {
+                    668: {
+                        slidesPerView: 1,
+                    }
+                }
+            });
+        } catch (e) {
+            layer.msg('Upgrade to IE10 or above for a better experience');
+        }
+        //切换轮播
+        $('.js-factory-tab li').click(function () {
+            var index = $(this).index();
+            $(this).addClass('active').siblings('li').removeClass('active');
+            $('.js-pc-banner .items').eq(index).show().siblings('.items').hide();
+        });
+
+        //底部轮播
+        void function () {
+            try {
+                var swiper5 = new Swiper('.swiper-container5', {
+                    slidesPerView: 3,
+                    centeredSlides: true,
+                    loop: true,
+                    speed: 600,
+                    onSlideChangeEnd: function (swiper5) {
+
+                    }
+                });
+                //init Max
+                var slideNumber = [];
+                $('.sliderItem').each(function () {
+                    slideNumber.push($(this).attr('data-swiper-slide-index'));
+                });
+                //leftBtn
+                $('.arrowL').click(function () {
+                    var index = swiper5.realIndex;
+                    swiper5.slidePrev();
+                    if (index == 0) {
+                        $('.textBox .items').eq(Math.max.apply(null, slideNumber)).show().siblings().hide();
+                    } else {
+                        $('.textBox .items').eq(--index).show().siblings().hide();
+                    }
+                });
+                //rightBtn
+                $('.arrowR').click(function () {
+                    var index = swiper5.realIndex;
+                    swiper5.slideNext();
+                    if (index === (Math.max.apply(null, slideNumber))) {
+                        $('.textBox .items').eq(0).show().siblings().hide();
+                    } else {
+                        $('.textBox .items').eq(++index).show().siblings().hide();
+                    }
+                });
+            } catch (e) {
+                console.log('Upgrade to IE10 or above for a better experience');
+            }
+        }();
+
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+.clearFix {
+  &:after {
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    clear: both;
+  }
+}
+
+//宽高
+.widthAndHeight(@width;@height) {
+  width: @width;
+  height: @height;
+}
+
+//右定位依据
+.positionR(@position;@top;@right;@zIndex) {
+  position: @position;
+  top: @top;
+  right: @right;
+  z-index: @zIndex;
+}
+//左定位依据
+.positionL(@position;@top;@left;@zIndex) {
+  position: @position;
+  top: @top;
+  left: @left;
+  z-index: @zIndex;
+}
+
+//超出出现省略号单行
+.textEellipsis {
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+//现代浏览器多行
+.moreTextEellipsis(@column) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: @column;
+  -webkit-box-orient: vertical;
+}
+
+//禁止选中字符
+.userSelect {
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+}
+//元素圆角
+.borderRadius(@radius){
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+  border-radius: @radius;
+}
+
+////左浮动
+.floatL {
+  float: left;
+}
+
+.floatR {
+  float: right;
+}
+
+//透明度
+.opacity(@opacity) {
+  opacity: @opacity;
+  -ms-opacity: @opacity;
+  -moz-opacity: @opacity;
+  -o-opacity: @opacity;
+}
+
+.opacityIe(@opacity) {
+  filter: opacity(@opacity);
+  filter: alpha(opacity=@opacity);
+}

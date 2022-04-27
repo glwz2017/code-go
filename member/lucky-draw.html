@@ -1,0 +1,1424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Account -PCBgogo</title>
+    <!--网页标题左侧显示-->
+    <link rel="icon" href="../img/images/title-logo.png" type="image/x-icon">
+    <!--收藏夹显示图标-->
+    <link rel="shortcut icon" href="../img/images/title-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../img/css/member/lucky-draw.css">
+</head>
+<body>
+<div class="the-top">
+    <!--顶部导航-->
+    <div class="top-nav">
+        <div class="nav-l">
+            <a href="orderIndex.html">
+                <img src="../img/images/order/orderlogo.png" alt="logo">
+            </a>
+        </div>
+        <div class="nav-r">
+            <!--右侧图标-->
+            <div class="shopping-box">
+                <ul class="hints js-hints">
+                    <li class="active message-li"><a href="javascript:void(0)">
+                        <span class="iconfont icon-ai-message"></span>
+                    </a>
+                        <i class="point "></i>
+                    </li>
+                    <li class="active coupon-li"><a href="javascript:void(0)">
+                        <span class="iconfont icon-youhuiquan"></span>
+                    </a>
+                        <i class="point "></i>
+                    </li>
+                    <li class="active coupon-li"><a href="javascript:void(0)">
+                        <span class="iconfont icon-fukuan"></span>
+                    </a>
+                        <i class="point "></i>
+                    </li>
+                    <li class="car-box cared-li"><a href="javascript:void(0)">
+                        <span class="iconfont icon-gouwuche1"></span>
+                    </a>
+                        <i class="round car-nums">99</i>
+                    </li>
+                </ul>
+            </div>
+            <!--登录后-->
+            <div class="user-box">
+                <span class="hi-text"> Hi! The user...</span>
+                <div class="user-pic js-user-pic">
+                    <i><img src="../img/images/user.png" alt=""></i>
+                    <i class="down-pointer"><img src="../img/images/down-pointer.png" alt=""></i>
+                </div>
+                <div class="user-item">
+                    <div class="account" onclick="window.open('orderIndex.html','_self')">
+                        My Account
+                    </div>
+                    <div class="account" onclick="window.open('awaiting-payment.html','_self')">
+                        My Orders list
+                    </div>
+                    <div class="account" onclick="window.open('essentialInformation.html','_self')">
+                        My Delivery Address
+                    </div>
+                    <div class="facebook-btn ">
+                        Bind FaceBook
+                    </div>
+                    <div class="out-btn " style="margin-top: 10px">
+                        Sign Out
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--二级菜单-->
+    <div class="main-menu">
+        <div class="vip_warp">
+            <ul class="menu-list clear-fix">
+                <li class="active"><a href="orderIndex.html">My Account</a></li>
+                <li><a href="../PCBPrototype.html">PCB Instant Quote</a></li>
+                <li><a href="../PCBAssembly.html">PCB Assembly</a></li>
+                <li><a href="../pages作废/reviewList作废.html">Forum</a></li>
+            </ul>
+            <!--面包屑-->
+            <div class="bread-crumbs">
+                <a href="javascript:void(0)">
+                    <span class="iconfont icon-shouye1"></span>
+                    <span>- Reward points</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--主体-->
+<div class="order-main">
+    <!--左侧-->
+    <div class="box-l">
+        <div class="category js-category-index">
+            <div class="item "><a href="shopping-car.html">
+                <span class="iconfont icon-gouwuche2"></span>
+                <span class="category-name">-Shopping Cart</span></a></div>
+            <div class="item"><a href="awaiting-payment.html">
+                <span class="iconfont icon-dingdan"></span>
+                <span class="category-name">-My Orders</span></a></div>
+            <div class="item"><a href="memberList.html">
+                <span class="iconfont icon-icon_fapinglun-xian"></span>
+                <span class="category-name">-Comments</span></a></div>
+            <div class="item">
+                <a href="myInvitation.html">
+                    <span class="iconfont icon-daipingjiab"></span>
+                    <span class="category-name">+Experience Share</span>
+                </a>
+                <!--&lt;!&ndash;二级列表&ndash;&gt;-->
+                <div class="second-item">
+                    <a class="second-active" href="myInvitation.html">
+                        <span class="second-name">My Invitation</span>
+                    </a>
+                    <a href="promoteIndex.html">
+                        <span class="second-name">Share links</span>
+                    </a>
+                </div>
+            </div>
+            <div class="item "><a href="account-page.html">
+                <span class="iconfont icon-34"></span>
+                <span class="category-name">-Cash and Coupon</span></a></div>
+            <!--vip-->
+            <div class="item active">
+                <a href="integral.html">
+                    <span class="iconfont icon-v"></span>
+                    <span class="category-name active-new">
+                    <span class="iconfont icon-new"></span>
+                    - Reward points
+                </span>
+                </a>
+            </div>
+            <!--vip-->
+            <div class="item "><a href="newsed.html">
+                <span class="iconfont icon-liuyanpinglun"></span>
+                <span class="category-name">-Message</span>
+            </a></div>
+            <div class="item"><a href="essentialInformation.html">
+                <span class="iconfont icon-gerenziliao"></span>
+                <span class="category-name">+My Profile</span>
+            </a>
+                <!--&lt;!&ndash;二级列表&ndash;&gt;-->
+                <div class="second-item ">
+                    <a href="essentialInformation.html">
+                        <span class="second-name">Basic Information</span></a>
+                    <a href="receivingAddress.html">
+                        <span class="second-name">My Delivery Address</span>
+                    </a>
+                    <a href="changePassword.html">
+                        <span class="second-name">Change Password</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--右侧-->
+    <div class="box-r">
+        <div class="bread-crumbs">
+            <div class="bread-nav">
+                <a href="javascript:void(0)"> MyAccount</a>
+                <a href="javascript:void(0)">Shopping Cart</a>
+            </div>
+        </div>
+        <div class="r-title"></div>
+        <div class="lucky-draw-parent">
+            <div class="lucky-draw-box">
+                <div class="draw-l">
+                    <div class="draw-title-name">
+                        GO Coins for Free Shipping Coupon Draw
+                    </div>
+                    <dl class="draw-tips">
+                        <dd>
+                            <div class="name">My Gocoin</div>
+                            <div class="count">500</div>
+                        </dd>
+                        <dd>
+                            <div class="name">Times</div>
+                            <div class="count">1</div>
+                        </dd>
+                    </dl>
+                    <div class="draw-text">
+                        The free shipping coupon value is not fixed. We will update its amount at a regular time. You
+                        will cost 300 GO coins for each draw. If you win a prize, you can check the coupon on the
+                        "Coupon" page.
+                    </div>
+                </div>
+                <div class="draw-r">
+                    <h6>Click the box below to draw:</h6>
+                    <dl class="draw-area js-draw-area">
+                        <!-- 已开箱的给我一个  unlock 类名-->
+                        <dd></dd>
+                        <dd></dd>
+                        <dd></dd>
+                        <dd></dd>
+                        <dd></dd>
+                        <dd></dd>
+                        <dd></dd>
+                        <dd></dd>
+                        <dd></dd>
+                        <dd></dd>
+                    </dl>
+                    <!-- 已中奖-->
+                    <div class="the-wining-box js-the-wining-box">
+                        <div class="wining-l"></div>
+                        <div class="wining-r">
+                            <div class="get-info">
+                                <div class="win-title">Win!</div>
+                                <div class="get-win">
+                                    You win a $ <span>10</span> coupon!
+                                </div>
+                                <a class="view-btn" href="javascript:void(0)">
+                                    View my coupon
+                                </a>
+                                <button class="continue-btn js-continue-btn">
+                                    Continue
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 未中奖-->
+                    <div class="the-wining-box no-wining-box js-no-wining-box">
+                        <div class="wining-l"></div>
+                        <div class="wining-r">
+                            <div class="get-info">
+                                <div class="win-title">Sorry! <br>No prizes won.</div>
+                                <button class="continue-btn js-continue-btn">
+                                    Continue
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="synthetic-box">
+                <div class="stamps-style js-stamps-style">
+                    <div class="stamps discount-stamps">
+                        <div class="stamps-item">
+                            <div class="stamps-label">
+                                Discount Coupon
+                            </div>
+                            <span class="count">99999</span>
+                        </div>
+                    </div>
+                    <div class="stamps vouchers-stamps">
+                        <div class="stamps-item">
+                            <div class="stamps-label">
+                                PCBgogo Cash
+                            </div>
+                            <span class="count">10</span>
+                        </div>
+                    </div>
+                    <div class="stamps-jump-area">
+                        <a class="check-btn" href="javascript:void(0)">
+                            Check my coupons
+                        </a>
+                        <div class="check-tips">
+                            <ol class="tips-text">
+                                <li>
+                                    Only non-registered coupons can be combined
+                                </li>
+                                <li>
+                                    In order to avoid the accounting of orders that have been discounted, the used
+                                    coupons cannot be combined;
+                                </li>
+                                <li>
+                                    After success to combine coupons, the original coupons that participated in the
+                                    process will automatically expire and cannot be used anymore;
+                                </li>
+                                <li>
+                                    After the discount coupons are combined, the discount rate will be the minimum
+                                    discount rate of the coupons participating in the combination. Please pay attention
+                                    to the rules;
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <!--已合成的的优惠券列表-->
+                <div class="get-list-area js-list-area">
+                    <div class="get-the-list" style="display: none">
+                        <dl class="the-list js-the-discount">
+                            <!-- 选中给我一个  active-->
+                            <dd class="deduction1">
+                                <div class="get-icon">
+                                    <div class="get-discount">
+                                        <div class="price">
+                                            $50
+                                        </div>
+                                        <div class="discount">
+                                            15%
+                                            <em>
+                                                0FF
+                                            </em>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="info-des">
+                                    <li>
+                                        <div class="the-title">
+                                            The name:
+                                        </div>
+                                        <div class="the-des">
+                                            $50 Welcome Bonus
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Validity period:
+                                        </div>
+                                        <div class="the-des">
+                                            permanent
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Restrictions:
+                                        </div>
+                                        <div class="the-des">
+                                            Partly deducted
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Can be used on:
+                                        </div>
+                                        <div class="the-des">
+                                            PCB cost only (exclude
+                                            shipping fee.)
+                                        </div>
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dd class="deduction1">
+                                <div class="get-icon">
+                                    <div class="get-discount">
+                                        <div class="price">
+                                            $50
+                                        </div>
+                                        <div class="discount">
+                                            15%
+                                            <em>
+                                                0FF
+                                            </em>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="info-des">
+                                    <li>
+                                        <div class="the-title">
+                                            The name:
+                                        </div>
+                                        <div class="the-des">
+                                            $50 Welcome Bonus
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Validity period:
+                                        </div>
+                                        <div class="the-des">
+                                            permanent
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Restrictions:
+                                        </div>
+                                        <div class="the-des">
+                                            Partly deducted
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Can be used on:
+                                        </div>
+                                        <div class="the-des">
+                                            PCB cost only (exclude
+                                            shipping fee.)
+                                        </div>
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dd class="deduction1">
+                                <div class="get-icon">
+                                    <div class="get-discount">
+                                        <div class="price">
+                                            $50
+                                        </div>
+                                        <div class="discount">
+                                            20%
+                                            <em>
+                                                0FF
+                                            </em>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="info-des">
+                                    <li>
+                                        <div class="the-title">
+                                            The name:
+                                        </div>
+                                        <div class="the-des">
+                                            $50 Welcome Bonus
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Validity period:
+                                        </div>
+                                        <div class="the-des">
+                                            permanent
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Restrictions:
+                                        </div>
+                                        <div class="the-des">
+                                            Partly deducted
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Can be used on:
+                                        </div>
+                                        <div class="the-des">
+                                            PCB cost only (exclude
+                                            shipping fee.)
+                                        </div>
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dd class="deduction1">
+                                <div class="get-icon">
+                                    <div class="get-discount">
+                                        <div class="price">
+                                            $50
+                                        </div>
+                                        <div class="discount">
+                                            15%
+                                            <em>
+                                                0FF
+                                            </em>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="info-des">
+                                    <li>
+                                        <div class="the-title">
+                                            The name:
+                                        </div>
+                                        <div class="the-des">
+                                            $50 Welcome Bonus
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Validity period:
+                                        </div>
+                                        <div class="the-des">
+                                            permanent
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Restrictions:
+                                        </div>
+                                        <div class="the-des">
+                                            Partly deducted
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Can be used on:
+                                        </div>
+                                        <div class="the-des">
+                                            PCB cost only (exclude
+                                            shipping fee.)
+                                        </div>
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dd class="deduction1">
+                                <div class="get-icon">
+                                    <div class="get-discount">
+                                        <div class="price">
+                                            $50
+                                        </div>
+                                        <div class="discount">
+                                            20%
+                                            <em>
+                                                0FF
+                                            </em>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="info-des">
+                                    <li>
+                                        <div class="the-title">
+                                            The name:
+                                        </div>
+                                        <div class="the-des">
+                                            $50 Welcome Bonus
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Validity period:
+                                        </div>
+                                        <div class="the-des">
+                                            permanent
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Restrictions:
+                                        </div>
+                                        <div class="the-des">
+                                            Partly deducted
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Can be used on:
+                                        </div>
+                                        <div class="the-des">
+                                            PCB cost only (exclude
+                                            shipping fee.)
+                                        </div>
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dd class="deduction1">
+                                <div class="get-icon">
+                                    <div class="get-discount">
+                                        <div class="price">
+                                            $50
+                                        </div>
+                                        <div class="discount">
+                                            20%
+                                            <em>
+                                                0FF
+                                            </em>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="info-des">
+                                    <li>
+                                        <div class="the-title">
+                                            The name:
+                                        </div>
+                                        <div class="the-des">
+                                            $50 Welcome Bonus
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Validity period:
+                                        </div>
+                                        <div class="the-des">
+                                            permanent
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Restrictions:
+                                        </div>
+                                        <div class="the-des">
+                                            Partly deducted
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Can be used on:
+                                        </div>
+                                        <div class="the-des">
+                                            PCB cost only (exclude
+                                            shipping fee.)
+                                        </div>
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dd class="deduction1">
+                                <div class="get-icon">
+                                    <div class="get-discount">
+                                        <div class="price">
+                                            $50
+                                        </div>
+                                        <div class="discount">
+                                            15%
+                                            <em>
+                                                0FF
+                                            </em>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="info-des">
+                                    <li>
+                                        <div class="the-title">
+                                            The name:
+                                        </div>
+                                        <div class="the-des">
+                                            $50 Welcome Bonus
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Validity period:
+                                        </div>
+                                        <div class="the-des">
+                                            permanent
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Restrictions:
+                                        </div>
+                                        <div class="the-des">
+                                            Partly deducted
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Can be used on:
+                                        </div>
+                                        <div class="the-des">
+                                            PCB cost only (exclude
+                                            shipping fee.)
+                                        </div>
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dd class="deduction1">
+                                <div class="get-icon">
+                                    <div class="get-discount">
+                                        <div class="price">
+                                            $50
+                                        </div>
+                                        <div class="discount">
+                                            20%
+                                            <em>
+                                                0FF
+                                            </em>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="info-des">
+                                    <li>
+                                        <div class="the-title">
+                                            The name:
+                                        </div>
+                                        <div class="the-des">
+                                            $50 Welcome Bonus
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Validity period:
+                                        </div>
+                                        <div class="the-des">
+                                            permanent
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Restrictions:
+                                        </div>
+                                        <div class="the-des">
+                                            Partly deducted
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Can be used on:
+                                        </div>
+                                        <div class="the-des">
+                                            PCB cost only (exclude
+                                            shipping fee.)
+                                        </div>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="get-the-list " style="display: none">
+                        <dl class="the-list js-the-deduction">
+                            <!-- 选中给我一个  active-->
+                            <dd class="deduction2 active">
+                                <div class="get-icon">
+                                    <div class="get-discount">
+                                        <div class="price">
+                                            $999
+                                        </div>
+                                        <div class="discount">
+                                            15%
+                                            <em>
+                                                0FF
+                                            </em>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="info-des">
+                                    <li>
+                                        <div class="the-title">
+                                            The name:
+                                        </div>
+                                        <div class="the-des">
+                                            $50 Welcome Bonus
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Validity period:
+                                        </div>
+                                        <div class="the-des">
+                                            permanent
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Restrictions:
+                                        </div>
+                                        <div class="the-des">
+                                            Partly deducted
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Can be used on:
+                                        </div>
+                                        <div class="the-des">
+                                            PCB cost only (exclude
+                                            shipping fee.)
+                                        </div>
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dd class="deduction2">
+                                <div class="get-icon">
+                                    <div class="get-discount">
+                                        <div class="price">
+                                            $999
+                                        </div>
+                                        <div class="discount">
+                                            15%
+                                            <em>
+                                                0FF
+                                            </em>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="info-des">
+                                    <li>
+                                        <div class="the-title">
+                                            The name:
+                                        </div>
+                                        <div class="the-des">
+                                            $50 Welcome Bonus
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Validity period:
+                                        </div>
+                                        <div class="the-des">
+                                            permanent
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Restrictions:
+                                        </div>
+                                        <div class="the-des">
+                                            Partly deducted
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Can be used on:
+                                        </div>
+                                        <div class="the-des">
+                                            PCB cost only (exclude
+                                            shipping fee.)
+                                        </div>
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dd class="deduction2">
+                                <div class="get-icon">
+                                    <div class="get-discount">
+                                        <div class="price">
+                                            $999
+                                        </div>
+                                        <div class="discount">
+                                            20%
+                                            <em>
+                                                0FF
+                                            </em>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="info-des">
+                                    <li>
+                                        <div class="the-title">
+                                            The name:
+                                        </div>
+                                        <div class="the-des">
+                                            $50 Welcome Bonus
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Validity period:
+                                        </div>
+                                        <div class="the-des">
+                                            permanent
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Restrictions:
+                                        </div>
+                                        <div class="the-des">
+                                            Partly deducted
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Can be used on:
+                                        </div>
+                                        <div class="the-des">
+                                            PCB cost only (exclude
+                                            shipping fee.)
+                                        </div>
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dd class="deduction2">
+                                <div class="get-icon">
+                                    <div class="get-discount">
+                                        <div class="price">
+                                            $999
+                                        </div>
+                                        <div class="discount">
+                                            15%
+                                            <em>
+                                                0FF
+                                            </em>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="info-des">
+                                    <li>
+                                        <div class="the-title">
+                                            The name:
+                                        </div>
+                                        <div class="the-des">
+                                            $50 Welcome Bonus
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Validity period:
+                                        </div>
+                                        <div class="the-des">
+                                            permanent
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Restrictions:
+                                        </div>
+                                        <div class="the-des">
+                                            Partly deducted
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Can be used on:
+                                        </div>
+                                        <div class="the-des">
+                                            PCB cost only (exclude
+                                            shipping fee.)
+                                        </div>
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dd class="deduction2">
+                                <div class="get-icon">
+                                    <div class="get-discount">
+                                        <div class="price">
+                                            $999
+                                        </div>
+                                        <div class="discount">
+                                            20%
+                                            <em>
+                                                0FF
+                                            </em>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="info-des">
+                                    <li>
+                                        <div class="the-title">
+                                            The name:
+                                        </div>
+                                        <div class="the-des">
+                                            $50 Welcome Bonus
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Validity period:
+                                        </div>
+                                        <div class="the-des">
+                                            permanent
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Restrictions:
+                                        </div>
+                                        <div class="the-des">
+                                            Partly deducted
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Can be used on:
+                                        </div>
+                                        <div class="the-des">
+                                            PCB cost only (exclude
+                                            shipping fee.)
+                                        </div>
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dd class="deduction2">
+                                <div class="get-icon">
+                                    <div class="get-discount">
+                                        <div class="price">
+                                            $999
+                                        </div>
+                                        <div class="discount">
+                                            20%
+                                            <em>
+                                                0FF
+                                            </em>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="info-des">
+                                    <li>
+                                        <div class="the-title">
+                                            The name:
+                                        </div>
+                                        <div class="the-des">
+                                            $50 Welcome Bonus
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Validity period:
+                                        </div>
+                                        <div class="the-des">
+                                            permanent
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Restrictions:
+                                        </div>
+                                        <div class="the-des">
+                                            Partly deducted
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Can be used on:
+                                        </div>
+                                        <div class="the-des">
+                                            PCB cost only (exclude
+                                            shipping fee.)
+                                        </div>
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dd class="deduction2">
+                                <div class="get-icon">
+                                    <div class="get-discount">
+                                        <div class="price">
+                                            $999
+                                        </div>
+                                        <div class="discount">
+                                            15%
+                                            <em>
+                                                0FF
+                                            </em>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="info-des">
+                                    <li>
+                                        <div class="the-title">
+                                            The name:
+                                        </div>
+                                        <div class="the-des">
+                                            $50 Welcome Bonus
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Validity period:
+                                        </div>
+                                        <div class="the-des">
+                                            permanent
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Restrictions:
+                                        </div>
+                                        <div class="the-des">
+                                            Partly deducted
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Can be used on:
+                                        </div>
+                                        <div class="the-des">
+                                            PCB cost only (exclude
+                                            shipping fee.)
+                                        </div>
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dd class="deduction2">
+                                <div class="get-icon">
+                                    <div class="get-discount">
+                                        <div class="price">
+                                            $999
+                                        </div>
+                                        <div class="discount">
+                                            20%
+                                            <em>
+                                                0FF
+                                            </em>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="info-des">
+                                    <li>
+                                        <div class="the-title">
+                                            The name:
+                                        </div>
+                                        <div class="the-des">
+                                            $50 Welcome Bonus
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Validity period:
+                                        </div>
+                                        <div class="the-des">
+                                            permanent
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Restrictions:
+                                        </div>
+                                        <div class="the-des">
+                                            Partly deducted
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="the-title">
+                                            Can be used on:
+                                        </div>
+                                        <div class="the-des">
+                                            PCB cost only (exclude
+                                            shipping fee.)
+                                        </div>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="get-the-bottom">
+                        <div class="more-than-tips">
+                            No more than three coupons can be selected!
+                        </div>
+                        <button class="cancel-btn js-cancel-btn">
+                            cancel
+                        </button>
+                        <button class="submit-btn js-submit-btn">
+                            submit
+                        </button>
+                    </div>
+                </div>
+                <div class="synthetic-body">
+                    <div class="synthetic-area js-synthetic-list">
+                        <dd class="deduction1">
+                            <span class="iconfont icon-shanchu"></span>
+                            <div class="get-icon">
+                                <div class="get-discount">
+                                    <div class="price">
+                                        $50
+                                    </div>
+                                    <div class="discount">
+                                        15%
+                                        <em>
+                                            0FF
+                                        </em>
+                                    </div>
+                                </div>
+                            </div>
+                        </dd>
+                        <dd class="deduction1">
+                            <span class="iconfont icon-shanchu"></span>
+                            <div class="get-icon">
+                                <div class="get-discount">
+                                    <div class="price">
+                                        $50
+                                    </div>
+                                    <div class="discount">
+                                        15%
+                                        <em>
+                                            0FF
+                                        </em>
+                                    </div>
+                                </div>
+                            </div>
+                        </dd>
+                        <dd class="deduction2">
+                            <span class="iconfont icon-shanchu"></span>
+                            <div class="get-icon">
+                                <div class="get-discount">
+                                    <div class="price">
+                                        $50
+                                    </div>
+                                    <div class="discount">
+                                        15%
+                                        <em>
+                                            0FF
+                                        </em>
+                                    </div>
+                                </div>
+                            </div>
+                        </dd>
+                    </div>
+                    <div class="synthetic-animate">
+                        <div class="animate-area">
+                            <div class="atm-box">
+                                <div class="the-shade-box">
+                                    <div class="animate-box js-animate-box">
+                                        <!--合成折扣券-->
+                                        <div class="the-discount-item" style="display: none">
+                                            <div class="stipulate-price">
+                                                <span class="price"> $500</span>
+                                                <div class="price-des">
+                                                    <div>
+                                                        15%
+                                                    </div>
+                                                    <div>
+                                                        OFF
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="period-box">
+                                                Validity period:
+                                                <div class="date">
+                                                    30,November, 2020 ~ 29,January, 2021
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--合成抵用券-->
+                                        <div class="the-deduction-item">
+                                            <div class="stipulate-price">
+                                                <span class="price"> $500</span>
+                                                <div class="price-des">
+                                                    <div>
+                                                        $139+
+                                                    </div>
+                                                    <div>
+                                                        Order Amount
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="period-box">
+                                                Validity period:
+                                                <div class="date">
+                                                    30,November, 2020 ~ 29,January, 2021
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="animate-result">
+                            <div class="animate-logo">
+                                <!-- 失败给我一个 error 成功给我一个  success-->
+                                <div class="result-text js-result-text">
+                                    <!--   1.Combining... 2.Fail to combine 3.Completed-->
+                                </div>
+                            </div>
+                            <button class="start-btn js-start-btn">
+                                Start combining coupons
+                            </button>
+                            <input class="set-name js-set-name" type="text" placeholder="Fill in the coupon's name">
+                            <!-- 默认不可点击 选择券后去掉 disabled-->
+                            <button class="save-btn disabled js-save-btn">
+                                SAVE THE COUPON
+                            </button>
+                        </div>
+                    </div>
+                    <div class="synthetic-rules">
+                        <h6 class="synthetic-rules-name">Coupon combination process:</h6>
+                        <ol>
+                            <li>
+                                Click top right corner (Coupon)
+                            </li>
+                            <li>
+                                Choose three or fewer coupons and submit them in the pop-up window
+                            </li>
+                            <li>
+                                Close the window and click "Start combining coupons"
+                            </li>
+                            <li>
+                                Confirm information of the coupon after combination. Fill in its name and click "Save
+                                the coupon"
+                            </li>
+                        </ol>
+                    </div>
+                    <!--合成成功弹窗-->
+                    <div class="success-box-pop js-success-pop">
+                        <div class="box-pop-body">
+                            <div class="success-text">
+                                Successfully saved. You could check
+                                <br>the coupon on the "Coupon" page
+                            </div>
+                            <a class="result-btn" href="javascript:void(0)">
+                                OK
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--版权说明-->
+        <div class="copy-right-box">
+            Copyright © 2015 PCBGOGO. All rights reserved. Shenzhen JDB Technology Co., Ltd.
+            Address: No. 15, Zhongxing Road, Kengzi Street, Pingshan District, Shenzhen, 518000, China.
+        </div>
+    </div>
+</div>
+<script src="../img/js/jquery/jquery-1.11.3.min.js"></script>
+<script src="../img/js/layer-v3.1.1/layer/layer.js"></script>
+<script src="../img/js/public.js"></script>
+<script>
+    $(function () {
+        // 开箱抽奖 套用删除或修改
+        $('.js-draw-area dd').click(function () {
+            var that = this;
+            if ($(this).hasClass('unlock')) {
+                layer.msg('已开箱请点击其它箱子');
+                return false;
+            }
+            layer.load(1, {
+                shade: [0.2, '#fff'] //0.1透明度的白色背景
+            });
+            $.ajax({
+                url: '../img/js/examine.json',
+                method: 'get',
+                success: function (res) { // 套用重写回调函数整体
+                    console.log(res);
+                    var random = parseInt(Math.random() * 2); // 模拟是否中奖
+                    setTimeout(function () { // 模拟请求时长3s返回数据
+                        layer.closeAll();
+                        $(that).addClass('unlock');
+                        if (res.state === 200) {
+                            if (random === 1) {
+                                $('.js-the-wining-box').show();
+                            } else {
+                                $('.js-no-wining-box').show();
+                            }
+                            // 关闭结果弹窗
+                            $('.js-continue-btn').click(function () {
+                                $(this).parents('.the-wining-box').hide();
+                            });
+                        }
+                    }, 3000);
+                },
+                error: function (err) {
+                    console.log(err);
+                }
+            });
+        });
+        // 选择折扣券
+        $('.js-the-discount dd').click(function () {
+            var totalCount = null;
+            totalCount = $('.js-the-discount dd.active').length;
+            if (totalCount < 3) {
+                $(this).toggleClass('active');
+            } else {
+                if ($(this).hasClass('active')) {
+                    $(this).removeClass('active');
+                } else {
+                    layer.msg('No more than three coupons can be selected!');
+                    return false;
+                }
+            }
+        });
+        // 选择抵用券
+        $('.js-the-deduction dd').click(function () {
+            var totalCount = null;
+            totalCount = $('.js-the-deduction dd.active').length;
+            if (totalCount < 3) {
+                $(this).toggleClass('active');
+            } else {
+                if ($(this).hasClass('active')) {
+                    $(this).removeClass('active');
+                } else {
+                    layer.msg('No more than three coupons can be selected!');
+                    return false;
+                }
+            }
+        });
+        // 删除选择的优惠券
+        $('.js-synthetic-list dd .icon-shanchu').click(function () {
+            $(this).parent().find('.get-icon').remove();
+        });
+        // 取消选择券按钮
+        $('.js-cancel-btn').click(function () {
+            $(this).parents('.get-list-area').hide();
+        });
+        // 提交选择券按钮
+        $('.js-submit-btn').click(function () {
+            $(this).parents('.get-list-area').hide();
+        });
+        // 合成优惠券类别
+        $('.js-stamps-style .stamps').click(function () {
+            var stampsIndex = $(this).index();
+            $('.js-list-area').show();
+            $('.js-list-area .get-the-list').hide().eq(stampsIndex).show();
+        });
+        $('.js-start-btn').click(function () {
+            if (!$('.js-save-btn').hasClass('disabled')) {
+                layer.msg('请先保存该优惠券,然后再次合成');
+                return false;
+            }
+            var count = $('.js-synthetic-list .get-icon').length;
+            if (count !== 3) {
+                layer.msg('请选择3张要合并的优惠券，刷新页面即可');
+                return false;
+            }
+            if ($(this).hasClass('disabled')) {
+                layer.msg('合成中请稍后提交');
+                return false;
+            }
+            $(this).addClass('disabled');
+            $('.js-result-text').removeClass('error success').html('Combining...');
+            $('.js-animate-box').removeClass('animate');
+            $('.js-save-btn').addClass('disabled');
+            $.ajax({
+                url: '../img/js/examine.json',
+                method: 'get',
+                success: function (res) {  // 套用重写回调函数整体
+                    setTimeout(function () {  // 模拟请求5s 返回数据套用删除
+                        if (res.state === 200) {
+                            var random = parseInt(Math.random() * 2); //模拟成功与失败
+                            if (random === 0) {
+                                $('.js-result-text').addClass('error').html('Fail to combine');
+                            } else {
+                                $('.js-animate-box .the-discount-item,.the-deduction-item').hide();
+                                $('.js-result-text').addClass('success').html('Completed');
+                                var ranIndex = parseInt(Math.random() * 2);
+                                if (ranIndex === 0) {
+                                    $('.js-animate-box .the-discount-item').show();
+                                } else {
+                                    $('.js-animate-box .the-deduction-item').show();
+                                }
+                                $('.js-animate-box').addClass('animate');
+                                $('.js-save-btn').removeClass('disabled');
+                                $('.js-success-pop').fadeIn();
+                            }
+                            $('.js-start-btn').removeClass('disabled');
+                        }
+
+                    }, 5000);
+                },
+                error: function (err) {
+                    console.log(err);
+                }
+            });
+        });
+        // 关闭成功弹窗
+        $('.js-success-pop .result-btn').click(function () {
+            $(this).parents('.js-success-pop').fadeOut();
+        });
+        // 保持优惠券
+        $('.js-save-btn').click(function () {
+            if (!$('.js-animate-box').hasClass('animate')) {
+                layer.msg('请先合成优惠券');
+                return false;
+            }
+            if ($.trim($('.js-set-name').val()) === '') {
+                layer.msg('请输入优惠券名称');
+                return false;
+            }
+            layer.msg('Successfully saved. You could check the coupon on the "Coupon" page.');
+            $(this).addClass('disabled');
+            $('.js-animate-box').removeClass('animate');
+            $('.js-set-name').val('');
+        });
+    });
+</script>
+</body>
+</html>

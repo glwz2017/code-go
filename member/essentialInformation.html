@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Account -PCBgogo</title>
+    <!--网页标题左侧显示-->
+    <link rel="icon" href="../img/images/title-logo.png" type="image/x-icon">
+    <!--收藏夹显示图标-->
+    <link rel="shortcut icon" href="../img/images/title-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../img/css/member/essentialInformation.css">
+</head>
+<body>
+<div class="the-top">
+    <!--顶部导航-->
+    <div class="top-nav">
+        <div class="nav-l">
+            <a href="orderIndex.html">
+                <img src="../img/images/order/orderlogo.png" alt="logo">
+            </a>
+        </div>
+        <div class="nav-r">
+            <!--右侧图标-->
+            <div class="shopping-box">
+                <ul class="hints js-hints">
+                    <li class="active message-li"><a href="javascript:void(0)">
+                        <span class="iconfont icon-ai-message"></span>
+                    </a>
+                        <i class="point "></i>
+                    </li>
+                    <li class="active coupon-li"><a href="javascript:void(0)">
+                        <span class="iconfont icon-youhuiquan"></span>
+                    </a>
+                        <i class="point "></i>
+                    </li>
+                    <li class="active coupon-li"><a href="javascript:void(0)">
+                        <span class="iconfont icon-fukuan"></span>
+                    </a>
+                        <i class="point "></i>
+                    </li>
+                    <li class="car-box cared-li"><a href="javascript:void(0)">
+                        <span class="iconfont icon-gouwuche1"></span>
+                    </a>
+                        <i class="round car-nums">99</i>
+                    </li>
+                </ul>
+            </div>
+            <!--登录后-->
+            <div class="user-box">
+                <span class="hi-text"> Hi! The user...</span>
+                <div class="user-pic js-user-pic">
+                    <i><img src="../img/images/user.png" alt=""></i>
+                    <i class="down-pointer"><img src="../img/images/down-pointer.png" alt=""></i>
+                </div>
+                <div class="user-item">
+                    <div class="account" onclick="window.open('orderIndex.html','_self')">
+                        My Account
+                    </div>
+                    <div class="account" onclick="window.open('awaiting-payment.html','_self')">
+                        My Orders list
+                    </div>
+                    <div class="account" onclick="window.open('essentialInformation.html','_self')">
+                        My Delivery Address
+                    </div>
+                    <div class="facebook-btn ">
+                        Bind FaceBook
+                    </div>
+                    <div class="out-btn " style="margin-top: 10px">
+                        Sign Out
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--二级菜单-->
+    <div class="main-menu">
+        <div class="vip_warp">
+            <ul class="menu-list clear-fix">
+                <li class="active"><a href="orderIndex.html">My Account</a></li>
+                <li><a href="../PCBPrototype.html">PCB Instant Quote</a></li>
+                <li><a href="../PCBAssembly.html">PCB Assembly</a></li>
+                <li><a href="../pages作废/reviewList作废.html">Forum</a></li>
+            </ul>
+            <!--面包屑-->
+            <div class="bread-crumbs">
+                <a href="javascript:void(0)">
+                    <span class="iconfont icon-shouye1"></span>
+                    <span>- My Profile - Basic information</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--主体-->
+<div class="order-main">
+    <div class="box-l">
+        <div class="category js-category-index">
+            <div class="item "><a href="shopping-car.html">
+                <span class="iconfont icon-gouwuche2"></span>
+                <span class="category-name">-Shopping Cart</span></a></div>
+            <div class="item"><a href="awaiting-payment.html">
+                <span class="iconfont icon-dingdan"></span>
+                <span class="category-name">-My Orders</span></a></div>
+            <div class="item"><a href="memberList.html">
+                <span class="iconfont icon-icon_fapinglun-xian"></span>
+                <span class="category-name">-Comments</span></a></div>
+            <div class="item">
+                <a href="myInvitation.html">
+                    <span class="iconfont icon-daipingjiab"></span>
+                    <span class="category-name">+Experience Share</span>
+                </a>
+                <!--&lt;!&ndash;二级列表&ndash;&gt;-->
+                <div class="second-item">
+                    <a class="second-active" href="myInvitation.html">
+                        <span class="second-name">My Invitation</span>
+                    </a>
+                    <a href="promoteIndex.html">
+                        <span class="second-name">Share links</span>
+                    </a>
+                </div>
+            </div>
+            <div class="item "><a href="account-page.html">
+                <span class="iconfont icon-34"></span>
+                <span class="category-name">-Cash and Coupon</span></a></div>
+            <!--vip-->
+            <div class="item ">
+                <a href="integral.html">
+                    <span class="iconfont icon-v"></span>
+                    <span class="category-name active-new">
+                    <span class="iconfont icon-new"></span>
+                    - Reward points
+                </span>
+                </a>
+            </div>
+            <!--vip-->
+            <div class="item "><a href="newsed.html">
+                <span class="iconfont icon-liuyanpinglun"></span>
+                <span class="category-name">-Message</span>
+            </a></div>
+            <div class="item active"><a href="essentialInformation.html">
+                <span class="iconfont icon-gerenziliao"></span>
+                <span class="category-name">+My Profile</span>
+            </a>
+                <!--&lt;!&ndash;二级列表&ndash;&gt;-->
+                <div class="second-item ">
+                    <a class="second-active" href="essentialInformation.html">
+                        <span class="second-name">Basic Information</span></a>
+                    <a href="receivingAddress.html">
+                        <span class="second-name">My Delivery Address</span>
+                    </a>
+                    <a href="changePassword.html">
+                        <span class="second-name">Change Password</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--右侧-->
+    <div class="box-r">
+        <div class="r-title">
+            BASIC INFORMATION
+        </div>
+        <!--信息盒子-->
+        <div class="basic-box">
+
+            <div class="change-info">
+                <div class="info-img">
+                    <img class="author" src="../img/images/order/m-portrait.png" alt="">
+                    <div class="upload-box">
+                        <input type="file" class="upload-author js-upload-author">
+                        <span>Modify</span>
+                    </div>
+                </div>
+                <div class="info-des">
+                    <div class="class">
+                        <!--会员等级 vip-V1,vip-V2----vip-V6,vip  -->
+                        <object data="../img/images/member/vip-V1.svg" width="40" height="38"></object>
+                    </div>
+                    <div class="des-item">
+                        User ID: <span>B80001A</span>
+                    </div>
+                    <div class="des-item">
+                        Email: <span>196*******@qq.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="basic-r">
+                <div class="enemy-r">
+                    <dl class="enemy-nav js-enemy-nav">
+                        <dd class="active">
+                            <div class="nav-info">
+                                <span class="iconfont icon-gongsi"></span>
+                                <span class="">
+                                 Company
+                            </span>
+                            </div>
+                        </dd>
+                        <dd>
+                            <div class="nav-info">
+                                <span class="iconfont icon-gerenziliao"></span>
+                                <span class="">
+                                Individual
+                            </span>
+                            </div>
+                        </dd>
+                        <dd>
+                            <div class="nav-info">
+                                <span class="iconfont icon-hezuo1"></span>
+                                <span class="">
+                                Distributor
+                            </span>
+                            </div>
+                        </dd>
+                    </dl>
+                    <div class="enemy-item">
+                        <div class="enemy-item-label">
+                            Country/Region.
+                        </div>
+                        <div class="quantity-select country-title js-country-title">
+                            <!-- 当前选中的...-->
+                            <div class="current-country js-current-country">
+                                <img src="../img/images/country.png" alt="">
+                                <span class="js-country-name">
+
+                                COMMONWEALTH
+                                NO. MARIANA ISLANDS
+                            </span>
+                            </div>
+                            <!-- 所有国家-->
+                            <div class="total-country js-total-country" style="display: none;">
+                                <div class="country-search">
+                                    <input type="text" class="get-country" placeholder="Please enter country">
+                                </div>
+
+                                <div class="country-item ">
+                                    <span class="national flagbg-1"></span> AUSTRALIA
+                                </div>
+                                <div class="country-item ">
+                                    <span class="national flagbg-2"></span>
+                                    COMMONWEALTH
+                                    NO. MARIANA ISLANDS
+                                </div>
+                                <div class="country-item ">
+                                    <span class="national flagbg-3"></span> UNITED
+                                    STATES OF AMERICA
+                                </div>
+                                <div class="country-item ">
+                                    <span class="national flagbg-4"></span>
+                                    AUSTRALIA
+                                </div>
+                                <div class="country-item ">
+                                    <span class="national flagbg-5"></span>
+                                    CONGO, THE
+                                    DEMOCRATIC REPUBLIC OF
+                                </div>
+                                <div class="country-item ">
+                                    <span class="national flagbg-6"></span>
+                                    KOREA, THE
+                                    D.P.R OF (NORTH K.)
+                                </div>
+                                <div class="country-item ">
+                                    <span class="national flagbg-7"></span>
+                                    AUSTRALIA
+                                </div>
+                                <div class="country-item ">
+                                    <span class="national flagbg-8"></span>
+                                    COMMONWEALTH
+                                    NO. MARIANA ISLANDS
+                                </div>
+                                <div class="country-item ">
+                                    <span class="national flagbg-9"></span>
+                                    UNITED
+                                    STATES OF AMERICA
+                                </div>
+                                <div class="country-item">
+                                    <span class="national flagbg-10"></span>
+                                    AUSTRALIA
+                                </div>
+                                <div class="country-item ">
+                                    <span class="national flagbg-11"></span>
+                                    CONGO, THE
+                                    DEMOCRATIC REPUBLIC OF
+                                </div>
+                                <div class="country-item ">
+                                    <span class="national flagbg-12"></span>
+                                    KOREA, THE
+                                    D.P.R OF (NORTH K.)
+                                </div>
+                                <div class="country-item ">
+                                    <span class="national flagbg-13"></span>
+                                    AUSTRALIA
+                                </div>
+                                <div class="country-item ">
+                                    <span class="national flagbg-14"></span>
+                                    COMMONWEALTH
+                                    NO. MARIANA ISLANDS
+                                </div>
+                                <div class="country-item ">
+                                    <span class="national flagbg-0"></span>
+                                    UNITED
+                                    STATES OF AMERICA
+                                </div>
+                                <div class="country-item ">
+                                    <span class="national flagbg-0"></span>
+                                    AUSTRALIA
+                                </div>
+                                <div class="country-item ">
+                                    <span class="national flagbg-0"></span>
+                                    CONGO, THE
+                                    DEMOCRATIC REPUBLIC OF
+                                </div>
+                                <div class="country-item ">
+                                    <span class="national flagbg-108"></span>
+                                    KOREA, THE
+                                    D.P.R OF (NORTH K.)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="enemy-item">
+                        <div class="enemy-item-label">
+                            选择服务
+                        </div>
+                        <div class="service-choose">
+                            <label for="pcb-ck">
+                                <input id="pcb-ck" type="checkbox">
+                                PCB
+                            </label>
+                            <label for="pcba-ck">
+                                <input id="pcba-ck" type="checkbox">
+                                PCBA
+                            </label>
+                            <label for="comp-ck">
+                                <input id="comp-ck" type="checkbox">
+                                元器件采购
+                            </label>
+                        </div>
+                    </div>
+                    <hr class="hr">
+                    <div class="enemy-item">
+                        <div class="enemy-item-label">
+                            Your Name
+                        </div>
+                        <div class="form-item">
+                            <input type="text" placeholder="Fill in your full name">
+                        </div>
+                    </div>
+                    <div class="enemy-item skype-box">
+                        <div class="enemy-item-l">
+                            <div class="enemy-item-label">
+                                WhatsApp
+                            </div>
+                            <div class="skype">
+                                <span class="iconfont icon-WhatsApp"></span>
+                                <input type="text" placeholder="Skype">
+                            </div>
+                        </div>
+                        <div class="enemy-item-r">
+                            <div class="enemy-item-label">
+                                Skype
+                            </div>
+                            <div class="social">
+                                <span class="iconfont icon-Skype"></span>
+                                <input type="text" placeholder="WhatsApp">
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="hr">
+                    <div class="enemy-item">
+                        <div class="enemy-item-l">
+                            <div class="enemy-item-label">
+                                Position
+                            </div>
+                            <div class="quantity-select shipping-title js-shipping-title">
+                                <!-- 当前选中的...-->
+                                <div class="current-shipping js-current-shipping">FedEx-IP</div>
+                                <div class="total-shipping js-total-shipping" style="display: none;">
+                                    <div class="item">
+                                        设计师
+                                    </div>
+                                    <div class="item">
+                                        采购
+                                    </div>
+                                    <div class="item">
+                                        工程师
+                                    </div>
+                                    <div class="item">
+                                        技术员
+                                    </div>
+                                    <div class="item">
+                                        普通员工
+                                    </div>
+                                    <div class="item">
+                                        其它
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="enemy-item-r">
+                            <div class="enemy-item-label">
+                                Application
+                            </div>
+                            <div class="quantity-select shipping-title js-shipping-title">
+                                <!-- 当前选中的...-->
+                                <div class="current-shipping js-current-shipping">Application industries</div>
+                                <div class="total-shipping js-total-shipping" style="display: none;">
+                                    <div class="item">
+                                        Application industries
+                                    </div>
+                                    <div class="item">
+                                        Network & Computer
+                                    </div>
+                                    <div class="item">
+                                        Consumer electronics
+                                    </div>
+                                    <div class="item">
+                                        Telecommunications
+                                    </div>
+                                    <div class="item">
+                                        Aerospace
+                                    </div>
+                                    <div class="item">
+                                        Automotive electronics
+                                    </div>
+                                    <div class="item">
+                                        Blomedical
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="enemy-tool">
+                        <button type="button" class="submit">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--版权说明-->
+        <div class="copy-right-box">
+            Copyright © 2015 PCBGOGO. All rights reserved. Shenzhen JDB Technology Co., Ltd.
+            Address: No. 15, Zhongxing Road, Kengzi Street, Pingshan District, Shenzhen, 518000, China.
+        </div>
+    </div>
+</div>
+<script src="../img/js/jquery/jquery-1.11.3.min.js"></script>
+<script src="../img/js/layer-v3.1.1/layer/layer.js"></script>
+<script src="../img/js/public.js"></script>
+
+<script>
+  $(function () {
+
+    // 信息类型
+    $('.js-enemy-nav dd').click(function () {
+      $(this).addClass('active').siblings('dd').removeClass('active');
+    })
+
+    // 国家选择下拉框
+    $('.js-country-title').click(function (e) {
+      $('.js-total-shipping,.js-total-country').hide()
+      $(this).find('.js-total-country').show();
+      e.stopPropagation();
+    });
+    $('.js-total-country .country-item').click(function (e) {
+      $('.js-country-name').html($(this).text());
+      $(this).parent().hide();
+      e.stopPropagation();
+    });
+
+    //职位与领域下拉选择
+    $('.js-shipping-title').click(function (e) {
+      $('.js-total-shipping,.js-total-country').hide()
+      $(this).find('.js-total-shipping').show()
+      e.stopPropagation();
+    })
+    $('.js-total-shipping .item').click(function (e) {
+      $(this).parents('.js-shipping-title').find('.js-current-shipping').html($.trim($(this).text()))
+      $(this).parent().hide();
+      e.stopPropagation();
+    })
+    // 点击其它地方关闭下拉
+    $(document).click(function () {
+      $('.js-total-shipping,.js-total-country').hide()
+    });
+
+    // 头像上传 套用删除
+    $('.js-upload-author').change(function (e) {
+      var file = e.target.files[0];
+      var reader = new FileReader();
+      var base64Img = null;
+      reader.addEventListener('load', function () {
+        base64Img = reader.result;
+        $('.author').attr('src', base64Img);
+      }, false);
+      reader.readAsDataURL(file);
+    });
+
+  });
+</script>
+</body>
+</html>

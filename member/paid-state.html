@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--网页标题左侧显示-->
+    <link rel="icon" href="../img/images/title-logo.png" type="image/x-icon">
+    <!--收藏夹显示图标-->
+    <link rel="shortcut icon" href="../img/images/title-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../img/fonts/iconfont.css">
+    <link rel="stylesheet" href="../img/css/member/paid-state.css">
+</head>
+<body>
+<div class="order-main">
+    <div class="payment-top">
+        <div class="payment-logo">
+            <a href="javascript:void(0)">
+                pcbgogo
+            </a>
+        </div>
+        <div class="payment-right">
+            Electronic Project Engineer's Best Partner！
+        </div>
+    </div>
+    <!--付款进度指示图-->
+    <div class="progress-map-box">
+        <ul class="progress-ul">
+            <!--当前步骤选中 追加active-->
+            <li class="active">
+                <span class="iconfont icon-gouxuan"></span>
+                <i class="progress-line">
+                    Review your Order
+                </i>
+            </li>
+            <li class="active">
+                <span class="iconfont icon-gou-shi "></span>
+                <i class="progress-line">
+                    Payment
+                </i>
+            </li>
+            <li>
+                <span class="iconfont icon-gou-shi"></span>
+                <i class="progress-line">
+                    Done
+                </i>
+            </li>
+        </ul>
+    </div>
+    <div class="pay-state-box">
+        <!--  代付成功模块-->
+        <div class="pay-success-module" style="display: none">
+            <div class="pay-signs"></div>
+            <div class="pay-text">
+                Successful! Thank you for your payment.
+            </div>
+            <div class="pay-group">
+                <a href="javascript:void(0)">Continue to order</a>
+                <a href="javascript:void(0)">To view the order</a>
+            </div>
+        </div>
+        <!--  代付失败模块-->
+        <div class="pay-failure-module" style="display: none">
+            <div class="pay-signs error"></div>
+            <div class="pay-text">
+                The payment is not done yet.
+            </div>
+            <div class="pay-text">
+                For any payment issue, you can send an email to
+                <a class="mailto" href="mailto:service@pcbgogo.com">service@pcbgogo.com</a>
+            </div>
+        </div>
+        <!--  代付超时模块-->
+        <div class="pay-timeout-module" style="display: none">
+            <div class="pay-signs error"></div>
+            <div class="pay-text">
+                Thanks for your payment. It may arise from network delay, so we need 4-5 minutes to confirm your
+                payment.
+                Please check out your order status after a few minutes.
+            </div>
+            <div class="pay-text">
+                For any payment issue, you can send an email to
+                <a class="mailto" href="mailto:service@pcbgogo.com">service@pcbgogo.com</a>
+            </div>
+        </div>
+        <!--  代付paypal模块-->
+        <div class="pay-paypal-module" style="display: none">
+            <div class="pay-signs"></div>
+            <div class="pay-plane">
+                <span class="iconfont icon-arrowrightyoujiantou"></span>
+                <span class="plane-icon"></span>
+            </div>
+            <div class="pay-text">
+                Please do not close this page while the payment is in progress.
+            </div>
+        </div>
+        <!--  代付信用卡模块-->
+        <div class="pay-credit-module" style="display: none">
+            <div class="pay-signs"></div>
+            <div class="pay-plane">
+                <span class="iconfont icon-arrowrightyoujiantou"></span>
+                <span class="plane-icon"></span>
+            </div>
+            <div class="pay-text">
+                Your payment is in progressed.Please do not close this page
+            </div>
+        </div>
+        <!--  信用卡搜集模块-->
+        <div class="pay-credit-module collection-credit" >
+            <div class="pay-plane">
+                <span class="iconfont icon-arrowrightyoujiantou"></span>
+                <span class="plane-icon"></span>
+            </div>
+            <div class="collection-text">
+                <div class="title"> 请填写以下信用卡信息，完成付款！</div>
+                <div class="des">
+                    Please do not close this page while the payment is in progress.
+                </div>
+            </div>
+            <div class="credit-row">
+                <input class="credit number" type="text" placeholder="Card Number">
+            </div>
+            <div class="credit-row">
+                <input class="credit" type="text" placeholder="Expiration Date">
+                <input class="credit" type="text" placeholder="Secure Code">
+            </div>
+            <div class="credit-tool">
+                <button type="button" class="play-now">
+                    Pay Now
+                </button>
+            </div>
+            <div class="credit-tool-tips">
+                如页面录入信息无法加载成功，极有可能是浏览器版本不兼容，建议使用最新版本Chrome、Firefox浏览器重试。
+            </div>
+        </div>
+        <!--   统一付款失败-->
+        <div class="pay-success-box" style="display: none">
+            <div class="pay-signs error"></div>
+            <div class="pay-text">
+                The payment is not done yet, an order package number is generated <span>(GB61927)</span>,
+                and you can check your order in the pending payment list.
+            </div>
+            <div class="pay-text">
+                For any payment issue, you can send an email to
+                <a class="mailto" href="mailto:service@pcbgogo.com">service@pcbgogo.com</a>
+            </div>
+            <div class="pay-group">
+                <a href="javascript:void(0)">Continue to order</a>
+                <a href="javascript:void(0)">Continue payment</a>
+            </div>
+        </div>
+        <!--   统一付款成功-->
+        <div class="pay-success-box" style="display: none">
+            <div class="pay-signs"></div>
+            <div class="pay-text">
+                Successful! Thank you for your payment.
+            </div>
+            <div class="pay-group">
+                <a href="javascript:void(0)">Continue to order</a>
+                <a href="javascript:void(0)">To view the order</a>
+            </div>
+        </div>
+    </div>
+    <div class="copy-right-box">
+        Copyright © 2022 PCBGOGO. All rights reserved. Shenzhen JDB Technology Co., Ltd.
+        <a href="mailto:service@pcbgogo.com">service@pcbgogo.com</a>
+    </div>
+</div>
+<script>
+
+  //【无效代码】各种付款状态，套用忽略
+  // void function () {
+  //   function $ (className) {
+  //     return document.querySelector(className);
+  //   }
+  //   let randIndex = parseInt(window.sessionStorage.getItem('randIndex')) || 0
+  //   if (randIndex === 0) {
+  //     alert('F5刷新查看各种付款状态');
+  //   }
+  //   randIndex = ++randIndex > 4 ? 0 : randIndex
+  //   window.sessionStorage.setItem('randIndex', randIndex.toString())
+  //
+  //   let moduleArr = ['.pay-success-module', '.pay-failure-module', '.pay-timeout-module', '.pay-paypal-module', '.pay-credit-module']
+  //   for (let i = 0; i < moduleArr.length; i++) {
+  //     $(moduleArr[i]).style.display = 'none'
+  //   }
+  //   $(moduleArr[randIndex]).style.display = 'block';
+  // }()
+</script>
+</body>
+</html>

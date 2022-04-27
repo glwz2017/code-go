@@ -1,0 +1,436 @@
+@import "../css-function.less";
+@import "../components/basic-color.less";
+@import "../public.less";
+@import "memberTop.less";
+@import "../country.less";
+
+html, body {
+  height: 100%;
+}
+
+// 局部颜色
+@color8c8c8c: #8c8c8c;
+@colora9a9a9: #a9a9a9;
+@colore0e0e0: #e0e0e0;
+@colorececec: #ececec;
+@color898989: #898989;
+/*信息盒子*/
+.basic-box {
+  width: 1080px;
+
+  .change-info {
+    font-size: 12px;
+    border: 1px solid @colorEfefef;
+    padding: 39px 20px;
+    display: table;
+    width: 1080px;
+    position: relative;
+
+    .info-img {
+      .widthAndHeight(80px, 80px);
+      position: relative;
+      background: @colorEfefef;
+      display: table-cell;
+      overflow: hidden;
+
+      .author {
+        max-width: 100%;
+        .imgAdaptiveCenter(2);
+      }
+
+      .upload-box {
+        transition: all .3s;
+        .positionL(absolute, 80px, 0, 3);
+        text-align: center;
+        line-height: 80px;
+        font-size: 12px;
+        color: #fff;
+        width: 100%;
+        cursor: pointer;
+
+        &:before {
+          display: block;
+          content: '';
+          .widthAndHeight(80px, 80px);
+          background: @color8c8c8c;
+          .opacityIe(75);
+          .opacity(.75);
+          .positionL(absolute, 0, 0, 1);
+        }
+
+        .upload-author {
+          .opacityIe(0);
+          .opacity(0);
+          .positionL(absolute, 0, 0, 4);
+          font-size: 0;
+          .widthAndHeight(80px, 80px);
+          cursor: pointer;
+        }
+
+        span {
+          position: relative;
+          z-index: 3;
+          text-decoration: underline;
+        }
+
+      }
+
+      &:hover {
+        .upload-box {
+          top: 0;
+        }
+      }
+    }
+
+    .info-des {
+      display: table-cell;
+      vertical-align: middle;
+      font-size: 14px;
+      padding-left: 30px;
+      color: @color2e2525;
+    }
+  }
+}
+
+
+@colore7e7e7: #e7e7e7;
+@colore02d2d: #e02d2d;
+@colord8d8d8: #d8d8d8;
+@color929292: #929292;
+.enemy-r {
+  width: 648px;
+  height: auto;
+  background:#fff;
+  padding-top: 30px;
+
+  .enemy-nav {
+    .clearF;
+
+    dd {
+      float: left;
+      margin-left: 20px;
+      width: 160px;
+      height: 70px;
+      border: 1px solid @colore7e7e7;
+      cursor: pointer;
+
+      &:hover {
+        border-color: @colore02d2d;
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &.active {
+        border-color: @colore02d2d;
+        color: @colore02d2d;
+      }
+    }
+
+    .nav-info {
+      width: 160px;
+      display: table-cell;
+      vertical-align: middle;
+      height: 70px;
+      font-size: 14px;
+      text-align: center;
+
+      .icon-gongsi {
+        font-size: 38px;
+        vertical-align: middle;
+      }
+
+      .icon-gerenziliao, .icon-hezuo1 {
+        font-size: 32px;
+        vertical-align: middle;
+      }
+
+      .icon-hezuo1 {
+
+      }
+    }
+  }
+
+  // 公共下拉
+  .public-down {
+    .heightAndLineHeight(40px, 40px);
+    padding-left: 10px;
+    position: relative;
+    border: solid 1px @colore7e7e7;
+
+    img {
+      margin-right: 6px;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 6px solid @colord8d8d8;
+      .positionR(absolute, 50%, 12px, 1);
+      transform: translateY(-50%);
+      .widthAndHeight(0, 0);
+    }
+  }
+
+  .country-title {
+    position: relative;
+    cursor: pointer;
+
+    .current-country {
+      .public-down;
+      font-size: 12px;
+      background-color: #fff;
+    }
+
+    .total-country {
+      .positionL(absolute, 39px, 0, 5);
+      border: 1px solid @colore7e7e7;
+      background: #fff;
+      width: 100%;
+      max-height: 216px;
+      overflow-y: scroll;
+      min-height: 216px;
+      display: none;
+    }
+
+    .country-search {
+
+      .get-country {
+        .heightAndLineHeight(28px, 28px);
+        border: 1px solid @colore7e7e7;
+        width: 99%;
+        margin: 4px 0 4px 3px;
+        text-indent: 10px;
+      }
+    }
+
+    .country-item {
+      transition: all .3s;
+      min-height: 18px;
+      line-height: 20px;
+      padding-left: 34px;
+      font-size: 12px;
+      position: relative;
+      cursor: pointer;
+
+      .national {
+        display: inline-block;
+        width: 20px;
+        height: 11px;
+        background-image: url("../../images/flag-icons.png");
+        vertical-align: middle;
+        .positionL(absolute, 50%, 4px, 1);
+        transform: translateY(-50%);
+      }
+
+      &:hover {
+        background-color: #d0b8b8;
+      }
+    }
+
+    .shipping-down {
+      width: 138px;
+    }
+  }
+
+  .enemy-item {
+    margin-top: 16px;
+    font-size: 14px;
+    width: 520px;
+    .clearF;
+
+    .enemy-item-label {
+      margin-bottom: 10px;
+    }
+
+    .service-choose {
+      cursor: pointer;
+
+      label {
+        margin-right: 20px;
+        cursor: pointer;
+
+        input {
+          cursor: pointer;
+          margin-right: 4px;
+          vertical-align: middle;
+        }
+      }
+    }
+
+    .enemy-item-l {
+      float: left;
+    }
+
+    .enemy-item-r {
+      float: right;
+    }
+
+    .form-item {
+      border: 1px solid @colore7e7e7;
+      height: 40px;
+      .clearF;
+
+      &.active {
+        border: 1px solid #66afe9 !important;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+      }
+
+      input {
+        width: 100%;
+        height: 38px;
+        text-indent: 20px;
+        display: block;
+      }
+    }
+  }
+
+  .hr {
+    border: 0;
+    background: @colore7e7e7;
+    height: 1px;
+    margin-top: 20px;
+    width: 520px;
+  }
+
+  .skype-box {
+    border: 0;
+
+    .skype, .social {
+      border: 1px solid @colore7e7e7;
+
+      &.active{
+        border: 1px solid #66afe9 !important;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+      }
+
+      input {
+        height: 40px;
+        line-height: 40px;
+        display: inline-block !important;
+        outline: none;
+        background-color: #ffffff;
+        width: 200px;
+        text-indent: 0;
+        float: right;
+        text-align: left;
+      }
+    }
+  }
+
+  .skype {
+    width: 250px;
+    text-align: center;
+    line-height: 40px;
+
+    span {
+      font-size: 22px;
+      vertical-align: middle;
+      color: #00aff0;
+    }
+  }
+
+  .social {
+    width: 250px;
+    line-height: 40px;
+    text-align: center;
+
+    span {
+      font-size: 22px;
+      vertical-align: middle;
+      color: #4fac32;
+    }
+
+  }
+
+  .quantity-select {
+    height: 40px;
+    background: #fff;
+  }
+
+  .shipping-title {
+    width: 250px;
+    cursor: pointer;
+    position: relative;
+
+    .current-shipping {
+      .public-down;
+    }
+
+    .total-shipping {
+      .positionL(absolute, 39px, 0, 5);
+      background: #fff;
+      width: 100%;
+      border: 1px solid @colore7e7e7;
+      display: none;
+      max-height: 154px;
+      overflow-y: scroll;
+
+      .item {
+        transition: all .3s;
+        .heightAndLineHeight(36px, 36px);
+        padding-left: 15px;
+        text-align: left;
+        box-sizing: border-box;
+
+        &:hover {
+          background: #d0b8b8;
+        }
+      }
+    }
+  }
+
+  .enemy-tool {
+    margin-top: 36px;
+    text-align: right;
+    padding-right: 130px;
+
+    button {
+      .widthAndHeight(160px, 40px);
+      font-size: 18px;
+      cursor: pointer;
+
+      &.skip {
+        width: auto;
+        padding: 0 10px;
+        color: @color929292;
+        background: #fff;
+        text-decoration: underline;
+        margin-right: 60px;
+      }
+
+      &.submit {
+        background: @colore02d2d;
+        .borderRadius(2px);
+        color: #fff;
+      }
+    }
+  }
+}
+
+.change-btn {
+  width: 160px;
+  height: 40px;
+  line-height: 40px;
+  color: #ffffff;
+  background-color: #b21f1f;
+  border-radius: 2px;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 40px;
+  margin-left: 110px;
+  font-size: 14px;
+
+  &:hover {
+    background-color: #f22828;
+  }
+}
+
+.copy-right-box {
+  margin-top: 250px;
+}

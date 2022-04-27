@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Account -PCBgogo</title>
+    <!--网页标题左侧显示-->
+    <link rel="icon" href="../img/images/title-logo.png" type="image/x-icon">
+    <!--收藏夹显示图标-->
+    <link rel="shortcut icon" href="../img/images/title-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../img/css/public.css">
+    <link rel="stylesheet" href="../img/fonts/iconfont.css">
+    <style>
+        /*上传文件弹窗*/
+        .upload-file-box {
+            width: 940px;
+            height: auto;
+            border: 1px solid #efefef;
+            background-color: #ffffff;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        .currently-text {
+            font-size: 12px;
+            color: #727171;
+        }
+
+        .currently-num-box {
+            width: 880px;
+            margin: 20px auto 15px;
+            font-weight: bold;
+        }
+
+        .currently-num-box span {
+            margin-right: 10px;
+        }
+
+        .currently-num-box i {
+            margin-right: 10px;
+        }
+
+        .upload-file-box .files-add {
+            width: 880px;
+            height: auto;
+            margin: 0 auto;
+            border: 1px solid #efefef;
+            padding: 0 12px;
+            box-sizing: border-box;
+        }
+
+        .upload-file-box .files-add .add-item {
+            padding: 12px 0;
+            border-top: 1px #efefef dashed;
+        }
+
+        .upload-file-box .files-add .add-item:first-child {
+            border-top: none;
+        }
+
+        .upload-file-box .files-add .add-item:after {
+            display: block;
+            content: '';
+            width: 0;
+            height: 0;
+            clear: both;
+        }
+
+
+        .upload-file-box .files-add .add-item .name {
+            float: left;
+            width: 520px;
+            margin-top: 3px;
+            height: 19px;
+        }
+
+        .upload-file-box .files-add .add-item .state {
+            float: left;
+            width: 150px;
+            height: 19px;
+        }
+
+        .upload-file-box .files-add .add-item .add-uploading .total-length {
+            width: 100px;
+            height: 6px;
+            background-color: #dfe0e0;
+            position: relative;
+            border-radius: 15px;
+            margin-right: 6px;
+        }
+        .upload-file-box .files-add .add-item .add-uploading .the-ratio {
+          vertical-align: text-top;
+        }
+
+        .upload-file-box .files-add .add-item .add-uploading {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .upload-file-box .files-add .add-item .add-uploading .now-length {
+            width: 0;
+            height: 6px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #fdbb2d;
+            border-radius: 15px;
+        }
+
+        .upload-file-box .files-add .add-item .gerber {
+            float: left;
+            width: 160px;
+            margin-left: 20px;
+        }
+
+        .upload-file-box .files-add .add-item .show-file {
+            display: block;
+            height: 24px;
+            text-align: center;
+            line-height: 24px;
+            background: #837270;
+            color: #fff;
+            font-size: 12px;
+            text-decoration: underline;
+            cursor: pointer;
+            position: relative;
+            transition: all .3s;
+        }
+
+        .upload-file-box .files-add .add-item .show-file:hover {
+            background: #554543;
+        }
+
+        .upload-file-box .files-add .add-item .show-file input[type="file"] {
+            opacity: 0;
+            width: 100%;
+            height: 20px;
+            position: absolute;
+            top: 0;
+            z-index: 99;
+            left: 0;
+            filter: Alpha(opacity=0);
+            line-height: 20px;
+            cursor: pointer;
+        }
+
+        .upload-file-box .files-add .add-item .add-success {
+            color: #397ecc;
+            font-size: 12px;
+            position: relative;
+        }
+
+        .upload-file-box .files-add .add-item .add-success span {
+            margin-left: 26px;
+            display: block;
+            max-width: 460px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            text-decoration: underline;
+        }
+
+        .upload-file-box .files-add .add-item .add-success:before {
+            font-family: "iconfont" !important;
+            font-size: 16px;
+            line-height: 14px;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            position: absolute;
+            content: "\e786";
+            top: 0;
+            left: 0;
+            z-index: 3;
+            color: #397ecc;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .upload-file-box .files-add .add-item .add-failed:before {
+            font-family: "iconfont" !important;
+            font-size: 16px;
+            line-height: 14px;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            position: absolute;
+            content: "\e69b";
+            top: 0;
+            left: 0;
+            z-index: 3;
+            color: #b21f1f;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .upload-file-box .files-add .add-item .add-failed {
+            color: #b21f1f;
+            display: none;
+            position: relative;
+        }
+
+        .upload-file-box .files-add .add-item .add-failed span {
+            margin-left: 26px;
+        }
+
+
+        .upload-file-box .submit-order {
+            width: 320px;
+            height: 40px;
+            background-color: #b21f1f;
+            color: #ffffff;
+            font-size: 16px;
+            border-radius: 2px;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.26);
+        }
+
+        .upload-file-box .disabled {
+            background-color: #919191;
+        }
+
+        .download-file a {
+            color: #008cc7;
+            margin-top: 5px;
+        }
+
+        .files-tips {
+            font-size: 12px;
+            width: 880px;
+            margin: 20px auto 0;
+        }
+
+        .files-tips .tips {
+            color: #008cc7;
+        }
+
+        .files-tips .tips a {
+            color: #008cc7;
+            text-decoration: underline;
+        }
+
+        .files-tips .tips .download-file {
+            float: right;
+        }
+
+        .btns-box {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .btns-box input {
+            cursor: pointer;
+        }
+
+        .upload-file-box .save-tips {
+            color: #fdbb2d;
+            width: 880px;
+            margin: 25px auto 0;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .upload-file-box .save-tips .icon-tishi1 {
+            margin-right: 15px;
+            font-size: 18px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+<div class="upload-file-box js-up-file-box">
+    <div class="currently-text">Currently we only accept .pcb .pcbdoc .cam Gerber files and Eagle files(please
+        zipped them and upload.) for PCB fabrication.
+    </div>
+    <!--订单编号-->
+    <div class="currently-num-box">
+        <span>SMT Number:</span>
+        <i>A11302AS61</i>
+        <i>A11302AS62</i>
+        <i>A11302AS63</i>
+
+        <span>PCB Number:</span>
+        <i> S-A11302A1</i>
+        <i> S-A1130262</i>
+    </div>
+    <!--上传盒子-->
+    <div class="files-add">
+        <div class="add-item">
+            <div class="name">
+                <!--上传成功-->
+<!--                <i class="add-success ">-->
+<!--                    <span title="给我一个文件名">The file name001djfjsdgljkwpowjnkldkglgklgjklgkjpoio90i0-2tp[kjsdgjl</span>-->
+<!--                </i>-->
+<!--                &lt;!&ndash;上传失败&ndash;&gt;-->
+<!--                <i class="add-failed">-->
+<!--                    <span>Upload failed</span>-->
+<!--                </i>-->
+            </div>
+            <div class="state">
+                <!--上传中-->
+<!--                <i class="add-uploading" style="display: block">-->
+<!--                    <i class="total-length">-->
+<!--                        <i class="now-length"></i>-->
+<!--                    </i>-->
+<!--                    <span class="the-ratio"></span>-->
+<!--                </i>-->
+            </div>
+            <div class="gerber">
+                <i class="show-file">
+                    <input type="file" multiple>
+                    + Add Gerber file
+                </i>
+            </div>
+        </div>
+        <div class="add-item">
+            <div class="name">
+                <!--上传成功-->
+                <!--                <i class="add-success ">-->
+                <!--                    <span title="给我一个文件名">The file name001djfjsdgljkwpowjnkldkglgklgjklgkjpoio90i0-2tp[kjsdgjl</span>-->
+                <!--                </i>-->
+                <!--上传失败-->
+                <i class="add-failed" style="display: block">
+                    <span>Upload failed</span>
+                </i>
+            </div>
+            <div class="state">
+                <!--上传中-->
+                <i class="add-uploading" style="display: block">
+                    <i class="total-length">
+                        <i class="now-length"></i>
+                    </i>
+                    <span class="the-ratio"></span>
+                </i>
+            </div>
+            <div class="gerber">
+                <i class="show-file">
+                    <input type="file">
+                    + Add Gerber file
+                </i>
+            </div>
+        </div>
+        <div class="add-item">
+            <div class="name">
+                <!--上传成功-->
+                <i class="add-success ">
+                    <span title="给我一个文件名">The file name001djfjsdgljkwp</span>
+                </i>
+                <!--上传失败-->
+                <i class="add-failed">
+                    <span>Upload failed</span>
+                </i>
+            </div>
+            <div class="state">
+                <!--上传中-->
+                <i class="add-uploading" style="display: block">
+                    <i class="total-length">
+                        <i class="now-length"></i>
+                    </i>
+                    <span class="the-ratio"></span>
+                </i>
+            </div>
+            <div class="gerber">
+                <i class="show-file">
+                    <input type="file">
+                    + Bom list
+                </i>
+            </div>
+        </div>
+        <div class="add-item">
+            <div class="name">
+                <!--上传成功-->
+                <i class="add-success ">
+                    <span title="给我一个文件名">The file name001djfjsdgljkwpowjnkldkglgklgjklgkjpoio90i0-2tp[kjsdgjl</span>
+                </i>
+                <!--上传失败-->
+                <i class="add-failed">
+                    <span>Upload failed</span>
+                </i>
+            </div>
+            <div class="state">
+                <!--上传中-->
+                <i class="add-uploading" style="display: block">
+                    <i class="total-length">
+                        <i class="now-length"></i>
+                    </i>
+                    <span class="the-ratio"></span>
+                </i>
+            </div>
+            <div class="gerber">
+                <i class="show-file">
+                    <input type="file">
+                    + pick and place file
+                </i>
+            </div>
+        </div>
+    </div>
+
+    <div class="files-tips">
+        <!--多个文件提示-->
+        <div class="more-files">only .rar.zip.7z.xls.xlsx.csv.txt accepted.Gerbers and Parts
+            list(BOM) and Centroid file Template file
+        </div>
+        <!--单个文件提示-->
+        <div class="only-flies"> .rar or .zip Maximum 10M (.pcb .pcbdoc .cam and gerber
+            files )
+        </div>
+        <div class="tips">
+            Need a quick and accurante quote? Need an efficient production? Please read <a href="javascript:void(0)">SMT
+            Ordering Necessary Files & Info</a> in 1 minute. Thank you very much!
+            <a class="download-file" href="模板下载">BOM Template file</a>
+        </div>
+    </div>
+    <!--    按钮-->
+    <div class="btns-box">
+        <input type="button" class="submit-order disabled js-submit-order" value="Submit Your PCB File?">
+    </div>
+    <div class="save-tips">
+        <span class="iconfont icon-tishi1"></span>
+        <span>
+                   Are you having problems uploading? You can skip this step and email your data files to <a
+                href="#" style="color: #fdbb2d;text-decoration: underline">service@PCBGOGO.com</a>
+               </span>
+    </div>
+</div>
+<!--套用忽略以下代码-->
+<script src="../img/js/jquery/jquery-1.11.3.min.js"></script>
+<script src="../img/js/layer-v3.1.1/layer/layer.js"></script>
+<script>
+    $(function () {
+
+        $('.add-item input').change(function () {
+            dataProcessFn($(this));
+        });
+
+        function dataProcessFn(target) {
+            var $fielsAdd = $('.files-add');
+            if ($fielsAdd.attr('index') === undefined) {
+                $fielsAdd.attr('length', $('.files-add .add-item').length);
+                $fielsAdd.attr('index', 0);
+                $fielsAdd.attr('process', 1);
+            }
+            var obj = target[0].files;
+            for (var i = 0; i < obj.length; i++) {
+                var reg = new RegExp(/.(zip|rar|7z|.csv|xls|xlsx|txt|doc)/);
+                if (!reg.test(obj[i].name)) {
+                    layer.msg('文件类型有误请重新上传');
+                    return;
+                }
+                if (parseInt(obj[i].size / 1024 / 1000) > 10) {
+                    layer.msg('文件上传最大10M');
+                    return;
+                }
+                var process = parseInt($fielsAdd.attr('process'));
+                var timer = null;
+                timer = setInterval(function () {
+                    ++process;
+                    if (process <= 100) {
+                        $(target).parent().parent().siblings('.state').find('.the-ratio').html(process + '%');
+                    }
+                }, 1);
+
+                $(target).parent().parent().siblings('.state').find('.now-length').animate({width: 100}, function () {
+                    var index = parseInt($fielsAdd.attr('index'));
+                    $fielsAdd.attr('index', ++index);
+                    if ($fielsAdd.attr('index') === $fielsAdd.attr('length')) {
+                        $('.js-submit-order').removeClass('disabled');
+                    }
+                });
+            }
+        }
+
+        $('.js-submit-order').click(function () {
+            if ($(this).hasClass('disabled')) {
+                layer.msg('请上传文件');
+                return false;
+            }
+            layer.msg('上传成工');
+            //do something...
+            window.location.reload();
+        });
+    })
+</script>
+</body>
+</html>

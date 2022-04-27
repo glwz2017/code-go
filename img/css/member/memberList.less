@@ -1,0 +1,369 @@
+@import "../css-function.less";
+@import "../../fonts/iconfont.css";
+@import "../components/basic-color.less";
+@import "../public.less";
+@import "memberTop.less";
+// 局部颜色
+@color271e1f: #271e1f;
+@colorF19c1a: #f19c1a;
+html,body{
+  height: 100%;
+}
+/*审查盒子*/
+.under-review-box {
+  font-size: 12px;
+  width: 1080px;
+
+  .review-state {
+    color: @color313131;
+  }
+
+  .pass-state {
+    color: @color4a90e2;
+  }
+
+  .failed-state {
+    color: @colorRedB21f1f;
+  }
+
+
+  .release-list {
+    border: 1px solid @colorEfefef;
+    border-collapse: collapse;
+    margin-top: 50px;
+
+    th {
+      height: 40px;
+      background: @colorf7f8f8;
+    }
+
+    td {
+      vertical-align: top;
+    }
+
+    tbody {
+      border-bottom: 1px solid @colorefeff0;
+    }
+  }
+
+  .release-title {
+    color: @color313131;
+    text-align: left;
+
+    .release-info {
+      width: 960px;
+      font-weight: normal;
+    }
+
+    .product-info {
+      width: 358px;
+      float: left;
+      .heightAndLineHeight(40px, 40px);
+      padding-left: 30px;
+      box-sizing: border-box;
+    }
+
+    .feedback-info {
+      width: 600px;
+      float: left;
+      padding-left: 30px;
+      box-sizing: border-box;
+      .heightAndLineHeight(40px, 40px);
+      border-left: 1px solid @colorEfefef;
+      border-right: 1px solid @colorEfefef;
+    }
+
+    .release-state {
+      width: 120px;
+      font-weight: normal;
+      padding-left: 20px;
+      box-sizing: border-box;
+    }
+  }
+}
+
+/*具体项*/
+
+.parent-info {
+  width: 960px;
+
+  .parent-list {
+    font-size: 0;
+    padding: 20px 0;
+    position: relative;
+
+    &:nth-child(2) {
+      border-top: 1px solid @colorEfefef;
+    }
+
+    &:before {
+      display: block;
+      content: '';
+      height: 100%;
+      border-left: 1px solid @colorEfefef;
+      .positionL(absolute, 0, 358px, 1);
+    }
+
+    &:after {
+      display: block;
+      content: '';
+      height: 100%;
+      border-left: 1px solid @colorEfefef;
+      .positionR(absolute, 0, 0, 1);
+    }
+
+    .product-info {
+      width: 356px;
+      height: auto;
+      display: inline-block;
+      padding-left: 30px;
+      box-sizing: border-box;
+      color: @color313131;
+      font-size: 12px;
+      vertical-align: top;
+    }
+
+    .numbers-text {
+      font-size: 12px;
+
+      .o-price {
+        .price {
+          font-size: 16px;
+        }
+      }
+
+      .o-service {
+        margin-top: 10px;
+      }
+
+      .o-email {
+        margin-bottom: 10px;
+      }
+    }
+
+    .numbers-pic {
+      color: @colorRedB21f1f;
+      margin-top: 10px;
+
+      .icon-icon-xiangqing {
+        text-decoration: none;
+        vertical-align: middle;
+      }
+
+      span {
+        text-decoration: underline;
+      }
+    }
+
+    .feedback-info {
+      width: 600px;
+      height: auto;
+      box-sizing: border-box;
+      display: inline-block;
+      padding: 0 30px;
+      font-size: 12px;
+      vertical-align: top;
+
+      span {
+        color: #d5d6d6;
+        cursor: pointer;
+        font-size: 24px;
+        line-height: 18px;
+      }
+
+      .stats-active {
+        color: #fdbb2d;
+      }
+
+      .feed-title {
+        color: @color4a90e2;
+        margin-top: 10px;
+
+        a {
+          color: inherit;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .feed-des {
+        margin-top: 18px;
+      }
+
+      .product-img-box {
+        margin-top: 10px;
+      }
+
+      i {
+        .widthAndHeight(60px, 60px);
+        margin: 0 10px 5px 0;
+        position: relative;
+
+        img {
+          max-width: 100%;
+          .positionL(absolute, 0, 0, 1);
+          bottom: 0;
+          right: 0;
+          margin: auto;
+        }
+      }
+    }
+
+    .feedback-info .product-img-box
+    .feedback-info .product-img-box i
+    .under-box {
+      text-align: center;
+      line-height: 200px;
+    }
+  }
+}
+
+.parent-state {
+  width: 120px;
+  padding: 20px 0;
+
+  .status {
+    padding-left: 20px;
+    box-sizing: border-box;
+  }
+}
+
+.right-price {
+  font-size: 16px;
+  color: #b21f1f;
+}
+
+/*遮罩弹窗层*/
+.order-main {
+  .open-mask {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    /*IE遮罩兼容*/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    display: none;
+  }
+
+  .confirm-box {
+    width: 640px;
+    height: 200px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -320px;
+    z-index: 99999;
+    opacity: 1;
+
+    p {
+      text-align: center;
+      margin-top: 50px;
+    }
+  }
+
+  .confirm-btn {
+    width: 100%;
+    margin-top: 35px;
+    height: 40px;
+    text-align: center;
+  }
+
+  .yes-btn, .no-btn {
+    width: 140px;
+    height: 40px;
+    border-radius: 3px;
+    line-height: 40px;
+    text-align: center;
+    color: #ffffff;
+    margin-right: 25px;
+  }
+
+  .yes-btn {
+    background-color: #271e1e;
+  }
+
+  .no-btn {
+    background-color: #685858;
+  }
+}
+
+/*空数据元素*/
+.empty-item {
+  width: 100%;
+  text-align: center;
+  margin: 100px auto;
+
+  .empty-order {
+    display: inline-block;
+    .clearF;
+
+    .empty-pic {
+      float: left;
+    }
+
+    .empty-link-box {
+      float: left;
+      margin-left: 25px;
+    }
+
+    .empty-text {
+      color: #c9caca;
+      font-size: 12px;
+      text-align: left;
+    }
+
+    .empty-link {
+      color: #2e2525;
+      text-decoration: underline;
+      font-size: 12px;
+      margin-top: 4px;
+    }
+  }
+}
+
+.copy-right-box {
+  margin-top: 230px;
+}
+
+.forum-note {
+  margin: 50px auto 20px;
+  width: 700px;
+  padding: 20px 0;
+  position: relative;
+
+  .note-img {
+    .positionL(absolute, 50%, 0, 1);
+    transform: translateY(-50%);
+  }
+
+  .note-text {
+    line-height: 18px;
+    color: @color271e1f;
+    padding: 0 20px;
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .post-btn {
+    background: @colorF19c1a;
+    .borderRadius(2px);
+    .heightAndLineHeight(30px, 30px);
+    text-align: center;
+    font-size: 12px;
+    padding: 0 20px;
+    color: #fff;
+    .positionR(absolute, 50%, 0, 1);
+    transform: translateY(-50%);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

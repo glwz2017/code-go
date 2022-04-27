@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Account -PCBgogo</title>
+    <!--网页标题左侧显示-->
+    <link rel="icon" href="../img/images/title-logo.png" type="image/x-icon">
+    <!--收藏夹显示图标-->
+    <link rel="shortcut icon" href="../img/images/title-logo.png" type="image/x-icon">
+    <!--字体图标-->
+    <link rel="stylesheet" href="../img/fonts/iconfont.css">
+    <link rel="stylesheet" href="../img/css/member/unfinishedPay.css">
+</head>
+<body>
+<!--header-->
+<div class="the-top">
+    <div class="top-nav">
+        <div class="nav-l">
+            <a href="orderIndex.html">
+                <img src="../img/images/order/orderlogo.png" alt="logo">
+            </a>
+        </div>
+        <div class="nav-r">
+            <!--右侧图标-->
+            <div class="shopping-box">
+                <ul class="hints js-hints">
+                    <li class="active message-li"><a href="javascript:void(0)">
+                        <span class="iconfont icon-ai-message"></span>
+                    </a>
+                        <i class="point "></i>
+                    </li>
+                    <li class="active coupon-li"><a href="javascript:void(0)">
+                        <span class="iconfont icon-youhuiquan"></span>
+                    </a>
+                        <i class="point "></i>
+                    </li>
+                    <li class="active coupon-li"><a href="javascript:void(0)">
+                        <span class="iconfont icon-fukuan"></span>
+                    </a>
+                        <i class="point "></i>
+                    </li>
+                    <li class="car-box cared-li"><a href="javascript:void(0)">
+                        <span class="iconfont icon-gouwuche1"></span>
+                    </a>
+                        <i class="round car-nums">99</i>
+                    </li>
+                </ul>
+            </div>
+            <!--登录后-->
+            <div class="user-box">
+                <span class="hi-text"> Hi! The user...</span>
+                <div class="user-pic js-user-pic">
+                    <i><img src="../img/images/user.png" alt=""></i>
+                    <i class="down-pointer"><img src="../img/images/down-pointer.png" alt=""></i>
+                </div>
+                <div class="user-item">
+                    <div class="account" onclick="window.open('orderIndex.html','_self')">
+                        My Account
+                    </div>
+                    <div class="account" onclick="window.open('awaiting-payment.html','_self')">
+                        My Orders list
+                    </div>
+                    <div class="account" onclick="window.open('essentialInformation.html','_self')">
+                        My Delivery Address
+                    </div>
+                    <div class="facebook-btn ">
+                        Bind FaceBook
+                    </div>
+                    <div class="out-btn " style="margin-top: 10px">
+                        Sign Out
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--二级菜单-->
+    <div class="main-menu">
+        <div class="vip_warp">
+            <ul class="menu-list clear-fix">
+                <li class="active"><a href="orderIndex.html">My Account</a></li>
+                <li><a href="../PCBPrototype.html">PCB Instant Quote</a></li>
+                <li><a href="../PCBAssembly.html">PCB Assembly</a></li>
+                <li><a href="../pages作废/reviewList作废.html">Forum</a></li>
+            </ul>
+            <!--面包屑-->
+            <div class="bread-crumbs">
+                <a href="javascript:void(0)">
+                    <span class="iconfont icon-shouye1"></span>
+                    <span>- Shopping Cart</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--主体-->
+<div class="order-main">
+    <!--左侧-->
+    <div class="box-l">
+        <div class="category js-category-index">
+            <div class="item "><a href="shopping-car.html">
+                <span class="iconfont icon-gouwuche2"></span>
+                <span class="category-name">-Shopping Cart</span></a></div>
+            <div class="item "><a href="awaiting-payment.html">
+                <span class="iconfont icon-dingdan"></span>
+                <span class="category-name">-My Orders</span></a></div>
+            <div class="item "><a href="memberList.html">
+                <span class="iconfont icon-icon_fapinglun-xian"></span>
+                <span class="category-name">-Comments</span></a></div>
+            <div class=" item "><a href="myInvitation.html">
+                <span class="iconfont icon-daipingjiab"></span>
+                <span class="category-name">+Experience Share</span></a></div>
+            <!--&lt;!&ndash;二级列表&ndash;&gt;-->
+            <div class="second-item ">
+                <a href="myInvitation.html">
+                    <span class="second-name">My Invitation</span>
+                </a>
+                <a href="promoteIndex.html">
+                    <span class="second-name">Share links</span>
+                </a>
+            </div>
+            <!--vip-->
+            <div class="item "><a href="javascript:void(0)">
+                <span class="iconfont icon-34"></span>
+                <span class="category-name active-new">- Reward points</span></a></div>
+            <!--vip-->
+            <div class="item "><a href="account-page.html">
+                <span class="iconfont icon-34"></span>
+                <span class="category-name">-Cash and Coupon</span></a></div>
+            <div class="item "><a href="newsed.html">
+                <span class="iconfont icon-liuyanpinglun"></span>
+                <span class="category-name">-Message</span>
+            </a></div>
+            <div class="item"><a href="essentialInformation.html">
+                <span class="iconfont icon-gerenziliao"></span>
+                <span class="category-name">+My Profile</span>
+            </a></div>
+            <!--&lt;!&ndash;二级列表&ndash;&gt;-->
+            <div class="second-item ">
+                <a href="essentialInformation.html">
+                    <span class="second-name">Basic Information</span></a>
+                <a href="receivingAddress.html">
+                    <span class="second-name">My Delivery Address</span>
+                </a>
+                <a href="changePassword.html">
+                    <span class="second-name">Change Password</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--右侧-->
+    <div class="box-r">
+        <div class="r-title">
+            SHOPPING CART
+        </div>
+        <!--付款进度指示图-->
+        <div class="progress-map-box">
+            <ul class="progress-ul">
+                <!--当前步骤选中 追加active-->
+                <li class="active">
+                    <span class="iconfont icon-gouxuan"></span>
+                    <i class="progress-line">
+                        Review your Order
+                    </i>
+                </li>
+                <li class="active">
+                    <span class="iconfont icon-gou-shi "></span>
+                    <i class="progress-line">
+                        Payment
+                    </i>
+                </li>
+                <li>
+                    <span class="iconfont icon-gou-shi"></span>
+                    <i class="progress-line">
+                        Done
+                    </i>
+                </li>
+            </ul>
+        </div>
+        <!--支付方式选择-->
+        <div class="info-parent">
+            <div class="left-info">
+                <div class="sure-item balance">
+                    <dl class="entry-info">
+                        <dt>
+                            Group No: GB6772
+                        </dt>
+                        <dd>
+                            Order time & date: 2022.01.19 13:49:33
+                        </dd>
+                        <dd>
+                            Order Status: Awaiting Payment
+                        </dd>
+                    </dl>
+                    <div class="invoice-box">
+                        <div class="ticket-box">
+                            <div class="way-icon">
+                                <img src="../img/images/ship/way1.png" alt="">
+                            </div>
+                            <div class="tool-icon">
+                                <img src="../img/images/ship/plane.png" alt="">
+                            </div>
+                            <div class="ship-name">
+                                DHL
+                            </div>
+                            <div class="ship-info">
+                                3-5 days | Weight 0.72 kg
+                            </div>
+                        </div>
+                        <div class="address-lists">
+                            <div class="info-address-title">
+                                Select a shipping address:
+                            </div>
+                            <div class="info-address">
+                                <div class="item">
+                                    <div class="name">Company:</div>
+                                    <div class="des">
+                                       <span>
+                                            JDB
+                                       </span>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="name">Name:</div>
+                                    <div class="des">
+                                       <span>
+                                          zhangyu
+                                       </span>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="name">Address:</div>
+                                    <div class="des">
+                                       <span>
+                                           jwh, AIXIRIVALL, , 25999 jwh, AIXIRIVALL, , 25999
+                                       </span>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="name">Telephone:</div>
+                                    <div class="des">
+                                       <span>
+                                           81-123456
+                                       </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 付款-->
+                <div class="sure-item">
+                    <div class="sure-title">
+                        <div class="sure-name">Payment method:</div>
+                    </div>
+                    <div class="pay-box">
+                        <div class="online-offline js-pay-methods">
+                            <div class="pay-entry">
+                                <div class="entry-title">
+                                    The online payment:
+                                </div>
+                                <div class="entry-body">
+                                    <div class="entry">
+                                        <!-- 选中方式 追加 active-->
+                                        <div class="pay-el active">
+                                            <div class="pay-check">
+                                                <input type="checkbox">
+                                            </div>
+                                            <div class="pay-with">
+                                                Pay with Paypal
+                                                <img class="pal-icon" src="../img/images/order/pay-pal.png" alt=""
+                                                     width="83" height="20">
+                                            </div>
+                                            <div class="pal-tips">
+                                                Highly recommended:Pay easily,fast and secure with PayPal.
+                                            </div>
+                                            <!-- 默认隐藏-->
+                                            <a href="javascript:void(0)" onclick="alert('去paypal-官网')" target="_blank"
+                                               class="paypal-link"></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="entry">
+                                        <div class="pay-el">
+                                            <div class="pay-check">
+                                                <input type="checkbox">
+                                            </div>
+                                            <div class="pay-with">
+                                                Credit Card A
+                                                <img class="pal-icon" src="../img/images/order/logo-visa.png" alt=""
+                                                     width="41" height="14">
+                                                <img class="pal-icon" src="../img/images/order/logo-master.png" alt=""
+                                                     width="26" height="20">
+                                                <img class="pal-icon" src="../img/images/order/logo-maestro.png" alt=""
+                                                     width="26" height="20">
+                                                <img class="pal-icon" src="../img/images/order/logo-jcb.png" alt=""
+                                                     width="22" height="16">
+                                                <img class="pal-icon" src="../img/images/order/logo-american.png" alt=""
+                                                     width="19" height="18">
+                                                <img class="pal-icon" src="../img/images/order/logo-diners.png" alt=""
+                                                     width="30" height="20">
+                                                <img class="pal-icon" src="../img/images/order/logo-discover.png" alt=""
+                                                     width="33" height="20">
+                                            </div>
+                                            <div class="pal-tips">
+                                                You can use credit cards: Visa, MasterCard, JCB, Maestro, American
+                                                Express,
+                                                Diners Club, Discover. The maximum amount reaches $5,000.
+                                                <span class="secure-text">When  the payment exceeds $350,   we  should  use 3D  Secure.</span>
+                                            </div>
+                                            <!-- 默认隐藏-->
+                                            <a href="javascript:void(0)" target="_blank" class="jump-payment">
+                                                Go to the payment
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pay-entry">
+                                <div class="entry-title">
+                                    Offline payment:
+                                </div>
+                                <div class="entry-body">
+                                    <!-- 选中方式 追加 active-->
+                                    <div class="entry ">
+                                        <div class="pay-el js-bank-list">
+                                            <div class="bank">
+                                                <div class="pay-check">
+                                                    <input type="checkbox">
+                                                </div>
+                                                <div class="pay-with">
+                                                    Bank Transfer
+                                                    <br><img class="pal-icon" src="../img/images/order/ICBC.png" alt=""
+                                                             width="72" height="24">
+                                                </div>
+                                            </div>
+                                            <div class="bank">
+                                                <div class="pay-check">
+                                                    <input type="checkbox">
+                                                </div>
+                                                <div class="pay-with">
+                                                    DBS Bank（China）
+                                                    <br>
+                                                    <img class="pal-icon" src="../img/images/order/DBS.png" alt=""
+                                                         width="67" height="20">
+                                                </div>
+                                            </div>
+                                            <div class="bank">
+                                                <div class="pay-check">
+                                                    <input type="checkbox">
+                                                </div>
+                                                <div class="pay-with">
+                                                    Western Union
+                                                    <br>
+                                                    <img class="pal-icon" src="../img/images/order/wu.png" alt=""
+                                                         width="51"
+                                                         height="24">
+                                                </div>
+                                            </div>
+                                            <div class="pal-tips">
+                                                If you select offline payment method,you may need to upload your bank
+                                                receipt,orders will be started once
+                                                payment was confirmed receiving,thank you for your understanding.
+                                                All Bank's Charges If Any Are To Be Borne By payer
+                                            </div>
+                                            <a class="jump-link js-check-bank" href="javascript:void(0)">
+                                                Check your bank information
+                                            </a>
+                                            <div class="credentials-parent">
+                                                <div class="credentials-box js-credentials-box">
+                                                    <div class="credentials-btn js-credentials-btn">
+                                                        <input type="file" class="diy-file">
+                                                        + Add File
+                                                    </div>
+                                                    <!-- 默认隐藏  上传后显示-->
+                                                    <div class="credentials-delete" style="display: none">
+                                                        Delete
+                                                    </div>
+                                                    <div class="credentials-name" style="display: none">
+                                                        文件名.zip
+                                                    </div>
+                                                    <!--上传进度条 默认隐藏-->
+                                                    <div class="progress-bar" style="display: none">
+                                                        <div class="progress" style="width: 0"></div>
+                                                        <span class="the-plane">20%</span>
+                                                    </div>
+                                                </div>
+                                                <a href="javascript:void(0)" class="receipt-btn js-receipt-btn">
+                                                    Upload Bank receipt
+                                                </a>
+                                                <div class="receipt-tips">
+                                                    Your bank receipt is uploaded sucessfully,PCBgogo will automatically
+                                                    arrange
+                                                    to produce your order
+                                                    after confirming the payment. Thank you for your patience!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="entry ">
+                                        <div class="pay-el">
+                                            <div class="pay-check">
+                                                <input type="checkbox">
+                                            </div>
+                                            <div class="pay-with">
+                                                Other Payment
+                                            </div>
+                                            <div class="pal-tips">
+                                                Please&nbsp;confirm&nbsp;with&nbsp;your&nbsp;sale&nbsp;if&nbsp;the&nbsp;offline&nbsp;payment&nbsp;can&nbsp;be&nbsp;acceptable.
+                                            </div>
+                                            <!-- 默认隐藏-->
+                                            <a href="awaiting-payment.html" class="the-know">
+                                                Know the
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="entry ">
+                                        <div class="pay-el">
+                                            <div class="pay-check">
+                                                <input type="checkbox">
+                                            </div>
+                                            <div class="pay-with">
+                                                Payment sharing
+                                            </div>
+                                            <div class="pal-tips">
+                                                Need a purchasing team or third party to complete payment of this order?
+                                                We
+                                                can help!
+                                                Just send the payment URL of the order package to third party and they
+                                                can
+                                                pay for the order.
+                                            </div>
+                                            <div class="pay-share-box">
+                                                <div class="share-title">Pay method: Pay with Paypal</div>
+                                                <input class="share-url js-share-url" type="text" readonly=""
+                                                       value="http://member.pcbgogo.com/order/sharepay/DHyLbSRoAl0=">
+                                                <a href="javascript:void(0)" class="copy-link-btn js-copy-link">Copy
+                                                    link</a>
+                                                <div class="share-tips">
+                                                    To maintain privacy, all personally identifying information remains
+                                                    private and visible only to you.
+                                                    If this privacy restriction makes things more dificult for the
+                                                    third-party making the payment,
+                                                    it might be a good idea to generate a PDF invoice, and send that
+                                                    alongside the payment link above.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pay-entry">
+                            <div class="entry-body">
+                                <!-- 选中方式 追加 active-->
+                                <div class="entry ">
+                                    <div class="pay-el">
+                                        <div class="pay-check js-account-balance">
+                                            <input type="checkbox">
+                                        </div>
+                                        <div class="pay-with">
+                                            Account Balance
+                                        </div>
+                                        <div class="difference-balance">
+                                            <span class="diff-price">$58260</span>
+                                            <span class="sale-price">
+                                                - $582
+                                            </span>
+                                        </div>
+                                        <div class="pal-tips">
+                                            You can pay with your account balance. You must choose the above method to
+                                            pay the remainder if your
+                                            account balance is insufficient for your order.
+                                        </div>
+                                        <a href="javascript:void(0)" class="pay-now">pay now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-info">
+                <div class="js-right-info">
+                    <!-- 价格明细-->
+                    <dl>
+                        <dt>PCB Cost</dt>
+                        <dd>$500.00</dd>
+                    </dl>
+                    <dl>
+                        <dt>Coupon Savings</dt>
+                        <dd>- $100.00</dd>
+                    </dl>
+                    <dl>
+                        <dt>Shipping Cost</dt>
+                        <dd>$41.00</dd>
+                    </dl>
+                    <!--优惠价格-->
+                    <div class="the-price">
+                        <div class="price">
+                            <div class="price-left">Member Discount</div>
+                            <div class="price-right">-$100.00</div>
+                        </div>
+                    </div>
+                    <div class="cost-box">
+                        <div class="cost">
+                            <div class="name">Total Amount</div>
+                            <div class="price">$357.00</div>
+                        </div>
+                        <div class="cost">
+                            <div class="name">Payment Received</div>
+                            <div class="price">-$357.00</div>
+                        </div>
+                        <div class="cost extra">
+                            <div class="name">Extra Payment</div>
+                            <div class="price">$357.00</div>
+                        </div>
+                    </div>
+                    <div class="invoice-btn">
+                        <span class="iconfont icon-xiazai"></span>
+                        <span class="proforma">Proforma invoice</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--版权说明-->
+        <div class="copy-right-box ">
+            Copyright © 2015 PCBGOGO. All rights reserved. Shenzhen JDB Technology Co., Ltd.
+            Address: No. 15, Zhongxing Road, Kengzi Street, Pingshan District, Shenzhen, 518000, China.
+        </div>
+    </div>
+</div>
+<!--付款方式提示框-->
+<div style="display: none" class="js-pop-ups">
+    <div class="payment-pop-ups">
+        <div class="title">
+            Please pay in the new opened page, do not close
+            the window before payment done.
+        </div>
+        <a class="payment-send" href="javascript:void(0)">If you need other payment method, please contact our E-mail:
+            service@pcbgogo.com.</a>
+        <div class="pop-ups-btns">
+            <a class="btn" href="javascript:void(0)" target="_blank">Pay later</a>
+            <a class="btn" href="javascript:void(0)" target="_blank">Payment done</a>
+        </div>
+    </div>
+</div>
+<!--银行账户弹窗-->
+<div class="js-bank-pop" style="display: none">
+    <div class="bank-account-popup">
+        <div class="rece-tips">
+            Please send the receipt to your sales after you make payment when you use this kind of payment method so
+            that we could arrange your order to production on time.
+        </div>
+        <div class="bank-parent">
+            <div class="bank">
+                <textarea type="text" class="hidden-tips js-hidden-tips"></textarea>
+                <h3>Bank Transfer</h3>
+                <div class="info-item">
+                    <div class="info-l">
+                        Beneficiary:
+                    </div>
+                    <div class="info-r">
+                        Shenzhen JDB Technology Co., Ltd.
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-l">
+                        Bank:
+                    </div>
+                    <div class="info-r">
+                        ICBC SHENZHEN BRANCH, SHENZHEN CHINA
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-l">
+                        Bank Address:
+                    </div>
+                    <div class="info-r">
+                        NORTH BLOCK FINANCIAL CENTER SHENNAN ROAD EAST,
+                        SHENZHEN, 518000, CHINA
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-l">
+                        Account No:
+                    </div>
+                    <div class="info-r">
+                        4000027519200517444
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-l">
+                        Swift Code:
+                    </div>
+                    <div class="info-r">
+                        ICBKCNBJSZN
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-l">
+                        Address:
+                    </div>
+                    <div class="info-r">
+                        No.15,Zhongxing Road,Kengzi Street,Pingshan District,Shenzhen,518000,China.
+                    </div>
+                </div>
+                <a href="javascript:void(0)" class="copy-btn js-copy-btn">Copy</a>
+                <div class="note-box">
+                    Note: If you choose bank transfer, we will declare the accurate amount as your paid.
+                    Low value declaration is not allowed.
+                </div>
+            </div>
+            <div class="bank">
+                <textarea type="text" class="hidden-tips js-hidden-tips"></textarea>
+                <h3>DBS Bank(China) Ltd.</h3>
+                <div class="info-item">
+                    <div class="info-l">
+                        Beneficiary:
+                    </div>
+                    <div class="info-r">
+                        Shenzhen JDB Technology Co., Ltd.
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-l">
+                        Bank:
+                    </div>
+                    <div class="info-r">
+                        DBS Bank(China)Ltd.,Shenzhen Branch
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-l">
+                        Bank Address:
+                    </div>
+                    <div class="info-r">
+                        18/F,China Resources Building,5001 Shennan Dong Road,Luohu District,Shenzhen,China.
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-l">
+                        Account No:
+                    </div>
+                    <div class="info-r">
+                        30015530488
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-l">
+                        Swift Code:
+                    </div>
+                    <div class="info-r">
+                        DBSSCNSHSZN
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-l">
+                        Address:
+                    </div>
+                    <div class="info-r">
+                        No.15,Zhongxing Road,Kengzi Street,Pingshan District,Shenzhen,518000,China.
+                    </div>
+                </div>
+                <a href="javascript:void(0)" class="copy-btn js-copy-btn">Copy</a>
+            </div>
+            <div class="bank">
+                <textarea type="text" class="hidden-tips js-hidden-tips"></textarea>
+                <h3>Westen Union</h3>
+                <div class="info-item">
+                    <div class="info-l">
+                        First Name:
+                    </div>
+                    <div class="info-r">
+                        Xiao Ming
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-l">
+                        Last Name:
+                    </div>
+                    <div class="info-r">
+                        Wu
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-l">
+                        Street
+                    </div>
+                    <div class="info-r">
+                        Zhenhua Road 55,Futian District
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-l">
+                        City:
+                    </div>
+                    <div class="info-r">
+                        Shenzhen
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-l">
+                        Country:
+                    </div>
+                    <div class="info-r">
+                        China
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-l">
+                        Zip code:
+                    </div>
+                    <div class="info-r">
+                        518000
+                    </div>
+                </div>
+                <a href="javascript:void(0)" class="copy-btn js-copy-btn">Copy</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../img/js/jquery/jquery-1.11.3.min.js"></script>
+<script src="../img/js/layer-v3.1.1/layer/layer.js"></script>
+<script src="../img/js/public.js"></script>
+<!--套用相应修改-->
+<script>
+  $(function () {
+
+    // 付款方式选择
+    void function () {
+
+      //账户线上与线下
+      $('.js-pay-methods .pay-check').click(function () {
+        if ($(this).parent().hasClass('active')) {
+          $(this).parent().removeClass('active')
+        } else {
+          $('.js-pay-methods .pay-check').parent().removeClass('active')
+          $(this).parent().addClass('active')
+        }
+        // 上传银行凭证
+        if ($('.js-bank-list .bank').hasClass('active')) {
+          $('.js-bank-list .credentials-parent').show()
+        } else {
+          $('.js-bank-list .credentials-parent').hide()
+        }
+      })
+      // 账户余额
+      $('.js-account-balance').click(function () {
+        $('.js-pay-methods .pay-el').removeClass('active')
+        $(this).parent().toggleClass('active')
+      })
+      // 银行账户
+      $('.js-check-bank').click(function () {
+        layer.open({
+          title: 'Check your bank information',
+          type: 1,
+          area: ['686px', '800px'],
+          content: $('.js-bank-pop').html(),
+          success: function () {
+            //复制按钮
+            $('.js-copy-btn').click(function () {
+              var arr = []
+              $(this).parent().find('.info-item').each(function () {
+                arr.push($(this).text().replace(/\s/g, ''))
+              })
+              $('.js-hidden-tips').val(arr.join('\n'))
+              if (document.execCommand('copy')) {
+                $('.js-hidden-tips').select()
+                document.execCommand('copy') //复制内容到剪切板
+                layer.msg('Copy Succeeded<br>', {}, function () {
+                })
+              }
+            })
+          }
+        })
+      })
+
+      // 复制分享链接
+      $('.js-copy-link').click(function () {
+        if (document.execCommand('copy')) {
+          $('.js-share-url').select()
+          document.execCommand('copy') //复制内容到剪切板
+          layer.msg('Copy successfully, you can share your<br> payment link now.', {}, function () {
+          })
+        }
+      })
+
+      // 银行凭证上传【套用忽略】
+      $('.js-credentials-btn .diy-file').change(function (e) {
+        var file = e.target.files[0]
+
+        $({
+          countNum: 0
+        }).animate({
+          countNum: 100
+        }, {
+          duration: 2500,
+          easing: 'linear',
+          step: function () {
+            $('.js-credentials-box .progress-bar').show()
+            $('.js-credentials-box .progress').css('width', Math.floor(this.countNum) + 'px')
+            $('.js-credentials-box .the-plane').text(Math.floor(this.countNum) + '%')
+          },
+          complete: function () {
+            $('.js-credentials-box .the-plane').text(this.countNum + '%').parent().hide()
+            $('.js-credentials-box .credentials-name').text(file.name).show()
+            $('.js-credentials-box .credentials-delete').show()
+            $('.js-credentials-btn').hide()
+            $('.js-credentials-box .credentials-delete').click(function () {
+              $(this).hide()
+              $('.js-credentials-box .credentials-name').text('文件名.zip').hide();
+              $('.js-credentials-btn').show()
+            })
+          }
+        })
+      })
+      // 凭证成功 【套用忽略】
+      $('.js-receipt-btn').click(function () {
+        layer.open({
+          content: 'Your bank receipt is uploaded sucessfully,PCBgogo will automatically arrange to produce your order \n' +
+            'after confirming the payment. Thank you for your patience!',
+          btn: ['OK'],
+          btnAlign: 'c',
+          yes: function () {
+            layer.closeAll();
+            window.open('awaiting-payment.html')
+          }
+        })
+      })
+    }();
+
+    //付款方式完成提示
+    $('.jump-payment').click(function () {
+      layer.open({
+        area: ['650px', 'auto'],
+        content: $('.js-pop-ups').html(),
+        btn: [],
+        success: function () {
+          $('.layui-layer-content .pop-ups-btns .btn').eq(0).click(function () {
+            window.open('./payment-failure.html')
+          })
+          $('.layui-layer-content .pop-ups-btns .btn').eq(1).click(function () {
+            window.open('./payment-success.html')
+          })
+        }
+      })
+    })
+
+
+    //计价滚动
+    if ($('.js-right-info').length > 0) {
+      var top = $('.js-right-info').offset().top
+      $(window).scroll(function () {
+        if ($(this).scrollTop() >= top) {
+          $('.js-right-info').addClass('fly-el')
+        } else {
+          $('.js-right-info').removeClass('fly-el')
+        }
+      })
+    }
+
+
+
+  })
+</script>
+</body>
+</html>

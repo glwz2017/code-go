@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Account -PCBgogo</title>
+    <!--网页标题左侧显示-->
+    <link rel="icon" href="../img/images/title-logo.png" type="image/x-icon">
+    <!--收藏夹显示图标-->
+    <link rel="shortcut icon" href="../img/images/title-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../img/css/member/balance-car.css">
+</head>
+<body>
+<div class="the-top">
+    <!--顶部导航-->
+    <div class="top-nav">
+        <div class="nav-l">
+            <a href="orderIndex.html">
+                <img src="../img/images/order/orderlogo.png" alt="logo">
+            </a>
+        </div>
+        <div class="nav-r">
+            <!--右侧图标-->
+            <div class="shopping-box">
+                <ul class="hints js-hints">
+                    <li class="active message-li"><a href="javascript:void(0)">
+                        <span class="iconfont icon-ai-message"></span>
+                    </a>
+                        <i class="point "></i>
+                    </li>
+                    <li class="active coupon-li"><a href="javascript:void(0)">
+                        <span class="iconfont icon-youhuiquan"></span>
+                    </a>
+                        <i class="point "></i>
+                    </li>
+                    <li class="active coupon-li"><a href="javascript:void(0)">
+                        <span class="iconfont icon-fukuan"></span>
+                    </a>
+                        <i class="point "></i>
+                    </li>
+                    <li class="car-box cared-li"><a href="javascript:void(0)">
+                        <span class="iconfont icon-gouwuche1"></span>
+                    </a>
+                        <i class="round car-nums">99</i>
+                    </li>
+                </ul>
+            </div>
+            <!--登录后-->
+            <div class="user-box">
+                <span class="hi-text"> Hi! The user...</span>
+                <div class="user-pic js-user-pic">
+                    <i><img src="../img/images/user.png" alt=""></i>
+                    <i class="down-pointer"><img src="../img/images/down-pointer.png" alt=""></i>
+                </div>
+                <div class="user-item">
+                    <div class="account" onclick="window.open('orderIndex.html','_self')">
+                        My Account
+                    </div>
+                    <div class="account" onclick="window.open('awaiting-payment.html','_self')">
+                        My Orders list
+                    </div>
+                    <div class="account" onclick="window.open('essentialInformation.html','_self')">
+                        My Delivery Address
+                    </div>
+                    <div class="facebook-btn ">
+                        Bind FaceBook
+                    </div>
+                    <div class="out-btn " style="margin-top: 10px">
+                        Sign Out
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--二级菜单-->
+    <div class="main-menu">
+        <div class="vip_warp">
+            <ul class="menu-list clear-fix">
+                <li><a href="orderIndex.html">My Account</a></li>
+                <li><a href="../PCBPrototype.html">PCB Instant Quote</a></li>
+                <li><a href="../PCBAssembly.html">PCB Assembly</a></li>
+                <li><a href="../pages作废/reviewList作废.html">Forum</a></li>
+            </ul>
+            <!--面包屑-->
+            <div class="bread-crumbs">
+                <a href="javascript:void(0)">
+                    <span class="iconfont icon-shouye1"></span>
+                    <span>- Shopping Cart</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--主体-->
+<div class="order-main">
+    <!--左侧-->
+    <div class="box-l">
+        <div class="category js-category-index">
+            <div class="item "><a href="shopping-car.html">
+                <span class="iconfont icon-gouwuche2"></span>
+                <span class="category-name">-Shopping Cart</span></a></div>
+            <div class="item"><a href="awaiting-payment.html">
+                <span class="iconfont icon-dingdan"></span>
+                <span class="category-name">-My Orders</span></a></div>
+            <div class="item"><a href="memberList.html">
+                <span class="iconfont icon-icon_fapinglun-xian"></span>
+                <span class="category-name">-Comments</span></a></div>
+            <div class="item">
+                <a href="myInvitation.html">
+                    <span class="iconfont icon-daipingjiab"></span>
+                    <span class="category-name">+Experience Share</span>
+                </a>
+                <!--&lt;!&ndash;二级列表&ndash;&gt;-->
+                <div class="second-item">
+                    <a class="second-active" href="myInvitation.html">
+                        <span class="second-name">My Invitation</span>
+                    </a>
+                    <a href="promoteIndex.html">
+                        <span class="second-name">Share links</span>
+                    </a>
+                </div>
+            </div>
+            <div class="item "><a href="account-page.html">
+                <span class="iconfont icon-34"></span>
+                <span class="category-name">-Cash and Coupon</span></a></div>
+            <!--vip-->
+            <div class="item ">
+                <a href="integral.html">
+                    <span class="iconfont icon-v"></span>
+                    <span class="category-name active-new">
+                    <span class="iconfont icon-new"></span>
+                    - Reward points
+                </span>
+                </a>
+            </div>
+            <!--vip-->
+            <div class="item "><a href="newsed.html">
+                <span class="iconfont icon-liuyanpinglun"></span>
+                <span class="category-name">-Message</span>
+            </a></div>
+            <div class="item"><a href="essentialInformation.html">
+                <span class="iconfont icon-gerenziliao"></span>
+                <span class="category-name">+My Profile</span>
+            </a>
+                <!--&lt;!&ndash;二级列表&ndash;&gt;-->
+                <div class="second-item ">
+                    <a href="essentialInformation.html">
+                        <span class="second-name">Basic Information</span></a>
+                    <a href="receivingAddress.html">
+                        <span class="second-name">My Delivery Address</span>
+                    </a>
+                    <a href="changePassword.html">
+                        <span class="second-name">Change Password</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--右侧-->
+    <div class="box-r">
+        <div class="bread-crumbs">
+            <div class="bread-nav">
+                <a href="javascript:void(0)"> MyAccount</a>
+                <a href="javascript:void(0)">Shopping Cart</a>
+            </div>
+        </div>
+        <div class="r-title">
+            SHOPPING CART
+        </div>
+        <!--付款进度指示图-->
+        <div class="progress-map-box">
+            <ul class="progress-ul">
+                <!--当前步骤选中 追加active-->
+                <li class="active">
+                    <span class="iconfont icon-gouxuan"></span>
+                    <i class="progress-line">
+                        Review your Order
+                    </i>
+                </li>
+                <li class="active">
+                    <span class="iconfont icon-gou-shi "></span>
+                    <i class="progress-line">
+                        Payment
+                    </i>
+                </li>
+                <li>
+                    <span class="iconfont icon-gou-shi"></span>
+                    <i class="progress-line">
+                        Done
+                    </i>
+                </li>
+            </ul>
+        </div>
+        <!--加包提示-->
+        <div class="combine-box">
+            <div class="title">
+                Combine shipping
+            </div>
+            <div class="combine-tips">
+                Please confirm if you want add new order to this "order Group" for shipment. The delivery time will be
+                arranged according to the new order. And the shipping cost will be calculated
+                again.And it will be changed because of the change of Logistics information.
+            </div>
+            <ul class="combine-ul">
+                <li>
+                    <p>Group NO: <i>G286</i></p>
+                    <p>Total Amount: <span>$38</span></p>
+                </li>
+                <li>
+                    <p>Create Time:<i>2017.10.19 </i></p>
+                    <p>EstimatedDelivery: <i>2017.10.21</i></p>
+                </li>
+                <li>
+                    <p>Address:</p>
+                    <p><i> abc abc abc,BATESVI</i></p>
+                </li>
+                <li>
+                    <img class="courier" src="../img/images/dhl2.png" alt="">
+                    <div class="the-weight">
+                        <p>Weight: <span>0.51kg+0.00kg</span>
+                        </p>
+                        <p>Shipping Cost: <span>$25.00+$-4</span></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="info-parent">
+            <div class="left-info">
+                <!--地址编辑-->
+                <div class="sure-item">
+                    <div class="sure-title">
+                        <div class="sure-step">Step 1 of 3</div>
+                        <div class="sure-name">Select a shipping address:</div>
+                    </div>
+                    <!--空数据元素-->
+                    <div class="empty-item" style="display: none">
+                        <img src="../img/images/order/empty-order.png" alt="" class="align-pic">
+                        <span class="empty-tips">There is no delivery address, please complete it here.  </span>
+                    </div>
+                    <!--地址列表-->
+                    <div class="address-box">
+                        <!--默认地址-->
+                        <div class="ress-box js-ress-box">
+                            <div class="info-address">
+                                <div class="item">
+                                    <div class="name">Address:</div>
+                                    <div class="des">
+                                       <span>
+                                            4225 Executive Square, Level 7 La Jolla,
+                                            4225 Executive Square, Level 7 La Jolla,
+                                            4225 Executive Square, Level 7 La Jolla,
+                                       </span>
+                                        <img src="../img/images/order/ress-pic.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="name">Name:</div>
+                                    <div class="des">
+                                        zhangyi
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="name">
+                                        Telephone:
+                                    </div>
+                                    <div class="des">
+                                        00852-29976161
+                                        <span class="the-default">
+                                            set default
+                                             </span>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <button class="edit-btn js-edit-address" type="button"> Edit</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="choose-address-area">
+                            <div class="choose-item-box">
+                                <div class="choose-length js-choose-length">
+                                    Select another address<span class="count">(3)</span>
+                                    <span class="iconfont icon-xialasanjiao"></span>
+                                </div>
+                                <div class="add-address">
+                                    <span class="iconfont icon-plus-add"></span> Add a new address
+                                </div>
+                            </div>
+                            <div class="address-lists js-address-lists">
+                                <!-- 选中 追加active-->
+                                <div class="info-address active">
+                                    <div class="choice">
+                                        <input checked type="radio" name="choice-address">
+                                    </div>
+                                    <div class="item">
+                                        <div class="name">Address:</div>
+                                        <div class="des">
+                                       <span>
+                                            4225 Executive Square, Level 7 La Jolla,
+                                            4225 Executive Square, Level 7 La Jolla,
+                                            4225 Executive Square, Level 7 La Jolla,
+                                       </span>
+                                            <img src="../img/images/order/ress-pic.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="name">Name:</div>
+                                        <div class="des">
+                                            zhangyi
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="name">
+                                            Telephone:
+                                        </div>
+                                        <div class="des">
+                                            00852-29976161
+                                            <span class="the-default">
+                                            set default
+                                             </span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <button class="edit-btn js-edit-address" type="button"> Edit</button>
+                                    </div>
+                                </div>
+                                <div class="info-address">
+                                    <div class="choice">
+                                        <input checked type="radio" name="choice-address">
+                                    </div>
+                                    <div class="item">
+                                        <div class="name">Address:</div>
+                                        <div class="des">
+                                       <span>
+                                            4225 Executive Square, Level 7 La Jolla,
+                                            4225 Executive Square, Level 7 La Jolla,
+                                            4225 Executive Square, Level 7 La Jolla,
+                                       </span>
+                                            <img src="../img/images/order/ress-pic.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="name">Name:</div>
+                                        <div class="des">
+                                            zhangyi
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="name">
+                                            Telephone:
+                                        </div>
+                                        <div class="des">
+                                            00852-29976161
+                                            <span class="the-default">
+                                            set default
+                                             </span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <button class="edit-btn js-edit-address" type="button"> Edit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--物流方式-->
+                <div class="sure-item">
+                    <div class="sure-title">
+                        <div class="sure-step">Step 2 of 3</div>
+                        <div class="sure-name">Shipping method:</div>
+                    </div>
+                    <div class="ship-method js-ship-method">
+                        <!-- 选中物料追加  active-->
+                        <div class="ship-item square active">
+                            <div class="graphic">
+                                <div class="check-icon">
+                                    <input type="radio" name="ship-radio">
+                                </div>
+                                <div class="way-icon">
+                                    <img src="../img/images/ship/way1.png" alt="">
+                                </div>
+                                <div class="tool-icon">
+                                    <img src="../img/images/ship/plane.png" alt="">
+                                </div>
+                                <span class="ship-name">DHL</span>
+                                <span class="price">$26</span>
+                                <div class="ship-info">
+                                    3-5 days | Weight 0.72 kg
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ship-item square ">
+                            <div class="graphic">
+                                <div class="check-icon">
+                                    <input type="radio" name="ship-radio">
+                                </div>
+                                <div class="way-icon">
+                                    <img src="../img/images/ship/way2.png" alt="">
+                                </div>
+                                <div class="tool-icon">
+                                    <img src="../img/images/ship/plane.png" alt="">
+                                </div>
+                                <span class="ship-name">FedEx-IP</span>
+                                <span class="price">$26</span>
+                                <div class="ship-info">
+                                    3-5 days | Weight 0.72 kg
+                                </div>
+                                <div class="ship-note">
+                                    During Covid-19 period, it may be delayed sometimes
+                                    if you choose FedEx shipping method.
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="ship-item square">
+                            <div class="graphic">
+                                <div class="check-icon">
+                                    <input type="radio" name="ship-radio">
+                                </div>
+                                <div class="way-icon">
+                                    <img src="../img/images/ship/way3.png" alt="">
+                                </div>
+                                <div class="tool-icon">
+                                    <img src="../img/images/ship/plane.png" alt="">
+                                </div>
+                                <span class="ship-name">OCS</span>
+                                <span class="price">$26</span>
+                                <div class="ship-info">
+                                    3-5 days | Weight 0.72 kg
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ship-item square">
+                            <div class="graphic">
+                                <div class="check-icon">
+                                    <input type="radio" name="ship-radio">
+                                </div>
+                                <div class="way-icon">
+                                    <img src="../img/images/ship/way4.png" alt="">
+                                </div>
+                                <div class="tool-icon">
+                                    <img src="../img/images/ship/plane.png" alt="">
+                                </div>
+                                <span class="ship-name">FedEx-ICPE</span>
+                                <span class="price">$26</span>
+                                <div class="ship-info">
+                                    3-5 days | Weight 0.72 kg
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ship-item">
+                            <div class="graphic">
+                                <div class="gra-l">
+                                    <div class="check-icon">
+                                        <input type="radio" name="ship-radio">
+                                    </div>
+                                    <div class="tool-icon">
+                                        <img src="../img/images/ship/plane.png" alt="">
+                                    </div>
+                                    <span class="ship-name">FedEx-IE</span>
+                                    <div class="way-icon">
+                                        <img src="../img/images/ship/way4.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="gra-r">
+                                    <div class="ship-info">
+                                        3-5 days | Weight 0.72 kg
+                                    </div>
+                                    <span class="price">$26</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ship-item">
+                            <div class="graphic">
+                                <div class="gra-l">
+                                    <div class="check-icon">
+                                        <input type="radio" name="ship-radio">
+                                    </div>
+                                    <div class="tool-icon">
+                                        <img src="../img/images/ship/plane.png" alt="">
+                                    </div>
+                                    <span class="ship-name">EMS</span>
+                                    <div class="way-icon">
+                                        <img src="../img/images/ship/way5.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="gra-r">
+                                    <div class="ship-info">
+                                        3-5 days | Weight 0.72 kg
+                                    </div>
+                                    <span class="price">$26</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ship-item">
+                            <div class="graphic">
+                                <div class="gra-l">
+                                    <div class="check-icon">
+                                        <input type="radio" name="ship-radio">
+                                    </div>
+                                    <div class="tool-icon">
+                                        <img src="../img/images/ship/plane.png" alt="">
+                                    </div>
+                                    <span class="ship-name">UPS</span>
+                                    <div class="way-icon">
+                                        <img src="../img/images/ship/way6.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="gra-r">
+                                    <div class="ship-info">
+                                        3-5 days | Weight 0.72 kg
+                                    </div>
+                                    <span class="price">$26</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ship-item">
+                            <div class="graphic">
+                                <div class="gra-l">
+                                    <div class="check-icon">
+                                        <input type="radio" name="ship-radio">
+                                    </div>
+                                    <div class="tool-icon">
+                                        <img src="../img/images/ship/plane.png" alt="">
+                                    </div>
+                                    <span class="ship-name">Hong kong</span>
+                                    <div class="way-icon">
+                                        <img src="../img/images/ship/way7.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="gra-r">
+                                    <div class="ship-info">
+                                        3-5 days | Weight 0.72 kg
+                                    </div>
+                                    <span class="price">$26</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ship-item">
+                            <div class="graphic">
+                                <div class="gra-l">
+                                    <div class="check-icon">
+                                        <input type="radio" name="ship-radio">
+                                    </div>
+                                    <div class="tool-icon">
+                                        <img src="../img/images/ship/plane.png" alt="">
+                                    </div>
+                                    <span class="ship-name">SF Express</span>
+                                    <div class="way-icon">
+                                        <img src="../img/images/ship/way8.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="gra-r">
+                                    <div class="ship-info">
+                                        3-5 days | Weight 0.72 kg
+                                    </div>
+                                    <span class="price">$26</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ship-item">
+                            <div class="graphic">
+                                <div class="gra-l">
+                                    <div class="check-icon">
+                                        <input type="radio" name="ship-radio">
+                                    </div>
+                                    <div class="tool-icon">
+                                        <img src="../img/images/ship/plane.png" alt="">
+                                    </div>
+                                    <span class="ship-name">China Post</span>
+                                    <div class="way-icon">
+                                        <img src="../img/images/ship/way9.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="gra-r">
+                                    <div class="ship-info">
+                                        3-5 days | Weight 0.72 kg
+                                    </div>
+                                    <span class="price">$26</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ship-item">
+                            <div class="graphic">
+                                <div class="gra-l">
+                                    <div class="check-icon">
+                                        <input type="radio" name="ship-radio">
+                                    </div>
+                                    <div class="tool-icon">
+                                        <img src="../img/images/ship/plane.png" alt="">
+                                    </div>
+                                    <span class="ship-name">E-packet</span>
+                                    <div class="way-icon">
+                                        <img src="../img/images/ship/way10.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="gra-r">
+                                    <div class="ship-info">
+                                        3-5 days | Weight 0.72 kg
+                                    </div>
+                                    <span class="price">$26</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ship-item">
+                            <div class="graphic">
+                                <div class="gra-l">
+                                    <div class="check-icon">
+                                        <input type="radio" name="ship-radio">
+                                    </div>
+                                    <div class="tool-icon">
+                                        <img src="../img/images/ship/plane.png" alt="">
+                                    </div>
+                                    <span class="ship-name">Freight Collect Account</span>
+                                </div>
+                                <div class="gra-r">
+                                    <div class="ship-info">
+                                        3-5 days | Weight 0.72 kg
+                                    </div>
+                                    <span class="price">$26</span>
+                                </div>
+                            </div>
+                            <div class="freight js-freight">
+                                <div class="list">
+                                    DHL 952013460
+                                </div>
+                                <div class="list active">
+                                    UPS 952013460
+                                </div>
+                                <div class="list">
+                                    FedEx 166600120
+                                </div>
+                                <div class="list">
+                                    TNT 166600120
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="ship-item">
+                            <div class="graphic">
+                                <div class="gra-l">
+                                    <div class="check-icon">
+                                        <input type="radio" name="ship-radio">
+                                    </div>
+                                    <div class="tool-icon">
+                                        <img src="../img/images/ship/plane.png" alt="">
+                                    </div>
+                                    <span class="ship-name">Other shipping way	</span>
+                                </div>
+                                <div class="gra-r">
+                                    <div class="ship-info">
+                                        3-5 days | Weight 0.72 kg
+                                    </div>
+                                    <span class="price">$26</span>
+                                </div>
+                            </div>
+                            <div class="other-tips">
+                                For other shipping method (UPS, FedEx, TNT, etc), please contact your sales
+                                representative So Touhi by
+                                email: service@pcbgogo.com
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--付款-->
+                <div class="sure-item">
+                    <div class="sure-title">
+                        <div class="sure-step">Step 3 of 3</div>
+                        <div class="sure-name">Payment method:</div>
+                    </div>
+                    <div class="pay-box js-pay-box">
+                        <div class="pay-entry js-pay-online">
+                            <div class="entry-title">
+                                The online payment:
+                            </div>
+                            <div class="entry-body">
+                                <!-- 选中方式 追加 active-->
+                                <div class="entry active">
+                                    <div class="pay-el">
+                                        <div class="pay-with">
+                                            Pay with
+                                            <br>Paypal
+                                        </div>
+                                        <img class="pal-icon" src="../img/images/order/pay-pal.png" alt=""
+                                             width="83" height="20">
+                                    </div>
+                                </div>
+                                <div class="entry">
+                                    <div class="pay-el">
+                                        <div class="pay-with">
+                                            Credit Card A
+                                        </div>
+                                        <img class="pal-icon" src="../img/images/order/the-credit.png" alt=""
+                                             width="105" height="40">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pal-tips-parent">
+                                <div class="pal-tips" data-pal="paypal" style="display: block">
+                                    Highly recommended:Pay easily,fast and secure with PayPal.
+                                </div>
+                                <div class="pal-tips" data-pal="the-credit">
+                                    You can use credit cards: Visa, MasterCard, JCB, Maestro, American Express,
+                                    Diners Club, Discover. The maximum amount reaches $5,000.
+                                    <span class="secure-text">When  the payment exceeds $350,   we  should  use 3D  Secure.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pay-entry js-pay-offline">
+                            <div class="entry-title">
+                                Offline payment: <a class="jump-link js-check-bank" href="javascript:void(0)">
+                                Check your bank information
+                            </a>
+                            </div>
+                            <div class="entry-body">
+                                <!-- 选中方式 追加 active-->
+                                <div class="entry">
+                                    <div class="pay-el">
+                                        <div class="pay-with">
+                                            Wireless
+                                            <br>Transfer
+                                        </div>
+                                        <img class="pal-icon" src="../img/images/order/ICBC.png" alt=""
+                                             width="72" height="24">
+                                    </div>
+                                </div>
+                                <div class="entry">
+                                    <div class="pay-el">
+                                        <div class="pay-with">
+                                            DBS Bank
+                                            <br>(China) Ltd.
+                                        </div>
+                                        <img class="pal-icon" src="../img/images/order/DBS.png" alt=""
+                                             width="67" height="20">
+                                    </div>
+                                </div>
+                                <div class="entry">
+                                    <div class="pay-el">
+                                        <div class="pay-with">
+                                            Western
+                                            <br>Union
+                                        </div>
+                                        <img class="pal-icon" src="../img/images/order/wu.png" alt=""
+                                             width="51" height="24">
+                                    </div>
+                                </div>
+                                <div class="entry ">
+                                    <div class="pay-el">
+                                        <div class="pay-with">
+                                            Payment
+                                            <br>sharing
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="entry ">
+                                    <div class="pay-el">
+                                        <div class="pay-with">
+                                            Other
+                                            <br>Payment
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pal-tips-parent">
+                                <div class="pal-tips" style="display: block">
+                                    If you select offline payment method,you may need to upload your bank
+                                    receipt,orders will be started once
+                                    payment was confirmed receiving,thank you for your understanding.
+                                    All Bank's Charges If Any Are To Be Borne By payer
+                                </div>
+                                <div class="pal-tips">
+                                    Need a purchasing team or third party to complete payment of this order? We
+                                    can help!
+                                    Just send the payment URL of the order package to third party and they can
+                                    pay for the order.
+                                </div>
+                                <div class="pal-tips">
+                                    Please confirm with your sale if the offline payment can be acceptable.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--浏览与确认订单-->
+                <div class="tabed-item1">
+                    <!--列表-->
+                    <ul class="item-boxed">
+                        <li class="item1">Order Details</li>
+                        <li class="item2">Size (mm)</li>
+                        <li class="item3">Qty</li>
+                        <li class="item4">Sub Total</li>
+                    </ul>
+                    <!--具体每一项-->
+                    <div class="item-content">
+                        <div class="list1">
+                            <div class="imgs">
+                                <img src="../img/images/order/hdi.png" alt="">
+                                <div class="imgs-text">
+                                    <p>Product No: A11302AS6 <br>[SMD-Stencil]</p>
+                                    <p class="days">Build Time: 2-3 days</p>
+                                </div>
+                            </div>
+                            <div class="size">
+                                10 x 10
+                            </div>
+                            <div class="qty">
+                                20
+                            </div>
+                            <div class="sub-total">
+                                $ <span>5</span>
+                            </div>
+                        </div>
+                        <div class="list1">
+                            <div class="imgs">
+                                <img src="../img/images/order/hdi.png" alt="">
+                                <div class="imgs-text">
+                                    <p>Product No: A11302AS6 <br>[SMD-Stencil]</p>
+                                    <p class="days">Build Time: 2-3 days</p>
+                                </div>
+                            </div>
+                            <div class="size">
+                                10 x 10
+                            </div>
+                            <div class="qty">
+                                20
+                            </div>
+                            <div class="sub-total">
+                                $ <span>5</span>
+                            </div>
+                        </div>
+                        <div class="list1">
+                            <div class="imgs">
+                                <img src="../img/images/order/hdi.png" alt="">
+                                <div class="imgs-text">
+                                    <p>Product No: A11302AS6 <br>[SMD-Stencil]</p>
+                                    <p class="days">Build Time: 2-3 days</p>
+                                </div>
+                            </div>
+                            <div class="size">
+                                10 x 10
+                            </div>
+                            <div class="qty">
+                                20
+                            </div>
+                            <div class="sub-total">
+                                $ <span>5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-info ">
+                <div class="js-right-info">
+                    <div class="item balance">
+                        <div class="list">
+                            <div class="list-l">
+                                <div class="list-state">
+                                    <label class="label-bg "></label>
+                                    <input type="checkbox" class="js-pay-label">
+                                </div>
+                                <div class="list-name">
+                                    <span>Discount coupon</span>
+                                </div>
+                            </div>
+                            <div class="list-r">
+                                <div class="available-count">
+                                    <span>10</span>coupon(s) available
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coupon-div">
+                            <div class="coupon-box js-coupon-div">
+                                <input type="text" readonly class="coupon-input js-coupon-input"
+                                       placeholder="$5 Welcome Bonus, expires 2020-11-25">
+                                <i class="coupon-img"></i>
+                                <ul class="coupon-info">
+                                    <!--  不可用类名  no-used-->
+                                    <li>Do not use any coupons</li>
+                                    <li>$5 Welcome Bonus, expires 2020-11-25</li>
+                                    <li>$5 Welcome Bonus, expires 2020-11-26</li>
+                                    <li>$5 Welcome Bonus, expires 2020-11-27</li>
+                                    <li>$5 Welcome Bonus, expires 2020-11-28</li>
+                                    <li>$5 Welcome Bonus, expires 2020-11-29</li>
+                                    <li>$5 Welcome Bonus, expires 2020-11-30</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item balance">
+                        <div class="list">
+                            <div class="list-l">
+                                <div class="list-state">
+                                    <label class="label-bg "></label>
+                                    <input type="checkbox" class="js-pay-label">
+                                </div>
+                                <div class="list-name">
+                                    <span>Account Balance：</span>
+                                    <span>$100000.00</span>
+                                </div>
+                            </div>
+                            <div class="list-r">
+                                <span>-$<span>0.00</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 春季活动提示-->
+                    <div class="item spring-sale">
+                        <div class="sale-time">
+                            Limited time 3/8-3/31/2022
+                            <!--期間限定 3/8-3/31/2022-->
+                        </div>
+                        <!-- 依据条件切换-->
+                        <div class="list">
+                            <div class="list-l">
+                                <div class="list-state">
+                                    <label class="label-bg "></label>
+                                    <input type="checkbox" class="js-pay-label">
+                                </div>
+                                <div class="list-name">
+                                    <span>
+                                        2 layer FR-4 PCB
+                                        <!--両面 FR-4基板 -->
+                                    </span>
+                                    <span class="off-text">
+                                        10% OFF
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="list-r">
+
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="list-l">
+                                <div class="list-state">
+                                    <label class="label-bg "></label>
+                                    <input type="checkbox" class="js-pay-label">
+                                </div>
+                                <div class="list-name">
+                                    <span>
+                                        PCB with Impedance control
+                                        <!--特性インピーダンス制御基板-->
+                                    </span>
+                                    <span class="off-text">
+                                       20% OFF
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="list-r">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item spring-sale">
+                        <div class="sale-time">
+                            Sponsorship for Engineers
+                        </div>
+                        <!-- 依据条件切换-->
+                        <div class="list">
+                            <div class="list-l">
+                                <div class="list-state">
+                                    <label class="label-bg"></label>
+                                    <input type="checkbox" class="js-pay-label">
+                                </div>
+                                <div class="list-name">
+                                    <span>Discount for Components Cost </span>
+                                    <span class="off-text">
+                                       $30 OFF
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="list-r">
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 优惠提示-->
+                    <div class="item on-sale" style="display: none">
+                        <div class="sale-time">
+                            Limited time 1/7-2/7/2022
+                        </div>
+                        <div class="list">
+                            <div class="list-l">
+                                <div class="list-state">
+                                    <label class="label-bg "></label>
+                                    <input type="checkbox" class="js-pay-label">
+                                </div>
+                                <div class="list-name">
+                                    <span>PCB Assembly Fee Discount：</span>
+                                    <span class="fee-price">$33.9 OFF</span>
+                                </div>
+                            </div>
+                            <div class="list-r">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" style="display: none">
+                        <div class="list">
+                            <div class="list-l">
+                                <div class="list-state">
+                                    <label class="label-bg "></label>
+                                    <input type="checkbox" class="js-pay-label">
+                                </div>
+                                <div class="list-name">
+                                    <span>Gocoin：</span>
+                                    <span>3</span>
+                                </div>
+                            </div>
+                            <div class="list-r">
+                                <span class="pal-free">Paypal Fee</span><span>-3</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 价格明细-->
+                    <div class="price-parent">
+                        <dl>
+                            <dt>PCB Cost</dt>
+                            <dd>$500.00</dd>
+                        </dl>
+                        <dl>
+                            <dt>Coupon Savings</dt>
+                            <dd>- $100.00</dd>
+                        </dl>
+                        <dl>
+                            <dt>Shipping Cost</dt>
+                            <dd>$41.00</dd>
+                        </dl>
+                        <div class="preferential-box" style="display: none">
+                            <div class="preferential">
+                                <span class="tips">5th Anniversary Discount</span>
+                                <span class="tips-price">-$150.00</span>
+                            </div>
+                        </div>
+                        <div class="the-price only-tips">
+                            <div class="price">
+                                <div class="price-left">first order discount</div>
+                                <div class="price-right">-$50</div>
+                            </div>
+                        </div>
+                        <!-- 追加活动优惠价格-->
+                        <div class="the-price sale-price">
+                            <div class="price">
+                                <div class="price-left">PCB Assembly Fee Discount</div>
+                                <div class="price-right">- $33.9</div>
+                            </div>
+                        </div>
+                        <!--优惠价格-->
+                        <div class="the-price">
+                            <div class="price">
+                                <div class="price-left">Member Discount</div>
+                                <div class="price-right">-$50</div>
+                            </div>
+                            <div class="price">
+                                <div class="price-left">Coupon Savings</div>
+                                <div class="price-right">-$100.00</div>
+                            </div>
+                        </div>
+                        <div class="total-amount">
+                            <div class="amount-l">Extra Payment</div>
+                            <div class="amount-r">
+                                <span>$357.00</span>
+                            </div>
+                        </div>
+                        <!-- 下载与结算-->
+                        <div class="pro-box">
+                            <!--  不可用追加  disabled-->
+                            <div class="checkout-btn" onclick="window.open('unfinishedPay.html','_target')">
+                                Pay now
+                            </div>
+                            <div class="invoice-box">
+                                <div class="invoice-btn">
+                                    <span class="iconfont icon-xiazai"></span>
+                                    <span class="proforma">Proforma invoice</span>
+                                </div>
+                                <div class="invoice-btn" onclick="window.open('awaiting-payment.html')">
+                                    <span class="iconfont icon-daifukuan2"></span>
+                                    <span class="proforma">Payment later</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--付款说明-->
+        <div class="payment-ins">
+            <img class="ins-img" src="../img/images/safe-tips.png" alt="">
+            <div class="ins-text">
+                <p>01. We must review your order before proceeding
+                    with
+                    payment. We review orders between 9:00am to 12:00pm for BeiJing Time.</p>
+                <p>02. Tips: You should pay the tax when the product
+                    is
+                    shipped to your country. If you need low value declaration in invoice, please contact us
+                    free: service@pcbgogo.com</p>
+            </div>
+        </div>
+        <!--版权说明-->
+        <div class="copy-right-box">
+            Copyright © 2015 PCBGOGO. All rights reserved. Shenzhen JDB Technology Co., Ltd.
+            Address: No. 15, Zhongxing Road, Kengzi Street, Pingshan District, Shenzhen, 518000, China.
+        </div>
+    </div>
+</div>
+<div class="open-mask"></div>
+<!--付款方式提示框-->
+<div style="display: none" class="js-pop-ups">
+    <div class="payment-pop-ups">
+        <div class="title">
+            Please pay in the new opened page, do not close
+            the window before payment done.
+        </div>
+        <a class="payment-send" href="javascript:void(0)">If you need other payment method, please contact our E-mail:
+            service@pcbgogo.com.</a>
+        <div class="pop-ups-btns">
+            <a class="btn" href="paid-state.html" target="_blank">Pay later</a>
+            <a class="btn" href="paid-state.html" target="_blank">Payment done</a>
+        </div>
+    </div>
+</div>
+<!--银行账户弹窗-->
+<div class="js-bank-pop" style="display: none">
+    <div class="bank-account-popup">
+        <div class="rece-tips">
+            Please send the receipt to your sales after you make payment when you use this kind of payment method so
+            that we could arrange your order to production on time.
+        </div>
+        <div class="bank-parent">
+            <div class="bank">
+                <textarea type="text" class="hidden-tips js-hidden-tips"></textarea>
+                <h3>Bank Transfer</h3>
+                <div class="info-item">
+                    <div class="info-l">
+                        Beneficiary:
+                    </div>
+                    <div class="info-r">
+                        Shenzhen JDB Technology Co., Ltd.
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-l">
+                        Bank:
+                    </div>
+                    <div class="info-r">
+                        ICBC SHENZHEN BRANCH, SHENZHEN CHINA
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-l">
+                        Bank Address:
+                    </div>
+                    <div class="info-r">
+                        NORTH BLOCK FINANCIAL CENTER SHENNAN ROAD EAST,
+                        SHENZHEN, 518000, CHINA
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-l">
+                        Account No:
+                    </div>
+                    <div class="info-r">
+                        4000027519200517444
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-l">
+                        Swift Code:
+                    </div>
+                    <div class="info-r">
+                        ICBKCNBJSZN
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-l">
+                        Address:
+                    </div>
+                    <div class="info-r">
+                        No.15,Zhongxing Road,Kengzi Street,Pingshan District,Shenzhen,518000,China.
+                    </div>
+                </div>
+                <a href="javascript:void(0)" class="copy-btn js-copy-btn">Copy</a>
+                <div class="note-box">
+                    Note: If you choose bank transfer, we will declare the accurate amount as your paid.
+                    Low value declaration is not allowed.
+                </div>
+            </div>
+            <div class="bank">
+                <textarea type="text" class="hidden-tips js-hidden-tips"></textarea>
+                <h3>DBS Bank(China) Ltd.</h3>
+                <div class="info-item">
+                    <div class="info-l">
+                        Beneficiary:
+                    </div>
+                    <div class="info-r">
+                        Shenzhen JDB Technology Co., Ltd.
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-l">
+                        Bank:
+                    </div>
+                    <div class="info-r">
+                        DBS Bank(China)Ltd.,Shenzhen Branch
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-l">
+                        Bank Address:
+                    </div>
+                    <div class="info-r">
+                        18/F,China Resources Building,5001 Shennan Dong Road,Luohu District,Shenzhen,China.
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-l">
+                        Account No:
+                    </div>
+                    <div class="info-r">
+                        30015530488
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-l">
+                        Swift Code:
+                    </div>
+                    <div class="info-r">
+                        DBSSCNSHSZN
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-l">
+                        Address:
+                    </div>
+                    <div class="info-r">
+                        No.15,Zhongxing Road,Kengzi Street,Pingshan District,Shenzhen,518000,China.
+                    </div>
+                </div>
+                <a href="javascript:void(0)" class="copy-btn js-copy-btn">Copy</a>
+            </div>
+            <div class="bank">
+                <textarea type="text" class="hidden-tips js-hidden-tips"></textarea>
+                <h3>Westen Union</h3>
+                <div class="info-item">
+                    <div class="info-l">
+                        First Name:
+                    </div>
+                    <div class="info-r">
+                        Xiao Ming
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-l">
+                        Last Name:
+                    </div>
+                    <div class="info-r">
+                        Wu
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-l">
+                        Street
+                    </div>
+                    <div class="info-r">
+                        Zhenhua Road 55,Futian District
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-l">
+                        City:
+                    </div>
+                    <div class="info-r">
+                        Shenzhen
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-l">
+                        Country:
+                    </div>
+                    <div class="info-r">
+                        China
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-l">
+                        Zip code:
+                    </div>
+                    <div class="info-r">
+                        518000
+                    </div>
+                </div>
+                <a href="javascript:void(0)" class="copy-btn js-copy-btn">Copy</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--套用删除或修改以下代码-->
+<script src="../img/js/jquery/jquery-1.11.3.min.js"></script>
+<script src="../img/js/layer-v3.1.1/layer/layer.js"></script>
+<script src="../img/js/public.js"></script>
+<script src="../img/js/balance-car.js"></script>
+<script src="../img/js/news.js"></script>
+<script>
+  $(function () {
+    // 新改版对应js
+    void function () {
+      // 地址选择
+      $('.js-choose-length').click(function () {
+        $(this).toggleClass('active')
+        $('.js-address-lists').slideToggle()
+      })
+      // 地址选中
+      $('.js-address-lists .info-address').click(function () {
+        $(this).addClass('active').siblings().removeClass('active')
+      })
+
+      // 付款方式选择
+      $('.js-pay-box .entry').click(function () {
+        $('.js-pay-box .entry').removeClass('active')
+      })
+      // 线上方式
+      $('.js-pay-online .entry').click(function () {
+        var entryIndex = $(this).index()
+        $(this).addClass('active');
+        $('.js-pay-online .pal-tips').hide().eq(entryIndex).show()
+      })
+      // 线下方式
+      $('.js-pay-offline .entry').click(function () {
+        var entryIndex = $(this).index()
+        $(this).addClass('active');
+        if (entryIndex <= 2) {
+          entryIndex = 0
+        } else {
+          entryIndex -= 2
+        }
+        $('.js-pay-offline .pal-tips').hide().eq(entryIndex).show()
+      })
+
+      // 银行账户
+      $('.js-check-bank').click(function () {
+        layer.open({
+          title: 'Check your bank information',
+          type: 1,
+          area: ['686px', '800px'],
+          content: $('.js-bank-pop').html(),
+          success: function () {
+            //复制按钮
+            $('.js-copy-btn').click(function () {
+              var arr = []
+              $(this).parent().find('.info-item').each(function () {
+                arr.push($(this).text().replace(/\s/g, ''))
+              })
+              $('.js-hidden-tips').val(arr.join('\n'))
+              if (document.execCommand('copy')) {
+                $('.js-hidden-tips').select()
+                document.execCommand('copy') //复制内容到剪切板
+                layer.msg('Copy Succeeded<br>', {}, function () {
+                })
+              }
+            })
+          }
+        })
+      })
+
+      // 银行凭证上传【套用忽略】
+      $('.js-credentials-btn .diy-file').change(function (e) {
+        var file = e.target.files[0]
+
+        $({
+          countNum: 0
+        }).animate({
+          countNum: 100
+        }, {
+          duration: 2500,
+          easing: 'linear',
+          step: function () {
+            $('.js-credentials-box .progress-bar').show()
+            $('.js-credentials-box .progress').css('width', Math.floor(this.countNum) + 'px')
+            $('.js-credentials-box .the-plane').text(Math.floor(this.countNum) + '%')
+          },
+          complete: function () {
+            $('.js-credentials-box .the-plane').text(this.countNum + '%').parent().hide()
+            $('.js-credentials-box .credentials-name').text(file.name)
+            $('.js-credentials-box .credentials-delete').show()
+
+            $('.js-credentials-box .credentials-delete').click(function () {
+              $(this).hide()
+              $('.js-credentials-box .credentials-name').text('文件名.zip');
+            })
+          }
+        })
+      })
+
+      // 复制分享链接
+      $('.js-copy-link').click(function () {
+        if (document.execCommand('copy')) {
+          $('.js-share-url').select()
+          document.execCommand('copy') //复制内容到剪切板
+          layer.msg('Copy successfully, you can share your<br> payment link now.', {}, function () {
+          })
+        }
+      })
+
+      //物流选择
+      $('.js-ship-method .ship-item').click(function () {
+        $(this).addClass('active').siblings('.ship-item').removeClass('active')
+      })
+      $('.js-freight .list').click(function () {
+        $(this).addClass('active').siblings('.list').removeClass('active')
+      })
+
+      //计价滚动
+      if ($('.js-right-info').length > 0) {
+        var top = $('.js-right-info').offset().top
+        $(window).scroll(function () {
+          if ($(this).scrollTop() >= top) {
+            $('.js-right-info').addClass('fly-el')
+          } else {
+            $('.js-right-info').removeClass('fly-el')
+          }
+        })
+      }
+    }()
+
+    //付款方式完成提示
+    $('.paypal-link').click(function () {
+      layer.open({
+        area: ['650px', 'auto'],
+        content: $('.js-pop-ups').html(),
+        btn: []
+      })
+    })
+
+
+  })
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="151px" viewBox="0 0 120 151" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>VI</title>
+    <defs>
+        <linearGradient x1="50%" y1="30.7709755%" x2="50%" y2="85.864051%" id="linearGradient-1">
+            <stop stop-color="#B5B5B5" offset="0%"></stop>
+            <stop stop-color="#777777" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#9C9C9C" offset="0%"></stop>
+            <stop stop-color="#6B6B6B" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="19.4513549%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#5C5C5C" offset="0%"></stop>
+            <stop stop-color="#ADADAD" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#2E2E2E" offset="0%"></stop>
+            <stop stop-color="#4A4A4A" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-6">
+            <stop stop-color="#CFCFCF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="规范" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-829.000000, -1237.000000)">
+            <g id="VI" transform="translate(829.000000, 1237.000000)">
+                <path d="M13,3.55271368e-15 L108,3.55271368e-15 L108,16 L107.999,16 L108,35.838 L108.052559,35.9282032 L108,35.958 L108,36 L107.927,36 L69.9474411,57.9282032 L61.9474411,44.0717968 L92,26.72 L91.999,16 L28.999,16 L29,26.143 L60.0525589,44.0717968 L52.0525589,57.9282032 L14.072,36 L13,36 L13,3.55271368e-15 Z" id="形状结合" fill="url(#linearGradient-1)"></path>
+                <polygon id="多边形" fill="url(#linearGradient-2)" points="60 31 106.909889 53.5906119 118.495675 104.351256 86.0330243 145.058132 33.9669757 145.058132 1.50432527 104.351256 13.0901111 53.5906119"></polygon>
+                <path d="M60,46 L95.1824167,62.9429589 L103.871756,101.013442 L79.5247683,131.543599 L40.4752317,131.543599 L16.128244,101.013442 L24.8175833,62.9429589 L60,46 Z M60,48 L26.3812463,64.1899385 L18.0780998,100.5684 L41.3429992,129.741661 L78.6570008,129.741661 L101.9219,100.5684 L93.6187537,64.1899385 L60,48 Z" id="形状结合" fill="url(#linearGradient-3)"></path>
+                <polygon id="多边形" fill="url(#linearGradient-4)" points="60 48 93.6187537 64.1899385 101.9219 100.5684 78.6570008 129.741661 41.3429992 129.741661 18.0780998 100.5684 26.3812463 64.1899385"></polygon>
+                <polygon id="星形" fill="url(#linearGradient-5)" points="60.970758 121 58.6428956 122.236068 59.0874778 119.618034 57.2041976 117.763932 59.8068268 117.381966 60.970758 115 62.1346892 117.381966 64.7373185 117.763932 62.8540383 119.618034 63.2986204 122.236068"></polygon>
+                <path d="M55.824,105 L68.304,72.984 L57.12,72.984 L51.648,86.904 L46.224,72.984 L35.04,72.984 L47.52,105 L55.824,105 Z M52.176,101.16 L51.168,101.16 L41.664,76.824 L43.008,76.824 L51.648,98.952 L60.336,76.824 L61.68,76.824 L52.176,101.16 Z M80.832,105 L80.832,72.984 L73.152,72.984 L66.144,80.424 L70.464,85.464 L70.464,105 L80.832,105 Z M76.176,101.16 L74.928,101.16 L74.928,78.456 L71.856,81.576 L71.136,80.76 L74.832,76.824 L76.176,76.824 L76.176,101.16 Z" id="V1" fill="#656565" fill-rule="nonzero"></path>
+                <path d="M55.824,103 L68.304,70.984 L57.12,70.984 L51.648,84.904 L46.224,70.984 L35.04,70.984 L47.52,103 L55.824,103 Z M52.176,99.16 L51.168,99.16 L41.664,74.824 L43.008,74.824 L51.648,96.952 L60.336,74.824 L61.68,74.824 L52.176,99.16 Z M80.832,103 L80.832,70.984 L73.152,70.984 L66.144,78.424 L70.464,83.464 L70.464,103 L80.832,103 Z M76.176,99.16 L74.928,99.16 L74.928,76.456 L71.856,79.576 L71.136,78.76 L74.832,74.824 L76.176,74.824 L76.176,99.16 Z" id="V1" fill="url(#linearGradient-6)" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

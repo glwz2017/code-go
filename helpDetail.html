@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>PCB Printed Circuit Board Manufacturing & Assembly|Pcbgogo.com</title>
+    <!--网页标题左侧显示-->
+    <link rel="icon" href="img/images/title-logo.png" type="image/x-icon">
+    <!--收藏夹显示图标-->
+    <link rel="shortcut icon" href="img/images/title-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="img/css/help-detail.css">
+    <script src="img/js/jquery/jquery-1.11.3.min.js"></script>
+    <script src="img/js/header.js"></script>
+</head>
+<body>
+<!--头部-->
+<div class="header"></div>
+<div class="help-body">
+    <div class="container_warp">
+        <div class="help-top">
+            <div class="bread-crumbs">
+                <a href="javascript:void(0)">MyAccount </a>
+                <span class="iconfont icon-arrow-right"></span>
+                <a href="javascript:void(0)">Shopping Cart </a>
+            </div>
+            <div class="type-search">
+                <input type="text" class="get-search" placeholder="Type your question">
+                <span class="iconfont icon-xiazai5"></span>
+            </div>
+        </div>
+        <div class="help-content">
+            <div class="help-l">
+                <div class="on-title">Online pricing problem</div>
+                <dl class="problem-nav">
+                    <dd class="active">
+                        <a href="javascript:void(0)">
+                            On half of the Payment
+                            instructions.
+                        </a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:void(0)">
+                            Announcement on the Adjustment of Rules on Price Limit Mechanism, Funding Rate and Premium
+                            Deviation for XEM/USDT Swaps
+                        </a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:void(0)">
+                            Announcement on the Adjustment of Rules on Price Limit
+                        </a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:void(0)">
+                            I've enabled wforms and jsutils, but i get this error in my javascript console. Error: The
+                            stylesheet http://knack.staging
+                        </a>
+                    </dd>
+                </dl>
+            </div>
+            <div class="help-r">
+                <h3 class="problem-name">On half of the Payment instructions.</h3>
+                <span class="time">Jan 27.2021, 15:05:20</span>
+                <div class="des-box">
+                    <!--动态编辑内容-->
+                    <p>
+                        To solve the problem that some users need others to pay on others behalf, PCBGgogo recently
+                        launched the on half of the payment function. Users only need to share the encrypted "payment
+                        link" of the unpaid order package with the payer, and the payer can complete the payment on the
+                        specified page without logging in Payment of order packages;
+                    </p>
+                    <h4>How to get the link of the order for half of the payment?</h4>
+                </div>
+                <div class="helpful-box">
+                    <div class="name">Was this article helpful?</div>
+                    <div class="btn-group">
+                        <a class="btn active" href="javascript:void(0)">
+                            <span class="iconfont icon-gou"></span> YES
+                        </a>
+                        <a class="btn" href="javascript:void(0)">
+                            <span class="iconfont icon-cross"></span> NO
+                        </a>
+                    </div>
+                    <div class="found">
+                        <span>6</span> out of <span>12</span> found this helpful
+                    </div>
+                    <div class="link-request">
+                        Have more questions? <a href="javascript:void(0)" target="_blank">Submit a request</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--底部-->
+<div class="footer"></div>
+<script>
+    $(function () {
+
+        // 套用删除该搜索js
+        void function () {
+            $('.get-search').focus(function () {
+                $('.asked-title').hide().eq(1).show()
+            })
+            $('.get-search').blur(function () {
+                $('.asked-title').hide().eq(0).show()
+            })
+        }()
+
+
+        // 问题tab切换
+        $('.js-eq-tab li').click(function () {
+            var tabIndex = $(this).index()
+            $(this).addClass('active').siblings('li').removeClass('active')
+            $('.js-panel .tab-item').hide().eq(tabIndex).fadeIn()
+        })
+    })
+</script>
+</body>
+</html>

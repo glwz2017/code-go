@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <!--网页标题左侧显示-->
+  <link rel="icon" href="img/images/title-logo.png" type="image/x-icon">
+  <!--收藏夹显示图标-->
+  <link rel="shortcut icon" href="img/images/title-logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="img/css/public.css">
+  <!--字体图标-->
+  <link rel="stylesheet" href="img/fonts/iconfont.css">
+  <link rel="stylesheet" href="img/css/header.css">
+  <link rel="stylesheet" href="img/css/index.css">
+  <link rel="stylesheet" href="img/css/footer.css">
+  <script src="img/js/jquery/jquery-1.11.3.min.js"></script>
+  <script src="img/js/header.js"></script>
+  <style>
+      .transit-box {
+          width: 900px;
+          margin: 120px auto 0;
+          min-height: 300px;
+          text-align: center;
+      }
+
+      .transit-box h2 {
+          font-size: 30px;
+          color: #b9a3a3;
+          margin-top: 50px;
+      }
+
+      .transit-box .tips {
+          margin-top: 10px;
+          color: #c2afaf;
+      }
+
+      .transit-box .search-box {
+          margin-top: 20px;
+          display: inline-block;
+          min-width: 320px;
+
+      }
+
+      .transit-box .search-box .search-input {
+          float: left;
+          width: 260px;
+          height: 30px;
+          line-height: 30px;
+          border: 1px solid #beaaaa;
+          border-radius: 2px;
+          text-indent: 15px;
+          box-sizing: border-box;
+          background: url("img/images/big-glass.png") no-repeat 3% center;
+      }
+
+      .transit-box .search-box .search-input:focus {
+          outline: none;
+          /*border: none;*/
+          background: none;
+          box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .transit-box .search-box .search-btn {
+          display: inline-block;
+          height: 30px;
+          line-height: 30px;
+          padding: 0 12px;
+          background-color: #b9a3a3;
+          color: #ffffff;
+          transition: all .3s ease-in;
+          border-radius: 2px;
+          margin-left: -1px;
+      }
+
+      .transit-box .search-box .search-btn:hover {
+          box-shadow: 0 0 6px rgba(0,0,0,.2);
+      }
+
+      .transit-box .back-box {
+          margin-top: 50px;
+      }
+
+      .transit-box .back-box .back-home {
+          padding: 0 26px;
+          display: inline-block;
+          height: 34px;
+          line-height: 34px;
+          border: 1px solid #d0021b;
+          font-size: 12px;
+          color: #d0021b;
+          cursor: pointer;
+      }
+      .transit-box .back-box .back-home:hover{
+          box-shadow: 0 0 6px rgba(0,0,0,.2);
+      }
+  </style>
+</head>
+<body>
+<!--头部-->
+<div class="header">
+  <!--顶部-->
+  <div class="nav-info">
+    <div class="nav-left">
+      <img class="nav-logo" src="img/images/new-year.gif" alt="new-year" width="199" height="61">
+    </div>
+    <ul class="nav-items">
+      <li>
+        <a href="javascript:void(0)">
+          <span class="iconfont icon-qushuchakanshuxing2"></span>
+          <span class="gerber">Online Gerber Viewer</span>
+        </a>
+      </li>
+      <li>
+        <a href="phone-display.html">
+          <span class="iconfont icon-shouji1"></span>
+          <span class="gerber">Mobile Website</span>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">
+          <span class="iconfont icon-Skype"></span>
+        </a>
+      </li>
+      <li><a href="mailto:service@pcbgogo.com">
+        <span class="iconfont icon-E-mail"></span>
+        <span class="mail-text">service@pcbgogo.com</span>
+      </a>
+      </li>
+      <li class="language"><span><img src="img/images/England.png" alt="country-flag"></span>&nbsp;&nbsp;English
+        <!--语言选择弹出层-->
+        <ul class="language-box">
+          <li onclick="window.open('index.html','_self')"><img src="img/images/England.png" alt="">&nbsp;&nbsp;English
+          </li>
+          <li onclick="window.open('https://www.pcbgogo.jp/','_blank')"><img
+            src="img/images/Japan.png" alt="">&nbsp;&nbsp;Japanese
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="top-box">
+    <!--左侧logo-->
+    <h1 class="logo">
+      <a href="index.html">
+        PCBgogo
+      </a>
+    </h1>
+    <!--nav-tips-->
+    <img src="img/images/logo-tips.jpg" alt="logo tips" width="340" height="34" class="nav-tips">
+    <!--日文-->
+    <!--<img src="img/images/logo-tips_jp.jpg" alt="logo tips" width="336" height="34" class="nav-tips-jp">-->
+    <!--nav-tips-->
+    <!--右侧登录-->
+    <div class="sign-box">
+      <ul class="sign-lists">
+        <li class="sign-in"><a href="javascript:void(0)">Sign in</a></li>
+        <li class="join"><a href="javascript:void(0)">Join Free</a></li>
+        <li class="hi-in"><a href="javascript:void(0)"><strong>Hi! The
+          user...</strong></a></li>
+        <li class="joined">
+          <i><img src="img/images/user.png" alt="" width="40" height="40"></i><span class="pointer">
+                        <img src="img/images/down-pointer.png" alt=""></span>
+          <!--登陆后-->
+          <div class="user-item">
+            <div class="account active">
+              My Account
+            </div>
+            <div class="account">
+              My Orders list
+            </div>
+            <div class="account">
+              My Delivery Address
+            </div>
+            <div class="facebook-btn ">
+              Bind FaceBook
+            </div>
+            <div class="out-btn " style="margin-top: 10px">
+              Sign Out
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--导航-->
+  <div class="nav">
+    <div class="nav-box">
+      <!--<div class="container_warp">-->
+      <!--左侧列表-->
+      <ul class="nav-lists">
+        <li class="active"><a href="index.html" class="home">Home</a></li>
+        <li><a href="PCBPrototype.html">PCB Instant Quote</a></li>
+        <li class="assembly-menus">
+          <a href="PCBAssembly.html">PCB Assembly</a>
+          <ol class="next-item">
+            <li><a href="PCBAssembly.html">PCB Assembly</a></li>
+            <li><a href="pcbaCapabilitiesProcess.html">PCBA process</a></li>
+          </ol>
+        </li>
+        <li><a href="pcbLayout.html">PCB Layout</a></li>
+        <li class="capabilities-menus"><a href="pcbCapabilities.html">Capabilities</a>
+          <ol class="capa-sub-menus">
+            <li><a href="pcbCapabilities.html">PCB Capabilities</a></li>
+            <li><a href="pcbaCapabilities.html">PCBA Capabilities</a></li>
+            <li><a href="pcbLayoutCapabilities.html">PCB Layout capabilities</a></li>
+            <li><a href="PCBPCBAQuickturnService.html">PCB& PCBA quickturn service</a></li>
+            <li><a href="PCBPrototypeMassProduction.html">PCB Prototype& Mass production</a></li>
+          </ol>
+        </li>
+        <li><a href="pages作废/reviewList作废.html">Forum</a></li>
+        <li class="contact-menus"><a href="aboutUs.html">About Us</a>
+          <ol class="contact-sub-menus">
+            <li><a href="whyUs.html">Why us</a></li>
+            <li><a href="methodPayment.html">Method of payment</a></li>
+            <li><a href="Introduction.html">Introduction</a></li>
+            <li><a href="privacyPolicy.html">Privacy policy</a></li>
+            <li><a href="orderGuide.html">Order guide</a></li>
+            <li><a href="shippingMethod.html">Shipping method guide</a></li>
+            <li><a href="qualityGurrantee.html">Quality gurrantee</a></li>
+            <li><a href="gogoDelivery.html">PCBgogo delivery</a></li>
+          </ol>
+        </li>
+        <!--后续添加-->
+        <!--<li><a href="forum.html">Blog</a></li>-->
+        <li><a href="contactUs.html">Contact Us</a></li>
+      </ul>
+      <!--右侧图标-->
+      <div class="shopping-box">
+        <ul class="js-hints">
+          <li class="active"><a href="member/newsed.html" title="Message">
+            <span class="iconfont icon-ai-message"></span>
+          </a>
+            <i class="point"></i>
+          </li>
+          <li class="active"><a href="member/coupon-page.html" title="Coupons">
+            <span class="iconfont icon-youhuiquan"></span>
+          </a>
+            <i class="point"></i>
+          </li>
+          <li class="active"><a href="member/awaiting-payment.html" title="Awaiting payment">
+            <span class="iconfont icon-fukuan"></span>
+          </a>
+            <i class="point now-hide"></i>
+          </li>
+          <li class="car-box"><a href="member/shopping-car.html" title="Shopping cart">
+            <span class="iconfont icon-gouwuche1"></span>
+          </a>
+            <i class="round car-nums">10</i>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container_warp">
+  <div class="transit-box">
+    <div class="transit-logo">
+      <img src="img/images/transit-icon.png" alt="transitImage" width="233" height="119" title="transitImage">
+    </div>
+    <h2>NOT FOUND</h2>
+    <div class="tips">Apologies, but the page you requested could not be found. Perhaps searching will help.</div>
+    <div class="search-box clear-fix">
+      <input type="text" class="search-input"
+             onfocus="this.style.background='none'"
+             onblur="this.value!==''?
+                   this.style.background='none':this.style.background='url(img/images/big-glass.png) no-repeat 3% center'">
+      <a href="javascript:void(0)" class="search-btn">Search</a>
+    </div>
+    <div class="back-box">
+      <a href="javascript:void(0)" class="back-home">
+        BACK HOME
+      </a>
+    </div>
+  </div>
+</div>
+</body>
+</html>

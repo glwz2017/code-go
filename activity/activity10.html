@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--网页标题左侧显示-->
+    <link rel="icon" href="../img/images/title-logo.png" type="image/x-icon">
+    <!--收藏夹显示图标-->
+    <link rel="shortcut icon" href="../img/images/title-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../img/css/public.css">
+    <link rel="stylesheet" href="../img/css/header.css">
+    <link rel="stylesheet" href="../img/css/footer.css">
+    <script src="../img/js/jquery/jquery-1.11.3.min.js"></script>
+    <!--&lt;!&ndash; Global site tag (gtag.js) - Google Analytics &ndash;&gt;-->
+    <!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-69152275-1"></script>-->
+    <!--<script>-->
+    <!--window.dataLayer = window.dataLayer || [];-->
+    <!--function gtag() {-->
+    <!--dataLayer.push(arguments);-->
+    <!--}-->
+    <!--gtag('js', new Date());-->
+    <!--gtag('config', 'UA-69152275-1');-->
+    <!--</script>-->
+    <style>
+        .activity-main .activity-banner {
+            background: url("../img/images/activity/old-img/october1.jpg") no-repeat center;
+            width: 100%;
+            min-width: 1280px;
+            height: 818px;
+        }
+
+        .activity-main .activity-link {
+            background: url("../img/images/activity/old-img/october2.jpg") no-repeat center;
+            width: 100%;
+            min-width: 1280px;
+            height: 931px;
+            text-align: center;
+        }
+
+        .activity-main .activity-link .learn-more {
+            font-size: 20px;
+            color: #f17e32;
+            text-align: center;
+            width: 135px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 4px;
+            border: 1px solid #f19a62;
+            transition: all .3s;
+            box-shadow: 0 0 2px #f19a62;
+            margin-top: 230px;
+        }
+
+        .activity-main .activity-link .learn-more:hover {
+            background-color: #e5925e;
+            color: #ffffff;
+        }
+
+        @-moz-keyframes tada {
+            0% {
+                -moz-transform: scale(1);
+            }
+            10%, 20% {
+                -moz-transform: scale(0.9) rotate(-3deg);
+            }
+            30%, 50%, 70%, 90% {
+                -moz-transform: scale(1.1) rotate(3deg);
+            }
+            40%, 60%, 80% {
+                -moz-transform: scale(1.1) rotate(-3deg);
+            }
+            100% {
+                -moz-transform: scale(1) rotate(0);
+            }
+        }
+
+        @-webkit-keyframes tada {
+            0% {
+                -webkit-transform: scale(1);
+            }
+            10%, 20% {
+                -webkit-transform: scale(0.9) rotate(-3deg);
+            }
+            30%, 50%, 70%, 90% {
+                -webkit-transform: scale(1.1) rotate(3deg);
+            }
+            40%, 60%, 80% {
+                -webkit-transform: scale(1.1) rotate(-3deg);
+            }
+            100% {
+                -webkit-transform: scale(1) rotate(0);
+            }
+        }
+
+        @keyframes tada {
+            0% {
+                -webkit-transform: scale(1);
+            }
+            10%, 20% {
+                -webkit-transform: scale(0.9) rotate(-3deg);
+            }
+            30%, 50%, 70%, 90% {
+                -webkit-transform: scale(1.1) rotate(3deg);
+            }
+            40%, 60%, 80% {
+                -webkit-transform: scale(1.1) rotate(-3deg);
+            }
+            100% {
+                -webkit-transform: scale(1) rotate(0);
+            }
+        }
+
+        @-ms-keyframes tada {
+            0% {
+                -webkit-transform: scale(1);
+            }
+            10%, 20% {
+                -webkit-transform: scale(0.9) rotate(-3deg);
+            }
+            30%, 50%, 70%, 90% {
+                -webkit-transform: scale(1.1) rotate(3deg);
+            }
+            40%, 60%, 80% {
+                -webkit-transform: scale(1.1) rotate(-3deg);
+            }
+            100% {
+                -webkit-transform: scale(1) rotate(0);
+            }
+        }
+
+        .gift {
+            background: url("../img/images/activity/old-img/gift.png") no-repeat center;
+            width: 510px;
+            height: 567px;
+            margin-top: 240px;
+            float: left;
+        }
+
+        .clothes {
+            background: url("../img/images/activity/old-img/clothes.png") no-repeat center;
+            width: 434px;
+            height: 555px;
+            float: right;
+            margin: 230px 100px 0 0;
+        }
+
+        .gift:hover, .clothes:hover {
+            cursor: pointer;
+            -webkit-animation: tada 1s .2s ease both;
+            -moz-animation: tada 1s .2s ease both;
+            -o-animation: tada 1s .2s ease both;
+            -ms-animation: tada 1s .2s ease both;
+            animation: tada 1s .2s ease both;
+        }
+    </style>
+</head>
+<body>
+<!--头部-->
+<div class="header">
+    <!--顶部-->
+    <div class="nav-info">
+        <ul class="nav-items">
+            <li><a href="skype:live:service_7440?chat"><img src="../img/images/index-skype.png" alt="skype" width="18"
+                                                            height="18"></a></li>
+            <li><a href="mailto:service@pcbgogo.com"><img src="../img/images/index-email.png" alt="" class="align-pic">&nbsp;&nbsp;service@pcbgogo.com</a>
+            </li>
+            <!--<li>+86-755-33066136</li>-->
+            <li class="language"><span><img src="../img/images/England.png" alt="country-flag"></span>&nbsp;&nbsp;English
+                <!--语言选择弹出层-->
+                <ul class="language-box">
+                    <li onclick="window.open('index.html','_self')"><img src="../img/images/England.png" alt="">&nbsp;&nbsp;English
+                    </li>
+                    <li onclick="window.open('https://www.pcbgogo.jp/','_blank')"><img
+                            src="../img/images/Japan.png" alt="">&nbsp;&nbsp;Japanese
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="top-box">
+        <!--左侧logo-->
+        <h1 class="logo">
+            <a href="index.html">
+                PCBgogo
+            </a>
+        </h1>
+        <!--nav-tips-->
+        <img src="../img/images/logo-tips.jpg" alt="logo tips" width="340" height="34" class="nav-tips">
+        <!--nav-tips-->
+        <!--右侧登录-->
+        <div class="sign-box">
+            <ul class="sign-lists">
+                <li class="sign-in"><a href="javascript:void(0)">Sign in</a></li>
+                <li class="join"><a href="javascript:void(0)">Join Free</a></li>
+                <li class="hi-in"><a href="javascript:void(0)"><strong>Hi! The
+                    user...</strong></a></li>
+                <li class="joined">
+                    <i><img src="../img/images/user.png" alt="" width="40" height="40"></i><span class="pointer">
+                        <img src="../img/images/down-pointer.png" alt=""></span>
+                    <!--登陆后-->
+                    <div class="user-item">
+                        <div class="account active">
+                            My Account
+                        </div>
+                        <div class="account">
+                            My Orders list
+                        </div>
+                        <div class="account">
+                            My Delivery Address
+                        </div>
+                        <div class="facebook-btn ">
+                            Bind FaceBook
+                        </div>
+                        <div class="out-btn " style="margin-top: 10px">
+                            Sign Out
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--导航-->
+    <div class="nav">
+        <div class="nav-box">
+            <!--<div class="container_warp">-->
+            <!--左侧列表-->
+            <ul class="nav-lists">
+                <li class="active"><a href="index.html" class="home">Home</a></li>
+                <li><a href="PCBPrototype.html">PCB Instant Quote</a></li>
+                <li class="assembly-menus">
+                    <a href="PCBAssembly.html">PCB Assembly</a>
+                    <ol class="next-item">
+                        <li><a href="PCBAssembly.html">PCB Assembly</a></li>
+                        <li><a href="pcbaCapabilitiesProcess.html">PCBA process</a></li>
+                    </ol>
+                </li>
+                <li><a href="pcbLayout.html">PCB Layout</a></li>
+                <li class="capabilities-menus"><a href="pcbCapabilities.html">Capabilities</a>
+                    <ol class="capa-sub-menus">
+                        <li><a href="pcbCapabilities.html">PCB Capabilities</a></li>
+                        <li><a href="pcbaCapabilities.html">PCBA Capabilities</a></li>
+                        <li><a href="pcbLayoutCapabilities.html">PCB Layout capabilities</a></li>
+                        <li><a href="PCBPCBAQuickturnService.html">PCB& PCBA quickturn service</a></li>
+                        <li><a href="PCBPrototypeMassProduction.html">PCB Prototype& Mass production</a></li>
+                    </ol>
+                </li>
+                <li><a href="reviewList.html">Forum</a></li>
+                <li class="contact-menus"><a href="aboutUs.html">About Us</a>
+                    <ol class="contact-sub-menus">
+                        <li><a href="whyUs.html">Why us</a></li>
+                        <li><a href="methodPayment.html">Method of payment</a></li>
+                        <li><a href="Introduction.html">Intoduction</a></li>
+                        <li><a href="privacyPolicy.html">Privacy policy</a></li>
+                        <li><a href="orderGuide.html">Order guide</a></li>
+                        <li><a href="shippingMethod.html">Shipping method guide</a></li>
+                        <li><a href="qualityGurrantee.html">Quality gurrantee</a></li>
+                        <li><a href="gogoDelivery.html">PCBgogo delivery</a></li>
+                    </ol>
+                </li>
+                <!--后续添加-->
+                <!--<li><a href="forum.html">Blog</a></li>-->
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+            <!--右侧图标-->
+            <div class="shopping-box">
+                <ul class="js-hints">
+                    <li class="active"><a href="member/newsed.html" title="Message">
+                        <img src="../img/images/message.png" alt="" width="20" height="18"></a>
+                        <i class="point"></i>
+                    </li>
+                    <li class="active"><a href="member/coupon-page.html" title="Coupons">
+                        <img src="../img/images/coupon.png" alt="" width="22" height="20"></a>
+                        <i class="point"></i>
+                    </li>
+                    <li class="active "><a href="member/awaiting-payment.html" title="Awaiting payment">
+                        <img src="../img/images/for-the-payment.png" alt="" width="22" height="20"></a>
+                        <i class="point now-hide"></i>
+                    </li>
+                    <li class="car-box"><a href="member/shopping-car.html" title="Shopping cart">
+                        <img src="../img/images/shopping-car.png" alt="" width="22" height="20"></a>
+                        <i class="round car-nums">10</i>
+                    </li>
+                </ul>
+            </div>
+            <!--</div>-->
+        </div>
+    </div>
+</div>
+<!--活动内容-->
+<div class="activity-main">
+    <div class="activity-banner"></div>
+    <div class="activity-link">
+        <div class="container_warp">
+            <a href="首页或者计价页面" class="learn-more">Learn More</a>
+            <div class="gift"></div>
+            <div class="clothes"></div>
+        </div>
+    </div>
+</div>
+<!--活动内容-->
+<!--底部-->
+<div class="footer clear-float">
+    <!--一级导航-->
+    <div class="footer-title clear-float">
+        <div class="container_warp">
+            <ul class="footer-title-ul">
+                <li>
+                    <dl>
+                        <dt>
+                            <img src="../img/images/baifenbai.png" alt="" width="58" height="51">
+                        </dt>
+                        <dd>
+                            100% <br>Quality <br>Guarantees
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <img src="../img/images/hands.png" alt="" width="58" height="51">
+                        </dt>
+                        <dd>
+                            3-5days' <br>Delivery <br>(DHL)
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <img src="../img/images/iso.png" alt="iso" width="58" height="51">
+                        </dt>
+                        <dd>
+                            International <br>Organization <br>forStandardization
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <img src="../img/images/UL.png" alt="" width="58" height="51">
+                        </dt>
+                        <dd>
+                            Underwriter <br>Laboratories <br>Inc.
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--二级列表-->
+    <div class="links-type clear-float">
+        <div class="container_warp">
+            <div class="left-box" style="float: left">
+                <ul class="links-title clear-float">
+                    <li>
+                        <p>LEARN</p>
+                        <ul class="links-lists">
+                            <li>
+                                <a href="aboutUs.html">About Us</a>
+                            </li>
+                            <li>
+                                <a href="pcbCapabilities.html"> PCB Capabilities</a>
+                            </li>
+                            <li>
+                                <a href="pcbaCapabilities.html">PCBA Capabilities</a>
+                            </li>
+                            <li>
+                                <a href="pcbLayoutCapabilities.html"> PCB Layout Capabilities</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>PCBGOGO SERVICE</p>
+                        <ul class="links-lists">
+                            <li>
+                                <a href="PCBPrototype.html">PCB Prototype </a>
+                            </li>
+                            <li>
+                                <a href="PCBAssembly.html">PCB Assembly</a>
+                            </li>
+                            <li>
+                                <a href="pcbLayout.html"> PCB Layout </a>
+                            </li>
+                            <li>
+                                <a href="FPCInstantQuote.html">PCB Instant Quote</a>
+                            </li>
+                            <li>
+                                <a href="sitemap.xml" title="https://www.pcbgogo.com/sitemap(1).xml">Site Map</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>CUSTOMER SUPPORT</p>
+                        <ul class="links-lists">
+                            <li>
+                                <a href="forum/forum.html">Engineering </a>
+                            </li>
+                            <li>
+                                <a href="dynamic.html">Feedback </a>
+                            </li>
+                            <li>
+                                <a href="pcbaAssemblyFaq.html">PCBA FAQs </a>
+                            </li>
+                            <li>
+                                <a href="whyUs.html">Why us </a>
+                            </li>
+                            <li>
+                                <a href="privacyPolicy.html">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="keywordSearch.html">PCB Glossary</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>ORDER HELP</p>
+                        <ul class="links-lists">
+                            <li>
+                                <a href="orderGuide.html">Order Guide </a>
+                            </li>
+                            <li>
+                                <a href="contactUs.html">Contact Us </a>
+                            </li>
+                            <li>
+                                <a href="register.html">Create an Account </a>
+                            </li>
+                            <li>
+                                <a href="qualityGurrantee.html">Quality Gurrantee </a>
+                            </li>
+                            <li>
+                                <a href="gogoDelivery.html">PCBGOGO Delivery</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="footer-item-icon">
+                    <li><a href="javascript:void(0)"><img src="../img/images/paypal.png" alt=""></a></li>
+                    <li><a href="javascript:void(0)"><img src="../img/images/hsbc.png" alt="HBSC"></a></li>
+                    <li><a href="javascript:void(0)"><img src="../img/images/china.png" alt=""></a></li>
+                    <li><a href="javascript:void(0)"><img src="../img/images/dhl.png" alt="DHL"></a></li>
+                    <li><a href="javascript:void(0)"><img src="../img/images/post.png" alt="POST"></a></li>
+                    <li><a href="javascript:void(0)"><img src="../img/images/ups.png" alt="UPS"></a></li>
+                    <li><a href="javascript:void(0)"><img src="../img/images/ems.png" alt="EMS"></a></li>
+                </ul>
+            </div>
+
+            <!--右侧表单-->
+            <div class="send-from">
+                <p>QUICK CONTACT</p>
+                <form action="#">
+                    <input type="text" placeholder="Name" value="Name" onfocus="if(this.value==='Name')this.value=''"
+                           onblur="if(this.value==='')this.value='Name'">
+                    <input type="text" placeholder="Email" value="Email"
+                           onfocus="if(this.value==='Email')this.value=''"
+                           onblur="if(this.value==='')this.value='Email'">
+                    <textarea type="text" class="message-input" placeholder="Message"
+                              onfocus="if(this.value==='Message')this.value=''"
+                              onblur="if(this.value==='')this.value='Message'"></textarea>
+                    <input type="button" class="btn-submit " value="Send Message">
+                </form>
+            </div>
+            <!--右侧表单-->
+        </div>
+    </div>
+    <!--底部表单-->
+    <div class="footer-from clear-float">
+        <div class="container_warp">
+            <!--底部列表-->
+            <div class="footer-item">
+                <ul class="footer-item-ul">
+                    <li class="ban-quan">Copyright © 2015 PCBGOGO. All rights reserved. Shenzhen JDB Technology Co.,
+                        Ltd. <br>
+                        Address: No. 15, Zhongxing Road, Kengzi Street, Pingshan District, Shenzhen, 518000, China.
+                    </li>
+                    <li>
+                        Whatsapp <br>+8618665922549
+                    </li>
+                    <li>
+                        Mail <br>service@pcbgogo.com
+                    </li>
+                    <li>
+                        Tel <br>+86-755-33066136
+                    </li>
+                    <li class="footer-last-item">
+                        <div class="share-box">
+                            <a target="_blank" href="#"><img
+                                    src="../img/images/twitter.png" alt=""></a>
+                            <a target="_blank" href="#"><img
+                                    src="../img/images/google.png" alt=""></a>
+                            <a target="_blank" href="#"><img
+                                    src="../img/images/facebook.png" alt=""></a>
+                            <a target="_blank"
+                               href="#"><img
+                                    src="../img/images/instagram.png" alt=""></a>
+                            <a target="_blank" href="#"><img
+                                    src="../img/images/Linkedln.png" alt=""></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

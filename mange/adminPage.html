@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        body {
+            background-size: cover;
+            /*background-attachment: fixed;*/
+            background: url("img/admin-bg.png") no-repeat 90% center fixed;
+        }
+
+        .admin-box {
+            padding-top: 140px;
+            box-sizing: border-box;
+        }
+
+        .admin-warp {
+            width: 1000px !important;
+            height: 500px !important;
+            margin: 0 auto;
+        }
+
+        .admin-left {
+            height: inherit;
+            background: url("img/admin-left.png") no-repeat center;
+            background-size: cover;
+            width: 519px;
+            position: relative;
+            float: left;
+        }
+
+        .login-index {
+            position: absolute;
+            left: 45px;
+            bottom: 45px;
+            width: 30px;
+            font-size: 12px;
+            text-align: center;
+            color: #250006;
+        }
+
+        .admin-right {
+            float: left;
+            width: 481px;
+            height: inherit;
+            background-color: #FFFFFF;
+        }
+
+        h1 {
+            background: url("img/admin-logo.png") no-repeat center;
+            height: 35px;
+            margin-top: 58px;
+            text-indent: -99999px;
+        }
+
+        .crm {
+            font-size: 18px;
+            color: #5c5c5c;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        /*登录表单*/
+        .login-from {
+            margin-top: 20px;
+        }
+
+        .login-from input[type="text"],input[type="password"] {
+            color: #9fa0a0;
+            font-size: 12px;
+            width: 298px;
+            height: 48px;
+            line-height: 48px;
+            /*text-align: center;*/
+            text-indent: 70px;
+            border: none;
+            outline: none;
+            box-shadow: 0 0 2px #9fa0a0;
+            border-radius: 1px;
+            background-color: #ffffff;
+            border: 1px solid #9fa0a0 \9;
+        }
+
+        :root .login-from input[type="text"] {
+            color: #9fa0a0;
+            font-size: 12px;
+            width: 298px;
+            height: 48px;
+            line-height: 48px;
+            /*text-align: center;*/
+            text-indent: 70px;
+            border: none;
+            outline: none;
+            box-shadow: 0 0 2px #9fa0a0;
+            border-radius: 1px;
+            background-color: #ffffff;
+        }
+        .input-item {
+            text-align: center;
+            height: 48px;
+            margin-bottom: 18px;
+
+            position: relative;
+
+        }
+
+        .admin-use {
+            background: url("img/admin-use.png") no-repeat 5% center;
+        }
+
+        .admin-pwd {
+            background: url("img/admin-pwd.png") no-repeat 5% center;
+        }
+
+        .admin-safe {
+            background: url("img/admin-safe.png") no-repeat 5% center;
+
+        }
+
+        .submit-btn {
+            width: 298px;
+            height: 48px;
+            background-color: #c30b1d;
+            line-height: 48px;
+            text-align: center;
+            color: #ffffff;
+            font-size: 18px;
+            outline: none;
+            border: none;
+            margin-top: 10px;
+            cursor: pointer;
+            box-shadow: 0 1px 2px 0 #9fa0a0;
+            font-weight: 500;
+            transition: all .3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #a70820;
+        }
+
+        #check-code {
+            overflow: hidden;
+            position: absolute;
+            top: 1px;
+            right: 92px;
+            width: 70px;
+            height: 47px;
+            line-height: 47px;
+            background-color: #ffffff;
+            user-select: none;
+            cursor: pointer;
+        }
+        .copy-right-box{
+            font-size: 12px;
+            color: #250006;
+            text-align: center;
+            min-width: 1000px;
+            margin-top: 53px;
+        }
+    </style>
+</head>
+<body>
+<div class="admin-box">
+    <div class="admin-warp">
+        <!--左侧-->
+        <div class="admin-left">
+            <a href="../index.html" class="login-index" target="_blank">
+                进入官网
+            </a>
+        </div>
+        <!--右侧-->
+        <div class="admin-right">
+            <h1>PCBgogo.om</h1>
+            <p class="crm">深圳捷多邦科技有限公司 <br>
+                CRM管理后台</p>
+            <!--登录表单-->
+            <div class="login-from">
+                <form action="#" method="post">
+                    <div class="input-item">
+                        <input type="text" placeholder="点击输入用户名" class="admin-use">
+                    </div>
+                    <div class="input-item">
+                        <input type="password" placeholder="点击输入密码" class="admin-pwd">
+                    </div>
+                    <div class="input-item">
+                        <input type="text" placeholder="点击输入验证码" class="admin-safe">
+                        <div id="check-code">
+                            <div class="code" id="data_code" data-value="fyGjl" style="color: rgb(131, 95, 83);">fyGjl
+                            </div>
+                        </div>
+                    </div>
+                    <!--提交按钮-->
+                    <div class="input-item">
+                        <input type="submit" value="登录" class="submit-btn">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copy-right-box">
+        深圳捷多邦科技有限公司 © 版权所有
+    </div>
+</div>
+<script src="../img/js/jquery/jquery-1.11.3.min.js"></script>
+<script>
+    $(function () {
+        $.fn.code_Obj = function (o) {
+            var _this = $(this);
+            var options = {
+                code_l: o.codeLength,//验证码长度
+                codeChars: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
+                    'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
+                    'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'
+                ],
+                codeColors: ['#f44336', '#009688', '#cddc39', '#03a9f4', '#9c27b0', '#5e4444', '#9ebf9f', '#ffc8c4', '#2b4754', '#b4ced9', '#835f53', '#aa677e'],
+                code_Init: function () {
+                    var code = "";
+                    var codeColor = "";
+                    var checkCode = _this.find("#data_code");
+                    for (var i = 0; i < this.code_l; i++) {
+                        var charNum = Math.floor(Math.random() * 52);
+                        code += this.codeChars[charNum];
+                    }
+                    for (var i = 0; i < this.codeColors.length; i++) {
+                        var charNum = Math.floor(Math.random() * 12);
+                        codeColor = this.codeColors[charNum];
+                    }
+//                    console.log(code);//随机出来的验证码
+                    if (checkCode) {
+                        checkCode.css('color', codeColor);
+                        checkCode.className = "code";
+                        checkCode.text(code);
+                        checkCode.attr('data-value', code);
+                    }
+                }
+            };
+            options.code_Init();//初始化验证码
+            _this.find("#data_code").bind('click', function () {
+                options.code_Init();
+            });
+        };
+        $('#check-code').code_Obj({
+            codeLength: 4
+        });//控制显示字符的长度
+
+//        提交前的验证
+        var checkArr = [];
+        function checkName(name) {
+            return name == '' || name == '' && isNaN(name) ? checkArr[0] = false : checkArr[0] = true;
+        }//用户名验证
+
+        function checkPwd(pwd) {
+            return pwd.length < 6 ? checkArr[1] = false : checkArr[1] = true;
+        }//密码验证
+
+        function checkCode(code, inputCode) {
+            return code == inputCode ? checkArr[2] = true : checkArr[2] = false;
+        }//验证码验证
+
+        $('.admin-use').blur(function () {
+            var getName = $(this).val();
+          checkName(getName);
+        });//用户名失去焦点
+
+        $('.admin-pwd').blur(function () {
+            var getPwd = $(this).val();
+            checkPwd(getPwd);
+        });//密码失去焦点
+
+        $('.admin-safe').blur(function () {
+            var getCode = $('.code').text().toLowerCase();
+            var getInput = $(this).val().toLowerCase();
+            checkCode(getCode, getInput);
+        });//验证码失去焦点
+
+        $('.submit-btn').click(function () {
+            return checkArr[0] && checkArr[1] && checkArr[2] ? true : false;
+        });
+
+    });//end function
+</script>
+</body>
+</html>

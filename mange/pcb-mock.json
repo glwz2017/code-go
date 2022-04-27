@@ -1,0 +1,362 @@
+{
+  "pcb": [
+    {
+      "value": 968,
+      "name": "加急"
+    },
+    {
+      "value": 300,
+      "name": "打样"
+    },
+    {
+      "value": 535,
+      "name": "批量"
+    }
+  ],
+  "pcbCost": [
+    {
+      "name": "成本价",
+      "type": "bar",
+      "data": [
+        101203,
+        203489,
+        206532,
+        10222
+      ]
+    },
+    {
+      "name": "工厂报价",
+      "type": "bar",
+      "data": [
+        101203,
+        223489,
+        206532,
+        10222
+      ]
+    },
+    {
+      "name": "系统报价",
+      "type": "bar",
+      "data": [
+        111203,
+        203489,
+        206532,
+        10222
+      ]
+    },
+    {
+      "name": "审核后报价",
+      "type": "bar",
+      "data": [
+        109325,
+        203438,
+        263562,
+        9666
+      ],
+      "itemStyle": {
+        "borderColor": "#8d6c72"
+      }
+    }
+  ],
+  "pcbDevice1": [
+    {
+      "value": 1048,
+      "name": "FR-4"
+    },
+    {
+      "value": 735,
+      "name": "Aluminum Board"
+    },
+    {
+      "value": 580,
+      "name": "Rogers"
+    },
+    {
+      "value": 450,
+      "name": "HDI"
+    },
+    {
+      "value": 650,
+      "name": "Copper Base"
+    }
+  ],
+  "pcbDevice2": [
+    {
+      "value": 348,
+      "name": "FR-4"
+    },
+    {
+      "value": 235,
+      "name": "Aluminum Board"
+    },
+    {
+      "value": 680,
+      "name": "Rogers"
+    },
+    {
+      "value": 350,
+      "name": "HDI"
+    },
+    {
+      "value": 450,
+      "name": "Copper Base"
+    }
+  ],
+  "pcbLayer1": [
+    {
+      "value": 348,
+      "name": "1层"
+    },
+    {
+      "value": 235,
+      "name": "2层"
+    },
+    {
+      "value": 680,
+      "name": "4层"
+    },
+    {
+      "value": 350,
+      "name": "6层"
+    },
+    {
+      "value": 450,
+      "name": "8层"
+    },
+    {
+      "value": 350,
+      "name": "10层"
+    },
+    {
+      "value": 450,
+      "name": "12层"
+    },
+    {
+      "value": 450,
+      "name": "14层"
+    }
+  ],
+  "pcbLayer2": [
+    {
+      "value": 348,
+      "name": "1层"
+    },
+    {
+      "value": 235,
+      "name": "2层"
+    },
+    {
+      "value": 680,
+      "name": "4层"
+    },
+    {
+      "value": 350,
+      "name": "6层"
+    },
+    {
+      "value": 450,
+      "name": "8层"
+    },
+    {
+      "value": 350,
+      "name": "10层"
+    },
+    {
+      "value": 450,
+      "name": "12层"
+    },
+    {
+      "value": 450,
+      "name": "14层"
+    }
+  ],
+  "pcbWelding1": [
+    {
+      "value": 348,
+      "name": "green"
+    },
+    {
+      "value": 235,
+      "name": "red"
+    },
+    {
+      "value": 680,
+      "name": "yellow"
+    },
+    {
+      "value": 350,
+      "name": "blue"
+    },
+    {
+      "value": 450,
+      "name": "white"
+    },
+    {
+      "value": 350,
+      "name": "purple"
+    },
+    {
+      "value": 450,
+      "name": "black"
+    },
+    {
+      "value": 450,
+      "name": " Matte black"
+    },
+    {
+      "value": 450,
+      "name": "Matte green"
+    },
+    {
+      "value": 450,
+      "name": "None"
+    }
+  ],
+  "pcbWelding2": [
+    {
+      "value": 348,
+      "name": "green"
+    },
+    {
+      "value": 235,
+      "name": "red"
+    },
+    {
+      "value": 610,
+      "name": "yellow"
+    },
+    {
+      "value": 350,
+      "name": "blue"
+    },
+    {
+      "value": 250,
+      "name": "white"
+    },
+    {
+      "value": 350,
+      "name": "purple"
+    },
+    {
+      "value": 250,
+      "name": "black"
+    },
+    {
+      "value": 850,
+      "name": " Matte black"
+    },
+    {
+      "value": 250,
+      "name": "Matte green"
+    },
+    {
+      "value": 650,
+      "name": "None"
+    }
+  ],
+  "我是订单包备注,参考忽略": "value: 应交订单总数, actual: 实交订单总数",
+  "orderPack": [
+    {
+      "value": 1290,
+      "actual": 1080
+    },
+    {
+      "value": 390,
+      "actual": 280
+    },
+    {
+      "value": 690,
+      "actual": 680
+    },
+    {
+      "value": 590,
+      "actual": 500
+    },
+    {
+      "value": 1190,
+      "actual": 1080
+    },
+    {
+      "value": 990,
+      "actual": 560
+    },
+    {
+      "value": 2190,
+      "actual": 2190
+    },
+    {
+      "value": 2690,
+      "actual": 2180
+    },
+    {
+      "value": 390,
+      "actual": 290
+    },
+    {
+      "value": 790,
+      "actual": 780
+    },
+    {
+      "value": 2900,
+      "actual": 2600
+    },
+    {
+      "value": 2300,
+      "actual": 2000
+    }
+  ],
+  "color": [
+    "#B21F1F",
+    "#FF0066",
+    "#FF7070",
+    "#5470C6",
+    "#73C4DE",
+    "#89DAC8",
+    "#89CE7C",
+    "#B1B34D",
+    "#EFC85F",
+    "#D5AB9D"
+  ],
+  "logistics": [
+    {
+      "value": 596,
+      "name": "DHL"
+    },
+    {
+      "value": 530,
+      "name": "FedEx-IE"
+    },
+    {
+      "value": 123,
+      "name": "FedEx-IP"
+    },
+    {
+      "value": 756,
+      "name": "EMS"
+    },
+    {
+      "value": 147,
+      "name": "HK DHL"
+    },
+    {
+      "value": 369,
+      "name": "E-packet"
+    },
+    {
+      "value": 356,
+      "name": "SF Express"
+    },
+    {
+      "value": 714,
+      "name": "China Post"
+    },
+    {
+      "value": 289,
+      "name": "Other shipping way"
+    },
+    {
+      "value": 316,
+      "name": "OCS"
+    }
+  ]
+}

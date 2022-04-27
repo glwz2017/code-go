@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/user-trends-pages.css">
+</head>
+<body>
+<div class="trends-pages update-trends-pages">
+    <div class="trends-module">
+        <div class="trends-module-title">
+            基础信息
+        </div>
+        <div class="trends-item">
+            <div class="group-row">
+                <div class="group-nam">
+                    群名称：
+                    <span class="name">
+                        高价值流失用户789798989
+                    </span>
+                </div>
+                <div class="group-tool">
+                    <button type="button" class="modified-btn">
+                        <a href="create-trends-pages.html">查看\修改规则</a>
+                    </button>
+                    <button type="button" class="download-btn">
+                        下载数据表
+                    </button>
+                    <button type="button" class="update-btn js-update-btn">更新</button>
+                </div>
+            </div>
+            <div class="des-note">
+                备注内容
+            </div>
+        </div>
+    </div>
+    <div class="trends-module">
+        <div class="trends-module-title">
+            用户群数据
+        </div>
+        <div class="trends-item">
+            <div class="target-dis">
+                <div class="target-dis-lead">
+                    <div style="border: 1px solid red;height: inherit">
+                        环形图占位符
+                        <br>套用删除
+                    </div>
+                </div>
+                <div class="target-dis-info">
+                    <div class="aim-item">
+                        目标人群: <span class="aim-num">4000人</span>
+                    </div>
+                    <div class="aim-des">
+                        <p> 在 全部 <span>10000</span> 用户中占比 <span>40%</span></p>
+                        <p> 计算时间：<span>2021-12-21 17:33:24</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="aim-trends-table">
+                <table class="trends-table">
+                    <thead>
+                    <tr>
+                        <th>
+                            用户编号
+                        </th>
+                        <th>
+                            国家
+                        </th>
+                        <th>
+                            会员
+                            <br>等级
+                        </th>
+                        <th>
+                            个体属性
+                        </th>
+                        <th>
+                            职位
+                        </th>
+                        <th>
+                            领域
+                        </th>
+                        <th>
+                            注册时间
+                        </th>
+                        <th>
+                            最后下单时间
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            A74372A
+                        </td>
+                        <td>
+                            UNITED STATES
+                            <br> OF AMERICA
+                        </td>
+                        <td>
+                            VIP
+                        </td>
+                        <td>
+                            贸易商
+                        </td>
+                        <td>
+                            设计师
+                        </td>
+                        <td>
+                            网络和
+                            计算机
+                        </td>
+                        <td>
+                            2021-12-31
+                            13:09:34
+                        </td>
+                        <td>
+                            2021-12-31
+                            13:09:34
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="pageToolbar">
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--加载弹窗-->
+<div class="trends-pop-box js-trends-pop">
+    <div class="trends-loading-body">
+        <div class="trends-loading">
+            <div class="pop-title">
+                数据处理中…
+            </div>
+            <div class="pop-schedule">
+                <div class="schedule" style="width: 0%">
+
+                </div>
+                <span class="sch-num">66%</span>
+            </div>
+            <div class="pop-tool">
+                <button type="button" class="js-cancel-btn">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="lib/pages/query.js"></script>
+<script src="lib/pages/paging.js"></script>
+<script>
+  $(function () {
+
+    // 模拟更新交互
+    $('.js-update-btn').click(function () {
+      $('.js-trends-pop').fadeIn(function () {
+        $('.js-trends-pop').find('.schedule').animate({
+            countNum: 100,
+            width: 100 + '%'
+          }, {
+            duration: 2600,
+            easing: "linear",
+            step: function () {
+              $('.js-trends-pop').find('.sch-num').html(parseInt(this.countNum) + '%')
+            },
+            complete: function () {
+              alert('进度完成,即将跳转')
+              window.location.reload()
+              $('.js-trends-pop').fadeOut()
+            }
+          }
+        )
+      })
+    })
+    $('.js-cancel-btn').click(function () {
+      $('.js-trends-pop').fadeOut()
+      window.location.reload()
+    })
+
+    // 分页 与www同一个
+    $('#pageToolbar').Paging({
+      count: 30,
+      pagesize: 2,
+      toolbar: true,
+      current: 1,
+      callback: function (a) {
+        console.log(a)
+      }
+    })
+  })
+</script>
+</body>
+</html>

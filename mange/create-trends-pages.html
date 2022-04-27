@@ -1,0 +1,1484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/user-trends-pages.css">
+</head>
+<body>
+<div class="trends-pages create-trends-pages">
+    <div class="trends-module">
+        <div class="trends-module-title">
+            基础信息
+        </div>
+        <div class="trends-item">
+            <div class="trends-item-title">
+                群名称
+            </div>
+            <div class="trends">
+                <input class="large" type="text" placeholder="填写分群全称">
+            </div>
+        </div>
+        <div class="trends-item">
+            <div class="trends-item-title">
+                备注
+            </div>
+            <div class="trends trends-note">
+                <textarea></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="trends-module">
+        <div class="trends-module-title">
+            分群规则
+        </div>
+        <div class="trends-item">
+            <div class="trends-item-title">
+                时间
+            </div>
+            <div class="behavior-box">
+                <div class="drop-down js-drop-down">
+                                <span class="filter-info js-filter">
+                                        <a href="javascript:void(0)">
+                                            自定义
+                                        </a>
+                                    </span>
+                    <ul class="drop-lists js-drop-lists js-drop-time" style="display: none;">
+                        <li>
+                            <a href="javascript:void(0)">
+                                10
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                30
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                60
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                90
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                180
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                360
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                自定义
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--   不可选 追加 disabled 属性  -->
+                <input class="custom-num js-custom-num" type="number" id="custom-num">
+                <label class="custom-label" for="custom-num">
+                    天（由设置当天起）
+                </label>
+            </div>
+            <div class="properties-parent">
+                <div class="properties-item">
+                    <div class="properties-title">
+                        <span class="properties-index">
+                            A
+                        </span>
+                        基本属性
+                    </div>
+                    <div class="properties-lists">
+                        <div class="list">
+                            <div class="list-label">
+                                等级
+                            </div>
+                            <div class="list-info">
+                                <dl class="estate-nav js-estate-nav">
+                                    <!--  选择  追加 active-->
+                                    <dd>VIP</dd>
+                                    <dd>V6</dd>
+                                    <dd>V5</dd>
+                                    <dd>V4</dd>
+                                    <dd>V3</dd>
+                                    <dd>V2</dd>
+                                    <dd>V1</dd>
+                                    <dd>V0</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="list-label">
+                                个体属性
+                            </div>
+                            <div class="list-info">
+                                <dl class="estate-nav js-estate-nav">
+                                    <!--  选择  追加 active-->
+                                    <dd>企业</dd>
+                                    <dd>个人</dd>
+                                    <dd>贸易商</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="list-label">
+                                人群特征
+                            </div>
+                            <div class="list-info">
+                                <div class="drop-down js-drop-down">
+                                <span class="filter-info js-filter">
+                                        <a href="javascript:void(0)">
+                                            选择职位
+                                        </a>
+                                    </span>
+                                    <ul class="drop-lists js-drop-lists" style="display: none;">
+                                        <li >
+                                            <a href="javascript:void(0)">
+                                                选择职位
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                设计师
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                采购
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                工程师
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                技术员
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                普通员工
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                CEO
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                CTO
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                其它
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="drop-down js-drop-down">
+                                <span class="filter-info js-filter">
+                                        <a href="javascript:void(0)">
+                                            选择行业
+                                        </a>
+                                    </span>
+                                    <ul class="drop-lists js-drop-lists" style="display: none;">
+                                        <li >
+                                            <a href="javascript:void(0)">
+                                                选择行业
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                应用
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                网络和计算机
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                消费电子产品
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                电信
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                航空航天
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                汽车电子
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                生物医学
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                其它
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="list-label">
+                                生命周期
+                            </div>
+                            <div class="list-info">
+                                <div class="drop-down js-drop-down">
+                                <span class="filter-info js-filter">
+                                        <a href="javascript:void(0)">
+                                            选择生命周期
+                                        </a>
+                                    </span>
+                                    <ul class="drop-lists js-drop-lists" style="display: none;">
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                选择生命周期
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                稳定期
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                成长期
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                衰退期
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                流失期
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="list-label">
+                                位置
+                            </div>
+                            <div class="list-info">
+                                <span class="seat">UNITED STATES OF AMERICA</span>
+                                <span class="seat min">AFGHANISTAN</span>
+                                <span class="seat-more">
+                                    ...
+                                </span>
+                                <button class="view-edit-btn js-view-edit" type="button">
+                                    查看编辑
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="properties-item">
+                    <div class="properties-title">
+                        <span class="properties-index">
+                            B
+                        </span>
+                        行为属性
+                    </div>
+                    <div class="properties-lists">
+                        <div class="list">
+                            <div class="list-label">
+                                登录频率
+                            </div>
+                            <div class="list-info">
+                                <dl class="estate-nav js-estate-nav">
+                                    <!--  选择  追加 active-->
+                                    <dd>高</dd>
+                                    <dd>中</dd>
+                                    <dd>低</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="list-label">
+                                点击
+                            </div>
+                            <div class="list-info">
+                                <div class="condition-parents js-condition-parents">
+                                    <div class="condition-list">
+                                        <div class="dom-template">
+                                            <div class="drop-down js-drop-down">
+                                <span class="filter-info js-filter">
+                                        <a href="javascript:void(0)">
+                                            计价按钮
+                                        </a>
+                                    </span>
+                                                <ul class="drop-lists js-drop-lists" style="display: none;">
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            选择按钮
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            计价按钮
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="drop-down symbol-drop js-drop-down">
+                                <span class="filter-info js-filter">
+                                        <a href="javascript:void(0)">
+                                           =
+                                        </a>
+                                    </span>
+                                                <ul class="drop-lists js-drop-lists" style="display: none;">
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            =
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            <
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            >
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            ≤
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            ≥
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            ≠
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <input class="drop-val" type="text" placeholder="填写值">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="list-label">
+                                加购
+                            </div>
+                            <div class="list-info">
+                                <div class="condition-parents js-condition-parents">
+                                    <div class="condition-list">
+                                        <div class="dom-template">
+                                            <div class="drop-down js-drop-down">
+                                           <span class="filter-info js-filter">
+                                                <a href="javascript:void(0)">
+                                                 请选择产品类型
+                                               </a>
+                                               </span>
+                                                <ul class="drop-lists js-drop-lists" style="display: none;">
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            请选择产品类型
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            PCB
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            SMT
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            软板
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            软硬板
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            钢网
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="drop-down symbol-drop js-drop-down">
+                                             <span class="filter-info js-filter">
+                                              <a href="javascript:void(0)">
+                                                =
+                                              </a>
+                                             </span>
+                                                <ul class="drop-lists js-drop-lists" style="display: none;">
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            =
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            <
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            >
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            ≤
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            ≥
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            ≠
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <input class="drop-val" type="text" placeholder="填写值">
+                                        </div>
+                                        <button class="condition-btn js-condition-btn">添加条件</button>
+                                    </div>
+                                    <div class="condition-list">
+                                        <div class="dom-template">
+                                            <div class="drop-down js-drop-down">
+                                           <span class="filter-info js-filter">
+                                                <a href="javascript:void(0)">
+                                                 请选择产品类型
+                                               </a>
+                                               </span>
+                                                <ul class="drop-lists js-drop-lists" style="display: none;">
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            请选择产品类型
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            PCB
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            SMT
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            软板
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            软硬板
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            钢网
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="drop-down symbol-drop js-drop-down">
+                                             <span class="filter-info js-filter">
+                                              <a href="javascript:void(0)">
+                                                =
+                                              </a>
+                                             </span>
+                                                <ul class="drop-lists js-drop-lists" style="display: none;">
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            =
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            <
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            >
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            ≤
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            ≥
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            ≠
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <input class="drop-val" type="text" placeholder="填写值">
+                                        </div>
+                                        <button class="delete-condition js-delete-condition"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="properties-item">
+                    <div class="properties-title">
+                        <span class="properties-index">
+                            C
+                        </span>
+                        消费属性
+                    </div>
+                    <div class="properties-lists">
+                        <div class="list">
+                            <div class="list-label">
+                                产品偏好
+                            </div>
+                            <div class="list-info">
+                                <dl class="estate-nav js-estate-nav">
+                                    <!--  选择  追加 active-->
+                                    <dd >PCB</dd>
+                                    <dd>SMT</dd>
+                                    <dd>软板</dd>
+                                    <dd>软硬结合板</dd>
+                                    <dd>钢网</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="list-label">
+                                服务偏好
+                            </div>
+                            <div class="list-info">
+                                <dl class="estate-nav js-estate-nav">
+                                    <!--  选择  追加 active-->
+                                    <dd >打样</dd>
+                                    <dd>批量</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="list-label">
+                                工艺偏好
+                            </div>
+                            <div class="list-info">
+                                <dl class="estate-nav js-estate-nav">
+                                    <!--  选择  追加 active-->
+                                    <dd >高精密</dd>
+                                    <dd>普通</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="list-label">
+                                下单频率
+                            </div>
+                            <div class="list-info">
+                                <dl class="estate-nav js-estate-nav">
+                                    <!--  选择  追加 active-->
+                                    <dd >高</dd>
+                                    <dd>中</dd>
+                                    <dd>低</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="list-label">
+                                下单金额
+                            </div>
+                            <div class="list-info">
+                                <div class="condition-parents js-condition-parents">
+                                    <div class="condition-list">
+                                        <div class="dom-template">
+                                            <div class="drop-down symbol-drop js-drop-down">
+                                <span class="filter-info js-filter">
+                                        <a href="javascript:void(0)">
+                                           =
+                                        </a>
+                                    </span>
+                                                <ul class="drop-lists js-drop-lists" style="display: none;">
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            =
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            <
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            >
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            ≤
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            ≥
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            ≠
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <input class="drop-val" type="text" placeholder="填写值">
+                                        </div>
+                                        <button class="condition-btn js-condition-btn">添加条件</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="list-label">
+                                下单数量
+                            </div>
+                            <div class="list-info">
+                                <div class="condition-parents js-condition-parents">
+                                    <div class="condition-list">
+                                        <div class="dom-template">
+                                            <div class="drop-down symbol-drop js-drop-down">
+                                <span class="filter-info js-filter">
+                                        <a href="javascript:void(0)">
+                                           =
+                                        </a>
+                                    </span>
+                                                <ul class="drop-lists js-drop-lists" style="display: none;">
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            =
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            <
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            >
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            ≤
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            ≥
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            ≠
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <input class="drop-val" type="text" placeholder="填写值">
+                                        </div>
+                                        <button class="condition-btn js-condition-btn">添加条件</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="properties-item">
+                    <div class="properties-title">
+                        <span class="properties-index">
+                            D
+                        </span>
+                        营销属性
+                    </div>
+                    <div class="properties-lists">
+                        <div class="list">
+                            <div class="list-label">
+                                优惠券核销力
+                            </div>
+                            <div class="list-info">
+                                <dl class="estate-nav js-estate-nav">
+                                    <!--  选择  追加 active-->
+                                    <dd >高</dd>
+                                    <dd>中</dd>
+                                    <dd>低</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="list-label">
+                                活动参与度
+                            </div>
+                            <div class="list-info">
+                                <dl class="estate-nav js-estate-nav">
+                                    <!--  选择  追加 active-->
+                                    <dd >高</dd>
+                                    <dd>中</dd>
+                                    <dd>低</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="list-label">
+                                消费能力
+                            </div>
+                            <div class="list-info">
+                                <dl class="estate-nav js-estate-nav">
+                                    <!--  选择  追加 active-->
+                                    <dd >高</dd>
+                                    <dd>中</dd>
+                                    <dd>低</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="properties-item">
+                    <div class="properties-title">
+                        <span class="properties-index">
+                            E
+                        </span>
+                        服务属性
+                    </div>
+                    <div class="properties-lists">
+                        <div class="list">
+                            <div class="list-label">
+                                投诉率
+                            </div>
+                            <div class="list-info">
+                                <div class="condition-parents js-condition-parents">
+                                    <div class="condition-list">
+                                        <div class="dom-template">
+                                            <div class="drop-down symbol-drop js-drop-down">
+                                <span class="filter-info js-filter">
+                                        <a href="javascript:void(0)">
+                                           =
+                                        </a>
+                                    </span>
+                                                <ul class="drop-lists js-drop-lists" style="display: none;">
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            =
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            <
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            >
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            ≤
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            ≥
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            ≠
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="drop-down turnover-drop js-drop-down">
+                                                <span class="filter-info js-filter">
+                                                     <a href="javascript:void(0)">
+                                                     %
+                                                       </a>
+                                                   </span>
+                                                <ul class="drop-lists js-drop-lists" style="display: none;">
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            ——
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            10%
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            20%
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            30%
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            40%
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            50%
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            60%
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            70%
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            80%
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            90%
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            100%
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <button class="condition-btn js-condition-btn">添加条件</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="list-label">
+                                退单率
+                            </div>
+                            <div class="list-info">
+                                <div class="condition-parents js-condition-parents">
+                                    <div class="condition-list">
+                                        <div class="dom-template">
+                                            <div class="drop-down symbol-drop js-drop-down">
+                                <span class="filter-info js-filter">
+                                        <a href="javascript:void(0)">
+                                           =
+                                        </a>
+                                    </span>
+                                                <ul class="drop-lists js-drop-lists" style="display: none;">
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            =
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            <
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            >
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            ≤
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            ≥
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            ≠
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="drop-down turnover-drop js-drop-down">
+                                                <span class="filter-info js-filter">
+                                                     <a href="javascript:void(0)">
+                                                     %
+                                                       </a>
+                                                   </span>
+                                                <ul class="drop-lists js-drop-lists" style="display: none;">
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            ——
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            10%
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            20%
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            30%
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            40%
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            50%
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            60%
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            70%
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            80%
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            90%
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            100%
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <button class="condition-btn js-condition-btn">添加条件</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="list-label">
+                                成交率
+                            </div>
+                            <div class="list-info">
+                                <div class="condition-parents js-condition-parents">
+                                    <div class="condition-list">
+                                        <div class="dom-template">
+                                            <div class="drop-down symbol-drop js-drop-down">
+                                <span class="filter-info js-filter">
+                                        <a href="javascript:void(0)">
+                                           =
+                                        </a>
+                                    </span>
+                                                <ul class="drop-lists js-drop-lists" style="display: none;">
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            =
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            <
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            >
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            ≤
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            ≥
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            ≠
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="drop-down turnover-drop js-drop-down">
+                                                <span class="filter-info js-filter">
+                                                     <a href="javascript:void(0)">
+                                                     %
+                                                       </a>
+                                                   </span>
+                                                <ul class="drop-lists js-drop-lists" style="display: none;">
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            ——
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            10%
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            20%
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            30%
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            40%
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            50%
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            60%
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            70%
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            80%
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            90%
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            100%
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <button class="condition-btn js-condition-btn">添加条件</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="trends-tool">
+            <button type="button" class="replacement">
+                重置
+            </button>
+            <button type="button">
+                保存\查看画像
+            </button>
+        </div>
+    </div>
+</div>
+<!--搜索国家弹窗-->
+<div class="popup-parent-state js-popup-search" style="display: none">
+    <div class="popup-search-state country-popup">
+        <div class="popup-head">
+            查看编辑位置
+            <span class="close-popup js-close-btn"></span>
+        </div>
+        <div class="popup-body">
+            <div class="pop-state-area">
+                <div class="pop-search">
+                    <input class="get-area js-get-country" type="text" placeholder="输入国家">
+                    <button type="button" class="search-btn">
+                        搜索
+                    </button>
+                </div>
+                <div class="state-parent">
+                    <div class="state-l">
+                        <div class="set-state-area js-state-area">
+                            <!-- 模糊筛选 -->
+                            <div class="fuzzy-filter js-fuzzy-filter"></div>
+                            <!-- 选中追加 active-->
+                            <div class="state-li active">
+                                <span class="state-icon"></span>
+                                <input type="checkbox">
+                                UNITED STATES OF AMERICA
+                            </div>
+                            <div class="state-li">
+                                <span class="state-icon"></span>
+                                <input type="checkbox">
+                                AFGHANISTAN
+                            </div>
+                            <div class="state-li">
+                                <span class="state-icon"></span>
+                                <input type="checkbox">
+                                ALBANIA
+                            </div>
+                            <div class="state-li">
+                                <span class="state-icon"></span>
+                                <input type="checkbox">
+                                ALGERIA
+                            </div>
+                            <div class="state-li">
+                                <span class="state-icon"></span>
+                                <input type="checkbox">
+                                CONGO, THE DEMOCRATIC REPUBLIC OF
+                            </div>
+                            <div class="state-li">
+                                <span class="state-icon"></span>
+                                <input type="checkbox">
+                                AMERICAN SAMOA
+                            </div>
+                            <div class="state-li">
+                                <span class="state-icon"></span>
+                                <input type="checkbox">
+                                ALGERIA AMERICAN SAMOA
+                            </div>
+                            <div class="state-li">
+                                <span class="state-icon"></span>
+                                <input type="checkbox">
+                                LAO PEOPLES DEMOCRATIC REPUBLIC
+                            </div>
+                            <div class="state-li">
+                                <span class="state-icon"></span>
+                                <input type="checkbox">
+                                AFGHANISTAN
+                            </div>
+                            <div class="state-li">
+                                <span class="state-icon"></span>
+                                <input type="checkbox">
+                                ALBANIA
+                            </div>
+                            <div class="state-li">
+                                <span class="state-icon"></span>
+                                <input type="checkbox">
+                                ALGERIA
+                            </div>
+                            <div class="state-li">
+                                <span class="state-icon"></span>
+                                <input type="checkbox">
+                                CONGO, THE DEMOCRATIC REPUBLIC OF
+                            </div>
+                            <div class="state-li">
+                                <span class="state-icon"></span>
+                                <input type="checkbox">
+                                AMERICAN SAMOA
+                            </div>
+                            <div class="state-li">
+                                <span class="state-icon"></span>
+                                <input type="checkbox">
+                                ALGERIA AMERICAN SAMOA
+                            </div>
+                            <div class="state-li">
+                                <span class="state-icon"></span>
+                                <input type="checkbox">
+                                LAO PEOPLES DEMOCRATIC REPUBLIC
+                            </div>
+                            <div class="state-li">
+                                <span class="state-icon"></span>
+                                <input type="checkbox">
+                                AFGHANISTAN
+                            </div>
+                            <div class="state-li">
+                                <span class="state-icon"></span>
+                                <input type="checkbox">
+                                ALBANIA
+                            </div>
+                            <div class="state-li">
+                                <span class="state-icon"></span>
+                                <input type="checkbox">
+                                ALGERIA
+                            </div>
+                            <div class="state-li">
+                                <span class="state-icon"></span>
+                                <input type="checkbox">
+                                CONGO, THE DEMOCRATIC REPUBLIC OF
+                            </div>
+                            <div class="state-li">
+                                <span class="state-icon"></span>
+                                <input type="checkbox">
+                                AMERICAN SAMOA
+                            </div>
+                            <div class="state-li">
+                                <span class="state-icon"></span>
+                                <input type="checkbox">
+                                ALGERIA AMERICAN SAMOA
+                            </div>
+                            <div class="state-li">
+                                <span class="state-icon"></span>
+                                <input type="checkbox">
+                                LAO PEOPLES DEMOCRATIC REPUBLIC
+                            </div>
+                            <div class="state-li">
+                                <span class="state-icon"></span>
+                                <input type="checkbox">
+                                AFGHANISTAN
+                            </div>
+                            <div class="state-li">
+                                <span class="state-icon"></span>
+                                <input type="checkbox">
+                                ALBANIA
+                            </div>
+                            <div class="state-li">
+                                <span class="state-icon"></span>
+                                <input type="checkbox">
+                                ALGERIA
+                            </div>
+                            <div class="state-li">
+                                <span class="state-icon"></span>
+                                <input type="checkbox">
+                                CONGO, THE DEMOCRATIC REPUBLIC OF
+                            </div>
+                            <div class="state-li">
+                                <span class="state-icon"></span>
+                                <input type="checkbox">
+                                AMERICAN SAMOA
+                            </div>
+                            <div class="state-li">
+                                <span class="state-icon"></span>
+                                <input type="checkbox">
+                                ALGERIA AMERICAN SAMOA
+                            </div>
+                            <div class="state-li">
+                                <span class="state-icon"></span>
+                                <input type="checkbox">
+                                LAO PEOPLES DEMOCRATIC REPUBLIC
+                            </div>
+                        </div>
+                    </div>
+                    <div class="state-r">
+                        <div class="country-labels js-country-labels">
+                            <div class="country-label">
+                                <span class="cou-icon"></span>
+                                <span class="cou-name">
+                            UNITED STATES OF AMERICA
+                        </span>
+                            </div>
+                        </div>
+                        <div class="country-tool">
+                            <button class="rest-btn" type="button">
+                                重置
+                            </button>
+                            <button class="submit-btn" type="button">
+                                提交
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script>
+  $(function () {
+    // 通用下拉
+    $(document).on('click', '.js-drop-down', function () {
+      $('.js-drop-lists').hide()
+      $(this).find('.js-drop-lists').slideDown(function () {
+        $(this).end().addClass('active-drop');
+      });
+    })
+    $(document).on('click', '.js-drop-lists li', function (e) {
+      if ($(this).hasClass('the-tag')) {
+        return;
+      }
+      e.stopPropagation();
+      var infoStr = $(this).html();
+      $(this).parents('.js-drop-down').find('.js-filter').html(infoStr);
+      $(this).parent().hide();
+    })
+    // 点击其它地方,关闭下拉框
+    $(document).on('click', function (e) {
+      if ($(e.target).closest('.js-drop-down').length <= 0) {
+        $('.js-drop-lists').hide()
+      }
+    })
+
+    // 时间节点选择
+    $('.js-drop-time li').click(function () {
+      $('.js-custom-num').val('')
+      if ($.trim($(this).text()) !== '自定义') {
+        $('.js-custom-num').attr('disabled', true)
+      } else {
+        $('.js-custom-num').attr('disabled', false)
+      }
+    })
+
+    // 通用等级/类别选择
+    $('.js-estate-nav dd').click(function () {
+      $(this).toggleClass('active')
+    })
+    // 位置选择弹窗
+    $('.js-view-edit').click(function () {
+      $('.js-popup-search').fadeIn()
+    })
+    // 关闭弹窗
+    $('.js-close-btn').click(function () {
+      $(this).parents('.js-popup-search').fadeOut()
+    })
+
+    // 国家选择删除该js
+    void function () {
+      var tempCountryList = ['UNITED STATES OF AMERICA']
+      Array.prototype.remove = function (val) {
+        var removeIndex = tempCountryList.indexOf(val)
+        if (removeIndex >= -1) {
+          tempCountryList.splice(removeIndex, 1);
+        }
+      }
+      $('.js-state-area .state-li').click(function () {
+        $(this).toggleClass('active');
+        var stateName = $.trim($(this).text());
+        if ($(this).hasClass('active')) {
+          tempCountryList.push(stateName)
+        } else {
+          tempCountryList.remove(stateName)
+        }
+        createLabelFn();
+      })
+
+      function createLabelFn () {
+        $('.js-country-labels').html('')
+        var labelStr = ''
+        for (var i = 0; i < tempCountryList.length; i++) {
+          labelStr += '<div class="country-label">\n' +
+            '                        <span class="cou-icon"></span>\n' +
+            '                        <span class="cou-name">\n' + tempCountryList[i] +
+            '                        </span>\n' +
+            '                    </div>'
+        }
+        $('.js-country-labels').append(labelStr)
+      }
+
+      function cancelLabelFn (val) {
+        $('.js-state-area .state-li').each(function () {
+          if ($.trim($(this).text()) === val) {
+            $(this).removeClass('active')
+          }
+        })
+      }
+
+      $('.js-get-country').focus(function () {
+        $('.js-fuzzy-filter').show()
+      })
+      // 套用删除该js
+      $('.js-get-country').blur(function () {
+        $('.js-fuzzy-filter').hide()
+      })
+
+      $(document).on('click', '.js-country-labels .cou-icon', function () {
+        $(this).parents('.country-label').remove();
+        var stateName = $.trim($(this).parent().text())
+        cancelLabelFn(stateName);
+        tempCountryList.remove(stateName)
+      })
+    }();
+
+
+    // 统一条件dom模块
+    function createConditionFn (el) {
+      return '<div class="condition-list">' + el.parent().find('.dom-template').prop('outerHTML') + ' <button class="delete-condition js-delete-condition"></button></div>';
+    }
+
+    // 统一添加条件
+    $('.js-condition-btn').click(function () {
+      var $el = $(this);
+      $(this).parents('.js-condition-parents').append(createConditionFn($el))
+    })
+    // 统一删除条件
+    $(document).on('click', '.js-delete-condition', function () {
+      $(this).parents('.condition-list').remove()
+    })
+
+  })
+</script>
+</body>
+</html>
+

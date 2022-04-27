@@ -1,0 +1,43 @@
+@import "css-function.less";
+@import "base.less";
+
+.email-box {
+  padding: 0 20px;
+}
+
+//邮件按钮
+.nav-btn {
+  margin-top: 10px;
+
+  .btn {
+    .widthAndHeight(80px; 28px);
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 6px;
+    background: @default;
+    color: #ffffff;
+    border: 1px solid #797979;
+    .borderRadius(4px);
+    transition: all .3s;
+
+    &:hover {
+      color: #434343;
+    }
+  }
+
+  //公共按钮样式
+  .email-btn(@color) {
+    background: @color;
+    border: 1px solid @color;
+  }
+
+  //删除按钮
+  .danger {
+    .email-btn(@waring);
+  }
+
+  //回复按钮
+  .primary {
+    .email-btn(@primary);
+  }
+}

@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/data-page.css">
+</head>
+<body>
+<div class="data-box">
+    <div class="data-top">
+        <div class="data-title">
+            订单包统计
+        </div>
+        <div class="data-date">
+            <select name="" class="js-select-year">
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+            </select>
+        </div>
+    </div>
+    <div class="data-body">
+        <div class="data-item">
+            <div class="item-l">
+                <h3>订单包准时交货率</h3>
+            </div>
+            <div class="item-r">
+                <div id="package-rate" class="package-rate">
+
+                </div>
+                <div class="month-box">
+                    <div class="name">当前<span class="js-month"></span>月
+                        <br>准交率
+                    </div>
+                    <div id="must-pay" class="must-pay"></div>
+                    <dl class="month-cost">
+                        <dd>
+                            <span>需交货订单包数</span>
+                            <div class="order js-payable">
+                                ?
+                            </div>
+                        </dd>
+                        <dd>
+                            <span>准时交货数</span>
+                            <div class="order js-pay">
+                                ?
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <div class="data-item">
+            <div class="item-l">
+                <h3>物流统计</h3>
+                <a class="down-excel" href="javascript:void(0)">下载表格</a>
+                <div class="device-item">
+                    <table class="device-t logistics-table">
+                        <tr>
+                            <th>
+                                &nbsp;
+                            </th>
+                            <th>
+                                物流
+                            </th>
+                            <th>
+                                运费($)
+                            </th>
+                            <th>
+                                订单包数
+                            </th>
+                            <th>
+                                百分比
+                            </th>
+                        </tr>
+                        <tr>
+                            <td class="order-diy">
+                                01
+                            </td>
+                            <td>
+                                <span class="color" style="background: #B21F1F"></span>
+                                DHL
+                            </td>
+                            <td>
+                                27501.00
+                            </td>
+                            <td>
+                                457
+                            </td>
+                            <td>
+                                15.63%
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="order-diy">
+                                02
+                            </td>
+                            <td>
+                                <span class="color" style="background: #FF0066"></span>
+                                FedEx-IE
+                            </td>
+                            <td>
+                                27501.00
+                            </td>
+                            <td>
+                                457
+                            </td>
+                            <td>
+                                15.63%
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="order-diy">
+                                03
+                            </td>
+                            <td>
+                                <span class="color" style="background: #FF7070"></span>
+                                FedEx-IP
+                            </td>
+                            <td>
+                                27501.00
+                            </td>
+                            <td>
+                                457
+                            </td>
+                            <td>
+                                15.63%
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="order-diy">
+                                04
+                            </td>
+                            <td>
+                                <span class="color" style="background: #5470C6"></span>
+                                EMS
+                            </td>
+                            <td>
+                                27501.00
+                            </td>
+                            <td>
+                                457
+                            </td>
+                            <td>
+                                15.63%
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="order-diy">
+                                05
+                            </td>
+                            <td>
+                                <span class="color" style="background: #73C4DE"></span>
+                                HK DHL
+                            </td>
+                            <td>
+                                27501.00
+                            </td>
+                            <td>
+                                457
+                            </td>
+                            <td>
+                                15.63%
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="order-diy">
+                                06
+                            </td>
+                            <td>
+                                <span class="color" style="background: #89DAC8"></span>
+                                E-packet
+                            </td>
+                            <td>
+                                27501.00
+                            </td>
+                            <td>
+                                457
+                            </td>
+                            <td>
+                                15.63%
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="order-diy">
+                                07
+                            </td>
+                            <td>
+                                <span class="color" style="background: #89CE7C"></span>
+                                SF Express
+                            </td>
+                            <td>
+                                27501.00
+                            </td>
+                            <td>
+                                457
+                            </td>
+                            <td>
+                                15.63%
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="order-diy">
+                                08
+                            </td>
+                            <td>
+                                <span class="color" style="background: #B1B34D"></span>
+                                China Post
+                            </td>
+                            <td>
+                                27501.00
+                            </td>
+                            <td>
+                                457
+                            </td>
+                            <td>
+                                15.63%
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="order-diy">
+                                09
+                            </td>
+                            <td>
+                                <span class="color" style="background: #EFC85F"></span>
+                                Other shipping way
+                            </td>
+                            <td>
+                                27501.00
+                            </td>
+                            <td>
+                                457
+                            </td>
+                            <td>
+                                15.63%
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="order-diy">
+                                10
+                            </td>
+                            <td>
+                                <span class="color" style="background: #D5AB9D"></span>
+                                OCS
+                            </td>
+                            <td>
+                                27501.00
+                            </td>
+                            <td>
+                                457
+                            </td>
+                            <td>
+                                15.63%
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="device-item">
+                    <div id="logistics-pic" class="logistics-pic">
+
+                    </div>
+                </div>
+            </div>
+            <div class="item-r">
+
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="lib/echarts/echarts.js"></script>
+<script>
+    window.onload = function () {
+        // pcb 订单交期统计
+        var chartDom1 = document.getElementById('package-rate');
+        var myChart1 = echarts.init(chartDom1);
+        var dateYear = [new Date().getFullYear().toString()]   // 默认加载当前年份
+        var options1 = {
+            title: {
+                text: '折线图堆叠',
+                show: false
+            },
+            color: ['pink'],
+            tooltip: {
+                trigger: 'axis',
+                formatter: function (params) {  // 我是自定义是数据
+                    return '<span class="point"></span>应交货总订单数:  ' + params[0].data.value
+                        + '</br><span class="point"></span>实交货总订单数:   ' + params[0].data.actual + ''
+                        + '</br><span class="point"></span>当月交货率:   ' + Math.floor(100 * (params[0].data.actual / params[0].data.value)) + ''
+                }
+            },
+            legend: {
+                selectedMode: false,
+                data: dateYear, // 当前年份
+                bottom: 20
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                top: '3%',
+                containLabel: true
+            },
+            toolbox: {
+                feature: {
+                    saveAsImage: {
+                        show: false
+                    }
+                }
+            },
+            xAxis: {
+                type: 'category',
+                boundaryGap: false,
+                data: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月']
+            },
+            yAxis: {
+                type: 'value'
+            },
+            series: [
+                {
+                    name: dateYear[0],
+                    type: 'line',
+                    stack: '总量',
+                    data: []
+                },
+            ]
+        }
+        // 年份选择
+        $('.js-select-year').change(function () {
+            dateYear = []
+            dateYear.push($(this).val().toString())
+            options1.legend.data = dateYear
+            options1.series[0].name = dateYear[0]
+            myChart1.setOption(options1, true)
+        })
+
+        $.ajax({
+            url: './pcb-mock.json',
+            success: function (data) {
+                //
+                options1.series[0].data = data.orderPack
+                myChart1.setOption(options1, true)
+            }, error: function (err) {
+                console.log(err)
+            }
+        })
+
+        // 仪表盘显示成交率数据
+        var chartDom2 = document.getElementById('must-pay');
+        var myChart2 = echarts.init(chartDom2)
+        var options2 = {
+            series: [{
+                type: 'gauge',
+                radius: '86%',
+                progress: {
+                    show: true,
+                    width: 10
+                },
+                axisLine: {
+                    lineStyle: {
+                        width: 10
+                    }
+                },
+                axisTick: {
+                    show: false
+                },
+                splitLine: {
+                    length: 10,
+                    lineStyle: {
+                        width: 2,
+                        color: '#999'
+                    }
+                },
+                axisLabel: {
+                    distance: 20,
+                    color: '#999',
+                    fontSize: 12
+                },
+                anchor: {
+                    show: true,
+                    showAbove: true,
+                    size: 12,
+                    itemStyle: {
+                        borderWidth: 8
+                    }
+                },
+                title: {
+                    show: false
+                },
+                detail: {
+                    valueAnimation: true,
+                    fontSize: 20,
+                    offsetCenter: [0, '70%']
+                },
+                data: [{
+                    value: 0
+                }]
+            }]
+        }
+        myChart2.setOption(options2, true)
+        // 鼠标点击月份获取当前月的成交率
+        myChart1.getZr().on('click', function (params) {
+            var pointInPixel = [params.offsetX, params.offsetY]
+            if (myChart1.containPixel('grid', pointInPixel)) {
+                var pointInGrid = myChart1.convertFromPixel({seriesIndex: 0}, pointInPixel)
+                var xIndex = pointInGrid[0]
+                var op = myChart1.getOption();
+                if (xIndex < 0 || xIndex >= op.series[0].data.length) {
+                    return
+                }
+                var currentValue = op.series[0].data[xIndex].actual
+                var totalValue = op.series[0].data[xIndex].value
+                //获得图表中我们想要的数据
+                options2.series[0].data[0].value = Math.floor(100 * (currentValue / totalValue))
+                $('.js-month').html(xIndex + 1)
+                $('.js-payable').html(totalValue)
+                $('.js-pay').html(currentValue)
+                myChart2.setOption(options2, true)
+            }
+        })
+
+        // 物流分布
+        var chartDom3 = document.getElementById('logistics-pic');
+        var myChart3 = echarts.init(chartDom3)
+        var options3 = {
+            title: {
+                text: '板材\n(总)',
+                left: 0,
+                top: 50,
+                show: false,
+                textStyle: {
+                    fontSize: 14
+                }
+            },
+            color: [],
+            tooltip: {
+                trigger: 'item'
+            },
+            legend: {
+                top: '5%',
+                left: 'center',
+                show: false
+            },
+            series: [
+                {
+                    name: '物流方式',
+                    type: 'pie',
+                    radius: ['40%', '70%'],
+                    avoidLabelOverlap: false,
+                    label: {
+                        show: false,
+                        position: 'center'
+                    },
+                    emphasis: {
+                        label: {
+                            show: true,
+                            fontSize: '14'
+                        }
+                    },
+                    labelLine: {
+                        show: false
+                    },
+                    data: []
+                }
+            ]
+        }
+        $.ajax({
+            url: './pcb-mock.json',
+            success: function (data) {
+                //  to do ....
+                options3.color = data.color
+                options3.series[0].data = data.logistics
+                myChart3.setOption(options3, true)
+            }, error: function (err) {
+                console.log(err)
+            }
+        })
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="http://manage.pcbway.jp/img/css/base.css">
+    <link rel="stylesheet" href="http://manage.pcbway.jp/img/css/manage/system/style.css">
+    <link rel="stylesheet" href="http://manage.pcbway.jp/img/js/jqueryplus/easyui/1.4.5/themes/graycopy/easyui.css">
+    <link rel="stylesheet" href="http://manage.pcbway.jp/img/js/jqueryplus/easyui/1.4.5/themes/icon.css">
+    <link rel="stylesheet" href="http://manage.pcbway.jp/img/js/jqueryplus/easyui/1.3.5/themes/icon.css">
+    <script src="http://manage.pcbway.jp/img/js/jquery/jquery-1.11.3.min.js"></script>
+    <script src="http://manage.pcbway.jp/img/js/jqueryplus/easyui/1.4.5/jquery.easyui.min.js"></script>
+    <script src="http://manage.pcbway.jp/img/js/jqueryplus/easyui/1.4.5/locale/easyui-lang-zh_CN.js"></script>
+    <script src="http://manage.pcbway.jp/img/js/jqueryplus/easyui/checkform.js"></script>
+    <script src="http://manage.pcbway.jp/img/js/manage/system/frametools.js"></script>
+    <style type="text/css">
+        td {
+            padding: 4px 8px;
+            line-height: 24px;
+        }
+    </style>
+    <style type="text/css" media="print">
+        #noprint {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div style="margin: 0 auto; width: 839px;">
+    <p style="font-size: 23px; font-weight: bold; line-height: 60px; text-align: center;
+            border-bottom: 1px solid #000;">
+        Invoice
+    </p>
+    <p id="noprint" style=" overflow: hidden">
+            <span style="float:left;">
+                <a href="javascript:void(0)" onclick="Reset()">初始化PI</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="/ordergroup/ordergroup/download1?id=6211">下载原始PI</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="/ordergroup/ordergroup/download?id=6211">下载发货PI</a><span>
+                        &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
+                    </span>
+                    <a href="javascript:void(0);" onclick="Pt()">预览发货PI</a><span>
+                        &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
+                    </span>
+                    <span>PI文档未上传</span>
+&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="javascript:void(0)" onclick="UploadFile('6211')">上传PI</a><span id="file"></span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
+            </span>
+        <span style="float:right;">
+
+                <a href="pi_groupedit?id=6211">编辑</a><span>
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                </span>
+
+                    <a href="javascript:void(0);" onclick="Finish()">标记完成PI</a>
+                <input type="hidden" id="hidFile" name="hidFile" value="">
+                <br>
+
+            </span>
+    </p>
+    <script type="text/javascript">
+        function Reset() {
+            $.messager.confirm("确认", "确定初始化PI?", function (d) {
+                if (!d)
+                    return;
+                MyPost("/ordergroup/ordergroup/ResetPiGroup", { groupId: 6211 }, function (result) {
+                    if (result.isOk) {
+                        $.messager.alert('成功', '初始化成功', 'info', function () { location.href = "?id=6211";});
+                    }
+                    else {
+                        $.messager.alert('提示', '初始化失败', 'show');
+                    }
+                });
+            });
+        }
+        function Finish() {
+            $.messager.confirm("确认", "确定标记完成PI?", function (d) {
+                if (!d)
+                    return;
+                MyPost("/ordergroup/ordergroup/SetFinish", { groupId: 6211 }, function (result) {
+                    if (result.isOk) {
+                        $.messager.alert('成功', '标记完成PI成功', 'info', function () { location.href = "?id=6211";});
+                    }
+                    else {
+                        $.messager.alert('提示', '标记完成PI失败', 'show');
+                    }
+                });
+            });
+        }
+        function Pt() {
+
+            window.print();
+        }
+    </script>
+    <div style="font-weight: bold; line-height: 24px; font-family: 'Times New Roman';
+            text-indent: 10px;">
+        <p style="text-align: center; font-size: 17px;">
+            Shenzhen JDB Technology Co., Ltd.
+        </p>
+        <p style="text-align: center; font-size: 15px;">
+            ADD: No. 15, Zhongxing Road, The 3rd. Industry, Kengzi Street, Pingshan New District, Shenzhen, 518000, China.
+        </p>
+        <p style="font-size: 15px; width: 419px; margin: 0 auto;">
+            Tel: 86-0755-33066136 <span style="float: right">Fax: 86-0755-82777171</span>
+        </p>
+        <p style="font-size: 15px; width: 449px; margin: 0 auto;">
+            E-mail: service01@pcbgogo.com <span style="float: right">
+                    Contact person: WUXIAOMING
+                </span>
+        </p>
+        <p style="font-size: 19px; width: 100%; margin: 0 auto; line-height: 28px;">
+            To:
+            山本会社<span style="float: right;">
+                    NO:
+                    GB6211
+                </span> &nbsp;
+        </p>
+        <p style="font-size: 19px; width: 100%; margin: 0 auto; padding-right: 10px; border-bottom: 1px solid #000;">
+            From: www.pcbgogo.jp
+            <span style="float: right;">
+                    Date:
+                    07/26/2019
+                </span>
+        </p>
+    </div>
+    <p>
+        &nbsp;
+    </p>
+    <table border="1" cellspacing="0" cellpadding="0" width="100%">
+        <tbody><tr>
+            <td valign="top">
+                <b>Recipient Buyer</b>
+            </td>
+            <td colspan="10">
+                <p align="left">
+                    山本会社
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">
+                <p align="left">
+                    Contact Person
+                </p>
+            </td>
+            <td colspan="10">
+                <p align="left">
+                    zhangyu
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">
+                <p align="left">
+                    Shipping address
+                </p>
+            </td>
+            <td colspan="10">
+                <p align="left">
+
+
+                    awugwgg gje9ekgj ekgjwh, AIXIRIVALL, 25999, ANDORRA
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">
+                <p align="left">
+                    Tel
+                </p>
+            </td>
+            <td colspan="10" valign="top">
+                <p align="left">
+                    81-123456
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">
+                <p align="left">
+                    Payment method
+                </p>
+            </td>
+            <td colspan="10" valign="bottom">
+                <p align="left">
+                    Account Balance
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">
+                <p align="left">
+                    Shipping method
+                </p>
+            </td>
+            <td colspan="10" valign="bottom">
+                <p align="left">
+                    DHL
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="11">
+                <p align="center">
+                    <b>Order Information</b>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" valign="top">
+                <p align="center">
+                    Part No. and description
+                </p>
+            </td>
+            <td valign="top">
+                <p align="center">
+                    Size<br>
+                    (mm)
+                </p>
+            </td>
+            <td valign="top">
+                <p align="center">
+                    Qty<br>
+                    (pcs)
+                </p>
+            </td>
+            <td valign="top">
+                <p align="center">
+                    Unit <br> price<br>
+                    (USD)
+                </p>
+            </td>
+            <td valign="top">
+                <p align="center">
+                    Freight <br> cost <br>
+                    (USD)
+                </p>
+            </td>
+            <td valign="top">
+                <p align="center">
+                    Bank <br> fee<br>
+                    (USD)
+                </p>
+            </td>
+            <td valign="top">
+                <p align="center" >
+                    Discount<br>
+                    (USD)
+                </p>
+            </td>
+            <td valign="top" colspan="2">
+                <p align="center">
+                    Total<br>
+                    (USD)
+                </p>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" valign="top" style="width:50px;">
+
+                <p align="left">
+                    Electronic PCB: <br> FR-4 1.6mm 1oz 2layers<br>Green mask White legend<br>HASL with lead<br>No. :B80001ASH377<br>张宇1测试用gerber
+                </p>
+            </td>
+            <td>
+
+                <p align="center">
+                    12*12
+
+                </p>
+
+            </td>
+            <td>
+                <p align="center">
+                    5                        </p>
+            </td>
+            <td>
+                <p align="center">
+                    16.20                        </p>
+            </td>
+            <td >
+                <p align="center">
+                    69.00
+                </p>
+            </td>
+            <td >
+                <p align="center">
+                    0.00
+                </p>
+            </td>
+            <td >
+                <p align="center" style="color: #b21f1f">
+                    - 2
+                </p>
+            </td>
+            <td >
+                <p align="center">
+                    0.00
+                    <br><span>
+                                              Balance: -$
+                                    </span> 163.00                            </p>
+
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" valign="top" style="width:50px;">
+
+                <p align="left">
+                    Stencil No. :P-B80001ASH378<br>Framework370×470mm
+                </p>
+            </td>
+            <td>
+
+                <p align="center">
+                    370×470
+
+                </p>
+
+            </td>
+            <td>
+                <p align="center">
+                    1                        </p>
+            </td>
+            <td>
+                <p align="center">
+                    20.00                        </p>
+            </td>
+            <td>
+                <p align="center">
+                    4
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                   2
+                </p>
+            </td>
+            <td>
+                <p align="center" style="color: #b21f1f">
+                    -2
+                </p>
+            </td>
+            <td>
+                <p align="center" >
+                    24
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="9">
+                <p align="right" style="margin-right: 20px">
+                    Sub Total: <span>78967897832</span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="11">
+                <p align="center">
+                    <b>PCBGOGO payment information</b>
+                </p>
+            </td>
+        </tr>
+        <tr class="trPaypal">
+            <td colspan="2" valign="top">
+                <p align="right">
+                    <b>PayPal Account</b>
+                </p>
+            </td>
+            <td width="507" colspan="9" valign="top">
+                <p>
+                    <b>paypal@pcbgogo.com</b>
+                </p>
+            </td>
+        </tr>
+        <tr class="trBank">
+            <td colspan="2" valign="top">
+                <p align="right">
+                    <b>Beneficiary</b>
+                </p>
+            </td>
+            <td width="507" colspan="9" valign="top">
+                <p>
+                    <b>Shenzhen JDB Technology Co., Ltd.</b><b> </b>
+                </p>
+            </td>
+        </tr>
+        <tr class="trBank">
+            <td colspan="2" valign="top">
+                <p align="right">
+                    <b>Bank:</b>
+                </p>
+            </td>
+            <td width="507" colspan="9" valign="top">
+                <p>
+                    <b>ICBC SHENZHEN BRANCH, SHENZHEN CHINA</b>
+                </p>
+            </td>
+        </tr>
+        <tr class="trBank">
+            <td colspan="2" valign="top">
+                <p align="right">
+                    <b>Bank address</b>
+                </p>
+            </td>
+            <td width="507" colspan="9" valign="top">
+                <p>
+                    <b>NORTH BLOCK FINANCIAL CENTER SHENNAN ROAD EAST, SHENZHEN, 518000, CHINA</b>
+                </p>
+            </td>
+        </tr>
+        <tr class="trBank">
+            <td colspan="2" valign="top">
+                <p align="right">
+                    <b>Account No.</b>
+                </p>
+            </td>
+            <td width="507" colspan="9" valign="top">
+                <p>
+                    <b>4000027519200517444</b><b> </b>
+                </p>
+            </td>
+        </tr>
+        <tr class="trBank">
+            <td colspan="2" valign="top">
+                <p align="right">
+                    <b>Swift Code</b>
+                </p>
+            </td>
+            <td width="507" colspan="9" valign="top">
+                <p>
+                    <b>ICBKCNBJSZN</b><b> </b>
+                </p>
+            </td>
+        </tr>
+        </tbody></table>
+    <p align="right" style="background-color: #343434; margin: 8px 0px 20px 0px;"></p>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            if ("account balance" == 'paypal' && 2 > 5) {
+                $('.trBank').hide();
+            }
+        })
+
+        function Page_Load() {
+            location.href = "/ordergroup/ordergroup/pi_group?id=6211";
+        }
+
+    </script>
+</div>
+</body>
+</html>

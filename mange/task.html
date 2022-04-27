@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="jquery-easyui-1.4.5/themes/gray/easyui.css">
+    <link rel="stylesheet" href="jquery-easyui-1.4.5/themes/icon.css">
+    <style type="text/css">
+        /*add*/
+        .panel-body ul li .menu_div {
+            background-color: #FDFDFD;
+            border-bottom: #eeeeee 1px dotted;
+        }
+
+        .panel-body ul li .menu_div a {
+            color: #666666;
+            display: block;
+            text-indent: 14px;
+            height: 30px;
+            line-height: 30px;
+            display: block;
+        }
+
+        /*.panel-body ul li .selected, .panel-body ul li div:hover {
+            background: #F3F8FA;
+        }*/
+
+        /*.panel-body ul li .selected a, .panel-body ul li div:hover a {
+                color: #333333;
+            }*/
+        /*end*/
+
+        .top_icon {
+        }
+
+        .top_icon a {
+            background: url(http://manage.pcbway.jp/img/images/manage/common/top_icon.png) no-repeat 0 0;
+            padding: 0 0 0 20px;
+        }
+
+        .top_icon a.icon_index {
+            background-position: 0 -496px;
+        }
+
+        .top_icon a.icon_pass {
+            background-position: 0 -49px;
+        }
+
+        .top_icon a.icon_exit {
+            background-position: 0 -208px;
+        }
+
+        .top_icon font {
+            color: #999;
+        }
+
+
+        .msgnum {
+            left: -10px;
+            top: -10px;
+            position: relative;
+            padding: 0 5px;
+            color: #fff !important;
+            height: 16px;
+            background: #f44a20;
+            overflow: hidden;
+            border-radius: 7px 7px 7px 0px;
+            text-align: center;
+            z-index: 3;
+            line-height: 18px;
+            -webkit-animation: shakeSign 1.5s infinite;
+            -moz-animation: shakeSign 3.5s infinite;
+            -ms-animation: shakeSign 3.5s infinite;
+            animation: shakeSign 3.5s infinite;
+            -webkit-transform-origin: 0 100% 0;
+            -moz-transform-origin: 0 100% 0;
+            -ms-transform-origin: 0 100% 0;
+            transform-origin: 0 100% 0;
+        }
+    </style>
+
+
+    <style>
+        /*Task agents*/
+        .panel {
+            overflow: visible !important;
+        }
+
+        .panel-body {
+            overflow: visible !important;
+
+        }
+
+        .task-agents {
+            background-color: transparent;
+            float: left;
+            margin: 5px 0 0 30px ;
+            min-width: 500px;
+            height: 30px;
+            list-style: none;
+            padding: 0;
+            font-size: 12px;
+        }
+
+        .task-agents:after {
+            display: block;
+            content: '';
+            width: 0;
+            height: 0;
+            clear: both;
+        }
+
+        .task-agents li {
+            float: left;
+            width: 125px;
+            margin-right: 2px;
+            position: relative;
+            height: 30px;
+            overflow: hidden;
+        }
+
+        .task-agents li:hover {
+            overflow: visible;
+        }
+
+        .task-agents li .name {
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            background-color: #25597e;
+            color: #ffffff;
+        }
+
+        .task-agents li .name span {
+            color: #f44a20;
+            margin-left: 5px;
+        }
+
+        .task-agents li .items-box {
+            position: absolute;
+            top: 30px;
+            left: 0;
+            z-index: 8;
+            width: 100%;
+            background-color: #ffffff;
+            height: 0;
+            box-shadow: 0 0 6px -1px rgba(0, 0, 0, .2);
+            transition: all .3s;
+        }
+        .task-agents li:hover .items-box {
+            height: auto;
+        }
+        .task-agents li .items-box .item {
+            height: 30px;
+            line-height: 30px;
+            transition: all .3s;
+            color: #101010;
+            text-indent: 15px;
+        }
+        .task-agents li .items-box .item span{
+            color: #f44a20;
+        }
+
+        .task-agents li .items-box .item:hover {
+            background-color: #eaeaea;
+            cursor: default;
+        }
+    </style>
+
+</head>
+<body>
+<div class="panel layout-panel layout-panel-north layout-split-north" style="width: 1920px; left: 0px; top: 0px;">
+    <div region="north" split="true"
+         style="position: relative; background: url(http://manage.pcbway.jp/img/images/manage/login/default/bk1.jpg) center center; width: 1918px; height: 45px;"
+         title="" class="panel-body panel-body-noheader layout-body">
+        <div style=" height:45px;">
+            <div style="  padding-top:5px; padding-left:15px;float: left">
+                &nbsp;<img src="http://manage.pcbway.jp/img/images/manage/common/banner.jpg">
+            </div>
+            <!-- Task agents-->
+            <ul class="task-agents">
+                <li>
+                    <div class="name">PCB任务<span>(30)</span></div>
+                    <!--items-->
+                    <div class="items-box">
+                        <div class="item">
+                            需翻译 <span>(10)</span>
+                        </div>
+                        <div class="item">
+                            待审核 <span>(10)</span>
+                        </div>
+                        <div class="item">
+                            审核未通过 <span>(10)</span>
+                        </div>
+                        <div class="item">
+                            需付款 <span>(10)</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="name">SMT任务<span>(30)</span></div>
+                    <!--items-->
+                    <div class="items-box">
+                        <div class="item">
+                            需翻译 <span>(10)</span>
+                        </div>
+                        <div class="item">
+                            待审核 <span>(10)</span>
+                        </div>
+                        <div class="item">
+                            审核未通过 <span>(10)</span>
+                        </div>
+                        <div class="item">
+                            需付款 <span>(10)</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="name">钢网任务<span>(30)</span></div>
+                    <!--items-->
+                    <div class="items-box">
+                        <div class="item">
+                            需翻译 <span>(10)</span>
+                        </div>
+                        <div class="item">
+                            审核未通过 <span>(10)</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="name">订单包<span>(30)</span></div>
+                    <!--items-->
+                    <div class="items-box">
+                        <div class="item">
+                            昨日交货 <span>(10)</span>
+                        </div>
+                        <div class="item">
+                            今日交货 <span>(10)</span>
+                        </div>
+                        <div class="item">
+                            明日交货 <span>(10)</span>
+                        </div>
+                        <div class="item">
+                            7日交货 <span>(10)</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+        <div style="position: absolute; right: 70px; top: 15px; height: 20px;" class="top_icon">
+            <a href="/admin/Home/Index/" class="icon_index"><font>首页</font></a> &nbsp; <font> | </font>
+            <a href="javascript:OpenMessageList();"
+               style="position:relative; padding-right: 10px;"><font>系统消息</font></a> &nbsp; <span id="MessageCount"
+                                                                                                  class="msgnum"
+                                                                                                  style="">9</span>
+            <font> | </font>
+            &nbsp; <a href="javascript:void(0);" onclick="eidtpwd();" class="icon_pass"><font>修改密码</font></a> &nbsp;
+            <font> | </font>
+            &nbsp; <a href="javascript:void(0);" id="logout" class="icon_exit"><font>安全退出</font></a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
